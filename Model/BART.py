@@ -14,7 +14,7 @@ import nltk.translate.bleu_score as bleu
 from transformers import BartTokenizer, BartForConditionalGeneration, AdamW, WarmUp, BartConfig, AutoTokenizer, AutoModelForSeq2SeqLM
 import numpy as np
 from datasets import load_metric
-from Eval.kp_eval import evaluate
+from eval import *
 from tqdm import tqdm
 # from transformers.modeling_bart import shift_tokens_right
 import pytorch_lightning as pl

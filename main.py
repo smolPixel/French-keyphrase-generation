@@ -1,27 +1,6 @@
 import argparse, random, torch
 import numpy as np
-from process_data import *
-import subprocess
-import numpy as np
-from multiprocessing import cpu_count
-from tensorboardX import SummaryWriter
-from torch.utils.data import DataLoader
-from collections import OrderedDict, defaultdict
-from data.NoteMarg import NoteMarg
-
-
-import math, time
-
-import random
-from typing import Tuple
-
-import torch.nn as nn
-import torch.optim as optim
-import torch.nn.functional as F
-from torch import Tensor
-from process_data import *
-from util import initialize_datasets
-from AugmentStrat.Augmentator import Augmentator
+from util import *
 from Model.BART import BARTModel
 
 def run_external_process(process):
@@ -38,7 +17,7 @@ def set_seed(seed=42):
 
 
 def run(argdict):
-    datasets = initialize_NoteMarg(argdict, False)
+    datasets = initialize_datasets(argdict)
     print(datasets)
     dsa
     model=BARTModel(argdict, datasets)

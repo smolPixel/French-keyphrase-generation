@@ -52,7 +52,7 @@ class NoteMarg(Dataset):
         self.max_len_labels=0
         self.len_sentence=0
         self.index_unique_examples=[]
-        self.generate_sentence = generate_sentences
+        # self.generate_sentence = generate_sentences
         index=0
         self.map_unique_to_id={}
         for i, row in data.iterrows():

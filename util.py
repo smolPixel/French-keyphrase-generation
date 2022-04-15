@@ -43,8 +43,8 @@ class NoteMarg(Dataset):
            vocabInput+Output: vocab trained on train"""
         self.data = {}
         self.max_len = argdict['max_seq_length']
-        self.vocab = vocab
-        self.tokenizer=tokenizer
+        # self.vocab = vocab
+        # self.tokenizer=tokenizer
         # self.pad_idx = self.vocab['<pad>']
         self.max_len_label=0
         self.max_len_words=0

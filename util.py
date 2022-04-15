@@ -21,9 +21,9 @@ class OrderedCounter(Counter, OrderedDict):
 
 def initialize_datasets(argdict, generate_sentences=False):
     #Generate sentences: Prepare the dataset to generate sentences from the marginal notes
-    train=pd.read_csv("train.tsv", sep='\t', index_col=0)
+    train=pd.read_csv("data/French/train.tsv", sep='\t', index_col=0)
     train=train.dropna()
-    dev=pd.read_csv("dev.tsv", sep='\t', index_col=0)
+    dev=pd.read_csv("data/French/dev.tsv", sep='\t', index_col=0)
     allsentences=list(train['sentences'])
     allsentences.extend(list(train['label']))
     tokenizer=TweetTokenizer()

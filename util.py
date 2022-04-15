@@ -28,15 +28,15 @@ def initialize_datasets(argdict, generate_sentences=False):
     allsentences.extend(list(train['label']))
     tokenizer=TweetTokenizer()
     allsentences=[tokenizer.tokenize(sentence) for sentence in allsentences if sentence==sentence]
-    vocab = build_vocab_from_iterator(allsentences, min_freq=argdict['min_vocab_freq'], specials=["<unk>", "<pad>", "<bos>", "<eos>"], )
-    vocab.set_default_index(vocab["<unk>"])
+    # vocab = build_vocab_from_iterator(allsentences, min_freq=argdict['min_vocab_freq'], specials=["<unk>", "<pad>", "<bos>", "<eos>"], )
+    # vocab.set_default_index(vocab["<unk>"])
     train=NoteMarg(train, tokenizer, vocab, argdict, generate_sentences=generate_sentences)
     dev=NoteMarg(dev, tokenizer, vocab, argdict, dev=True, generate_sentences=generate_sentences)
     return train, dev
 
 class NoteMarg(Dataset):
 
-    def __init__(self, data, tokenizer, vocab, argdict, dev=False, generate_sentences=False):
+    def __init__(self, data, argdict, dev=False, generate_sentences=False):
         super().__init__()
         """data: tsv of the data
            tokenizer: tokenizer trained

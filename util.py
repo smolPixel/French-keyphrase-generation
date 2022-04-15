@@ -62,12 +62,6 @@ class NoteMarg(Dataset):
                 continue
             # if self.len_sentence<max([len(sent) for sent in sentences_sep]):
             #     self.len_sentence=max([len(sent) for sent in sentences_sep])
-            try:
-                tokenized_text = self.tokenizer.tokenize("<bos> " + row['sentences'] + " <eos>")
-            except:
-                print("bish")
-                print(row)
-                fds
             input = np.array(vocab(tokenized_text))
             self.index_unique_examples.append(index)
             self.map_unique_to_id[index]=[]

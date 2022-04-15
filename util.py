@@ -19,24 +19,24 @@ class OrderedCounter(Counter, OrderedDict):
         return self.__class__, (OrderedDict(self),)
 
 
-def initialize_datasets(argdict, generate_sentences=False):
+def initialize_datasets(argdict):
     #Generate sentences: Prepare the dataset to generate sentences from the marginal notes
     train=pd.read_csv("data/French/train.tsv", sep='\t', index_col=0)
     train=train.dropna()
     dev=pd.read_csv("data/French/dev.tsv", sep='\t', index_col=0)
     allsentences=list(train['sentences'])
     allsentences.extend(list(train['label']))
-    tokenizer=TweetTokenizer()
-    allsentences=[tokenizer.tokenize(sentence) for sentence in allsentences if sentence==sentence]
+    # tokenizer=TweetTokenizer()
+    # allsentences=[tokenizer.tokenize(sentence) for sentence in allsentences if sentence==sentence]
     # vocab = build_vocab_from_iterator(allsentences, min_freq=argdict['min_vocab_freq'], specials=["<unk>", "<pad>", "<bos>", "<eos>"], )
     # vocab.set_default_index(vocab["<unk>"])
-    train=NoteMarg(train, tokenizer, vocab, argdict, generate_sentences=generate_sentences)
-    dev=NoteMarg(dev, tokenizer, vocab, argdict, dev=True, generate_sentences=generate_sentences)
+    train=NoteMarg(train, argdict)
+    dev=NoteMarg(dev, argdict, dev=True)
     return train, dev
 
 class NoteMarg(Dataset):
 
-    def __init__(self, data, argdict, dev=False, generate_sentences=False):
+    def __init__(self, data, argdict, dev=False):
         super().__init__()
         """data: tsv of the data
            tokenizer: tokenizer trained

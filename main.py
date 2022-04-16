@@ -29,7 +29,7 @@ def run(argdict):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Using Barthez for keyphrase generation')
     #General arguments on training
-    parser.add_argument('--dataset', type=str, default='NoteMarginales', help="dataset you want to run the process on. Includes NoteMarginales, NoteMarginalesFr")
+    parser.add_argument('--dataset', type=str, default='Papyrus_f', help="dataset you want to run the process on. Includes Papyrus_f")
     parser.add_argument('--computer', type=str, default='labo', help="Whether you run at home or at iro. Automatically changes the base path")
     parser.add_argument('--algo', type=str, default='None', help='data augmentation algorithm to use, includes, EDA, ConstraintVAE, VAE, HierarchicalVAE')
     parser.add_argument('--random_seed', type=int, default=7, help='Random seed ')
@@ -40,6 +40,13 @@ if __name__ == '__main__':
 
     parser.add_argument('--short_eval', action='store_true', help='Cut evaluation time for debugging purposes')
 
+
+
+
     args = parser.parse_args()
     argsdict = args.__dict__
+
+    if argsdict['dataset'].lower()=='papyrus_f':
+        argsdict['language']=='fr'
+
     run(argsdict)

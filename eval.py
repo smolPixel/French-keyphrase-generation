@@ -831,3 +831,343 @@ def run_advanced_metrics(match_scores, pred_list, tgt_list):
     # print('α-nDCG@10=%f' % alpha_ndcg_10)
 
     return score_dict
+
+def compute_PRF1(match_scores, preds, tgts):
+    corrects, precisions, recalls, fscores = [], [], [], []
+
+    for pred_id, score in enumerate(match_scores):
+        _corr = corrects[-1] + score if len(corrects) > 0 else score
+        _p = _corr / (pred_id + 1) if pred_id + 1 > 0 else 0.0
+        _r = _corr / len(tgts) if len(tgts) > 0 else 0.0
+        _f1 = float(2 * (_p * _r)) / (_p + _r) if (_p + _r) > 0 else 0.0
+        corrects += [_corr]
+        precisions += [_p]
+        recalls += [_r]
+        fscores += [_f1]
+
+    return corrects, precisions, recalls, fscores
+
+
+def compute_MRR(match_scores):
+    # A modified mean reciprocal rank for KP eval
+    # MRR in IR uses the rank of first correct result. We use the rank of all correctly recalled results.
+    # But it doesn't consider the missing predictions, so it's a precision-like metric
+    mrr = 0.0
+    count = 0.0
+
+    for idx, match_score in enumerate(match_scores):
+        if match_score == 0.0:
+            continue
+        mrr += match_score / (idx + 1)
+        count += 1.0
+
+    if count > 0:
+        mrr /= count
+    else:
+        mrr = 0.0
+    return mrr
+
+
+def compute_AP(match_scores, precisions, tgts):
+    # Average Precision: Note that the average is over all relevant documents and the relevant documents not retrieved get a precision score of zero.
+    # Updated on March 4, 2020. Previously we average over the number of correct predictions.
+    ap = 0.0
+    tgt_count = len(tgts)
+
+    for idx, (match_score, precision) in enumerate(zip(match_scores, precisions)):
+        if match_score == 0.0:
+            continue
+        ap += precision
+
+    if tgt_count > 0:
+        ap /= tgt_count
+    else:
+        ap = 0.0
+    return ap
+
+
+def compute_PR_AUC(precisions, recalls):
+    # we need to pad two values as the begin/end point of the curve
+    p = [1.0] + precisions + [0.0]
+    r = [0.0] + recalls + [(recalls[-1] if len(recalls) > 0 else 0.0)]
+    pr_auc = metrics.auc(r, p)
+
+    return pr_auc
+
+
+def compute_SizeAdjustedDiscountedRecall(match_scores, tgts):
+    # add a log2(pos-num_tgt+2) discount to correct predictions out of the top-k list
+    cumulated_gain = 0.0
+    num_tgts = len(tgts)
+
+    for idx, match_score in enumerate(match_scores):
+        if match_score == 0.0:
+            continue
+        if idx + 1 > num_tgts:
+            gain = 1.0 / math.log(idx - num_tgts + 3, 2)
+        else:
+            gain = 1.0
+        # print('gain@%d=%f' % (idx + 1, gain))
+        cumulated_gain += gain
+
+    if num_tgts > 0:
+        ndr = cumulated_gain / num_tgts
+    else:
+        ndr = 0.0
+
+    return ndr
+
+
+def compute_NormalizedDiscountedCumulativeGain(match_scores, tgts):
+    # add a positional discount to all predictions
+    def _compute_dcg(match_scores):
+        cumulated_gain = 0.0
+        for idx, match_score in enumerate(match_scores):
+            gain = match_score / math.log(idx + 2, 2)
+            #             print('gain@%d=%f' % (idx + 1, gain))
+            cumulated_gain += gain
+        return cumulated_gain
+
+    num_tgts = len(tgts)
+    assert sum(match_scores) <= num_tgts, "Sum of relevance scores shouldn't exceed number of targets."
+    if num_tgts > 0:
+        dcg = _compute_dcg(match_scores)
+        #         print('DCG=%f' % dcg)
+        idcg = _compute_dcg([1.0] * num_tgts)
+        #         print('IDCG=%f' % idcg)
+        ndcg = dcg / idcg
+    else:
+        ndcg = 0.0
+
+    #     print('nDCG=%f' % ndcg)
+    return ndcg
+
+
+def compute_alphaNormalizedDiscountedCumulativeGain(preds, tgts, k=5, alpha=0.5):
+    # α-nDCG@k
+    # add a positional discount to all predictions, and penalize repetive predictions
+    def _compute_dcg(match_scores, novelty_scores, alpha):
+        cumulated_gain = 0.0
+        for idx, (match_score, novelty_score) in enumerate(zip(match_scores, novelty_scores)):
+            gain = match_score * ((1 - alpha) ** (novelty_score)) / math.log(idx + 2, 2)
+            # print('gain@%d=%f' % (idx + 1, gain))
+            cumulated_gain += gain
+        return cumulated_gain
+
+    def _compute_matching_novelty_scores(preds, tgts):
+        preds = [set(stem_word_list(seq)) for seq in preds]
+        tgts = [set(stem_word_list(seq)) for seq in tgts]
+        match_scores = [0.0] * len(preds)
+        novelty_discounts = [0.0] * len(preds)
+        rel_matrix = np.asarray([[0.0] * len(preds)] * len(tgts))
+
+        for pred_id, pred in enumerate(preds):
+            match_score = 0.0
+            novelty_discount = 0.0
+            for tgt_id, tgt in enumerate(tgts):
+                if tgt.issubset(pred) or pred.issubset(tgt):
+                    rel_matrix[tgt_id][pred_id] = 1.0
+                    match_score = 1.0
+                    if pred_id > 0 and sum(rel_matrix[tgt_id][: pred_id]) > novelty_discount:
+                        novelty_discount = sum(rel_matrix[tgt_id][: pred_id])
+            match_scores[pred_id] = match_score
+            novelty_discounts[pred_id] = novelty_discount
+
+        #         print('PRED[%d]=%s' % (len(preds), str(preds)))
+        #         print('GT[%d]=%s' % (len(tgts), str(tgts)))
+        #         print(match_scores)
+        #         print(novelty_discounts)
+        #         print(np.asarray(rel_matrix))
+        return match_scores, novelty_discounts
+
+    num_tgts = len(tgts)
+    k = min(k, num_tgts)
+    preds = preds[: k] if len(preds) > k else preds
+
+    if num_tgts > 0:
+        match_scores, novelty_discounts = _compute_matching_novelty_scores(preds, tgts)
+        dcg = _compute_dcg(match_scores, novelty_discounts, alpha=alpha)
+        idcg = _compute_dcg([1.0] * num_tgts, [0.0] * num_tgts, alpha=alpha)
+        ndcg = dcg / idcg
+    else:
+        ndcg, dcg, idcg = 0.0, 0.0, 0.0
+
+    # print('DCG=%f' % dcg)
+    # print('IDCG=%f' % idcg)
+    # print('nDCG=%f' % ndcg)
+    return ndcg
+
+
+def f1_score(prediction, ground_truth):
+    # both prediction and grount_truth should be list of words
+    common = Counter(prediction) & Counter(ground_truth)
+    num_same = sum(common.values())
+    if num_same == 0:
+        return 0
+    precision = 1.0 * num_same / len(prediction) if len(prediction) > 0 else 0.0
+    recall = 1.0 * num_same / len(ground_truth) if len(ground_truth) > 0 else 0.0
+    f1 = (2 * precision * recall) / (precision + recall) if len(precision + recall) > 0 else 0.0
+    return f1
+
+
+def macro_averaged_score(precisionlist, recalllist):
+    precision = np.average(precisionlist)
+    recall = np.average(recalllist)
+    f_score = 0
+    if(precision or recall):
+        f_score = round((2 * (precision * recall)) / (precision + recall), 2)
+    return precision, recall, f_score
+
+
+def self_redundancy(_input):
+    # _input shoule be list of list of words
+    if len(_input) == 0:
+        return None
+    _len = len(_input)
+    scores = np.ones((_len, _len), dtype="float32") * -1.0
+    for i in range(_len):
+        for j in range(_len):
+            if scores[i][j] != -1:
+                continue
+            elif i == j:
+                scores[i][j] = 0.0
+            else:
+                f1 = f1_score(_input[i], _input[j])
+                scores[i][j] = f1
+                scores[j][i] = f1
+    res = np.max(scores, 1)
+    res = np.mean(res)
+    return res
+
+
+def eval_and_print(src_text, tgt_kps, pred_kps, pred_scores, unk_token='<unk>', return_eval=False):
+    src_seq = [t for t in re.split(r'\W', src_text) if len(t) > 0]
+    tgt_seqs = [[t for t in re.split(r'\W', p) if len(t) > 0] for p in tgt_kps]
+    pred_seqs = [[t for t in re.split(r'\W', p) if len(t) > 0] for p in pred_kps]
+
+    topk_range = ['k', 10]
+    absent_topk_range = [50, 'M']
+    metric_names = ['f_score']
+
+    # 1st filtering, ignore phrases having <unk> and puncs
+    valid_pred_flags = validate_phrases(pred_seqs, unk_token)
+    # 2nd filtering: filter out phrases that don't appear in text, and keep unique ones after stemming
+    present_pred_flags, _, duplicate_flags = if_present_duplicate_phrases(src_seq, pred_seqs)
+    # treat duplicates as invalid
+    valid_pred_flags = valid_pred_flags * ~duplicate_flags if len(valid_pred_flags) > 0 else []
+    valid_and_present_flags = valid_pred_flags * present_pred_flags if len(valid_pred_flags) > 0 else []
+    valid_and_absent_flags = valid_pred_flags * ~present_pred_flags if len(valid_pred_flags) > 0 else []
+
+    # compute match scores (exact, partial and mixed), for exact it's a list otherwise matrix
+    match_scores_exact = compute_match_scores(tgt_seqs=tgt_seqs, pred_seqs=pred_seqs,
+                                              do_lower=True, do_stem=True, type='exact')
+    # split tgts by present/absent
+    present_tgt_flags, _, _ = if_present_duplicate_phrases(src_seq, tgt_seqs)
+    present_tgts = [tgt for tgt, present in zip(tgt_seqs, present_tgt_flags) if present]
+    absent_tgts = [tgt for tgt, present in zip(tgt_seqs, present_tgt_flags) if ~present]
+
+    # filter out results of invalid preds
+    valid_preds = [seq for seq, valid in zip(pred_seqs, valid_pred_flags) if valid]
+    valid_present_pred_flags = present_pred_flags[valid_pred_flags]
+
+    valid_match_scores_exact = match_scores_exact[valid_pred_flags]
+
+    # split preds by present/absent and exact/partial/mixed
+    valid_present_preds = [pred for pred, present in zip(valid_preds, valid_present_pred_flags) if present]
+    valid_absent_preds = [pred for pred, present in zip(valid_preds, valid_present_pred_flags) if ~present]
+    present_exact_match_scores = valid_match_scores_exact[valid_present_pred_flags]
+    absent_exact_match_scores = valid_match_scores_exact[~valid_present_pred_flags]
+
+    all_exact_results = run_classic_metrics(valid_match_scores_exact, valid_preds, tgt_seqs, metric_names, topk_range)
+    present_exact_results = run_classic_metrics(present_exact_match_scores, valid_present_preds, present_tgts, metric_names, topk_range)
+    absent_exact_results = run_classic_metrics(absent_exact_match_scores, valid_absent_preds, absent_tgts, metric_names, absent_topk_range)
+
+    eval_results_names = ['all_exact', 'present_exact', 'absent_exact']
+    eval_results_list = [all_exact_results, present_exact_results, absent_exact_results]
+
+    print_out = print_predeval_result(src_text,
+                                      tgt_seqs, present_tgt_flags,
+                                      pred_seqs, pred_scores, present_pred_flags, valid_pred_flags,
+                                      valid_and_present_flags, valid_and_absent_flags, match_scores_exact,
+                                      eval_results_names, eval_results_list)
+
+    if return_eval:
+        eval_results_dict = {
+            'all_exact': all_exact_results,
+            'present_exact': present_exact_results,
+            'absent_exact': absent_exact_results
+        }
+        return print_out, eval_results_dict
+    else:
+        return print_out
+
+
+def print_predeval_result(src_text,
+                          tgt_seqs, present_tgt_flags,
+                          pred_seqs, pred_scores, present_pred_flags, valid_pred_flags,
+                          valid_and_present_flags, valid_and_absent_flags, match_scores_exact,
+                          results_names, results_list):
+    print_out = '=' * 50
+    print_out += '\n[Source]: %s \n' % (src_text)
+
+    print_out += '[GROUND-TRUTH] #(all)=%d, #(present)=%d, #(absent)=%d\n' % \
+                 (len(present_tgt_flags), sum(present_tgt_flags), len(present_tgt_flags)-sum(present_tgt_flags))
+    print_out += '\n'.join(
+        ['\t\t[%s]' % ' '.join(phrase) if is_present else '\t\t%s' % ' '.join(phrase) for phrase, is_present in
+         zip(tgt_seqs, present_tgt_flags)])
+
+    print_out += '\n[PREDICTION] #(all)=%d, #(valid)=%d, #(present)=%d, ' \
+                 '#(valid&present)=%d, #(valid&absent)=%d\n' % (
+        len(pred_seqs), sum(valid_pred_flags), sum(present_pred_flags),
+        sum(valid_and_present_flags), sum(valid_and_absent_flags))
+    print_out += ''
+    preds_out = ''
+    for p_id, (word, match, is_valid, is_present) in enumerate(
+        zip(pred_seqs, match_scores_exact, valid_pred_flags, present_pred_flags)):
+        score = pred_scores[p_id] if pred_scores else "Score N/A"
+
+        preds_out += '%s\n' % (' '.join(word))
+        if is_present:
+            print_phrase = '[%s]' % ' '.join(word)
+        else:
+            print_phrase = ' '.join(word)
+
+        if match == 1.0:
+            correct_str = '[correct!]'
+        else:
+            correct_str = ''
+
+        pred_str = '\t\t%s\t%s \t%s\n' % ('[%.4f]' % (-score) if pred_scores else "Score N/A",
+                                                print_phrase, correct_str)
+        if not is_valid:
+            pred_str = '\t%s' % pred_str
+
+        print_out += pred_str
+
+    print_out += "\n ======================================================= \n"
+
+    print_out += '[GROUND-TRUTH] #(all)=%d, #(present)=%d, #(absent)=%d\n' % \
+                 (len(present_tgt_flags), sum(present_tgt_flags), len(present_tgt_flags)-sum(present_tgt_flags))
+    print_out += '\n[PREDICTION] #(all)=%d, #(valid)=%d, #(present)=%d, ' \
+                 '#(valid&present)=%d, #(valid&absent)=%d\n' % (
+        len(pred_seqs), sum(valid_pred_flags), sum(present_pred_flags),
+        sum(valid_and_present_flags), sum(valid_and_absent_flags))
+
+    for name, results in zip(results_names, results_list):
+        # print @5@10@O@M for present_exact, print @50@M for absent_exact
+        if name in ['all_exact', 'present_exact', 'absent_exact']:
+            if name.startswith('all') or name.startswith('present'):
+                topk_list = ['k', '10']
+            else:
+                topk_list = ['50', 'M']
+
+            for topk in topk_list:
+                print_out += "\n --- batch {} F1 @{}: \t".format(name, topk) \
+                             + "{:.4f}".format(results['f_score@{}'.format(topk)])
+        else:
+            # ignore partial for now
+            continue
+
+    print_out += "\n ======================================================="
+
+    return print_out

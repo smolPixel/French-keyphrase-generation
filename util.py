@@ -62,7 +62,6 @@ class NoteMarg(Dataset):
                 continue
             # if self.len_sentence<max([len(sent) for sent in sentences_sep]):
             #     self.len_sentence=max([len(sent) for sent in sentences_sep])
-            input = np.array(vocab(tokenized_text))
             self.index_unique_examples.append(index)
             self.map_unique_to_id[index]=[]
 
@@ -74,8 +73,8 @@ class NoteMarg(Dataset):
 
             # print(labs)
             # print(row['sentences']
-            sents=sent_tokenize(row['sentences'])
-            sents_trunc=[""]
+            # sents=sent_tokenize(row['sentences'])
+            # sents_trunc=[""]
             for ss in sents:
                 if len(ss[-1].split(" "))+len(ss.split(" "))>argdict['max_seq_length']:
                     sents_trunc.append(ss)

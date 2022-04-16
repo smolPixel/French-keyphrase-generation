@@ -18,8 +18,6 @@ def set_seed(seed=42):
 
 def run(argdict):
     datasets = initialize_datasets(argdict)
-    print(datasets)
-    dsa
     model=BARTModel(argdict, datasets)
     model.train_model()
     model.generate_from_dataset(split='train')

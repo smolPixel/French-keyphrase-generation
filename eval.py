@@ -206,8 +206,8 @@ def evaluate(src_list, tgt_list, pred_list,
 	# for k, v in score_dict.items():
 	#     print('%s, num=%d, mean=%f' % (k, len(v), np.average(v)))
 
-	if report_file:
-		report_file.close()
+	# if report_file:
+	# 	report_file.close()
 
 	return gathered_score_dict
 

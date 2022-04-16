@@ -65,16 +65,11 @@ class NoteMarg(Dataset):
             self.index_unique_examples.append(index)
             self.map_unique_to_id[index]=[]
 
-            if argdict['one_kp']:
-                labs=[row['label']]
-            else:
-                labs=row['label'].split(', ')
-            # gptvae_sentence = ""
-
-            # print(labs)
-            # print(row['sentences']
-            # sents=sent_tokenize(row['sentences'])
-            # sents_trunc=[""]
+            #Split by max_seq_length
+            tokenizer = TweetTokenizer()
+            print(tokenizer.tokenize(row('sentences')))
+            fds
+            sents=row['sentences'].lower()
             for ss in sents:
                 if len(ss[-1].split(" "))+len(ss.split(" "))>argdict['max_seq_length']:
                     sents_trunc.append(ss)

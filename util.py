@@ -66,8 +66,7 @@ class NoteMarg(Dataset):
             self.map_unique_to_id[index]=[]
 
             #Split by max_seq_length
-            tokenizer = TweetTokenizer()
-            print(tokenizer.tokenize(row['sentences']))
+            print(sent_tokenize(row['sentences']))
             fds
             sents=row['sentences'].lower()
             for ss in sents:

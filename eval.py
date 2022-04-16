@@ -15,7 +15,7 @@ import pandas as pd
 # from Model.OpenNMTkpgrelease.onmt.utils.logging import init_logger
 
 import spacy
-spacy_nlp = spacy.load('en_core_web_sm')
+# spacy_nlp = spacy.load('en_core_web_sm')
 
 def evaluate(src_list, tgt_list, pred_list,
 			 unk_token,

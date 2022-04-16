@@ -34,8 +34,8 @@ if __name__ == '__main__':
     parser.add_argument('--algo', type=str, default='None', help='data augmentation algorithm to use, includes, EDA, ConstraintVAE, VAE, HierarchicalVAE')
     parser.add_argument('--random_seed', type=int, default=7, help='Random seed ')
     parser.add_argument('--num_epochs', type=int, default=10, help='Number of epochs')
-    parser.add_argument('--batch_size', type=int, default=64, help='Batch Size')
-    parser.add_argument('--max_seq_length', type=int, default=64, help='max length, 0 if no max length')
+    parser.add_argument('--batch_size', type=int, default=2, help='Batch Size')
+    parser.add_argument('--max_seq_length', type=int, default=1024, help='max length, 0 if no max length')
 
 
     parser.add_argument('--short_eval', action='store_true', help='Cut evaluation time for debugging purposes')

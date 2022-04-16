@@ -23,7 +23,7 @@ def initialize_datasets(argdict):
     #Generate sentences: Prepare the dataset to generate sentences from the marginal notes
     train=pd.read_csv(f"data/{argdict['dataset']}/train.tsv", sep='\t', index_col=0)
     train=train.dropna()
-    dev=pd.read_csv(f"data/{argdict['dataset']}/French/dev.tsv", sep='\t', index_col=0)
+    dev=pd.read_csv(f"data/{argdict['dataset']}/dev.tsv", sep='\t', index_col=0)
     allsentences=list(train['sentences'])
     allsentences.extend(list(train['label']))
     # tokenizer=TweetTokenizer()

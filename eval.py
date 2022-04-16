@@ -8,6 +8,7 @@ import scipy
 import tqdm
 import numpy as np
 import pandas as pd
+from sklearn import metrics
 
 # from Model.OpenNMTkpgrelease.onmt.inputters.keyphrase_dataset import infer_dataset_type, KP_DATASET_FIELDS, parse_src_fn
 # from Model.OpenNMTkpgrelease.onmt.keyphrase.eval import compute_match_scores, run_classic_metrics, run_advanced_metrics

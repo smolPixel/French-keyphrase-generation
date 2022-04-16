@@ -4,7 +4,7 @@ import json
 import os
 import re
 import time
-
+import scipy
 import tqdm
 import numpy as np
 import pandas as pd

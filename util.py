@@ -66,33 +66,15 @@ class NoteMarg(Dataset):
             self.map_unique_to_id[index]=[]
 
             #Split by max_seq_length
-            print(sent_tokenize(row['sentences']))
-            fds
-            sents=row['sentences'].lower()
+            sents=sent_tokenize(row['sentences'])
+            sents_trunc=[""]
             for ss in sents:
                 if len(ss[-1].split(" "))+len(ss.split(" "))>argdict['max_seq_length']:
                     sents_trunc.append(ss)
                 else:
                     sents_trunc[-1]+=ss+" "
             for sent in sents_trunc:
-                sentence_max_len = sent
-                if generate_sentences:
-                    sent_gpt = "<bos> " + row['label'].lower() + " <sep> " + row['sentences'].lower() + " <eos>"
-                    # gptvae_sentence="<bos> "+row['sentences'].lower() +" <sep> "+row['label'].lower()+" <eos>"
-                    All_Labels_Tokenized = np.array(
-                        vocab(self.tokenizer.tokenize("<bos> " + row['label'] + " <eos>")))
-                    # print(All_Labels_Tokenized)
-                    if len(All_Labels_Tokenized) > self.max_len_labels:
-                        self.max_len_labels = len(All_Labels_Tokenized)
-                else:
-                    All_Labels_Tokenized = [0]
-                    sent_gpt = "test"
-                labs = row['label']
-                gpt_sentence = "<bos> " + sentence_max_len.lower() + " <sep> " + labs.lower() + " <eos>"
-                tokenized_labels = self.tokenizer.tokenize("<bos> " + labs + " <eos>")
-                self.data[index] = {'input': input, 'label': tokenized_labels,
-                                    'NoteMarginale': labs,
-                                    'full_labels': row['label'], 'input_sentence': row['sentences']}
+                self.data[index] = {'full_labels': row['label'], 'input_sentence': sent}
                 self.map_unique_to_id[self.index_unique_examples[-1]].append(index)
                 index+=1
 

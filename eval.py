@@ -622,3 +622,212 @@ def init_opt():
 	opt = parser.parse_args()
 
 	return opt
+
+
+def compute_match_scores(tgt_seqs, pred_seqs, do_lower=True, do_stem=True, type='exact'):
+    '''
+    If type='exact', returns a list of booleans indicating if a pred has a matching tgt
+    If type='partial', returns a 2D matrix, each value v_ij is a float in range of [0,1]
+        indicating the (jaccard) similarity between pred_i and tgt_j
+    :param tgt_seqs:
+    :param pred_seqs:
+    :param do_stem:
+    :param topn:
+    :param type: 'exact' or 'partial'
+    :return:
+    '''
+    # do processing to baseline predictions
+    if type == "exact":
+        match_score = np.zeros(shape=(len(pred_seqs)), dtype='float32')
+    else:
+        match_score = np.zeros(shape=(len(pred_seqs), len(tgt_seqs)), dtype='float32')
+
+    target_number = len(tgt_seqs)
+    predicted_number = len(pred_seqs)
+
+    metric_dict = {'target_number': target_number, 'prediction_number': predicted_number, 'correct_number': match_score}
+
+    # convert target index into string
+    if do_lower:
+        tgt_seqs = [[w.lower() for w in seq] for seq in tgt_seqs]
+        pred_seqs = [[w.lower() for w in seq] for seq in pred_seqs]
+    if do_stem:
+        tgt_seqs = [stem_word_list(seq) for seq in tgt_seqs]
+        pred_seqs = [stem_word_list(seq) for seq in pred_seqs]
+
+    for pred_id, pred_seq in enumerate(pred_seqs):
+        if type == 'exact':
+            match_score[pred_id] = 0
+            for true_id, true_seq in enumerate(tgt_seqs):
+                match = True
+                if len(pred_seq) != len(true_seq):
+                    continue
+                for pred_w, true_w in zip(pred_seq, true_seq):
+                    # if one two words are not same, match fails
+                    if pred_w != true_w:
+                        match = False
+                        break
+                # if every word in pred_seq matches one true_seq exactly, match succeeds
+                if match:
+                    match_score[pred_id] = 1
+                    break
+        elif type == 'ngram':
+            # use jaccard coefficient as the similarity of partial match (1+2 grams)
+            pred_seq_set = set(pred_seq)
+            pred_seq_set.update(set([pred_seq[i]+'_'+pred_seq[i+1] for i in range(len(pred_seq)-1)]))
+            for true_id, true_seq in enumerate(tgt_seqs):
+                true_seq_set = set(true_seq)
+                true_seq_set.update(set([true_seq[i]+'_'+true_seq[i+1] for i in range(len(true_seq)-1)]))
+                if float(len(set.union(*[set(true_seq_set), set(pred_seq_set)]))) > 0:
+                    similarity = len(set.intersection(*[set(true_seq_set), set(pred_seq_set)])) \
+                              / float(len(set.union(*[set(true_seq_set), set(pred_seq_set)])))
+                else:
+                    similarity = 0.0
+                match_score[pred_id, true_id] = similarity
+        elif type == 'mixed':
+            # similar to jaccard, but addtional to 1+2 grams we also put in the full string, serves like an exact+partial surrogate
+            pred_seq_set = set(pred_seq)
+            pred_seq_set.update(set([pred_seq[i]+'_'+pred_seq[i+1] for i in range(len(pred_seq)-1)]))
+            pred_seq_set.update(set(['_'.join(pred_seq)]))
+            for true_id, true_seq in enumerate(tgt_seqs):
+                true_seq_set = set(true_seq)
+                true_seq_set.update(set([true_seq[i]+'_'+true_seq[i+1] for i in range(len(true_seq)-1)]))
+                true_seq_set.update(set(['_'.join(true_seq)]))
+                if float(len(set.union(*[set(true_seq_set), set(pred_seq_set)]))) > 0:
+                    similarity = len(set.intersection(*[set(true_seq_set), set(pred_seq_set)])) \
+                              / float(len(set.union(*[set(true_seq_set), set(pred_seq_set)])))
+                else:
+                    similarity = 0.0
+                match_score[pred_id, true_id] = similarity
+
+        elif type == 'bleu':
+            # account for the match of subsequences, like n-gram-based (BLEU) or LCS-based
+            # n-grams precision doesn't work that well
+            for true_id, true_seq in enumerate(tgt_seqs):
+                match_score[pred_id, true_id] = bleu(pred_seq, [true_seq], [0.7, 0.3, 0.0])
+
+    return match_score
+
+
+def run_classic_metrics(match_list, pred_list, tgt_list, score_names, topk_range, type='exact'):
+    """
+    Return a dict of scores containing len(score_names) * len(topk_range) items
+    score_names and topk_range actually only define the names of each score in score_dict.
+    :param match_list:
+    :param pred_list:
+    :param tgt_list:
+    :param score_names:
+    :param topk_range:
+    :param type: exact or partial
+    :return:
+    """
+    score_dict = {}
+    if len(tgt_list) == 0:
+        for topk in topk_range:
+            for score_name in score_names:
+                score_dict['{}@{}'.format(score_name, topk)] = 0.0
+        return score_dict
+
+    assert len(match_list) == len(pred_list)
+    for topk in topk_range:
+        if topk == 'k':
+            cutoff = len(tgt_list)
+        elif topk == 'M':
+            cutoff = len(pred_list)
+        else:
+            cutoff = topk
+
+        if len(pred_list) > cutoff:
+            pred_list_k = np.asarray(pred_list[:cutoff])
+            match_list_k = match_list[:cutoff]
+        else:
+            pred_list_k = np.asarray(pred_list)
+            match_list_k = match_list
+
+        if type == 'partial':
+            cost_matrix = np.asarray(match_list_k, dtype=float)
+            if len(match_list_k) > 0:
+                # convert to a negative matrix because linear_sum_assignment() looks for minimal assignment
+                row_ind, col_ind = scipy.optimize.linear_sum_assignment(-cost_matrix)
+                match_list_k = cost_matrix[row_ind, col_ind]
+                overall_cost = cost_matrix[row_ind, col_ind].sum()
+            '''
+            print("\n%d" % topk)
+            print(row_ind, col_ind)
+            print("Pred" + str(np.asarray(pred_list)[row_ind].tolist()))
+            print("Target" + str(tgt_list))
+            print("Maximum Score: %f" % overall_cost)
+
+            print("Pred list")
+            for p_id, (pred, cost) in enumerate(zip(pred_list, cost_matrix)):
+                print("\t%d \t %s - %s" % (p_id, pred, str(cost)))
+            '''
+
+        # Micro-Averaged Method
+        correct_num = int(sum(match_list_k))
+        # Precision, Recall and F-score, with flexible cutoff (if number of pred is smaller)
+        micro_p = float(sum(match_list_k)) / float(len(pred_list_k)) if len(pred_list_k) > 0 else 0.0
+        micro_r = float(sum(match_list_k)) / float(len(tgt_list)) if len(tgt_list) > 0 else 0.0
+
+        if micro_p + micro_r > 0:
+            micro_f1 = float(2 * (micro_p * micro_r)) / (micro_p + micro_r)
+        else:
+            micro_f1 = 0.0
+        # F-score, with a hard cutoff on precision, offset the favor towards fewer preds
+        micro_p_hard = float(sum(match_list_k)) / cutoff if len(pred_list_k) > 0 else 0.0
+        if micro_p_hard + micro_r > 0:
+            micro_f1_hard = float(2 * (micro_p_hard * micro_r)) / (micro_p_hard + micro_r)
+        else:
+            micro_f1_hard = 0.0
+
+        for score_name, v in zip(['correct', 'precision', 'recall', 'f_score', 'precision_hard', 'f_score_hard'], [correct_num, micro_p, micro_r, micro_f1, micro_p_hard, micro_f1_hard]):
+            score_dict['{}@{}'.format(score_name, topk)] = v
+
+    # return only the specified scores
+    return_scores = {}
+    for topk in topk_range:
+        for score_name in score_names:
+            return_scores['{}@{}'.format(score_name, topk)] = score_dict['{}@{}'.format(score_name, topk)]
+
+    return return_scores
+
+
+def run_advanced_metrics(match_scores, pred_list, tgt_list):
+    score_dict = {}
+    corrects, precisions, recalls, fscores = compute_PRF1(match_scores, pred_list, tgt_list)
+    auc = compute_PR_AUC(precisions, recalls)
+    ap = compute_AP(match_scores, precisions, tgt_list)
+    mrr = compute_MRR(match_scores)
+    sadr = compute_SizeAdjustedDiscountedRecall(match_scores, tgt_list)
+    ndcg = compute_NormalizedDiscountedCumulativeGain(match_scores, tgt_list)
+    alpha_ndcg_5 = compute_alphaNormalizedDiscountedCumulativeGain(pred_list, tgt_list, k=5, alpha=0.5)
+    alpha_ndcg_10 = compute_alphaNormalizedDiscountedCumulativeGain(pred_list, tgt_list, k=10, alpha=0.5)
+
+    score_dict['auc'] = auc
+    score_dict['ap'] = ap
+    score_dict['mrr'] = mrr
+    score_dict['sadr'] = sadr
+    score_dict['ndcg'] = ndcg
+    score_dict['alpha_ndcg@5'] = alpha_ndcg_5
+    score_dict['alpha_ndcg@10'] = alpha_ndcg_10
+
+    # print('\nMatch[#=%d]=%s' % (len(match_scores), str(match_scores)))
+    # print('Accum Corrects=' + str(corrects))
+    # print('P@x=' + str(precisions))
+    # print('R@x=' + str(recalls))
+    # print('F-score@x=' + str(fscores))
+    #
+    # print('F-score@5=%f' % fscores[4])
+    # print('F-score@10=%f' % (fscores[9] if len(fscores) > 9 else -9999))
+    # print('F-score@O=%f' % fscores[len(tgt_list) - 1])
+    # print('F-score@M=%f' % fscores[len(match_scores) - 1])
+    #
+    # print('AUC=%f' % auc)
+    # print('AP=%f' % ap)
+    # print('MRR=%f' % mrr)
+    # print('SADR=%f' % sadr)
+    # print('nDCG=%f' % ndcg)
+    # print('α-nDCG@5=%f' % alpha_ndcg_5)
+    # print('α-nDCG@10=%f' % alpha_ndcg_10)
+
+    return score_dict

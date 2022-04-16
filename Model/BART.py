@@ -58,7 +58,7 @@ class BARTModel(pl.LightningModule):
 
 		# config=BartConfig.from_pretrained(gptPath)
 		# config.output_past = True
-		self.field_input='input_sentence_classifier'
+		self.field_input='input_sentence'
 		# special_tokens = {'pad_token': '<pad>', 'sep_token': '<sep>', 'eos_token': '<eos>', 'bos_token': '<bos>'}
 		# num_add_toks = self.tokenizer.add_special_tokens(special_tokens)
 		self.criterion = nn.CrossEntropyLoss(ignore_index=self.tokenizer.pad_token_id)

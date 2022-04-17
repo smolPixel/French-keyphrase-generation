@@ -55,6 +55,12 @@ class BARTModel(pl.LightningModule):
 			gptPath='moussaKam/mbarthez'
 			self.tokenizer = AutoTokenizer.from_pretrained(gptPath)
 			model = AutoModelForSeq2SeqLM.from_pretrained(gptPath, cache_dir='/Tmp')
+		elif argdict['language']=='mu':
+			gptPath = 'facebook/mbart-large-50'
+			self.tokenizer = AutoTokenizer.from_pretrained(gptPath)
+			model = AutoModelForSeq2SeqLM.from_pretrained(gptPath, cache_dir='/Tmp')
+		else:
+			raise ValueError("Unrecognized language")
 
 		# config=BartConfig.from_pretrained(gptPath)
 		# config.output_past = True

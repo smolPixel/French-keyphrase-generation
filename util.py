@@ -114,10 +114,14 @@ class NoteMarg(Dataset):
         return len(self.data)
 
     def __getitem__(self, item):
-        return {
-            'input_sentence':self.data[item]['input_sentence'],
-            'full_labels':self.data[item]['full_labels'],
-    }
+        try:
+            return {
+                'input_sentence':self.data[item]['input_sentence'],
+                'full_labels':self.data[item]['full_labels'],
+            }
+        except:
+            print(self.data)
+            fd
 
     def iterexamples(self):
         for i, ex in self.data.items():

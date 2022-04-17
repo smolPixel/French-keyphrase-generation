@@ -115,6 +115,7 @@ class NoteMarg(Dataset):
 
     def __getitem__(self, item):
         print(item)
+        print(self.data[item])
         return {
             'input_sentence':self.data[item]['input_sentence'],
             'full_labels':self.data[item]['full_labels'],

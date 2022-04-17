@@ -24,6 +24,7 @@ def initialize_datasets(argdict):
     train=pd.read_csv(f"data/{argdict['dataset']}/train.tsv", sep='\t', index_col=0)
     train=train.dropna()
     dev=pd.read_csv(f"data/{argdict['dataset']}/dev.tsv", sep='\t', index_col=0)
+    dev=dev.dropna()
     allsentences=list(train['sentences'])
     allsentences.extend(list(train['label']))
     # tokenizer=TweetTokenizer()

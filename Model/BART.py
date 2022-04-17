@@ -231,7 +231,7 @@ class BARTModel(pl.LightningModule):
 		)
 		self.trainer.fit(self, train_loader, dev_loader)
 
-		print("bitch")
+		# print("bitch")
 		print(self.fuck_torch_lightning)
 		# self.model.save_pretrained('Models/pretrained_bart')
 		# for ep in range(self.argdict['num_epochs']):
@@ -271,12 +271,8 @@ class BARTModel(pl.LightningModule):
 				# print(self.tokenizer.batch_decode((input_ids)))
 				# fds
 				# input_ids = torch.Tensor(src['input_ids']).long().to('cuda').unsqueeze(0)
-				if self.argdict['strategy']=="one2many":
-					gend = self.model.generate(input_ids, num_beams=3, num_return_sequences=1,
-										  max_length=50)
-				elif self.argdict['strategy']=='one2one':
-					gend = self.model.generate(input_ids, num_beams=self.beam_search_k, num_return_sequences=self.beam_search_k,
-										  max_length=50)
+				gend = self.model.generate(input_ids, num_beams=3, num_return_sequences=1,
+									  max_length=50)
 				# print(tokenizer.batch_decode(gend))
 				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
 				hypos.append(gend)

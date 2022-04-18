@@ -42,7 +42,8 @@ def initialize_datasets(argdict):
     # vocab.set_default_index(vocab["<unk>"])
     train=NoteMarg(train, argdict)
     dev=NoteMarg(dev, argdict, dev=True)
-    return train, dev
+    test=NoteMarg(test, argdict, dev=True)
+    return train, dev, test
 
 class NoteMarg(Dataset):
 

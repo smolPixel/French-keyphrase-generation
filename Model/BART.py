@@ -91,10 +91,10 @@ class BARTModel(pl.LightningModule):
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
-		print(score)
-		f110 = np.average(score['all_exact_f_score@10'])
-		f15 = np.average(score['all_exact_f_score@5'])
-		r10 = np.average(score['all_exact_recall@10'])
+		# print(score)
+		f110 = np.average(score['present_exact_f_score@10'])
+		f15 = np.average(score['present_exact_f_score@5'])
+		r10 = np.average(score['absent_exact_recall@10'])
 		# prec = np.average(score['all_exact_precision@10'])
 		# rec = np.average(score['all_exact_recall@10'])
 
@@ -118,9 +118,9 @@ class BARTModel(pl.LightningModule):
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
-		f110 = np.average(score['all_exact_f_score@10'])
-		f15 = np.average(score['all_exact_f_score@5'])
-		r10 = np.average(score['all_exact_recall@10'])
+		f110 = np.average(score['present_exact_f_score@10'])
+		f15 = np.average(score['present_exact_f_score@5'])
+		r10 = np.average(score['absent_exact_recall@10'])
 
 		self.log("Loss_val", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		self.log("F1_val_10", f110, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])

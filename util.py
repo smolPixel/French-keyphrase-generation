@@ -24,7 +24,7 @@ def initialize_datasets(argdict):
     train=pd.read_csv(f"data/{argdict['dataset']}/train.tsv", sep='\t', index_col=0)
     llPre=len(train)
     train=train.dropna()
-    train=train[:1000]
+    # train=train[:1000]
     print(f"Dropped {len(train)-llPre} entries from train")
     dev=pd.read_csv(f"data/{argdict['dataset']}/dev.tsv", sep='\t', index_col=0)
     llPre=len(dev)

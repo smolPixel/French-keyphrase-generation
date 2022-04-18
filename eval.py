@@ -74,7 +74,7 @@ def evaluate(src_list, tgt_list, pred_list,
 		# 1st filtering, ignore phrases having <unk> and puncs
 		valid_pred_flags = validate_phrases(pred_seqs, unk_token)
 		# 2nd filtering: filter out phrases that don't appear in text, and keep unique ones after stemming
-		present_pred_flags, _, duplicate_flags = if_present_duplicate_phrases(src_seq, pred_seqs, stemming=True, lowercase=True)
+		present_pred_flags, _, duplicate_flags = if_present_duplicate_phrases(src_seq, pred_seqs, stemming=False, lowercase=True)
 		# treat duplicates as invalid
 		valid_pred_flags = valid_pred_flags * ~duplicate_flags if len(valid_pred_flags) > 0 else []
 		valid_and_present_flags = valid_pred_flags * present_pred_flags if len(valid_pred_flags) > 0 else []
@@ -87,7 +87,7 @@ def evaluate(src_list, tgt_list, pred_list,
 		# match_scores_mixed = compute_match_scores(tgt_seqs=tgt_seqs, pred_seqs=pred_seqs, type='mixed')
 
 		# split tgts by present/absent
-		present_tgt_flags, _, _ = if_present_duplicate_phrases(src_seq, tgt_seqs, stemming=True, lowercase=True)
+		present_tgt_flags, _, _ = if_present_duplicate_phrases(src_seq, tgt_seqs, stemming=False, lowercase=True)
 		present_tgts = [tgt for tgt, present in zip(tgt_seqs, present_tgt_flags) if present]
 		absent_tgts = [tgt for tgt, present in zip(tgt_seqs, present_tgt_flags) if ~present]
 

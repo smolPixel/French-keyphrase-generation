@@ -91,6 +91,7 @@ class BARTModel(pl.LightningModule):
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
+		print(score)
 		f110 = np.average(score['all_exact_f_score@10'])
 		f15 = np.average(score['all_exact_f_score@5'])
 		r10 = np.average(score['all_exact_recall@10'])

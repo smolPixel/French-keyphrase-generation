@@ -14,14 +14,14 @@ import math
 # from Model.OpenNMTkpgrelease.onmt.keyphrase.eval import compute_match_scores, run_classic_metrics, run_advanced_metrics
 # from Model.OpenNMTkpgrelease.onmt.keyphrase.utils import if_present_duplicate_phrases, validate_phrases, print_predeval_result, gather_scores
 # from Model.OpenNMTkpgrelease.onmt.utils.logging import init_logger
-from nltk.stem.porter import *
-stemmer = PorterStemmer()
+# from nltk.stem.porter import *
+# stemmer = PorterStemmer()
 
 # matplotlib.use('agg')
 # import matplotlib.pyplot as plt
 
-def stem_word_list(word_list):
-    return [stemmer.stem(w.strip()) for w in word_list]
+# def stem_word_list(word_list):
+#     return [stemmer.stem(w.strip()) for w in word_list]
 import spacy
 # spacy_nlp = spacy.load('en_core_web_sm')
 

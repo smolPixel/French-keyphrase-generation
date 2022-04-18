@@ -128,9 +128,9 @@ class BARTModel(pl.LightningModule):
 		self.log("r_val_5", f15, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		return loss, f110, f15, r10
 
-	def test_step_end(self, output_results):
+	def test_epoch_end(self, output_results):
 		print(output_results)
-		return output_results
+		return {'test':7}
 
 	def configure_optimizers(self):
 		optimizer = AdamW(self.model.parameters(), lr=5e-5)

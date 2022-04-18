@@ -20,8 +20,8 @@ def run(argdict):
     datasets = initialize_datasets(argdict)
     model=BARTModel(argdict, datasets)
     model.train_model()
-    model.generate_from_dataset(split='train')
-    model.generate_from_dataset(split='dev')
+    # model.generate_from_dataset(split='train')
+    # model.generate_from_dataset(split='dev')
 
 
 

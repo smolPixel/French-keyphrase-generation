@@ -19,6 +19,7 @@ from tqdm import tqdm
 # from transformers.modeling_bart import shift_tokens_right
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks import Callback
+from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 
 class BARTModel(pl.LightningModule):
 	def __init__(self, argdict, datasets):
@@ -70,7 +71,6 @@ class BARTModel(pl.LightningModule):
 		return outputs
 
 	def training_step(self, batch, batch_idx):
-		return 0
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True, max_length=self.argdict['max_seq_length'])
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
@@ -79,7 +79,6 @@ class BARTModel(pl.LightningModule):
 		return loss
 
 	def validation_step(self, batch, batch_idx):
-		return 0
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
@@ -198,6 +197,7 @@ class BARTModel(pl.LightningModule):
 
 	def train_model(self):
 		# cb=MetricTracker()
+		early_stopping_callback=EarlyStopping(monitor='F1_val_10', patience=1, mode='max')
 		self.trainer=pl.Trainer(gpus=1, max_epochs=self.argdict['num_epochs'], precision=16, accumulate_grad_batches=64, enable_checkpointing=False)
 		# trainer=pl.Trainer(max_epochs=self.argdict['num_epochs'])
 		train_loader=DataLoader(

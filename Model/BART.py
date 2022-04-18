@@ -225,7 +225,6 @@ class BARTModel(pl.LightningModule):
 
 		self.trainer.fit(self, train_loader, dev_loader)
 		final=self.trainer.test(self, test_loader)
-		# print("bitch")
 		print(self.loggerg)
 		print(final)
 		# self.model.save_pretrained('Models/pretrained_bart')

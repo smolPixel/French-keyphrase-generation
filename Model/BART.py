@@ -130,9 +130,9 @@ class BARTModel(pl.LightningModule):
 
 	def test_epoch_end(self, output_results):
 		print(output_results)
-		print(f"f1@5 Test : {np.mean([f15 for f15, f110, r10 in output_results])}")
-		print(f"f1@10 Test : {np.mean([f110 for f15, f110, r10 in output_results])}")
-		print(f"fr@10 Test : {np.mean([r10 for f15, f110, r10 in output_results])}")
+		print(f"f1@5 Test : {np.mean([f15 for loss, f15, f110, r10 in output_results])}")
+		print(f"f1@10 Test : {np.mean([f110 for loss, f15, f110, r10 in output_results])}")
+		print(f"fr@10 Test : {np.mean([r10 for loss, f15, f110, r10 in output_results])}")
 		return {'test':7}
 
 	def configure_optimizers(self):

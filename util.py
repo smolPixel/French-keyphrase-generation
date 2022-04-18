@@ -29,6 +29,11 @@ def initialize_datasets(argdict):
     llPre=len(dev)
     dev=dev.dropna()
     print(f"Dropped {len(dev)-llPre} entries from dev")
+    test = pd.read_csv(f"data/{argdict['dataset']}/test.tsv", sep='\t', index_col=0)
+    llPre = len(test)
+    test = test.dropna()
+    print(f"Dropped {len(test) - llPre} entries from dev")
+
     allsentences=list(train['sentences'])
     allsentences.extend(list(train['label']))
     # tokenizer=TweetTokenizer()

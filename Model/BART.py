@@ -25,7 +25,7 @@ class BARTModel(pl.LightningModule):
 		super().__init__()
 
 		self.argdict=argdict
-		self.training_set, self.dev_set=datasets
+		self.training_set, self.dev_set, self.test_set=datasets
 		print(f"Training with {len(self.training_set)} exemples, and {len(self.training_set.index_unique_examples)} unique examples")
 		print(f"Testing with {len(self.dev_set)} examples, and {len(self.dev_set.index_unique_examples)} unique examples")
 

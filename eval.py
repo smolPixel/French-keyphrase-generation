@@ -801,16 +801,16 @@ def run_advanced_metrics(match_scores, pred_list, tgt_list):
     mrr = compute_MRR(match_scores)
     sadr = compute_SizeAdjustedDiscountedRecall(match_scores, tgt_list)
     ndcg = compute_NormalizedDiscountedCumulativeGain(match_scores, tgt_list)
-    alpha_ndcg_5 = compute_alphaNormalizedDiscountedCumulativeGain(pred_list, tgt_list, k=5, alpha=0.5)
-    alpha_ndcg_10 = compute_alphaNormalizedDiscountedCumulativeGain(pred_list, tgt_list, k=10, alpha=0.5)
+    # alpha_ndcg_5 = compute_alphaNormalizedDiscountedCumulativeGain(pred_list, tgt_list, k=5, alpha=0.5)
+    # alpha_ndcg_10 = compute_alphaNormalizedDiscountedCumulativeGain(pred_list, tgt_list, k=10, alpha=0.5)
 
     score_dict['auc'] = auc
     score_dict['ap'] = ap
     score_dict['mrr'] = mrr
     score_dict['sadr'] = sadr
     score_dict['ndcg'] = ndcg
-    score_dict['alpha_ndcg@5'] = alpha_ndcg_5
-    score_dict['alpha_ndcg@10'] = alpha_ndcg_10
+    # score_dict['alpha_ndcg@5'] = alpha_ndcg_5
+    # score_dict['alpha_ndcg@10'] = alpha_ndcg_10
 
     # print('\nMatch[#=%d]=%s' % (len(match_scores), str(match_scores)))
     # print('Accum Corrects=' + str(corrects))
@@ -944,59 +944,59 @@ def compute_NormalizedDiscountedCumulativeGain(match_scores, tgts):
     return ndcg
 
 
-def compute_alphaNormalizedDiscountedCumulativeGain(preds, tgts, k=5, alpha=0.5):
-    # α-nDCG@k
-    # add a positional discount to all predictions, and penalize repetive predictions
-    def _compute_dcg(match_scores, novelty_scores, alpha):
-        cumulated_gain = 0.0
-        for idx, (match_score, novelty_score) in enumerate(zip(match_scores, novelty_scores)):
-            gain = match_score * ((1 - alpha) ** (novelty_score)) / math.log(idx + 2, 2)
-            # print('gain@%d=%f' % (idx + 1, gain))
-            cumulated_gain += gain
-        return cumulated_gain
-
-    def _compute_matching_novelty_scores(preds, tgts):
-        preds = [set(stem_word_list(seq)) for seq in preds]
-        tgts = [set(stem_word_list(seq)) for seq in tgts]
-        match_scores = [0.0] * len(preds)
-        novelty_discounts = [0.0] * len(preds)
-        rel_matrix = np.asarray([[0.0] * len(preds)] * len(tgts))
-
-        for pred_id, pred in enumerate(preds):
-            match_score = 0.0
-            novelty_discount = 0.0
-            for tgt_id, tgt in enumerate(tgts):
-                if tgt.issubset(pred) or pred.issubset(tgt):
-                    rel_matrix[tgt_id][pred_id] = 1.0
-                    match_score = 1.0
-                    if pred_id > 0 and sum(rel_matrix[tgt_id][: pred_id]) > novelty_discount:
-                        novelty_discount = sum(rel_matrix[tgt_id][: pred_id])
-            match_scores[pred_id] = match_score
-            novelty_discounts[pred_id] = novelty_discount
-
-        #         print('PRED[%d]=%s' % (len(preds), str(preds)))
-        #         print('GT[%d]=%s' % (len(tgts), str(tgts)))
-        #         print(match_scores)
-        #         print(novelty_discounts)
-        #         print(np.asarray(rel_matrix))
-        return match_scores, novelty_discounts
-
-    num_tgts = len(tgts)
-    k = min(k, num_tgts)
-    preds = preds[: k] if len(preds) > k else preds
-
-    if num_tgts > 0:
-        match_scores, novelty_discounts = _compute_matching_novelty_scores(preds, tgts)
-        dcg = _compute_dcg(match_scores, novelty_discounts, alpha=alpha)
-        idcg = _compute_dcg([1.0] * num_tgts, [0.0] * num_tgts, alpha=alpha)
-        ndcg = dcg / idcg
-    else:
-        ndcg, dcg, idcg = 0.0, 0.0, 0.0
-
-    # print('DCG=%f' % dcg)
-    # print('IDCG=%f' % idcg)
-    # print('nDCG=%f' % ndcg)
-    return ndcg
+# def compute_alphaNormalizedDiscountedCumulativeGain(preds, tgts, k=5, alpha=0.5):
+#     # α-nDCG@k
+#     # add a positional discount to all predictions, and penalize repetive predictions
+#     def _compute_dcg(match_scores, novelty_scores, alpha):
+#         cumulated_gain = 0.0
+#         for idx, (match_score, novelty_score) in enumerate(zip(match_scores, novelty_scores)):
+#             gain = match_score * ((1 - alpha) ** (novelty_score)) / math.log(idx + 2, 2)
+#             # print('gain@%d=%f' % (idx + 1, gain))
+#             cumulated_gain += gain
+#         return cumulated_gain
+#
+#     def _compute_matching_novelty_scores(preds, tgts):
+#         preds = [set(stem_word_list(seq)) for seq in preds]
+#         tgts = [set(stem_word_list(seq)) for seq in tgts]
+#         match_scores = [0.0] * len(preds)
+#         novelty_discounts = [0.0] * len(preds)
+#         rel_matrix = np.asarray([[0.0] * len(preds)] * len(tgts))
+#
+#         for pred_id, pred in enumerate(preds):
+#             match_score = 0.0
+#             novelty_discount = 0.0
+#             for tgt_id, tgt in enumerate(tgts):
+#                 if tgt.issubset(pred) or pred.issubset(tgt):
+#                     rel_matrix[tgt_id][pred_id] = 1.0
+#                     match_score = 1.0
+#                     if pred_id > 0 and sum(rel_matrix[tgt_id][: pred_id]) > novelty_discount:
+#                         novelty_discount = sum(rel_matrix[tgt_id][: pred_id])
+#             match_scores[pred_id] = match_score
+#             novelty_discounts[pred_id] = novelty_discount
+#
+#         #         print('PRED[%d]=%s' % (len(preds), str(preds)))
+#         #         print('GT[%d]=%s' % (len(tgts), str(tgts)))
+#         #         print(match_scores)
+#         #         print(novelty_discounts)
+#         #         print(np.asarray(rel_matrix))
+#         return match_scores, novelty_discounts
+#
+#     num_tgts = len(tgts)
+#     k = min(k, num_tgts)
+#     preds = preds[: k] if len(preds) > k else preds
+#
+#     if num_tgts > 0:
+#         match_scores, novelty_discounts = _compute_matching_novelty_scores(preds, tgts)
+#         dcg = _compute_dcg(match_scores, novelty_discounts, alpha=alpha)
+#         idcg = _compute_dcg([1.0] * num_tgts, [0.0] * num_tgts, alpha=alpha)
+#         ndcg = dcg / idcg
+#     else:
+#         ndcg, dcg, idcg = 0.0, 0.0, 0.0
+#
+#     # print('DCG=%f' % dcg)
+#     # print('IDCG=%f' % idcg)
+#     # print('nDCG=%f' % ndcg)
+#     return ndcg
 
 
 def f1_score(prediction, ground_truth):

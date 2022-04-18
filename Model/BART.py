@@ -128,8 +128,11 @@ class BARTModel(pl.LightningModule):
 		self.log("r_val_5", f15, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		return loss, f110, f15, r10
 
-	def test_end(self, output_results):
+	def test_epoch_end(self, output_results):
 		print(output_results)
+		print(f"f1@5 Test : {np.mean([f15 for f15, f110, r10 in self.logger_per_batch]}"),
+		print(f"f1@10 Test : {np.mean([f110 for f15, f110, r10 in self.logger_per_batch]}"),
+		print(f"fr@10 Test : {np.mean([r10 for f15, f110, r10 in self.logger_per_batch]}"),
 		return {'test':7}
 
 	def configure_optimizers(self):

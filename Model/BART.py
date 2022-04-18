@@ -220,7 +220,7 @@ class BARTModel(pl.LightningModule):
 			pin_memory=torch.cuda.is_available()
 		)
 
-		self.trainer.fit(self, train_loader, dev_loader, )
+		# self.trainer.fit(self, train_loader, dev_loader, )
 		final=self.trainer.test(self, test_loader)
 		# print("bitch")
 		print(self.loggerg)

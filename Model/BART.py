@@ -122,8 +122,8 @@ class BARTModel(pl.LightningModule):
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
 		f110 = np.average(score['present_exact_f_score@10'])
 		r10 = np.average(score['absent_exact_recall@10'])
-		score5=evaluate(inputs, refs, [sents[:5] for sents in hypos], '<unk>', tokenizer='split_nopunc')
-		f15 = np.average(score5['present_exact_f_score@5'])
+		# score5=evaluate(inputs, refs, [sents[:5] for sents in hypos], '<unk>', tokenizer='split_nopunc')
+		f15 = np.average(score['present_exact_f_score@5'])
 
 		self.log("Loss_val", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		self.log("F1_val_10", f110, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])

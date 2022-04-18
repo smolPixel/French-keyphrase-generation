@@ -20,21 +20,6 @@ from tqdm import tqdm
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks import Callback
 
-# class MetricTracker(Callback):
-#
-# 	def __init__(self):
-# 		self.collection = []
-#
-# 	def on_validation_batch_end(trainer, module, outputs):
-# 		vacc = outputs['val_acc'] # you can access them here
-# 		self.collection.append(vacc) # track them
-#
-# 	def on_validation_epoch_end(trainer, module):
-# 		elogs = trainer.logged_metrics # access it here
-# 		self.collection.append(elogs)
-# 		# do whatever is needed
-
-
 class BARTModel(pl.LightningModule):
 	def __init__(self, argdict, datasets):
 		super().__init__()
@@ -62,38 +47,21 @@ class BARTModel(pl.LightningModule):
 		else:
 			raise ValueError("Unrecognized language")
 
-		# config=BartConfig.from_pretrained(gptPath)
-		# config.output_past = True
 		self.field_input='input_sentence'
-		# special_tokens = {'pad_token': '<pad>', 'sep_token': '<sep>', 'eos_token': '<eos>', 'bos_token': '<bos>'}
-		# num_add_toks = self.tokenizer.add_special_tokens(special_tokens)
 		self.criterion = nn.CrossEntropyLoss(ignore_index=self.tokenizer.pad_token_id)
 		self.model=model#.to('cuda')#, config=config)
 		self.model.config.max_length=argdict['max_seq_length']
-		# self.model.resize_token_embeddings(len(self.tokenizer))
-		# self.model.config.pad_token_id = self.model.config.eos_token_id
-		# text = "Trump falsely denied that he claimed governors from certain states"
-		# input_ids = self.tokenizer.encode(text, return_tensors='pt').cuda()
-		# output = self.model.generate(input_ids=input_ids, max_length=50, num_beams=1)
-		# print(self.tokenizer.decode(output[0]))
-		# fds
 
 		self.beam_search_k=10
 		self.fuck_torch_lightning=[]
 		self.fuck_torch_lightning_per_batch=[]
-		# self.bertScore=load_metric("bertscore")
-		# self.meteor = load_metric('meteor')
 
-		# self.optimizer = AdamW(self.model.parameters(), lr=5e-5)
 	def forward(self, tokenized_sentences, tokenized_decoder_sentences):
 
-		# print(tokenized_decoder_sentences)
-		# df
 		input_ids=torch.Tensor(tokenized_sentences['input_ids']).long().to(self.device)
 		attention_mask=torch.Tensor(tokenized_sentences['attention_mask']).to(self.device)
 		decoder_input_ids=torch.Tensor(tokenized_decoder_sentences['input_ids']).long().to(self.device)
 		decoder_attention_mask = torch.Tensor(tokenized_decoder_sentences['attention_mask']).to(self.device)
-		# outputs = torch.zeros(max_len, batch_size, trg_vocab_size).to(self.device)+trg[0,0]
 		#TODO ATTENTION MASK
 		outputs=self.model(input_ids, decoder_attention_mask=decoder_attention_mask, labels=decoder_input_ids, attention_mask=attention_mask)
 		return outputs
@@ -101,52 +69,29 @@ class BARTModel(pl.LightningModule):
 	def training_step(self, batch, batch_idx):
 
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True, max_length=self.argdict['max_seq_length'])
-		# target=['test', 'test']
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
-
-		# target = self.tokenizer(target, padding=True, truncation=True)
-		# print(batch['full_labels'])
 		output = self.forward(src, target)
-		# print(output['logits'].shape)
 		loss = output['loss']
 		self.log("Loss", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
-		# self.log("F1", f1, on_epoch=True, on_step=True, prog_bar=True, logger=False)
 		return loss
 
 	def validation_step(self, batch, batch_idx):
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
-
 		output = self.forward(src, target)
-		# print(output['logits'].shape)
 		loss = output['loss']
 
-
-		# print(batch['input_sentence'])
 		input_ids = self.tokenizer(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
 		gend = self.model.generate(**input_ids, num_beams=10, num_return_sequences=1, max_length=50)
 		gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
-		# print(input_sentences)
 		hypos=[self.score(sent) for sent in gend]
-		# fds
-		# for gg in gend:
-		# 	sentences=[tok.lower().strip() for tok in gg.split(',')]
-		# 	# print(sentences)
-		# 	# fds
-		# 	# keyphrases = ['<error>' if x in ["", "\n", " "] else x.lower() for x in gend]
-		# 	hypos.append(sentences)
 		inputs=batch[self.field_input]
-		# print(batch['full_labels'])
 		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
-		# assert len(inputs) == len(refs) == len(hypos)
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
-		# print(score)
 		f1 = np.average(score['all_exact_f_score@10'])
 		prec = np.average(score['all_exact_precision@10'])
 		rec = np.average(score['all_exact_recall@10'])
 
-		# print(f1)
-		# fds
 		self.fuck_torch_lightning_per_batch.append(f1)
 		self.log("Loss_val", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		self.log("F1_val", f1, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
@@ -229,10 +174,20 @@ class BARTModel(pl.LightningModule):
 			# num_workers=cpu_count(),
 			pin_memory=torch.cuda.is_available()
 		)
-		self.trainer.fit(self, train_loader, dev_loader)
 
+		test_loader=DataLoader(
+			dataset=self.test_set,
+			batch_size=self.argdict['batch_size'],
+			shuffle=False,
+			# num_workers=cpu_count(),
+			pin_memory=torch.cuda.is_available()
+		)
+
+		self.trainer.fit(self, train_loader, dev_loader, )
+		final=self.trainer.test(self, test_loader)
 		# print("bitch")
 		print(self.fuck_torch_lightning)
+		print(final)
 		# self.model.save_pretrained('Models/pretrained_bart')
 		# for ep in range(self.argdict['num_epochs']):
 		# 	loss, met10 = self.run_epoch('train')
@@ -271,7 +226,7 @@ class BARTModel(pl.LightningModule):
 				# print(self.tokenizer.batch_decode((input_ids)))
 				# fds
 				# input_ids = torch.Tensor(src['input_ids']).long().to('cuda').unsqueeze(0)
-				gend = self.model.generate(input_ids, num_beams=3, num_return_sequences=1,
+				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1,
 									  max_length=50)
 				# print(tokenizer.batch_decode(gend))
 				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)

@@ -88,6 +88,30 @@ class BARTModel(pl.LightningModule):
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
+		print(score)
+		fds
+		f1 = np.average(score['all_exact_f_score@10'])
+		prec = np.average(score['all_exact_precision@10'])
+		rec = np.average(score['all_exact_recall@10'])
+
+		self.fuck_torch_lightning_per_batch.append(f1)
+		self.log("Loss_val", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("F1_val", f1, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		return loss
+
+	def test_step(self, batch, batch_idx):
+		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
+		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
+		output = self.forward(src, target)
+		loss = output['loss']
+
+		input_ids = self.tokenizer(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
+		gend = self.model.generate(**input_ids, num_beams=10, num_return_sequences=1, max_length=50)
+		gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+		hypos=[self.score(sent) for sent in gend]
+		inputs=batch[self.field_input]
+		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
+		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
 		f1 = np.average(score['all_exact_f_score@10'])
 		prec = np.average(score['all_exact_precision@10'])
 		rec = np.average(score['all_exact_recall@10'])

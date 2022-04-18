@@ -53,8 +53,8 @@ class BARTModel(pl.LightningModule):
 		self.model.config.max_length=argdict['max_seq_length']
 
 		self.beam_search_k=10
-		self.fuck_torch_lightning=[]
-		self.fuck_torch_lightning_per_batch=[]
+		self.loggerg=[]
+		self.logger_per_batch=[]
 
 	def forward(self, tokenized_sentences, tokenized_decoder_sentences):
 
@@ -90,13 +90,17 @@ class BARTModel(pl.LightningModule):
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
 		print(score)
 		fds
-		f1 = np.average(score['all_exact_f_score@10'])
-		prec = np.average(score['all_exact_precision@10'])
-		rec = np.average(score['all_exact_recall@10'])
+		f110 = np.average(score['all_exact_f_score@10'])
+		f15 = np.average(score['all_exact_f_score@5'])
+		r10 = np.average(score['all_exact_recall@10'])
+		# prec = np.average(score['all_exact_precision@10'])
+		# rec = np.average(score['all_exact_recall@10'])
 
-		self.fuck_torch_lightning_per_batch.append(f1)
+		self.logger_per_batch.append((f15, f110, r10))
 		self.log("Loss_val", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
-		self.log("F1_val", f1, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("F1_val_10", f110, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("F1_val_5", f15, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("r_val_5", f15, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		return loss
 
 	def test_step(self, batch, batch_idx):
@@ -112,14 +116,15 @@ class BARTModel(pl.LightningModule):
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
-		f1 = np.average(score['all_exact_f_score@10'])
-		prec = np.average(score['all_exact_precision@10'])
-		rec = np.average(score['all_exact_recall@10'])
+		f110 = np.average(score['all_exact_f_score@10'])
+		f15 = np.average(score['all_exact_f_score@5'])
+		r10 = np.average(score['all_exact_recall@10'])
 
-		self.fuck_torch_lightning_per_batch.append(f1)
 		self.log("Loss_val", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
-		self.log("F1_val", f1, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
-		return loss
+		self.log("F1_val_10", f110, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("F1_val_5", f15, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("r_val_5", f15, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		return loss, f110, f15, r10
 
 	def configure_optimizers(self):
 		optimizer = AdamW(self.model.parameters(), lr=5e-5)
@@ -177,8 +182,10 @@ class BARTModel(pl.LightningModule):
 	def on_validation_epoch_end(self) -> None:
 		# self.generate_from_dataset(2, 'train')
 		# self.generate_from_dataset(2, 'dev')
-		self.fuck_torch_lightning.append(np.mean(self.fuck_torch_lightning_per_batch))
-		self.fuck_torch_lightning_per_batch=[]
+		self.loggerg.append((np.mean([f15 for f15, f110, r10 in self.logger_per_batch]),
+							 np.mean([f110 for f15, f110, r10 in self.logger_per_batch]),
+							 np.mean([r10 for f15, f110, r10 in self.logger_per_batch])))
+		self.logger_per_batch=[]
 
 	def train_model(self):
 		# cb=MetricTracker()
@@ -210,7 +217,7 @@ class BARTModel(pl.LightningModule):
 		self.trainer.fit(self, train_loader, dev_loader, )
 		final=self.trainer.test(self, test_loader)
 		# print("bitch")
-		print(self.fuck_torch_lightning)
+		print(self.loggerg)
 		print(final)
 		# self.model.save_pretrained('Models/pretrained_bart')
 		# for ep in range(self.argdict['num_epochs']):

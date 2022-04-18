@@ -99,7 +99,7 @@ class BARTModel(pl.LightningModule):
 		# rec = np.average(score['all_exact_recall@10'])
 		score5=evaluate(inputs, refs, [sents[:5] for sents in hypos], '<unk>', tokenizer='split_nopunc')
 		f15 = np.average(score5['present_exact_f_score@5'])
-		
+
 		self.logger_per_batch.append((f15, f110, r10))
 		self.log("Loss_val", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		self.log("F1_val_10", f110, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
@@ -132,7 +132,7 @@ class BARTModel(pl.LightningModule):
 		return loss, f110, f15, r10
 
 	def test_epoch_end(self, output_results):
-		print(output_results)
+		# print(output_results)
 		print(f"f1@5 Test : {np.mean([f15 for loss, f15, f110, r10 in output_results])}")
 		print(f"f1@10 Test : {np.mean([f110 for loss, f15, f110, r10 in output_results])}")
 		print(f"fr@10 Test : {np.mean([r10 for loss, f15, f110, r10 in output_results])}")

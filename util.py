@@ -32,7 +32,7 @@ def initialize_datasets(argdict):
     test = pd.read_csv(f"data/{argdict['dataset']}/test.tsv", sep='\t', index_col=0)
     llPre = len(test)
     test = test.dropna()
-    print(f"Dropped {len(test) - llPre} entries from dev")
+    print(f"Dropped {len(test) - llPre} entries from test")
 
     allsentences=list(train['sentences'])
     allsentences.extend(list(train['label']))

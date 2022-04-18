@@ -55,6 +55,9 @@ class BARTModel(pl.LightningModule):
 		self.beam_search_k=10
 		self.loggerg=[]
 		self.logger_per_batch=[]
+		self.logger_test=[]
+		self.logger_test_per_batch=[]
+
 
 	def forward(self, tokenized_sentences, tokenized_decoder_sentences):
 
@@ -67,7 +70,7 @@ class BARTModel(pl.LightningModule):
 		return outputs
 
 	def training_step(self, batch, batch_idx):
-
+		return 0
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True, max_length=self.argdict['max_seq_length'])
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
@@ -76,6 +79,7 @@ class BARTModel(pl.LightningModule):
 		return loss
 
 	def validation_step(self, batch, batch_idx):
+		return 0
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
@@ -123,6 +127,10 @@ class BARTModel(pl.LightningModule):
 		self.log("F1_val_5", f15, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		self.log("r_val_5", f15, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		return loss, f110, f15, r10
+
+	def test_step_end(self, output_results):
+		print(output_results)
+		return output_results
 
 	def configure_optimizers(self):
 		optimizer = AdamW(self.model.parameters(), lr=5e-5)

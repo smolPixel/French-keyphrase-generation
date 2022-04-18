@@ -81,8 +81,8 @@ def evaluate(src_list, tgt_list, pred_list,
 		valid_and_absent_flags = valid_pred_flags * ~present_pred_flags if len(valid_pred_flags) > 0 else []
 
 		# compute match scores (exact, partial and mixed), for exact it's a list otherwise matrix
-		match_scores_exact = compute_match_scores(tgt_seqs=tgt_seqs, pred_seqs=pred_seqs, do_lower=True, do_stem=True, type='exact')
-		match_scores_partial = compute_match_scores(tgt_seqs=tgt_seqs, pred_seqs=pred_seqs, do_lower=True, do_stem=True, type='ngram')
+		match_scores_exact = compute_match_scores(tgt_seqs=tgt_seqs, pred_seqs=pred_seqs, do_lower=True, do_stem=False, type='exact')
+		match_scores_partial = compute_match_scores(tgt_seqs=tgt_seqs, pred_seqs=pred_seqs, do_lower=True, do_stem=False, type='ngram')
 		# simply add full-text to n-grams might not be good as its contribution is not clear
 		# match_scores_mixed = compute_match_scores(tgt_seqs=tgt_seqs, pred_seqs=pred_seqs, type='mixed')
 
@@ -625,7 +625,7 @@ def init_opt():
 	return opt
 
 
-def compute_match_scores(tgt_seqs, pred_seqs, do_lower=True, do_stem=True, type='exact'):
+def compute_match_scores(tgt_seqs, pred_seqs, do_lower=True, do_stem=False, type='exact'):
     '''
     If type='exact', returns a list of booleans indicating if a pred has a matching tgt
     If type='partial', returns a 2D matrix, each value v_ij is a float in range of [0,1]
@@ -1061,7 +1061,7 @@ def eval_and_print(src_text, tgt_kps, pred_kps, pred_scores, unk_token='<unk>', 
 
     # compute match scores (exact, partial and mixed), for exact it's a list otherwise matrix
     match_scores_exact = compute_match_scores(tgt_seqs=tgt_seqs, pred_seqs=pred_seqs,
-                                              do_lower=True, do_stem=True, type='exact')
+                                              do_lower=True, do_stem=False, type='exact')
     # split tgts by present/absent
     present_tgt_flags, _, _ = if_present_duplicate_phrases(src_seq, tgt_seqs)
     present_tgts = [tgt for tgt, present in zip(tgt_seqs, present_tgt_flags) if present]

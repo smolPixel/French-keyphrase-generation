@@ -202,7 +202,7 @@ class BARTModel(pl.LightningModule):
 	def train_model(self):
 		# cb=MetricTracker()
 		early_stopping_callback=EarlyStopping(monitor='F1_val_10', patience=1, mode='max')
-		self.trainer=pl.Trainer(gpus=1, max_epochs=self.argdict['num_epochs'], precision=16, accumulate_grad_batches=64, enable_checkpointing=False)
+		self.trainer=pl.Trainer(gpus=1, max_epochs=self.argdict['num_epochs'], precision=16, accumulate_grad_batches=self.argdict['accum_batch_size'], enable_checkpointing=False)
 		# trainer=pl.Trainer(max_epochs=self.argdict['num_epochs'])
 		train_loader=DataLoader(
 			dataset=self.training_set,

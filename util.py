@@ -29,12 +29,14 @@ def initialize_datasets(argdict):
     dev=pd.read_csv(f"data/{argdict['dataset']}/dev.tsv", sep='\t', index_col=0)
     llPre=len(dev)
     dev=dev.dropna()
-    # dev=dev[:100]
+    if argdict['short_eval']:
+        dev=dev[:100]
     print(f"Dropped {len(dev)-llPre} entries from dev")
     test = pd.read_csv(f"data/{argdict['dataset']}/test.tsv", sep='\t', index_col=0)
     llPre = len(test)
     test = test.dropna()
-    # test=test[:100]
+    if argdict['short_eval']:
+        test=test[:100]
     print(f"Dropped {len(test) - llPre} entries from test")
 
     allsentences=list(train['sentences'])

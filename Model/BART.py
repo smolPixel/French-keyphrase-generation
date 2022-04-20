@@ -248,16 +248,9 @@ class BARTModel(pl.LightningModule):
 		with torch.no_grad():
 			print(f"Generation for example 26XXX")
 			dataset = self.training_set
-			num_ex = len(dataset.index_unique_examples)
-			prec_tot = 0
-			rec_tot = 0
-			f1_tot = 0
 			inputs = []
 			refs = []
 			hypos = []
-			ll = self.argdict['max_seq_length']
-			index = dataset.index_unique_examples[j]
-			dat = dataset.data[index]
 			refs.append(dataset.abstract_for_ex)
 			inputs.append(dataset.abstract_for_ex)
 			# src_text = " ".join(dat[self.field_input].split(' ')[:ll])

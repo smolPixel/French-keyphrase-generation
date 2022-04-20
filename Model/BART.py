@@ -252,7 +252,7 @@ class BARTModel(pl.LightningModule):
 			refs = []
 			hypos = []
 			refs.append(dataset.abstract_for_ex)
-			inputs.append(dataset.abstract_for_ex)
+			inputs.append(dataset.label_for_ex)
 			# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 			# src_text = src_text
 			input_ids = self.tokenizer.encode(dataset.abstract_for_ex, return_tensors='pt', truncation=True,

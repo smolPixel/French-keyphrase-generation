@@ -69,7 +69,15 @@ class NoteMarg(Dataset):
         # self.generate_sentence = generate_sentences
         index=0
         self.map_unique_to_id={}
+
+
+
+
         for i, row in data.iterrows():
+            # Special example 26534
+            if not dev and row['index'] == 22634:
+                self.abstract_for_ex = row['sentences']
+                self.label_for_ex = row['label']
             if dev and argdict['short_eval'] and index>10:
                 break
             if row['sentences'] in ['.', '', ' '] or row['label'] in ['.', '', ' ']:

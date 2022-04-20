@@ -242,6 +242,48 @@ class BARTModel(pl.LightningModule):
 		# 	self.generate_from_dataset(split='train')
 		# 	self.generate_from_dataset()
 
+	def generate_special_ex(self):
+		self.model.eval()
+		# self.model#.to('cuda')
+		with torch.no_grad():
+			print(f"Generation for example 26XXX")
+			dataset = self.training_set
+			num_ex = len(dataset.index_unique_examples)
+			prec_tot = 0
+			rec_tot = 0
+			f1_tot = 0
+			inputs = []
+			refs = []
+			hypos = []
+			ll = self.argdict['max_seq_length']
+			index = dataset.index_unique_examples[j]
+			dat = dataset.data[index]
+			refs.append(dataset.abstract_for_ex)
+			inputs.append(dataset.abstract_for_ex)
+			# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
+			# src_text = src_text
+			input_ids = self.tokenizer.encode(dataset.abstract_for_ex, return_tensors='pt', truncation=True,
+											  max_length=self.argdict['max_seq_length']).to(self.device)
+			# print(input_ids)
+			# print(self.tokenizer.batch_decode((input_ids)))
+			# fds
+			# input_ids = torch.Tensor(src['input_ids']).long().to('cuda').unsqueeze(0)
+			gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1,
+									   max_length=50)
+			# print(tokenizer.batch_decode(gend))
+			gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+			hypos.append(gend)
+
+
+			# print(inputs, hypos, refs)
+
+			for ii, hh, rr in zip(inputs, hypos, refs):
+				print(f"Input : {ii} \n "
+					  f"Note Marginale: {rr} \n"
+					  f"Note Générée: {hh}")
+				print("------------------")
+		self.model.train()
+
 	def generate_from_dataset(self, n=2, split='dev'):
 		"""Try to generate from the dev set"""
 		self.model.eval()

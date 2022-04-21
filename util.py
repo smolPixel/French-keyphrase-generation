@@ -77,7 +77,6 @@ class NoteMarg(Dataset):
         for i, row in data.iterrows():
             # Special example 26534
             if not dev and row['index'] == 22634:
-                print(row)
                 self.abstract_for_ex.append(row['sentences'])
                 self.label_for_ex.append(row['label'])
             if dev and argdict['short_eval'] and index>10:
@@ -98,7 +97,7 @@ class NoteMarg(Dataset):
                 else:
                     sents_trunc[-1]+=ss+" "
             for sent in sents_trunc:
-                self.data[index] = {'full_labels': row['label'], 'input_sentence': sent}
+                self.data[index] = {'full_labels': row['label'], 'input_sentence': sent, 'index':row['index']}
                 self.map_unique_to_id[self.index_unique_examples[-1]].append(index)
                 index+=1
 
@@ -143,6 +142,7 @@ class NoteMarg(Dataset):
         return {
             'input_sentence':self.data[item]['input_sentence'],
             'full_labels':self.data[item]['full_labels'],
+            'index':self.data[item]['index']
         }
 
 

@@ -132,10 +132,10 @@ class BARTModel(pl.LightningModule):
 		gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
 		hypos=[self.score(sent) for sent in gend]
 		inputs=batch[self.field_input]
+		print(batch)
+		fds
 		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
-		print(score)
-		fds
 		f110 = np.average(score['present_exact_f_score@10'])
 		r10 = np.average(score['absent_exact_recall@10'])
 		# score5=evaluate(inputs, refs, [sents[:5] for sents in hypos], '<unk>', tokenizer='split_nopunc')

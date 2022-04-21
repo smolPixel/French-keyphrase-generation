@@ -72,14 +72,13 @@ class NoteMarg(Dataset):
         index=0
         self.map_unique_to_id={}
 
-
-
-
+        self.abstract_for_ex=[]
+        self.label_for_ex=[]
         for i, row in data.iterrows():
             # Special example 26534
             if not dev and row['index'] == 22634:
-                self.abstract_for_ex = row['sentences']
-                self.label_for_ex = row['label']
+                self.abstract_for_ex.append(row['sentences'])
+                self.label_for_ex.append(row['label'])
             if dev and argdict['short_eval'] and index>10:
                 break
             if row['sentences'] in ['.', '', ' '] or row['label'] in ['.', '', ' ']:

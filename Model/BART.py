@@ -248,20 +248,20 @@ class BARTModel(pl.LightningModule):
 		with torch.no_grad():
 			print(f"Generation for example 26XXX")
 			dataset = self.training_set
-			inputs = []
-			refs = []
+			inputs = dataset.abstract_for_ex
+			refs = dataset.label_for_ex
 			hypos = []
-			refs.append(dataset.abstract_for_ex)
-			inputs.append(dataset.label_for_ex)
+
+			for abstract in inputs:
 			# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
-			# src_text = src_text
-			input_ids = self.tokenizer.encode(dataset.abstract_for_ex, return_tensors='pt', truncation=True,
-											  max_length=self.argdict['max_seq_length']).to(self.device)
-			gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1,
-									   max_length=50)
-			# print(tokenizer.batch_decode(gend))
-			gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
-			hypos = [self.score(sent) for sent in gend]
+				# src_text = src_text
+				input_ids = self.tokenizer.encode(abstract, return_tensors='pt', truncation=True,
+												  max_length=self.argdict['max_seq_length']).to(self.device)
+				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1,
+										   max_length=50)
+				# print(tokenizer.batch_decode(gend))
+				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+				hypos = [self.score(sent) for sent in gend]
 			# hypos.append(gend)
 
 

@@ -139,13 +139,10 @@ class BARTModel(pl.LightningModule):
 			for i, (full_references, full_hypothesis) in enumerate(zip(refs, hypos)):
 				for individual_refs in full_references:
 					lang=self.dico_keyphrase_language[batch['index'][i].item()][individual_refs]
-					print(full_hypothesis)
 					if individual_refs in full_hypothesis:
 						self.dico_perfo_per_language[lang].append(1)
 					else:
 						self.dico_perfo_per_language[lang].append(0)
-				print(self.dico_perfo_per_language)
-				fds
 		f110 = np.average(score['present_exact_f_score@10'])
 		r10 = np.average(score['absent_exact_recall@10'])
 		# score5=evaluate(inputs, refs, [sents[:5] for sents in hypos], '<unk>', tokenizer='split_nopunc')
@@ -162,6 +159,9 @@ class BARTModel(pl.LightningModule):
 		print(f"f1@5 Test : {np.mean([f15 for loss, f15, f110, r10 in output_results])}")
 		print(f"f1@10 Test : {np.mean([f110 for loss, f15, f110, r10 in output_results])}")
 		print(f"fr@10 Test : {np.mean([r10 for loss, f15, f110, r10 in output_results])}")
+		print("----Recal per language----")
+		for key, item in self.dico_perfo_per_language.items():
+			print(f"{key} : {np.mean(item)}")
 		return {'test':7}
 
 	def configure_optimizers(self):

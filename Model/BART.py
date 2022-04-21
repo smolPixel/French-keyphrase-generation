@@ -138,7 +138,11 @@ class BARTModel(pl.LightningModule):
 		if self.argdict['dataset'].lower() in ['papyrus']:
 			for i, (full_references, full_hypothesis) in enumerate(zip(refs, hypos)):
 				for individual_refs in full_references:
-					lang=self.dico_keyphrase_language[batch['index'][i].item()][individual_refs]
+					try:
+						lang=self.dico_keyphrase_language[batch['index'][i].item()][individual_refs]
+					except:
+						print(full_references)
+						print(self.dico_keyphrase_language[batch['index'][i].item()])
 					if individual_refs in full_hypothesis:
 						self.dico_perfo_per_language[lang].append(1)
 					else:

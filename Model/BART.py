@@ -172,6 +172,8 @@ class BARTModel(pl.LightningModule):
 		return loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent
 
 	def test_epoch_end(self, output_results):
+		print(len(output_results))
+		print(output_results)
 		print(f"prec@5 present Test : {np.mean([prec5_present for prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
 		print(f"rec@5 present Test : {np.mean([rec5_present for prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
 		print(f"f1@5 present Test : {np.mean([f15_present for prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
@@ -182,9 +184,10 @@ class BARTModel(pl.LightningModule):
 		print(f"rec@10 absent Test : {np.mean([rec10_absent for prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
 		print(f"f1@10 absent Test : {np.mean([f110_absent for prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
 
-		print("----Recal per language----")
-		for key, item in self.dico_perfo_per_language.items():
-			print(f"{key} : {np.mean(item)}")
+		if self.argdict['dataset'].lower() in ['papyrus']:
+			print("----Recal per language----")
+			for key, item in self.dico_perfo_per_language.items():
+				print(f"{key} : {np.mean(item)}")
 		return {'test':7}
 
 	def configure_optimizers(self):

@@ -65,14 +65,11 @@ class BARTModel(pl.LightningModule):
 			df_ref=pd.read_csv("data/papyrus_m/test.tsv", index_col=0, sep='\t')
 			for i, line in df_ref.iterrows():
 				language=line['language']
+				index=line['index']
+				self.dico_keyphrase_language[index]={}
 				for lab in line['label'].split(', '):
 					lab=lab.strip()
-					if lab in self.dico_keyphrase_language.keys() and self.dico_keyphrase_language[lab]!=language:
-						print(self.dico_keyphrase_language[lab])
-						print(lab)
-						print(language)
-						raise ValueError
-					self.dico_keyphrase_language[lab]=language
+					self.dico_keyphrase_language[index][lab]=language
 			print(self.dico_keyphrase_language)
 			# print(df_ref)
 			fds

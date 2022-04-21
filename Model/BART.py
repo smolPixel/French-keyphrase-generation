@@ -58,6 +58,12 @@ class BARTModel(pl.LightningModule):
 		self.logger_per_batch=[]
 		self.logger_test=[]
 		self.logger_test_per_batch=[]
+		if argdict['dataset'].lower()=="papyrus":
+			self.dico_perfo_per_language={}
+			#We want to create a ref that associate each keyphrase with a language, based on papyrus-m
+			df_ref=pd.read_csv("../data/papyrus_m/train.tsv", index_col=0, sep='\t')
+			print(df_ref)
+			fds
 
 
 	def forward(self, tokenized_sentences, tokenized_decoder_sentences):

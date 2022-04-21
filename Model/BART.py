@@ -153,21 +153,29 @@ class BARTModel(pl.LightningModule):
 						self.dico_perfo_per_language[lang].append(1)
 					else:
 						self.dico_perfo_per_language[lang].append(0)
-		print(score)
-		fds
-		f110 = np.average(score['present_exact_f_score@10'])
-		r10 = np.average(score['absent_exact_recall@10'])
+
+		prec5_present = np.average(score['present_exact_precision@5'])
+		rec5_present = np.average(score['present_exact_recall@5'])
+		f15_present = np.average(score['present_exact_f_score@5'])
+		prec10_present = np.average(score['present_exact_precision@10'])
+		rec10_present = np.average(score['present_exact_recall@10'])
+		f110_present = np.average(score['present_exact_f_score@10'])
 		# score5=evaluate(inputs, refs, [sents[:5] for sents in hypos], '<unk>', tokenizer='split_nopunc')
-		f15 = np.average(score['present_exact_f_score@5'])
+		prec10_absent = np.average(score['absent_exact_precision@10'])
+		rec10_absent = np.average(score['absent_exact_recall@10'])
+		f110_absent = np.average(score['absent_exact_f_score@10'])
 
 		self.log("Loss_val", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
-		self.log("F1_val_10", f110, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
-		self.log("F1_val_5", f15, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
-		self.log("r_val_5", f15, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
-		return loss, f110, f15, r10
+		self.log("F1_val_10", f110_present, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("F1_val_5", f15_present, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("r_val_10", rec10_absent, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		return loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent
 
 	def test_epoch_end(self, output_results):
-		# print(output_results)
+		print(output_results)
+		fds
+		print(f"acc@5 Test : {np.mean([f15 for loss, acc5, rec5, f15, f110, r10 in output_results])}")
+		print(f"recc@5 Test : {np.mean([f15 for loss, f15, f110, r10 in output_results])}")
 		print(f"f1@5 Test : {np.mean([f15 for loss, f15, f110, r10 in output_results])}")
 		print(f"f1@10 Test : {np.mean([f110 for loss, f15, f110, r10 in output_results])}")
 		print(f"fr@10 Test : {np.mean([r10 for loss, f15, f110, r10 in output_results])}")

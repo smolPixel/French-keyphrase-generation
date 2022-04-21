@@ -153,6 +153,8 @@ class BARTModel(pl.LightningModule):
 						self.dico_perfo_per_language[lang].append(1)
 					else:
 						self.dico_perfo_per_language[lang].append(0)
+		print(score)
+		fds
 		f110 = np.average(score['present_exact_f_score@10'])
 		r10 = np.average(score['absent_exact_recall@10'])
 		# score5=evaluate(inputs, refs, [sents[:5] for sents in hypos], '<unk>', tokenizer='split_nopunc')

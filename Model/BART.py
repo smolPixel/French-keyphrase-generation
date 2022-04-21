@@ -61,7 +61,7 @@ class BARTModel(pl.LightningModule):
 		if argdict['dataset'].lower()=="papyrus":
 			self.dico_perfo_per_language={}
 			#We want to create a ref that associate each keyphrase with a language, based on papyrus-m
-			df_ref=pd.read_csv("../data/papyrus_m/train.tsv", index_col=0, sep='\t')
+			df_ref=pd.read_csv("data/papyrus_m/train.tsv", index_col=0, sep='\t')
 			print(df_ref)
 			fds
 

@@ -134,10 +134,10 @@ class BARTModel(pl.LightningModule):
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
-		print(refs)
-		print(hypos)
-		fds
-
+		if self.argdict['dataset'].lower() in ['papyrus']:
+			for i, (full_references, full_hypothesis) in enumerate(zip(refs, hypos)):
+				for individual_refs in full_references:
+					print(individual_refs, batch['index'][i])
 		f110 = np.average(score['present_exact_f_score@10'])
 		r10 = np.average(score['absent_exact_recall@10'])
 		# score5=evaluate(inputs, refs, [sents[:5] for sents in hypos], '<unk>', tokenizer='split_nopunc')

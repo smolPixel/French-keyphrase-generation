@@ -143,6 +143,8 @@ class BARTModel(pl.LightningModule):
 					except:
 						print(full_references)
 						print(self.dico_keyphrase_language[batch['index'][i].item()])
+						print(batch['index'])
+						fds
 					if individual_refs in full_hypothesis:
 						self.dico_perfo_per_language[lang].append(1)
 					else:

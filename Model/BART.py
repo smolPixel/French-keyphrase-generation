@@ -68,7 +68,7 @@ class BARTModel(pl.LightningModule):
 				for lab in line['label'].split(', '):
 					lab=lab.strip()
 					if lab in self.dico_keyphrase_language.keys() and self.dico_keyphrase_language[lab]!=language:
-						self.dico_keyphrase_language[lab]
+						print(self.dico_keyphrase_language[lab])
 						print(lab)
 						print(language)
 						raise ValueError

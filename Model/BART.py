@@ -172,13 +172,16 @@ class BARTModel(pl.LightningModule):
 		return loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent
 
 	def test_epoch_end(self, output_results):
-		print(output_results)
-		fds
-		print(f"acc@5 Test : {np.mean([f15 for loss, acc5, rec5, f15, f110, r10 in output_results])}")
-		print(f"recc@5 Test : {np.mean([f15 for loss, f15, f110, r10 in output_results])}")
-		print(f"f1@5 Test : {np.mean([f15 for loss, f15, f110, r10 in output_results])}")
-		print(f"f1@10 Test : {np.mean([f110 for loss, f15, f110, r10 in output_results])}")
-		print(f"fr@10 Test : {np.mean([r10 for loss, f15, f110, r10 in output_results])}")
+		print(f"prec@5 present Test : {np.mean([prec5_present for prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
+		print(f"rec@5 present Test : {np.mean([rec5_present for prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
+		print(f"f1@5 present Test : {np.mean([f15_present for prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
+		print(f"prec@10 present Test : {np.mean([prec10_present for prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
+		print(f"rec@10 present Test : {np.mean([rec10_present for prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
+		print(f"f1@10 present Test : {np.mean([f110_present for prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
+		print(f"prec@10 absent Test : {np.mean([prec10_absent for prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
+		print(f"rec@10 absent Test : {np.mean([rec10_absent for prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
+		print(f"f1@10 absent Test : {np.mean([f110_absent for prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
+
 		print("----Recal per language----")
 		for key, item in self.dico_perfo_per_language.items():
 			print(f"{key} : {np.mean(item)}")

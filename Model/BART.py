@@ -69,13 +69,14 @@ class BARTModel(pl.LightningModule):
 				if language not in self.dico_perfo_per_language.keys():
 					self.dico_perfo_per_language[language]=[]
 				index=line['index']
-				self.dico_keyphrase_language[index]={}
+				if index not in self.dico_keyphrase_language:
+					self.dico_keyphrase_language[index] = {}
 				for lab in line['label'].split(', '):
 					lab=lab.strip()
 					self.dico_keyphrase_language[index][lab]=language
-				if index==329:
-					print(line['label'])
-			fds
+			# 	if index==329:
+			# 		print(line['label'])
+			# fds
 
 	def forward(self, tokenized_sentences, tokenized_decoder_sentences):
 

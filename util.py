@@ -77,6 +77,7 @@ class NoteMarg(Dataset):
         for i, row in data.iterrows():
             # Special example 26534
             if not dev and row['index'] == 22634:
+                print(row)
                 self.abstract_for_ex.append(row['sentences'])
                 self.label_for_ex.append(row['label'])
             if dev and argdict['short_eval'] and index>10:

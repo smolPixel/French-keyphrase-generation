@@ -137,7 +137,7 @@ class BARTModel(pl.LightningModule):
 		if self.argdict['dataset'].lower() in ['papyrus']:
 			for i, (full_references, full_hypothesis) in enumerate(zip(refs, hypos)):
 				for individual_refs in full_references:
-					print(individual_refs, batch['index'][i].item())
+					print(individual_refs, self.dico_keyphrase_language[batch['index'][i].item()])
 					fds
 		f110 = np.average(score['present_exact_f_score@10'])
 		r10 = np.average(score['absent_exact_recall@10'])

@@ -75,6 +75,7 @@ class BARTModel(pl.LightningModule):
 					self.dico_keyphrase_language[index][lab]=language
 				if index==329:
 					print(line['label'])
+			fds
 
 	def forward(self, tokenized_sentences, tokenized_decoder_sentences):
 

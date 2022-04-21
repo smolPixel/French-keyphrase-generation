@@ -134,12 +134,17 @@ class BARTModel(pl.LightningModule):
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
+		#Calculating recall by language
 		if self.argdict['dataset'].lower() in ['papyrus']:
 			for i, (full_references, full_hypothesis) in enumerate(zip(refs, hypos)):
 				for individual_refs in full_references:
 					lang=self.dico_keyphrase_language[batch['index'][i].item()][individual_refs]
 					print(full_hypothesis)
-					print(individual_refs in full_hypothesis)
+					if individual_refs in full_hypothesis:
+						self.dico_perfo_per_language[lang].append(1)
+					else:
+						self.dico_perfo_per_language[lang].append(0)
+				print(self.dico_perfo_per_language)
 					fds
 		f110 = np.average(score['present_exact_f_score@10'])
 		r10 = np.average(score['absent_exact_recall@10'])

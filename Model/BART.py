@@ -136,7 +136,7 @@ class BARTModel(pl.LightningModule):
 		gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
 		hypos=[self.score(sent) for sent in gend]
 		inputs=batch[self.field_input]
-		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
+		refs=[[rr.strip() for rr in fullLabels.split(', ')] for fullLabels in batch['full_labels']]
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
 		#Calculating recall by language
 		if self.argdict['dataset'].lower() in ['papyrus']:
@@ -145,6 +145,9 @@ class BARTModel(pl.LightningModule):
 					try:
 						lang=self.dico_keyphrase_language[batch['index'][i].item()][individual_refs]
 					except:
+						print(batch['index'])
+						print(i)
+						print(individual_refs)
 						print(full_references)
 						print(self.dico_keyphrase_language[batch['index'][i].item()])
 						print(batch['index'])

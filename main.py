@@ -20,7 +20,8 @@ def run(argdict):
     datasets = initialize_datasets(argdict)
     model=BARTModel(argdict, datasets)
     model.train_model()
-    model.generate_special_ex()
+    if argdict['dataset'] not in ['kp20k']:
+        model.generate_special_ex()
     # model.generate_from_dataset(split='train')
     # model.generate_from_dataset(split='dev')
 

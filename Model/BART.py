@@ -262,7 +262,7 @@ class BARTModel(pl.LightningModule):
 										   max_length=50)
 				# print(tokenizer.batch_decode(gend))
 				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
-				hypos = [self.score(sent) for sent in gend]
+				hypos.append([self.score(sent) for sent in gend])
 			# hypos.append(gend)
 
 

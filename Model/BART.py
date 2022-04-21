@@ -250,6 +250,7 @@ class BARTModel(pl.LightningModule):
 			dataset = self.training_set
 			inputs = dataset.abstract_for_ex
 			refs = dataset.label_for_ex
+			print(refs)
 			hypos = []
 
 			for abstract in inputs:

@@ -66,15 +66,13 @@ class BARTModel(pl.LightningModule):
 			df_ref=df_ref.dropna()
 			for i, line in df_ref.iterrows():
 				language=line['language']
+				if language not in self.dico_perfo_per_language.keys():
+					self.dico_perfo_per_language[language]=[]
 				index=line['index']
 				self.dico_keyphrase_language[index]={}
 				for lab in line['label'].split(', '):
 					lab=lab.strip()
 					self.dico_keyphrase_language[index][lab]=language
-			print(self.dico_keyphrase_language)
-			# print(df_ref)
-			fds
-
 
 	def forward(self, tokenized_sentences, tokenized_decoder_sentences):
 
@@ -136,6 +134,8 @@ class BARTModel(pl.LightningModule):
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
+		print(score)
+		fds
 		f110 = np.average(score['present_exact_f_score@10'])
 		r10 = np.average(score['absent_exact_recall@10'])
 		# score5=evaluate(inputs, refs, [sents[:5] for sents in hypos], '<unk>', tokenizer='split_nopunc')

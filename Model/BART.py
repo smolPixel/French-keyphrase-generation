@@ -282,7 +282,7 @@ class BARTModel(pl.LightningModule):
 			pin_memory=torch.cuda.is_available()
 		)
 
-		path_save=f'/data/rali6/Tmp/piedboef/Models/FKPG/{self.argdict["dataset"]}_{self.argdict["num_epochs"]}Epochs.pt
+		path_save=f'/data/rali6/Tmp/piedboef/Models/FKPG/{self.argdict["dataset"]}_{self.argdict["num_epochs"]}Epochs.pt'
 
 		try:
 			self.model.load_state_dict(path_save)

@@ -286,8 +286,10 @@ class BARTModel(pl.LightningModule):
 
 		try:
 			self.model.load_state_dict(path_save)
+			print("loaded model")
 		except:
 			self.trainer.fit(self, train_loader, dev_loader)
+			print("saving model")
 			torch.save(self.model.state_dict(), path_save)
 		final=self.trainer.test(self, test_loader)
 		print(self.loggerg)

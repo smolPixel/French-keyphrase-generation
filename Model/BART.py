@@ -139,7 +139,7 @@ class BARTModel(pl.LightningModule):
 		refs=[[rr.strip() for rr in fullLabels.split(', ')] for fullLabels in batch['full_labels']]
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
 		#Calculating recall by language
-		if self.argdict['dataset'].lower() in ['papyrus']:
+		if self.argdict['dataset'].lower() in ['papyrus_m']:
 			for i, (full_references, full_hypothesis) in enumerate(zip(refs, hypos)):
 				for individual_refs in full_references:
 					try:
@@ -187,7 +187,7 @@ class BARTModel(pl.LightningModule):
 		print(f"rec@10 absent Test : {np.mean([rec10_absent for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
 		print(f"f1@10 absent Test : {np.mean([f110_absent for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
 
-		if self.argdict['dataset'].lower() in ['papyrus']:
+		if self.argdict['dataset'].lower() in ['papyrus', 'papyrus_m']:
 			print("----Recal per language----")
 			for key, item in self.dico_perfo_per_language.items():
 				print(f"{key} : {np.mean(item)}")

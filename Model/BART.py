@@ -58,7 +58,7 @@ class BARTModel(pl.LightningModule):
 		self.logger_per_batch=[]
 		self.logger_test=[]
 		self.logger_test_per_batch=[]
-		if argdict['dataset'].lower()=="papyrus":
+		if argdict['dataset'].lower() in ["papyrus", "papyrus_m"]:
 			self.dico_perfo_per_language={}
 			self.dico_keyphrase_language={}
 			#We want to create a ref that associate each keyphrase for each example with a language, based on papyrus-m

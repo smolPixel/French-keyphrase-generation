@@ -283,7 +283,8 @@ class BARTModel(pl.LightningModule):
 		)
 
 		path_save=f'/data/rali6/Tmp/piedboef/Models/FKPG/{self.argdict["dataset"]}_{self.argdict["num_epochs"]}Epochs.pt'
-
+		self.model.load_state_dict(path_save)
+		print("loaded model")
 		try:
 			self.model.load_state_dict(path_save)
 			print("loaded model")

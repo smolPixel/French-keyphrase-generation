@@ -17,6 +17,7 @@ def set_seed(seed=42):
 
 
 def run(argdict):
+    set_seed()
     datasets = initialize_datasets(argdict)
     model=BARTModel(argdict, datasets)
     model.train_model()

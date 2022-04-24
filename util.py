@@ -50,7 +50,7 @@ def initialize_datasets(argdict):
     dev=NoteMarg(dev, argdict, dev=True)
     test=NoteMarg(test, argdict, dev=True)
     test_inspec=NoteMarg(test_inspec, argdict, dev=True)
-    return train, dev, {"test":test, "test_inspec":test_inspec}
+    return train, dev, {"test_inspec":test_inspec, "test":test}
 
 class NoteMarg(Dataset):
 

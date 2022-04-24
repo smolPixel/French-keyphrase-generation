@@ -33,6 +33,7 @@ def initialize_datasets(argdict):
         dev=dev[:100]
     print(f"Dropped {len(dev)-llPre} entries from dev")
     test = pd.read_csv(f"data/{argdict['dataset']}/test.tsv", sep='\t', index_col=0)
+    test_inspec=pd.read_csv("data/Inspec/test.tsv", sep="\t", index_col=0)
     llPre = len(test)
     test = test.dropna()
     if argdict['short_eval']:
@@ -48,7 +49,8 @@ def initialize_datasets(argdict):
     train=NoteMarg(train, argdict)
     dev=NoteMarg(dev, argdict, dev=True)
     test=NoteMarg(test, argdict, dev=True)
-    return train, dev, test
+    test_inspec=NoteMarg(test_inspec, argdict, dev=True)
+    return train, dev, {"test":test, "test_inspec":test_inspec}
 
 class NoteMarg(Dataset):
 

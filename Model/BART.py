@@ -274,13 +274,13 @@ class BARTModel(pl.LightningModule):
 			pin_memory=torch.cuda.is_available()
 		)
 
-		test_loader=DataLoader(
-			dataset=self.test_set,
-			batch_size=self.argdict['batch_size'],
-			shuffle=False,
-			# num_workers=cpu_count(),
-			pin_memory=torch.cuda.is_available()
-		)
+		# test_loader=DataLoader(
+		# 	dataset=self.test_set,
+		# 	batch_size=self.argdict['batch_size'],
+		# 	shuffle=False,
+		# 	# num_workers=cpu_count(),
+		# 	pin_memory=torch.cuda.is_available()
+		# )
 
 		path_save=f'/data/rali6/Tmp/piedboef/Models/FKPG/{self.argdict["dataset"]}_{self.argdict["num_epochs"]}Epochs.pt'
 		try:
@@ -290,9 +290,18 @@ class BARTModel(pl.LightningModule):
 			self.trainer.fit(self, train_loader, dev_loader)
 			print("saving model")
 			torch.save(self.model.state_dict(), path_save)
-		final=self.trainer.test(self, test_loader)
-		print(self.loggerg)
-		print(final)
+		for name, tt in self.test_set.items():
+			test_loader = DataLoader(
+				dataset=self.test_set,
+				batch_size=self.argdict['batch_size'],
+				shuffle=False,
+				# num_workers=cpu_count(),
+				pin_memory=torch.cuda.is_available()
+			)
+			print(f"Running test for {name}")
+			final=self.trainer.test(self, test_loader)
+			# print(self.loggerg)
+			print(final)
 		# self.model.save_pretrained('Models/pretrained_bart')
 		# for ep in range(self.argdict['num_epochs']):
 		# 	loss, met10 = self.run_epoch('train')

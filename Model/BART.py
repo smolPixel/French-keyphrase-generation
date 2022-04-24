@@ -292,7 +292,7 @@ class BARTModel(pl.LightningModule):
 			torch.save(self.model.state_dict(), path_save)
 		for name, tt in self.test_set.items():
 			test_loader = DataLoader(
-				dataset=self.test_set,
+				dataset=tt,
 				batch_size=self.argdict['batch_size'],
 				shuffle=False,
 				# num_workers=cpu_count(),

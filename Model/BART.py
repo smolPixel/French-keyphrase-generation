@@ -126,6 +126,7 @@ class BARTModel(pl.LightningModule):
 		return loss
 
 	def test_step(self, batch, batch_idx):
+
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
@@ -175,8 +176,8 @@ class BARTModel(pl.LightningModule):
 		return loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent
 
 	def test_epoch_end(self, output_results):
-		print(len(output_results))
-		print(output_results)
+		# print(len(output_results))
+		# print(output_results)
 		print(f"prec@5 present Test : {np.mean([prec5_present for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
 		print(f"rec@5 present Test : {np.mean([rec5_present for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
 		print(f"f1@5 present Test : {np.mean([f15_present for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
@@ -291,7 +292,7 @@ class BARTModel(pl.LightningModule):
 			print("saving model")
 			torch.save(self.model.state_dict(), path_save)
 		for name, tt in self.test_set.items():
-			if name in ['test_inspec', 'test_nus']:
+			if name in ['test_semeval', 'test_inspec', 'test_nus']:
 				self.testing_standard_dataset=True
 			else:
 				self.testing_standard_dataset=False
@@ -304,8 +305,10 @@ class BARTModel(pl.LightningModule):
 			)
 			print(f"Running test for {name}")
 			final=self.trainer.test(self, test_loader)
+			self.generate_ex_from_given_dataset(test_loader)
 			# print(self.loggerg)
-			print(final)
+			# print(final)
+			# fds
 		# self.model.save_pretrained('Models/pretrained_bart')
 		# for ep in range(self.argdict['num_epochs']):
 		# 	loss, met10 = self.run_epoch('train')
@@ -316,7 +319,48 @@ class BARTModel(pl.LightningModule):
 		# 	print(f'\t Val. Loss: {loss_val:.3f} |  Metric @ 10 (p/r/f): {met10_val} ')
 		# 	self.generate_from_dataset(split='train')
 		# 	self.generate_from_dataset()
+	def generate_ex_from_given_dataset(self, dataset):
+		"""Try to generate from the dev set"""
+		self.model.eval()
+		# self.model#.to('cuda')
+		n=2
+		with torch.no_grad():
+			print(f"Generation de 2 exemple from the set")
+			prec_tot = 0
+			rec_tot = 0
+			f1_tot = 0
+			inputs=[]
+			refs=[]
+			hypos=[]
+			ll = self.argdict['max_seq_length']
+			for dat in dataset:
+				# index = dataset.index_unique_examples[j]
+				# dat = dataset.data[index]
+				refs.append(dat['full_labels'])
+				inputs.append(dat[self.field_input])
+				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
+				# src_text = src_text
+				# print(dat[self.field_input][0])
+				input_ids = self.tokenizer.encode(dat[self.field_input][0], return_tensors='pt', truncation=True, max_length=self.argdict['max_seq_length']).to(self.device)
+				# print(input_ids)
+				# print(self.tokenizer.batch_decode((input_ids)))
+				# fds
+				# input_ids = torch.Tensor(src['input_ids']).long().to('cuda').unsqueeze(0)
+				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1,
+									  max_length=50)
+				# print(tokenizer.batch_decode(gend))
+				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+				hypos.append(gend)
+				break
 
+			# print(inputs, hypos, refs)
+
+			# for ii, hh, rr in zip(inputs, hypos, refs):
+			print(f"Input : {inputs[0][0]} \n "
+				  f"Note Marginale: {refs[0][0]} \n"
+				  f"Note Générée: {hypos[0]}")
+			print("------------------")
+		self.model.train()
 	def generate_special_ex(self):
 		self.model.eval()
 		# self.model#.to('cuda')

@@ -59,10 +59,10 @@ def initialize_datasets(argdict):
     test_krapivin=NoteMarg(test_krapivin, argdict, dev=True)
     test_kp20k=NoteMarg(test_kp20k, argdict, dev=True, no_index=True)
     return train, dev, {"test_krapivin":test_krapivin,
+                        "test_kp20k": test_kp20k,
 						"test_semeval":test_semeval,
 						"test_nus":test_nus,
 						"test_inspec":test_inspec,
-						"test_kp20k":test_kp20k,
 						"test":test}
 
 class NoteMarg(Dataset):

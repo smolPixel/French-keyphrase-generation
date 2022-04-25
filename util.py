@@ -112,7 +112,7 @@ class NoteMarg(Dataset):
                 else:
                     sents_trunc[-1]+=ss+" "
             for sent in sents_trunc:
-                if argdict['dataset'] not in ['kp20k'] or not no_index:
+                if argdict['dataset'] not in ['kp20k'] and not no_index:
                     ind=row['index']
                 else:
                     ind=0

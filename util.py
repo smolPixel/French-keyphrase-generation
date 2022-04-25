@@ -57,7 +57,7 @@ def initialize_datasets(argdict):
     test_nus=NoteMarg(test_nus, argdict, dev=True)
     test_semeval=NoteMarg(test_semeval, argdict, dev=True)
     test_krapivin=NoteMarg(test_krapivin, argdict, dev=True)
-    test_kp20k=NoteMarg(test_kp20k, argdict, dev=True)
+    test_kp20k=NoteMarg(test_kp20k, argdict, dev=True, no_index=True)
     return train, dev, {"test_krapivin":test_krapivin,
 						"test_semeval":test_semeval,
 						"test_nus":test_nus,
@@ -67,7 +67,7 @@ def initialize_datasets(argdict):
 
 class NoteMarg(Dataset):
 
-    def __init__(self, data, argdict, dev=False):
+    def __init__(self, data, argdict, dev=False, no_index=False):
         super().__init__()
         """data: tsv of the data
            tokenizer: tokenizer trained
@@ -112,7 +112,7 @@ class NoteMarg(Dataset):
                 else:
                     sents_trunc[-1]+=ss+" "
             for sent in sents_trunc:
-                if argdict['dataset'] not in ['kp20k']:
+                if argdict['dataset'] not in ['kp20k'] or not no_index:
                     ind=row['index']
                 else:
                     ind=0

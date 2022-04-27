@@ -38,6 +38,7 @@ def initialize_datasets(argdict):
     test_semeval=pd.read_csv("data/SemEval/test.tsv", sep="\t", index_col=0).dropna()
     test_krapivin=pd.read_csv("data/krapivin/test.tsv", sep="\t", index_col=0).dropna()
     test_kp20k=pd.read_csv("data/kp20k/test.tsv", sep="\t", index_col=0).dropna()
+    test_papyruse=pd.read_csv("data/papyrus_e/test.tsv", sep="\t", index_col=0).dropna()
     llPre = len(test)
     test = test.dropna()
     if argdict['short_eval']:
@@ -57,13 +58,15 @@ def initialize_datasets(argdict):
     test_nus=NoteMarg(test_nus, argdict, dev=True)
     test_semeval=NoteMarg(test_semeval, argdict, dev=True)
     test_krapivin=NoteMarg(test_krapivin, argdict, dev=True)
+    test_papyruse=NoteMarg(test_papyruse, argdict, dev=True)
     test_kp20k=NoteMarg(test_kp20k, argdict, dev=True, no_index=True)
     return train, dev, {"test_krapivin":test_krapivin,
-                        "test_kp20k": test_kp20k,
-						"test_semeval":test_semeval,
-						"test_nus":test_nus,
-						"test_inspec":test_inspec,
-						"test":test}
+                        "test_papyruse":test_papyruse}
+                        # "test_kp20k": test_kp20k,
+						# "test_semeval":test_semeval,
+						# "test_nus":test_nus,
+						# "test_inspec":test_inspec,
+						# "test":test}
 
 class NoteMarg(Dataset):
 

@@ -25,6 +25,7 @@ def initialize_datasets(argdict):
     llPre=len(train)
     train=train.dropna()
     # train=train[:1000]
+    train=train[:10602]
     print(f"Dropped {len(train)-llPre} entries from train")
     dev=pd.read_csv(f"data/{argdict['dataset']}/dev.tsv", sep='\t', index_col=0)
     llPre=len(dev)
@@ -61,13 +62,13 @@ def initialize_datasets(argdict):
     test_papyruse=NoteMarg(test_papyruse, argdict, dev=True)
     test_kp20k=NoteMarg(test_kp20k, argdict, dev=True, no_index=True)
     return train, dev, {"test_krapivin":test_krapivin,
-                        # "test_papyruse":test_papyruse,
-                        # "test_kp20k": test_kp20k,
-						# "test_semeval":test_semeval,
+                        "test_papyruse":test_papyruse,
+                        "test_kp20k": test_kp20k,
+						"test_semeval":test_semeval,
 						"test_nus":test_nus,
-						# "test_inspec":test_inspec,
-						# "test":test}
-                        }
+						"test_inspec":test_inspec,
+						"test":test}
+                        
 
 class NoteMarg(Dataset):
 

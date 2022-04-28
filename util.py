@@ -95,7 +95,7 @@ class NoteMarg(Dataset):
         self.label_for_ex=[]
         for i, row in data.iterrows():
             # Special example 26534
-            if not dev and argdict['dataset'] not in ['kp20k'] and row['index'] == 22634:
+            if not dev and argdict['dataset'] not in ['kp20k'] and row['index'] == 25397:
                 self.abstract_for_ex.append(row['sentences'])
                 self.label_for_ex.append(row['label'])
             if dev and argdict['short_eval'] and index>10:

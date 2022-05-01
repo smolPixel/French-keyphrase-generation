@@ -135,7 +135,7 @@ class BARTModel(pl.LightningModule):
 		loss = output['loss']
 
 		input_ids = self.tokenizer(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
-		gend = self.model.generate(**input_ids, num_beams=10, num_return_sequences=1, max_length=50)
+		gend = self.model.generate(**input_ids, num_beams=10, num_return_sequences=1)#, max_length=50)
 		gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
 		hypos=[self.score(sent) for sent in gend]
 		inputs=batch[self.field_input]
@@ -286,11 +286,11 @@ class BARTModel(pl.LightningModule):
 		# )
 
 		path_save=f'/data/rali6/Tmp/piedboef/Models/FKPG/{self.argdict["dataset"]}_{self.argdict["num_epochs"]}Epochs.pt'
-		tic=timeit.default_timer()
-		self.trainer.fit(self, train_loader, dev_loader)
-		toc=timeit.default_timer()
-		print(f"Training processed took {toc-tic} seconds")
-		fds
+		# tic=timeit.default_timer()
+		# self.trainer.fit(self, train_loader, dev_loader)
+		# toc=timeit.default_timer()
+		# print(f"Training processed took {toc-tic} seconds")
+		# fds
 		try:
 			self.model.load_state_dict(torch.load(path_save))
 			print("loaded model")

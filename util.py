@@ -99,6 +99,9 @@ class NoteMarg(Dataset):
             if not dev and argdict['dataset'] not in ['kp20k'] and row['index'] == 25397:
                 self.abstract_for_ex.append(row['sentences'])
                 self.label_for_ex.append(row['label'])
+            if dev and argdict['dataset'] not in ['kp20k'] and row['index'] == 24192:
+                self.abstract_for_ex.append(row['sentences'])
+                self.label_for_ex.append(row['label'])
             if dev and argdict['short_eval'] and index>10:
                 break
             if row['sentences'] in ['.', '', ' '] or row['label'] in ['.', '', ' ']:

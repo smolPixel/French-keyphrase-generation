@@ -311,7 +311,7 @@ class BARTModel(pl.LightningModule):
 				pin_memory=torch.cuda.is_available()
 			)
 			print(f"Running test for {name}")
-			final=self.trainer.test(self, test_loader)
+			# final=self.trainer.test(self, test_loader)
 			self.generate_ex_from_given_dataset(test_loader)
 			# print(self.loggerg)
 			# print(final)
@@ -353,8 +353,7 @@ class BARTModel(pl.LightningModule):
 				# print(self.tokenizer.batch_decode((input_ids)))
 				# fds
 				# input_ids = torch.Tensor(src['input_ids']).long().to('cuda').unsqueeze(0)
-				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1,
-									  max_length=50)
+				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1)
 				# print(tokenizer.batch_decode(gend))
 				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
 				hypos.append(gend)
@@ -384,8 +383,7 @@ class BARTModel(pl.LightningModule):
 				# src_text = src_text
 				input_ids = self.tokenizer.encode(abstract, return_tensors='pt', truncation=True,
 												  max_length=self.argdict['max_seq_length']).to(self.device)
-				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1,
-										   max_length=50)
+				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1)
 				# print(tokenizer.batch_decode(gend))
 				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
 				hypos.append([self.score(sent) for sent in gend])
@@ -394,6 +392,28 @@ class BARTModel(pl.LightningModule):
 
 			# print(inputs, hypos, refs)
 
+			for ii, hh, rr in zip(inputs, hypos, refs):
+				print(f"Input : {ii} \n "
+					  f"Note Marginale: {rr} \n"
+					  f"Note Générée: {hh}")
+				print("------------------")
+
+			print("GENERATION FOR THE DEV SET")
+			print(f"Generation for example 24192")
+			dataset = self.dev_set
+			inputs = dataset.abstract_for_ex
+			refs = dataset.label_for_ex
+			hypos = []
+
+			for abstract in inputs:
+				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
+				# src_text = src_text
+				input_ids = self.tokenizer.encode(abstract, return_tensors='pt', truncation=True,
+												  max_length=self.argdict['max_seq_length']).to(self.device)
+				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1)
+				# print(tokenizer.batch_decode(gend))
+				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+				hypos.append([self.score(sent) for sent in gend])
 			for ii, hh, rr in zip(inputs, hypos, refs):
 				print(f"Input : {ii} \n "
 					  f"Note Marginale: {rr} \n"

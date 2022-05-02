@@ -55,11 +55,11 @@ def initialize_datasets(argdict):
     train=NoteMarg(train, argdict)
     dev=NoteMarg(dev, argdict, dev=True)
     test=NoteMarg(test, argdict, dev=True)
-    test_inspec=NoteMarg(test_inspec, argdict, dev=True)
-    test_nus=NoteMarg(test_nus, argdict, dev=True)
-    test_semeval=NoteMarg(test_semeval, argdict, dev=True)
-    test_krapivin=NoteMarg(test_krapivin, argdict, dev=True)
-    test_papyruse=NoteMarg(test_papyruse, argdict, dev=True)
+    test_inspec=NoteMarg(test_inspec, argdict, dev=True, no_index=True)
+    test_nus=NoteMarg(test_nus, argdict, dev=True, no_index=True)
+    test_semeval=NoteMarg(test_semeval, argdict, dev=True, no_index=True)
+    test_krapivin=NoteMarg(test_krapivin, argdict, dev=True, no_index=True)
+    test_papyruse=NoteMarg(test_papyruse, argdict, dev=True, no_index=True)
     test_kp20k=NoteMarg(test_kp20k, argdict, dev=True, no_index=True)
     return train, dev, {"test_krapivin":test_krapivin,
                         "test_papyruse":test_papyruse,
@@ -99,8 +99,8 @@ class NoteMarg(Dataset):
             if not dev and argdict['dataset'] not in ['kp20k'] and row['index'] == 25397:
                 self.abstract_for_ex.append(row['sentences'])
                 self.label_for_ex.append(row['label'])
-            print(row)
-            if dev and argdict['dataset'] not in ['kp20k'] and row['index'] == 24192:
+            # print(row)
+            if dev and not no_index and row['index'] == 24192:
                 self.abstract_for_ex.append(row['sentences'])
                 self.label_for_ex.append(row['label'])
             if dev and argdict['short_eval'] and index>10:

@@ -74,14 +74,14 @@ while True:
 	for kp in keyphrases:
 		total_keyphrases+=1
 		foundLanguage=False
-		if '(UMI' in kp[0] or '[JEL' in kp[0]:
+		if '(UMI' in kp[0] or '[JEL' in kp:
 			prop_weirdos+=1
 			# print(kp[0])
 			continue
 
 		#Check if there's only one language -> all kp are of this language
 		if len(languages_in_text)==1:
-			dicoTemp[languages_in_text[0]][1].append(kp[0])
+			dicoTemp[languages_in_text[0]][1].append(kp)
 			continue
 
 		languages_of_kp=[]
@@ -93,16 +93,16 @@ while True:
 				foundLanguage=True
 		if foundLanguage:
 			for ll in languages_of_kp:
-				dicoTemp[ll][1].append(kp[0])
+				dicoTemp[ll][1].append(kp)
 			continue
 
-		languages_fasttext=model.predict(kp[0], k=15)
+		languages_fasttext=model.predict(kp, k=15)
 		# print(kp[0])
 		# print(kp)
 		languages_kp=[ll[-2:] for ll in languages_fasttext[0]]
 		for ll in languages_kp:
 			if ll in languages_in_text:
-				dicoTemp[ll][1].append(kp[0])
+				dicoTemp[ll][1].append(kp)
 				foundLanguage=True
 				break
 
@@ -111,7 +111,7 @@ while True:
 			# print(languages_kp)
 			total_not_found+=1
 			for ll in languages_in_text:
-				dicoTemp[ll][1].append(kp[0])
+				dicoTemp[ll][1].append(kp)
 
 
 	# fds
@@ -127,17 +127,17 @@ while True:
 	# print(list(dfTrain['label']))
 	# fds
 
-print(dfTrain)
-
-print(total_not_found)
-print(total_keyphrases)
-print(prop_weirdos)
+# print(dfTrain)
+#
+# print(total_not_found)
+# print(total_keyphrases)
+# print(prop_weirdos)
 #
 # for i, serie in dfTrain[dfTrain['index']==22634].iterrows():
 # 	print(serie['sentences'])
 # 	print(serie['label'])
 #
 #
-# dfTrain.to_csv('data/papyrus_m/train.tsv', sep='\t')
-# dfDev.to_csv('data/papyrus_m/dev.tsv', sep='\t')
-# dfTest.to_csv('data/papyrus_m/test.tsv', sep='\t')
+dfTrain.to_csv('data/papyrus_m/train.tsv', sep='\t')
+dfDev.to_csv('data/papyrus_m/dev.tsv', sep='\t')
+dfTest.to_csv('data/papyrus_m/test.tsv', sep='\t')

@@ -96,7 +96,7 @@ def evaluate(src_list, tgt_list, pred_list,
 		valid_present_pred_flags = present_pred_flags[valid_pred_flags]
 
 		valid_match_scores_exact = match_scores_exact[valid_pred_flags]
-		valid_match_scores_partial = match_scores_partial[valid_pred_flags]
+		# valid_match_scores_partial = match_scores_partial[valid_pred_flags]
 		# match_scores_mixed = match_scores_mixed[valid_pred_flags]
 
 		# split preds by present/absent and exact/partial/mixed
@@ -104,10 +104,10 @@ def evaluate(src_list, tgt_list, pred_list,
 		valid_absent_preds = [pred for pred, present in zip(valid_preds, valid_present_pred_flags) if ~present]
 		if len(valid_present_pred_flags) > 0:
 			present_exact_match_scores = valid_match_scores_exact[valid_present_pred_flags]
-			present_partial_match_scores = valid_match_scores_partial[valid_present_pred_flags][:, present_tgt_flags]
+			# present_partial_match_scores = valid_match_scores_partial[valid_present_pred_flags][:, present_tgt_flags]
 			# present_mixed_match_scores = match_scores_mixed[present_pred_flags][:, present_tgt_flags]
 			absent_exact_match_scores = valid_match_scores_exact[~valid_present_pred_flags]
-			absent_partial_match_scores = valid_match_scores_partial[~valid_present_pred_flags][:, ~present_tgt_flags]
+			# absent_partial_match_scores = valid_match_scores_partial[~valid_present_pred_flags][:, ~present_tgt_flags]
 			# absent_mixed_match_scores = match_scores_mixed[~present_pred_flags][:, ~present_tgt_flags]
 		else:
 			present_exact_match_scores = []
@@ -132,15 +132,15 @@ def evaluate(src_list, tgt_list, pred_list,
 		present_exact_results = run_classic_metrics(present_exact_match_scores, valid_present_preds, present_tgts, metric_names, topk_range)
 		absent_exact_results = run_classic_metrics(absent_exact_match_scores, valid_absent_preds, absent_tgts, metric_names, absent_topk_range)
 
-		all_partial_results = run_classic_metrics(valid_match_scores_partial, valid_preds, tgt_seqs, metric_names, topk_range, type='partial')
-		present_partial_results = run_classic_metrics(present_partial_match_scores, valid_present_preds, present_tgts, metric_names, topk_range, type='partial')
-		absent_partial_results = run_classic_metrics(absent_partial_match_scores, valid_absent_preds, absent_tgts, metric_names, absent_topk_range, type='partial')
+		# all_partial_results = run_classic_metrics(valid_match_scores_partial, valid_preds, tgt_seqs, metric_names, topk_range, type='partial')
+		# present_partial_results = run_classic_metrics(present_partial_match_scores, valid_present_preds, present_tgts, metric_names, topk_range, type='partial')
+		# absent_partial_results = run_classic_metrics(absent_partial_match_scores, valid_absent_preds, absent_tgts, metric_names, absent_topk_range, type='partial')
 		# present_mixed_results = run_metrics(present_mixed_match_scores, present_preds, present_tgts, metric_names, topk_range, type='partial')
 		# absent_mixed_results = run_metrics(absent_mixed_match_scores, absent_preds, absent_tgts, metric_names, absent_topk_range, type='partial')
 
-		all_exact_advanced_results = run_advanced_metrics(valid_match_scores_exact, valid_preds, tgt_seqs)
-		present_exact_advanced_results = run_advanced_metrics(present_exact_match_scores, valid_present_preds, present_tgts)
-		absent_exact_advanced_results = run_advanced_metrics(absent_exact_match_scores, valid_absent_preds, absent_tgts)
+		# all_exact_advanced_results = run_advanced_metrics(valid_match_scores_exact, valid_preds, tgt_seqs)
+		# present_exact_advanced_results = run_advanced_metrics(present_exact_match_scores, valid_present_preds, present_tgts)
+		# absent_exact_advanced_results = run_advanced_metrics(absent_exact_match_scores, valid_absent_preds, absent_tgts)
 		# print(advanced_present_exact_results)
 		# print(advanced_absent_exact_results)
 

@@ -311,7 +311,7 @@ class BARTModel(pl.LightningModule):
 				pin_memory=torch.cuda.is_available()
 			)
 			print(f"Running test for {name}")
-			# final=self.trainer.test(self, test_loader)
+			final=self.trainer.test(self, test_loader)
 			self.generate_ex_from_given_dataset(test_loader)
 			# print(self.loggerg)
 			# print(final)

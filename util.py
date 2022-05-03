@@ -40,6 +40,7 @@ def initialize_datasets(argdict):
 	test_krapivin=pd.read_csv("data/krapivin/test.tsv", sep="\t", index_col=0).dropna()
 	test_kp20k=pd.read_csv("data/kp20k/test.tsv", sep="\t", index_col=0).dropna()
 	test_papyruse=pd.read_csv("data/papyrus_e/test.tsv", sep="\t", index_col=0).dropna()
+	test_wikinews=pd.read_csv("data/WikiNews/test.tsv", sep='\t', index_col=0).drpona()
 	llPre = len(test)
 	test = test.dropna()
 	if argdict['short_eval']:
@@ -61,12 +62,13 @@ def initialize_datasets(argdict):
 	test_krapivin=NoteMarg(test_krapivin, argdict, dev=True, no_index=True)
 	test_papyruse=NoteMarg(test_papyruse, argdict, dev=True, no_index=True)
 	test_kp20k=NoteMarg(test_kp20k, argdict, dev=True, no_index=True)
-	return train, dev, {"test_krapivin":test_krapivin,
-						"test_papyruse":test_papyruse,
-						"test_kp20k": test_kp20k,
-						"test_semeval":test_semeval,
-						"test_nus":test_nus,
-						"test_inspec":test_inspec,
+	return train, dev, {"test_wikinews":test_wikinews,
+						"test_krapivin":test_krapivin,
+						# "test_papyruse":test_papyruse,
+						# "test_kp20k": test_kp20k,
+						# "test_semeval":test_semeval,
+						# "test_nus":test_nus,
+						# "test_inspec":test_inspec,
 						"test":test}
 
 

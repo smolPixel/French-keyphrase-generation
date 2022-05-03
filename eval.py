@@ -148,11 +148,11 @@ def evaluate(src_list, tgt_list, pred_list,
 		3. Gather scores
 		"""
 		eval_results_names = [
-			'all_exact', 'all_partial',
+			'all_exact', #'all_partial',
 			'present_exact', 'absent_exact',
-			'present_partial', 'absent_partial',
+			# 'present_partial', 'absent_partial',
 			# 'present_mixed', 'absent_mixed'
-			'all_exact_advanced', 'present_exact_advanced', 'absent_exact_advanced',
+			# 'all_exact_advanced', 'present_exact_advanced', 'absent_exact_advanced',
 			]
 		eval_results_list = [all_exact_results, #all_partial_results,
 							 present_exact_results, absent_exact_results,

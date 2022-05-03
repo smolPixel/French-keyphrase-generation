@@ -638,10 +638,7 @@ def compute_match_scores(tgt_seqs, pred_seqs, do_lower=True, do_stem=False, type
     :return:
     '''
     # do processing to baseline predictions
-    if type == "exact":
-        match_score = np.zeros(shape=(len(pred_seqs)), dtype='float32')
-    else:
-        match_score = np.zeros(shape=(len(pred_seqs), len(tgt_seqs)), dtype='float32')
+    match_score = np.zeros(shape=(len(pred_seqs)), dtype='float32')
 
     target_number = len(tgt_seqs)
     predicted_number = len(pred_seqs)
@@ -652,9 +649,6 @@ def compute_match_scores(tgt_seqs, pred_seqs, do_lower=True, do_stem=False, type
     if do_lower:
         tgt_seqs = [[w.lower() for w in seq] for seq in tgt_seqs]
         pred_seqs = [[w.lower() for w in seq] for seq in pred_seqs]
-    if do_stem:
-        tgt_seqs = [stem_word_list(seq) for seq in tgt_seqs]
-        pred_seqs = [stem_word_list(seq) for seq in pred_seqs]
 
     for pred_id, pred_seq in enumerate(pred_seqs):
         if type == 'exact':
@@ -665,6 +659,8 @@ def compute_match_scores(tgt_seqs, pred_seqs, do_lower=True, do_stem=False, type
                     continue
                 for pred_w, true_w in zip(pred_seq, true_seq):
                     # if one two words are not same, match fails
+					print(pred_w, true_w)
+					fds
                     if pred_w != true_w:
                         match = False
                         break

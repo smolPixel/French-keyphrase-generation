@@ -46,12 +46,12 @@ class YakeModel():
 		r10 = np.average(score['absent_exact_recall@10'])
 		print(f"f1@10 present and r@10 absent for dev: {f10}, {r10}")
 
-		for tt in self.test_set:
-			print(f"running for {tt} dataset")
+		for name, tt in self.test_set.items():
+			print(f"running for {name} dataset")
 			inputs = []
 			refs = []
 			hypos = []
-			for i, exos in tqdm(self.tt.data.items()):
+			for i, exos in tqdm(tt.data.items()):
 				# print(exos)
 				inputs.append(exos['input_sentence'])
 				refs.append([rr.strip() for rr in exos['full_labels'].split(',')])

@@ -154,11 +154,11 @@ def evaluate(src_list, tgt_list, pred_list,
 			# 'present_mixed', 'absent_mixed'
 			'all_exact_advanced', 'present_exact_advanced', 'absent_exact_advanced',
 			]
-		eval_results_list = [all_exact_results, all_partial_results,
+		eval_results_list = [all_exact_results, #all_partial_results,
 							 present_exact_results, absent_exact_results,
-							 present_partial_results, absent_partial_results,
+							 # present_partial_results, absent_partial_results,
 							 # present_mixed_results, absent_mixed_results
-							 all_exact_advanced_results, present_exact_advanced_results, absent_exact_advanced_results
+							 # all_exact_advanced_results, present_exact_advanced_results, absent_exact_advanced_results
 							]
 		# update score_dict, appending new scores (results_list) to it
 		individual_score_dict = {result_name: results for result_name, results in zip(eval_results_names, eval_results_list)}

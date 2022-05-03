@@ -38,6 +38,8 @@ total_not_found=0
 total_keyphrases=0
 prop_weirdos=0
 new_index=0
+#For doublons
+list_all_abastracts=[]
 while True:
 	if new_index%1000==0:
 		print(new_index)
@@ -57,6 +59,7 @@ while True:
 	#Identify languages of abstract
 	languages_in_text=[]
 	for text in abs:
+		
 		language=detect_langs(text)
 		language=str(language[0])[:2]
 		#If an abstract of this language already exists

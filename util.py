@@ -11,59 +11,59 @@ from torchtext.vocab import build_vocab_from_iterator
 
 
 class OrderedCounter(Counter, OrderedDict):
-    """Counter that remembers the order elements are first encountered"""
-    def __repr__(self):
-        return '%s(%r)' % (self.__class__.__name__, OrderedDict(self))
+	"""Counter that remembers the order elements are first encountered"""
+	def __repr__(self):
+		return '%s(%r)' % (self.__class__.__name__, OrderedDict(self))
 
-    def __reduce__(self):
-        return self.__class__, (OrderedDict(self),)
+	def __reduce__(self):
+		return self.__class__, (OrderedDict(self),)
 
 
 def initialize_datasets(argdict):
-    #Generate sentences: Prepare the dataset to generate sentences from the marginal notes
-    train=pd.read_csv(f"data/{argdict['dataset']}/train.tsv", sep='\t', index_col=0)
-    llPre=len(train)
-    train=train.dropna()
-    # train=train[:1000]
-    # train=train[:10602]
-    print(f"Dropped {len(train)-llPre} entries from train")
-    dev=pd.read_csv(f"data/{argdict['dataset']}/dev.tsv", sep='\t', index_col=0)
-    llPre=len(dev)
-    dev=dev.dropna()
-    if argdict['short_eval']:
-        dev=dev[:100]
-    print(f"Dropped {len(dev)-llPre} entries from dev")
-    test = pd.read_csv(f"data/{argdict['dataset']}/test.tsv", sep='\t', index_col=0)
-    test_inspec=pd.read_csv("data/Inspec/test.tsv", sep="\t", index_col=0)
-    test_nus=pd.read_csv("data/NUS/test.tsv", sep="\t", index_col=0)
-    test_semeval=pd.read_csv("data/SemEval/test.tsv", sep="\t", index_col=0).dropna()
-    test_krapivin=pd.read_csv("data/krapivin/test.tsv", sep="\t", index_col=0).dropna()
-    test_kp20k=pd.read_csv("data/kp20k/test.tsv", sep="\t", index_col=0).dropna()
-    test_papyruse=pd.read_csv("data/papyrus_e/test.tsv", sep="\t", index_col=0).dropna()
-    llPre = len(test)
-    test = test.dropna()
-    if argdict['short_eval']:
-        test=test[:100]
-    print(f"Dropped {len(test) - llPre} entries from test")
+	#Generate sentences: Prepare the dataset to generate sentences from the marginal notes
+	train=pd.read_csv(f"data/{argdict['dataset']}/train.tsv", sep='\t', index_col=0)
+	llPre=len(train)
+	train=train.dropna()
+	# train=train[:1000]
+	# train=train[:10602]
+	print(f"Dropped {len(train)-llPre} entries from train")
+	dev=pd.read_csv(f"data/{argdict['dataset']}/dev.tsv", sep='\t', index_col=0)
+	llPre=len(dev)
+	dev=dev.dropna()
+	if argdict['short_eval']:
+		dev=dev[:100]
+	print(f"Dropped {len(dev)-llPre} entries from dev")
+	test = pd.read_csv(f"data/{argdict['dataset']}/test.tsv", sep='\t', index_col=0)
+	test_inspec=pd.read_csv("data/Inspec/test.tsv", sep="\t", index_col=0)
+	test_nus=pd.read_csv("data/NUS/test.tsv", sep="\t", index_col=0)
+	test_semeval=pd.read_csv("data/SemEval/test.tsv", sep="\t", index_col=0).dropna()
+	test_krapivin=pd.read_csv("data/krapivin/test.tsv", sep="\t", index_col=0).dropna()
+	test_kp20k=pd.read_csv("data/kp20k/test.tsv", sep="\t", index_col=0).dropna()
+	test_papyruse=pd.read_csv("data/papyrus_e/test.tsv", sep="\t", index_col=0).dropna()
+	llPre = len(test)
+	test = test.dropna()
+	if argdict['short_eval']:
+		test=test[:100]
+	print(f"Dropped {len(test) - llPre} entries from test")
 
-    allsentences=list(train['sentences'])
-    allsentences.extend(list(train['label']))
-    # tokenizer=TweetTokenizer()
-    # allsentences=[tokenizer.tokenize(sentence) for sentence in allsentences if sentence==sentence]
-    # vocab = build_vocab_from_iterator(allsentences, min_freq=argdict['min_vocab_freq'], specials=["<unk>", "<pad>", "<bos>", "<eos>"], )
-    # vocab.set_default_index(vocab["<unk>"])
-    train=NoteMarg(train, argdict)
-    dev=NoteMarg(dev, argdict, dev=True)
-    test=NoteMarg(test, argdict, dev=True)
-    test_inspec=NoteMarg(test_inspec, argdict, dev=True, no_index=True)
-    test_nus=NoteMarg(test_nus, argdict, dev=True, no_index=True)
-    test_semeval=NoteMarg(test_semeval, argdict, dev=True, no_index=True)
-    test_krapivin=NoteMarg(test_krapivin, argdict, dev=True, no_index=True)
-    test_papyruse=NoteMarg(test_papyruse, argdict, dev=True, no_index=True)
-    test_kp20k=NoteMarg(test_kp20k, argdict, dev=True, no_index=True)
-    return train, dev, {"test_krapivin":test_krapivin,
-                        "test_papyruse":test_papyruse,
-                        "test_kp20k": test_kp20k,
+	allsentences=list(train['sentences'])
+	allsentences.extend(list(train['label']))
+	# tokenizer=TweetTokenizer()
+	# allsentences=[tokenizer.tokenize(sentence) for sentence in allsentences if sentence==sentence]
+	# vocab = build_vocab_from_iterator(allsentences, min_freq=argdict['min_vocab_freq'], specials=["<unk>", "<pad>", "<bos>", "<eos>"], )
+	# vocab.set_default_index(vocab["<unk>"])
+	train=NoteMarg(train, argdict)
+	dev=NoteMarg(dev, argdict, dev=True)
+	test=NoteMarg(test, argdict, dev=True)
+	test_inspec=NoteMarg(test_inspec, argdict, dev=True, no_index=True)
+	test_nus=NoteMarg(test_nus, argdict, dev=True, no_index=True)
+	test_semeval=NoteMarg(test_semeval, argdict, dev=True, no_index=True)
+	test_krapivin=NoteMarg(test_krapivin, argdict, dev=True, no_index=True)
+	test_papyruse=NoteMarg(test_papyruse, argdict, dev=True, no_index=True)
+	test_kp20k=NoteMarg(test_kp20k, argdict, dev=True, no_index=True)
+	return train, dev, {"test_krapivin":test_krapivin,
+						"test_papyruse":test_papyruse,
+						"test_kp20k": test_kp20k,
 						"test_semeval":test_semeval,
 						"test_nus":test_nus,
 						"test_inspec":test_inspec,
@@ -72,108 +72,112 @@ def initialize_datasets(argdict):
 
 class NoteMarg(Dataset):
 
-    def __init__(self, data, argdict, dev=False, no_index=False):
-        super().__init__()
-        """data: tsv of the data
-           tokenizer: tokenizer trained
-           vocabInput+Output: vocab trained on train"""
-        self.data = {}
-        self.max_len = argdict['max_seq_length']
-        # self.vocab = vocab
-        # self.tokenizer=tokenizer
-        # self.pad_idx = self.vocab['<pad>']
-        self.max_len_label=0
-        self.max_len_words=0
-        self.num_sentences=0
-        self.max_len_labels=0
-        self.len_sentence=0
-        self.index_unique_examples=[]
-        # self.generate_sentence = generate_sentences
-        index=0
-        self.map_unique_to_id={}
+	def __init__(self, data, argdict, dev=False, no_index=False):
+		super().__init__()
+		"""data: tsv of the data
+		   tokenizer: tokenizer trained
+		   vocabInput+Output: vocab trained on train"""
+		self.data = {}
+		self.max_len = argdict['max_seq_length']
+		# self.vocab = vocab
+		# self.tokenizer=tokenizer
+		# self.pad_idx = self.vocab['<pad>']
+		self.max_len_label=0
+		self.max_len_words=0
+		self.num_sentences=0
+		self.max_len_labels=0
+		self.len_sentence=0
+		self.index_unique_examples=[]
+		# self.generate_sentence = generate_sentences
+		index=0
+		self.map_unique_to_id={}
 
-        self.abstract_for_ex=[]
-        self.label_for_ex=[]
-        for i, row in data.iterrows():
-            # Special example 26534
-            if not dev and argdict['dataset'] not in ['kp20k'] and row['index'] == 25397:
-                self.abstract_for_ex.append(row['sentences'])
-                self.label_for_ex.append(row['label'])
-            # print(row)
-            if dev and not no_index and row['index'] == 24192:
-                self.abstract_for_ex.append(row['sentences'])
-                self.label_for_ex.append(row['label'])
-            if dev and argdict['short_eval'] and index>10:
-                break
-            if row['sentences'] in ['.', '', ' '] or row['label'] in ['.', '', ' ']:
-                continue
-            # if self.len_sentence<max([len(sent) for sent in sentences_sep]):
-            #     self.len_sentence=max([len(sent) for sent in sentences_sep])
-            self.index_unique_examples.append(index)
-            self.map_unique_to_id[index]=[]
+		self.abstract_for_ex=[]
+		self.label_for_ex=[]
+		for i, row in data.iterrows():
+			# Special example 26534
+			if not dev and argdict['dataset'] not in ['kp20k'] and row['index'] == 25397:
+				self.abstract_for_ex.append(row['sentences'])
+				self.label_for_ex.append(row['label'])
+			# print(row)
+			if dev and not no_index and row['index'] == 24192:
+				self.abstract_for_ex.append(row['sentences'])
+				self.label_for_ex.append(row['label'])
+			if dev and argdict['short_eval'] and index>10:
+				break
+			if row['sentences'] in ['.', '', ' '] or row['label'] in ['.', '', ' ']:
+				continue
+			# if self.len_sentence<max([len(sent) for sent in sentences_sep]):
+			#     self.len_sentence=max([len(sent) for sent in sentences_sep])
+			self.index_unique_examples.append(index)
+			self.map_unique_to_id[index]=[]
 
-            #Split by max_seq_length
-            sents=sent_tokenize(row['sentences'])
-            sents_trunc=[""]
-            for ss in sents:
-                if len(ss[-1].split(" "))+len(ss.split(" "))>argdict['max_seq_length']:
-                    sents_trunc.append(ss)
-                else:
-                    sents_trunc[-1]+=ss+" "
-            for sent in sents_trunc:
-                if argdict['dataset'] not in ['kp20k'] and not no_index:
-                    ind=row['index']
-                else:
-                    ind=0
-                self.data[index] = {'full_labels': row['label'], 'input_sentence': sent, 'index':ind}
-                self.map_unique_to_id[self.index_unique_examples[-1]].append(index)
-                index+=1
+			#Split by max_seq_length
+			sents=sent_tokenize(row['sentences'])
+			sents_trunc=[""]
+			for ss in sents:
+				if len(ss[-1].split(" "))+len(ss.split(" "))>argdict['max_seq_length']:
+					sents_trunc.append(ss)
+				else:
+					sents_trunc[-1]+=ss+" "
+			for sent in sents_trunc:
+				if argdict['dataset'] not in ['kp20k'] and not no_index:
+					ind=row['index']
+				else:
+					ind=0
+				try:
+					ll=row['language']
+				except:
+					ll='en'
+				self.data[index] = {'full_labels': row['label'], 'input_sentence': sent, 'index':ind, 'language':ll}
+				self.map_unique_to_id[self.index_unique_examples[-1]].append(index)
+				index+=1
 
-    def tokenize(self, batch):
-        """tokenize a batch"""
-        results=[]
-        for sent in batch:
-            tokenized_text = self.tokenizer.tokenize(sent)
-            results.append(self.vocab(tokenized_text))
+	def tokenize(self, batch):
+		"""tokenize a batch"""
+		results=[]
+		for sent in batch:
+			tokenized_text = self.tokenizer.tokenize(sent)
+			results.append(self.vocab(tokenized_text))
 
-        return results
+		return results
 
-    @property
-    def vocab_size(self):
-        return len(self.vocab)
+	@property
+	def vocab_size(self):
+		return len(self.vocab)
 
-    @property
-    def eos_idx(self):
-        return self.vocab['<eos>']
+	@property
+	def eos_idx(self):
+		return self.vocab['<eos>']
 
-    @property
-    def pad_idx(self):
-        return self.vocab['<pad>']
+	@property
+	def pad_idx(self):
+		return self.vocab['<pad>']
 
-    @property
-    def bos_idx(self):
-        return self.vocab['<bos>']
+	@property
+	def bos_idx(self):
+		return self.vocab['<bos>']
 
-    @property
-    def unk_idx(self):
-        return self.vocab['<unk>']
+	@property
+	def unk_idx(self):
+		return self.vocab['<unk>']
 
-    def get_i2w(self):
-        return self.vocab.get_itos()
+	def get_i2w(self):
+		return self.vocab.get_itos()
 
-    def __len__(self):
-        return len(self.data)
+	def __len__(self):
+		return len(self.data)
 
-    def __getitem__(self, item):
-        # print(item)
-        # print(self.data[item])
-        return {
-            'input_sentence':self.data[item]['input_sentence'],
-            'full_labels':self.data[item]['full_labels'],
-            'index':self.data[item]['index']
-        }
+	def __getitem__(self, item):
+		# print(item)
+		# print(self.data[item])
+		return {
+			'input_sentence':self.data[item]['input_sentence'],
+			'full_labels':self.data[item]['full_labels'],
+			'index':self.data[item]['index']
+		}
 
 
-    def iterexamples(self):
-        for i, ex in self.data.items():
-            yield i, ex
+	def iterexamples(self):
+		for i, ex in self.data.items():
+			yield i, ex

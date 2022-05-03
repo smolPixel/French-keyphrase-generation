@@ -111,7 +111,7 @@ class BARTModel(pl.LightningModule):
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
-		print(score)
+		# print(score)
 		f110 = np.average(score['present_exact_f_score@10'])
 		f15 = np.average(score['present_exact_f_score@5'])
 		r10 = np.average(score['absent_exact_recall@10'])
@@ -159,7 +159,7 @@ class BARTModel(pl.LightningModule):
 						self.dico_perfo_per_language[lang].append(1)
 					else:
 						self.dico_perfo_per_language[lang].append(0)
-
+		print(score)
 		prec5_present = np.average(score['present_exact_precision@5'])
 		rec5_present = np.average(score['present_exact_recall@5'])
 		f15_present = np.average(score['present_exact_f_score@5'])

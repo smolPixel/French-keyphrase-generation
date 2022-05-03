@@ -650,6 +650,8 @@ def compute_match_scores(tgt_seqs, pred_seqs, do_lower=True, do_stem=False, type
 		tgt_seqs = [[w.lower() for w in seq] for seq in tgt_seqs]
 		pred_seqs = [[w.lower() for w in seq] for seq in pred_seqs]
 
+	print(tgt_seqs, pred_seqs)
+
 	for pred_id, pred_seq in enumerate(pred_seqs):
 		if type == 'exact':
 			match_score[pred_id] = 0

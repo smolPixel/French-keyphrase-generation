@@ -666,9 +666,44 @@ def compute_match_scores(tgt_seqs, pred_seqs, do_lower=True, do_stem=False, type
 						break
 				# if every word in pred_seq matches one true_seq exactly, match succeeds
 				if match:
+					print(pred_seq, true_seq)
 					match_score[pred_id] = 1
 					break
-	print(match_score)
+		elif type == 'ngram':
+			# use jaccard coefficient as the similarity of partial match (1+2 grams)
+			pred_seq_set = set(pred_seq)
+			pred_seq_set.update(set([pred_seq[i]+'_'+pred_seq[i+1] for i in range(len(pred_seq)-1)]))
+			for true_id, true_seq in enumerate(tgt_seqs):
+				true_seq_set = set(true_seq)
+				true_seq_set.update(set([true_seq[i]+'_'+true_seq[i+1] for i in range(len(true_seq)-1)]))
+				if float(len(set.union(*[set(true_seq_set), set(pred_seq_set)]))) > 0:
+					similarity = len(set.intersection(*[set(true_seq_set), set(pred_seq_set)])) \
+							  / float(len(set.union(*[set(true_seq_set), set(pred_seq_set)])))
+				else:
+					similarity = 0.0
+				match_score[pred_id, true_id] = similarity
+		elif type == 'mixed':
+			# similar to jaccard, but addtional to 1+2 grams we also put in the full string, serves like an exact+partial surrogate
+			pred_seq_set = set(pred_seq)
+			pred_seq_set.update(set([pred_seq[i]+'_'+pred_seq[i+1] for i in range(len(pred_seq)-1)]))
+			pred_seq_set.update(set(['_'.join(pred_seq)]))
+			for true_id, true_seq in enumerate(tgt_seqs):
+				true_seq_set = set(true_seq)
+				true_seq_set.update(set([true_seq[i]+'_'+true_seq[i+1] for i in range(len(true_seq)-1)]))
+				true_seq_set.update(set(['_'.join(true_seq)]))
+				if float(len(set.union(*[set(true_seq_set), set(pred_seq_set)]))) > 0:
+					similarity = len(set.intersection(*[set(true_seq_set), set(pred_seq_set)])) \
+							  / float(len(set.union(*[set(true_seq_set), set(pred_seq_set)])))
+				else:
+					similarity = 0.0
+				match_score[pred_id, true_id] = similarity
+
+		elif type == 'bleu':
+			# account for the match of subsequences, like n-gram-based (BLEU) or LCS-based
+			# n-grams precision doesn't work that well
+			for true_id, true_seq in enumerate(tgt_seqs):
+				match_score[pred_id, true_id] = bleu(pred_seq, [true_seq], [0.7, 0.3, 0.0])
+
 	return match_score
 
 

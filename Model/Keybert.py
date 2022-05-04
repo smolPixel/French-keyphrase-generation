@@ -53,8 +53,6 @@ class KeyBertModel():
 												 use_maxsum = True,
             									 use_mmr = False,
             									diversity = 0.7)
-				print(gend)
-				fds
 				hypos.append([kw[0] for kw in gend])
 			score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
 			f10 = np.average(score['present_exact_f_score@10'])

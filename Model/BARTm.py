@@ -122,7 +122,7 @@ class BARTMModel(pl.LightningModule):
 		# f15 = np.average(score5['present_exact_f_score@5'])
 
 		self.logger_per_batch.append((f15, f110, r10))
-		self.log("Loss_val", loss, on_epoch=False, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("Loss_val", loss, on_epoch=True, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		self.log("F1_val_10", f110, on_epoch=True, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		self.log("F1_val_5", f15, on_epoch=False, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		self.log("r_val_5", f15, on_epoch=False, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])

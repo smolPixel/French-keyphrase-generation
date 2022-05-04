@@ -5,6 +5,7 @@ from Model.BART import BARTModel
 from Model.YAKE import YakeModel
 from Model.BARTe import BARTeModel
 from Model.BARTm import BARTMModel
+from Model.Keybert import KeyBertModel
 
 def run_external_process(process):
 	output, error = process.communicate()
@@ -21,7 +22,8 @@ def set_seed(seed=42):
 dicoAlgo={'bart':BARTModel,
 		  'yake': YakeModel,
 		  'barte':BARTeModel,
-		  'bartm':BARTMModel}
+		  'bartm':BARTMModel,
+		  'keybertmodel':KeyBertModel}
 
 def run(argdict):
 	set_seed()

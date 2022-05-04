@@ -45,7 +45,6 @@ class KeyBertModel():
 			refs = []
 			hypos = []
 			for i, exos in tqdm(tt.data.items()):
-				print(exos)
 				inputs.append(exos['input_sentence'])
 				refs.append([rr.strip() for rr in exos['full_labels'].split(',')])
 				gend=self.model.extract_keywords(exos['input_sentence'],keyphrase_ngram_range = (1,3),
@@ -54,8 +53,7 @@ class KeyBertModel():
             									 use_mmr = False,
             									diversity = 0.7)
 				hypos.append([kw[0] for kw in gend])
-				print(hypos)
-				fds
+
 			score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
 			f10 = np.average(score['present_exact_f_score@10'])
 			r10 = np.average(score['absent_exact_recall@10'])

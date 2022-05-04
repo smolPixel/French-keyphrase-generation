@@ -41,6 +41,10 @@ def initialize_datasets(argdict):
 	test_kp20k=pd.read_csv("data/kp20k/test.tsv", sep="\t", index_col=0).dropna()
 	test_papyruse=pd.read_csv("data/papyrus_e/test.tsv", sep="\t", index_col=0).dropna()
 	test_wikinews=pd.read_csv("data/WikiNews/test.tsv", sep='\t', index_col=0).dropna()
+	test_110ptbnkp=pd.read_csv("data/110ptbnkp/test.tsv", sep='\t', index_col=0).dropna()
+	test_cacic57=pd.read_csv("data/cacic57/test.tsv", sep='\t', index_col=0).dropna()
+	test_pak2018=pd.read_csv("data/pak2018/test.tsv", sep='\t', index_col=0).dropna()
+	test_wicc78=pd.read_csv("data/wicc78/test.tsv", sep='\t', index_col=0).dropna()
 	llPre = len(test)
 	test = test.dropna()
 	if argdict['short_eval']:
@@ -63,7 +67,15 @@ def initialize_datasets(argdict):
 	test_papyruse=NoteMarg(test_papyruse, argdict, dev=True, no_index=True)
 	test_kp20k=NoteMarg(test_kp20k, argdict, dev=True, no_index=True)
 	test_wikinews=NoteMarg(test_wikinews, argdict, dev=True, no_index=True)
+	test_110ptbnkp=NoteMarg(test_110ptbnkp, argdict, dev=True, no_index=True)
+	test_cacic57=NoteMarg(test_cacic57, argdict, dev=True, no_index=True)
+	test_pak2018=NoteMarg(test_pak2018, argdict, dev=True, no_index=True)
+	test_wicc78=NoteMarg(test_wicc78, argdict, dev=True, no_index=True)
 	return train, dev, {"test_wikinews":test_wikinews,
+						"test_110ptbnkp":test_110ptbnkp,
+						"test_cacic57":test_cacic57,
+						"test_pak2018":test_pak2018,
+						"test_wicc78":test_wicc78,
 						"test_krapivin":test_krapivin,
 						# "test_papyruse":test_papyruse,
 						# "test_kp20k": test_kp20k,

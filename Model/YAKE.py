@@ -52,7 +52,6 @@ class YakeModel():
 			inputs = []
 			refs = []
 			hypos = []
-			print(tt.data)
 			for i, exos in tqdm(tt.data.items()):
 				# print(exos)
 				inputs.append(exos['input_sentence'])

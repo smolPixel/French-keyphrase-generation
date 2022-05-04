@@ -41,16 +41,10 @@ def initialize_datasets(argdict):
 	test_kp20k=pd.read_csv("data/kp20k/test.tsv", sep="\t", index_col=0).dropna()
 	test_papyruse=pd.read_csv("data/papyrus_e/test.tsv", sep="\t", index_col=0).dropna()
 	test_wikinews=pd.read_csv("data/WikiNews/test.tsv", sep='\t', index_col=0).dropna()
-	test_110ptbnkp=pd.read_csv("data/110ptbnkp/test.tsv", sep='\t', index_col=0)#.dropna()
+	test_110ptbnkp=pd.read_csv("data/110ptbnkp/test.tsv", sep='\t', index_col=0).dropna()
 	test_cacic57=pd.read_csv("data/cacic57/test.tsv", sep='\t', index_col=0).dropna()
 	test_pak2018=pd.read_csv("data/pak2018/test.tsv", sep='\t', index_col=0).dropna()
 	test_wicc78=pd.read_csv("data/wicc78/test.tsv", sep='\t', index_col=0).dropna()
-
-
-
-	test_110ptbnkp = NoteMarg(test_110ptbnkp, argdict, dev=True, no_index=True)
-	fds
-
 	llPre = len(test)
 	test = test.dropna()
 	if argdict['short_eval']:
@@ -116,7 +110,6 @@ class NoteMarg(Dataset):
 		self.abstract_for_ex=[]
 		self.label_for_ex=[]
 		for i, row in data.iterrows():
-			print(row)
 			# Special example 26534
 			if not dev and argdict['dataset'] not in ['kp20k'] and row['index'] == 25397:
 				self.abstract_for_ex.append(row['sentences'])

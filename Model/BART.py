@@ -111,9 +111,10 @@ class BARTModel(pl.LightningModule):
 
 	def validation_step(self, batch, batch_idx):
 		if self.tokenizer is None:
-			print(batch)
-			fds
-			tokenizer=self.tokenizer = AutoTokenizer.from_pretrained(self.bartPath)
+			if batch['language'][0] not in self.map_lang.keys():
+				print(batch['language'])
+				fds
+			tokenizer=self.tokenizer = AutoTokenizer.from_pretrained(self.bartPath, src_lang=self.map_lang[batch['language']], tgt_lang=self.map_lang[batch['language']])
 			self.criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)

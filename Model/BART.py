@@ -105,6 +105,10 @@ class BARTModel(pl.LightningModule):
 		return loss
 
 	def validation_step(self, batch, batch_idx):
+		if self.tokenizer is None:
+			print(batch)
+			fds
+			tokenizer=self.tokenizer = AutoTokenizer.from_pretrained(self.bartPath)
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)

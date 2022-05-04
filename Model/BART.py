@@ -101,7 +101,7 @@ class BARTModel(pl.LightningModule):
 				print(batch['language'])
 				fds
 			print(self.map_lang[batch['language'][0]])
-			tokenizer=self.tokenizer = AutoTokenizer.from_pretrained(self.bartPath, src_lang=self.map_lang[batch['language'][0]], tgt_lang=self.map_lang[batch['language'][0]])
+			tokenizer= AutoTokenizer.from_pretrained(self.bartPath, src_lang=self.map_lang[batch['language'][0]], tgt_lang=self.map_lang[batch['language'][0]])
 			self.criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)
 
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True, max_length=self.argdict['max_seq_length'])
@@ -117,7 +117,7 @@ class BARTModel(pl.LightningModule):
 				print(batch['language'])
 				fds
 			print(self.map_lang[batch['language'][0]])
-			tokenizer=self.tokenizer = AutoTokenizer.from_pretrained(self.bartPath, src_lang=self.map_lang[batch['language'][0]], tgt_lang=self.map_lang[batch['language'][0]])
+			tokenizer= AutoTokenizer.from_pretrained(self.bartPath, src_lang=self.map_lang[batch['language'][0]], tgt_lang=self.map_lang[batch['language'][0]])
 			self.criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)

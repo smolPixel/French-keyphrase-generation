@@ -12,7 +12,6 @@ for file in os.listdir('docsutf8'):
 	keys=open(f'keys/{index_file}.key', 'r').read()
 	df.at[index, 'title']="No title"
 	df.at[index, 'sentences']=text
-	print(text)
 	df.at[index, 'label']= ' , '.join(keys.strip().split('\n'))
 	df.at[index, 'language']='pl'
 	df.at[index, 'index']=index

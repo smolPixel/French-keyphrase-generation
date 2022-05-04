@@ -64,9 +64,10 @@ class YakeModel():
 				else:
 					kw_extractor=self.kw_extractor
 				gend=kw_extractor.extract_keywords(exos['input_sentence'])
-				print(gend)
 				hypos.append([kw[0] for kw in gend])
-
+			print(inputs)
+			print(refs)
+			print(hypos)
 			score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
 			for key, value in score.items():
 				print(key)

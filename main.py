@@ -23,7 +23,7 @@ dicoAlgo={'bart':BARTModel,
 		  'yake': YakeModel,
 		  'barte':BARTeModel,
 		  'bartm':BARTMModel,
-		  'keybertmodel':KeyBertModel}
+		  'keybert':KeyBertModel}
 
 def run(argdict):
 	set_seed()

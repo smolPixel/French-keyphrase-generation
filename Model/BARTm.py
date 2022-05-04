@@ -35,9 +35,9 @@ class BARTMModel(pl.LightningModule):
 		# self.device = torch.device(argdict['device'])
 
 		# pretrained=['gpt', 'antoiloui/belgpt2']
-		gptPath = 'facebook/mbart-large-50'
+		self.bartPath = 'facebook/mbart-large-50'
 		# tokenizer = AutoTokenizer.from_pretrained(gptPath)
-		model = AutoModelForSeq2SeqLM.from_pretrained(gptPath, cache_dir='/Tmp')
+		model = AutoModelForSeq2SeqLM.from_pretrained(self.bartPath, cache_dir='/Tmp')
 
 		self.field_input='input_sentence'
 		# self.criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)

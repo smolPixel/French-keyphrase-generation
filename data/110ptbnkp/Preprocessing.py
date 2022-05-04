@@ -9,11 +9,8 @@ for file in os.listdir('docsutf8'):
 	nameFile=file
 	index_file='.'.join(nameFile.split('.')[:-1])
 	text=open(f'docsutf8/{index_file}.txt', 'r').read().strip()#replace('.\n', '. ').replace('\n', ' ').strip()
-	text=text.split('\n')
-	title=text[0]
-	text=' '.join(text[1:]).strip()
 	keys=open(f'keys/{index_file}.key', 'r').read()
-	df.at[index, 'title']=title.replace('\t', ' ')
+	df.at[index, 'title']="No title given"
 	df.at[index, 'sentences']=text.replace('\t', ' ')
 	df.at[index, 'label']= ' , '.join(keys.strip().split('\n')).replace('\t', ' ')
 	df.at[index, 'language']='pt'

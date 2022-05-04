@@ -50,6 +50,7 @@ class BARTMModel(pl.LightningModule):
 		self.logger_per_batch=[]
 		self.logger_test=[]
 		self.logger_test_per_batch=[]
+		self.tokenizer=AutoTokenizer.from_pretrained(self.bartPath, src_lang='fr_XX', tgt_lan='fr_XX')
 		if argdict['dataset'].lower() in ["papyrus", "papyrus_m"]:
 			self.dico_perfo_per_language={}
 			self.dico_keyphrase_language={}
@@ -84,13 +85,13 @@ class BARTMModel(pl.LightningModule):
 		if batch['language'][0] not in self.map_lang.keys():
 			print(batch['language'])
 			fds
-		tokenizer= AutoTokenizer.from_pretrained(self.bartPath, src_lang=self.map_lang[batch['language'][0]], tgt_lang=self.map_lang[batch['language'][0]])
+		tokenizer= self.tokenizer
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
 		with tokenizer.as_target_tokenizer():
 			target = tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
 		loss = output['loss']
-		self.log("Loss", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("Loss", loss, on_epoch=False, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		return loss
 
 	def validation_step(self, batch, batch_idx):
@@ -121,10 +122,10 @@ class BARTMModel(pl.LightningModule):
 		# f15 = np.average(score5['present_exact_f_score@5'])
 
 		self.logger_per_batch.append((f15, f110, r10))
-		self.log("Loss_val", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
-		self.log("F1_val_10", f110, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
-		self.log("F1_val_5", f15, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
-		self.log("r_val_5", f15, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("Loss_val", loss, on_epoch=False, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("F1_val_10", f110, on_epoch=True, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("F1_val_5", f15, on_epoch=False, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("r_val_5", f15, on_epoch=False, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		return loss
 
 	def test_step(self, batch, batch_idx):

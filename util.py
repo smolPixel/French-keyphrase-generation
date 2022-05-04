@@ -200,7 +200,8 @@ class NoteMarg(Dataset):
 		return {
 			'input_sentence':self.data[item]['input_sentence'],
 			'full_labels':self.data[item]['full_labels'],
-			'index':self.data[item]['index']
+			'index':self.data[item]['index'],
+			'language':self.data[item]['language']
 		}
 
 

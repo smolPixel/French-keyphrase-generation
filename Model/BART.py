@@ -44,9 +44,10 @@ class BARTModel(pl.LightningModule):
 			self.tokenizer = AutoTokenizer.from_pretrained(gptPath)
 			model = AutoModelForSeq2SeqLM.from_pretrained(gptPath, cache_dir='/Tmp')
 		elif argdict['language']=='mu':
-			gptPath = 'facebook/mbart-large-50'
-			self.tokenizer = AutoTokenizer.from_pretrained(gptPath)
-			model = AutoModelForSeq2SeqLM.from_pretrained(gptPath, cache_dir='/Tmp')
+			self.map_lang={'fr':'fr_XX', 'en':'en_XX'}
+			self.bartPath = 'facebook/mbart-large-50'
+			# self.tokenizer = AutoTokenizer.from_pretrained(gptPath)
+			model = AutoModelForSeq2SeqLM.from_pretrained(self.bartPath, cache_dir='/Tmp')
 		else:
 			raise ValueError("Unrecognized language")
 
@@ -91,7 +92,12 @@ class BARTModel(pl.LightningModule):
 		return outputs
 
 	def training_step(self, batch, batch_idx):
-		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True, max_length=self.argdict['max_seq_length'])
+		if self.tokenizer is None:
+			print(batch)
+			fds
+			tokenizer=self.tokenizer = AutoTokenizer.from_pretrained(self.bartPath)
+
+		src = tokenizer(batch[self.field_input], padding=True, truncation=True, max_length=self.argdict['max_seq_length'])
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
 		loss = output['loss']
@@ -264,6 +270,9 @@ class BARTModel(pl.LightningModule):
 
 	def train_model(self):
 		# cb=MetricTracker()
+		if self.argdict['language']=='mu' and self.argdict['batch_size']!=1:
+			raise ValueError("Batch size has to be of 1 for multilingual bart")
+
 		early_stopping_callback=EarlyStopping(monitor='F1_val_10', patience=1, mode='max')
 		self.trainer=pl.Trainer(gpus=1, max_epochs=self.argdict['num_epochs'], precision=16, accumulate_grad_batches=self.argdict['accum_batch_size'], enable_checkpointing=False)
 		# trainer=pl.Trainer(max_epochs=self.argdict['num_epochs'])

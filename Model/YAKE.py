@@ -65,9 +65,6 @@ class YakeModel():
 					kw_extractor=self.kw_extractor
 				gend=kw_extractor.extract_keywords(exos['input_sentence'])
 				hypos.append([kw[0] for kw in gend])
-			print(inputs[0])
-			print(refs[0])
-			print(hypos[0])
 			score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
 			f10 = np.average(score['present_exact_f_score@10'])
 			r10 = np.average(score['absent_exact_recall@10'])

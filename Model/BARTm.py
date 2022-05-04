@@ -91,7 +91,7 @@ class BARTMModel(pl.LightningModule):
 			target = tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
 		loss = output['loss']
-		self.log("Loss", loss, on_epoch=False, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("Loss", loss, on_epoch=True, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		return loss
 
 	def validation_step(self, batch, batch_idx):

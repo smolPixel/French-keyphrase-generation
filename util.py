@@ -41,7 +41,7 @@ def initialize_datasets(argdict):
 	test_kp20k=pd.read_csv("data/kp20k/test.tsv", sep="\t", index_col=0).dropna()
 	test_papyruse=pd.read_csv("data/papyrus_e/test.tsv", sep="\t", index_col=0).dropna()
 	test_wikinews=pd.read_csv("data/WikiNews/test.tsv", sep='\t', index_col=0).dropna()
-	test_110ptbnkp=pd.read_csv("data/110ptbnkp/test.tsv", sep='\t', index_col=0).dropna()
+	test_110ptbnkp=pd.read_csv("data/110ptbnkp/test.tsv", sep='\t', index_col=0)#.dropna()
 	test_cacic57=pd.read_csv("data/cacic57/test.tsv", sep='\t', index_col=0).dropna()
 	test_pak2018=pd.read_csv("data/pak2018/test.tsv", sep='\t', index_col=0).dropna()
 	test_wicc78=pd.read_csv("data/wicc78/test.tsv", sep='\t', index_col=0).dropna()

@@ -14,7 +14,7 @@ for file in os.listdir('docsutf8'):
 	text=' '.join(text[1:]).strip()
 	keys=open(f'keys/{index_file}.key', 'r').read()
 	df.at[index, 'title']=title
-	df.at[index, 'sentences']=text
+	df.at[index, 'sentences']=text.replace('\t', ' ')
 	df.at[index, 'label']= ' , '.join(keys.strip().split('\n'))
 	df.at[index, 'language']='pt'
 	df.at[index, 'index']=index_file

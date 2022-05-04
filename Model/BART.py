@@ -105,7 +105,7 @@ class BARTModel(pl.LightningModule):
 			self.criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)
 
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True, max_length=self.argdict['max_seq_length'])
-		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
+		target = tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
 		loss = output['loss']
 		self.log("Loss", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
@@ -120,13 +120,13 @@ class BARTModel(pl.LightningModule):
 			tokenizer= AutoTokenizer.from_pretrained(self.bartPath, src_lang=self.map_lang[batch['language'][0]], tgt_lang=self.map_lang[batch['language'][0]])
 			self.criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
-		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
+		target = tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
 		loss = output['loss']
 
-		input_ids = self.tokenizer(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
+		input_ids = tokenizer(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
 		gend = self.model.generate(**input_ids, num_beams=10, num_return_sequences=1, max_length=50)
-		gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+		gend = tokenizer.batch_decode(gend, skip_special_tokens=True)
 		hypos=[self.score(sent) for sent in gend]
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]

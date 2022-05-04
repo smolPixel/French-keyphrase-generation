@@ -50,7 +50,7 @@ class BARTMModel(pl.LightningModule):
 		self.logger_per_batch=[]
 		self.logger_test=[]
 		self.logger_test_per_batch=[]
-		self.tokenizer=AutoTokenizer.from_pretrained(self.bartPath, src_lang='fr_XX', tgt_lan='fr_XX')
+		self.tokenizer=AutoTokenizer.from_pretrained(self.bartPath, src_lang='fr_XX', tgt_lang='fr_XX')
 		if argdict['dataset'].lower() in ["papyrus", "papyrus_m"]:
 			self.dico_perfo_per_language={}
 			self.dico_keyphrase_language={}

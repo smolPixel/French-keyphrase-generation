@@ -43,7 +43,7 @@ class YakeModel():
 			hypos.append([kw[0] for kw in gend])
 
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
-
+		print(score)
 		f10 = np.average(score['present_exact_f_score@10'])
 		r10 = np.average(score['absent_exact_recall@10'])
 		print(f"f1@10 present and r@10 absent for dev: {f10}, {r10}")

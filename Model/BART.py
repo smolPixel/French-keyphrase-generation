@@ -114,6 +114,7 @@ class BARTModel(pl.LightningModule):
 			if batch['language'][0] not in self.map_lang.keys():
 				print(batch['language'])
 				fds
+			print(self.map_lang[batch['language']])
 			tokenizer=self.tokenizer = AutoTokenizer.from_pretrained(self.bartPath, src_lang=self.map_lang[batch['language']], tgt_lang=self.map_lang[batch['language']])
 			self.criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)

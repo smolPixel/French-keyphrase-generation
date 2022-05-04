@@ -286,6 +286,8 @@ class BARTMModel(pl.LightningModule):
 			self.trainer.fit(self, train_loader, dev_loader)
 			print("saving model")
 			torch.save(self.model.state_dict(), path_save)
+			print(self.loggerg)
+			fds
 		for name, tt in self.test_set.items():
 			if name in ['test_semeval', 'test_inspec', 'test_nus', 'test_kp20k', 'test_papyruse', 'test_krapivin',
 						'test_wikinews']:

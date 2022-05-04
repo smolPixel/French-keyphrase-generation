@@ -43,7 +43,8 @@ class BARTMModel(pl.LightningModule):
 		# self.criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)
 		self.model=model#.to('cuda')#, config=config)
 		self.model.config.max_length=argdict['max_seq_length']
-		self.map_lang = {'fr': 'fr_XX', 'en': 'en_XX'}
+		self.map_lang = {'fr': 'fr_XX', 'en': 'en_XX', 'es':'es_XX', 'it':'it_IT',
+						 'ko':'ko_KR', 'ru_RU'}
 		self.beam_search_k=10
 		self.loggerg=[]
 		self.logger_per_batch=[]

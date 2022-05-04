@@ -23,7 +23,7 @@ from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 import timeit
 
 
-class BARTModel(pl.LightningModule):
+class BARTMModel(pl.LightningModule):
 	def __init__(self, argdict, datasets):
 		super().__init__()
 

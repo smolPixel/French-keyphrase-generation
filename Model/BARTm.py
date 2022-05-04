@@ -88,12 +88,11 @@ class BARTMModel(pl.LightningModule):
 		return loss
 
 	def validation_step(self, batch, batch_idx):
-		if self.tokenizer is None:
-			if batch['language'][0] not in self.map_lang.keys():
-				print(batch['language'])
-				fds
-			print(self.map_lang[batch['language'][0]])
-			tokenizer= AutoTokenizer.from_pretrained(self.bartPath, src_lang=self.map_lang[batch['language'][0]], tgt_lang=self.map_lang[batch['language'][0]])
+		if batch['language'][0] not in self.map_lang.keys():
+			print(batch['language'])
+			fds
+		print(self.map_lang[batch['language'][0]])
+		tokenizer= AutoTokenizer.from_pretrained(self.bartPath, src_lang=self.map_lang[batch['language'][0]], tgt_lang=self.map_lang[batch['language'][0]])
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
 		with tokenizer.as_target_tokenizer():
 			target = tokenizer(batch['full_labels'], padding=True, truncation=True)

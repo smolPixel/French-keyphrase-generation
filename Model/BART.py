@@ -305,7 +305,7 @@ class BARTModel(pl.LightningModule):
 			torch.save(self.model.state_dict(), path_save)
 		for name, tt in self.test_set.items():
 			if name in ['test_semeval', 'test_inspec', 'test_nus', 'test_kp20k', 'test_papyruse', 'test_krapivin',
-						'test_wikinews']:
+						'test_wikinews', 'test_wicc78', 'test_110ptbnkp', 'test_cacic57', 'test_pak2018']:
 				self.testing_standard_dataset=True
 			else:
 				self.testing_standard_dataset=False

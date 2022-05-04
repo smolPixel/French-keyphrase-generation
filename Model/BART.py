@@ -39,20 +39,23 @@ class BARTModel(pl.LightningModule):
 			gptPath='facebook/bart-large'
 			self.tokenizer = BartTokenizer.from_pretrained(gptPath)
 			model = BartForConditionalGeneration.from_pretrained(gptPath, cache_dir='/Tmp')
+			self.criterion = nn.CrossEntropyLoss(ignore_index=self.tokenizer.pad_token_id)
 		elif argdict['language']=='fr':
 			gptPath='moussaKam/mbarthez'
 			self.tokenizer = AutoTokenizer.from_pretrained(gptPath)
 			model = AutoModelForSeq2SeqLM.from_pretrained(gptPath, cache_dir='/Tmp')
+			self.criterion = nn.CrossEntropyLoss(ignore_index=self.tokenizer.pad_token_id)
 		elif argdict['language']=='mu':
 			self.map_lang={'fr':'fr_XX', 'en':'en_XX'}
 			self.bartPath = 'facebook/mbart-large-50'
 			# self.tokenizer = AutoTokenizer.from_pretrained(gptPath)
 			model = AutoModelForSeq2SeqLM.from_pretrained(self.bartPath, cache_dir='/Tmp')
+			self.criterion=None
 		else:
 			raise ValueError("Unrecognized language")
 
 		self.field_input='input_sentence'
-		self.criterion = nn.CrossEntropyLoss(ignore_index=self.tokenizer.pad_token_id)
+		# self.criterion = nn.CrossEntropyLoss(ignore_index=self.tokenizer.pad_token_id)
 		self.model=model#.to('cuda')#, config=config)
 		self.model.config.max_length=argdict['max_seq_length']
 
@@ -96,6 +99,7 @@ class BARTModel(pl.LightningModule):
 			print(batch)
 			fds
 			tokenizer=self.tokenizer = AutoTokenizer.from_pretrained(self.bartPath)
+			self.criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)
 
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True, max_length=self.argdict['max_seq_length'])
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
@@ -109,6 +113,7 @@ class BARTModel(pl.LightningModule):
 			print(batch)
 			fds
 			tokenizer=self.tokenizer = AutoTokenizer.from_pretrained(self.bartPath)
+			self.criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)

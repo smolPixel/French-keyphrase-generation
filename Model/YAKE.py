@@ -52,8 +52,9 @@ class YakeModel():
 			inputs = []
 			refs = []
 			hypos = []
+			print(tt.data)
 			for i, exos in tqdm(tt.data.items()):
-				print(exos)
+				# print(exos)
 				inputs.append(exos['input_sentence'])
 				refs.append([rr.strip() for rr in exos['full_labels'].split(',')])
 				if self.kw_extractor is None:

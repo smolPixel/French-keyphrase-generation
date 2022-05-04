@@ -23,7 +23,7 @@ from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 import timeit
 
 
-class BARTModel(pl.LightningModule):
+class BARTeModel(pl.LightningModule):
 	def __init__(self, argdict, datasets):
 		super().__init__()
 
@@ -35,20 +35,9 @@ class BARTModel(pl.LightningModule):
 		# self.device = torch.device(argdict['device'])
 
 		# pretrained=['gpt', 'antoiloui/belgpt2']
-		if argdict['language']=='en':
-			gptPath='facebook/bart-large'
-			self.tokenizer = BartTokenizer.from_pretrained(gptPath)
-			model = BartForConditionalGeneration.from_pretrained(gptPath, cache_dir='/Tmp')
-		elif argdict['language']=='fr':
-			gptPath='moussaKam/mbarthez'
-			self.tokenizer = AutoTokenizer.from_pretrained(gptPath)
-			model = AutoModelForSeq2SeqLM.from_pretrained(gptPath, cache_dir='/Tmp')
-		elif argdict['language']=='mu':
-			gptPath = 'facebook/mbart-large-50'
-			self.tokenizer = AutoTokenizer.from_pretrained(gptPath)
-			model = AutoModelForSeq2SeqLM.from_pretrained(gptPath, cache_dir='/Tmp')
-		else:
-			raise ValueError("Unrecognized language")
+		gptPath='facebook/bart-large'
+		self.tokenizer = BartTokenizer.from_pretrained(gptPath)
+		model = BartForConditionalGeneration.from_pretrained(gptPath, cache_dir='/Tmp')
 
 		self.field_input='input_sentence'
 		self.criterion = nn.CrossEntropyLoss(ignore_index=self.tokenizer.pad_token_id)
@@ -161,10 +150,6 @@ class BARTModel(pl.LightningModule):
 						self.dico_perfo_per_language[lang].append(0)
 		# print("BIHTIOASJ")
 		# print(score)
-		print(refs)
-		print(hypos)
-		print(score)
-		fds bonne
 		prec5_present = np.average(score['present_exact_precision@5'])
 		rec5_present = np.average(score['present_exact_recall@5'])
 		f15_present = np.average(score['present_exact_f_score@5'])
@@ -290,7 +275,7 @@ class BARTModel(pl.LightningModule):
 		# 	pin_memory=torch.cuda.is_available()
 		# )
 
-		path_save=f'/data/rali6/Tmp/piedboef/Models/FKPG/{self.argdict["dataset"]}_{self.argdict["num_epochs"]}Epochs.pt'
+		path_save=f'/data/rali6/Tmp/piedboef/Models/FKPG/{self.argdict["dataset"]}_BARTe_{self.argdict["num_epochs"]}Epochs.pt'
 		# tic=timeit.default_timer()
 		# self.trainer.fit(self, train_loader, dev_loader)
 		# toc=timeit.default_timer()

@@ -3,6 +3,7 @@ import numpy as np
 from util import *
 from Model.BART import BARTModel
 from Model.YAKE import YakeModel
+from Model.BARTe import BARTeModel
 
 def run_external_process(process):
 	output, error = process.communicate()
@@ -17,7 +18,8 @@ def set_seed(seed=42):
 	torch.cuda.manual_seed_all(seed)
 
 dicoAlgo={'bart':BARTModel,
-		  'yake': YakeModel}
+		  'yake': YakeModel,
+		  'barte':BARTeModel}
 
 def run(argdict):
 	set_seed()

@@ -50,7 +50,14 @@ class BARTMModel(pl.LightningModule):
 		self.logger_per_batch=[]
 		self.logger_test=[]
 		self.logger_test_per_batch=[]
-		self.tokenizer=AutoTokenizer.from_pretrained(self.bartPath, src_lang='fr_XX', tgt_lang='fr_XX')
+		self.tokenizers={'fr':AutoTokenizer.from_pretrained(self.bartPath, src_lang='fr_XX', tgt_lang='fr_XX'),
+						 'en':AutoTokenizer.from_pretrained(self.bartPath, src_lang='en_XX', tgt_lang='en_XX'),
+						 'es': AutoTokenizer.from_pretrained(self.bartPath, src_lang='es_XX', tgt_lang='es_XX'),
+						 'it': AutoTokenizer.from_pretrained(self.bartPath, src_lang='it_IT', tgt_lang='it_IT'),
+						 'ko': AutoTokenizer.from_pretrained(self.bartPath, src_lang='ko_KR', tgt_lang='ko_KR'),
+						 'ru': AutoTokenizer.from_pretrained(self.bartPath, src_lang='ru_RU', tgt_lang='ru_RU'),
+						 'de': AutoTokenizer.from_pretrained(self.bartPath, src_lang='de_DE', tgt_lang='de_DE'),
+						 'ca': AutoTokenizer.from_pretrained(self.bartPath, src_lang='en_XX', tgt_lang='en_XX')}
 		if argdict['dataset'].lower() in ["papyrus", "papyrus_m"]:
 			self.dico_perfo_per_language={}
 			self.dico_keyphrase_language={}
@@ -85,7 +92,7 @@ class BARTMModel(pl.LightningModule):
 		if batch['language'][0] not in self.map_lang.keys():
 			print(batch['language'])
 			fds
-		tokenizer= self.tokenizer
+		tokenizer= self.tokenizers[batch['language'][0]]
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
 		with tokenizer.as_target_tokenizer():
 			target = tokenizer(batch['full_labels'], padding=True, truncation=True)
@@ -98,7 +105,7 @@ class BARTMModel(pl.LightningModule):
 		if batch['language'][0] not in self.map_lang.keys():
 			print(batch['language'])
 			fds
-		tokenizer= AutoTokenizer.from_pretrained(self.bartPath, src_lang=self.map_lang[batch['language'][0]], tgt_lang=self.map_lang[batch['language'][0]])
+		tokenizer = self.tokenizers[batch['language'][0]]
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
 		with tokenizer.as_target_tokenizer():
 			target = tokenizer(batch['full_labels'], padding=True, truncation=True)

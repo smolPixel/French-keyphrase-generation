@@ -28,6 +28,7 @@ class YakeModel():
 		refs=[]
 		hypos=[]
 		for i, exos in tqdm(self.dev_set.data.items()):
+			continue
 			# print(exos)
 			inputs.append(exos['input_sentence'])
 			refs.append([rr.strip() for rr in exos['full_labels'].split(',')])
@@ -42,8 +43,7 @@ class YakeModel():
 			hypos.append([kw[0] for kw in gend])
 
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
-		for key, value in score.items():
-			print(key)
+
 		f10 = np.average(score['present_exact_f_score@10'])
 		r10 = np.average(score['absent_exact_recall@10'])
 		print(f"f1@10 present and r@10 absent for dev: {f10}, {r10}")
@@ -68,6 +68,8 @@ class YakeModel():
 				hypos.append([kw[0] for kw in gend])
 
 			score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
+			for key, value in score.items():
+				print(key)
 			f10 = np.average(score['present_exact_f_score@10'])
 			r10 = np.average(score['absent_exact_recall@10'])
 			print(f"f1@10 present and r@10 absent for test: {f10}, {r10}")

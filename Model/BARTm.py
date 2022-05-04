@@ -80,8 +80,13 @@ class BARTMModel(pl.LightningModule):
 		return outputs
 
 	def training_step(self, batch, batch_idx):
-		src = tokenizer(batch[self.field_input], padding=True, truncation=True, max_length=self.argdict['max_seq_length'])
-		target = tokenizer(batch['full_labels'], padding=True, truncation=True)
+		if batch['language'][0] not in self.map_lang.keys():
+			print(batch['language'])
+			fds
+		tokenizer= AutoTokenizer.from_pretrained(self.bartPath, src_lang=self.map_lang[batch['language'][0]], tgt_lang=self.map_lang[batch['language'][0]])
+		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
+		with tokenizer.as_target_tokenizer():
+			target = tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
 		loss = output['loss']
 		self.log("Loss", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
@@ -91,7 +96,6 @@ class BARTMModel(pl.LightningModule):
 		if batch['language'][0] not in self.map_lang.keys():
 			print(batch['language'])
 			fds
-		print(self.map_lang[batch['language'][0]])
 		tokenizer= AutoTokenizer.from_pretrained(self.bartPath, src_lang=self.map_lang[batch['language'][0]], tgt_lang=self.map_lang[batch['language'][0]])
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
 		with tokenizer.as_target_tokenizer():

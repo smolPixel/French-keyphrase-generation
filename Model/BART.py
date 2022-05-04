@@ -119,7 +119,8 @@ class BARTModel(pl.LightningModule):
 			print(self.map_lang[batch['language'][0]])
 			tokenizer= AutoTokenizer.from_pretrained(self.bartPath, src_lang=self.map_lang[batch['language'][0]], tgt_lang=self.map_lang[batch['language'][0]])
 			self.criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)
-		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
+		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
+
 		target = tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
 		loss = output['loss']

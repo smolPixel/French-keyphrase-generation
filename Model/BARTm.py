@@ -36,14 +36,14 @@ class BARTMModel(pl.LightningModule):
 
 		# pretrained=['gpt', 'antoiloui/belgpt2']
 		gptPath = 'facebook/mbart-large-50'
-		self.tokenizer = AutoTokenizer.from_pretrained(gptPath)
+		# tokenizer = AutoTokenizer.from_pretrained(gptPath)
 		model = AutoModelForSeq2SeqLM.from_pretrained(gptPath, cache_dir='/Tmp')
 
 		self.field_input='input_sentence'
-		self.criterion = nn.CrossEntropyLoss(ignore_index=self.tokenizer.pad_token_id)
+		# self.criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)
 		self.model=model#.to('cuda')#, config=config)
 		self.model.config.max_length=argdict['max_seq_length']
-
+		self.map_lang = {'fr': 'fr_XX', 'en': 'en_XX'}
 		self.beam_search_k=10
 		self.loggerg=[]
 		self.logger_per_batch=[]
@@ -80,22 +80,29 @@ class BARTMModel(pl.LightningModule):
 		return outputs
 
 	def training_step(self, batch, batch_idx):
-		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True, max_length=self.argdict['max_seq_length'])
-		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
+		src = tokenizer(batch[self.field_input], padding=True, truncation=True, max_length=self.argdict['max_seq_length'])
+		target = tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
 		loss = output['loss']
 		self.log("Loss", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		return loss
 
 	def validation_step(self, batch, batch_idx):
-		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
-		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
+		if self.tokenizer is None:
+			if batch['language'][0] not in self.map_lang.keys():
+				print(batch['language'])
+				fds
+			print(self.map_lang[batch['language'][0]])
+			tokenizer= AutoTokenizer.from_pretrained(self.bartPath, src_lang=self.map_lang[batch['language'][0]], tgt_lang=self.map_lang[batch['language'][0]])
+		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
+		with tokenizer.as_target_tokenizer():
+			target = tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
 		loss = output['loss']
 
-		input_ids = self.tokenizer(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
+		input_ids = tokenizer(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
 		gend = self.model.generate(**input_ids, num_beams=10, num_return_sequences=1, max_length=50)
-		gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+		gend = tokenizer.batch_decode(gend, skip_special_tokens=True)
 		hypos=[self.score(sent) for sent in gend]
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
@@ -118,14 +125,14 @@ class BARTMModel(pl.LightningModule):
 
 	def test_step(self, batch, batch_idx):
 
-		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
-		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
+		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
+		target = tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
 		loss = output['loss']
 
-		input_ids = self.tokenizer(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
+		input_ids = tokenizer(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
 		gend = self.model.generate(**input_ids, num_beams=10, num_return_sequences=1)#, max_length=50)
-		gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+		gend = tokenizer.batch_decode(gend, skip_special_tokens=True)
 		hypos=[self.score(sent) for sent in gend]
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(', ')] for fullLabels in batch['full_labels']]
@@ -339,14 +346,14 @@ class BARTMModel(pl.LightningModule):
 				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
 				# print(dat[self.field_input][0])
-				input_ids = self.tokenizer.encode(dat[self.field_input][0], return_tensors='pt', truncation=True, max_length=self.argdict['max_seq_length']).to(self.device)
+				input_ids = tokenizer.encode(dat[self.field_input][0], return_tensors='pt', truncation=True, max_length=self.argdict['max_seq_length']).to(self.device)
 				# print(input_ids)
-				# print(self.tokenizer.batch_decode((input_ids)))
+				# print(tokenizer.batch_decode((input_ids)))
 				# fds
 				# input_ids = torch.Tensor(src['input_ids']).long().to('cuda').unsqueeze(0)
 				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1)
 				# print(tokenizer.batch_decode(gend))
-				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+				gend = tokenizer.batch_decode(gend, skip_special_tokens=True)
 				hypos.append(gend)
 				break
 
@@ -372,11 +379,11 @@ class BARTMModel(pl.LightningModule):
 			for abstract in inputs:
 			# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
-				input_ids = self.tokenizer.encode(abstract, return_tensors='pt', truncation=True,
+				input_ids = tokenizer.encode(abstract, return_tensors='pt', truncation=True,
 												  max_length=self.argdict['max_seq_length']).to(self.device)
 				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1)
 				# print(tokenizer.batch_decode(gend))
-				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+				gend = tokenizer.batch_decode(gend, skip_special_tokens=True)
 				hypos.append([self.score(sent) for sent in gend])
 			# hypos.append(gend)
 
@@ -399,11 +406,11 @@ class BARTMModel(pl.LightningModule):
 			for abstract in inputs:
 				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
-				input_ids = self.tokenizer.encode(abstract, return_tensors='pt', truncation=True,
+				input_ids = tokenizer.encode(abstract, return_tensors='pt', truncation=True,
 												  max_length=self.argdict['max_seq_length']).to(self.device)
 				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1)
 				# print(tokenizer.batch_decode(gend))
-				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+				gend = tokenizer.batch_decode(gend, skip_special_tokens=True)
 				hypos.append([self.score(sent) for sent in gend])
 			for ii, hh, rr in zip(inputs, hypos, refs):
 				print(f"Input : {ii} \n "
@@ -434,15 +441,15 @@ class BARTMModel(pl.LightningModule):
 				inputs.append(dat[self.field_input])
 				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
-				input_ids = self.tokenizer.encode(dat[self.field_input], return_tensors='pt', truncation=True, max_length=self.argdict['max_seq_length']).to(self.device)
+				input_ids = tokenizer.encode(dat[self.field_input], return_tensors='pt', truncation=True, max_length=self.argdict['max_seq_length']).to(self.device)
 				# print(input_ids)
-				# print(self.tokenizer.batch_decode((input_ids)))
+				# print(tokenizer.batch_decode((input_ids)))
 				# fds
 				# input_ids = torch.Tensor(src['input_ids']).long().to('cuda').unsqueeze(0)
 				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1,
 									  max_length=50)
 				# print(tokenizer.batch_decode(gend))
-				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+				gend = tokenizer.batch_decode(gend, skip_special_tokens=True)
 				hypos.append(gend)
 				if j==n:
 					break

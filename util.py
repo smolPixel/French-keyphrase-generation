@@ -45,6 +45,11 @@ def initialize_datasets(argdict):
 	test_cacic57=pd.read_csv("data/cacic57/test.tsv", sep='\t', index_col=0).dropna()
 	test_pak2018=pd.read_csv("data/pak2018/test.tsv", sep='\t', index_col=0).dropna()
 	test_wicc78=pd.read_csv("data/wicc78/test.tsv", sep='\t', index_col=0).dropna()
+
+	print(test_110ptbnkp)
+	test_110ptbnkp = NoteMarg(test_110ptbnkp, argdict, dev=True, no_index=True)
+	fds
+
 	llPre = len(test)
 	test = test.dropna()
 	if argdict['short_eval']:

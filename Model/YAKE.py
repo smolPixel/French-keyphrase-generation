@@ -27,26 +27,25 @@ class YakeModel():
 		inputs=[]
 		refs=[]
 		hypos=[]
-		for i, exos in tqdm(self.dev_set.data.items()):
-			continue
-			# print(exos)
-			inputs.append(exos['input_sentence'])
-			refs.append([rr.strip() for rr in exos['full_labels'].split(',')])
-			if self.kw_extractor is None:
-				try:
-					kw_extractor=yake.KeywordExtractor(lan=exos['language'])
-				except:
-					kw_extractor = yake.KeywordExtractor()
-			else:
-				kw_extractor=self.kw_extractor
-			gend=kw_extractor.extract_keywords(exos['input_sentence'])
-			hypos.append([kw[0] for kw in gend])
-
-		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
-		print(score)
-		f10 = np.average(score['present_exact_f_score@10'])
-		r10 = np.average(score['absent_exact_recall@10'])
-		print(f"f1@10 present and r@10 absent for dev: {f10}, {r10}")
+		# for i, exos in tqdm(self.dev_set.data.items()):
+		# 	# print(exos)
+		# 	inputs.append(exos['input_sentence'])
+		# 	refs.append([rr.strip() for rr in exos['full_labels'].split(',')])
+		# 	if self.kw_extractor is None:
+		# 		try:
+		# 			kw_extractor=yake.KeywordExtractor(lan=exos['language'])
+		# 		except:
+		# 			kw_extractor = yake.KeywordExtractor()
+		# 	else:
+		# 		kw_extractor=self.kw_extractor
+		# 	gend=kw_extractor.extract_keywords(exos['input_sentence'])
+		# 	hypos.append([kw[0] for kw in gend])
+		#
+		# score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
+		#
+		# f10 = np.average(score['present_exact_f_score@10'])
+		# r10 = np.average(score['absent_exact_recall@10'])
+		# print(f"f1@10 present and r@10 absent for dev: {f10}, {r10}")
 
 		for name, tt in self.test_set.items():
 			print(f"running for {name} dataset")

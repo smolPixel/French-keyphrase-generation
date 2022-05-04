@@ -68,6 +68,7 @@ class YakeModel():
 				hypos.append([kw[0] for kw in gend])
 
 			score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
+			print(score)
 			for key, value in score.items():
 				print(key)
 			f10 = np.average(score['present_exact_f_score@10'])

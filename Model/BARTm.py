@@ -148,12 +148,6 @@ class BARTMModel(pl.LightningModule):
 						self.dico_perfo_per_language[lang].append(1)
 					else:
 						self.dico_perfo_per_language[lang].append(0)
-		# print("BIHTIOASJ")
-		# print(score)
-		print(refs)
-		print(hypos)
-		print(score)
-		fds bonne
 		prec5_present = np.average(score['present_exact_precision@5'])
 		rec5_present = np.average(score['present_exact_recall@5'])
 		f15_present = np.average(score['present_exact_f_score@5'])

@@ -48,7 +48,11 @@ class KeyBertModel():
 				# print(exos)
 				inputs.append(exos['input_sentence'])
 				refs.append([rr.strip() for rr in exos['full_labels'].split(',')])
-				gend=self.model.extract_keywords(exos['input_sentence'], measure = 'maxsum', diversity = 0.7, top_n = 10)
+				gend=self.model.extract_keywords(exos['input_sentence'],keyphrase_ngram_range = (1,3),
+												 stop_words = 'english', top_n = 10, nr_candidates = 20,
+												 use_maxsum = True,
+            									 use_mmr = False,
+            									diversity = 0.7)
 				print(gend)
 				fds
 				hypos.append([kw[0] for kw in gend])

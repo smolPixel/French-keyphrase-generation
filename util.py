@@ -88,12 +88,12 @@ def initialize_datasets(argdict):
 						"test_papyruse":test_papyruse,
 						"test_papyrusf":test_papyrusf,
 						"test_papyrusm":test_papyrusm,
-						"test_papyrus":test_papyrus,
+						"test_papyrus":test_papyrus}
 						# "test_kp20k": test_kp20k,
 						# "test_semeval":test_semeval,
 						# "test_nus":test_nus,
 						# "test_inspec":test_inspec,
-						"test":test}
+						# "test":test}
 
 
 class NoteMarg(Dataset):

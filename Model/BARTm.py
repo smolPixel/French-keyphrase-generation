@@ -285,6 +285,7 @@ class BARTMModel(pl.LightningModule):
 		self.loggerg.append((np.mean([f15 for f15, f110, r10 in self.logger_per_batch]),
 							 np.mean([f110 for f15, f110, r10 in self.logger_per_batch]),
 							 np.mean([r10 for f15, f110, r10 in self.logger_per_batch])))
+		print(self.loggerg)
 		self.logger_per_batch=[]
 
 	def train_model(self):

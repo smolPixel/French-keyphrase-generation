@@ -43,9 +43,9 @@ class BARTMModel(pl.LightningModule):
 		# self.criterion = nn.CrossEntropyLoss(ignore_index=tokenizer.pad_token_id)
 		self.model=model#.to('cuda')#, config=config)
 		self.model.config.max_length=argdict['max_seq_length']
-		self.map_lang = {'fr': 'fr_XX', 'en': 'en_XX', 'es':'es_XX', 'it':'it_IT',
-						 'ko':'ko_KR', 'ru':'ru_RU', 'de':'de_DE', 'ca':'es_XX',
-						 'ar':'ar_AR', 'pl':'en_XX'}
+		# self.map_lang = {'fr': 'fr_XX', 'en': 'en_XX', 'es':'es_XX', 'it':'it_IT',
+		# 				 'ko':'ko_KR', 'ru':'ru_RU', 'de':'de_DE', 'ca':'es_XX',
+		# 				 'ar':'ar_AR', 'pl':'en_XX'}
 		self.beam_search_k=10
 		self.loggerg=[]
 		self.logger_per_batch=[]
@@ -59,7 +59,8 @@ class BARTMModel(pl.LightningModule):
 						 'ru': AutoTokenizer.from_pretrained(self.bartPath, src_lang='ru_RU', tgt_lang='ru_RU'),
 						 'de': AutoTokenizer.from_pretrained(self.bartPath, src_lang='de_DE', tgt_lang='de_DE'),
 						 'ca': AutoTokenizer.from_pretrained(self.bartPath, src_lang='en_XX', tgt_lang='en_XX'),
-						 'ar': AutoTokenizer.from_pretrained(self.bartPath, src_lang='ar_AR', tgt_lang='ar_AR'),}
+						 'ar': AutoTokenizer.from_pretrained(self.bartPath, src_lang='ar_AR', tgt_lang='ar_AR'),
+						 'pl':AutoTokenizer.from_pretrained(self.bartPath, src_lang='en_XX', tgt_lang='en_XX'),}
 		if argdict['dataset'].lower() in ["papyrus", "papyrus_m"]:
 			self.dico_perfo_per_language={}
 			self.dico_keyphrase_language={}

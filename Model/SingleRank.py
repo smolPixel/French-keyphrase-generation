@@ -55,7 +55,11 @@ class SingleRankModel():
 				# 								 use_mmr = False,
 				# 								diversity = 0.7)
 				# hypos.append([kw[0] for kw in gend])
-				self.model.load_document(input=exos['input_sentence'], language=exos['language'], normalization=None)
+				if exos['language'] in ['tr']:
+					ll='en'
+				else:
+					ll=exos['language']
+				self.model.load_document(input=exos['input_sentence'], language=ll, normalization=None)
 				self.model.candidate_selection()
 				self.model.candidate_weighting()
 				gend=self.model.get_n_best(n=10, redundancy_removal=True)

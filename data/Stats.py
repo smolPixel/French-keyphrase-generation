@@ -7,7 +7,7 @@ datasets=['papyrus_f', 'papyrus_e', 'papyrus_m', 'papyrus', 'WikiNews',
 		  'NUS', 'SemEval', 'krapivin']
 
 for dataset in datasets:
-	df=pd.read_csv(f"{dataset}/test.tsv", sep='\t', index_col=0)
+	df=pd.read_csv(f"{dataset}/test.tsv", sep='\t', index_col=0).dropna()
 	try:
 		ll=list(df['language'])[0]
 	except:
@@ -15,4 +15,11 @@ for dataset in datasets:
 
 	sents=list(df['sentences'])
 	sents=[len(sent.split(' ')) for sent in sents]
-	print(f"Dataset {dataset}. Language {ll} Number of test exos: {len(df)} of average length {np.mean(sents)}")
+	labels = list(df['label'])
+	labels_split_by_keyphrase = [kk.strip().split(",") for kk in labels]
+	labels_split_by_keyphrase_by_space = [np.mean([len(ll.strip().split(' ')) for ll in entry]) for entry in
+										  labels_split_by_keyphrase]
+	# print(
+	# 	f"Average length of sentence  for {dataset}: {np.mean(sents)}\n\t number of keyphrases {np.mean([len(kk) for kk in labels_split_by_keyphrase])} \n\t len of keyphrases {np.mean(labels_split_by_keyphrase_by_space)}")
+	print(f"Dataset {dataset}. Language {ll} Number of test exos: {len(df)} of average length {np.mean(sents)}\n\t"
+		  f"Number of keyphrases {np.mean([len(kk) for kk in labels_split_by_keyphrase])} len of keyphrases {np.mean(labels_split_by_keyphrase_by_space)}")

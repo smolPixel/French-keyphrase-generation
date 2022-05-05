@@ -69,6 +69,7 @@ class BARTMModel(pl.LightningModule):
 						 'fi':AutoTokenizer.from_pretrained(self.bartPath, src_lang='fi_FI', tgt_lang='fi_FI'),
 						 'nl':AutoTokenizer.from_pretrained(self.bartPath, src_lang='nl_XX', tgt_lang='nl_XX'),
 						 'el': AutoTokenizer.from_pretrained(self.bartPath, src_lang='en_XX', tgt_lang='en_XX'),
+						 'tr': AutoTokenizer.from_pretrained(self.bartPath, src_lang='en_XX', tgt_lang='en_XX'),
 						 						 }
 		if argdict['dataset'].lower() in ["papyrus", "papyrus_m"]:
 			self.dico_perfo_per_language={}

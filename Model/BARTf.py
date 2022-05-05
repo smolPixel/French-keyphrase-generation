@@ -11,7 +11,7 @@ from multiprocessing import cpu_count
 import math
 import nltk
 import nltk.translate.bleu_score as bleu
-from transformers import Barttokenizer, BartForConditionalGeneration, AdamW, WarmUp, BartConfig, Autotokenizer, AutoModelForSeq2SeqLM
+from transformers import BartTokenizer, BartForConditionalGeneration, AdamW, WarmUp, BartConfig, AutoTokenizer, AutoModelForSeq2SeqLM
 import numpy as np
 from datasets import load_metric
 from eval import *

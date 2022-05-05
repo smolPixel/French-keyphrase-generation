@@ -122,7 +122,7 @@ class BARTMModel(pl.LightningModule):
 		# if batch['language'][0] not in self.map_lang.keys():
 		# 	print(batch['language'])
 		# 	fds
-		if len(batch['language'][0].split(',')):
+		if len(batch['language'][0].split(','))>1:
 			# We are in the papyrus task
 			ll = 'en'
 		else:

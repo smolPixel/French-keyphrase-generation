@@ -58,12 +58,9 @@ class SingleRankModel():
 				self.model.load_document(input=exos['input_sentence'], language='en')
 				self.model.candidate_selection()
 				self.model.candidate_weighting()
-
-				print(exos)
 				gend=self.model.get_n_best(n=10, redundancy_removal=True)
 				hypos.append([kw[0] for kw in gend])
-				print(hypos)
-				fds
+
 
 			score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
 			f10 = np.average(score['present_exact_f_score@10'])

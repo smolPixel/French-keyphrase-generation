@@ -159,7 +159,13 @@ class BARTMModel(pl.LightningModule):
 		return loss
 
 	def test_step(self, batch, batch_idx):
+		if len(batch['language'][0].split(','))>1:
+			# We are in the papyrus task
+			ll = 'en'
+		else:
+			ll = batch['language'][0]
 
+		tokenizer = self.tokenizers[ll]
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
 		target = tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)

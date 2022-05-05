@@ -1,9 +1,10 @@
 import argparse, random, torch
 import numpy as np
 from util import *
-from Model.BART import BARTModel
+# from Model.BART import BARTModel
 from Model.YAKE import YakeModel
 from Model.BARTe import BARTeModel
+from Model.BARTf import BARTfModel
 from Model.BARTm import BARTMModel
 from Model.Keybert import KeyBertModel
 
@@ -23,6 +24,7 @@ dicoAlgo={'bart':BARTModel,
 		  'yake': YakeModel,
 		  'barte':BARTeModel,
 		  'bartm':BARTMModel,
+		  'bartf':BARTfModel,
 		  'keybert':KeyBertModel}
 
 def run(argdict):

@@ -108,7 +108,7 @@ class BARTfModel(pl.LightningModule):
 		hypos=[self.score(sent) for sent in gend]
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
-		score = evaluate(inputs, refs, hypos, '<unk>', self.tokenizer='split_nopunc')
+		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
 		# print(score)
 		f110 = np.average(score['present_exact_f_score@10'])
 		f15 = np.average(score['present_exact_f_score@5'])
@@ -138,7 +138,7 @@ class BARTfModel(pl.LightningModule):
 		hypos=[self.score(sent) for sent in gend]
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(', ')] for fullLabels in batch['full_labels']]
-		score = evaluate(inputs, refs, hypos, '<unk>', self.tokenizer='split_nopunc')
+		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
 		#Calculating recall by language
 		if self.argdict['dataset'].lower() in ['papyrus_m', 'papyrus'] and not self.testing_standard_dataset:
 			for i, (full_references, full_hypothesis) in enumerate(zip(refs, hypos)):

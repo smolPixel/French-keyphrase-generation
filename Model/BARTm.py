@@ -92,9 +92,9 @@ class BARTMModel(pl.LightningModule):
 		return outputs
 
 	def training_step(self, batch, batch_idx):
-		if batch['language'][0] not in self.map_lang.keys():
-			print(batch['language'])
-			fds
+		# if batch['language'][0] not in self.map_lang.keys():
+		# 	print(batch['language'])
+		# 	fds
 		tokenizer= self.tokenizers[batch['language'][0]]
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
 		with tokenizer.as_target_tokenizer():
@@ -105,9 +105,9 @@ class BARTMModel(pl.LightningModule):
 		return loss
 
 	def validation_step(self, batch, batch_idx):
-		if batch['language'][0] not in self.map_lang.keys():
-			print(batch['language'])
-			fds
+		# if batch['language'][0] not in self.map_lang.keys():
+		# 	print(batch['language'])
+		# 	fds
 		tokenizer = self.tokenizers[batch['language'][0]]
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
 		with tokenizer.as_target_tokenizer():

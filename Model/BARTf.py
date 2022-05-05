@@ -44,7 +44,7 @@ class BARTfModel(pl.LightningModule):
 		gptPath='moussaKam/barthez'
 		self.tokenizer = AutoTokenizer.from_pretrained(gptPath)
 		model = AutoModelForSeq2SeqLM.from_pretrained(gptPath, cache_dir='/Tmp')
-		self.criterion = nn.CrossEntropyLoss(ignore_index=self.self.tokenizer.pad_token_id)
+		# self.criterion = nn.CrossEntropyLoss(ignore_index=self.self.tokenizer.pad_token_id)
 
 
 		self.field_input='input_sentence'
@@ -355,14 +355,14 @@ class BARTfModel(pl.LightningModule):
 				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
 				# print(dat[self.field_input][0])
-				input_ids = self.self.tokenizer.encode(dat[self.field_input][0], return_tensors='pt', truncation=True, max_length=self.argdict['max_seq_length']).to(self.device)
+				input_ids = self.tokenizer.encode(dat[self.field_input][0], return_tensors='pt', truncation=True, max_length=self.argdict['max_seq_length']).to(self.device)
 				# print(input_ids)
 				# print(self.self.tokenizer.batch_decode((input_ids)))
 				# fds
 				# input_ids = torch.Tensor(src['input_ids']).long().to('cuda').unsqueeze(0)
 				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1)
 				# print(self.tokenizer.batch_decode(gend))
-				gend = self.self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
 				hypos.append(gend)
 				break
 
@@ -388,11 +388,11 @@ class BARTfModel(pl.LightningModule):
 			for abstract in inputs:
 			# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
-				input_ids = self.self.tokenizer.encode(abstract, return_tensors='pt', truncation=True,
+				input_ids = self.tokenizer.encode(abstract, return_tensors='pt', truncation=True,
 												  max_length=self.argdict['max_seq_length']).to(self.device)
 				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1)
 				# print(self.tokenizer.batch_decode(gend))
-				gend = self.self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
 				hypos.append([self.score(sent) for sent in gend])
 			# hypos.append(gend)
 
@@ -415,11 +415,11 @@ class BARTfModel(pl.LightningModule):
 			for abstract in inputs:
 				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
-				input_ids = self.self.tokenizer.encode(abstract, return_tensors='pt', truncation=True,
+				input_ids = self.tokenizer.encode(abstract, return_tensors='pt', truncation=True,
 												  max_length=self.argdict['max_seq_length']).to(self.device)
 				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1)
 				# print(self.tokenizer.batch_decode(gend))
-				gend = self.self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
 				hypos.append([self.score(sent) for sent in gend])
 			for ii, hh, rr in zip(inputs, hypos, refs):
 				print(f"Input : {ii} \n "
@@ -450,7 +450,7 @@ class BARTfModel(pl.LightningModule):
 				inputs.append(dat[self.field_input])
 				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
-				input_ids = self.self.tokenizer.encode(dat[self.field_input], return_tensors='pt', truncation=True, max_length=self.argdict['max_seq_length']).to(self.device)
+				input_ids = self.tokenizer.encode(dat[self.field_input], return_tensors='pt', truncation=True, max_length=self.argdict['max_seq_length']).to(self.device)
 				# print(input_ids)
 				# print(self.self.tokenizer.batch_decode((input_ids)))
 				# fds
@@ -458,7 +458,7 @@ class BARTfModel(pl.LightningModule):
 				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1,
 									  max_length=50)
 				# print(self.tokenizer.batch_decode(gend))
-				gend = self.self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
 				hypos.append(gend)
 				if j==n:
 					break

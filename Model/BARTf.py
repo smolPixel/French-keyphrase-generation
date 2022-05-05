@@ -42,7 +42,7 @@ class BARTfModel(pl.LightningModule):
 		# 	self.criterion = nn.CrossEntropyLoss(ignore_index=self.self.tokenizer.pad_token_id)
 		# elif argdict['language']=='fr':
 		gptPath='moussaKam/barthez'
-		self.tokenizer = Autoself.tokenizer.from_pretrained(gptPath)
+		self.tokenizer = AutoTokenizer.from_pretrained(gptPath)
 		model = AutoModelForSeq2SeqLM.from_pretrained(gptPath, cache_dir='/Tmp')
 		self.criterion = nn.CrossEntropyLoss(ignore_index=self.self.tokenizer.pad_token_id)
 

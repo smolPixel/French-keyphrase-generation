@@ -83,14 +83,14 @@ def initialize_datasets(argdict):
 						# "test_110ptbnkp":test_110ptbnkp,
 						# "test_wikinews":test_wikinews,
 						# "test_cacic57":test_cacic57,
-						"test_pak2018":test_pak2018,
-						"test_krapivin":test_krapivin,
-						"test_papyruse":test_papyruse,
-						"test_papyrusf":test_papyrusf,
+						# "test_pak2018":test_pak2018,
+						# "test_papyruse":test_papyruse,
+						# "test_papyrusf":test_papyrusf,
 						"test_papyrusm":test_papyrusm,
 						"test_papyrus":test_papyrus}
 						# "test_kp20k": test_kp20k,
 						# "test_semeval":test_semeval,
+						# "test_krapivin":test_krapivin,
 						# "test_nus":test_nus,
 						# "test_inspec":test_inspec,
 						# "test":test}

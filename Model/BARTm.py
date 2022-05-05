@@ -33,6 +33,8 @@ class BARTMModel(pl.LightningModule):
 		print(f"Testing with {len(self.dev_set)} examples, and {len(self.dev_set.index_unique_examples)} unique examples")
 
 		# self.device = torch.device(argdict['device'])
+		if argdict['batch_size']!=1:
+			raise ValueError("Batch size has to be one for bartm")
 
 		# pretrained=['gpt', 'antoiloui/belgpt2']
 		self.bartPath = 'facebook/mbart-large-50'
@@ -101,6 +103,9 @@ class BARTMModel(pl.LightningModule):
 		# if batch['language'][0] not in self.map_lang.keys():
 		# 	print(batch['language'])
 		# 	fds
+		print(batch['language'])
+		print(len(batch['language'][0].split(',')))
+
 		tokenizer= self.tokenizers[batch['language'][0]]
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
 		with tokenizer.as_target_tokenizer():

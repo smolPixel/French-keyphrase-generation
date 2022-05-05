@@ -60,7 +60,7 @@ class BARTMModel(pl.LightningModule):
 						 'de': AutoTokenizer.from_pretrained(self.bartPath, src_lang='de_DE', tgt_lang='de_DE'),
 						 'ca': AutoTokenizer.from_pretrained(self.bartPath, src_lang='en_XX', tgt_lang='en_XX'),
 						 'ar': AutoTokenizer.from_pretrained(self.bartPath, src_lang='ar_AR', tgt_lang='ar_AR'),
-						 'pl':AutoTokenizer.from_pretrained(self.bartPath, src_lang='en_XX', tgt_lang='en_XX')
+						 'pl':AutoTokenizer.from_pretrained(self.bartPath, src_lang='en_XX', tgt_lang='en_XX'),
 						 'pt':AutoTokenizer.from_pretrained(self.bartPath, src_lang='en_XX', tgt_lang='en_XX')
 						 						 }
 		if argdict['dataset'].lower() in ["papyrus", "papyrus_m"]:

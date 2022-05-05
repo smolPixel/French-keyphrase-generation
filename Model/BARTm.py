@@ -45,7 +45,7 @@ class BARTMModel(pl.LightningModule):
 		self.model.config.max_length=argdict['max_seq_length']
 		self.map_lang = {'fr': 'fr_XX', 'en': 'en_XX', 'es':'es_XX', 'it':'it_IT',
 						 'ko':'ko_KR', 'ru':'ru_RU', 'de':'de_DE', 'ca':'es_XX',
-						 'ar':'ar_AR'}
+						 'ar':'ar_AR', 'pl':'en_XX'}
 		self.beam_search_k=10
 		self.loggerg=[]
 		self.logger_per_batch=[]

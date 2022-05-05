@@ -105,6 +105,7 @@ class BARTMModel(pl.LightningModule):
 		# 	fds
 		print(batch['language'])
 		print(len(batch['language'][0].split(',')))
+		fds
 
 		tokenizer= self.tokenizers[batch['language'][0]]
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True)

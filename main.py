@@ -7,6 +7,7 @@ from Model.BARTe import BARTeModel
 from Model.BARTf import BARTfModel
 from Model.BARTm import BARTMModel
 from Model.Keybert import KeyBertModel
+from Model.SingleRank import SingleRankModel
 
 def run_external_process(process):
 	output, error = process.communicate()
@@ -20,7 +21,7 @@ def set_seed(seed=42):
 	torch.manual_seed(seed)
 	torch.cuda.manual_seed_all(seed)
 
-dicoAlgo= {
+dicoAlgo= {'singlerank':SingleRankModel,
 		  'yake': YakeModel,
 		  'barte':BARTeModel,
 		  'bartm':BARTMModel,

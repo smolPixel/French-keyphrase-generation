@@ -49,7 +49,7 @@ if __name__ == '__main__':
 	parser.add_argument('--random_seed', type=int, default=7, help='Random seed ')
 	parser.add_argument('--num_epochs', type=int, default=3, help='Number of epochs')
 	parser.add_argument('--batch_size', type=int, default=2, help='Batch Size')
-	parser.add_argument('--accum_batch_size', type=int, default=64, help='Batch Size')
+	parser.add_argument('--accum_batch_size', type=int, default=64, help='Batch Size Accumulation')
 	parser.add_argument('--max_seq_length', type=int, default=1024, help='max length, 0 if no max length')
 
 

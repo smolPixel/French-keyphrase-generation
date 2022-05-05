@@ -79,10 +79,10 @@ def initialize_datasets(argdict):
 	test_cacic57=NoteMarg(test_cacic57, argdict, dev=True, no_index=True)
 	test_pak2018=NoteMarg(test_pak2018, argdict, dev=True, no_index=True)
 	test_wicc78=NoteMarg(test_wicc78, argdict, dev=True, no_index=True)
-	return train, dev, {"test_wicc78":test_wicc78,
-						"test_110ptbnkp":test_110ptbnkp,
-						"test_wikinews":test_wikinews,
-						"test_cacic57":test_cacic57,
+	return train, dev, {#"test_wicc78":test_wicc78,
+						# "test_110ptbnkp":test_110ptbnkp,
+						# "test_wikinews":test_wikinews,
+						# "test_cacic57":test_cacic57,
 						"test_pak2018":test_pak2018,
 						"test_krapivin":test_krapivin,
 						"test_papyruse":test_papyruse,

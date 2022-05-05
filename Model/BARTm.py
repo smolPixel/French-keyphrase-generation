@@ -103,11 +103,13 @@ class BARTMModel(pl.LightningModule):
 		# if batch['language'][0] not in self.map_lang.keys():
 		# 	print(batch['language'])
 		# 	fds
-		print(batch['language'])
-		print(len(batch['language'][0].split(',')))
-		fds
+		if len(batch['language'][0].split(',')):
+			#We are in the papyrus task
+			ll='en'
+		else:
+			ll=batch['language'][0]
 
-		tokenizer= self.tokenizers[batch['language'][0]]
+		tokenizer= self.tokenizers[ll]
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
 		with tokenizer.as_target_tokenizer():
 			target = tokenizer(batch['full_labels'], padding=True, truncation=True)
@@ -120,7 +122,13 @@ class BARTMModel(pl.LightningModule):
 		# if batch['language'][0] not in self.map_lang.keys():
 		# 	print(batch['language'])
 		# 	fds
-		tokenizer = self.tokenizers[batch['language'][0]]
+		if len(batch['language'][0].split(',')):
+			# We are in the papyrus task
+			ll = 'en'
+		else:
+			ll = batch['language'][0]
+
+		tokenizer = self.tokenizers[ll]
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
 		with tokenizer.as_target_tokenizer():
 			target = tokenizer(batch['full_labels'], padding=True, truncation=True)

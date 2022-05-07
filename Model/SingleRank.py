@@ -55,7 +55,7 @@ class SingleRankModel():
 				# 								 use_mmr = False,
 				# 								diversity = 0.7)
 				# hypos.append([kw[0] for kw in gend])
-				if exos['language'] in ['tr']:
+				if exos['language'] in ['tr'] or len(exos['language'].split(','))>1:
 					ll='en'
 				else:
 					ll=exos['language']

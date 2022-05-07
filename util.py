@@ -79,21 +79,23 @@ def initialize_datasets(argdict):
 	test_cacic57=NoteMarg(test_cacic57, argdict, dev=True, no_index=True)
 	test_pak2018=NoteMarg(test_pak2018, argdict, dev=True, no_index=True)
 	test_wicc78=NoteMarg(test_wicc78, argdict, dev=True, no_index=True)
-	return train, dev, {#"test_wicc78":test_wicc78,
+	return train, dev, {
+						# "test_wicc78":test_wicc78,
 						# "test_110ptbnkp":test_110ptbnkp,
 						# "test_wikinews":test_wikinews,
 						# "test_cacic57":test_cacic57,
 						# "test_pak2018":test_pak2018,
 						# "test_papyruse":test_papyruse,
 						# "test_papyrusf":test_papyrusf,
-						"test_papyrusm":test_papyrusm,
-						"test_papyrus":test_papyrus}
-						# "test_kp20k": test_kp20k,
-						# "test_semeval":test_semeval,
-						# "test_krapivin":test_krapivin,
-						# "test_nus":test_nus,
-						# "test_inspec":test_inspec,
-						# "test":test}
+						# "test_papyrusm":test_papyrusm,
+						# "test_papyrus":test_papyrus,
+						#"test_kp20k": test_kp20k,
+						#"test_semeval":test_semeval,
+						#"test_krapivin":test_krapivin,
+						#"test_nus":test_nus,
+						#"test_inspec":test_inspec,
+						"test":test
+						}
 
 
 class NoteMarg(Dataset):
@@ -122,11 +124,11 @@ class NoteMarg(Dataset):
 		self.label_for_ex=[]
 		for i, row in data.iterrows():
 			# Special example 26534
-			if not dev and argdict['dataset'] not in ['kp20k'] and row['index'] == 25397:
+			if argdict['dataset'] not in ['kp20k'] and not dev and row['index'] == 25397:
 				self.abstract_for_ex.append(row['sentences'])
 				self.label_for_ex.append(row['label'])
 			# print(row)
-			if dev and not no_index and row['index'] == 24192:
+			if argdict['dataset'] not in ['kp20k'] and dev and not no_index and row['index'] == 24192:
 				self.abstract_for_ex.append(row['sentences'])
 				self.label_for_ex.append(row['label'])
 			if dev and argdict['short_eval'] and index>10:

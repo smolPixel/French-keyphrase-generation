@@ -82,7 +82,7 @@ def initialize_datasets(argdict):
 	return train, dev, {
 						"test_wicc78":test_wicc78,
 						"test_110ptbnkp":test_110ptbnkp,
-						"test_wikinews":test_wikinews,
+						# "test_wikinews":test_wikinews,
 						"test_cacic57":test_cacic57,
 						"test_pak2018":test_pak2018,
 						"test_papyruse":test_papyruse,

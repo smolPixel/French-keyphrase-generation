@@ -13,8 +13,8 @@ class KeyBertModel():
 
 		self.dico_mapping={'en':'english', 'fr':'french'}
 
-		# self.model=KeyBERT(model='distiluse-base-multilingual-cased-v2')
-		self.model=KeyBERT(model='paraphrase-multilingual-MiniLM-L12-v2')
+		self.model=KeyBERT(model='distiluse-base-multilingual-cased-v2')
+		# self.model=KeyBERT(model='paraphrase-multilingual-MiniLM-L12-v2')
 
 
 	def train_model(self):

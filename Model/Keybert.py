@@ -11,9 +11,10 @@ class KeyBertModel():
 		print(f"Training with {len(self.training_set)} exemples, and {len(self.training_set.index_unique_examples)} unique examples")
 		print(f"Testing with {len(self.dev_set)} examples, and {len(self.dev_set.index_unique_examples)} unique examples")
 
-		self.dico_mapping={'en':'english'}
+		self.dico_mapping={'en':'english', 'fr':'french'}
 
-		self.model=KeyBERT('distiluse-base-multilingual-cased-v2')
+		# self.model=KeyBERT('distiluse-base-multilingual-cased-v2')
+		self.model=KeyBERT('paraphrase-multilingual-MiniLM-L12-v2')
 
 
 	def train_model(self):
@@ -49,15 +50,15 @@ class KeyBertModel():
 			for i, exos in tqdm(tt.data.items()):
 				inputs.append(exos['input_sentence'])
 				refs.append([rr.strip() for rr in exos['full_labels'].split(',')])
-				try:
-					gend=self.model.extract_keywords(exos['input_sentence'],keyphrase_ngram_range = (1,3),
-													 stop_words = 'english', top_n = 10, nr_candidates = 20,
-													 use_maxsum = True,
-													 use_mmr = False,
-													diversity = 0.7)
-					hypos.append([kw[0] for kw in gend])
-				except:
-					hypos.append([])
+				ll=
+				gend=self.model.extract_keywords(exos['input_sentence'],keyphrase_ngram_range = (1,3),
+												 stop_words = 'english', top_n = 10, nr_candidates = 20,
+												 use_maxsum = True,
+												 use_mmr = False,
+												diversity = 0.7)
+				hypos.append([kw[0] for kw in gend])
+				# except:
+				# 	hypos.append([])
 
 			score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
 			f10 = np.average(score['present_exact_f_score@10'])

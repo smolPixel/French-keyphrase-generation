@@ -50,9 +50,9 @@ class KeyBertModel():
 			for i, exos in tqdm(tt.data.items()):
 				inputs.append(exos['input_sentence'])
 				refs.append([rr.strip() for rr in exos['full_labels'].split(',')])
-				ll=
+				ll=self.dico_mapping[exos['language']]
 				gend=self.model.extract_keywords(exos['input_sentence'],keyphrase_ngram_range = (1,3),
-												 stop_words = 'english', top_n = 10, nr_candidates = 20,
+												 stop_words = ll, top_n = 10, nr_candidates = 20,
 												 use_maxsum = True,
 												 use_mmr = False,
 												diversity = 0.7)

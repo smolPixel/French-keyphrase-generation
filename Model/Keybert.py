@@ -11,6 +11,8 @@ class KeyBertModel():
 		print(f"Training with {len(self.training_set)} exemples, and {len(self.training_set.index_unique_examples)} unique examples")
 		print(f"Testing with {len(self.dev_set)} examples, and {len(self.dev_set.index_unique_examples)} unique examples")
 
+		self.dico_mapping={'en':'english'}
+
 		self.model=KeyBERT('distiluse-base-multilingual-cased-v2')
 
 

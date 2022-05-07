@@ -292,11 +292,11 @@ class BARTfModel(pl.LightningModule):
 		# )
 
 		path_save=f'/data/rali6/Tmp/piedboef/Models/FKPG/{self.argdict["dataset"]}_{self.argdict["num_epochs"]}Epochs.pt'
-		# tic=timeit.default_timer()
-		# self.trainer.fit(self, train_loader, dev_loader)
-		# toc=timeit.default_timer()
-		# print(f"Training processed took {toc-tic} seconds")
-		# fds
+		tic=timeit.default_timer()
+		self.trainer.fit(self, train_loader, dev_loader)
+		toc=timeit.default_timer()
+		print(f"Training processed took {toc-tic} seconds")
+		fds
 		try:
 			self.model.load_state_dict(torch.load(path_save))
 			print("loaded model")

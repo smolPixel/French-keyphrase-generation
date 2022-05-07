@@ -13,8 +13,8 @@ class KeyBertModel():
 
 		self.dico_mapping={'en':'english', 'fr':'french'}
 
-		# self.model=KeyBERT('distiluse-base-multilingual-cased-v2')
-		self.model=KeyBERT('paraphrase-multilingual-MiniLM-L12-v2')
+		self.model=KeyBERT(model='distiluse-base-multilingual-cased-v2')
+		# self.model=KeyBERT('paraphrase-multilingual-MiniLM-L12-v2')
 
 
 	def train_model(self):
@@ -52,7 +52,7 @@ class KeyBertModel():
 				refs.append([rr.strip() for rr in exos['full_labels'].split(',')])
 				ll=self.dico_mapping[exos['language']]
 				gend=self.model.extract_keywords(exos['input_sentence'],keyphrase_ngram_range = (1,3),
-												 stop_words = ll, top_n = 10, nr_candidates = 20,
+												 stop_words = None, top_n = 10, nr_candidates = 20,
 												 use_maxsum = True,
 												 use_mmr = False,
 												diversity = 0.7)

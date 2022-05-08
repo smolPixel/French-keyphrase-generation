@@ -125,7 +125,7 @@ class NoteMarg(Dataset):
 
 		if not dev:
 			special_ex_df=pd.read_csv(f"data/papyrus_m/dev.tsv", sep='\t', index_col=0)
-			for i, row in data.iterrows():
+			for i, row in special_ex_df.iterrows():
 				# print(row)
 				if row['index'] == 24192:
 					self.abstract_for_ex.append(row['sentences'])

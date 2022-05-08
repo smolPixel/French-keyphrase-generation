@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>The role of Organic Cation Transporters in the pharmacokinetics of clinically relevant DNA damaging agents : in vivo and in silico studies</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Saragovi, Uri" name="DC.contributor">
+<meta content="Papaluca, Arturo" name="DC.creator">
+<meta content="2018-12-19T21:04:52Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2018-12-19T21:04:52Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2018-10-11" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2018-03" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/21197" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Absorption et résistance des médicaments" name="DC.subject" xml:lang="fr"/>
+<meta content="Transporteurs de cations organiques" name="DC.subject" xml:lang="fr"/>
+<meta content="Apoptose" name="DC.subject" xml:lang="fr"/>
+<meta content="Dommages et voies de réparation de l'ADN" name="DC.subject" xml:lang="fr"/>
+<meta content="Modélisation in silico" name="DC.subject" xml:lang="fr"/>
+<meta content="Expression génique" name="DC.subject" xml:lang="fr"/>
+<meta content="Inhibiteur de la voie de réparation de l'ADN" name="DC.subject" xml:lang="fr"/>
+<meta content="5-hydroxyméthyluracil" name="DC.subject" xml:lang="fr"/>
+<meta content="ADN glycosylases" name="DC.subject" xml:lang="fr"/>
+<meta content="AP endonucléases" name="DC.subject" xml:lang="fr"/>
+<meta content="Drug uptake and resistance" name="DC.subject" xml:lang="fr"/>
+<meta content="Organic Cation Transporters" name="DC.subject" xml:lang="fr"/>
+<meta content="C. elegans" name="DC.subject" xml:lang="fr"/>
+<meta content="Apoptosis" name="DC.subject" xml:lang="fr"/>
+<meta content="DNA damage and repair pathways" name="DC.subject" xml:lang="fr"/>
+<meta content="In silico modeling" name="DC.subject" xml:lang="fr"/>
+<meta content="Gene expression" name="DC.subject" xml:lang="fr"/>
+<meta content="DNA repair pathway inhibitor" name="DC.subject" xml:lang="fr"/>
+<meta content="5-hydroxymethyluracil" name="DC.subject" xml:lang="fr"/>
+<meta content="DNA glycosylases" name="DC.subject" xml:lang="fr"/>
+<meta content="AP endonucleases" name="DC.subject" xml:lang="fr"/>
+<meta content="Chemistry - Pharmaceutical / Chimie pharmaceutique (UMI : 0491)" name="DC.subject" xml:lang="fr"/>
+<meta content="The role of Organic Cation Transporters in the pharmacokinetics of clinically relevant DNA damaging agents : in vivo and in silico studies" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Dans les systèmes cellulaires, l'homéostasie des nutriments, définie comme la capacité d'un système à maintenir l'équilibre des concentrations de nutriments dans des gradients fluctuants par rapport à l'environnement interne et externe, est essentielle pour survivre dans des conditions difficiles. Entre l'espace intracellulaire et extracellulaire de la membrane, une pléthore de signaux de signalisation moléculaires et cellulaires interagissent pour coordonner le maintien de l'homéostasie cellulaire. L'un des principaux mécanismes contrôlant cette interaction est orchestré par les protéines de la membrane plasmique. Selon leurs structures et fonctions, ces protéines membranaires existent en plusieurs classes, et sont spécialisées dans le contrôle du trafic de molécules, dont des nutriments, à travers la membrane. 
+L'une des plus importantes familles de protéines membranaires est celle des transporteurs de cations organiques (OCTs). Le but de ce projet de recherche était d'étudier la relation structure-fonction des OCTs. Les OCTs sont impliqués dans l'absorption physiologique de divers nutriments, et des preuves récentes ont démontré que ces transporteurs peuvent aussi jouer un rôle important dans la régulation du transport des xénobiotiques et des médicaments thérapeutiques dans les cellules.
+Le nématode du sol, Caenorhabditis elegans, a permis de clarifier les rôles des OCTs. Ce nématode utilise le transporteur membranaire OCT-1 comme transporteur d'absorption, qui a été classé comme un transporteur de cations organiques basé sur le transport du substrat prototypique, le cation ammonium tétraéthylammonium (TEA) (Wu et al., 1999). Près d'une décennie et demie plus tard, il a été démontré que OCT-1 transporte l'antioxydant ergothionéine (Cheah et al., 2013). L'analyse des séquences a révélé l'existence de transporteurs supplémentaires et apparentés tels que OCT-2 chez C. elegans; cependant, les rôles d’OCT-2 n'ont pas été décrits jusqu'à présent. Dans cet esprit, nous avons cherché à savoir si OCT-1 et OCT-2 pourraient coordonner et se partager les responsabilités de l'absorption de composés cationiques chez C. elegans.
+Dans cette thèse, nous dévoilons pour la première fois le rôle de l'OCT-2 chez C. elegans. Nous avons montré que, de manière inattendue, OCT-1 a un petit rôle direct dans l'absorption de composés cationiques; néanmoins, il exerce des fonctions de régulation sur l'expression d’OCT-2. En l'absence d'oct-1, l'expression d’oct-2 est régulée positivement et, par conséquent, OCT-2 serait le principal transporteur d'absorption pour les médicaments chimiothérapeutiques cliniquement pertinents tels que la doxorubicine, le cisplatine et le méthotrexate utilisés pour plusieurs traitements contre le cancer. Notre recherche réfute donc l'hypothèse initiale selon laquelle OCT-1 agit comme un transporteur d'absorption cationique? directe chez C. elegans. Dans ce travail, nous avons établi une méthode de criblage de composé in vivo pour découvrir l'efficacité d'absorption des médicaments cationiques par OCT-1 et OCT-2 en surveillant l'apoptose des cellules germinales induite par les dommages à l'ADN par ces composé. Nous avons observé que la suppression du gène oct-1 et / ou de la régulation négative d’OCT-1 par un ARNi entraîne une régulation positive d'oct-2, stimulant ainsi l'absorption de médicaments chimiothérapeutiques et de métabolites toxiques potentiels qui provoquent des effets délétères sur l'animal. De plus, les vers ayant des voies de réparation de l'ADN défectueuses étaient extrêmement sensibles aux agents chimiothérapeutiques lorsque oct-2 était régulée positivement. Il est important de noter que l'épuisement d'oct-2 a complètement entravé l'absorption de ces médicaments, empêchant ainsi leurs effets génotoxiques et conduisant ainsi à des phénotypes de résistance aux médicaments.
+De plus, nous avons effectué un criblage comparatif basé sur la modélisation in silico de OCT-1 et OCT-2 et avons démontré que cette approche discriminait sélectivement parmi les ligands qui se lient de manière robuste à OCT-2 et non OCT-1. Nous avons validé cette approche in vivo et démontré que le transport dépendant d’OCT-2 de composés endommageant l'ADN sensibilisait les vers avec des voies de réparation de l'ADN défectueuses, et que cet effet était inversé une fois qué oct-2 était régulée à la baisse.
+Collectivement, ces méthodes expérimentales servent de preuves de concept dans l'étude des caractéristiques clés des transporteurs cationiques pertinents. L'application de méthodes in silico pour la présélection des molécules cibles et la validation subséquente avec notre modèle in vivo basé sur les OCTs augmenteront sans aucun doute le succès dans l’identification de nouvelles molécules chimiothérapeutiques tout en réduisant le cout de recherche et développement. Notre travail a des implications cruciales, car il indique que (i) les transporteurs d'absorption hyperactive sont susceptibles d'importer des concentrations anormalement élevées de composés génotoxiques et de métabolites pendant de nombreuses années, causant l'instabilité génomique et finalement des cancers, et (ii) ces transporteurs d'absorption sont responsables de la résistance aux médicaments observée pour de nombreux types de cancers.
+En bref, ces résultats soulignent l'importance des transporteurs pour réguler l'entrée des médicaments chimiothérapeutiques dans les cellules et soulèvent la possibilité que la résistance aux médicaments et les réponses sensibles aux médicaments observées chez les patients cancéreux puissent être régies au niveau de l'absorption des médicaments. Cette étude utilisant C. elegans est donc de la plus haute importance car elle exploite les transporteurs d'absorption comme une nouvelle approche pour expliquer des effets indésirables, développer de nouvelles molecules et aussi pour développer plusieurs programmes de dépistage de drogues. Ainsi, notre travail a des applications immédiates à un large éventail de disciplines.
+Pour terminer, dans un thème connexe, nous présentons la découverte d'un nouveau mécanisme de réparation de l'ADN par lequel les lésions créées par le nucléoside 5-hydroxymethyuracil (5-hmU) sont éliminés par la voie de réparation de l'excision de base (BER) impliquant APN-1 et UNG-1 chez C. elegans. Dans ce travail, nous avons examiné in vivo les rôles de quatre enzymes de réparation de l'ADN, les deux ADN glycosylases UNG-1 et NTH-1 et les deux AP endonucléases APN-1 et EXO-3, dans le traitement de produit modifié par oxydation de la thymine, 5-hmU. UNG-1 a déjà été caractérisé in vitro; capable d’éliminer l'uracile, tandis que NTH-1 a été prouvé capable d’éliminer la thymine glycol, 5-formyl cytosine et 5-hmU. De même, les deux endonucléases AP ont été caractérisées et les deux peuvent inciser des sites abasiques et éliminer les lésions 3'-bloquantes lors des cassures d'ADN a simple brin. Cependant, APN-1 est distinct d’EXO-3, car il possède deux activités supplémentaires, une activité exonucléase 3'-5 'et une activité de réparation d'incision de nucléotide qui agit directement sur certaines bases modifiées par oxydation (i.e. 5-hmU). Pour prouver l’implication d’UNG-1, nous avons utilisé des mutants de C. elegans et observé que les mutants ung-1 présentaient une diminution de la taille et de la durée de vie des couvées, et un niveau élevé d'apoptose des cellules germinales lorsqu'ils sont stimulés par 5-hmU.
+Des phénotypes similaires ont été observés avec le mutant apn-1, qui ont été exacerbés par la régulation négative de l'ARNi de l'apn-1 dans le mutant ung-1. D’autre part, les mutants nth-1 ou exo-3 ont présenté des phénotypes de type sauvage vers 5-hmU. Nous proposons un modèle suggérant que UNG-1 est impliqué dans l'élimination de 5-hmU incorporé dans le génome et le site abasique résultant est clivé par APN-1 ou EXO-3. En l'absence d'UNG-1, 5-hmU est éliminée par NTH-1, ce qui crée une lésion génotoxique 3'-bloquante qui nécessite l'action de l'activité 3'-diesterase ou 3'- à 5'-exonucléase de l'APN -1. Nos données fournissent la première preuve que UNG-1 possède la capacité d'éliminer 5-hmU in vivo chez C. elegans, et qui pourrait avoir été remplacé par l'activité de type SMUG1 dans les cellules de mammifères." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="In cellular systems, nutrient homeostasis - defined as the ability of a system to maintain in equilibrium nutrient concentrations within fluctuating gradients relative to the internal and external environment - is essential to thrive in harsh conditions. Between the intracellular and extracellular space of the cell membrane, a plethora of molecular and cellular signalling cues interact to coordinate the maintenance of cellular homeostasis. One of the main mechanisms that controls this interaction is orchestrated by membrane proteins. These membrane proteins exist in several classes, structures and functions and are specialized in controlling the traffic of all sorts of nutrients and molecules across the membrane.        
+The aim of this study was to investigate the structure-function relationship of Organic Cation Transporters (OCTs), one of the most important family of membrane proteins. OCTs are involved in the physiological uptake of various nutrients and recent evidences show that these transporters may be far more important in regulating the entry of xenobiotics and therapeutic drugs into cells.
+The soil nematode Caenorhabditis elegans has provided powerful insights into the roles of OCTs. This nematode uses the membrane-bound transporter OCT-1 as an uptake transporter, which has been classified as an organic cation transporter based on the transport of the prototypical substrate, the ammonium cation tetraethylammonium (TEA) (Wu et al. 1999). Nearly a decade and a half later, it was shown that OCT-1 transports the antioxidant ergothioneine (Cheah et al., 2013). DNA sequence analysis revealed the existence of additional and related transporters such as OCT-2 in C. elegans; however, the roles of OCT-2 have not been described so far. With this in mind, we set out to investigate whether OCT-1 and OCT-2 might coordinate and share the responsibilities in the uptake of cationic compounds in C. elegans. 
+In this thesis, we unveil for the first time the role of OCT-2 in C. elegans.  We showed that, unexpectadly, OCT-1 has little role in the uptake of cationic compounds; nonetheless it exerts regulatory functions on oct-2 expression. In the absence of oct-1, oct-2 expression is significantly upregulated and, thus, it is OCT-2 that serves as the major uptake transporter for clinically relevant chemotherapeutic drugs such as doxorubicin, cisplatin and methotrexate used for several cancer treatments. Our research therefore refutes the initial hypothesis that OCT-1 is/acts as a direct uptake transporter in C. elegans.   
+In this work, we established an in vivo screening method to uncover the uptake efficiency of cationic drugs by OCT-1 and OCT-2 by monitoring DNA damage-induced germ cell apoptosis. We observed that deletion of oct-1 gene and/or RNAi-driven downregulation of oct-1 causes upregulation of oct-2, therefore stimulating the uptake of chemotherapeutic drugs and potential toxic metabolites which cause deleterious effects on the animal. Moreover, worms with defective DNA repair pathways were particularly sensitive to the chemotherapeutic agents when oct-2 was upregulated. Importantly, depletion of oct-2 completely impeded the uptake of these drugs thus preventing their genotoxic effects, and hence leading to drug resistance phenotypes. Additionally, we performed an in silico modeling-based comparative screening of OCT-1 and OCT-2, and showed that this approach selectively discriminated amongst ligands that bind robustly to OCT-2 and not OCT-1. We validated this approach in vivo, and demonstrated that OCT-2-dependent transport of DNA-damaging compounds successfully sensitized worms with defective DNA repair pathways, and this effect was reversed once oct-2 was downregulated. 
+Collectively, these experimental methods serve as a proof of concept in studying key characteristics of relevant cationic transporters. Applying in silico methods for the preselection of target molecules and subsequent validation with our OCTs-based in vivo model will undoubtedly increase the success of chemotherapeutics and screening of newly synthesized molecules with a cost-efficient model system. Our work has pivotal implications, as it indicates that (i) hyperactive uptake transporters are likely to import abnormally high concentrations of genotoxic compounds and metabolites over many years causing genomic instability and eventually cancers and (ii) these uptake transporters may hold the key to the mechanisms of drug resistance observed in many types of cancers. 
+In short, these results underscore the importance of uptake transporters in regulating the entry of chemotherapeutic drugs into cells and raises the possibility that drug-resistance and drug-sensitive responses observed in cancer patients could be governed at the level of drug uptake. This study is therefore pivotal as it exploits uptake transporters as a novel approach to expand on several drug screening programs using C. elegans.  Thus, our work has immediate applications to a broad range of disciplines.
+Finally, in a related theme, we present the discovery of a new DNA repair mechanism whereby lesions created by the nucleoside 5-hydroxymethyuracil (5-hmU) are removed by the base excision repair pathway. In this work, we examined the in vivo roles of four base-excision DNA repair enzymes in C. elegans - the two DNA glycosylases UNG-1 and NTH-1 and the two AP endonucleases APN-1 and EXO-3 - in processing the oxidatively modified product of thymine, 5-hmU. C. elegans UNG-1 has been previously characterized in vitro to remove uracil, while NTH-1 was shown to remove thymine glycol, 5-formyl cytosine and 5-hmU. Likewise, the two AP endonucleases have been characterized and both can incise abasic sites and remove 3′-blocking lesions at DNA single strand breaks. However, APN-1 is distinct from EXO-3, as it possesses two additional activities, a 3′- to 5′-exonulease activity and a nucleotide incision repair activity that acts directly on certain oxidatively modified bases. Herein, we used C. elegans mutants and observe that ung-1 mutants exhibited a decrease in brood size and lifespan, and an elevated level of germ cell apoptosis when challenged with 5-hmU.
+Similar phenotypes were seen with apn-1 mutant, which were exacerbated by RNAi downregulation of apn-1 in the ung-1 mutant. The nth-1 or exo-3 mutants displayed wild type phenotypes towards 5-hmU. We propose a model suggesting that UNG-1 is involved in removing 5-hmU incorporated into the genome and the resulting abasic site is cleaved by APN-1 or EXO-3. In the absence of UNG-1, the 5-hmU is removed by NTH-1, which creates a genotoxic 3′-blocking lesion that requires the action of the 3′-diesterase or 3′- to 5′-exonuclease activity of APN-1. Our data provide the first evidence that C. elegans UNG-1 possesses the ability to remove 5-hmU in vivo, which may have been replaced with SMUG1-like activity in mammalian cells." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Absorption et résistance des médicaments; Transporteurs de cations organiques; Apoptose; Dommages et voies de réparation de l'ADN; Modélisation in silico; Expression génique; Inhibiteur de la voie de réparation de l'ADN; 5-hydroxyméthyluracil; ADN glycosylases; AP endonucléases; Drug uptake and resistance; Organic Cation Transporters; C. elegans; Apoptosis; DNA damage and repair pathways; In silico modeling; Gene expression; DNA repair pathway inhibitor; 5-hydroxymethyluracil; DNA glycosylases; AP endonucleases; Chemistry - Pharmaceutical / Chimie pharmaceutique (UMI : 0491); Thèse ou mémoire / Thesis or Dissertation; Sciences biomédicales" name="citation_keywords"/>
+<meta content="The role of Organic Cation Transporters in the pharmacokinetics of clinically relevant DNA damaging agents : in vivo and in silico studies" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Papaluca, Arturo" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/21197/2/Papaluca_Arturo_2018_These.pdf" name="citation_pdf_url"/>
+<meta content="2018-10-11" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/21197" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21197?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21197?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21197?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21197?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21197?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21197?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/21197/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/21197">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/21197/mets.xml-->
+<h2 class="page-header first-page-header">The role of Organic Cation Transporters in the pharmacokinetics of clinically relevant DNA damaging agents : in vivo and in silico studies</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Saragovi, Uri</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Papaluca, Arturo</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2018-12-19T21:04:52Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2018-12-19T21:04:52Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2018-10-11</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2018-03</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/21197</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Absorption et résistance des médicaments</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Transporteurs de cations organiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Apoptose</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Dommages et voies de réparation de l'ADN</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Modélisation in silico</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Expression génique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Inhibiteur de la voie de réparation de l'ADN</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">5-hydroxyméthyluracil</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">ADN glycosylases</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">AP endonucléases</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Drug uptake and resistance</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Organic Cation Transporters</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">C. elegans</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Apoptosis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">DNA damage and repair pathways</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">In silico modeling</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Gene expression</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">DNA repair pathway inhibitor</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">5-hydroxymethyluracil</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">DNA glycosylases</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">AP endonucleases</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Chemistry - Pharmaceutical / Chimie pharmaceutique (UMI : 0491)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">The role of Organic Cation Transporters in the pharmacokinetics of clinically relevant DNA damaging agents : in vivo and in silico studies</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences biomédicales</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Dans les systèmes cellulaires, l'homéostasie des nutriments, définie comme la capacité d'un système à maintenir l'équilibre des concentrations de nutriments dans des gradients fluctuants par rapport à l'environnement interne et externe, est essentielle pour survivre dans des conditions difficiles. Entre l'espace intracellulaire et extracellulaire de la membrane, une pléthore de signaux de signalisation moléculaires et cellulaires interagissent pour coordonner le maintien de l'homéostasie cellulaire. L'un des principaux mécanismes contrôlant cette interaction est orchestré par les protéines de la membrane plasmique. Selon leurs structures et fonctions, ces protéines membranaires existent en plusieurs classes, et sont spécialisées dans le contrôle du trafic de molécules, dont des nutriments, à travers la membrane. 
+L'une des plus importantes familles de protéines membranaires est celle des transporteurs de cations organiques (OCTs). Le but de ce projet de recherche était d'étudier la relation structure-fonction des OCTs. Les OCTs sont impliqués dans l'absorption physiologique de divers nutriments, et des preuves récentes ont démontré que ces transporteurs peuvent aussi jouer un rôle important dans la régulation du transport des xénobiotiques et des médicaments thérapeutiques dans les cellules.
+Le nématode du sol, Caenorhabditis elegans, a permis de clarifier les rôles des OCTs. Ce nématode utilise le transporteur membranaire OCT-1 comme transporteur d'absorption, qui a été classé comme un transporteur de cations organiques basé sur le transport du substrat prototypique, le cation ammonium tétraéthylammonium (TEA) (Wu et al., 1999). Près d'une décennie et demie plus tard, il a été démontré que OCT-1 transporte l'antioxydant ergothionéine (Cheah et al., 2013). L'analyse des séquences a révélé l'existence de transporteurs supplémentaires et apparentés tels que OCT-2 chez C. elegans; cependant, les rôles d’OCT-2 n'ont pas été décrits jusqu'à présent. Dans cet esprit, nous avons cherché à savoir si OCT-1 et OCT-2 pourraient coordonner et se partager les responsabilités de l'absorption de composés cationiques chez C. elegans.
+Dans cette thèse, nous dévoilons pour la première fois le rôle de l'OCT-2 chez C. elegans. Nous avons montré que, de manière inattendue, OCT-1 a un petit rôle direct dans l'absorption de composés cationiques; néanmoins, il exerce des fonctions de régulation sur l'expression d’OCT-2. En l'absence d'oct-1, l'expression d’oct-2 est régulée positivement et, par conséquent, OCT-2 serait le principal transporteur d'absorption pour les médicaments chimiothérapeutiques cliniquement pertinents tels que la doxorubicine, le cisplatine et le méthotrexate utilisés pour plusieurs traitements contre le cancer. Notre recherche réfute donc l'hypothèse initiale selon laquelle OCT-1 agit comme un transporteur d'absorption cationique? directe chez C. elegans. Dans ce travail, nous avons établi une méthode de criblage de composé in vivo pour découvrir l'efficacité d'absorption des médicaments cationiques par OCT-1 et OCT-2 en surveillant l'apoptose des cellules germinales induite par les dommages à l'ADN par ces composé. Nous avons observé que la suppression du gène oct-1 et / ou de la régulation négative d’OCT-1 par un ARNi entraîne une régulation positive d'oct-2, stimulant ainsi l'absorption de médicaments chimiothérapeutiques et de métabolites toxiques potentiels qui provoquent des effets délétères sur l'animal. De plus, les vers ayant des voies de réparation de l'ADN défectueuses étaient extrêmement sensibles aux agents chimiothérapeutiques lorsque oct-2 était régulée positivement. Il est important de noter que l'épuisement d'oct-2 a complètement entravé l'absorption de ces médicaments, empêchant ainsi leurs effets génotoxiques et conduisant ainsi à des phénotypes de résistance aux médicaments.
+De plus, nous avons effectué un criblage comparatif basé sur la modélisation in silico de OCT-1 et OCT-2 et avons démontré que cette approche discriminait sélectivement parmi les ligands qui se lient de manière robuste à OCT-2 et non OCT-1. Nous avons validé cette approche in vivo et démontré que le transport dépendant d’OCT-2 de composés endommageant l'ADN sensibilisait les vers avec des voies de réparation de l'ADN défectueuses, et que cet effet était inversé une fois qué oct-2 était régulée à la baisse.
+Collectivement, ces méthodes expérimentales servent de preuves de concept dans l'étude des caractéristiques clés des transporteurs cationiques pertinents. L'application de méthodes in silico pour la présélection des molécules cibles et la validation subséquente avec notre modèle in vivo basé sur les OCTs augmenteront sans aucun doute le succès dans l’identification de nouvelles molécules chimiothérapeutiques tout en réduisant le cout de recherche et développement. Notre travail a des implications cruciales, car il indique que (i) les transporteurs d'absorption hyperactive sont susceptibles d'importer des concentrations anormalement élevées de composés génotoxiques et de métabolites pendant de nombreuses années, causant l'instabilité génomique et finalement des cancers, et (ii) ces transporteurs d'absorption sont responsables de la résistance aux médicaments observée pour de nombreux types de cancers.
+En bref, ces résultats soulignent l'importance des transporteurs pour réguler l'entrée des médicaments chimiothérapeutiques dans les cellules et soulèvent la possibilité que la résistance aux médicaments et les réponses sensibles aux médicaments observées chez les patients cancéreux puissent être régies au niveau de l'absorption des médicaments. Cette étude utilisant C. elegans est donc de la plus haute importance car elle exploite les transporteurs d'absorption comme une nouvelle approche pour expliquer des effets indésirables, développer de nouvelles molecules et aussi pour développer plusieurs programmes de dépistage de drogues. Ainsi, notre travail a des applications immédiates à un large éventail de disciplines.
+Pour terminer, dans un thème connexe, nous présentons la découverte d'un nouveau mécanisme de réparation de l'ADN par lequel les lésions créées par le nucléoside 5-hydroxymethyuracil (5-hmU) sont éliminés par la voie de réparation de l'excision de base (BER) impliquant APN-1 et UNG-1 chez C. elegans. Dans ce travail, nous avons examiné in vivo les rôles de quatre enzymes de réparation de l'ADN, les deux ADN glycosylases UNG-1 et NTH-1 et les deux AP endonucléases APN-1 et EXO-3, dans le traitement de produit modifié par oxydation de la thymine, 5-hmU. UNG-1 a déjà été caractérisé in vitro; capable d’éliminer l'uracile, tandis que NTH-1 a été prouvé capable d’éliminer la thymine glycol, 5-formyl cytosine et 5-hmU. De même, les deux endonucléases AP ont été caractérisées et les deux peuvent inciser des sites abasiques et éliminer les lésions 3'-bloquantes lors des cassures d'ADN a simple brin. Cependant, APN-1 est distinct d’EXO-3, car il possède deux activités supplémentaires, une activité exonucléase 3'-5 'et une activité de réparation d'incision de nucléotide qui agit directement sur certaines bases modifiées par oxydation (i.e. 5-hmU). Pour prouver l’implication d’UNG-1, nous avons utilisé des mutants de C. elegans et observé que les mutants ung-1 présentaient une diminution de la taille et de la durée de vie des couvées, et un niveau élevé d'apoptose des cellules germinales lorsqu'ils sont stimulés par 5-hmU.
+Des phénotypes similaires ont été observés avec le mutant apn-1, qui ont été exacerbés par la régulation négative de l'ARNi de l'apn-1 dans le mutant ung-1. D’autre part, les mutants nth-1 ou exo-3 ont présenté des phénotypes de type sauvage vers 5-hmU. Nous proposons un modèle suggérant que UNG-1 est impliqué dans l'élimination de 5-hmU incorporé dans le génome et le site abasique résultant est clivé par APN-1 ou EXO-3. En l'absence d'UNG-1, 5-hmU est éliminée par NTH-1, ce qui crée une lésion génotoxique 3'-bloquante qui nécessite l'action de l'activité 3'-diesterase ou 3'- à 5'-exonucléase de l'APN -1. Nos données fournissent la première preuve que UNG-1 possède la capacité d'éliminer 5-hmU in vivo chez C. elegans, et qui pourrait avoir été remplacé par l'activité de type SMUG1 dans les cellules de mammifères.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">In cellular systems, nutrient homeostasis - defined as the ability of a system to maintain in equilibrium nutrient concentrations within fluctuating gradients relative to the internal and external environment - is essential to thrive in harsh conditions. Between the intracellular and extracellular space of the cell membrane, a plethora of molecular and cellular signalling cues interact to coordinate the maintenance of cellular homeostasis. One of the main mechanisms that controls this interaction is orchestrated by membrane proteins. These membrane proteins exist in several classes, structures and functions and are specialized in controlling the traffic of all sorts of nutrients and molecules across the membrane.        
+The aim of this study was to investigate the structure-function relationship of Organic Cation Transporters (OCTs), one of the most important family of membrane proteins. OCTs are involved in the physiological uptake of various nutrients and recent evidences show that these transporters may be far more important in regulating the entry of xenobiotics and therapeutic drugs into cells.
+The soil nematode Caenorhabditis elegans has provided powerful insights into the roles of OCTs. This nematode uses the membrane-bound transporter OCT-1 as an uptake transporter, which has been classified as an organic cation transporter based on the transport of the prototypical substrate, the ammonium cation tetraethylammonium (TEA) (Wu et al. 1999). Nearly a decade and a half later, it was shown that OCT-1 transports the antioxidant ergothioneine (Cheah et al., 2013). DNA sequence analysis revealed the existence of additional and related transporters such as OCT-2 in C. elegans; however, the roles of OCT-2 have not been described so far. With this in mind, we set out to investigate whether OCT-1 and OCT-2 might coordinate and share the responsibilities in the uptake of cationic compounds in C. elegans. 
+In this thesis, we unveil for the first time the role of OCT-2 in C. elegans.  We showed that, unexpectadly, OCT-1 has little role in the uptake of cationic compounds; nonetheless it exerts regulatory functions on oct-2 expression. In the absence of oct-1, oct-2 expression is significantly upregulated and, thus, it is OCT-2 that serves as the major uptake transporter for clinically relevant chemotherapeutic drugs such as doxorubicin, cisplatin and methotrexate used for several cancer treatments. Our research therefore refutes the initial hypothesis that OCT-1 is/acts as a direct uptake transporter in C. elegans.   
+In this work, we established an in vivo screening method to uncover the uptake efficiency of cationic drugs by OCT-1 and OCT-2 by monitoring DNA damage-induced germ cell apoptosis. We observed that deletion of oct-1 gene and/or RNAi-driven downregulation of oct-1 causes upregulation of oct-2, therefore stimulating the uptake of chemotherapeutic drugs and potential toxic metabolites which cause deleterious effects on the animal. Moreover, worms with defective DNA repair pathways were particularly sensitive to the chemotherapeutic agents when oct-2 was upregulated. Importantly, depletion of oct-2 completely impeded the uptake of these drugs thus preventing their genotoxic effects, and hence leading to drug resistance phenotypes. Additionally, we performed an in silico modeling-based comparative screening of OCT-1 and OCT-2, and showed that this approach selectively discriminated amongst ligands that bind robustly to OCT-2 and not OCT-1. We validated this approach in vivo, and demonstrated that OCT-2-dependent transport of DNA-damaging compounds successfully sensitized worms with defective DNA repair pathways, and this effect was reversed once oct-2 was downregulated. 
+Collectively, these experimental methods serve as a proof of concept in studying key characteristics of relevant cationic transporters. Applying in silico methods for the preselection of target molecules and subsequent validation with our OCTs-based in vivo model will undoubtedly increase the success of chemotherapeutics and screening of newly synthesized molecules with a cost-efficient model system. Our work has pivotal implications, as it indicates that (i) hyperactive uptake transporters are likely to import abnormally high concentrations of genotoxic compounds and metabolites over many years causing genomic instability and eventually cancers and (ii) these uptake transporters may hold the key to the mechanisms of drug resistance observed in many types of cancers. 
+In short, these results underscore the importance of uptake transporters in regulating the entry of chemotherapeutic drugs into cells and raises the possibility that drug-resistance and drug-sensitive responses observed in cancer patients could be governed at the level of drug uptake. This study is therefore pivotal as it exploits uptake transporters as a novel approach to expand on several drug screening programs using C. elegans.  Thus, our work has immediate applications to a broad range of disciplines.
+Finally, in a related theme, we present the discovery of a new DNA repair mechanism whereby lesions created by the nucleoside 5-hydroxymethyuracil (5-hmU) are removed by the base excision repair pathway. In this work, we examined the in vivo roles of four base-excision DNA repair enzymes in C. elegans - the two DNA glycosylases UNG-1 and NTH-1 and the two AP endonucleases APN-1 and EXO-3 - in processing the oxidatively modified product of thymine, 5-hmU. C. elegans UNG-1 has been previously characterized in vitro to remove uracil, while NTH-1 was shown to remove thymine glycol, 5-formyl cytosine and 5-hmU. Likewise, the two AP endonucleases have been characterized and both can incise abasic sites and remove 3′-blocking lesions at DNA single strand breaks. However, APN-1 is distinct from EXO-3, as it possesses two additional activities, a 3′- to 5′-exonulease activity and a nucleotide incision repair activity that acts directly on certain oxidatively modified bases. Herein, we used C. elegans mutants and observe that ung-1 mutants exhibited a decrease in brood size and lifespan, and an elevated level of germ cell apoptosis when challenged with 5-hmU.
+Similar phenotypes were seen with apn-1 mutant, which were exacerbated by RNAi downregulation of apn-1 in the ung-1 mutant. The nth-1 or exo-3 mutants displayed wild type phenotypes towards 5-hmU. We propose a model suggesting that UNG-1 is involved in removing 5-hmU incorporated into the genome and the resulting abasic site is cleaved by APN-1 or EXO-3. In the absence of UNG-1, the 5-hmU is removed by NTH-1, which creates a genotoxic 3′-blocking lesion that requires the action of the 3′-diesterase or 3′- to 5′-exonuclease activity of APN-1. Our data provide the first evidence that C. elegans UNG-1 possesses the ability to remove 5-hmU in vivo, which may have been replaced with SMUG1-like activity in mammalian cells.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F21197&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+biom%C3%A9dicales&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/21197/Papaluca_Arturo_2018_These.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/21197/Papaluca_Arturo_2018_These.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Papaluca_Arturo_2018_These.pdf">
+<a href="/xmlui/bitstream/handle/1866/21197/Papaluca_Arturo_2018_These.pdf?sequence=2&amp;isAllowed=y">Papaluca_Arturo_2018_These.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">49.32Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/21197">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

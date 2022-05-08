@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Route choice and traffic equilibrium modeling in multi-modal and activity-based networks</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Frejinger, Emma" name="DC.contributor">
+<meta content="Marcotte, Patrice" name="DC.contributor">
+<meta content="Zimmermann, Maëlle" name="DC.creator">
+<meta content="2019-11-27T20:31:39Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2019-11-27T20:31:39Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2019-10-30" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2019-06" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/22664" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Modèles de choix d'itinéraire récursifs" name="DC.subject" xml:lang="fr"/>
+<meta content="Modèle markovien d'équilibre de trafic" name="DC.subject" xml:lang="fr"/>
+<meta content="Estimation par maximum de vraisemblance" name="DC.subject" xml:lang="fr"/>
+<meta content="Programmation dynamique" name="DC.subject" xml:lang="fr"/>
+<meta content="Réseaux multi-modaux" name="DC.subject" xml:lang="fr"/>
+<meta content="Recursive route choice models" name="DC.subject" xml:lang="fr"/>
+<meta content="Maximum likelihood estimation" name="DC.subject" xml:lang="fr"/>
+<meta content="Dynamic programming" name="DC.subject" xml:lang="fr"/>
+<meta content="Multi-modal route choice" name="DC.subject" xml:lang="fr"/>
+<meta content="Markovian traffic assignment model" name="DC.subject" xml:lang="fr"/>
+<meta content="Activity-based travel demand" name="DC.subject" xml:lang="fr"/>
+<meta content="Applied Sciences - Computer Science / Sciences appliqués et technologie - Informatique (UMI : 0984)" name="DC.subject" xml:lang="fr"/>
+<meta content="Route choice and traffic equilibrium modeling in multi-modal and activity-based networks" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Que ce soit pour aller au travail, faire du magasinage ou participer à des activités sociales, la mobilité fait partie intégrante de la vie quotidienne. Nous bénéficions à cet égard d'un nombre grandissant de moyens de transports, ce qui contribue tant à notre qualité de vie qu'au développement économique. Néanmoins, la demande croissante de mobilité, à laquelle s'ajoutent l'expansion urbaine et l'accroissement du parc automobile, a également des répercussions négatives locales et globales, telles que le trafic, les nuisances sonores, et la dégradation de l'environnement. Afin d'atténuer ces effets néfastes, les autorités cherchent à mettre en oeuvre des politiques de gestion de la demande avec le meilleur résultat possible pour la société. Pour ce faire, ces dernières ont besoin d'évaluer l'impact de différentes mesures. Cette perspective est ce qui motive le problème de l'analyse et la prédiction du comportement des usagers du système de transport, et plus précisément quand, comment et par quel itinéraire les individus décident de se déplacer.
+
+Cette thèse a pour but de développer et d'appliquer des modèles permettant de prédire les flux de personnes et/ou de véhicules dans des réseaux urbains comportant plusieurs modes de transport. Il importe que de tels modèles soient supportés par des données, génèrent des prédictions exactes, et soient applicables à des réseaux réels. Dans la pratique, le problème de prédiction de flux se résout en deux étapes. La première, l'analyse de choix d'itinéraire, a pour but d'identifier le chemin que prendrait un voyageur dans un réseau pour effectuer un trajet entre un point A et un point B. Pour ce faire, on estime à partir de données les paramètres d'une fonction de coût multi-attribut représentant le comportement des usagers du réseau. La seconde étape est celle de l'affectation de trafic, qui distribue la demande totale dans le réseau de façon à obtenir un équilibre, c.-à-d. un état dans lequel aucun utilisateur ne souhaite changer d'itinéraire. La difficulté de cette étape consiste à modéliser la congestion du réseau, qui dépend du choix de route de tous les voyageurs et affecte simultanément la fonction de coût de chacun.
+
+Cette thèse se compose de quatre articles soumis à des journaux internationaux et d'un chapitre additionnel. Dans tous les articles, nous modélisons le choix d'itinéraire d'un individu comme une séquence de choix d'arcs dans le réseau, selon une approche appelée modèle de choix d'itinéraire récursif. Cette méthodologie possède d'avantageuses propriétés, comme un estimateur non biaisé et des procédures d'affectation rapides, en évitant de générer des ensembles de chemins. Néanmoins, l'estimation de tels modèles pose une difficulté additionnelle puisqu'elle nécessite de résoudre un problème de programmation dynamique imbriqué, ce qui explique que cette approche ne soit pas encore largement utilisée dans le domaine de la recherche en transport. Or, l'objectif principal de cette thèse est de répondre des défis liés à l'application de cette méthodologie à des réseaux multi-modaux. La force de cette thèse consiste en des applications à échelle réelle qui soulèvent des défis computationnels, ainsi que des contributions méthodologiques.
+
+Le premier article est un tutoriel sur l'analyse de choix d'itinéraire à travers les modèles récursifs susmentionnés. Les contributions principales sont de familiariser les chercheur.e.s avec cette méthodologie, de donner une certaine intuition sur les propriétés du modèle, d'illustrer ses avantages sur de petits réseaux, et finalement de placer ce problème dans un contexte plus large en tissant des liens avec des travaux dans les domaines de l'optimisation inverse et de l'apprentissage automatique.
+
+Deux articles et un chapitre additionnel appartiennent à la catégorie de travaux appliquant la méthodologie précédemment décrite sur des réseaux réels, de grande taille et multi-modaux. Ces applications vont au-delà des précédentes études dans ce contexte, qui ont été menées sur des réseaux routiers simples. Premièrement, nous estimons des modèles de choix d'itinéraire récursifs pour les trajets de cyclistes, et nous soulignons certains avantages de cette méthodologie dans le cadre de la prédiction. Nous étendons ensuite ce premier travail afin de traiter le cas d'un réseau de transport public comportant plusieurs modes. Enfin, nous considérons un problème de prédiction de demande plus large, où l'on cherche à prédire simultanément l'enchaînement des trajets quotidiens des voyageurs et leur participation aux activités qui motivent ces déplacements.
+
+Finalement, l'article concluant cette thèse concerne la modélisation d'affectation de trafic. Plus précisément, nous nous intéressons au calcul d'un équilibre dans un réseau où chaque arc peut posséder une capacité finie, ce qui est typiquement le cas des réseaux de transport public. Cet article apporte d'importantes contributions méthodologiques. Nous proposons un modèle markovien d'équilibre de trafic dit stratégique, qui permet d'affecter la demande sur les arcs du réseau sans en excéder la capacité, tout en modélisant comment la probabilité qu'un arc atteigne sa capacité modifie le choix de route des usagers." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Traveling is an essential part of daily life, whether to attend work, perform social activities, or go shopping among others. We benefit from an increasing range of available transportation services to choose from, which supports economic growth and contributes to our quality of life. Yet the growing demand for travel, combined with urban sprawl and increasing vehicle ownership rates, is also responsible for major local and global externalities, such as degradation of the environment, congestion and noise. In order to mitigate the negative impacts of traveling while weighting benefits to users, transportation planners seek to design policies and improve infrastructure with the best possible outcome for society as a whole. Taking effective actions requires to evaluate the impact of various measures, which necessitates first to understand and predict travel behavior, i.e., how, when and by which route individuals decide to travel. 
+
+With this background in mind, this thesis has the objective of developing and applying models to predict flows of persons and/or vehicles in multi-modal transportation networks. It is desirable that such models be data-driven, produce accurate predictions, and be applicable to real networks. In practice, the problem of flow prediction is addressed in two separate steps, and this thesis is concerned with both. The first, route choice analysis, is the problem of identifying the path a traveler would take in a network. This is achieved by estimating from data a parametrized cost function representing travelers' behavior. The second step, namely traffic assignment, aims at distributing all travelers on the network's paths in order to find an equilibrium state, such that no traveler has an interest in changing itinerary. The challenge lies in taking into account the effect of generated congestion, which depends on travelers' route choices while simultaneously impacting their cost of traveling.
+
+This thesis is composed of four articles submitted to international journals and an additional chapter. In all the articles of the thesis, we model an individual's choice of path as a sequence of link choices, using so-called recursive route choice models. This methodology is a state-of-the-art framework which is known to possess the advantage of unbiased parameter estimates and fast assignment procedures, by avoiding to generate choice sets of paths. However, it poses the additional challenge of requiring one to solve embedded dynamic programming problems, and is hence not widely used in the transportation community. This thesis addresses practical and theoretical challenges related to applying this methodological framework to real multi-modal networks. The strength of this thesis consists in large-scale applications which bear computational challenges, as well as some methodological contributions to this modeling framework. 
+
+The first article in this thesis is a tutorial on predicting and analyzing path choice behavior using recursive route choice models. The contribution of this article is to familiarize researchers with this methodology, to give intuition on the model properties, to illustrate its advantages through examples, and finally to position this modeling framework within a broader context, by establishing links with recently published work in the inverse optimization and machine learning fields. 
+
+Two articles and an additional chapter can be categorized as applications of the methodology to estimate parameters of travel demand models in several large, real, and/or multi-dimensional networks. These applications go beyond previous studies on small physical road networks. First, we estimate recursive models for the route choice of cyclists and we demonstrate some advantages of the recursive models in the context of prediction. We also provide an application to a time-expanded public transportation networks with several modes. Then, we consider a broader travel demand problem, in which decisions regarding daily trips and participation in activities are made jointly. The latter is also modeled with recursive route choice models by considering sequences of activity, destination and mode choices as paths in a so-called supernetwork. 
+
+Finally, the subject of the last article in this thesis is traffic assignment. More precisely, we address the problem of computing a traffic equilibrium in networks with strictly limited link capacities, such as public transport networks. This article provides important methodological contributions. We propose a strategic Markovian traffic equilibrium model which assigns flows to networks without exceeding link capacities while realistically modeling how the risk of not being able to access an arc affects route choice behavior." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Modèles de choix d'itinéraire récursifs; Modèle markovien d'équilibre de trafic; Estimation par maximum de vraisemblance; Programmation dynamique; Réseaux multi-modaux; Recursive route choice models; Maximum likelihood estimation; Dynamic programming; Multi-modal route choice; Markovian traffic assignment model; Activity-based travel demand; Applied Sciences - Computer Science / Sciences appliqués et technologie - Informatique (UMI : 0984); Thèse ou mémoire / Thesis or Dissertation; Informatique" name="citation_keywords"/>
+<meta content="Route choice and traffic equilibrium modeling in multi-modal and activity-based networks" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Zimmermann, Maëlle" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/22664/2/Zimmermann_Maelle_2019_these.pdf" name="citation_pdf_url"/>
+<meta content="2019-10-30" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/22664" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/22664?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/22664?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/22664?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/22664?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/22664?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/22664?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2958" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3001" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2958">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/3001"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/22664/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/22664">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/22664/mets.xml-->
+<h2 class="page-header first-page-header">Route choice and traffic equilibrium modeling in multi-modal and activity-based networks</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Frejinger, Emma</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Marcotte, Patrice</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Zimmermann, Maëlle</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2019-11-27T20:31:39Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2019-11-27T20:31:39Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2019-10-30</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2019-06</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/22664</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Modèles de choix d'itinéraire récursifs</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Modèle markovien d'équilibre de trafic</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Estimation par maximum de vraisemblance</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Programmation dynamique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Réseaux multi-modaux</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Recursive route choice models</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Maximum likelihood estimation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Dynamic programming</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Multi-modal route choice</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Markovian traffic assignment model</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Activity-based travel demand</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Applied Sciences - Computer Science / Sciences appliqués et technologie - Informatique (UMI : 0984)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Route choice and traffic equilibrium modeling in multi-modal and activity-based networks</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Informatique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Que ce soit pour aller au travail, faire du magasinage ou participer à des activités sociales, la mobilité fait partie intégrante de la vie quotidienne. Nous bénéficions à cet égard d'un nombre grandissant de moyens de transports, ce qui contribue tant à notre qualité de vie qu'au développement économique. Néanmoins, la demande croissante de mobilité, à laquelle s'ajoutent l'expansion urbaine et l'accroissement du parc automobile, a également des répercussions négatives locales et globales, telles que le trafic, les nuisances sonores, et la dégradation de l'environnement. Afin d'atténuer ces effets néfastes, les autorités cherchent à mettre en oeuvre des politiques de gestion de la demande avec le meilleur résultat possible pour la société. Pour ce faire, ces dernières ont besoin d'évaluer l'impact de différentes mesures. Cette perspective est ce qui motive le problème de l'analyse et la prédiction du comportement des usagers du système de transport, et plus précisément quand, comment et par quel itinéraire les individus décident de se déplacer.
+
+Cette thèse a pour but de développer et d'appliquer des modèles permettant de prédire les flux de personnes et/ou de véhicules dans des réseaux urbains comportant plusieurs modes de transport. Il importe que de tels modèles soient supportés par des données, génèrent des prédictions exactes, et soient applicables à des réseaux réels. Dans la pratique, le problème de prédiction de flux se résout en deux étapes. La première, l'analyse de choix d'itinéraire, a pour but d'identifier le chemin que prendrait un voyageur dans un réseau pour effectuer un trajet entre un point A et un point B. Pour ce faire, on estime à partir de données les paramètres d'une fonction de coût multi-attribut représentant le comportement des usagers du réseau. La seconde étape est celle de l'affectation de trafic, qui distribue la demande totale dans le réseau de façon à obtenir un équilibre, c.-à-d. un état dans lequel aucun utilisateur ne souhaite changer d'itinéraire. La difficulté de cette étape consiste à modéliser la congestion du réseau, qui dépend du choix de route de tous les voyageurs et affecte simultanément la fonction de coût de chacun.
+
+Cette thèse se compose de quatre articles soumis à des journaux internationaux et d'un chapitre additionnel. Dans tous les articles, nous modélisons le choix d'itinéraire d'un individu comme une séquence de choix d'arcs dans le réseau, selon une approche appelée modèle de choix d'itinéraire récursif. Cette méthodologie possède d'avantageuses propriétés, comme un estimateur non biaisé et des procédures d'affectation rapides, en évitant de générer des ensembles de chemins. Néanmoins, l'estimation de tels modèles pose une difficulté additionnelle puisqu'elle nécessite de résoudre un problème de programmation dynamique imbriqué, ce qui explique que cette approche ne soit pas encore largement utilisée dans le domaine de la recherche en transport. Or, l'objectif principal de cette thèse est de répondre des défis liés à l'application de cette méthodologie à des réseaux multi-modaux. La force de cette thèse consiste en des applications à échelle réelle qui soulèvent des défis computationnels, ainsi que des contributions méthodologiques.
+
+Le premier article est un tutoriel sur l'analyse de choix d'itinéraire à travers les modèles récursifs susmentionnés. Les contributions principales sont de familiariser les chercheur.e.s avec cette méthodologie, de donner une certaine intuition sur les propriétés du modèle, d'illustrer ses avantages sur de petits réseaux, et finalement de placer ce problème dans un contexte plus large en tissant des liens avec des travaux dans les domaines de l'optimisation inverse et de l'apprentissage automatique.
+
+Deux articles et un chapitre additionnel appartiennent à la catégorie de travaux appliquant la méthodologie précédemment décrite sur des réseaux réels, de grande taille et multi-modaux. Ces applications vont au-delà des précédentes études dans ce contexte, qui ont été menées sur des réseaux routiers simples. Premièrement, nous estimons des modèles de choix d'itinéraire récursifs pour les trajets de cyclistes, et nous soulignons certains avantages de cette méthodologie dans le cadre de la prédiction. Nous étendons ensuite ce premier travail afin de traiter le cas d'un réseau de transport public comportant plusieurs modes. Enfin, nous considérons un problème de prédiction de demande plus large, où l'on cherche à prédire simultanément l'enchaînement des trajets quotidiens des voyageurs et leur participation aux activités qui motivent ces déplacements.
+
+Finalement, l'article concluant cette thèse concerne la modélisation d'affectation de trafic. Plus précisément, nous nous intéressons au calcul d'un équilibre dans un réseau où chaque arc peut posséder une capacité finie, ce qui est typiquement le cas des réseaux de transport public. Cet article apporte d'importantes contributions méthodologiques. Nous proposons un modèle markovien d'équilibre de trafic dit stratégique, qui permet d'affecter la demande sur les arcs du réseau sans en excéder la capacité, tout en modélisant comment la probabilité qu'un arc atteigne sa capacité modifie le choix de route des usagers.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Traveling is an essential part of daily life, whether to attend work, perform social activities, or go shopping among others. We benefit from an increasing range of available transportation services to choose from, which supports economic growth and contributes to our quality of life. Yet the growing demand for travel, combined with urban sprawl and increasing vehicle ownership rates, is also responsible for major local and global externalities, such as degradation of the environment, congestion and noise. In order to mitigate the negative impacts of traveling while weighting benefits to users, transportation planners seek to design policies and improve infrastructure with the best possible outcome for society as a whole. Taking effective actions requires to evaluate the impact of various measures, which necessitates first to understand and predict travel behavior, i.e., how, when and by which route individuals decide to travel. 
+
+With this background in mind, this thesis has the objective of developing and applying models to predict flows of persons and/or vehicles in multi-modal transportation networks. It is desirable that such models be data-driven, produce accurate predictions, and be applicable to real networks. In practice, the problem of flow prediction is addressed in two separate steps, and this thesis is concerned with both. The first, route choice analysis, is the problem of identifying the path a traveler would take in a network. This is achieved by estimating from data a parametrized cost function representing travelers' behavior. The second step, namely traffic assignment, aims at distributing all travelers on the network's paths in order to find an equilibrium state, such that no traveler has an interest in changing itinerary. The challenge lies in taking into account the effect of generated congestion, which depends on travelers' route choices while simultaneously impacting their cost of traveling.
+
+This thesis is composed of four articles submitted to international journals and an additional chapter. In all the articles of the thesis, we model an individual's choice of path as a sequence of link choices, using so-called recursive route choice models. This methodology is a state-of-the-art framework which is known to possess the advantage of unbiased parameter estimates and fast assignment procedures, by avoiding to generate choice sets of paths. However, it poses the additional challenge of requiring one to solve embedded dynamic programming problems, and is hence not widely used in the transportation community. This thesis addresses practical and theoretical challenges related to applying this methodological framework to real multi-modal networks. The strength of this thesis consists in large-scale applications which bear computational challenges, as well as some methodological contributions to this modeling framework. 
+
+The first article in this thesis is a tutorial on predicting and analyzing path choice behavior using recursive route choice models. The contribution of this article is to familiarize researchers with this methodology, to give intuition on the model properties, to illustrate its advantages through examples, and finally to position this modeling framework within a broader context, by establishing links with recently published work in the inverse optimization and machine learning fields. 
+
+Two articles and an additional chapter can be categorized as applications of the methodology to estimate parameters of travel demand models in several large, real, and/or multi-dimensional networks. These applications go beyond previous studies on small physical road networks. First, we estimate recursive models for the route choice of cyclists and we demonstrate some advantages of the recursive models in the context of prediction. We also provide an application to a time-expanded public transportation networks with several modes. Then, we consider a broader travel demand problem, in which decisions regarding daily trips and participation in activities are made jointly. The latter is also modeled with recursive route choice models by considering sequences of activity, destination and mode choices as paths in a so-called supernetwork. 
+
+Finally, the subject of the last article in this thesis is traffic assignment. More precisely, we address the problem of computing a traffic equilibrium in networks with strictly limited link capacities, such as public transport networks. This article provides important methodological contributions. We propose a strategic Markovian traffic equilibrium model which assigns flows to networks without exceeding link capacities while realistically modeling how the risk of not being able to access an arc affects route choice behavior.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F22664&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Informatique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/22664/Zimmermann_Maelle_2019_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/22664/Zimmermann_Maelle_2019_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Zimmermann_Maelle_2019_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/22664/Zimmermann_Maelle_2019_these.pdf?sequence=2&amp;isAllowed=y">Zimmermann_Maelle_2019_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1.340Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3001/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a> [795]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/22664">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

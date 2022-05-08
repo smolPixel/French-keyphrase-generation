@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Caractérisation de l’impact des interactions chimiques sur la variabilité interindividuelle de la toxicocinétique des composés organiques volatiles, et portée sur une approche appliquée de dosimétrie inverse</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Haddad, Sami" name="DC.contributor">
+<meta content="Valcke, Mathieu" name="DC.contributor">
+<meta content="Tohon, Honesty G." name="DC.creator">
+<meta content="2021-05-11T19:40:25Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2021-05-11T19:40:25Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-04-07" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2020-04" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/25001" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Analyse du risque" name="DC.subject" xml:lang="fr"/>
+<meta content="Données de biosurveillance" name="DC.subject" xml:lang="fr"/>
+<meta content="Modélisation toxicocinétique à base physiologique" name="DC.subject" xml:lang="fr"/>
+<meta content="COVs" name="DC.subject" xml:lang="fr"/>
+<meta content="Simulations de Monte-Carlo" name="DC.subject" xml:lang="fr"/>
+<meta content="Variabilité interindividuelle" name="DC.subject" xml:lang="fr"/>
+<meta content="Interactions chimiques" name="DC.subject" xml:lang="fr"/>
+<meta content="Risk assessment" name="DC.subject" xml:lang="fr"/>
+<meta content="Biomonitoring data" name="DC.subject" xml:lang="fr"/>
+<meta content="Physiologically-based pharmacokinetic modeling" name="DC.subject" xml:lang="fr"/>
+<meta content="VOCs" name="DC.subject" xml:lang="fr"/>
+<meta content="Monte Carlo simulations" name="DC.subject" xml:lang="fr"/>
+<meta content="Interindividual variability" name="DC.subject" xml:lang="fr"/>
+<meta content="chemical interactions" name="DC.subject" xml:lang="fr"/>
+<meta content="Health Sciences - Toxicology / Sciences de la santé - Toxicologie (UMI : 0383)" name="DC.subject" xml:lang="fr"/>
+<meta content="Caractérisation de l’impact des interactions chimiques sur la variabilité interindividuelle de la toxicocinétique des composés organiques volatiles, et portée sur une approche appliquée de dosimétrie inverse" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type" xml:lang="fr"/>
+<meta content="La biosurveillance humaine consiste en des mesures de produits chimiques ou de leurs métabolites dans des liquides biologiques. Ces données biologiques sont souvent interprétées en les comparant à des valeurs dites bio-équivalentes aux valeurs toxicologiques de référence (VTR) qui ont été pour la plupart définies grâce à l’utilisation de modèles animaux dans un contexte de simple exposition chimique. Pourtant, elles peuvent résulter de co-expositions multivoies (cas des composés organiques volatils (COVs)) pouvant donner lieu à des interactions toxicocinétiques chez humain. Des approches de modélisation toxicocinétique à base physiologique (TCBP) ont été conçues pour étudier ces interactions. Mais, leur impact sur la variabilité interindividuelle (VI) de la toxicocinétique des substances individuelles, et l’évaluation résultante du risque toxique des contaminants chimiques suite à une exposition multivoies, n’ont que peu ou pas été investigués. Par ailleurs, des études proposent une approche de reconstitution directe de l’exposition chimique externe à partir de mesures sanguines de COVs (composés parents) grâce à des modèles TCBP probabilistes, souvent construits pour des adultes de 70 kg, et des calculs de probabilité. C’est la dosimétrie inverse. Mais les incertitudes associées aux estimations d’exposition externe faites grâce à cette approche à partir de mesures biologiques ponctuelles collectées lors des enquêtes de santé n’ont presque pas été étudiées. La présente recherche doctorale vise à caractériser l’impact des co-expositions chimiques multivoies sur la variabilité interindividuelle de la toxicocinétique des COVs, en vue d’en tenir éventuellement compte dans la mise au point dans cette thèse d’approches appliquées de dosimétrie inverse. 
+Dans un premier temps, nous avons construit des modèles TCBP multivoies pour deux mélanges (benzène, toluène, éthylbenzène et m-xylène (BTEX) d’une part, et trichloroéthylène et chlorure de vinyle (TCE-CV) d’autre part) pour des sous-populations humaines d’âges différents (y compris une sous-population d’adultes). Ces modèles ont été couplés à des simulations de Monte Carlo pour explorer l’impact des co-expositions multivoies sur la VI de la toxicocinétique des substances individuelles en cas d’expositions ‘’faibles’’ ou ‘’élevées’’. Des index de variabilité (IV) ont été calculés comme étant le rapport du 95 ème centile de la distribution d’une dose interne chez les autres sous-populations étudiées au 50 ème centile de la même distribution chez les adultes. Dans un deuxième temps, nous avons raffiné l’approche existante de dosimétrie inverse en développant des modèles TCBP probabilistes d’inhalation pour des sous-populations canadiennes (d’âge, de poids corporel et de taille différents) dont les mesures sanguines de toluène ont été collectées lors du cycle 3 de l’enquête canadienne sur les mesures de la santé (ECMS-3), en vue de reconstituer leur exposition externe correspondante. Enfin, nous avons développé une approche individuelle de dosimétrie inverse pour estimer l’exposition externe au toluène à partir des mesures urinaires d’un de ses métabolites (l’acide S-benzylmercapturique, ou en anglais : S-benzylmercapturic acid ou BMA) rapportées chez des individus Canadiens. Ici, deux techniques ont été testées pour cette estimation : estimer l’exposition au toluène à partir des mesures ponctuelles de BMA urinaire d’une journée complète obtenues chez chaque individu et estimer l’exposition à partir d’une mesure individuelle de BMA urinaire sur des urines de 24 h. L’approche individuelle nous a permis de proposer une méthode pour quantifier l’incertitude, c’est-à-dire l’erreur possible, sur les estimations d’exposition externe faites par dosimétrie inverse à partir des mesures ponctuelles provenant des enquêtes de santé. Cette étude doctorale a révélé que l’impact des co-expositions multivoies sur la VI toxicocinétique peut dépendre des composés des mélanges et du niveau d’exposition à ces substances. Par exemple, la variation obtenue sur les IVs basés sur la quantité de substance métabolisée par les CYP2E1 est d’environ -9 à -5 % et -38 à -33% pour le benzène respectivement pour les expositions ‘’faibles’’ et ‘’élevées’’ simulées au mélange. Pour le CV et le TCE, elle est respectivement de -17 à -13% et -20 à -11% pour les expositions ‘’élevées’’, et nulle pour les ‘’faibles’’ expositions au mélange. Les expositions au toluène dans l’air estimées par dosimétrie inverse dans cette thèse (médianes entre 0,004 et 0,01 ppm) sont bien en dessous des valeurs guides maximales recommandées par Santé Canada pour une exposition chronique et suggèrent une exposition via l’air intérieur. L’incertitude mentionnée plus haut, quant à elle, varie entre 15 et 23 % dans le cadre de nos travaux. La présente étude doctorale a contribué à améliorer l’évaluation du risque toxicologique des COVs." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Human biomonitoring consists in the measurements of chemicals or their metabolites in biological matrices. These biological data are often interpreted by comparison with so-called bio-equivalent values to the toxicological reference values (TRV) which have for the most part been defined through the use of animal models in a context of simple chemical exposure. However, biomonitoring data can result from multi-routes co-exposures to multiple chemical such as Volatile Organic Compounds (VOCs), which can give rise to toxicokinetic interactions in the human body. Physiologically-based pharmacokinetic (PBPK) modeling approaches have been developed to study these interactions. But, their impact on the interindividual variability (IV) of the toxicokinetics of individual substances, and the evaluation of the toxic risk of chemical contaminants, that may result from multi-routes exposure, have only been sparsely studied. Further, the scientific literature suggests an approach for the direct reconstruction of external chemical exposure from blood measurements of VOCs’ parent compounds. This is generally done for 70-kg adults by the use of appropriate PBPK models, combined with a probability calculation approach, in a process called “reverse dosimetry”. But the uncertainties associated with estimates of external exposure made using this approach from biological spot measurements collected during health surveys have hardly been studied. The current doctoral research aims to characterize the impact of multi-routes chemical co-exposures on the interindividual variability of toxicokinetics, in order to account it for in the development in this thesis of applied approaches of reverse dosimetry.
+First, we built multi-routes probabilistic PBPK models for two mixtures (benzene, toluene, ethylbenzene and m-xylene (BTEX) on one hand, and trichloroethylene and vinyl chloride (TCE-VC) on the other hand) for human subpopulations of different ages (including one of adults). These models were coupled with Monte Carlo simulations in order to explore the impact of multi-routes co-exposures on the IV of the toxicokinetics of individual compounds at ‘low’ or ‘high’ exposures. Variability indices (VIs) were calculated as the ratio of the 95th percentile value of the distribution of an internal dose in the other subpopulations studied to the 50th percentile value of the same distribution in adults. In a second step, we refined the existing reverse dosimetry approach by developing probabilistic inhalation PBPK models for Canadian subpopulations (of different age, body weight and size) whose blood toluene measurements were collected during the third cycle of Canadian Health Measures Survey (CHMS-3), in order to reconstruct their corresponding external exposure. Finally, we have developed an individual reverse dosimetry approach to estimate external exposure to toluene from urinary measurements of one of its metabolites (S-benzylmercapturic acid or BMA) reported in Canadian individuals. Two techniques were tested here for this estimation: estimating toluene exposure from spot measurements of urinary BMA of a full day obtained in each individual and estimating exposure from an individual measurement of urinary BMA performed on 24-h urines. The individual approach allowed us to propose a method to quantify the uncertainty, that means the possible error, on the estimates of external exposure made by reverse dosimetry from spot measurements from health surveys. This doctoral study revealed that the impact of multi-routes co-exposures on IV of toxicokinetics may depend on the compounds in the mixtures and the level of exposure to these substances. For example, the variation obtained on the amount of substance metabolized by CYP2E1-based VIs based is about -9 to -5% and -38 to -33% for benzene respectively for 'low' and 'high' exposures simulated to the mixture. For VC and TCE, it is respectively about -17 to -13% and -20 to -11% for &quot;high&quot; exposures, and zero for &quot;low&quot; exposures to the mixture. The exposures to toluene in air estimated by reverse dosimetry in this thesis (median between 0.004 and 0.01 ppm) are well below the maximum guideline values recommended by Health Canada for chronic exposure and suggest an exposure of Canadian studied via indoor air. The uncertainty mentioned above varies between 15 and 23% in the context of our work. The present doctoral study has contributed to improving the assessment of the toxicological risk of VOCs." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Analyse du risque; Données de biosurveillance; Modélisation toxicocinétique à base physiologique; COVs; Simulations de Monte-Carlo; Variabilité interindividuelle; Interactions chimiques; Risk assessment; Biomonitoring data; Physiologically-based pharmacokinetic modeling; VOCs; Monte Carlo simulations; Interindividual variability; chemical interactions; Health Sciences - Toxicology / Sciences de la santé - Toxicologie (UMI : 0383); Thèse ou mémoire / Thesis or Dissertation; Santé publique" name="citation_keywords"/>
+<meta content="Caractérisation de l’impact des interactions chimiques sur la variabilité interindividuelle de la toxicocinétique des composés organiques volatiles, et portée sur une approche appliquée de dosimétrie inverse" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Tohon, Honesty G." name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/25001/6/Tohon_Honesty_2020_these.pdf" name="citation_pdf_url"/>
+<meta content="2021-04-07" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/25001" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25001?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25001?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25001?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25001?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25001?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25001?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/10070" role="menuitem">École de santé publique</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/10094" role="menuitem">École de santé publique – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/10070">École de santé publique</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/10094"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/25001/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25001">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/25001/mets.xml-->
+<h2 class="page-header first-page-header">Caractérisation de l’impact des interactions chimiques sur la variabilité interindividuelle de la toxicocinétique des composés organiques volatiles, et portée sur une approche appliquée de dosimétrie inverse</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Haddad, Sami</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Valcke, Mathieu</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Tohon, Honesty G.</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2021-05-11T19:40:25Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2021-05-11T19:40:25Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-04-07</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2020-04</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/25001</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Analyse du risque</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Données de biosurveillance</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Modélisation toxicocinétique à base physiologique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">COVs</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Simulations de Monte-Carlo</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Variabilité interindividuelle</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Interactions chimiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Risk assessment</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Biomonitoring data</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Physiologically-based pharmacokinetic modeling</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">VOCs</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Monte Carlo simulations</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Interindividual variability</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">chemical interactions</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Health Sciences - Toxicology / Sciences de la santé - Toxicologie (UMI : 0383)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Caractérisation de l’impact des interactions chimiques sur la variabilité interindividuelle de la toxicocinétique des composés organiques volatiles, et portée sur une approche appliquée de dosimétrie inverse</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Santé publique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La biosurveillance humaine consiste en des mesures de produits chimiques ou de leurs métabolites dans des liquides biologiques. Ces données biologiques sont souvent interprétées en les comparant à des valeurs dites bio-équivalentes aux valeurs toxicologiques de référence (VTR) qui ont été pour la plupart définies grâce à l’utilisation de modèles animaux dans un contexte de simple exposition chimique. Pourtant, elles peuvent résulter de co-expositions multivoies (cas des composés organiques volatils (COVs)) pouvant donner lieu à des interactions toxicocinétiques chez humain. Des approches de modélisation toxicocinétique à base physiologique (TCBP) ont été conçues pour étudier ces interactions. Mais, leur impact sur la variabilité interindividuelle (VI) de la toxicocinétique des substances individuelles, et l’évaluation résultante du risque toxique des contaminants chimiques suite à une exposition multivoies, n’ont que peu ou pas été investigués. Par ailleurs, des études proposent une approche de reconstitution directe de l’exposition chimique externe à partir de mesures sanguines de COVs (composés parents) grâce à des modèles TCBP probabilistes, souvent construits pour des adultes de 70 kg, et des calculs de probabilité. C’est la dosimétrie inverse. Mais les incertitudes associées aux estimations d’exposition externe faites grâce à cette approche à partir de mesures biologiques ponctuelles collectées lors des enquêtes de santé n’ont presque pas été étudiées. La présente recherche doctorale vise à caractériser l’impact des co-expositions chimiques multivoies sur la variabilité interindividuelle de la toxicocinétique des COVs, en vue d’en tenir éventuellement compte dans la mise au point dans cette thèse d’approches appliquées de dosimétrie inverse. 
+Dans un premier temps, nous avons construit des modèles TCBP multivoies pour deux mélanges (benzène, toluène, éthylbenzène et m-xylène (BTEX) d’une part, et trichloroéthylène et chlorure de vinyle (TCE-CV) d’autre part) pour des sous-populations humaines d’âges différents (y compris une sous-population d’adultes). Ces modèles ont été couplés à des simulations de Monte Carlo pour explorer l’impact des co-expositions multivoies sur la VI de la toxicocinétique des substances individuelles en cas d’expositions ‘’faibles’’ ou ‘’élevées’’. Des index de variabilité (IV) ont été calculés comme étant le rapport du 95 ème centile de la distribution d’une dose interne chez les autres sous-populations étudiées au 50 ème centile de la même distribution chez les adultes. Dans un deuxième temps, nous avons raffiné l’approche existante de dosimétrie inverse en développant des modèles TCBP probabilistes d’inhalation pour des sous-populations canadiennes (d’âge, de poids corporel et de taille différents) dont les mesures sanguines de toluène ont été collectées lors du cycle 3 de l’enquête canadienne sur les mesures de la santé (ECMS-3), en vue de reconstituer leur exposition externe correspondante. Enfin, nous avons développé une approche individuelle de dosimétrie inverse pour estimer l’exposition externe au toluène à partir des mesures urinaires d’un de ses métabolites (l’acide S-benzylmercapturique, ou en anglais : S-benzylmercapturic acid ou BMA) rapportées chez des individus Canadiens. Ici, deux techniques ont été testées pour cette estimation : estimer l’exposition au toluène à partir des mesures ponctuelles de BMA urinaire d’une journée complète obtenues chez chaque individu et estimer l’exposition à partir d’une mesure individuelle de BMA urinaire sur des urines de 24 h. L’approche individuelle nous a permis de proposer une méthode pour quantifier l’incertitude, c’est-à-dire l’erreur possible, sur les estimations d’exposition externe faites par dosimétrie inverse à partir des mesures ponctuelles provenant des enquêtes de santé. Cette étude doctorale a révélé que l’impact des co-expositions multivoies sur la VI toxicocinétique peut dépendre des composés des mélanges et du niveau d’exposition à ces substances. Par exemple, la variation obtenue sur les IVs basés sur la quantité de substance métabolisée par les CYP2E1 est d’environ -9 à -5 % et -38 à -33% pour le benzène respectivement pour les expositions ‘’faibles’’ et ‘’élevées’’ simulées au mélange. Pour le CV et le TCE, elle est respectivement de -17 à -13% et -20 à -11% pour les expositions ‘’élevées’’, et nulle pour les ‘’faibles’’ expositions au mélange. Les expositions au toluène dans l’air estimées par dosimétrie inverse dans cette thèse (médianes entre 0,004 et 0,01 ppm) sont bien en dessous des valeurs guides maximales recommandées par Santé Canada pour une exposition chronique et suggèrent une exposition via l’air intérieur. L’incertitude mentionnée plus haut, quant à elle, varie entre 15 et 23 % dans le cadre de nos travaux. La présente étude doctorale a contribué à améliorer l’évaluation du risque toxicologique des COVs.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Human biomonitoring consists in the measurements of chemicals or their metabolites in biological matrices. These biological data are often interpreted by comparison with so-called bio-equivalent values to the toxicological reference values (TRV) which have for the most part been defined through the use of animal models in a context of simple chemical exposure. However, biomonitoring data can result from multi-routes co-exposures to multiple chemical such as Volatile Organic Compounds (VOCs), which can give rise to toxicokinetic interactions in the human body. Physiologically-based pharmacokinetic (PBPK) modeling approaches have been developed to study these interactions. But, their impact on the interindividual variability (IV) of the toxicokinetics of individual substances, and the evaluation of the toxic risk of chemical contaminants, that may result from multi-routes exposure, have only been sparsely studied. Further, the scientific literature suggests an approach for the direct reconstruction of external chemical exposure from blood measurements of VOCs’ parent compounds. This is generally done for 70-kg adults by the use of appropriate PBPK models, combined with a probability calculation approach, in a process called “reverse dosimetry”. But the uncertainties associated with estimates of external exposure made using this approach from biological spot measurements collected during health surveys have hardly been studied. The current doctoral research aims to characterize the impact of multi-routes chemical co-exposures on the interindividual variability of toxicokinetics, in order to account it for in the development in this thesis of applied approaches of reverse dosimetry.
+First, we built multi-routes probabilistic PBPK models for two mixtures (benzene, toluene, ethylbenzene and m-xylene (BTEX) on one hand, and trichloroethylene and vinyl chloride (TCE-VC) on the other hand) for human subpopulations of different ages (including one of adults). These models were coupled with Monte Carlo simulations in order to explore the impact of multi-routes co-exposures on the IV of the toxicokinetics of individual compounds at ‘low’ or ‘high’ exposures. Variability indices (VIs) were calculated as the ratio of the 95th percentile value of the distribution of an internal dose in the other subpopulations studied to the 50th percentile value of the same distribution in adults. In a second step, we refined the existing reverse dosimetry approach by developing probabilistic inhalation PBPK models for Canadian subpopulations (of different age, body weight and size) whose blood toluene measurements were collected during the third cycle of Canadian Health Measures Survey (CHMS-3), in order to reconstruct their corresponding external exposure. Finally, we have developed an individual reverse dosimetry approach to estimate external exposure to toluene from urinary measurements of one of its metabolites (S-benzylmercapturic acid or BMA) reported in Canadian individuals. Two techniques were tested here for this estimation: estimating toluene exposure from spot measurements of urinary BMA of a full day obtained in each individual and estimating exposure from an individual measurement of urinary BMA performed on 24-h urines. The individual approach allowed us to propose a method to quantify the uncertainty, that means the possible error, on the estimates of external exposure made by reverse dosimetry from spot measurements from health surveys. This doctoral study revealed that the impact of multi-routes co-exposures on IV of toxicokinetics may depend on the compounds in the mixtures and the level of exposure to these substances. For example, the variation obtained on the amount of substance metabolized by CYP2E1-based VIs based is about -9 to -5% and -38 to -33% for benzene respectively for 'low' and 'high' exposures simulated to the mixture. For VC and TCE, it is respectively about -17 to -13% and -20 to -11% for "high" exposures, and zero for "low" exposures to the mixture. The exposures to toluene in air estimated by reverse dosimetry in this thesis (median between 0.004 and 0.01 ppm) are well below the maximum guideline values recommended by Health Canada for chronic exposure and suggest an exposure of Canadian studied via indoor air. The uncertainty mentioned above varies between 15 and 23% in the context of our work. The present doctoral study has contributed to improving the assessment of the toxicological risk of VOCs.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">UdeM.ORCIDAuteurThese</td><td class="word-break">0000-0003-0670-7763</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F25001&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sant%C3%A9+publique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/25001/Tohon_Honesty_2020_these.pdf?sequence=6&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25001/Tohon_Honesty_2020_these.pdf.jpg?sequence=8&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Tohon_Honesty_2020_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/25001/Tohon_Honesty_2020_these.pdf?sequence=6&amp;isAllowed=y">Tohon_Honesty_2020_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">4.663Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10094/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a> [603]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25001">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

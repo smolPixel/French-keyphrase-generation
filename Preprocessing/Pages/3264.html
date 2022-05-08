@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>REFLECT : logiciel de restitution des réflectances au sol pour l’amélioration de la qualité de l'information extraite des images satellitales à haute résolution spatiale</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Cavayas, François" name="DC.contributor">
+<meta content="Tremblay, Nicolas" name="DC.contributor">
+<meta content="Bouroubi, Yacine M." name="DC.creator">
+<meta content="2010-01-19T17:11:44Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2010-01-19T17:11:44Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2009-12-03" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2009-10" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/3264" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Corrections radiométriques" name="DC.subject" xml:lang="en"/>
+<meta content="corrections atmosphériques" name="DC.subject" xml:lang="en"/>
+<meta content="Corrections topographiques" name="DC.subject" xml:lang="en"/>
+<meta content="Code 6S" name="DC.subject" xml:lang="en"/>
+<meta content="Méthode des cibles obscures" name="DC.subject" xml:lang="en"/>
+<meta content="Effets des conditions radiométriques en télédétection" name="DC.subject" xml:lang="en"/>
+<meta content="Radiometric corrections" name="DC.subject" xml:lang="en"/>
+<meta content="Atmospheric corrections" name="DC.subject" xml:lang="en"/>
+<meta content="Topographic corrections" name="DC.subject" xml:lang="en"/>
+<meta content="6S code" name="DC.subject" xml:lang="en"/>
+<meta content="Dark objects method" name="DC.subject" xml:lang="en"/>
+<meta content="Radiometric effects in remote sensing" name="DC.subject" xml:lang="en"/>
+<meta content="Earth Sciences - Remote Sensing / Sciences de la Terre - Télédétection
+               (UMI : 0799)" name="DC.subject" xml:lang="en"/>
+<meta content="REFLECT : logiciel de restitution des réflectances au sol pour l’amélioration de la qualité de l'information extraite des images satellitales à haute résolution spatiale" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Les images satellitales multispectrales, notamment celles à haute résolution spatiale (plus fine que 30 m au sol), représentent une source d’information inestimable pour la prise de décision dans divers domaines liés à la gestion des ressources naturelles, à la préservation de l’environnement ou à l’aménagement et la gestion des centres urbains. Les échelles d’étude peuvent aller du local (résolutions plus fines que 5 m) à des échelles régionales (résolutions plus grossières que 5 m). Ces images caractérisent la variation de la réflectance des objets dans le spectre qui est l’information clé pour un grand nombre d’applications de ces données. Or, les mesures des capteurs satellitaux sont aussi affectées par des facteurs « parasites » liés aux conditions d’éclairement et d’observation, à l’atmosphère, à la topographie et aux propriétés des capteurs. Deux questions nous ont préoccupé dans cette recherche. Quelle est la meilleure approche pour restituer les réflectances au sol à partir des valeurs numériques enregistrées par les capteurs tenant compte des ces facteurs parasites ? Cette restitution est-elle la condition sine qua non pour extraire une information fiable des images en fonction des problématiques propres aux différents domaines d’application des images (cartographie du territoire, monitoring de l’environnement, suivi des changements du paysage, inventaires des ressources, etc.) ? 
+
+Les recherches effectuées les 30 dernières années ont abouti à une série de techniques de correction des données des effets des facteurs parasites dont certaines permettent de restituer les réflectances au sol. Plusieurs questions sont cependant encore en suspens et d’autres nécessitent des approfondissements afin, d’une part d’améliorer la précision des résultats et d’autre part, de rendre ces techniques plus versatiles en les adaptant à un plus large éventail de conditions d’acquisition des données. Nous pouvons en mentionner quelques unes :
+
+-	Comment prendre en compte des caractéristiques atmosphériques (notamment des particules d’aérosol) adaptées à des conditions locales et régionales et ne pas se fier à des modèles par défaut qui indiquent des tendances spatiotemporelles à long terme mais s’ajustent mal à des observations instantanées et restreintes spatialement ?
+-	Comment tenir compte des effets de « contamination » du signal provenant de l’objet visé par le capteur par les signaux provenant des objets environnant (effet d’adjacence) ? ce phénomène devient très important pour des images de résolution plus fine que 5 m;
+-	Quels sont les effets des angles de visée des capteurs hors nadir qui sont de plus en plus présents puisqu’ils offrent une meilleure résolution temporelle et la possibilité d’obtenir des couples d’images stéréoscopiques ?
+-	Comment augmenter l’efficacité des techniques de traitement et d’analyse automatique des images multispectrales à des terrains accidentés et montagneux tenant compte des effets multiples du relief topographique sur le signal capté à distance ?
+
+D’autre part, malgré les nombreuses démonstrations par des chercheurs que l’information extraite des images satellitales peut être altérée à cause des tous ces facteurs parasites, force est de constater aujourd’hui que les corrections radiométriques demeurent peu utilisées sur une base routinière tel qu’est le cas pour les corrections géométriques. Pour ces dernières, les logiciels commerciaux de télédétection possèdent des algorithmes versatiles, puissants et à la portée des utilisateurs. Les algorithmes des corrections radiométriques, lorsqu’ils sont proposés, demeurent des boîtes noires peu flexibles nécessitant la plupart de temps des utilisateurs experts en la matière.
+
+Les objectifs que nous nous sommes fixés dans cette recherche sont les suivants :
+1)	Développer un logiciel de restitution des réflectances au sol tenant compte des questions posées ci-haut. Ce logiciel devait être suffisamment modulaire pour pouvoir le bonifier, l’améliorer et l’adapter à diverses problématiques d’application d’images satellitales; et
+2)	Appliquer ce logiciel dans différents contextes (urbain, agricole, forestier) et analyser les résultats obtenus afin d’évaluer le gain en précision de l’information extraite par des images satellitales transformées en images des réflectances au sol et par conséquent la nécessité d’opérer ainsi peu importe la problématique de l’application.
+
+Ainsi, à travers cette recherche, nous avons réalisé un outil de restitution de la réflectance au sol (la nouvelle version du logiciel REFLECT). Ce logiciel est basé sur la formulation (et les routines) du code 6S (Seconde Simulation du Signal Satellitaire dans le Spectre Solaire) et sur la méthode des cibles obscures pour l’estimation de l’épaisseur optique des aérosols (aerosol optical depth, AOD), qui est le facteur le plus difficile à corriger. Des améliorations substantielles ont été apportées aux modèles existants. Ces améliorations concernent essentiellement les propriétés des aérosols (intégration d’un modèle plus récent, amélioration de la recherche des cibles obscures pour l’estimation de l’AOD), la prise en compte de l’effet d’adjacence à l’aide d’un modèle de réflexion spéculaire, la prise en compte de la majorité des capteurs multispectraux à haute résolution (Landsat TM et ETM+, tous les HR de SPOT 1 à 5, EO-1 ALI et ASTER) et à très haute résolution (QuickBird et Ikonos) utilisés actuellement et la correction des effets topographiques l’aide d’un modèle qui sépare les composantes directe et diffuse du rayonnement solaire et qui s’adapte également à la canopée forestière. Les travaux de validation ont montré que la restitution de la réflectance au sol par REFLECT se fait avec une précision de l’ordre de ±0.01 unités de réflectance (pour les bandes spectrales du visible, PIR et MIR), même dans le cas d’une surface à topographie variable. 
+
+Ce logiciel a permis de montrer, à travers des simulations de réflectances apparentes à quel point les facteurs parasites influant les valeurs numériques des images pouvaient modifier le signal utile qui est la réflectance au sol (erreurs de 10 à plus de 50%). REFLECT a également été utilisé pour voir l’importance de l’utilisation des réflectances au sol plutôt que les valeurs numériques brutes pour diverses applications courantes de la télédétection dans les domaines des classifications, du suivi des changements, de l’agriculture et de la foresterie. Dans la majorité des applications (suivi des changements par images multi-dates, utilisation d’indices de végétation, estimation de paramètres biophysiques, …), la correction des images est une opération cruciale pour obtenir des résultats fiables. 
+
+D’un point de vue informatique, le logiciel REFLECT se présente comme une série de menus simples d’utilisation correspondant aux différentes étapes de saisie des intrants de la scène, calcul des transmittances gazeuses, estimation de l’AOD par la méthode des cibles obscures et enfin, l’application des corrections radiométriques à l’image, notamment par l’option rapide qui permet de traiter une image de 5000 par 5000 pixels en 15 minutes environ.
+
+Cette recherche ouvre une série de pistes pour d’autres améliorations des modèles et méthodes liés au domaine des corrections radiométriques, notamment en ce qui concerne l’intégration de la FDRB (fonction de distribution de la réflectance bidirectionnelle) dans la formulation, la prise en compte des nuages translucides à l’aide de la modélisation de la diffusion non sélective et l’automatisation de la méthode des pentes équivalentes proposée pour les corrections topographiques." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="Multi-spectral satellite imagery, especially at high spatial resolution (finer than 30 m on the ground), represents an invaluable source of information for decision making in various domains in connection with natural resources management, environment preservation or urban planning and management. The mapping scales may range from local (finer resolution than 5 m) to regional (resolution coarser than 5m). The images are characterized by objects reflectance in the electromagnetic spectrum witch represents the key information in many applications. However, satellite sensor measurements are also affected by parasite input due to illumination and observation conditions, to the atmosphere, to topography and to sensor properties. Two questions have oriented this research. What is the best approach to retrieve surface reflectance with the measured values while taking into account these parasite factors? Is this retrieval a sine qua non condition for reliable image information extraction for the diverse domains of application for the images (mapping, environmental monitoring, landscape change detection, resources inventory, etc.)?
+
+Researches performed in the past 30 years have yielded a series of techniques to correct the parasite factors among which some allow to retrieve ground reflectance. Some questions are still unanswered and others require still more scrutiny to increase precision and to make these methods more versatile by adapting them to larger variety of data acquisition conditions. A few examples may be mentioned:
+
+-	How to take into account atmospheric characteristics (particularly of aerosols) adapted to local and regional conditions instead of relying on default models indicating long term spatial-temporal trends that are hard to adjust to spatially restricted instantaneous observations;
+-	How to remove noise introduced by surrounding objects. This adjacency effect phenomenon is particularly important for image resolutions smaller than 5m;
+-	What is the effect of the viewing angle of the sensors that are increasingly aiming off-nadir, a choice imposed by the imperatives of a better temporal resolution or the acquisition of stereo pairs?
+-	How to increase the performances of automatic multi-spectral image processing and analysis techniques in mountainous high relief area by taking into account the multiple effects of topography on the remotely sensed signal?
+
+Despite many demonstrations by researchers that information extracted from remote sensing may be altered due to the parasite factors, we are forced to note that nowadays radiometric corrections are still seldom applied, unlike geometric corrections for which commercial software possess powerful and versatile user-friendly algorithms. Radiometric correction algorithms, when available, are hard to adapt black boxes and mostly require experts to operate them.
+
+The goals we have delineated for this research are as follow:
+1)	Develop software to retrieve ground reflectance while taking into account the aspects mentioned earlier. This software had to be modular enough to allow improvement and adaptation to diverse remote sensing application problems; and
+2)	Apply this software in various context (urban, agricultural, forest) and analyse results to evaluate the accuracy gain of extracted information from remote sensing imagery transformed in ground reflectance images to demonstrate the necessity of operating in this way, whatever the type of application.
+
+During this research, we have developed a tool to retrieve ground reflectance (the new version of the REFLECT software). This software is based on the formulas (and routines) of the 6S code (Second Simulation of Satellite Signal in the Solar Spectrum) and on the dark targets method to estimated the aerosol optical thickness, representing the most difficult factor to correct. Substantial improvements have been made to the existing models. These improvements essentially concern the aerosols properties (integration of a more recent model, improvement of the dark targets selection to estimate the AOD), the adjacency effect, the adaptation to most used high resolution (Landsat TM and ETM+, all HR SPOT 1 to 5, EO-1 ALI and ASTER) and very high resolution (QuickBird et Ikonos) sensors and the correction of topographic effects with a model that separate direct and diffuse solar radiation components and the adaptation of this model to forest canopy. 
+
+Validation has shown that ground reflectance estimation with REFLECT is performed with an accuracy of approximately ±0.01 in reflectance units (for in the visible, near-infrared and middle-infrared spectral bands) even for a surface with varying topography. This software has allowed demonstrating, through apparent reflectance simulations, how much parasite factors influencing numerical values of the images may alter the ground reflectance (errors ranging from 10 to 50%). REFLECT has also been used to examine the usefulness of ground reflectance instead of raw data for various common remote sensing applications in domains such as classification, change detection, agriculture and forestry. In most applications (multi-temporal change monitoring, use of vegetation indices, biophysical parameters estimation, etc.) image correction is a crucial step to obtain reliable results.
+
+From the computer environment standpoint, REFLECT is organized as a series of menus, corresponding to different steps of: input parameters introducing, gas transmittances calculation, AOD estimation, and finally image correction application, with the possibility of using the fast option witch process an image of 5000 by 5000 pixels in approximately 15 minutes.  
+
+This research opens many possible pathways for improving methods and models in the realm of radiometric corrections of remotely sensed images. In particular, these include BRDF integration in the formulation, cirrus clouds correction using non selective scattering modelling and improving of the equivalent slopes topographic correction method." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Corrections radiométriques; corrections atmosphériques; Corrections topographiques; Code 6S; Méthode des cibles obscures; Effets des conditions radiométriques en télédétection; Radiometric corrections; Atmospheric corrections; Topographic corrections; 6S code; Dark objects method; Radiometric effects in remote sensing; Earth Sciences - Remote Sensing / Sciences de la Terre - Télédétection
+               (UMI : 0799); Thèse ou mémoire / Thesis or Dissertation; Géographie" name="citation_keywords"/>
+<meta content="REFLECT : logiciel de restitution des réflectances au sol pour l’amélioration de la qualité de l'information extraite des images satellitales à haute résolution spatiale" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Bouroubi, Yacine M." name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/3264/2/Bouroubi_Yacine_M_2009_these.pdf" name="citation_pdf_url"/>
+<meta content="2009-12-03" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/3264" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3264?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3264?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3264?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3264?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3264?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3264?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2945" role="menuitem">Faculté des arts et des sciences – Département de géographie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2984" role="menuitem">Faculté des arts et des sciences – Département de géographie - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2945">Faculté des arts et des sciences – Département de géographie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2984">Faculté des arts et des sciences – Département de géographie - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2984"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/3264/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/3264">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3264/mets.xml-->
+<h2 class="page-header first-page-header">REFLECT : logiciel de restitution des réflectances au sol pour l’amélioration de la qualité de l'information extraite des images satellitales à haute résolution spatiale</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Cavayas, François</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Tremblay, Nicolas</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Bouroubi, Yacine M.</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2010-01-19T17:11:44Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2010-01-19T17:11:44Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2009-12-03</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2009-10</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/3264</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Corrections radiométriques</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">corrections atmosphériques</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Corrections topographiques</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Code 6S</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Méthode des cibles obscures</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Effets des conditions radiométriques en télédétection</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Radiometric corrections</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Atmospheric corrections</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Topographic corrections</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">6S code</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Dark objects method</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Radiometric effects in remote sensing</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Earth Sciences - Remote Sensing / Sciences de la Terre - Télédétection
+               (UMI : 0799)</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">REFLECT : logiciel de restitution des réflectances au sol pour l’amélioration de la qualité de l'information extraite des images satellitales à haute résolution spatiale</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Géographie</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les images satellitales multispectrales, notamment celles à haute résolution spatiale (plus fine que 30 m au sol), représentent une source d’information inestimable pour la prise de décision dans divers domaines liés à la gestion des ressources naturelles, à la préservation de l’environnement ou à l’aménagement et la gestion des centres urbains. Les échelles d’étude peuvent aller du local (résolutions plus fines que 5 m) à des échelles régionales (résolutions plus grossières que 5 m). Ces images caractérisent la variation de la réflectance des objets dans le spectre qui est l’information clé pour un grand nombre d’applications de ces données. Or, les mesures des capteurs satellitaux sont aussi affectées par des facteurs « parasites » liés aux conditions d’éclairement et d’observation, à l’atmosphère, à la topographie et aux propriétés des capteurs. Deux questions nous ont préoccupé dans cette recherche. Quelle est la meilleure approche pour restituer les réflectances au sol à partir des valeurs numériques enregistrées par les capteurs tenant compte des ces facteurs parasites ? Cette restitution est-elle la condition sine qua non pour extraire une information fiable des images en fonction des problématiques propres aux différents domaines d’application des images (cartographie du territoire, monitoring de l’environnement, suivi des changements du paysage, inventaires des ressources, etc.) ? 
+
+Les recherches effectuées les 30 dernières années ont abouti à une série de techniques de correction des données des effets des facteurs parasites dont certaines permettent de restituer les réflectances au sol. Plusieurs questions sont cependant encore en suspens et d’autres nécessitent des approfondissements afin, d’une part d’améliorer la précision des résultats et d’autre part, de rendre ces techniques plus versatiles en les adaptant à un plus large éventail de conditions d’acquisition des données. Nous pouvons en mentionner quelques unes :
+
+-	Comment prendre en compte des caractéristiques atmosphériques (notamment des particules d’aérosol) adaptées à des conditions locales et régionales et ne pas se fier à des modèles par défaut qui indiquent des tendances spatiotemporelles à long terme mais s’ajustent mal à des observations instantanées et restreintes spatialement ?
+-	Comment tenir compte des effets de « contamination » du signal provenant de l’objet visé par le capteur par les signaux provenant des objets environnant (effet d’adjacence) ? ce phénomène devient très important pour des images de résolution plus fine que 5 m;
+-	Quels sont les effets des angles de visée des capteurs hors nadir qui sont de plus en plus présents puisqu’ils offrent une meilleure résolution temporelle et la possibilité d’obtenir des couples d’images stéréoscopiques ?
+-	Comment augmenter l’efficacité des techniques de traitement et d’analyse automatique des images multispectrales à des terrains accidentés et montagneux tenant compte des effets multiples du relief topographique sur le signal capté à distance ?
+
+D’autre part, malgré les nombreuses démonstrations par des chercheurs que l’information extraite des images satellitales peut être altérée à cause des tous ces facteurs parasites, force est de constater aujourd’hui que les corrections radiométriques demeurent peu utilisées sur une base routinière tel qu’est le cas pour les corrections géométriques. Pour ces dernières, les logiciels commerciaux de télédétection possèdent des algorithmes versatiles, puissants et à la portée des utilisateurs. Les algorithmes des corrections radiométriques, lorsqu’ils sont proposés, demeurent des boîtes noires peu flexibles nécessitant la plupart de temps des utilisateurs experts en la matière.
+
+Les objectifs que nous nous sommes fixés dans cette recherche sont les suivants :
+1)	Développer un logiciel de restitution des réflectances au sol tenant compte des questions posées ci-haut. Ce logiciel devait être suffisamment modulaire pour pouvoir le bonifier, l’améliorer et l’adapter à diverses problématiques d’application d’images satellitales; et
+2)	Appliquer ce logiciel dans différents contextes (urbain, agricole, forestier) et analyser les résultats obtenus afin d’évaluer le gain en précision de l’information extraite par des images satellitales transformées en images des réflectances au sol et par conséquent la nécessité d’opérer ainsi peu importe la problématique de l’application.
+
+Ainsi, à travers cette recherche, nous avons réalisé un outil de restitution de la réflectance au sol (la nouvelle version du logiciel REFLECT). Ce logiciel est basé sur la formulation (et les routines) du code 6S (Seconde Simulation du Signal Satellitaire dans le Spectre Solaire) et sur la méthode des cibles obscures pour l’estimation de l’épaisseur optique des aérosols (aerosol optical depth, AOD), qui est le facteur le plus difficile à corriger. Des améliorations substantielles ont été apportées aux modèles existants. Ces améliorations concernent essentiellement les propriétés des aérosols (intégration d’un modèle plus récent, amélioration de la recherche des cibles obscures pour l’estimation de l’AOD), la prise en compte de l’effet d’adjacence à l’aide d’un modèle de réflexion spéculaire, la prise en compte de la majorité des capteurs multispectraux à haute résolution (Landsat TM et ETM+, tous les HR de SPOT 1 à 5, EO-1 ALI et ASTER) et à très haute résolution (QuickBird et Ikonos) utilisés actuellement et la correction des effets topographiques l’aide d’un modèle qui sépare les composantes directe et diffuse du rayonnement solaire et qui s’adapte également à la canopée forestière. Les travaux de validation ont montré que la restitution de la réflectance au sol par REFLECT se fait avec une précision de l’ordre de ±0.01 unités de réflectance (pour les bandes spectrales du visible, PIR et MIR), même dans le cas d’une surface à topographie variable. 
+
+Ce logiciel a permis de montrer, à travers des simulations de réflectances apparentes à quel point les facteurs parasites influant les valeurs numériques des images pouvaient modifier le signal utile qui est la réflectance au sol (erreurs de 10 à plus de 50%). REFLECT a également été utilisé pour voir l’importance de l’utilisation des réflectances au sol plutôt que les valeurs numériques brutes pour diverses applications courantes de la télédétection dans les domaines des classifications, du suivi des changements, de l’agriculture et de la foresterie. Dans la majorité des applications (suivi des changements par images multi-dates, utilisation d’indices de végétation, estimation de paramètres biophysiques, …), la correction des images est une opération cruciale pour obtenir des résultats fiables. 
+
+D’un point de vue informatique, le logiciel REFLECT se présente comme une série de menus simples d’utilisation correspondant aux différentes étapes de saisie des intrants de la scène, calcul des transmittances gazeuses, estimation de l’AOD par la méthode des cibles obscures et enfin, l’application des corrections radiométriques à l’image, notamment par l’option rapide qui permet de traiter une image de 5000 par 5000 pixels en 15 minutes environ.
+
+Cette recherche ouvre une série de pistes pour d’autres améliorations des modèles et méthodes liés au domaine des corrections radiométriques, notamment en ce qui concerne l’intégration de la FDRB (fonction de distribution de la réflectance bidirectionnelle) dans la formulation, la prise en compte des nuages translucides à l’aide de la modélisation de la diffusion non sélective et l’automatisation de la méthode des pentes équivalentes proposée pour les corrections topographiques.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Multi-spectral satellite imagery, especially at high spatial resolution (finer than 30 m on the ground), represents an invaluable source of information for decision making in various domains in connection with natural resources management, environment preservation or urban planning and management. The mapping scales may range from local (finer resolution than 5 m) to regional (resolution coarser than 5m). The images are characterized by objects reflectance in the electromagnetic spectrum witch represents the key information in many applications. However, satellite sensor measurements are also affected by parasite input due to illumination and observation conditions, to the atmosphere, to topography and to sensor properties. Two questions have oriented this research. What is the best approach to retrieve surface reflectance with the measured values while taking into account these parasite factors? Is this retrieval a sine qua non condition for reliable image information extraction for the diverse domains of application for the images (mapping, environmental monitoring, landscape change detection, resources inventory, etc.)?
+
+Researches performed in the past 30 years have yielded a series of techniques to correct the parasite factors among which some allow to retrieve ground reflectance. Some questions are still unanswered and others require still more scrutiny to increase precision and to make these methods more versatile by adapting them to larger variety of data acquisition conditions. A few examples may be mentioned:
+
+-	How to take into account atmospheric characteristics (particularly of aerosols) adapted to local and regional conditions instead of relying on default models indicating long term spatial-temporal trends that are hard to adjust to spatially restricted instantaneous observations;
+-	How to remove noise introduced by surrounding objects. This adjacency effect phenomenon is particularly important for image resolutions smaller than 5m;
+-	What is the effect of the viewing angle of the sensors that are increasingly aiming off-nadir, a choice imposed by the imperatives of a better temporal resolution or the acquisition of stereo pairs?
+-	How to increase the performances of automatic multi-spectral image processing and analysis techniques in mountainous high relief area by taking into account the multiple effects of topography on the remotely sensed signal?
+
+Despite many demonstrations by researchers that information extracted from remote sensing may be altered due to the parasite factors, we are forced to note that nowadays radiometric corrections are still seldom applied, unlike geometric corrections for which commercial software possess powerful and versatile user-friendly algorithms. Radiometric correction algorithms, when available, are hard to adapt black boxes and mostly require experts to operate them.
+
+The goals we have delineated for this research are as follow:
+1)	Develop software to retrieve ground reflectance while taking into account the aspects mentioned earlier. This software had to be modular enough to allow improvement and adaptation to diverse remote sensing application problems; and
+2)	Apply this software in various context (urban, agricultural, forest) and analyse results to evaluate the accuracy gain of extracted information from remote sensing imagery transformed in ground reflectance images to demonstrate the necessity of operating in this way, whatever the type of application.
+
+During this research, we have developed a tool to retrieve ground reflectance (the new version of the REFLECT software). This software is based on the formulas (and routines) of the 6S code (Second Simulation of Satellite Signal in the Solar Spectrum) and on the dark targets method to estimated the aerosol optical thickness, representing the most difficult factor to correct. Substantial improvements have been made to the existing models. These improvements essentially concern the aerosols properties (integration of a more recent model, improvement of the dark targets selection to estimate the AOD), the adjacency effect, the adaptation to most used high resolution (Landsat TM and ETM+, all HR SPOT 1 to 5, EO-1 ALI and ASTER) and very high resolution (QuickBird et Ikonos) sensors and the correction of topographic effects with a model that separate direct and diffuse solar radiation components and the adaptation of this model to forest canopy. 
+
+Validation has shown that ground reflectance estimation with REFLECT is performed with an accuracy of approximately ±0.01 in reflectance units (for in the visible, near-infrared and middle-infrared spectral bands) even for a surface with varying topography. This software has allowed demonstrating, through apparent reflectance simulations, how much parasite factors influencing numerical values of the images may alter the ground reflectance (errors ranging from 10 to 50%). REFLECT has also been used to examine the usefulness of ground reflectance instead of raw data for various common remote sensing applications in domains such as classification, change detection, agriculture and forestry. In most applications (multi-temporal change monitoring, use of vegetation indices, biophysical parameters estimation, etc.) image correction is a crucial step to obtain reliable results.
+
+From the computer environment standpoint, REFLECT is organized as a series of menus, corresponding to different steps of: input parameters introducing, gas transmittances calculation, AOD estimation, and finally image correction application, with the possibility of using the fast option witch process an image of 5000 by 5000 pixels in approximately 15 minutes.  
+
+This research opens many possible pathways for improving methods and models in the realm of radiometric corrections of remotely sensed images. In particular, these include BRDF integration in the formulation, cirrus clouds correction using non selective scattering modelling and improving of the equivalent slopes topographic correction method.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F3264&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=G%C3%A9ographie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/3264/Bouroubi_Yacine_M_2009_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/3264/Bouroubi_Yacine_M_2009_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Bouroubi_Yacine_M_2009_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/3264/Bouroubi_Yacine_M_2009_these.pdf?sequence=2&amp;isAllowed=y">Bouroubi_Yacine_M_2009_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">12.10Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2984/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2984">Faculté des arts et des sciences – Département de géographie - Thèses et mémoires</a> [241]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/3264">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

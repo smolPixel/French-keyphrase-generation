@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Amélioration de la géométrie des modèles musculosquelettiques de l'épaule</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Begon, Mickaël" name="DC.contributor">
+<meta content="Duprey, Sonia" name="DC.contributor">
+<meta content="Hoffmann, Marion" name="DC.creator">
+<meta content="2021-06-08T14:10:39Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2021-06-08T14:10:39Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-04-08" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2020-09" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/25297" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Épaule" name="DC.subject" xml:lang="fr"/>
+<meta content="Bras de levier en 3D" name="DC.subject" xml:lang="fr"/>
+<meta content="Modélisation multicorps rigides" name="DC.subject" xml:lang="fr"/>
+<meta content="Modélisation par élément finis" name="DC.subject" xml:lang="fr"/>
+<meta content="Évaluation des modèles" name="DC.subject" xml:lang="fr"/>
+<meta content="Sensibilité des modèles" name="DC.subject" xml:lang="fr"/>
+<meta content="Déformation musculaire" name="DC.subject" xml:lang="fr"/>
+<meta content="Shoulder" name="DC.subject" xml:lang="fr"/>
+<meta content="3D moment arms" name="DC.subject" xml:lang="fr"/>
+<meta content="Rigid multibody model" name="DC.subject" xml:lang="fr"/>
+<meta content="Finite element model" name="DC.subject" xml:lang="fr"/>
+<meta content="Evaluation of musculoskeletal models" name="DC.subject" xml:lang="fr"/>
+<meta content="Model sensitivity" name="DC.subject" xml:lang="fr"/>
+<meta content="Muscle deformation" name="DC.subject" xml:lang="fr"/>
+<meta content="Engineering - Biomedical / Ingénierie - Biomédicale (UMI : 0541)" name="DC.subject" xml:lang="fr"/>
+<meta content="Amélioration de la géométrie des modèles musculosquelettiques de l'épaule" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Pour mieux comprendre et traiter les troubles musculosquelettiques présents à l’épaule, une meilleure connaissance de la contribution et de la fonction de chaque muscle de l’articulation glénohumérale est nécessaire. L’analyse des forces musculaires et articulaires est une étape importante pour comprendre les mécanismes de blessures et les pathologies. Ces forces musculaires peuvent être estimées de façon non invasive grâce à des modèles musculosquelettiques. Le défi est de prédire de façon physiologique les trajectoires musculaires et les bras de levier afin de s’assurer d’avoir une cohérence des forces musculaires dans les modèles musculosquelettiques.
+L’objectif de cette thèse était d’améliorer la géométrie musculaire des modèles musculosquelettiques de l’épaule en passant par plusieurs méthodes différentes d’implémentation des trajectoires musculaires. À cet égard, nos objectifs spécifiques étaient de : (1) améliorer la géométrie musculaire des modèles multicorps rigides grâce à l’implémentation de contraintes transverses; (2) évaluer la fiabilité d’un modèle éléments finis pour l’estimation des bras de levier et (3) tester la sensibilité de la prédiction des bras de levier aux incertitudes sur les zones d’insertions musculaires; (4) établir une base de données de bras de levier 3D pour des mouvements de grande amplitude; (5) quantifier de façon expérimentale les changements architecturaux des muscles entre l’état au repos et différents niveaux de contraction isométrique.
+(1) Deux modèles multicorps rigides de la coiffe des rotateurs ont été développés : un modèle classique intégrant une représentation des lignes d’action en 1D et un modèle possédant des contraintes transverses entre les lignes d’action permettant une représentation 2D. La représentation 2D avec des contraintes transverses permet une représentation plus physiologique des trajectoires musculaires et des bras de levier que les modèles classiques 1D. Toutefois, lors de mouvement allant au-delà de 90° d’élévation du bras, lorsque les points d’origine et d’insertion se rapprochent, les bras de levier et les longueurs musculaires sont mal estimés, car le modèle ne prend pas en compte les déformations du volume musculaire.
+(2) Un modèle éléments finis a été développé à partir de données d’imagerie médicale. Ce modèle permet une estimation des bras de levier fidèle aux données d’IRM. Contrairement aux modèles multicorps rigides, notre modèle élément finis rend compte du fait qu’un même muscle peut avoir plusieurs actions selon la position de sa ligne d’action par rapport au centre de rotation de l’articulation. (3) Le modèle a également servi à faire une étude de sensibilité des bras de levier : les zones d’insertion des différents muscles de la coiffe des rotateurs et du deltoïde ont été déplacées et les bras de levier associés calculés. Les résultats montrent qu’une variation de 10 mm des points d’insertion sur la tête humérale peut amener un muscle à changer de fonction (par exemple adduction plutôt que d’abduction).
+(4) Une collecte de données expérimentales effectuées sur quatre épaules a permis de collecter les bras de levier du deltoïde et des muscles de la coiffe des rotateurs pour des mouvements de grande amplitude. Ces résultats permettent de mieux comprendre le rôle des muscles de l’articulation glénohumérale lors de la réalisation de différents mouvements. Le deltoïde antérieur a une grande action en flexion et en adduction; le deltoïde moyen est un fort abducteur; le deltoïde postérieur agit en extension. Contrairement au deltoïde, l’infra-épineux et le petit rond ont principalement une fonction de rotateur externe.
+(5) Une collecte de données impliquant 14 sujets a été réalisée dans le but de quantifier les changements de géométrie musculaire et d’angle de pennation associés à la contraction pour les muscles du biceps, triceps et deltoïde. Les angles de pennation ont été obtenus grâce à un système d’échographie et les changements de géométrie externe des muscles ont été mesurés grâce à un capteur de structure. Les résultats montrent que les changements architecturaux pour les muscles étudiés se produisent principalement entre 0 et 25% de contraction maximale volontaire (aucune différence significative observée entre 25 et 50%). Le muscle le plus affecté par les changements architecturaux est le biceps.
+Cette thèse a évalué différentes approches de modélisation de la géométrie musculaire : l’approche la plus bio-fidèle étant finalement la modélisation par éléments finis, car elle permet de prendre en compte les interactions entre les structures et les déformations musculaires. De plus, nous avons montré l’importance d’estimer avec rigueur les paramètres d’entrée (zones d’insertions musculaires) des modèles et de bien évaluer la bio-fidèlité des modèles développés avant de les utiliser dans des contextes cliniques. Dans ce but, de nouvelles données ont été acquises en termes de déformations musculaires et d’angle de pennation pour permettre l’évaluation de modèle intégrant de l’activation musculaire." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Understanding and treating musculoskeletal disorders of the shoulder requires additional knowledge of the contribution and function of each muscle of the glenohumeral joint. The analysis of muscle and joint forces is an important step in understanding injury mechanisms and pathologies. These muscle forces can be estimated non-invasively using musculoskeletal models. The challenge is to physiologically predict muscle trajectories and moment arms to ensure consistency of muscle forces in musculoskeletal models.
+The aim of this thesis was to improve muscle geometry in musculoskeletal models of the shoulder by testing several different techniques for implementing muscle trajectories. Our specific objectives were to: (1) improve muscle geometry of rigid multibody models by using transverse constraints; (2) assess the reliability of a finite element model for estimating moment arms and (3) evaluate the sensitivity of moment arm predictions to uncertainties in muscle insertion areas; (4) create a database of 3D moment arms for movements with high ranges of motion; (5) experimentally quantify muscles’ architectural changes between resting state and different levels of isometric contractions.
+(1) Two rigid multibody models of the rotator cuff were developed: a classic model representing muscles with lines of action in 1D and a 2D model with transverse constraints between lines of action of a single muscle. The 2D model (with transverse constraints) gives a more physiological representation of muscle trajectories and moment arms than the classical 1D model. However, for arm movements beyond 90° of elevation, when the origin and insertion points get closer, moment arms and muscle lengths are misestimated due to the mode’s inability to account for muscle volume deformations.
+(2) A finite element model of the glenohumeral joint was developed based on medical imaging. Moment arms were computed and compared to the literature and MRI data. Our finite element model produces moment arms consistent with the literature and MRI data. Unlike rigid multibody models, our finite element model accounts for the fact that one muscle can have several actions depending on the position of its line of action relative to the centre of rotation of the joint. (3) The model was used to study moment arm sensitivity: insertion areas of rotator cuff muscles and the deltoid were moved, and associated moment arms have been computed. Results showed that a 10 mm variation in insertion points on the humeral head could cause a muscle to change function (for example performing adduction rather than abduction).
+(4) The 3D moment arms were assessed on four post-mortem human surrogates during movements with high ranges of motion. Results of the study gave us a better understanding of muscle functions during different movements. The main findings of the study were that the anterior deltoid was the largest flexor and had an adduction component, the median deltoid was a strong abductor, and the posterior deltoid acted in extension. Unlike the deltoid, the infraspinatus and teres minor were the largest external rotators of the shoulder.
+(5) Experimental measurements were performed on 14 subjects in order to quantify changes in muscle geometry and pennation angles associated with different levels of contraction for the biceps, triceps and deltoid. Pennation angles were measured on subjects using a portable ultrasound system. External muscle deformations were measured with an iPad equipped with a structure sensor. Changes in muscle architecture for the biceps, triceps and deltoid during isometric contractions occurred mostly between 0 and 25% of maximal voluntary contraction (no significant difference was observed between 25 and 50%). Changes were higher for the biceps than other muscles.
+This thesis evaluated different approaches to model muscle geometry: the approach leading to the most physiological result was the finite element model due to modeling of the interactions between structure and muscle deformations. Additionally, we demonstrated the importance of rigorously estimating input parameters (muscle insertion areas) and of properly evaluating the bio-fidelity of the models developed before using them in clinical contexts. New data was acquired regarding muscle deformations and pennation angles to evaluate models integrating muscle activation." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Épaule; Bras de levier en 3D; Modélisation multicorps rigides; Modélisation par élément finis; Évaluation des modèles; Sensibilité des modèles; Déformation musculaire; Shoulder; 3D moment arms; Rigid multibody model; Finite element model; Evaluation of musculoskeletal models; Model sensitivity; Muscle deformation; Engineering - Biomedical / Ingénierie - Biomédicale (UMI : 0541); Thèse ou mémoire / Thesis or Dissertation; Génie biomédical" name="citation_keywords"/>
+<meta content="Amélioration de la géométrie des modèles musculosquelettiques de l'épaule" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Hoffmann, Marion" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/25297/2/Hoffmann_Marion_2020_these.pdf" name="citation_pdf_url"/>
+<meta content="2021-04-08" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/25297" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25297?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25297?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25297?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25297?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25297?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25297?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/25297/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25297">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/25297/mets.xml-->
+<h2 class="page-header first-page-header">Amélioration de la géométrie des modèles musculosquelettiques de l'épaule</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Begon, Mickaël</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Duprey, Sonia</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Hoffmann, Marion</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2021-06-08T14:10:39Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2021-06-08T14:10:39Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-04-08</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2020-09</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/25297</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Épaule</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Bras de levier en 3D</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Modélisation multicorps rigides</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Modélisation par élément finis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Évaluation des modèles</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Sensibilité des modèles</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Déformation musculaire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Shoulder</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">3D moment arms</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Rigid multibody model</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Finite element model</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Evaluation of musculoskeletal models</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Model sensitivity</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Muscle deformation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Engineering - Biomedical / Ingénierie - Biomédicale (UMI : 0541)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Amélioration de la géométrie des modèles musculosquelettiques de l'épaule</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Génie biomédical</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Pour mieux comprendre et traiter les troubles musculosquelettiques présents à l’épaule, une meilleure connaissance de la contribution et de la fonction de chaque muscle de l’articulation glénohumérale est nécessaire. L’analyse des forces musculaires et articulaires est une étape importante pour comprendre les mécanismes de blessures et les pathologies. Ces forces musculaires peuvent être estimées de façon non invasive grâce à des modèles musculosquelettiques. Le défi est de prédire de façon physiologique les trajectoires musculaires et les bras de levier afin de s’assurer d’avoir une cohérence des forces musculaires dans les modèles musculosquelettiques.
+L’objectif de cette thèse était d’améliorer la géométrie musculaire des modèles musculosquelettiques de l’épaule en passant par plusieurs méthodes différentes d’implémentation des trajectoires musculaires. À cet égard, nos objectifs spécifiques étaient de : (1) améliorer la géométrie musculaire des modèles multicorps rigides grâce à l’implémentation de contraintes transverses; (2) évaluer la fiabilité d’un modèle éléments finis pour l’estimation des bras de levier et (3) tester la sensibilité de la prédiction des bras de levier aux incertitudes sur les zones d’insertions musculaires; (4) établir une base de données de bras de levier 3D pour des mouvements de grande amplitude; (5) quantifier de façon expérimentale les changements architecturaux des muscles entre l’état au repos et différents niveaux de contraction isométrique.
+(1) Deux modèles multicorps rigides de la coiffe des rotateurs ont été développés : un modèle classique intégrant une représentation des lignes d’action en 1D et un modèle possédant des contraintes transverses entre les lignes d’action permettant une représentation 2D. La représentation 2D avec des contraintes transverses permet une représentation plus physiologique des trajectoires musculaires et des bras de levier que les modèles classiques 1D. Toutefois, lors de mouvement allant au-delà de 90° d’élévation du bras, lorsque les points d’origine et d’insertion se rapprochent, les bras de levier et les longueurs musculaires sont mal estimés, car le modèle ne prend pas en compte les déformations du volume musculaire.
+(2) Un modèle éléments finis a été développé à partir de données d’imagerie médicale. Ce modèle permet une estimation des bras de levier fidèle aux données d’IRM. Contrairement aux modèles multicorps rigides, notre modèle élément finis rend compte du fait qu’un même muscle peut avoir plusieurs actions selon la position de sa ligne d’action par rapport au centre de rotation de l’articulation. (3) Le modèle a également servi à faire une étude de sensibilité des bras de levier : les zones d’insertion des différents muscles de la coiffe des rotateurs et du deltoïde ont été déplacées et les bras de levier associés calculés. Les résultats montrent qu’une variation de 10 mm des points d’insertion sur la tête humérale peut amener un muscle à changer de fonction (par exemple adduction plutôt que d’abduction).
+(4) Une collecte de données expérimentales effectuées sur quatre épaules a permis de collecter les bras de levier du deltoïde et des muscles de la coiffe des rotateurs pour des mouvements de grande amplitude. Ces résultats permettent de mieux comprendre le rôle des muscles de l’articulation glénohumérale lors de la réalisation de différents mouvements. Le deltoïde antérieur a une grande action en flexion et en adduction; le deltoïde moyen est un fort abducteur; le deltoïde postérieur agit en extension. Contrairement au deltoïde, l’infra-épineux et le petit rond ont principalement une fonction de rotateur externe.
+(5) Une collecte de données impliquant 14 sujets a été réalisée dans le but de quantifier les changements de géométrie musculaire et d’angle de pennation associés à la contraction pour les muscles du biceps, triceps et deltoïde. Les angles de pennation ont été obtenus grâce à un système d’échographie et les changements de géométrie externe des muscles ont été mesurés grâce à un capteur de structure. Les résultats montrent que les changements architecturaux pour les muscles étudiés se produisent principalement entre 0 et 25% de contraction maximale volontaire (aucune différence significative observée entre 25 et 50%). Le muscle le plus affecté par les changements architecturaux est le biceps.
+Cette thèse a évalué différentes approches de modélisation de la géométrie musculaire : l’approche la plus bio-fidèle étant finalement la modélisation par éléments finis, car elle permet de prendre en compte les interactions entre les structures et les déformations musculaires. De plus, nous avons montré l’importance d’estimer avec rigueur les paramètres d’entrée (zones d’insertions musculaires) des modèles et de bien évaluer la bio-fidèlité des modèles développés avant de les utiliser dans des contextes cliniques. Dans ce but, de nouvelles données ont été acquises en termes de déformations musculaires et d’angle de pennation pour permettre l’évaluation de modèle intégrant de l’activation musculaire.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Understanding and treating musculoskeletal disorders of the shoulder requires additional knowledge of the contribution and function of each muscle of the glenohumeral joint. The analysis of muscle and joint forces is an important step in understanding injury mechanisms and pathologies. These muscle forces can be estimated non-invasively using musculoskeletal models. The challenge is to physiologically predict muscle trajectories and moment arms to ensure consistency of muscle forces in musculoskeletal models.
+The aim of this thesis was to improve muscle geometry in musculoskeletal models of the shoulder by testing several different techniques for implementing muscle trajectories. Our specific objectives were to: (1) improve muscle geometry of rigid multibody models by using transverse constraints; (2) assess the reliability of a finite element model for estimating moment arms and (3) evaluate the sensitivity of moment arm predictions to uncertainties in muscle insertion areas; (4) create a database of 3D moment arms for movements with high ranges of motion; (5) experimentally quantify muscles’ architectural changes between resting state and different levels of isometric contractions.
+(1) Two rigid multibody models of the rotator cuff were developed: a classic model representing muscles with lines of action in 1D and a 2D model with transverse constraints between lines of action of a single muscle. The 2D model (with transverse constraints) gives a more physiological representation of muscle trajectories and moment arms than the classical 1D model. However, for arm movements beyond 90° of elevation, when the origin and insertion points get closer, moment arms and muscle lengths are misestimated due to the mode’s inability to account for muscle volume deformations.
+(2) A finite element model of the glenohumeral joint was developed based on medical imaging. Moment arms were computed and compared to the literature and MRI data. Our finite element model produces moment arms consistent with the literature and MRI data. Unlike rigid multibody models, our finite element model accounts for the fact that one muscle can have several actions depending on the position of its line of action relative to the centre of rotation of the joint. (3) The model was used to study moment arm sensitivity: insertion areas of rotator cuff muscles and the deltoid were moved, and associated moment arms have been computed. Results showed that a 10 mm variation in insertion points on the humeral head could cause a muscle to change function (for example performing adduction rather than abduction).
+(4) The 3D moment arms were assessed on four post-mortem human surrogates during movements with high ranges of motion. Results of the study gave us a better understanding of muscle functions during different movements. The main findings of the study were that the anterior deltoid was the largest flexor and had an adduction component, the median deltoid was a strong abductor, and the posterior deltoid acted in extension. Unlike the deltoid, the infraspinatus and teres minor were the largest external rotators of the shoulder.
+(5) Experimental measurements were performed on 14 subjects in order to quantify changes in muscle geometry and pennation angles associated with different levels of contraction for the biceps, triceps and deltoid. Pennation angles were measured on subjects using a portable ultrasound system. External muscle deformations were measured with an iPad equipped with a structure sensor. Changes in muscle architecture for the biceps, triceps and deltoid during isometric contractions occurred mostly between 0 and 25% of maximal voluntary contraction (no significant difference was observed between 25 and 50%). Changes were higher for the biceps than other muscles.
+This thesis evaluated different approaches to model muscle geometry: the approach leading to the most physiological result was the finite element model due to modeling of the interactions between structure and muscle deformations. Additionally, we demonstrated the importance of rigorously estimating input parameters (muscle insertion areas) and of properly evaluating the bio-fidelity of the models developed before using them in clinical contexts. New data was acquired regarding muscle deformations and pennation angles to evaluate models integrating muscle activation.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F25297&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=G%C3%A9nie+biom%C3%A9dical&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/25297/Hoffmann_Marion_2020_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25297/Hoffmann_Marion_2020_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Hoffmann_Marion_2020_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/25297/Hoffmann_Marion_2020_these.pdf?sequence=2&amp;isAllowed=y">Hoffmann_Marion_2020_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">11.17Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25297">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

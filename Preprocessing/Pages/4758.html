@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Optimization and validation of a new 3D-US imaging robot to detect, localize and quantify lower limb arterial stenoses</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Cloutier, Guy" name="DC.contributor">
+<meta content="Soulez, Gilles" name="DC.contributor">
+<meta content="Janvier, Marie-Ange" name="DC.creator">
+<meta content="2011-03-17T16:01:03Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2011-03-17T16:01:03Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2011-02-03" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2010-10" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/4758" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Système d’échographie 3D" name="DC.subject" xml:lang="en"/>
+<meta content="Sténoses" name="DC.subject" xml:lang="en"/>
+<meta content="Calibration" name="DC.subject" xml:lang="en"/>
+<meta content="Robotique médicale" name="DC.subject" xml:lang="en"/>
+<meta content="Fantôme de calibration" name="DC.subject" xml:lang="en"/>
+<meta content="Maladies artérielles périphériques" name="DC.subject" xml:lang="en"/>
+<meta content="Fantômes vasculaires" name="DC.subject" xml:lang="en"/>
+<meta content="Athérosclérose" name="DC.subject" xml:lang="en"/>
+<meta content="3D-US system" name="DC.subject" xml:lang="en"/>
+<meta content="Stenoses" name="DC.subject" xml:lang="en"/>
+<meta content="Calibration" name="DC.subject" xml:lang="en"/>
+<meta content="Medical robotics" name="DC.subject" xml:lang="en"/>
+<meta content="Calibration phantom" name="DC.subject" xml:lang="en"/>
+<meta content="Peripheral arterial diseases" name="DC.subject" xml:lang="en"/>
+<meta content="Vascular phantom" name="DC.subject" xml:lang="en"/>
+<meta content="Atherosclerosis" name="DC.subject" xml:lang="en"/>
+<meta content="Engineering - Biomedical / Ingénierie - Biomédicale (UMI : 0541)" name="DC.subject" xml:lang="en"/>
+<meta content="Optimization and validation of a new 3D-US imaging robot to detect, localize and quantify lower limb arterial stenoses" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="L’athérosclérose est une maladie qui cause, par l’accumulation de plaques lipidiques, le durcissement de la paroi des artères et le rétrécissement de la lumière. Ces lésions sont généralement localisées sur les segments artériels coronariens, carotidiens, aortiques, rénaux, digestifs et périphériques. En ce qui concerne l’atteinte périphérique, celle des membres inférieurs est particulièrement fréquente. En effet, la sévérité de ces lésions artérielles est souvent évaluée par le degré d’une sténose (réduction &gt;50 % du diamètre de la lumière) en angiographie, imagerie par résonnance magnétique (IRM), tomodensitométrie ou échographie. Cependant, pour planifier une intervention chirurgicale, une représentation géométrique artérielle 3D est notamment préférable. Les méthodes d’imagerie par coupe (IRM et tomodensitométrie) sont très performantes pour générer une imagerie tridimensionnelle de bonne qualité mais leurs utilisations sont dispendieuses et invasives pour les patients. 
+L’échographie 3D peut constituer une avenue très prometteuse en imagerie pour la localisation et la quantification des sténoses. Cette modalité d’imagerie offre des avantages distincts tels la commodité, des coûts peu élevés pour un diagnostic non invasif (sans irradiation ni agent de contraste néphrotoxique) et aussi l’option d’analyse en Doppler pour quantifier le flux sanguin. Étant donné que les robots médicaux ont déjà été utilisés avec succès en chirurgie et en orthopédie, notre équipe a conçu un nouveau système robotique d’échographie 3D pour détecter et quantifier les sténoses des membres inférieurs. Avec cette nouvelle technologie, un radiologue fait l’apprentissage manuel au robot d’un balayage échographique du vaisseau concerné. Par la suite, le robot répète à très haute précision la trajectoire apprise, contrôle simultanément le processus d’acquisition d’images échographiques à un pas d’échantillonnage constant et conserve de façon sécuritaire la force appliquée par la sonde sur la peau du patient. Par conséquent, la reconstruction d’une géométrie artérielle 3D des membres inférieurs à partir de ce système pourrait permettre une localisation et une quantification des sténoses à très grande fiabilité. L’objectif de ce projet de recherche consistait donc à valider et optimiser ce système robotisé d’imagerie échographique 3D.
+La fiabilité d’une géométrie reconstruite en 3D à partir d’un système référentiel robotique dépend beaucoup de la précision du positionnement et de la procédure de calibration. De ce fait, la précision pour le positionnement du bras robotique fut évaluée à travers son espace de travail avec un fantôme spécialement conçu pour simuler la configuration des artères des membres inférieurs (article 1 - chapitre 3). De plus, un fantôme de fils croisés en forme de Z a été conçu pour assurer une calibration précise du système robotique (article 2 - chapitre 4). Ces méthodes optimales ont été utilisées pour valider le système pour l’application clinique et trouver la transformation qui convertit les coordonnées de l’image échographique 2D dans le référentiel cartésien du bras robotisé. À partir de ces résultats, tout objet balayé par le système robotique peut être caractérisé pour une reconstruction 3D adéquate.
+Des fantômes vasculaires compatibles avec plusieurs modalités d’imagerie ont été utilisés pour simuler différentes représentations artérielles des membres inférieurs (article 2 - chapitre 4, article 3 - chapitre 5). La validation des géométries reconstruites a été effectuée à l`aide d`analyses comparatives. La précision pour localiser et quantifier les sténoses avec ce système robotisé d’imagerie échographique 3D a aussi été déterminée. Ces évaluations ont été réalisées in vivo pour percevoir le potentiel de l’utilisation d’un tel système en clinique (article 3- chapitre 5)." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="Atherosclerosis is a disease caused by the accumulation of lipid deposits inducing the remodeling and hardening of the vessel wall, which leads to a progressive narrowing of arteries. These lesions are generally located on the coronary, carotid, aortic, renal, digestive and peripheral arteries. With regards to peripheral vessels, lower limb arteries are frequently affected. The severity of arterial lesions are evaluated by the stenosis degree (reduction &gt; 50.0 % of the lumen diameter) using angiography, magnetic resonance angiography (MRA), computed tomography (CT) and ultrasound (US). However, to plan a surgical therapeutic intervention, a 3D arterial geometric representation is notably preferable. Imaging methods such as MRA and CT are very efficient to generate a three-dimensional imaging of good quality even though their use is expensive and invasive for patients. 
+3D-ultrasound can be perceived as a promising avenue in imaging for the location and the quantification of stenoses. This non invasive, non allergic (i.e, nephrotoxic contrast agent) and non-radioactive imaging modality offers distinct advantages in convenience, low cost and also multiple diagnostic options to quantify blood flow in Doppler. Since medical robots already have been used with success in surgery and orthopedics, our team has conceived a new medical 3D-US robotic imaging system to localize and quantify arterial stenoses in lower limb vessels. With this new technology, a clinician manually teaches the robotic arm the scanning path. Then, the robotic arm repeats with high precision the taught trajectory and controls simultaneously the ultrasound image acquisition process at even sampling and preserves safely the force applied by the US probe. Consequently, the reconstruction of a lower limb arterial geometry in 3D with this system could allow the location and quantification of stenoses with high accuracy. The objective of this research project consisted in validating and optimizing this 3D-ultrasound imaging robotic system.
+The reliability of a 3D reconstructed geometry obtained with 2D-US images captured with a robotic system depends considerably on the positioning accuracy and the calibration procedure. Thus, the positioning accuracy of the robotic arm was evaluated in the workspace with a lower limb-mimicking phantom design (article 1 - chapter 3). In addition, a Z-phantom was designed to assure a precise calibration of the robotic system. These optimal methods were used to validate the system for the clinical application and to find the transformation which converts image coordinates of a 2D-ultrasound image into the robotic arm referential. From these results, all objects scanned by the robotic system can be adequately reconstructed in 3D.
+Multimodal imaging vascular phantoms of lower limb arteries were used to evaluate the accuracy of the 3D representations (article 2 - chapter 4, article 3 - chapter 5). The validation of the reconstructed geometry with this system was performed by comparing surface points with the manufacturing vascular phantom file surface points. The accuracy to localize and quantify stenoses with the 3D-ultrasound robotic imaging system was also determined. These same evaluations were analyzed in vivo to perceive the feasibility of the study." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Système d’échographie 3D; Sténoses; Calibration; Robotique médicale; Fantôme de calibration; Maladies artérielles périphériques; Fantômes vasculaires; Athérosclérose; 3D-US system; Stenoses; Calibration; Medical robotics; Calibration phantom; Peripheral arterial diseases; Vascular phantom; Atherosclerosis; Engineering - Biomedical / Ingénierie - Biomédicale (UMI : 0541); Thèse ou mémoire / Thesis or Dissertation; Génie biomédical" name="citation_keywords"/>
+<meta content="Optimization and validation of a new 3D-US imaging robot to detect, localize and quantify lower limb arterial stenoses" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Janvier, Marie-Ange" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/4758/4/Janvier_Marie-Ange_2010_these.pdf" name="citation_pdf_url"/>
+<meta content="2011-02-03" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/4758" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4758?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4758?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4758?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4758?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4758?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4758?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/4758/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/4758">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/4758/mets.xml-->
+<h2 class="page-header first-page-header">Optimization and validation of a new 3D-US imaging robot to detect, localize and quantify lower limb arterial stenoses</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Cloutier, Guy</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Soulez, Gilles</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Janvier, Marie-Ange</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2011-03-17T16:01:03Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2011-03-17T16:01:03Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2011-02-03</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2010-10</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/4758</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Système d’échographie 3D</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Sténoses</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Calibration</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Robotique médicale</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Fantôme de calibration</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Maladies artérielles périphériques</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Fantômes vasculaires</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Athérosclérose</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">3D-US system</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Stenoses</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Calibration</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Medical robotics</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Calibration phantom</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Peripheral arterial diseases</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Vascular phantom</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Atherosclerosis</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Engineering - Biomedical / Ingénierie - Biomédicale (UMI : 0541)</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Optimization and validation of a new 3D-US imaging robot to detect, localize and quantify lower limb arterial stenoses</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Génie biomédical</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">L’athérosclérose est une maladie qui cause, par l’accumulation de plaques lipidiques, le durcissement de la paroi des artères et le rétrécissement de la lumière. Ces lésions sont généralement localisées sur les segments artériels coronariens, carotidiens, aortiques, rénaux, digestifs et périphériques. En ce qui concerne l’atteinte périphérique, celle des membres inférieurs est particulièrement fréquente. En effet, la sévérité de ces lésions artérielles est souvent évaluée par le degré d’une sténose (réduction &gt;50 % du diamètre de la lumière) en angiographie, imagerie par résonnance magnétique (IRM), tomodensitométrie ou échographie. Cependant, pour planifier une intervention chirurgicale, une représentation géométrique artérielle 3D est notamment préférable. Les méthodes d’imagerie par coupe (IRM et tomodensitométrie) sont très performantes pour générer une imagerie tridimensionnelle de bonne qualité mais leurs utilisations sont dispendieuses et invasives pour les patients. 
+L’échographie 3D peut constituer une avenue très prometteuse en imagerie pour la localisation et la quantification des sténoses. Cette modalité d’imagerie offre des avantages distincts tels la commodité, des coûts peu élevés pour un diagnostic non invasif (sans irradiation ni agent de contraste néphrotoxique) et aussi l’option d’analyse en Doppler pour quantifier le flux sanguin. Étant donné que les robots médicaux ont déjà été utilisés avec succès en chirurgie et en orthopédie, notre équipe a conçu un nouveau système robotique d’échographie 3D pour détecter et quantifier les sténoses des membres inférieurs. Avec cette nouvelle technologie, un radiologue fait l’apprentissage manuel au robot d’un balayage échographique du vaisseau concerné. Par la suite, le robot répète à très haute précision la trajectoire apprise, contrôle simultanément le processus d’acquisition d’images échographiques à un pas d’échantillonnage constant et conserve de façon sécuritaire la force appliquée par la sonde sur la peau du patient. Par conséquent, la reconstruction d’une géométrie artérielle 3D des membres inférieurs à partir de ce système pourrait permettre une localisation et une quantification des sténoses à très grande fiabilité. L’objectif de ce projet de recherche consistait donc à valider et optimiser ce système robotisé d’imagerie échographique 3D.
+La fiabilité d’une géométrie reconstruite en 3D à partir d’un système référentiel robotique dépend beaucoup de la précision du positionnement et de la procédure de calibration. De ce fait, la précision pour le positionnement du bras robotique fut évaluée à travers son espace de travail avec un fantôme spécialement conçu pour simuler la configuration des artères des membres inférieurs (article 1 - chapitre 3). De plus, un fantôme de fils croisés en forme de Z a été conçu pour assurer une calibration précise du système robotique (article 2 - chapitre 4). Ces méthodes optimales ont été utilisées pour valider le système pour l’application clinique et trouver la transformation qui convertit les coordonnées de l’image échographique 2D dans le référentiel cartésien du bras robotisé. À partir de ces résultats, tout objet balayé par le système robotique peut être caractérisé pour une reconstruction 3D adéquate.
+Des fantômes vasculaires compatibles avec plusieurs modalités d’imagerie ont été utilisés pour simuler différentes représentations artérielles des membres inférieurs (article 2 - chapitre 4, article 3 - chapitre 5). La validation des géométries reconstruites a été effectuée à l`aide d`analyses comparatives. La précision pour localiser et quantifier les sténoses avec ce système robotisé d’imagerie échographique 3D a aussi été déterminée. Ces évaluations ont été réalisées in vivo pour percevoir le potentiel de l’utilisation d’un tel système en clinique (article 3- chapitre 5).</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Atherosclerosis is a disease caused by the accumulation of lipid deposits inducing the remodeling and hardening of the vessel wall, which leads to a progressive narrowing of arteries. These lesions are generally located on the coronary, carotid, aortic, renal, digestive and peripheral arteries. With regards to peripheral vessels, lower limb arteries are frequently affected. The severity of arterial lesions are evaluated by the stenosis degree (reduction &gt; 50.0 % of the lumen diameter) using angiography, magnetic resonance angiography (MRA), computed tomography (CT) and ultrasound (US). However, to plan a surgical therapeutic intervention, a 3D arterial geometric representation is notably preferable. Imaging methods such as MRA and CT are very efficient to generate a three-dimensional imaging of good quality even though their use is expensive and invasive for patients. 
+3D-ultrasound can be perceived as a promising avenue in imaging for the location and the quantification of stenoses. This non invasive, non allergic (i.e, nephrotoxic contrast agent) and non-radioactive imaging modality offers distinct advantages in convenience, low cost and also multiple diagnostic options to quantify blood flow in Doppler. Since medical robots already have been used with success in surgery and orthopedics, our team has conceived a new medical 3D-US robotic imaging system to localize and quantify arterial stenoses in lower limb vessels. With this new technology, a clinician manually teaches the robotic arm the scanning path. Then, the robotic arm repeats with high precision the taught trajectory and controls simultaneously the ultrasound image acquisition process at even sampling and preserves safely the force applied by the US probe. Consequently, the reconstruction of a lower limb arterial geometry in 3D with this system could allow the location and quantification of stenoses with high accuracy. The objective of this research project consisted in validating and optimizing this 3D-ultrasound imaging robotic system.
+The reliability of a 3D reconstructed geometry obtained with 2D-US images captured with a robotic system depends considerably on the positioning accuracy and the calibration procedure. Thus, the positioning accuracy of the robotic arm was evaluated in the workspace with a lower limb-mimicking phantom design (article 1 - chapter 3). In addition, a Z-phantom was designed to assure a precise calibration of the robotic system. These optimal methods were used to validate the system for the clinical application and to find the transformation which converts image coordinates of a 2D-ultrasound image into the robotic arm referential. From these results, all objects scanned by the robotic system can be adequately reconstructed in 3D.
+Multimodal imaging vascular phantoms of lower limb arteries were used to evaluate the accuracy of the 3D representations (article 2 - chapter 4, article 3 - chapter 5). The validation of the reconstructed geometry with this system was performed by comparing surface points with the manufacturing vascular phantom file surface points. The accuracy to localize and quantify stenoses with the 3D-ultrasound robotic imaging system was also determined. These same evaluations were analyzed in vivo to perceive the feasibility of the study.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F4758&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=G%C3%A9nie+biom%C3%A9dical&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/4758/Janvier_Marie-Ange_2010_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/4758/Janvier_Marie-Ange_2010_these.pdf.jpg?sequence=8&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Janvier_Marie-Ange_2010_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/4758/Janvier_Marie-Ange_2010_these.pdf?sequence=4&amp;isAllowed=y">Janvier_Marie-Ange_2010_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">15.67Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/4758">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

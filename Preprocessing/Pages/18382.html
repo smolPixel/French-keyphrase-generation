@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Sur les tests de type diagnostic dans la validation des hypothèses de bruit blanc et de non corrélation</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Duchesne, Pierre" name="DC.contributor">
+<meta content="Sango, Joel" name="DC.creator">
+<meta content="2017-04-13T14:09:47Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2017-04-13T14:09:47Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2017-03-28" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2016-09" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/18382" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Modèles périodiques" name="DC.subject" xml:lang="fr"/>
+<meta content="Estimation de plein rang" name="DC.subject" xml:lang="fr"/>
+<meta content="Estimation de rang réduit" name="DC.subject" xml:lang="fr"/>
+<meta content="Statistiques portemanteaux" name="DC.subject" xml:lang="fr"/>
+<meta content="Faible dépendance" name="DC.subject" xml:lang="fr"/>
+<meta content="Stabilité" name="DC.subject" xml:lang="fr"/>
+<meta content="Contraction géométrique des moments" name="DC.subject" xml:lang="fr"/>
+<meta content="Modèles vectoriels à erreurs multiplicatives" name="DC.subject" xml:lang="fr"/>
+<meta content="Moyenne conditionnelle" name="DC.subject" xml:lang="fr"/>
+<meta content="Periodic models" name="DC.subject" xml:lang="fr"/>
+<meta content="Full rank estimation" name="DC.subject" xml:lang="fr"/>
+<meta content="Reduced rank estimation" name="DC.subject" xml:lang="fr"/>
+<meta content="Portmanteau test statistics" name="DC.subject" xml:lang="fr"/>
+<meta content="Weak dependence" name="DC.subject" xml:lang="fr"/>
+<meta content="Stability" name="DC.subject" xml:lang="fr"/>
+<meta content="Geometric moment contraction" name="DC.subject" xml:lang="fr"/>
+<meta content="Vector multiplicative error model" name="DC.subject" xml:lang="fr"/>
+<meta content="Conditional mean" name="DC.subject" xml:lang="fr"/>
+<meta content="Physical Sciences - Statistics / Sciences physiques - Statistiques (UMI : 0463)" name="DC.subject" xml:lang="fr"/>
+<meta content="Sur les tests de type diagnostic dans la validation des hypothèses de bruit blanc et de non corrélation" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Dans la modélisation statistique, nous sommes le plus souvent amené à supposer que le phénomène étudié est généré par une structure pouvant s’ajuster aux données observées. Cette structure fait apparaître une partie principale qui représente le mieux possible le phénomène étudié et qui devrait expliquer les données et une partie supposée négligeable appelée erreur ou innovation. Cette structure complexe est communément appelée un modèle, dont la forme peut être plus ou moins complexe. Afin de simplifier la structure, il est souvent supposé qu’elle repose sur un nombre fini de valeurs, appelées paramètres. Basé sur les données, ces paramètres sont estimés avec ce que l’on appelle des estimateurs. La qualité du modèle pour les données à notre disposition est également fonction des estimateurs et de leurs propriétés, par exemple, est-ce que les estimateurs sont raisonnablement proches des valeurs idéales, c’est-à-dire les vraies valeurs. Des questions d’importance portent sur la qualité de l’ajustement d’un modèle aux données, ce qui se fait par l’étude des propriétés probabilistes et statistiques du terme d’erreur. Aussi, l’étude des relations ou l’absence de ces dernières entre les phénomènes sous des hypothèses complexes sont aussi d’intérêt. Des approches possibles pour cerner ce genre de questions consistent dans l’utilisation des tests portemanteaux, dits également tests de diagnostic.
+La thèse est présentée sous forme de trois projets. Le premier projet est rédigé en langue anglaise. Il s’agit en fait d’un article actuellement soumis dans une revue avec comité de lecture. Dans ce projet, nous étudions le modèle vectoriel à erreurs multiplicatives (vMEM) pour lequel nous utilisons les propriétés des estimateurs des paramètres du modèle selon la méthode  des moments généralisés (GMM) afin d’établir la distribution asymptotique des autocovariances résiduelles. Ceci nous permet de proposer des nouveaux tests diagnostiques pour ce type de modèle. Sous l’hypothèse nulle  d’adéquation du modèle, nous montrons que la statistique usuelle de Hosking-Ljung-Box converge vers une somme pondérée de lois de khi-carré indépendantes à un degré de liberté. Un test généralisé de Hosking-Ljung-Box est aussi obtenu en comparant la densité spectrale des résidus de l’estimation et celle présumée sous l’hypothèse
+nulle. Un avantage des tests spectraux est qu’ils nécessitent des estimateurs qui convergent à la vitesse n−1/2 où n est la taille de l’échantillon, et leur utilisation n’est pas restreinte à une technique particulière, comme par exemple la méthode
+des moments généralisés. Dans le deuxième projet, nous établissons la distribution asymptotique sous l’hypothèse de faible dépendance des covariances croisées de deux processus stationnaires  en covariance. La faible dépendance ici est définie en terme de l’effet limité d’une observation donnée sur les observations futures. Nous utilisons la notion de stabilité et le concept de contraction géométrique des moments. Ces conditions sont plus générales que celles de l’invariance des moments conditionnels d’ordre un à quatre utilisée jusque là par plusieurs auteurs. Un test statistique
+basé sur les covariances croisées et la matrice des variances et covariances de leur distribution asymptotique est alors proposé et sa distribution asymptotique établie. Dans l’implémentation du test, la matrice des variances et covariances des covariances croisées est estimée à l’aide d’une procédure autorégressive vectorielle robuste à l’autocorrélation et à l’hétéroscédasticité. Des simulations sont ensuite effectuées pour étudier les propriétés du test proposé. Dans le troisième projet, nous considérons un modèle périodique multivarié et cointégré. La présence de cointégration entraîne l’existence de combinaisons linéaires périodiquement stationnaires des composantes du processus étudié. Le nombre de ces combinaisons linéaires linéairement indépendantes est appelé rang de cointégration. Une méthode d’estimation en deux étapes est considérée. La première méthode est appelée estimation de plein rang. Dans cette approche, le
+rang de cointégration est ignoré. La seconde méthode est appelée estimation de rang réduit. Elle tient compte du rang de cointégration. Cette dernière est une approche non linéaire basée sur des itérations dont la valeur initiale est l’estimateur
+de plein rang. Les propriétés asymptotiques de ces estimateurs sont aussi établies. Afin de vérifier l’adéquation du modèle, des statistiques de test de type portemanteau sont considérées et leurs distributions asymptotiques sont étudiées. Des simulations sont par la suite présentées afin d’illustrer le comportement du test proposé." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="In statistical modeling, we assume that the phenomenon of interest is generated by a model that can be fitted to the observed data. The part of the phenomenon not explained by the model is called error or innovation. There are two parts in the model. The main part is supposed to explain the observed data, while the unexplained part which is supposed to be negligible is also called error or innovation. In order to simplify the structures, the model are often assumed to rely on a finite set of parameters. The quality of a model depends also on the parameter estimators and their properties. For example, are the estimators relatively close to the true parameters ? Some questions also address the goodness-of-fit of
+the model to the observed data. This question is answered by studying the statistical and probabilistic properties of the innovations. On the other hand, it is also of interest to evaluate the presence or the absence of relationships between the
+observed data. Portmanteau or diagnostic type tests are useful to address such issue. The thesis is presented in the form of three projects. The first project is written in English as a scientific paper. It was recently submitted for publication. In that project, we study the class of vector multiplicative error models (vMEM). We use the properties of the Generalized Method of Moments to derive the asymptotic distribution of sample autocovariance function. This allows us to propose a new test statistic. Under the null hypothesis of adequacy, the asymptotic distributions of the popular Hosking-Ljung-Box (HLB) test
+statistics are found to converge in distribution to weighted sums of independent chi-squared random variables. A generalized HLB test statistic is motivated by comparing a vector spectral density estimator of the residuals with the spectral density calculated under the null hypothesis. In the second project, we derive the asymptotic distribution under weak dependence of cross covariances of covariance stationary processes. The weak dependence is defined in term of the limited effect of a given information on future observations. This recalls the notion of stability and geometric moment contraction. These conditions of weak dependence defined here are more general than the invariance of conditional moments used by many authors. A test statistic based on cross covariances is proposed and its asymptotic distribution is established. In the elaboration of the test statistics, the covariance matrix of the cross covariances is obtained from a vector autoregressive procedure robust to autocorrelation and heteroskedasticity. Simulations are also carried on to study the properties of the proposed test and also to compare it to existing tests. In the third project, we consider a cointegrated periodic model. Periodic models are present in the domain of meteorology, hydrology and economics. When modelling many processes, it can happen that the processes are just driven by a common trend. This situation leads to spurious regressions when the series are integrated but have some linear combinations that are stationary. This is called cointegration. The number of stationary linear combinations that are linearly independent is called cointegration rank. So, to model the real relationship between the processes, it is necessary to take into account the cointegration rank. In the
+presence of periodic time series, it is called periodic cointegration. It occurs when time series are periodically integrated but have some linear combinations that are periodically stationary. A two step estimation method is considered. The first
+step is the full rank estimation method that ignores the cointegration rank. It provides initial estimators to the second step estimation which is the reduced rank estimation. It is non linear and iterative. Asymptotic properties of the estimators
+are also established. In order to check for model adequacy, portmanteau type tests and their asymptotic distributions are also derived and their asymptotic distribution are studied. Simulation results are also presented to show the behaviour of the proposed test." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Modèles périodiques; Estimation de plein rang; Estimation de rang réduit; Statistiques portemanteaux; Faible dépendance; Stabilité; Contraction géométrique des moments; Modèles vectoriels à erreurs multiplicatives; Moyenne conditionnelle; Periodic models; Full rank estimation; Reduced rank estimation; Portmanteau test statistics; Weak dependence; Stability; Geometric moment contraction; Vector multiplicative error model; Conditional mean; Physical Sciences - Statistics / Sciences physiques - Statistiques (UMI : 0463); Thèse ou mémoire / Thesis or Dissertation; Statistique" name="citation_keywords"/>
+<meta content="Sur les tests de type diagnostic dans la validation des hypothèses de bruit blanc et de non corrélation" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Sango, Joel" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/18382/2/Sango_Joel_2016_these.pdf" name="citation_pdf_url"/>
+<meta content="2017-03-28" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/18382" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/18382?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/18382?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/18382?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/18382?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/18382?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/18382?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2949" role="menuitem">Faculté des arts et des sciences – Département de mathématiques et de statistique</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2988" role="menuitem">Faculté des arts et des sciences – Département de mathématiques et de statistique – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2949">Faculté des arts et des sciences – Département de mathématiques et de statistique</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2988">Faculté des arts et des sciences – Département de mathématiques et de statistique – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2988"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/18382/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/18382">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/18382/mets.xml-->
+<h2 class="page-header first-page-header">Sur les tests de type diagnostic dans la validation des hypothèses de bruit blanc et de non corrélation</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Duchesne, Pierre</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Sango, Joel</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2017-04-13T14:09:47Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2017-04-13T14:09:47Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2017-03-28</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2016-09</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/18382</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Modèles périodiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Estimation de plein rang</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Estimation de rang réduit</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Statistiques portemanteaux</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Faible dépendance</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Stabilité</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Contraction géométrique des moments</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Modèles vectoriels à erreurs multiplicatives</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Moyenne conditionnelle</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Periodic models</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Full rank estimation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Reduced rank estimation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Portmanteau test statistics</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Weak dependence</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Stability</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Geometric moment contraction</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Vector multiplicative error model</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Conditional mean</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Physical Sciences - Statistics / Sciences physiques - Statistiques (UMI : 0463)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Sur les tests de type diagnostic dans la validation des hypothèses de bruit blanc et de non corrélation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Statistique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Dans la modélisation statistique, nous sommes le plus souvent amené à supposer que le phénomène étudié est généré par une structure pouvant s’ajuster aux données observées. Cette structure fait apparaître une partie principale qui représente le mieux possible le phénomène étudié et qui devrait expliquer les données et une partie supposée négligeable appelée erreur ou innovation. Cette structure complexe est communément appelée un modèle, dont la forme peut être plus ou moins complexe. Afin de simplifier la structure, il est souvent supposé qu’elle repose sur un nombre fini de valeurs, appelées paramètres. Basé sur les données, ces paramètres sont estimés avec ce que l’on appelle des estimateurs. La qualité du modèle pour les données à notre disposition est également fonction des estimateurs et de leurs propriétés, par exemple, est-ce que les estimateurs sont raisonnablement proches des valeurs idéales, c’est-à-dire les vraies valeurs. Des questions d’importance portent sur la qualité de l’ajustement d’un modèle aux données, ce qui se fait par l’étude des propriétés probabilistes et statistiques du terme d’erreur. Aussi, l’étude des relations ou l’absence de ces dernières entre les phénomènes sous des hypothèses complexes sont aussi d’intérêt. Des approches possibles pour cerner ce genre de questions consistent dans l’utilisation des tests portemanteaux, dits également tests de diagnostic.
+La thèse est présentée sous forme de trois projets. Le premier projet est rédigé en langue anglaise. Il s’agit en fait d’un article actuellement soumis dans une revue avec comité de lecture. Dans ce projet, nous étudions le modèle vectoriel à erreurs multiplicatives (vMEM) pour lequel nous utilisons les propriétés des estimateurs des paramètres du modèle selon la méthode  des moments généralisés (GMM) afin d’établir la distribution asymptotique des autocovariances résiduelles. Ceci nous permet de proposer des nouveaux tests diagnostiques pour ce type de modèle. Sous l’hypothèse nulle  d’adéquation du modèle, nous montrons que la statistique usuelle de Hosking-Ljung-Box converge vers une somme pondérée de lois de khi-carré indépendantes à un degré de liberté. Un test généralisé de Hosking-Ljung-Box est aussi obtenu en comparant la densité spectrale des résidus de l’estimation et celle présumée sous l’hypothèse
+nulle. Un avantage des tests spectraux est qu’ils nécessitent des estimateurs qui convergent à la vitesse n−1/2 où n est la taille de l’échantillon, et leur utilisation n’est pas restreinte à une technique particulière, comme par exemple la méthode
+des moments généralisés. Dans le deuxième projet, nous établissons la distribution asymptotique sous l’hypothèse de faible dépendance des covariances croisées de deux processus stationnaires  en covariance. La faible dépendance ici est définie en terme de l’effet limité d’une observation donnée sur les observations futures. Nous utilisons la notion de stabilité et le concept de contraction géométrique des moments. Ces conditions sont plus générales que celles de l’invariance des moments conditionnels d’ordre un à quatre utilisée jusque là par plusieurs auteurs. Un test statistique
+basé sur les covariances croisées et la matrice des variances et covariances de leur distribution asymptotique est alors proposé et sa distribution asymptotique établie. Dans l’implémentation du test, la matrice des variances et covariances des covariances croisées est estimée à l’aide d’une procédure autorégressive vectorielle robuste à l’autocorrélation et à l’hétéroscédasticité. Des simulations sont ensuite effectuées pour étudier les propriétés du test proposé. Dans le troisième projet, nous considérons un modèle périodique multivarié et cointégré. La présence de cointégration entraîne l’existence de combinaisons linéaires périodiquement stationnaires des composantes du processus étudié. Le nombre de ces combinaisons linéaires linéairement indépendantes est appelé rang de cointégration. Une méthode d’estimation en deux étapes est considérée. La première méthode est appelée estimation de plein rang. Dans cette approche, le
+rang de cointégration est ignoré. La seconde méthode est appelée estimation de rang réduit. Elle tient compte du rang de cointégration. Cette dernière est une approche non linéaire basée sur des itérations dont la valeur initiale est l’estimateur
+de plein rang. Les propriétés asymptotiques de ces estimateurs sont aussi établies. Afin de vérifier l’adéquation du modèle, des statistiques de test de type portemanteau sont considérées et leurs distributions asymptotiques sont étudiées. Des simulations sont par la suite présentées afin d’illustrer le comportement du test proposé.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">In statistical modeling, we assume that the phenomenon of interest is generated by a model that can be fitted to the observed data. The part of the phenomenon not explained by the model is called error or innovation. There are two parts in the model. The main part is supposed to explain the observed data, while the unexplained part which is supposed to be negligible is also called error or innovation. In order to simplify the structures, the model are often assumed to rely on a finite set of parameters. The quality of a model depends also on the parameter estimators and their properties. For example, are the estimators relatively close to the true parameters ? Some questions also address the goodness-of-fit of
+the model to the observed data. This question is answered by studying the statistical and probabilistic properties of the innovations. On the other hand, it is also of interest to evaluate the presence or the absence of relationships between the
+observed data. Portmanteau or diagnostic type tests are useful to address such issue. The thesis is presented in the form of three projects. The first project is written in English as a scientific paper. It was recently submitted for publication. In that project, we study the class of vector multiplicative error models (vMEM). We use the properties of the Generalized Method of Moments to derive the asymptotic distribution of sample autocovariance function. This allows us to propose a new test statistic. Under the null hypothesis of adequacy, the asymptotic distributions of the popular Hosking-Ljung-Box (HLB) test
+statistics are found to converge in distribution to weighted sums of independent chi-squared random variables. A generalized HLB test statistic is motivated by comparing a vector spectral density estimator of the residuals with the spectral density calculated under the null hypothesis. In the second project, we derive the asymptotic distribution under weak dependence of cross covariances of covariance stationary processes. The weak dependence is defined in term of the limited effect of a given information on future observations. This recalls the notion of stability and geometric moment contraction. These conditions of weak dependence defined here are more general than the invariance of conditional moments used by many authors. A test statistic based on cross covariances is proposed and its asymptotic distribution is established. In the elaboration of the test statistics, the covariance matrix of the cross covariances is obtained from a vector autoregressive procedure robust to autocorrelation and heteroskedasticity. Simulations are also carried on to study the properties of the proposed test and also to compare it to existing tests. In the third project, we consider a cointegrated periodic model. Periodic models are present in the domain of meteorology, hydrology and economics. When modelling many processes, it can happen that the processes are just driven by a common trend. This situation leads to spurious regressions when the series are integrated but have some linear combinations that are stationary. This is called cointegration. The number of stationary linear combinations that are linearly independent is called cointegration rank. So, to model the real relationship between the processes, it is necessary to take into account the cointegration rank. In the
+presence of periodic time series, it is called periodic cointegration. It occurs when time series are periodically integrated but have some linear combinations that are periodically stationary. A two step estimation method is considered. The first
+step is the full rank estimation method that ignores the cointegration rank. It provides initial estimators to the second step estimation which is the reduced rank estimation. It is non linear and iterative. Asymptotic properties of the estimators
+are also established. In order to check for model adequacy, portmanteau type tests and their asymptotic distributions are also derived and their asymptotic distribution are studied. Simulation results are also presented to show the behaviour of the proposed test.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F18382&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Statistique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/18382/Sango_Joel_2016_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/18382/Sango_Joel_2016_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Sango_Joel_2016_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/18382/Sango_Joel_2016_these.pdf?sequence=2&amp;isAllowed=y">Sango_Joel_2016_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">14.87Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2988/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2988">Faculté des arts et des sciences – Département de mathématiques et de statistique – Thèses et mémoires</a> [391]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/18382">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Essais en microéconomie appliquée</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Gordon, Sidartha" name="DC.contributor">
+<meta content="Santugini, Marc" name="DC.contributor">
+<meta content="Agbo, Maxime" name="DC.creator">
+<meta content="2012-11-19T15:39:41Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2012-11-19T15:39:41Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2012-10-11" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2012-05" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/8726" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Incertitude" name="DC.subject" xml:lang="en"/>
+<meta content="Learning" name="DC.subject" xml:lang="en"/>
+<meta content="Ressources naturelles" name="DC.subject" xml:lang="en"/>
+<meta content="Croyances" name="DC.subject" xml:lang="en"/>
+<meta content="Bandit problems" name="DC.subject" xml:lang="en"/>
+<meta content="Chercheur" name="DC.subject" xml:lang="en"/>
+<meta content="Multi-level marketing" name="DC.subject" xml:lang="en"/>
+<meta content="Distributeur" name="DC.subject" xml:lang="en"/>
+<meta content="Two-sided market" name="DC.subject" xml:lang="en"/>
+<meta content="Effet externe" name="DC.subject" xml:lang="en"/>
+<meta content="Economics - General / Économie - Généralités (UMI : 0501)" name="DC.subject" xml:lang="en"/>
+<meta content="Essais en microéconomie appliquée" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content='La thèse comporte trois essais en microéconomie appliquée. En utilisant des modèles
+d’apprentissage (learning) et d’externalité de réseau, elle étudie le comportement des
+agents économiques dans différentes situations. Le premier essai de la thèse se penche
+sur la question de l’utilisation des ressources naturelles en situation d’incertitude et
+d’apprentissage (learning). Plusieurs auteurs ont abordé le sujet, mais ici, nous étudions
+un modèle d’apprentissage dans lequel les agents qui consomment la ressource ne formulent
+pas les mêmes croyances a priori. Le deuxième essai aborde le problème générique
+auquel fait face, par exemple, un fonds de recherche désirant choisir les meilleurs parmi
+plusieurs chercheurs de différentes générations et de différentes expériences. Le troisième
+essai étudie un modèle particulier d’organisation d’entreprise dénommé le marketing multiniveau
+(multi-level marketing).
+Le premier chapitre est intitulé "Renewable Resource Consumption in a Learning Environment
+with Heterogeneous beliefs". Nous y avons utilisé un modèle d’apprentissage
+avec croyances hétérogènes pour étudier l’exploitation d’une ressource naturelle en situation
+d’incertitude. Il faut distinguer ici deux types d’apprentissage : le adaptive learning
+et le learning proprement dit. Ces deux termes ont été empruntés à Koulovatianos et al
+(2009). Nous avons montré que, en comparaison avec le adaptive learning, le learning a un
+impact négatif sur la consommation totale par tous les exploitants de la ressource. Mais
+individuellement certains exploitants peuvent consommer plus la ressource en learning
+qu’en adaptive learning. En effet, en learning, les consommateurs font face à deux types
+d’incitations à ne pas consommer la ressource (et donc à investir) : l’incitation propre qui
+a toujours un effet négatif sur la consommation de la ressource et l’incitation hétérogène
+dont l’effet peut être positif ou négatif. L’effet global du learning sur la consommation
+individuelle dépend donc du signe et de l’ampleur de l’incitation hétérogène. Par ailleurs,
+en utilisant les variations absolues et relatives de la consommation suite à un changement
+des croyances, il ressort que les exploitants ont tendance à converger vers une décision
+commune.
+Le second chapitre est intitulé "A Perpetual Search for Talent across Overlapping
+Generations". Avec un modèle dynamique à générations imbriquées, nous avons étudié
+iv
+comment un Fonds de recherche devra procéder pour sélectionner les meilleurs chercheurs
+à financer. Les chercheurs n’ont pas la même "ancienneté" dans l’activité de recherche.
+Pour une décision optimale, le Fonds de recherche doit se baser à la fois sur l’ancienneté et
+les travaux passés des chercheurs ayant soumis une demande de subvention de recherche.
+Il doit être plus favorable aux jeunes chercheurs quant aux exigences à satisfaire pour être
+financé. Ce travail est également une contribution à l’analyse des Bandit Problems. Ici, au
+lieu de tenter de calculer un indice, nous proposons de classer et d’éliminer progressivement
+les chercheurs en les comparant deux à deux.
+Le troisième chapitre est intitulé "Paradox about the Multi-Level Marketing (MLM)".
+Depuis quelques décennies, on rencontre de plus en plus une forme particulière d’entreprises
+dans lesquelles le produit est commercialisé par le biais de distributeurs. Chaque distributeur
+peut vendre le produit et/ou recruter d’autres distributeurs pour l’entreprise.
+Il réalise des profits sur ses propres ventes et reçoit aussi des commissions sur la vente
+des distributeurs qu’il aura recrutés. Il s’agit du marketing multi-niveau (multi-level marketing,
+MLM). La structure de ces types d’entreprise est souvent qualifiée par certaines
+critiques de système pyramidal, d’escroquerie et donc insoutenable. Mais les promoteurs
+des marketing multi-niveau rejettent ces allégations en avançant que le but des MLMs est
+de vendre et non de recruter. Les gains et les règles de jeu sont tels que les distributeurs
+ont plus incitation à vendre le produit qu’à recruter. Toutefois, si cette argumentation
+des promoteurs de MLMs est valide, un paradoxe apparaît. Pourquoi un distributeur qui
+désire vraiment vendre le produit et réaliser un gain recruterait-il d’autres individus qui
+viendront opérer sur le même marché que lui? Comment comprendre le fait qu’un agent
+puisse recruter des personnes qui pourraient devenir ses concurrents, alors qu’il est déjà
+établi que tout entrepreneur évite et même combat la concurrence. C’est à ce type de
+question que s’intéresse ce chapitre. Pour expliquer ce paradoxe, nous avons utilisé la
+structure intrinsèque des organisations MLM. En réalité, pour être capable de bien vendre,
+le distributeur devra recruter. Les commissions perçues avec le recrutement donnent
+un pouvoir de vente en ce sens qu’elles permettent au recruteur d’être capable de proposer
+un prix compétitif pour le produit qu’il désire vendre. Par ailleurs, les MLMs ont une
+structure semblable à celle des multi-sided markets au sens de Rochet et Tirole (2003,
+2006) et Weyl (2010). Le recrutement a un effet externe sur la vente et la vente a un effet
+externe sur le recrutement, et tout cela est géré par le promoteur de l’organisation. Ainsi,
+si le promoteur ne tient pas compte de ces externalités dans la fixation des différentes
+commissions, les agents peuvent se tourner plus ou moins vers le recrutement.' name="DCTERMS.abstract" xml:lang="en"/>
+<meta content='This thesis includes three essays in applied microeconomics. Using learning and network
+effects models, we study agents’ behavior in various environments through three chapters.
+The first chapter examines natural resource exploitation under uncertainty with learning
+and heterogeneous priors. In the second chapter, we examine the problem of research
+Foundation concerned with finding good quality researchers for today and the future.
+The third chapter studies the Multi-level marketing organizations.
+The first chapter is entitled "Renewable Resource Consumption in a Learning Environment
+with Heterogeneous beliefs". This work uses a learning model with heterogeneity
+of beliefs to study natural resources consumption under uncertainty. Following Koulovatianos
+et al (2009), we distinguish two types of learning process: adaptive learning and
+learning. I find that learning decreases the total consumption of the resource in comparison
+with adaptive learning. However, individually and under some conditions, some
+exploiters could consume more in learning than in adaptive learning. In learning, the
+exploiter faces two kinds of incentive to invest in the resource: self-incentive which is
+always positive and heterogeneity incentive which may be negative. The effect of learning
+on individual consumption depends on the sign and the extent of the heterogeneity
+incentive. Using absolute change and relative change of consumption due to a change in
+beliefs, we find that the exploiters tend to converge to a common behaviour.
+The second chapter is entitled "A perpetual Search for Talent across Overlapping Generations".
+We use a dynamic discrete time model with overlapping generations to study
+how a research Fund should optimally rank and select which researchers to give a grant.
+The optimal decision rule depends on both the perceived quality of researchers based on
+past success histories and on age. Between two researchers of equal perceived qualities
+the Fund should select the youngest. This work contributes to the understanding of the
+bandit problems sometime known to be untractable and pspace-hard. Here, instead of
+looking for an index characterization, we propose to rank or eliminate progressively the
+researchers by comparing them two by two.
+The third chapter is entitled "Paradox about the Multi-Level Marketing". Over the past
+50 years, the Multi-level Marketing (MLM) has become an important business strategy.
+vi
+MLM is a marketing method in which independent distributors of a product get profits
+not only from their own sales, but also from recruiting other distributors. According to the
+promoters of this organization, the purpose of the business and the will of the distributors
+are to sell the product and not to set up a scam. The question is the following: if the
+real intention is to sell, why does a distributor recruit other distributors who will become
+his competitors? It is well known in classical industrial organization that people avoid
+competition as well as possible. Why is it not the case in the MLM organization? We
+explain this paradox by the particular economic structure of the MLM. Distributor could
+not sell enough if he did not recruit. Recruiting provides a price leading power and allows
+to sell more and make more profit (in some respect). Moreover, the MLM is similar to
+the multi-sided market structure a la Rochet and Tirole (2003, 2006) and Weyl (2010).
+There is network effect between recruitment and selling activity. Thus, the extent of the
+paradox can also be explained by the different commissions set by the MLM promoters.' name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Incertitude; Learning; Ressources naturelles; Croyances; Bandit problems; Chercheur; Multi-level marketing; Distributeur; Two-sided market; Effet externe; Economics - General / Économie - Généralités (UMI : 0501); Thèse ou mémoire / Thesis or Dissertation; Sciences économiques" name="citation_keywords"/>
+<meta content="Essais en microéconomie appliquée" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Agbo, Maxime" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/8726/2/Agbo_Maxime_2012_these.pdf" name="citation_pdf_url"/>
+<meta content="2012-10-11" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/8726" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8726?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8726?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8726?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8726?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8726?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8726?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/149" role="menuitem">Faculté des arts et des sciences – Département de sciences économiques</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2995" role="menuitem">Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/149">Faculté des arts et des sciences – Département de sciences économiques</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2995">Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2995"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/8726/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/8726">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/8726/mets.xml-->
+<h2 class="page-header first-page-header">Essais en microéconomie appliquée</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Gordon, Sidartha</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Santugini, Marc</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Agbo, Maxime</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2012-11-19T15:39:41Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2012-11-19T15:39:41Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2012-10-11</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2012-05</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/8726</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Incertitude</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Learning</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Ressources naturelles</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Croyances</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Bandit problems</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Chercheur</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Multi-level marketing</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Distributeur</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Two-sided market</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Effet externe</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Economics - General / Économie - Généralités (UMI : 0501)</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Essais en microéconomie appliquée</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences économiques</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La thèse comporte trois essais en microéconomie appliquée. En utilisant des modèles
+d’apprentissage (learning) et d’externalité de réseau, elle étudie le comportement des
+agents économiques dans différentes situations. Le premier essai de la thèse se penche
+sur la question de l’utilisation des ressources naturelles en situation d’incertitude et
+d’apprentissage (learning). Plusieurs auteurs ont abordé le sujet, mais ici, nous étudions
+un modèle d’apprentissage dans lequel les agents qui consomment la ressource ne formulent
+pas les mêmes croyances a priori. Le deuxième essai aborde le problème générique
+auquel fait face, par exemple, un fonds de recherche désirant choisir les meilleurs parmi
+plusieurs chercheurs de différentes générations et de différentes expériences. Le troisième
+essai étudie un modèle particulier d’organisation d’entreprise dénommé le marketing multiniveau
+(multi-level marketing).
+Le premier chapitre est intitulé "Renewable Resource Consumption in a Learning Environment
+with Heterogeneous beliefs". Nous y avons utilisé un modèle d’apprentissage
+avec croyances hétérogènes pour étudier l’exploitation d’une ressource naturelle en situation
+d’incertitude. Il faut distinguer ici deux types d’apprentissage : le adaptive learning
+et le learning proprement dit. Ces deux termes ont été empruntés à Koulovatianos et al
+(2009). Nous avons montré que, en comparaison avec le adaptive learning, le learning a un
+impact négatif sur la consommation totale par tous les exploitants de la ressource. Mais
+individuellement certains exploitants peuvent consommer plus la ressource en learning
+qu’en adaptive learning. En effet, en learning, les consommateurs font face à deux types
+d’incitations à ne pas consommer la ressource (et donc à investir) : l’incitation propre qui
+a toujours un effet négatif sur la consommation de la ressource et l’incitation hétérogène
+dont l’effet peut être positif ou négatif. L’effet global du learning sur la consommation
+individuelle dépend donc du signe et de l’ampleur de l’incitation hétérogène. Par ailleurs,
+en utilisant les variations absolues et relatives de la consommation suite à un changement
+des croyances, il ressort que les exploitants ont tendance à converger vers une décision
+commune.
+Le second chapitre est intitulé "A Perpetual Search for Talent across Overlapping
+Generations". Avec un modèle dynamique à générations imbriquées, nous avons étudié
+iv
+comment un Fonds de recherche devra procéder pour sélectionner les meilleurs chercheurs
+à financer. Les chercheurs n’ont pas la même "ancienneté" dans l’activité de recherche.
+Pour une décision optimale, le Fonds de recherche doit se baser à la fois sur l’ancienneté et
+les travaux passés des chercheurs ayant soumis une demande de subvention de recherche.
+Il doit être plus favorable aux jeunes chercheurs quant aux exigences à satisfaire pour être
+financé. Ce travail est également une contribution à l’analyse des Bandit Problems. Ici, au
+lieu de tenter de calculer un indice, nous proposons de classer et d’éliminer progressivement
+les chercheurs en les comparant deux à deux.
+Le troisième chapitre est intitulé "Paradox about the Multi-Level Marketing (MLM)".
+Depuis quelques décennies, on rencontre de plus en plus une forme particulière d’entreprises
+dans lesquelles le produit est commercialisé par le biais de distributeurs. Chaque distributeur
+peut vendre le produit et/ou recruter d’autres distributeurs pour l’entreprise.
+Il réalise des profits sur ses propres ventes et reçoit aussi des commissions sur la vente
+des distributeurs qu’il aura recrutés. Il s’agit du marketing multi-niveau (multi-level marketing,
+MLM). La structure de ces types d’entreprise est souvent qualifiée par certaines
+critiques de système pyramidal, d’escroquerie et donc insoutenable. Mais les promoteurs
+des marketing multi-niveau rejettent ces allégations en avançant que le but des MLMs est
+de vendre et non de recruter. Les gains et les règles de jeu sont tels que les distributeurs
+ont plus incitation à vendre le produit qu’à recruter. Toutefois, si cette argumentation
+des promoteurs de MLMs est valide, un paradoxe apparaît. Pourquoi un distributeur qui
+désire vraiment vendre le produit et réaliser un gain recruterait-il d’autres individus qui
+viendront opérer sur le même marché que lui? Comment comprendre le fait qu’un agent
+puisse recruter des personnes qui pourraient devenir ses concurrents, alors qu’il est déjà
+établi que tout entrepreneur évite et même combat la concurrence. C’est à ce type de
+question que s’intéresse ce chapitre. Pour expliquer ce paradoxe, nous avons utilisé la
+structure intrinsèque des organisations MLM. En réalité, pour être capable de bien vendre,
+le distributeur devra recruter. Les commissions perçues avec le recrutement donnent
+un pouvoir de vente en ce sens qu’elles permettent au recruteur d’être capable de proposer
+un prix compétitif pour le produit qu’il désire vendre. Par ailleurs, les MLMs ont une
+structure semblable à celle des multi-sided markets au sens de Rochet et Tirole (2003,
+2006) et Weyl (2010). Le recrutement a un effet externe sur la vente et la vente a un effet
+externe sur le recrutement, et tout cela est géré par le promoteur de l’organisation. Ainsi,
+si le promoteur ne tient pas compte de ces externalités dans la fixation des différentes
+commissions, les agents peuvent se tourner plus ou moins vers le recrutement.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">This thesis includes three essays in applied microeconomics. Using learning and network
+effects models, we study agents’ behavior in various environments through three chapters.
+The first chapter examines natural resource exploitation under uncertainty with learning
+and heterogeneous priors. In the second chapter, we examine the problem of research
+Foundation concerned with finding good quality researchers for today and the future.
+The third chapter studies the Multi-level marketing organizations.
+The first chapter is entitled "Renewable Resource Consumption in a Learning Environment
+with Heterogeneous beliefs". This work uses a learning model with heterogeneity
+of beliefs to study natural resources consumption under uncertainty. Following Koulovatianos
+et al (2009), we distinguish two types of learning process: adaptive learning and
+learning. I find that learning decreases the total consumption of the resource in comparison
+with adaptive learning. However, individually and under some conditions, some
+exploiters could consume more in learning than in adaptive learning. In learning, the
+exploiter faces two kinds of incentive to invest in the resource: self-incentive which is
+always positive and heterogeneity incentive which may be negative. The effect of learning
+on individual consumption depends on the sign and the extent of the heterogeneity
+incentive. Using absolute change and relative change of consumption due to a change in
+beliefs, we find that the exploiters tend to converge to a common behaviour.
+The second chapter is entitled "A perpetual Search for Talent across Overlapping Generations".
+We use a dynamic discrete time model with overlapping generations to study
+how a research Fund should optimally rank and select which researchers to give a grant.
+The optimal decision rule depends on both the perceived quality of researchers based on
+past success histories and on age. Between two researchers of equal perceived qualities
+the Fund should select the youngest. This work contributes to the understanding of the
+bandit problems sometime known to be untractable and pspace-hard. Here, instead of
+looking for an index characterization, we propose to rank or eliminate progressively the
+researchers by comparing them two by two.
+The third chapter is entitled "Paradox about the Multi-Level Marketing". Over the past
+50 years, the Multi-level Marketing (MLM) has become an important business strategy.
+vi
+MLM is a marketing method in which independent distributors of a product get profits
+not only from their own sales, but also from recruiting other distributors. According to the
+promoters of this organization, the purpose of the business and the will of the distributors
+are to sell the product and not to set up a scam. The question is the following: if the
+real intention is to sell, why does a distributor recruit other distributors who will become
+his competitors? It is well known in classical industrial organization that people avoid
+competition as well as possible. Why is it not the case in the MLM organization? We
+explain this paradox by the particular economic structure of the MLM. Distributor could
+not sell enough if he did not recruit. Recruiting provides a price leading power and allows
+to sell more and make more profit (in some respect). Moreover, the MLM is similar to
+the multi-sided market structure a la Rochet and Tirole (2003, 2006) and Weyl (2010).
+There is network effect between recruitment and selling activity. Thus, the extent of the
+paradox can also be explained by the different commissions set by the MLM promoters.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F8726&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+%C3%A9conomiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/8726/Agbo_Maxime_2012_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/8726/Agbo_Maxime_2012_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Agbo_Maxime_2012_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/8726/Agbo_Maxime_2012_these.pdf?sequence=2&amp;isAllowed=y">Agbo_Maxime_2012_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1.693Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2995/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2995">Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires</a> [317]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/8726">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.jsrage2/scripts/theme.jsscriptscripts/th"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Phytoremédiation d’un sol contaminé par des contaminants organiques et inorganiques</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Labrecque, Michel" name="DC.contributor">
+<meta content="Hijri, Mohamed" name="DC.contributor">
+<meta content="Fortin Faubert, Maxime" name="DC.creator">
+<meta content="2022-02-15T14:17:49Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2022-02-15T14:17:49Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-10-21" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2021-04" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/26291" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Salix" name="DC.subject" xml:lang="fr"/>
+<meta content="Pleurotus" name="DC.subject" xml:lang="fr"/>
+<meta content="Bois raméal fragmenté (BRF)" name="DC.subject" xml:lang="fr"/>
+<meta content="Substrat de champignons épuisés (SCE)" name="DC.subject" xml:lang="fr"/>
+<meta content="Microbiome" name="DC.subject" xml:lang="fr"/>
+<meta content="Culture intensive en courtes rotations (CICR)" name="DC.subject" xml:lang="fr"/>
+<meta content="Phytoremédiation" name="DC.subject" xml:lang="fr"/>
+<meta content="Mycoremédiation" name="DC.subject" xml:lang="fr"/>
+<meta content="Contamination" name="DC.subject" xml:lang="fr"/>
+<meta content="Sol" name="DC.subject" xml:lang="fr"/>
+<meta content="Ramial chipped wood (RCW)" name="DC.subject" xml:lang="fr"/>
+<meta content="Spent mushroom substrate (SMS)" name="DC.subject" xml:lang="fr"/>
+<meta content="Short rotation intensive culture (SRIC)" name="DC.subject" xml:lang="fr"/>
+<meta content="Phytoremediation" name="DC.subject" xml:lang="fr"/>
+<meta content="Mycoremediation" name="DC.subject" xml:lang="fr"/>
+<meta content="Soil" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Ecology / Biologie - Écologie (UMI : 0329)" name="DC.subject" xml:lang="fr"/>
+<meta content="Phytoremédiation d’un sol contaminé par des contaminants organiques et inorganiques" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Le nombre important de sites contaminés au Québec (Canada) et partout dans le monde est une problématique de santé publique majeure en raison des risques toxicologiques qu’ils présentent pour la santé humaine et environnementale. Dans la municipalité de Varennes (Québec, Canada), située sur la rive sud de l'Île de Montréal, les activités d’une ancienne usine pétrochimique (Pétromont Inc.) ont conduit à l’accumulation de concentrations modérées à élevées d’éléments traces métalliques (ETMs), de biphényles polychlorés (BPCs), d’hydrocarbures pétroliers aliphatiques (C10-C50) et d’hydrocarbures aromatiques polycycliques (HAPs) sur les terrains de la compagnie. En 2010, une culture intensive de saule sur courtes rotations (CICR) a été établie sur le site, afin d’y conduire une expérience de phytoremédiation à grande échelle. Bien que cette plantation de Salix miyabeana ait été implantée dans une optique d'assainissement, aucun effet significatif n'a été signalé sur la concentration des contaminants du sol au cours des premières années de croissance. Les processus d'assainissement basés sur l’utilisation de végétaux peuvent être difficiles à prévoir en milieux naturels et nécessitent des améliorations afin d'en augmenter leur efficacité.
+La fertilisation des sols avec des amendements organiques, ainsi que la manipulation du microbiome végétal, sont deux techniques agronomiques couramment utilisées pour la gestion des cultures traditionnelles, afin d’augmenter la production de biomasse et améliorer la santé générale des végétaux. Ces approches peuvent également influencer la mobilité et la biodisponibilité de certains composés du sol. Puisque de telles modifications sont connues pour avoir le potentiel d’améliorer considérablement l’efficacité des végétaux à éliminer ou à transformer certains contaminants du sol, ces deux techniques agronomiques présentent un intérêt grandissant dans le domaine de la phytoremédiation. Cette recherche doctorale vise donc à améliorer les connaissances scientifiques dans le domaine de la phytoremédiation appliquée à grande échelle en abordant certains aspects qui touchent à ces deux approches agronomiques.
+En utilisant la plantation de saules déjà établie, une première étude a été réalisée afin d’évaluer l’impact d’un amendement de sol organique sur l’efficacité phytoremédiatrice des deux cultivars de saules (‘SX61’ et ‘SX64’). À l’intérieur de cette plantation, le sol de certaines parcelles expérimentales a été recouvert de bois raméal fragmenté (BRF) de saules, combiné, ou non, avec du substrat de champignons épuisé (SCE) de Pleurotus ostreatus. Après trois saisons de croissance, les résultats ont montré que l’ajout de SCE au BRF n’avait eu aucun effet sur la croissance des saules, ainsi que sur leur efficacité à extraire ou à réduire la concentration des contaminants présents sur le site. Les résultats suggèrent néanmoins que le BRF contribue à immobiliser certains HAPs dans le sol, en plus d’augmenter l’efficacité des saules à phytoextraire le Zn. La présence de saules semble avoir réduit de façon significative l’atténuation naturelle des C10-C50 sur le site. De plus, les concentrations de BPCs, de Cd, de Ni et de dix HAPs, ont montré des oscillations saisonnières, ce qui suggère que l’évapotranspiration qui a lieu à l’intérieur de la plantation de saules provoque un important flux d'eau et de contaminants solubles en direction des racines. Ainsi, la concentration de certains contaminants pourrait avoir tendance à augmenter à l’intérieur d’une dense plantation de saules au fil du temps.
+Une deuxième étude a été réalisée à l’intérieur de cette même plantation, afin de vérifier si les augmentations de concentration observées précédemment pouvaient être liées à l’évapotranspiration qui a lieu à l’intérieur d’une plantation de saules. Dans l’optique d’éliminer l’effet de transpiration, des coupes de saules ont été effectuées dans certaines parcelles de la plantation, puis les concentrations des contaminants organiques et inorganiques ont été suivies au fil du temps (24 mois), et comparées avec celles observées dans les parcelles non coupées. Les résultats obtenus ont montré que l'élimination des saules avait bel et bien limité l'accumulation de certains contaminants à la surface du sol, tels qu’observé dans les parcelles non coupées. Ces résultats suggèrent donc encore une fois que la culture intensive de saules à courte rotation peut entrainer une migration de certains contaminants en direction des racines et ainsi augmenter leurs concentrations à la surface du sol près des zones racinaires. Très peu d’études ont rapporté des résultats qui semblent contredire les multiples avantages de purification qui sont habituellement mis de l’avant en phytoremédiation. Toutefois, de tels effets sur la mobilisation des contaminants pourraient être pertinents et souhaitables dans un contexte de gestion du risque.
+La troisième et dernière étude présentée dans cette thèse explore la diversité des communautés microbiennes associées aux racines des deux cultivars de saules établis sur le site expérimental depuis plusieurs années (six années). Des études antérieures ont permis d’en apprendre davantage sur la composition du microbiome racinaire et rhizosphérique du saule poussant en milieux contaminés, mais la plupart de celles-ci ont été menées sur des individus relativement jeunes. Par conséquent, peu d’information existe concernant les associations microbiennes des individus plus âgés qui ont été établis en milieux contaminés. La caractérisation des communautés fongiques, bactériennes et archéennes a permis de montrer des différences de composition entre les deux cultivars de saules, ainsi qu’entre leurs compartiments (i.e. racines et rhizosphère). Certains groupes taxonomiques, appartenant à chacun des trois domaines, se sont démarqués, de par leur abondance, ou par leurs fonctions écologiques déjà connues et potentiellement bénéfiques pour la survie des végétaux, ou pour augmenter la dégradation et l'extraction de divers contaminants. Cette étude fournit donc de précieuses informations qui pourront servir à l’amélioration de certaines approches d'ingénierie du microbiome favorisant l'établissement, la survie, la croissance et les performances d’assainissement de Salix spp. établis en milieux contaminés.
+L’ensemble des résultats présentés dans cette thèse ont permis d’alimenter différentes réflexions sur l’intérêt d’utiliser certains amendements organiques et de caractériser le microbiome racinaire et rhizosphérique des saules afin d’améliorer les pratiques et la mise en oeuvre de la phytoremédiation par des saules. Cette thèse met également en lumière un phénomène de migration des contaminants, influencé par la présence de plantes à croissance rapide, qui représente un obstacle pour l’évaluation des performances d’assainissement par des approches de phytoremédiation notamment par des saules." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="The large number of contaminated sites in Quebec (Canada) and all around the world is a major public problem because of the toxicological risks they present for human and environmental health. In the municipality of Varennes (Quebec, Canada), located on the south shore of the Island of Montreal, the activities of a former petrochemical plant (Pétromont Inc.) have led to the accumulation of moderate to high concentrations of traces elements (TEs), polychlorinated biphenyls (PCBs), aliphatic petroleum hydrocarbons (C10-C50) and polycyclic aromatic hydrocarbons (PAHs) on the land. In 2010, a short rotation intensive culture (SRIC) of willow has been established on the site, in order to conduct a field-scale phytoremediation experiment. Although this plantation of Salix miyabeana was established with a remediation view, no significant effect was reported on the concentration of soil contaminants during the first years of growth. Plant-based remediation processes can be difficult to predict in the fiel and require improvement in order to increase their effectiveness.
+Fertilization with organic amendments, as well as manipulating the plant microbiome, are two agronomic techniques commonly employed in traditional crop management, in order to increase biomass production and improve overall plant health. These approaches can also influence the mobility and bioavailability of some compounds in the soil. Since such modifications are known to have the potential to significantly improve the efficiency of plants in removing or transforming soil contaminants, these two agronomic techniques are of growing interest in the field of phytoremediation. This doctoral research aims to improve scientific knowledge in the field-scale phytoremediation application by addressing some aspects that affect these two agronomic approaches.
+Inside the already established willow plantation, a first study was carried out to assess the impact of soil organic amendment on the phytoremediation efficacy of the two willow cultivars (‘SX61’ and ‘SX64’). The soil of some experimental plots was covered with ramial chipped wood (RCW) combined or not with spent mushroom substrate (SMS) of Pleurotus ostreatus. After three growing seasons, the results showed that the addition of SMS to the RCW had no effect on the growth of the willows, as well as on their effectiveness in removing or reducing the concentration of contaminants on the site. The results nevertheless suggest that RCW helps immobilize some PAHs in the soil, in addition to increasing the efficiency of willows to phytoextract Zn. The presence of willows appears to have significantly reduced the natural attenuation of C10-C50 on the site. In addition, the concentrations of PCBs, Cd, Ni and ten PAHs, showed seasonal oscillations, which suggests that the evapotranspiration inside the willow plantation mobilized some contaminants towards the rooting zones. Thus, the concentration of certain contaminants may tend to increase within a dense willow plantation over time.
+A second study was carried out inside the same plantation, in order to verify if the increases in concentration observed previously could be linked to the evapotranspiration that takes place inside a willow plantation. In order to eradicate the effect of plant transpiration, willows were harvested in certain plots of the plantation. The concentrations of organic and inorganic contaminants were followed over time (24 months) and compared with those observed in the unharvested plots. The results obtained showed that the removal of the willows limited the accumulation of certain contaminants on the soil surface, as observed in the uncut plots. These results suggested once again that the short rotation intensive culture of willows can lead to the migration of certain contaminants towards the roots and thus increase their concentrations on the soil surface near the root zones. Very few studies have reported results that seem to contradict the multiple purification benefits that are usually put forward in phytoremediation. However, such effects on contaminant mobilization could be relevant and suitable in a risk management context.
+The third and final study presented in this thesis explores the microbial communities associated with the roots of the two willow cultivars established on the experimental site for several years (six years). Root and rhizosphere microbial communities of Salix spp. have been studied in contaminated environments, but most of studies have been carried out on relatively young hosts. Therefore, little information exists regarding the microbial communities associated with older willows established in contaminated environments. The characterization of fungal, bacterial and Archean communities has shown differences in composition between the two willow cultivars, as well as between their compartments (i.e., roots and rhizosphere). Some taxonomic groups, belonging to each of the three domains, caught our attention, either by their abundance, or by their ecological functions already known to be potentially beneficial for the plant survival, or for increasing the degradation and extraction of various contaminants. This study therefore provides valuable information that can be used to improve certain microbiome engineering approaches that promote the establishment, survival, growth and phytoremediation performance of Salix spp. in contaminated environments.
+All the results presented in this thesis have fueled various reflections on the interest of using soil organic amendments and characterizing the root and rhizosphere microbiome of willows in order to improve the practices and implementation of phytoremediation with willows. This thesis also highlights a phenomenon of contaminant migration, influenced by the presence of fast-growing woody plants, which represents an obstacle for the evaluation of phytoremediation performance approaches with willows." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Salix; Pleurotus; Bois raméal fragmenté (BRF); Substrat de champignons épuisés (SCE); Microbiome; Culture intensive en courtes rotations (CICR); Phytoremédiation; Mycoremédiation; Contamination; Sol; Ramial chipped wood (RCW); Spent mushroom substrate (SMS); Short rotation intensive culture (SRIC); Phytoremediation; Mycoremediation; Soil; Biology - Ecology / Biologie - Écologie (UMI : 0329); Thèse ou mémoire / Thesis or Dissertation; Sciences biologiques" name="citation_keywords"/>
+<meta content="Phytoremédiation d’un sol contaminé par des contaminants organiques et inorganiques" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Fortin Faubert, Maxime" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/26291/2/Fortin_Faubert_Maxime_2021_these.pdf" name="citation_pdf_url"/>
+<meta content="2021-10-21" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/26291" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26291?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26291?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26291?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26291?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26291?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26291?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2953" role="menuitem">Faculté des arts et des sciences – Département de sciences biologiques</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2994" role="menuitem">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2953">Faculté des arts et des sciences – Département de sciences biologiques</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2994">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2994"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/26291/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26291">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/26291/mets.xml-->
+<h2 class="page-header first-page-header">Phytoremédiation d’un sol contaminé par des contaminants organiques et inorganiques</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Labrecque, Michel</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Hijri, Mohamed</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Fortin Faubert, Maxime</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2022-02-15T14:17:49Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2022-02-15T14:17:49Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-10-21</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2021-04</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/26291</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Salix</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Pleurotus</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Bois raméal fragmenté (BRF)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Substrat de champignons épuisés (SCE)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Microbiome</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Culture intensive en courtes rotations (CICR)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Phytoremédiation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Mycoremédiation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Contamination</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Sol</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Ramial chipped wood (RCW)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Spent mushroom substrate (SMS)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Short rotation intensive culture (SRIC)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Phytoremediation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Mycoremediation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Soil</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Ecology / Biologie - Écologie (UMI : 0329)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Phytoremédiation d’un sol contaminé par des contaminants organiques et inorganiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences biologiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Le nombre important de sites contaminés au Québec (Canada) et partout dans le monde est une problématique de santé publique majeure en raison des risques toxicologiques qu’ils présentent pour la santé humaine et environnementale. Dans la municipalité de Varennes (Québec, Canada), située sur la rive sud de l'Île de Montréal, les activités d’une ancienne usine pétrochimique (Pétromont Inc.) ont conduit à l’accumulation de concentrations modérées à élevées d’éléments traces métalliques (ETMs), de biphényles polychlorés (BPCs), d’hydrocarbures pétroliers aliphatiques (C10-C50) et d’hydrocarbures aromatiques polycycliques (HAPs) sur les terrains de la compagnie. En 2010, une culture intensive de saule sur courtes rotations (CICR) a été établie sur le site, afin d’y conduire une expérience de phytoremédiation à grande échelle. Bien que cette plantation de Salix miyabeana ait été implantée dans une optique d'assainissement, aucun effet significatif n'a été signalé sur la concentration des contaminants du sol au cours des premières années de croissance. Les processus d'assainissement basés sur l’utilisation de végétaux peuvent être difficiles à prévoir en milieux naturels et nécessitent des améliorations afin d'en augmenter leur efficacité.
+La fertilisation des sols avec des amendements organiques, ainsi que la manipulation du microbiome végétal, sont deux techniques agronomiques couramment utilisées pour la gestion des cultures traditionnelles, afin d’augmenter la production de biomasse et améliorer la santé générale des végétaux. Ces approches peuvent également influencer la mobilité et la biodisponibilité de certains composés du sol. Puisque de telles modifications sont connues pour avoir le potentiel d’améliorer considérablement l’efficacité des végétaux à éliminer ou à transformer certains contaminants du sol, ces deux techniques agronomiques présentent un intérêt grandissant dans le domaine de la phytoremédiation. Cette recherche doctorale vise donc à améliorer les connaissances scientifiques dans le domaine de la phytoremédiation appliquée à grande échelle en abordant certains aspects qui touchent à ces deux approches agronomiques.
+En utilisant la plantation de saules déjà établie, une première étude a été réalisée afin d’évaluer l’impact d’un amendement de sol organique sur l’efficacité phytoremédiatrice des deux cultivars de saules (‘SX61’ et ‘SX64’). À l’intérieur de cette plantation, le sol de certaines parcelles expérimentales a été recouvert de bois raméal fragmenté (BRF) de saules, combiné, ou non, avec du substrat de champignons épuisé (SCE) de Pleurotus ostreatus. Après trois saisons de croissance, les résultats ont montré que l’ajout de SCE au BRF n’avait eu aucun effet sur la croissance des saules, ainsi que sur leur efficacité à extraire ou à réduire la concentration des contaminants présents sur le site. Les résultats suggèrent néanmoins que le BRF contribue à immobiliser certains HAPs dans le sol, en plus d’augmenter l’efficacité des saules à phytoextraire le Zn. La présence de saules semble avoir réduit de façon significative l’atténuation naturelle des C10-C50 sur le site. De plus, les concentrations de BPCs, de Cd, de Ni et de dix HAPs, ont montré des oscillations saisonnières, ce qui suggère que l’évapotranspiration qui a lieu à l’intérieur de la plantation de saules provoque un important flux d'eau et de contaminants solubles en direction des racines. Ainsi, la concentration de certains contaminants pourrait avoir tendance à augmenter à l’intérieur d’une dense plantation de saules au fil du temps.
+Une deuxième étude a été réalisée à l’intérieur de cette même plantation, afin de vérifier si les augmentations de concentration observées précédemment pouvaient être liées à l’évapotranspiration qui a lieu à l’intérieur d’une plantation de saules. Dans l’optique d’éliminer l’effet de transpiration, des coupes de saules ont été effectuées dans certaines parcelles de la plantation, puis les concentrations des contaminants organiques et inorganiques ont été suivies au fil du temps (24 mois), et comparées avec celles observées dans les parcelles non coupées. Les résultats obtenus ont montré que l'élimination des saules avait bel et bien limité l'accumulation de certains contaminants à la surface du sol, tels qu’observé dans les parcelles non coupées. Ces résultats suggèrent donc encore une fois que la culture intensive de saules à courte rotation peut entrainer une migration de certains contaminants en direction des racines et ainsi augmenter leurs concentrations à la surface du sol près des zones racinaires. Très peu d’études ont rapporté des résultats qui semblent contredire les multiples avantages de purification qui sont habituellement mis de l’avant en phytoremédiation. Toutefois, de tels effets sur la mobilisation des contaminants pourraient être pertinents et souhaitables dans un contexte de gestion du risque.
+La troisième et dernière étude présentée dans cette thèse explore la diversité des communautés microbiennes associées aux racines des deux cultivars de saules établis sur le site expérimental depuis plusieurs années (six années). Des études antérieures ont permis d’en apprendre davantage sur la composition du microbiome racinaire et rhizosphérique du saule poussant en milieux contaminés, mais la plupart de celles-ci ont été menées sur des individus relativement jeunes. Par conséquent, peu d’information existe concernant les associations microbiennes des individus plus âgés qui ont été établis en milieux contaminés. La caractérisation des communautés fongiques, bactériennes et archéennes a permis de montrer des différences de composition entre les deux cultivars de saules, ainsi qu’entre leurs compartiments (i.e. racines et rhizosphère). Certains groupes taxonomiques, appartenant à chacun des trois domaines, se sont démarqués, de par leur abondance, ou par leurs fonctions écologiques déjà connues et potentiellement bénéfiques pour la survie des végétaux, ou pour augmenter la dégradation et l'extraction de divers contaminants. Cette étude fournit donc de précieuses informations qui pourront servir à l’amélioration de certaines approches d'ingénierie du microbiome favorisant l'établissement, la survie, la croissance et les performances d’assainissement de Salix spp. établis en milieux contaminés.
+L’ensemble des résultats présentés dans cette thèse ont permis d’alimenter différentes réflexions sur l’intérêt d’utiliser certains amendements organiques et de caractériser le microbiome racinaire et rhizosphérique des saules afin d’améliorer les pratiques et la mise en oeuvre de la phytoremédiation par des saules. Cette thèse met également en lumière un phénomène de migration des contaminants, influencé par la présence de plantes à croissance rapide, qui représente un obstacle pour l’évaluation des performances d’assainissement par des approches de phytoremédiation notamment par des saules.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The large number of contaminated sites in Quebec (Canada) and all around the world is a major public problem because of the toxicological risks they present for human and environmental health. In the municipality of Varennes (Quebec, Canada), located on the south shore of the Island of Montreal, the activities of a former petrochemical plant (Pétromont Inc.) have led to the accumulation of moderate to high concentrations of traces elements (TEs), polychlorinated biphenyls (PCBs), aliphatic petroleum hydrocarbons (C10-C50) and polycyclic aromatic hydrocarbons (PAHs) on the land. In 2010, a short rotation intensive culture (SRIC) of willow has been established on the site, in order to conduct a field-scale phytoremediation experiment. Although this plantation of Salix miyabeana was established with a remediation view, no significant effect was reported on the concentration of soil contaminants during the first years of growth. Plant-based remediation processes can be difficult to predict in the fiel and require improvement in order to increase their effectiveness.
+Fertilization with organic amendments, as well as manipulating the plant microbiome, are two agronomic techniques commonly employed in traditional crop management, in order to increase biomass production and improve overall plant health. These approaches can also influence the mobility and bioavailability of some compounds in the soil. Since such modifications are known to have the potential to significantly improve the efficiency of plants in removing or transforming soil contaminants, these two agronomic techniques are of growing interest in the field of phytoremediation. This doctoral research aims to improve scientific knowledge in the field-scale phytoremediation application by addressing some aspects that affect these two agronomic approaches.
+Inside the already established willow plantation, a first study was carried out to assess the impact of soil organic amendment on the phytoremediation efficacy of the two willow cultivars (‘SX61’ and ‘SX64’). The soil of some experimental plots was covered with ramial chipped wood (RCW) combined or not with spent mushroom substrate (SMS) of Pleurotus ostreatus. After three growing seasons, the results showed that the addition of SMS to the RCW had no effect on the growth of the willows, as well as on their effectiveness in removing or reducing the concentration of contaminants on the site. The results nevertheless suggest that RCW helps immobilize some PAHs in the soil, in addition to increasing the efficiency of willows to phytoextract Zn. The presence of willows appears to have significantly reduced the natural attenuation of C10-C50 on the site. In addition, the concentrations of PCBs, Cd, Ni and ten PAHs, showed seasonal oscillations, which suggests that the evapotranspiration inside the willow plantation mobilized some contaminants towards the rooting zones. Thus, the concentration of certain contaminants may tend to increase within a dense willow plantation over time.
+A second study was carried out inside the same plantation, in order to verify if the increases in concentration observed previously could be linked to the evapotranspiration that takes place inside a willow plantation. In order to eradicate the effect of plant transpiration, willows were harvested in certain plots of the plantation. The concentrations of organic and inorganic contaminants were followed over time (24 months) and compared with those observed in the unharvested plots. The results obtained showed that the removal of the willows limited the accumulation of certain contaminants on the soil surface, as observed in the uncut plots. These results suggested once again that the short rotation intensive culture of willows can lead to the migration of certain contaminants towards the roots and thus increase their concentrations on the soil surface near the root zones. Very few studies have reported results that seem to contradict the multiple purification benefits that are usually put forward in phytoremediation. However, such effects on contaminant mobilization could be relevant and suitable in a risk management context.
+The third and final study presented in this thesis explores the microbial communities associated with the roots of the two willow cultivars established on the experimental site for several years (six years). Root and rhizosphere microbial communities of Salix spp. have been studied in contaminated environments, but most of studies have been carried out on relatively young hosts. Therefore, little information exists regarding the microbial communities associated with older willows established in contaminated environments. The characterization of fungal, bacterial and Archean communities has shown differences in composition between the two willow cultivars, as well as between their compartments (i.e., roots and rhizosphere). Some taxonomic groups, belonging to each of the three domains, caught our attention, either by their abundance, or by their ecological functions already known to be potentially beneficial for the plant survival, or for increasing the degradation and extraction of various contaminants. This study therefore provides valuable information that can be used to improve certain microbiome engineering approaches that promote the establishment, survival, growth and phytoremediation performance of Salix spp. in contaminated environments.
+All the results presented in this thesis have fueled various reflections on the interest of using soil organic amendments and characterizing the root and rhizosphere microbiome of willows in order to improve the practices and implementation of phytoremediation with willows. This thesis also highlights a phenomenon of contaminant migration, influenced by the presence of fast-growing woody plants, which represents an obstacle for the evaluation of phytoremediation performance approaches with willows.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">UdeM.ORCIDAuteurThese</td><td class="word-break">0000-0001-5816-0523</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F26291&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+biologiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/26291/Fortin_Faubert_Maxime_2021_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/26291/Fortin_Faubert_Maxime_2021_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Fortin_Faubert_Maxime_2021_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/26291/Fortin_Faubert_Maxime_2021_these.pdf?sequence=2&amp;isAllowed=y">Fortin_Faubert_Maxime_2021_the ...</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">24.90Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2994/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2994">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a> [388]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26291">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Mean values and correlations of multiplicative functions : the ``pretentious" approach</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Granville, Andrew" name="DC.contributor">
+<meta content="Klurman, Oleksiy" name="DC.creator">
+<meta content="2017-10-20T13:38:20Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2017-10-20T13:38:20Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2017-09-27" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2017-07" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/19298" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Théorie analytique des nombres" name="DC.subject" xml:lang="fr"/>
+<meta content="Fonctions multiplicatives" name="DC.subject" xml:lang="fr"/>
+<meta content="Corrélations de fonctions multiplicatives" name="DC.subject" xml:lang="fr"/>
+<meta content="Problème d'Erdős" name="DC.subject" xml:lang="fr"/>
+<meta content="Les corps des fonctions" name="DC.subject" xml:lang="fr"/>
+<meta content="Analytic number theory" name="DC.subject" xml:lang="fr"/>
+<meta content="Multiplicative functions" name="DC.subject" xml:lang="fr"/>
+<meta content="Correlations of multiplicative functions" name="DC.subject" xml:lang="fr"/>
+<meta content="Erdős discrepancy problem" name="DC.subject" xml:lang="fr"/>
+<meta content="Function fields" name="DC.subject" xml:lang="fr"/>
+<meta content="Mathematics / Mathématiques (UMI : 0405)" name="DC.subject" xml:lang="fr"/>
+<meta content='Mean values and correlations of multiplicative functions : the ``pretentious" approach' name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content='Le sujet principal de cette thèse est l’étude des valeurs moyennes et corrélations de fonctions
+multiplicatives. Les résultats portant sur ces derniers sont subséquemment appliqués à la
+résolution de plusieurs problèmes.
+Dans le premier chapitre, on rappelle certains résultats classiques concernant les valeurs
+moyennes des fonctions multiplicatives. On y énonce également les théorèmes principaux de
+la thèse.
+Le deuxième chapitre consiste de l’article “Mean values of multiplicative functions over
+the function fields". En se basant sur des résultats classiques de Wirsing, de Hall et de Tenenbaum
+concernant les fonctions multiplicatives arithmétiques, on énonce et on démontre des
+théorèmes qui y correspondent pour les fonctions multiplicatives sur les corps des fonctions
+Fq[x]. Ainsi, on résoud un problème posé dans un travail récent de Granville, Harper et
+Soundararajan. On décrit dans notre thése certaines caractéristiques du comportement des
+fonctions multiplicatives sur les corps de fonctions qui ne sont pas présentes dans le contexte
+des corps de nombres. Entre autres, on introduit pour la première fois une notion de
+“simulation” pour les fonctions multiplicatives sur les corps de fonctions Fq[x].
+Les chapitres 3 et 4 comprennent plusieurs résultats de l’article “Correlations of multiplicative
+functions and applications". Dans cet article, on détermine une formule asymptotique
+pour les corrélations
+X
+n6x
+f1(P1(n)) · · · fm(Pm(n)),
+où f1, . . . ,fm sont des fonctions multiplicatives de module au plus ou égal à 1 ”simulatrices”
+qui satisfont certaines hypothèses naturelles, et P1, . . . ,Pm sont des polynomes ayant des coefficients
+positifs. On déduit de cette formule plusieurs conséquences intéressantes. D’abord,
+on donne une classification des fonctions multiplicatives f : N ! {−1,+1} ayant des sommes
+partielles uniformément bornées. Ainsi, on résoud un problème d’Erdos datant de 1957 (dans
+la forme conjecturée par Tao). Ensuite, on démontre que si la valeur moyenne des écarts
+|f(n + 1) − f(n)| est zéro, alors soit |f| a une valeur moyenne de zéro, soit f(n) = ns avec
+iii
+Re(s) &lt; 1. Ce résultat affirme une ancienne conjecture de Kátai. Enfin, notre théorème principal
+est utilisé pour compter le nombre de représentations d’un entier n en tant que somme
+a+b, où a et b proviennent de sous-ensembles multiplicatifs fixés de N. Notre démonstration
+de ce résultat, dû à l’origine à Brüdern, évite l’usage de la “méthode du cercle".
+Les chapitres 5 et 6 sont basés sur les résultats obtenus dans l’article “Effective asymptotic
+formulae for multilinear averages and sign patterns of multiplicative functions," un
+travail conjoint avec Alexander Mangerel. D’après une méthode analytique dans l’esprit du
+théorème des valeurs moyennes de Halász, on détermine une formule asymptotique pour les
+moyennes multidimensionelles
+x−l
+X
+n2[x]l
+Y
+16j6k
+fj(Lj(n)),
+lorsque x ! 1, où [x] := [1,x] et L1, . . . ,Lk sont des applications linéaires affines qui satisfont
+certaines hypothèses naturelles. Notre méthode rend ainsi une démonstration neuve
+d’un résultat de Frantzikinakis et Host avec, également, un terme principal explicite et un
+terme d’erreur quantitatif. On applique nos formules à la démonstration d’un phénomène
+local-global pour les normes de Gowers des fonctions multiplicatives. De plus, on découvre
+et explique certaines irrégularités dans la distribution des suites de signes de fonctions
+multiplicatives f : N ! {−1,+1}. Visant de tels résultats, on détermine les densités asymptotiques
+des ensembles d’entiers n tels que la fonction f rend une suite fixée de 3 ou 4 signes
+dans presque toutes les progressions arithmétiques de 3 ou 4 termes, respectivement, ayant
+n comme premier terme. Ceci mène à une généralisation et amélioration du travail de Buttkewitz
+et Elsholtz, et donne un complément à un travail récent de Matomäki, Radziwiłł et
+Tao sur les suites de signes de la fonction de Liouville.' name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content='The main theme of this thesis is to study mean values and correlations of multiplicative
+functions and apply the corresponding results to tackle some open problems.
+The first chapter contains discussion of several classical facts about mean values of multiplicative
+functions and statement of the main results of the thesis.
+The second chapter consists of the article “Mean values of multiplicative functions over
+the function fields". The main purpose of this chapter is to formulate and prove analog of
+several classical results due to Wirsing, Hall and Tenenbaum over the function field Fq[x],
+thus answering questions raised in the recent work of Granville, Harper and Soundararajan.
+We explain some features of the behaviour of multiplicative functions that are not present
+in the number field settings. This is accomplished by, among other things, introducing the
+notion of “pretentiousness" over the function fields.
+Chapter 3 and Chapter 4 include results of the article “Correlations of multiplicative
+functions and applications". Here, we give an asymptotic formula for correlations
+X
+n_x
+f1(P1(n))f2(P2(n)) · · · · · fm(Pm(n))
+where f . . . ,fm are bounded “pretentious" multiplicative functions, under certain natural
+hypotheses. We then deduce several desirable consequences. First, we characterize all multiplicative
+functions f : N ! {−1,+1} with bounded partial sums. This answers a question
+of Erdos from 1957 in the form conjectured by Tao. Second, we show that if the average
+of the first divided difference of multiplicative function is zero, then either f(n) = ns for
+Re(s) &lt; 1 or |f(n)| is small on average. This settles an old conjecture of Kátai. Third, we
+apply our theorem to count the number of representations of n = a + b where a,b belong to
+some multiplicative subsets of N. This gives a new "circle method-free" proof of the result of
+Brüdern.
+Chapters 5 and Chapter 6 are based on the results obtained in the article “Effective
+asymptotic formulae for multilinear averages and sign patterns of multiplicative functions,"
+joint with Alexander Mangerel. Using an analytic approach in the spirit of Halász’ mean
+v
+value theorem, we compute multidimensional averages
+x−l
+X
+n2[x]l
+Y
+16j6k
+fj(Lj(n))
+as x ! 1, where [x] := [1,x] and L1, . . . ,Lk are affine linear forms that satisfy some natural
+conditions. Our approach gives a new proof of a result of Frantzikinakis and Host that is
+distinct from theirs, with explicit main and error terms.
+As an application of our formulae, we establish a local-to-global principle for Gowers norms
+of multiplicative functions. We reveal and explain irregularities in the distribution of the
+sign patterns of multiplicative functions by computing the asymptotic densities of the sets
+of integers n such that a given multiplicative function f : N ! {−1, 1} yields a fixed sign
+pattern of length 3 or 4 on almost all 3- and 4-term arithmetic progressions, respectively,
+with first term n. The latter generalizes and refines the work of Buttkewitz and Elsholtz and
+complements the recent work of Matomaki, Radziwiłł and Tao.
+We conclude this thesis by discussing some work in progress.' name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Théorie analytique des nombres; Fonctions multiplicatives; Corrélations de fonctions multiplicatives; Problème d'Erdős; Les corps des fonctions; Analytic number theory; Multiplicative functions; Correlations of multiplicative functions; Erdős discrepancy problem; Function fields; Mathematics / Mathématiques (UMI : 0405); Thèse ou mémoire / Thesis or Dissertation; Mathématiques" name="citation_keywords"/>
+<meta content='Mean values and correlations of multiplicative functions : the ``pretentious" approach' name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Klurman, Oleksiy" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/19298/4/Klurman_Oleksiy_2017_these.pdf" name="citation_pdf_url"/>
+<meta content="2017-09-27" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/19298" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/19298?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/19298?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/19298?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/19298?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/19298?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/19298?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2949" role="menuitem">Faculté des arts et des sciences – Département de mathématiques et de statistique</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2988" role="menuitem">Faculté des arts et des sciences – Département de mathématiques et de statistique – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2949">Faculté des arts et des sciences – Département de mathématiques et de statistique</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2988">Faculté des arts et des sciences – Département de mathématiques et de statistique – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2988"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2988/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/19298/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/19298">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/19298/mets.xml-->
+<h2 class="page-header first-page-header">Mean values and correlations of multiplicative functions : the ``pretentious" approach</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Granville, Andrew</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Klurman, Oleksiy</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2017-10-20T13:38:20Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2017-10-20T13:38:20Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2017-09-27</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2017-07</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/19298</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Théorie analytique des nombres</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Fonctions multiplicatives</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Corrélations de fonctions multiplicatives</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Problème d'Erdős</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Les corps des fonctions</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Analytic number theory</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Multiplicative functions</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Correlations of multiplicative functions</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Erdős discrepancy problem</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Function fields</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Mathematics / Mathématiques (UMI : 0405)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Mean values and correlations of multiplicative functions : the ``pretentious" approach</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Mathématiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Le sujet principal de cette thèse est l’étude des valeurs moyennes et corrélations de fonctions
+multiplicatives. Les résultats portant sur ces derniers sont subséquemment appliqués à la
+résolution de plusieurs problèmes.
+Dans le premier chapitre, on rappelle certains résultats classiques concernant les valeurs
+moyennes des fonctions multiplicatives. On y énonce également les théorèmes principaux de
+la thèse.
+Le deuxième chapitre consiste de l’article “Mean values of multiplicative functions over
+the function fields". En se basant sur des résultats classiques de Wirsing, de Hall et de Tenenbaum
+concernant les fonctions multiplicatives arithmétiques, on énonce et on démontre des
+théorèmes qui y correspondent pour les fonctions multiplicatives sur les corps des fonctions
+Fq[x]. Ainsi, on résoud un problème posé dans un travail récent de Granville, Harper et
+Soundararajan. On décrit dans notre thése certaines caractéristiques du comportement des
+fonctions multiplicatives sur les corps de fonctions qui ne sont pas présentes dans le contexte
+des corps de nombres. Entre autres, on introduit pour la première fois une notion de
+“simulation” pour les fonctions multiplicatives sur les corps de fonctions Fq[x].
+Les chapitres 3 et 4 comprennent plusieurs résultats de l’article “Correlations of multiplicative
+functions and applications". Dans cet article, on détermine une formule asymptotique
+pour les corrélations
+X
+n6x
+f1(P1(n)) · · · fm(Pm(n)),
+où f1, . . . ,fm sont des fonctions multiplicatives de module au plus ou égal à 1 ”simulatrices”
+qui satisfont certaines hypothèses naturelles, et P1, . . . ,Pm sont des polynomes ayant des coefficients
+positifs. On déduit de cette formule plusieurs conséquences intéressantes. D’abord,
+on donne une classification des fonctions multiplicatives f : N ! {−1,+1} ayant des sommes
+partielles uniformément bornées. Ainsi, on résoud un problème d’Erdos datant de 1957 (dans
+la forme conjecturée par Tao). Ensuite, on démontre que si la valeur moyenne des écarts
+|f(n + 1) − f(n)| est zéro, alors soit |f| a une valeur moyenne de zéro, soit f(n) = ns avec
+iii
+Re(s) &lt; 1. Ce résultat affirme une ancienne conjecture de Kátai. Enfin, notre théorème principal
+est utilisé pour compter le nombre de représentations d’un entier n en tant que somme
+a+b, où a et b proviennent de sous-ensembles multiplicatifs fixés de N. Notre démonstration
+de ce résultat, dû à l’origine à Brüdern, évite l’usage de la “méthode du cercle".
+Les chapitres 5 et 6 sont basés sur les résultats obtenus dans l’article “Effective asymptotic
+formulae for multilinear averages and sign patterns of multiplicative functions," un
+travail conjoint avec Alexander Mangerel. D’après une méthode analytique dans l’esprit du
+théorème des valeurs moyennes de Halász, on détermine une formule asymptotique pour les
+moyennes multidimensionelles
+x−l
+X
+n2[x]l
+Y
+16j6k
+fj(Lj(n)),
+lorsque x ! 1, où [x] := [1,x] et L1, . . . ,Lk sont des applications linéaires affines qui satisfont
+certaines hypothèses naturelles. Notre méthode rend ainsi une démonstration neuve
+d’un résultat de Frantzikinakis et Host avec, également, un terme principal explicite et un
+terme d’erreur quantitatif. On applique nos formules à la démonstration d’un phénomène
+local-global pour les normes de Gowers des fonctions multiplicatives. De plus, on découvre
+et explique certaines irrégularités dans la distribution des suites de signes de fonctions
+multiplicatives f : N ! {−1,+1}. Visant de tels résultats, on détermine les densités asymptotiques
+des ensembles d’entiers n tels que la fonction f rend une suite fixée de 3 ou 4 signes
+dans presque toutes les progressions arithmétiques de 3 ou 4 termes, respectivement, ayant
+n comme premier terme. Ceci mène à une généralisation et amélioration du travail de Buttkewitz
+et Elsholtz, et donne un complément à un travail récent de Matomäki, Radziwiłł et
+Tao sur les suites de signes de la fonction de Liouville.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The main theme of this thesis is to study mean values and correlations of multiplicative
+functions and apply the corresponding results to tackle some open problems.
+The first chapter contains discussion of several classical facts about mean values of multiplicative
+functions and statement of the main results of the thesis.
+The second chapter consists of the article “Mean values of multiplicative functions over
+the function fields". The main purpose of this chapter is to formulate and prove analog of
+several classical results due to Wirsing, Hall and Tenenbaum over the function field Fq[x],
+thus answering questions raised in the recent work of Granville, Harper and Soundararajan.
+We explain some features of the behaviour of multiplicative functions that are not present
+in the number field settings. This is accomplished by, among other things, introducing the
+notion of “pretentiousness" over the function fields.
+Chapter 3 and Chapter 4 include results of the article “Correlations of multiplicative
+functions and applications". Here, we give an asymptotic formula for correlations
+X
+n_x
+f1(P1(n))f2(P2(n)) · · · · · fm(Pm(n))
+where f . . . ,fm are bounded “pretentious" multiplicative functions, under certain natural
+hypotheses. We then deduce several desirable consequences. First, we characterize all multiplicative
+functions f : N ! {−1,+1} with bounded partial sums. This answers a question
+of Erdos from 1957 in the form conjectured by Tao. Second, we show that if the average
+of the first divided difference of multiplicative function is zero, then either f(n) = ns for
+Re(s) &lt; 1 or |f(n)| is small on average. This settles an old conjecture of Kátai. Third, we
+apply our theorem to count the number of representations of n = a + b where a,b belong to
+some multiplicative subsets of N. This gives a new "circle method-free" proof of the result of
+Brüdern.
+Chapters 5 and Chapter 6 are based on the results obtained in the article “Effective
+asymptotic formulae for multilinear averages and sign patterns of multiplicative functions,"
+joint with Alexander Mangerel. Using an analytic approach in the spirit of Halász’ mean
+v
+value theorem, we compute multidimensional averages
+x−l
+X
+n2[x]l
+Y
+16j6k
+fj(Lj(n))
+as x ! 1, where [x] := [1,x] and L1, . . . ,Lk are affine linear forms that satisfy some natural
+conditions. Our approach gives a new proof of a result of Frantzikinakis and Host that is
+distinct from theirs, with explicit main and error terms.
+As an application of our formulae, we establish a local-to-global principle for Gowers norms
+of multiplicative functions. We reveal and explain irregularities in the distribution of the
+sign patterns of multiplicative functions by computing the asymptotic densities of the sets
+of integers n such that a given multiplicative function f : N ! {−1, 1} yields a fixed sign
+pattern of length 3 or 4 on almost all 3- and 4-term arithmetic progressions, respectively,
+with first term n. The latter generalizes and refines the work of Buttkewitz and Elsholtz and
+complements the recent work of Matomaki, Radziwiłł and Tao.
+We conclude this thesis by discussing some work in progress.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F19298&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Math%C3%A9matiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/19298/Klurman_Oleksiy_2017_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/19298/Klurman_Oleksiy_2017_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Klurman_Oleksiy_2017_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/19298/Klurman_Oleksiy_2017_these.pdf?sequence=4&amp;isAllowed=y">Klurman_Oleksiy_2017_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">851.6Kb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2988/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2988">Faculté des arts et des sciences – Département de mathématiques et de statistique – Thèses et mémoires</a> [391]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/19298">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

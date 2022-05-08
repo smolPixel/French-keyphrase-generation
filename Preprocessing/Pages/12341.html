@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Interactive quantum information theory</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Brassard, Gilles" name="DC.contributor">
+<meta content="Tapp, Alain" name="DC.contributor">
+<meta content="Touchette, Dave" name="DC.creator">
+<meta content="2015-10-21T17:57:28Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2015-10-21T17:57:28Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2015-09-23" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2015-04" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/12341" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Théorie des codes" name="DC.subject" xml:lang="fr"/>
+<meta content="Complexité de la communication" name="DC.subject" xml:lang="fr"/>
+<meta content="Somme directe" name="DC.subject" xml:lang="fr"/>
+<meta content="Ensembles disjoints" name="DC.subject" xml:lang="fr"/>
+<meta content="Complexité de l'information" name="DC.subject" xml:lang="fr"/>
+<meta content="Théorie de l'information à usage unique" name="DC.subject" xml:lang="fr"/>
+<meta content="Calcul et information quantiques" name="DC.subject" xml:lang="fr"/>
+<meta content="Redistribution d'états quantiques" name="DC.subject" xml:lang="fr"/>
+<meta content="Compression" name="DC.subject" xml:lang="fr"/>
+<meta content="Communication complexity" name="DC.subject" xml:lang="fr"/>
+<meta content="Coding theory" name="DC.subject" xml:lang="fr"/>
+<meta content="Direct sum" name="DC.subject" xml:lang="fr"/>
+<meta content="Disjointness" name="DC.subject" xml:lang="fr"/>
+<meta content="Information complexity" name="DC.subject" xml:lang="fr"/>
+<meta content="One-shot information theory" name="DC.subject" xml:lang="fr"/>
+<meta content="Quantum computation and information" name="DC.subject" xml:lang="fr"/>
+<meta content="Quantum state redistribution" name="DC.subject" xml:lang="fr"/>
+<meta content="Applied Sciences - Computer Science / Sciences appliqués et technologie - Informatique (UMI : 0984)" name="DC.subject" xml:lang="fr"/>
+<meta content="Interactive quantum information theory" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La théorie de l'information quantique s'est développée à une vitesse fulgurante au cours des vingt dernières années, avec des analogues et extensions des théorèmes de codage de source et de codage sur canal bruité pour la communication unidirectionnelle. Pour la communication interactive, un analogue quantique de la complexité de la communication a été développé, pour lequel les protocoles quantiques peuvent performer exponentiellement mieux que les meilleurs protocoles classiques pour certaines tâches classiques. Cependant, l'information quantique est beaucoup plus sensible au bruit que l'information classique. Il est donc impératif d'utiliser les ressources quantiques à leur plein potentiel.
+Dans cette thèse, nous étudions les protocoles quantiques interactifs du point de vue de la théorie de l'information et étudions les analogues du codage de source et du codage sur canal bruité. Le cadre considéré est celui de la complexité de la communication: Alice et Bob veulent faire un calcul quantique biparti tout en minimisant la quantité de communication échangée, sans égard au coût des calculs locaux. Nos résultats sont séparés en trois chapitres distincts, qui sont organisés de sorte à ce que chacun puisse être lu indépendamment.
+Étant donné le rôle central qu'elle occupe dans le contexte de la compression interactive, un chapitre est dédié à l'étude de la tâche de la redistribution d'état quantique. Nous prouvons des bornes inférieures sur les coûts de communication nécessaires dans un contexte interactif. Nous prouvons également des bornes atteignables avec un seul message, dans un contexte d'usage unique.
+Dans un chapitre subséquent, nous définissons une nouvelle notion de complexité de l'information quantique. Celle-ci caractérise la quantité d'information, plutôt que de communication, qu'Alice et Bob doivent échanger pour calculer une tâche bipartie. Nous prouvons beaucoup de propriétés structurelles pour cette quantité, et nous lui donnons une interprétation opérationnelle en tant que complexité de la communication quantique amortie. Dans le cas particulier d'entrées classiques, nous donnons une autre caractérisation permettant de quantifier le coût encouru par un protocole quantique qui oublie de l'information classique. Deux applications sont présentées: le premier résultat général de somme directe pour la complexité de la communication quantique à plus d'une ronde, ainsi qu'une borne optimale, à un terme polylogarithmique près, pour la complexité de la communication quantique avec un nombre de rondes limité pour la fonction « ensembles disjoints ».
+Dans un chapitre final, nous initions l'étude de la capacité interactive quantique pour les canaux bruités. Étant donné que les techniques pour distribuer de l'intrication sont bien étudiées, nous nous concentrons sur un modèle avec intrication préalable parfaite et communication classique bruitée. Nous démontrons que dans le cadre plus ardu des erreurs adversarielles, nous pouvons tolérer un taux d'erreur maximal de une demie moins epsilon, avec epsilon plus grand que zéro arbitrairement petit, et ce avec un taux de communication positif. Il s'ensuit que les canaux avec bruit aléatoire ayant une capacité positive pour la transmission unidirectionnelle ont une capacité positive pour la communication interactive quantique.
+Nous concluons avec une discussion de nos résultats et des directions futures pour ce programme de recherche sur une théorie de l'information quantique interactive." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Quantum information theory has developed tremendously over the past two decades, with analogues and extensions of the source coding and channel coding theorems for unidirectional communication. Meanwhile, for interactive communication, a quantum analogue of communication complexity has been developed, for which quantum protocols can provide exponential savings over the best possible classical protocols for some classical tasks. However, quantum information is much more sensitive to noise than classical information. It is therefore essential to make the best use possible of quantum resources.
+
+In this thesis, we take an information-theoretic point of view on interactive quantum 
+protocols and study the interactive analogues of source compression and 
+noisy channel coding.
+The setting we consider is that of quantum communication complexity: 
+Alice and Bob want to perform some joint quantum computation while 
+minimizing the required amount of communication.
+Local computation is deemed free. 
+Our results are split 
+into three distinct chapters, and these are organized in such a way that each can 
+be read independently.
+
+Given its central role in the context of interactive compression, we devote a chapter
+to the task of quantum state redistribution. In particular, we prove lower 
+bounds on its communication cost that are robust in the context of interactive communication.
+We also prove one-shot, one-message achievability bounds.
+
+In a subsequent chapter, we define a new, fully quantum notion of information 
+cost for interactive protocols and a corresponding notion of information complexity for bipartite tasks.
+It characterizes how much quantum information, rather than quantum 
+communication, Alice and Bob must exchange in order to implement a given bipartite task.
+We prove many structural properties for these quantities, and provide an operational interpretation
+for quantum information complexity as the amortized quantum communication complexity.
+In the special case of classical inputs, we provide an alternate characterization of information 
+cost that provides an answer to the following question about quantum protocols: 
+what is the cost of forgetting classical information?
+Two applications are presented: the first general multi-round direct-sum theorem for quantum protocols,
+and a tight lower bound, up to polylogarithmic terms, for the bounded-round quantum communication complexity
+of the disjointness function.
+
+In a final chapter, we initiate the study of the interactive quantum capacity of noisy channels. Since techniques to distribute
+entanglement are well-studied, we focus on a model with perfect pre-shared entanglement and noisy classical communication.
+We show that even in the harder setting of adversarial errors, we can tolerate a provably maximal error rate of one half minus epsilon, for an arbitrarily small epsilon greater than zero, at positive communication rates. It then follows that random noise channels with positive capacity for unidirectional transmission also have positive interactive quantum capacity.
+
+We conclude with a discussion of our results and further research directions in interactive quantum information theory." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Théorie des codes; Complexité de la communication; Somme directe; Ensembles disjoints; Complexité de l'information; Théorie de l'information à usage unique; Calcul et information quantiques; Redistribution d'états quantiques; Compression; Communication complexity; Coding theory; Direct sum; Disjointness; Information complexity; One-shot information theory; Quantum computation and information; Quantum state redistribution; Applied Sciences - Computer Science / Sciences appliqués et technologie - Informatique (UMI : 0984); Thèse ou mémoire / Thesis or Dissertation; Informatique" name="citation_keywords"/>
+<meta content="Interactive quantum information theory" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Touchette, Dave" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/12341/2/Touchette_Dave_2015_these.pdf" name="citation_pdf_url"/>
+<meta content="2015-09-23" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/12341" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12341?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12341?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12341?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12341?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12341?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12341?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2958" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3001" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2958">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/3001"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/12341/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/12341">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/12341/mets.xml-->
+<h2 class="page-header first-page-header">Interactive quantum information theory</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Brassard, Gilles</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Tapp, Alain</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Touchette, Dave</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2015-10-21T17:57:28Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2015-10-21T17:57:28Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2015-09-23</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2015-04</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/12341</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Théorie des codes</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Complexité de la communication</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Somme directe</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Ensembles disjoints</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Complexité de l'information</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Théorie de l'information à usage unique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Calcul et information quantiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Redistribution d'états quantiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Compression</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Communication complexity</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Coding theory</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Direct sum</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Disjointness</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Information complexity</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">One-shot information theory</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Quantum computation and information</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Quantum state redistribution</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Applied Sciences - Computer Science / Sciences appliqués et technologie - Informatique (UMI : 0984)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Interactive quantum information theory</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Informatique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La théorie de l'information quantique s'est développée à une vitesse fulgurante au cours des vingt dernières années, avec des analogues et extensions des théorèmes de codage de source et de codage sur canal bruité pour la communication unidirectionnelle. Pour la communication interactive, un analogue quantique de la complexité de la communication a été développé, pour lequel les protocoles quantiques peuvent performer exponentiellement mieux que les meilleurs protocoles classiques pour certaines tâches classiques. Cependant, l'information quantique est beaucoup plus sensible au bruit que l'information classique. Il est donc impératif d'utiliser les ressources quantiques à leur plein potentiel.
+Dans cette thèse, nous étudions les protocoles quantiques interactifs du point de vue de la théorie de l'information et étudions les analogues du codage de source et du codage sur canal bruité. Le cadre considéré est celui de la complexité de la communication: Alice et Bob veulent faire un calcul quantique biparti tout en minimisant la quantité de communication échangée, sans égard au coût des calculs locaux. Nos résultats sont séparés en trois chapitres distincts, qui sont organisés de sorte à ce que chacun puisse être lu indépendamment.
+Étant donné le rôle central qu'elle occupe dans le contexte de la compression interactive, un chapitre est dédié à l'étude de la tâche de la redistribution d'état quantique. Nous prouvons des bornes inférieures sur les coûts de communication nécessaires dans un contexte interactif. Nous prouvons également des bornes atteignables avec un seul message, dans un contexte d'usage unique.
+Dans un chapitre subséquent, nous définissons une nouvelle notion de complexité de l'information quantique. Celle-ci caractérise la quantité d'information, plutôt que de communication, qu'Alice et Bob doivent échanger pour calculer une tâche bipartie. Nous prouvons beaucoup de propriétés structurelles pour cette quantité, et nous lui donnons une interprétation opérationnelle en tant que complexité de la communication quantique amortie. Dans le cas particulier d'entrées classiques, nous donnons une autre caractérisation permettant de quantifier le coût encouru par un protocole quantique qui oublie de l'information classique. Deux applications sont présentées: le premier résultat général de somme directe pour la complexité de la communication quantique à plus d'une ronde, ainsi qu'une borne optimale, à un terme polylogarithmique près, pour la complexité de la communication quantique avec un nombre de rondes limité pour la fonction « ensembles disjoints ».
+Dans un chapitre final, nous initions l'étude de la capacité interactive quantique pour les canaux bruités. Étant donné que les techniques pour distribuer de l'intrication sont bien étudiées, nous nous concentrons sur un modèle avec intrication préalable parfaite et communication classique bruitée. Nous démontrons que dans le cadre plus ardu des erreurs adversarielles, nous pouvons tolérer un taux d'erreur maximal de une demie moins epsilon, avec epsilon plus grand que zéro arbitrairement petit, et ce avec un taux de communication positif. Il s'ensuit que les canaux avec bruit aléatoire ayant une capacité positive pour la transmission unidirectionnelle ont une capacité positive pour la communication interactive quantique.
+Nous concluons avec une discussion de nos résultats et des directions futures pour ce programme de recherche sur une théorie de l'information quantique interactive.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Quantum information theory has developed tremendously over the past two decades, with analogues and extensions of the source coding and channel coding theorems for unidirectional communication. Meanwhile, for interactive communication, a quantum analogue of communication complexity has been developed, for which quantum protocols can provide exponential savings over the best possible classical protocols for some classical tasks. However, quantum information is much more sensitive to noise than classical information. It is therefore essential to make the best use possible of quantum resources.
+
+In this thesis, we take an information-theoretic point of view on interactive quantum 
+protocols and study the interactive analogues of source compression and 
+noisy channel coding.
+The setting we consider is that of quantum communication complexity: 
+Alice and Bob want to perform some joint quantum computation while 
+minimizing the required amount of communication.
+Local computation is deemed free. 
+Our results are split 
+into three distinct chapters, and these are organized in such a way that each can 
+be read independently.
+
+Given its central role in the context of interactive compression, we devote a chapter
+to the task of quantum state redistribution. In particular, we prove lower 
+bounds on its communication cost that are robust in the context of interactive communication.
+We also prove one-shot, one-message achievability bounds.
+
+In a subsequent chapter, we define a new, fully quantum notion of information 
+cost for interactive protocols and a corresponding notion of information complexity for bipartite tasks.
+It characterizes how much quantum information, rather than quantum 
+communication, Alice and Bob must exchange in order to implement a given bipartite task.
+We prove many structural properties for these quantities, and provide an operational interpretation
+for quantum information complexity as the amortized quantum communication complexity.
+In the special case of classical inputs, we provide an alternate characterization of information 
+cost that provides an answer to the following question about quantum protocols: 
+what is the cost of forgetting classical information?
+Two applications are presented: the first general multi-round direct-sum theorem for quantum protocols,
+and a tight lower bound, up to polylogarithmic terms, for the bounded-round quantum communication complexity
+of the disjointness function.
+
+In a final chapter, we initiate the study of the interactive quantum capacity of noisy channels. Since techniques to distribute
+entanglement are well-studied, we focus on a model with perfect pre-shared entanglement and noisy classical communication.
+We show that even in the harder setting of adversarial errors, we can tolerate a provably maximal error rate of one half minus epsilon, for an arbitrarily small epsilon greater than zero, at positive communication rates. It then follows that random noise channels with positive capacity for unidirectional transmission also have positive interactive quantum capacity.
+
+We conclude with a discussion of our results and further research directions in interactive quantum information theory.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F12341&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Informatique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/12341/Touchette_Dave_2015_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/12341/Touchette_Dave_2015_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Touchette_Dave_2015_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/12341/Touchette_Dave_2015_these.pdf?sequence=2&amp;isAllowed=y">Touchette_Dave_2015_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1.143Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="thèse">thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3001/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a> [795]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/12341">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

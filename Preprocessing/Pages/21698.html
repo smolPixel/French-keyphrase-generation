@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Synthesis of Aza- and α,α-disubstituted Glycinyl peptides and application of their electronic and steric interactions for controlling peptide folding, and  for biomedical applications</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Lubell, William" name="DC.contributor">
+<meta content="Mohammadpourmir, Fatemeh" name="DC.creator">
+<meta content="2019-05-13T14:25:35Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2019-05-13T14:25:35Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2019-05-08" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2019-01" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/21698" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Peptidomimetic" name="DC.subject" xml:lang="fr"/>
+<meta content="Azapeptide" name="DC.subject" xml:lang="fr"/>
+<meta content="Prostaglandin F2alpha" name="DC.subject" xml:lang="fr"/>
+<meta content="Aza-propargylglycine" name="DC.subject" xml:lang="fr"/>
+<meta content="alpha-turn" name="DC.subject" xml:lang="fr"/>
+<meta content="gamma-turn" name="DC.subject" xml:lang="fr"/>
+<meta content="Cα-disubstituted glycine" name="DC.subject" xml:lang="fr"/>
+<meta content="peptide folding" name="DC.subject" xml:lang="fr"/>
+<meta content="2-amino adamantane-2-carboxylic acid" name="DC.subject" xml:lang="fr"/>
+<meta content="torsion angle" name="DC.subject" xml:lang="fr"/>
+<meta content="Peptidomimétique" name="DC.subject" xml:lang="fr"/>
+<meta content="Prostaglandine F2alpha" name="DC.subject" xml:lang="fr"/>
+<meta content="Tour-alpha" name="DC.subject" xml:lang="fr"/>
+<meta content="Tour-beta" name="DC.subject" xml:lang="fr"/>
+<meta content="Tour-gamma" name="DC.subject" xml:lang="fr"/>
+<meta content="Acides aminés Calpha-di-substitués" name="DC.subject" xml:lang="fr"/>
+<meta content="Repliement peptidique" name="DC.subject" xml:lang="fr"/>
+<meta content="Acide-2-amino-2-adamantane" name="DC.subject" xml:lang="fr"/>
+<meta content="Angle de torsion" name="DC.subject" xml:lang="fr"/>
+<meta content="Chemistry - Organic / Chimie organique (UMI : 0490)" name="DC.subject" xml:lang="fr"/>
+<meta content="Synthesis of Aza- and α,α-disubstituted Glycinyl peptides and application of their electronic and steric interactions for controlling peptide folding, and  for biomedical applications" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Les peptides présentent un grand potentiel thérapeutique, que ce soit en tant qu’ingrédient actif ou d’excipient pour la délivrance de médicament. Toutefois, certains désavantages comme leur faible biodisponibilité, une stabilité métabolique limitée et un manque de sélectivité limitent leur utilisation. Le développement de mimes peptidiques possédant de meilleures propriétés pharmacologiques est donc nécessaire. La présente thèse doctorale est orientée vers deux objectifs: a) le développement d’analogues azapeptides agissant comme modulateurs du récepteur prostaglandine F2α  (FP) et b) le développement de méthodes de synthèse et d’analyse conformationnelle de résidus glycine Cα,α-di substitué stériquement encombrés.
+    	Les azapeptides sont une classe de mimes peptidiques où le carbone α  d’au moins un acide aminé est remplacé par un atome d’azote.  Cette modification qui emploie un semicarbazide en tant que mime d’acide aminé réduit la flexibilité conformationnelle et peut induire des repliements β.
+    	Les accouchements prématurés représentent un défi du point de vue médical.  Malgré les efforts déployés pour retarder les accouchements prématurés, le taux de naissances prématurées ne cesse d’augmenter dans les pays industrialisés.  Le récepteur prostaglandine F2α (FP) a été utilisé comme cible pour le développement d’agents tocolytiques (qui retardent l’accouchement).  Les analogues aza-amino acyl proline ont démontré la capacité de moduler effectivement le récepteur FP et à inhiber les contractions utérines reliées au prostaglandines F2α par un mécanisme allostérique de signalétique biaisée d’un récepteur couplé à une protéine G.  De plus, l’activité de ces analogues dépend de la nature de la chaine latérale de l’aza-acide aminé.
+    	Pour acquérir une meilleure compréhension de la relation structure-activité des azapeptides modulant le récepteur FP, une approche orientée sur la diversité a été développée pour introduire différentes chaines latérales sur le résidu aza-amino acyl proline par alkylation de résidus aza-Gly-Pro, ainsi que par catalyse au cuivre sur des résidus aza-propargylglycine.  Différents analogues furent préparés pour étudier l’influence de la taille de la chaine latérale, de l’hydrophobicité et de l’aromaticité sur l’activité.  De plus, une librairie fut préparée par modification d’un résidu peptidique 4-hydroxyproline ancré sur support solide.  Ces analogues furent utilisés pour étudier l’influence du pliement des cycles, de l’hydrophobicité et des substituants sur l’activité.  Les différents analogues ont été testés en fonction de leur capacité à moduler les contractions utérines liées au PGF2α. Les nouveaux analogues ont montré que l’activité envers les contractions myométriales était sensible aux changements de conformation dans la région du tour β, ainsi qu’à la nature, la taille et la lipophilicité de la chaine latérale du résidu aza-acide aminé.
+   	 La synthèse de peptides contenant des résidus acide-2-amino-2-adamantane (Adm) a été explorée pour examiner l’influence de résidus stériquement encombrés sur la conformation.  Une série de N-formyl-Adm di- et tripeptides possédant une variété de composantes C- terminales a été synthétisée par une réaction multi-composante de Ugi en utilisant l’adamantan-2-one en tant que précurseur.  La conformation de la chaine principale des peptides stériquement encombrés a été déterminée en utilisant l’analyse par diffraction des rayons X.  Le fort encombrement causé par le résidu Adm restreint l’espace conformationnel aux régions typiques de repliements.  La conformation de la chaine peptidique est influencée par la nature du groupe C-terminal.  Les groupes C-terminaux encombrés, comme les groupes tert-butyl a favorisent les repliements γ standards alors que les groupes moins encombrés favorisent les repliements β- et α.
+   	 Des tripeptides homo-oligo-Adm possédant un groupe C-terminal iso-propyl et tert-butyl amide ont été préparés en utilisant des réactions de Ugi séquentielles.  L’analyse des trimères cristallisés par diffraction des rayons X a démontré que les analogues comportant le groupement iso-propyl adoptait un repliement α avec un seul pont hydrogène formant un cycle de 13 membres.  Les analogues comportant le groupement tert-butyl, quant à eux, formaient deux tours γ consécutifs caractéristique d’une hélice γ en formation.
+    	Des méthodes efficaces de synthèse d’azapeptides et d’oligomères encombrés de glycine Cα,α -di substitué ont été développées.  En utilisant ces outils, les effets de contraintes stériques et électroniques de peptides ont respectivement été explorés par l’étude de modulateurs de FP bioactifs dans le but de retarder les accouchements prématurés et par l’analyse conformationnelle d’oligomères d’Adm.  Le présent ouvrage a contribué à acquérir une meilleure compréhension de la relation structure-activité d’azapeptides modulateurs du récepteur FP. De plus, les facteurs contrôlant la conformation des résidus Adm stériquement encombrés ont été élucidés par la construction de trois différents éléments de structure secondaire (repliements α, β et γ dépendant de la nature du groupement C-terminal.  Ceci offre un grand potentiel pour des applications en chimie des peptides et dans le domaine biomédical." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Peptides exhibit pharmaceutical potential as active ingredients and excipients in drug delivery systems.  Their shortcomings, such as low bioavailability, poor selectivity and limited metabolic stability have however necessitated the design and synthesis of peptidomimetics to improve pharmacological properties. The body of this Ph.D. thesis has been targeted towards two objectives: a) the development of azapeptide analogs as modulators of the prostaglandin F2α receptor (FP), and b) the development of methods for the construction, and the conformational analysis of bulky Cα,α-disubstituted glycine amino acids.
+	Azapeptides are a class of peptidomimetic in which the Cα unit of at least one amino acid residue is replaced by a nitrogen atom. This modification features a semicarbazide as an amino amide surrogate, which reduces conformational flexibility and can induce β -turn conformation. 
+Preterm birth is an unmet medical need. Despite efforts to counter the onset of preterm labor, the rate of premature birth has increased steadily in developed countries. The prostaglandin F2α receptor (FP) was pursued as target for designing tocolytic (labor delaying) agents. Aza-amino acyl proline analogs had been shown to modulate FP and to inhibit PGF2α-mediated uterine contractions by an allosteric mechanism involving biased G protein-coupled receptor signalling. Moreover, the activity of these analogs was found to be contingent on the nature of their aza-residue side chains.
+ 	To better understand of the structure-activity relationships of azapeptide modulators of FP, diversity-oriented approaches were devised to introduce different side chains onto the aza-amino acyl proline residue by alkylation of aza-Gly-Pro analogs, as well as by copper-catalyzed reactions on an aza-propargylglycine (aza-Pra) residue. Analogs were prepared to study the influences of side chain size, hydrophobicity and aromaticity on activity. In addition, a set of proline residue analogs were prepared by the modification of a 4-hydroxyproline peptide linked to a solid support. These analogs were synthesized to study the influence of ring pucker, hydrophobicity and substituents on activity.  Analogs were tested for ability to modulate PGF2α-mediated uterine contractions. Study of the novel modulators demonstrated that activity on myometrial contractions was sensitive to changes in the conformation at the turn region, as well as the size, nature and lipophilicity of the aza-residue side chain.
+The chemistry of peptides bearing 2-amino adamantane-2-carboxylic acid (Adm) was explored to examine the influence of the bulky residue on conformation.  A set of N-formyl-Adm di- and tripeptides possessing various C-terminal components was synthesized by the development of a multiple-component Ugi reaction sequence using adamantan-2-one as precursor to the bulky residue. The backbone conformation of the hindered peptides was determined using X-ray analysis. The steric bulk of the Adm residue restricted conformational space to a region typical of an intramolecular hydrogen-bonded α- and γ-turn, as well as a distorted type-II (IIβ ) β -turn. The C-terminal residue influenced the backbone conformation. Bulkier C-terminal groups, such as t-butyl, favored regular γ-turns. Smaller C-terminal residues favored β - and α-turn geometry. 
+Employing an iterative Ugi sequence homo-oligo-Adm tripeptides were prepared possessing i-propyl and t-butyl C-terminal amides.  Crystallization of the Adm trimers and X-ray analysis in the solid state demonstrated that the i-propyl analog adopted the conformation of a single 13-membered hydrogen-bonded α-turn.  On the other hand, the t-butyl analog exhibited two consecutive γ-turns in an incipient γ-helix conformation. 
+Effective methods have thus been developed for the assembly of azapeptides and sterically bulky Cα,α-disubstituted glycine oligomers. With such methods in hand, the effects of electronic and steric constraint on peptide conformation have been respectively explored in studies of biologically active FP modulators to develop therapy to delay labor, and in conformational analyses of Adm oligomers. This thesis has thus contributed to a better understanding of structure-activity relationships of azapeptide modulators of FP. Moreover, the factors controlling the conformation of the bulky Adm residue have been elucidated in the construction of three different secondary elements (α-,  β   and  γ-turns) contingent on the C-terminal residues. The results offer interesting potential for biomedical and peptide chemistry." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="This thesis describes my research on the application of electronic and steric interactions to control peptide folding for biomedical applications. This thesis has been written employing submitted manuscripts. I specify herein the different contributions of the authors of each of the manuscripts in the respective chapters.   
+
+The introduction (Chapter 1), and unless specified otherwise below, the following chapters, all were written by me and edited by Professor William D. Lubell.
+
+The manuscript in chapter 2 entitled “Paired Utility of Aza-Amino Acyl Proline and Indolizidinone Amino Acid Residues for Peptide Mimicry: Conception of Prostaglandin F2α Receptor Allosteric Modulators that Delay Preterm Birth” describes the synthesis, isolation, characterization and structure-activity relationship study of peptide mimics containing aza-amino acyl proline and indolizidinone amino acid residues to develop allosteric modulators of the prostaglandin F2α receptor. This paper is being accepted by the Journal of Medicinal Chemistry. The results on the synthesis and study of the analogs described in this article were obtained in collaboration with N. D. Prasad Atmuri, another Ph.D. candidate in Professor Lubell’s laboratory. I performed the synthesis, isolation and characterization of all aza-amino acyl proline analogs. All the indolizidinone peptide analogs were synthesized and characterized by N. D. Prasad Atmuri. Under my direction, Jennifer Rudon Fores, a visiting M.Sc. student from Pierre et Marie Curie University (UPMC) performed the synthesis of certain aza-Lys analogs. All analogs were tested for their activity in reducing PGF2α-induced uterine contractions and delaying labor by our collaborators Dr. Xin Hou and Professor Chemtob from the Département de pédiatrie, Université de Montréal.  The sections concerning the indolizidinones and azapeptides were respectively written by N. D. Prasad Atmuri and me, and both were edited by Professor Lubell.
+
+The manuscript in chapter 3 entitled “Crystal-State Conformational Analysis of Adm Peptides. Influence of the C-Terminal Substituent” describes my original syntheses, isolation and characterization of set of N-formyl-Adm di- and tripeptides possessing various C-terminal components by conception of an Ugi multiple-component reaction sequence. This manuscript has been submitted to the journal Peptide Science for publication in a special issue devoted to the 8th Peptide Engineering Meeting (PEM 8) held in Berlin, Germany (November 8-10, 2018). The conception and design of the study was defined by Professor Lubell and Professor Toniolo (Department of Chemistry, University of Padova, Italy). I performed all the experimental, characterization and crystallization steps. Dr. Crisma (Institute of Biomolecular Chemistry, University of Padova, Italy) crystallized OHC-Adm-Aib-OMe and performed its X-ray crystallographic analysis, all other crystal structures were solved at the Université de Montréal regional center. I wrote the first draft of the manuscript and contributed to its revision which was edited by Dr. Crisma and Professors Lubell and Toniolo.
+
+The manuscript in Chapter 4 entitled “Isolated α-Turn and Incipient γ-Helix” presents the unique abilities of homo-oligo-adamantyl peptides to adopt α- and γ-turn conformations in the solid state and solution. Assembled by an Ugi multicomponent reaction strategy, N-formyl-adamantyl tripeptide tert-butyl and iso-propyl amides were respectively found to adopt an incipient γ-helix and an isolated α-turn conformation by X-ray diffraction crystallography. The manuscript is under revision for the Chem. Sci. The conception and design of the study was defined by Professor Lubell and Professor Toniolo (Department of Chemistry, University of Padova, Italy). I performed all the experimental, characterization, crystallization and NMR studies. Dr. Crisma performed the FT-IR studies of both tripeptides at different concentrations in solution.  I wrote the original draft of the manuscript which was edited by Dr. Crisma and Professors Lubell and Toniolo.
+
+In Chapter 5, I have written the conclusion and perspectives of this thesis, which were edited by Professor Lubell." name="DCTERMS.description" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Peptidomimetic; Azapeptide; Prostaglandin F2alpha; Aza-propargylglycine; alpha-turn; gamma-turn; Cα-disubstituted glycine; peptide folding; 2-amino adamantane-2-carboxylic acid; torsion angle; Peptidomimétique; Prostaglandine F2alpha; Tour-alpha; Tour-beta; Tour-gamma; Acides aminés Calpha-di-substitués; Repliement peptidique; Acide-2-amino-2-adamantane; Angle de torsion; Chemistry - Organic / Chimie organique (UMI : 0490); Thèse ou mémoire / Thesis or Dissertation; Chimie" name="citation_keywords"/>
+<meta content="Synthesis of Aza- and α,α-disubstituted Glycinyl peptides and application of their electronic and steric interactions for controlling peptide folding, and  for biomedical applications" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Mohammadpourmir, Fatemeh" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/21698/2/Mohammadpourmir_Fatemeh_2019_these.pdf" name="citation_pdf_url"/>
+<meta content="2019-05-08" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/21698" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21698?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21698?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21698?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21698?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21698?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21698?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2942" role="menuitem">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2977" role="menuitem">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2942">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2977"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/21698/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/21698">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/21698/mets.xml-->
+<h2 class="page-header first-page-header">Synthesis of Aza- and α,α-disubstituted Glycinyl peptides and application of their electronic and steric interactions for controlling peptide folding, and  for biomedical applications</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Lubell, William</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Mohammadpourmir, Fatemeh</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2019-05-13T14:25:35Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2019-05-13T14:25:35Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2019-05-08</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2019-01</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/21698</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Peptidomimetic</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Azapeptide</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Prostaglandin F2alpha</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Aza-propargylglycine</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">alpha-turn</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">gamma-turn</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Cα-disubstituted glycine</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">peptide folding</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">2-amino adamantane-2-carboxylic acid</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">torsion angle</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Peptidomimétique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Prostaglandine F2alpha</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Tour-alpha</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Tour-beta</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Tour-gamma</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Acides aminés Calpha-di-substitués</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Repliement peptidique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Acide-2-amino-2-adamantane</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Angle de torsion</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Chemistry - Organic / Chimie organique (UMI : 0490)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Synthesis of Aza- and α,α-disubstituted Glycinyl peptides and application of their electronic and steric interactions for controlling peptide folding, and  for biomedical applications</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Chimie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les peptides présentent un grand potentiel thérapeutique, que ce soit en tant qu’ingrédient actif ou d’excipient pour la délivrance de médicament. Toutefois, certains désavantages comme leur faible biodisponibilité, une stabilité métabolique limitée et un manque de sélectivité limitent leur utilisation. Le développement de mimes peptidiques possédant de meilleures propriétés pharmacologiques est donc nécessaire. La présente thèse doctorale est orientée vers deux objectifs: a) le développement d’analogues azapeptides agissant comme modulateurs du récepteur prostaglandine F2α  (FP) et b) le développement de méthodes de synthèse et d’analyse conformationnelle de résidus glycine Cα,α-di substitué stériquement encombrés.
+    	Les azapeptides sont une classe de mimes peptidiques où le carbone α  d’au moins un acide aminé est remplacé par un atome d’azote.  Cette modification qui emploie un semicarbazide en tant que mime d’acide aminé réduit la flexibilité conformationnelle et peut induire des repliements β.
+    	Les accouchements prématurés représentent un défi du point de vue médical.  Malgré les efforts déployés pour retarder les accouchements prématurés, le taux de naissances prématurées ne cesse d’augmenter dans les pays industrialisés.  Le récepteur prostaglandine F2α (FP) a été utilisé comme cible pour le développement d’agents tocolytiques (qui retardent l’accouchement).  Les analogues aza-amino acyl proline ont démontré la capacité de moduler effectivement le récepteur FP et à inhiber les contractions utérines reliées au prostaglandines F2α par un mécanisme allostérique de signalétique biaisée d’un récepteur couplé à une protéine G.  De plus, l’activité de ces analogues dépend de la nature de la chaine latérale de l’aza-acide aminé.
+    	Pour acquérir une meilleure compréhension de la relation structure-activité des azapeptides modulant le récepteur FP, une approche orientée sur la diversité a été développée pour introduire différentes chaines latérales sur le résidu aza-amino acyl proline par alkylation de résidus aza-Gly-Pro, ainsi que par catalyse au cuivre sur des résidus aza-propargylglycine.  Différents analogues furent préparés pour étudier l’influence de la taille de la chaine latérale, de l’hydrophobicité et de l’aromaticité sur l’activité.  De plus, une librairie fut préparée par modification d’un résidu peptidique 4-hydroxyproline ancré sur support solide.  Ces analogues furent utilisés pour étudier l’influence du pliement des cycles, de l’hydrophobicité et des substituants sur l’activité.  Les différents analogues ont été testés en fonction de leur capacité à moduler les contractions utérines liées au PGF2α. Les nouveaux analogues ont montré que l’activité envers les contractions myométriales était sensible aux changements de conformation dans la région du tour β, ainsi qu’à la nature, la taille et la lipophilicité de la chaine latérale du résidu aza-acide aminé.
+   	 La synthèse de peptides contenant des résidus acide-2-amino-2-adamantane (Adm) a été explorée pour examiner l’influence de résidus stériquement encombrés sur la conformation.  Une série de N-formyl-Adm di- et tripeptides possédant une variété de composantes C- terminales a été synthétisée par une réaction multi-composante de Ugi en utilisant l’adamantan-2-one en tant que précurseur.  La conformation de la chaine principale des peptides stériquement encombrés a été déterminée en utilisant l’analyse par diffraction des rayons X.  Le fort encombrement causé par le résidu Adm restreint l’espace conformationnel aux régions typiques de repliements.  La conformation de la chaine peptidique est influencée par la nature du groupe C-terminal.  Les groupes C-terminaux encombrés, comme les groupes tert-butyl a favorisent les repliements γ standards alors que les groupes moins encombrés favorisent les repliements β- et α.
+   	 Des tripeptides homo-oligo-Adm possédant un groupe C-terminal iso-propyl et tert-butyl amide ont été préparés en utilisant des réactions de Ugi séquentielles.  L’analyse des trimères cristallisés par diffraction des rayons X a démontré que les analogues comportant le groupement iso-propyl adoptait un repliement α avec un seul pont hydrogène formant un cycle de 13 membres.  Les analogues comportant le groupement tert-butyl, quant à eux, formaient deux tours γ consécutifs caractéristique d’une hélice γ en formation.
+    	Des méthodes efficaces de synthèse d’azapeptides et d’oligomères encombrés de glycine Cα,α -di substitué ont été développées.  En utilisant ces outils, les effets de contraintes stériques et électroniques de peptides ont respectivement été explorés par l’étude de modulateurs de FP bioactifs dans le but de retarder les accouchements prématurés et par l’analyse conformationnelle d’oligomères d’Adm.  Le présent ouvrage a contribué à acquérir une meilleure compréhension de la relation structure-activité d’azapeptides modulateurs du récepteur FP. De plus, les facteurs contrôlant la conformation des résidus Adm stériquement encombrés ont été élucidés par la construction de trois différents éléments de structure secondaire (repliements α, β et γ dépendant de la nature du groupement C-terminal.  Ceci offre un grand potentiel pour des applications en chimie des peptides et dans le domaine biomédical.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Peptides exhibit pharmaceutical potential as active ingredients and excipients in drug delivery systems.  Their shortcomings, such as low bioavailability, poor selectivity and limited metabolic stability have however necessitated the design and synthesis of peptidomimetics to improve pharmacological properties. The body of this Ph.D. thesis has been targeted towards two objectives: a) the development of azapeptide analogs as modulators of the prostaglandin F2α receptor (FP), and b) the development of methods for the construction, and the conformational analysis of bulky Cα,α-disubstituted glycine amino acids.
+	Azapeptides are a class of peptidomimetic in which the Cα unit of at least one amino acid residue is replaced by a nitrogen atom. This modification features a semicarbazide as an amino amide surrogate, which reduces conformational flexibility and can induce β -turn conformation. 
+Preterm birth is an unmet medical need. Despite efforts to counter the onset of preterm labor, the rate of premature birth has increased steadily in developed countries. The prostaglandin F2α receptor (FP) was pursued as target for designing tocolytic (labor delaying) agents. Aza-amino acyl proline analogs had been shown to modulate FP and to inhibit PGF2α-mediated uterine contractions by an allosteric mechanism involving biased G protein-coupled receptor signalling. Moreover, the activity of these analogs was found to be contingent on the nature of their aza-residue side chains.
+ 	To better understand of the structure-activity relationships of azapeptide modulators of FP, diversity-oriented approaches were devised to introduce different side chains onto the aza-amino acyl proline residue by alkylation of aza-Gly-Pro analogs, as well as by copper-catalyzed reactions on an aza-propargylglycine (aza-Pra) residue. Analogs were prepared to study the influences of side chain size, hydrophobicity and aromaticity on activity. In addition, a set of proline residue analogs were prepared by the modification of a 4-hydroxyproline peptide linked to a solid support. These analogs were synthesized to study the influence of ring pucker, hydrophobicity and substituents on activity.  Analogs were tested for ability to modulate PGF2α-mediated uterine contractions. Study of the novel modulators demonstrated that activity on myometrial contractions was sensitive to changes in the conformation at the turn region, as well as the size, nature and lipophilicity of the aza-residue side chain.
+The chemistry of peptides bearing 2-amino adamantane-2-carboxylic acid (Adm) was explored to examine the influence of the bulky residue on conformation.  A set of N-formyl-Adm di- and tripeptides possessing various C-terminal components was synthesized by the development of a multiple-component Ugi reaction sequence using adamantan-2-one as precursor to the bulky residue. The backbone conformation of the hindered peptides was determined using X-ray analysis. The steric bulk of the Adm residue restricted conformational space to a region typical of an intramolecular hydrogen-bonded α- and γ-turn, as well as a distorted type-II (IIβ ) β -turn. The C-terminal residue influenced the backbone conformation. Bulkier C-terminal groups, such as t-butyl, favored regular γ-turns. Smaller C-terminal residues favored β - and α-turn geometry. 
+Employing an iterative Ugi sequence homo-oligo-Adm tripeptides were prepared possessing i-propyl and t-butyl C-terminal amides.  Crystallization of the Adm trimers and X-ray analysis in the solid state demonstrated that the i-propyl analog adopted the conformation of a single 13-membered hydrogen-bonded α-turn.  On the other hand, the t-butyl analog exhibited two consecutive γ-turns in an incipient γ-helix conformation. 
+Effective methods have thus been developed for the assembly of azapeptides and sterically bulky Cα,α-disubstituted glycine oligomers. With such methods in hand, the effects of electronic and steric constraint on peptide conformation have been respectively explored in studies of biologically active FP modulators to develop therapy to delay labor, and in conformational analyses of Adm oligomers. This thesis has thus contributed to a better understanding of structure-activity relationships of azapeptide modulators of FP. Moreover, the factors controlling the conformation of the bulky Adm residue have been elucidated in the construction of three different secondary elements (α-,  β   and  γ-turns) contingent on the C-terminal residues. The results offer interesting potential for biomedical and peptide chemistry.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.description</td><td class="word-break">This thesis describes my research on the application of electronic and steric interactions to control peptide folding for biomedical applications. This thesis has been written employing submitted manuscripts. I specify herein the different contributions of the authors of each of the manuscripts in the respective chapters.   
+
+The introduction (Chapter 1), and unless specified otherwise below, the following chapters, all were written by me and edited by Professor William D. Lubell.
+
+The manuscript in chapter 2 entitled “Paired Utility of Aza-Amino Acyl Proline and Indolizidinone Amino Acid Residues for Peptide Mimicry: Conception of Prostaglandin F2α Receptor Allosteric Modulators that Delay Preterm Birth” describes the synthesis, isolation, characterization and structure-activity relationship study of peptide mimics containing aza-amino acyl proline and indolizidinone amino acid residues to develop allosteric modulators of the prostaglandin F2α receptor. This paper is being accepted by the Journal of Medicinal Chemistry. The results on the synthesis and study of the analogs described in this article were obtained in collaboration with N. D. Prasad Atmuri, another Ph.D. candidate in Professor Lubell’s laboratory. I performed the synthesis, isolation and characterization of all aza-amino acyl proline analogs. All the indolizidinone peptide analogs were synthesized and characterized by N. D. Prasad Atmuri. Under my direction, Jennifer Rudon Fores, a visiting M.Sc. student from Pierre et Marie Curie University (UPMC) performed the synthesis of certain aza-Lys analogs. All analogs were tested for their activity in reducing PGF2α-induced uterine contractions and delaying labor by our collaborators Dr. Xin Hou and Professor Chemtob from the Département de pédiatrie, Université de Montréal.  The sections concerning the indolizidinones and azapeptides were respectively written by N. D. Prasad Atmuri and me, and both were edited by Professor Lubell.
+
+The manuscript in chapter 3 entitled “Crystal-State Conformational Analysis of Adm Peptides. Influence of the C-Terminal Substituent” describes my original syntheses, isolation and characterization of set of N-formyl-Adm di- and tripeptides possessing various C-terminal components by conception of an Ugi multiple-component reaction sequence. This manuscript has been submitted to the journal Peptide Science for publication in a special issue devoted to the 8th Peptide Engineering Meeting (PEM 8) held in Berlin, Germany (November 8-10, 2018). The conception and design of the study was defined by Professor Lubell and Professor Toniolo (Department of Chemistry, University of Padova, Italy). I performed all the experimental, characterization and crystallization steps. Dr. Crisma (Institute of Biomolecular Chemistry, University of Padova, Italy) crystallized OHC-Adm-Aib-OMe and performed its X-ray crystallographic analysis, all other crystal structures were solved at the Université de Montréal regional center. I wrote the first draft of the manuscript and contributed to its revision which was edited by Dr. Crisma and Professors Lubell and Toniolo.
+
+The manuscript in Chapter 4 entitled “Isolated α-Turn and Incipient γ-Helix” presents the unique abilities of homo-oligo-adamantyl peptides to adopt α- and γ-turn conformations in the solid state and solution. Assembled by an Ugi multicomponent reaction strategy, N-formyl-adamantyl tripeptide tert-butyl and iso-propyl amides were respectively found to adopt an incipient γ-helix and an isolated α-turn conformation by X-ray diffraction crystallography. The manuscript is under revision for the Chem. Sci. The conception and design of the study was defined by Professor Lubell and Professor Toniolo (Department of Chemistry, University of Padova, Italy). I performed all the experimental, characterization, crystallization and NMR studies. Dr. Crisma performed the FT-IR studies of both tripeptides at different concentrations in solution.  I wrote the original draft of the manuscript which was edited by Dr. Crisma and Professors Lubell and Toniolo.
+
+In Chapter 5, I have written the conclusion and perspectives of this thesis, which were edited by Professor Lubell.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F21698&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Chimie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/21698/Mohammadpourmir_Fatemeh_2019_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/21698/Mohammadpourmir_Fatemeh_2019_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Mohammadpourmir_Fatemeh_2019_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/21698/Mohammadpourmir_Fatemeh_2019_these.pdf?sequence=2&amp;isAllowed=y">Mohammadpourmir_Fatemeh_2019_t ...</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">28.27Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2977/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a> [594]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/21698">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

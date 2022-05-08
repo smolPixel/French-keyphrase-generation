@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>User Generated Content in Researching for Design: How the Internet Supports Creativity</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Lalande, Philippe" name="DC.contributor">
+<meta content="Joyce, Alexandre" name="DC.creator">
+<meta content="2009-04-23T17:30:48Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2009-04-23T17:30:48Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2009-03-05" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2008-06" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/2784" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Design research" name="DC.subject" xml:lang="en"/>
+<meta content="Recherche en design" name="DC.subject" xml:lang="en"/>
+<meta content="Complexity" name="DC.subject" xml:lang="en"/>
+<meta content="Complexité" name="DC.subject" xml:lang="en"/>
+<meta content="Participatory design" name="DC.subject" xml:lang="en"/>
+<meta content="Design participatif" name="DC.subject" xml:lang="en"/>
+<meta content="User generated content" name="DC.subject" xml:lang="en"/>
+<meta content="Contenu généré par les usagers" name="DC.subject" xml:lang="en"/>
+<meta content="Democratization" name="DC.subject" xml:lang="en"/>
+<meta content="Démocratisation" name="DC.subject" xml:lang="en"/>
+<meta content="Internet" name="DC.subject" xml:lang="en"/>
+<meta content="Internet" name="DC.subject" xml:lang="en"/>
+<meta content="Creativity" name="DC.subject" xml:lang="en"/>
+<meta content="Créativité" name="DC.subject" xml:lang="en"/>
+<meta content="Crowdsourcing" name="DC.subject" xml:lang="en"/>
+<meta content="Brainstorming" name="DC.subject" xml:lang="en"/>
+<meta content="Brainsourcing" name="DC.subject" xml:lang="en"/>
+<meta content="Reflection-in-action" name="DC.subject" xml:lang="en"/>
+<meta content="Réflexion-en-action" name="DC.subject" xml:lang="en"/>
+<meta content="Communications and the Arts - Design and Decorative Arts / Communications et les arts - Dessin et arts décoratifs (UMI : 0389)" name="DC.subject" xml:lang="en"/>
+<meta content="User Generated Content in Researching for Design: How the Internet Supports Creativity" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Résumé
+Cette recherche a débuté avec l’idée que l’Internet est en train de changer la manière
+dont nous créons des connaissances et du contenu culturel. Notre point de départ était
+d’utiliser l’Internet afin de rassembler et amplifier plusieurs points de vue dans un
+processus de design. Une approche complexe a exposé l’Internet comme un système
+et conséquemment comme une plateforme pour l’innovation. La structure ouverte de
+l’Internet a soutenu le mouvement participatif des usagers qui ont choisi de partager
+leurs besoins, leurs désirs et leurs solutions. Notre recherche a pour but d’étudier ce
+contenu généré par les usagers en ligne et comprendre sa valeur pour les designers.
+Les usagers créatifs veulent s’exprimer et participer activement dans le processus de
+design. Notre recherche tente de démontrer que les designers ont beaucoup à
+apprendre du contenu généré par les usagers car ceux-ci soumettent des éléments
+qui ont attrait à toutes les étapes du processus de design et révèlent des relations
+présentes dans la situation de design à l’étude. Pour en apprendre plus sur ce contenu
+nous nous demandons : Quel type d’information offre le contenu généré par les
+usagers pour la phase de recherche dans le processus de design. Afin de centrer la
+portée de l’étude, nous nous sommes aussi questionné si cette information est plus
+pertinente au design de produits, au design de services ou au design de système de
+produits et de services.
+Aspirant aux idéaux du design participatif, notre méthodologie fut développée afin
+d’apprendre comment le contenu généré par les usagers pourrait influencer le
+processus de design. Pour ce faire, nous avons choisi de chercher sur l’Internet pour
+du contenu qui concerne la mobilité via l’usage d’une automobile. Les trois différents
+types de média considérés étaient les vidéos sur YouTube, les images sur Flickr et les
+textes sur Blogger. Afin de répondre à notre première question de recherche, nous
+nous sommes penchés sur deux éléments lorsque l’on recherche pour le design : les
+espaces de design et les relations de design. Premièrement, nous avons catégorisé le
+contenu récolté selon l’espace problème, créatif et solution. Deuxièmement, nous
+avons catégorisé le contenu dépendant de laquelle des relations de design elle
+démontrait soit une combinaison d’usagers, objets et contextes. Dans le but de
+répondre à la deuxième question de cette recherche, nous avons examiné trois types
+V
+de produits de design : les automobiles privées comme produit, le partage de voiture
+comme système de produit et de service, et le taxi comme service. Chaque élément
+pertinent généré par les usagés trouvé dans cette recherche fut catégorisé jusqu’à ce
+que l’on récolte 50 échantillons pour chaque combinaison de ces variables. Nous en
+sommes arrivés avec une matrice de 50 éléments de chaque produit de design, pour
+chacun des médias, puis catégorisé selon les espaces de design et les relations dans
+le design.
+Cette recherche démontre que l’Internet, comme médium, produit les conditions
+avantageuses pour que les usagers partagent de grandes quantités de contenu
+original et diversifié qui est pertinent aux situations de design. À partir de nos données
+de recherche, nous avons identifié des tendances dans le contenu généré par les
+usagers. Notamment, nous sommes en mesure d’affirmer que le contenu généré par
+les usagers offre de l’information pertinente à la recherche pour le design, et ce dans
+tous les espaces de design et toutes les relations de design. Il en fut de même pour
+les différentes issues du design car du contenu sur les produits, les systèmes de
+produits et de services et les services était présent et pertinent. Bref, nous avons
+démontré que l’Internet supporte la créativité et conséquemment il y abonde de
+contenu créatif produit par les usagers.
+Suivant dans les traces dessinées par d’autres chercheurs en design participatif, cette
+étude devrait être considérée comme un nouvel exemple des moyens qu’ont les
+designers pour percevoir les besoins tacites des usagers en leur permettant
+d’exprimer leurs idées. Alors que ceux-ci créent librement et intuitivement ainsi
+exposant leurs besoins, solutions et idées, les designers peuvent porter un regard de
+tierce partie sur les résultats. Jumelant des techniques comme le crowdsourcing et le
+brainstorming, nous avons créé une nouvelle activité et le néologisme : brainsourcing.
+En demeurant dans une forme de pratique réflexive, les designers peuvent réfléchir et
+ajouter au contenu généré par les usagers qui lui n’est pas biaisé par une éducation
+ou une culture du design. Ce processus est similaire au design participatif
+professionnel où le brainsourcing est une activité parallèle lorsque le designer fait des
+recherches pour le design. C’est cette perspective sur la somme des idées des
+participants qui peut contribuer à comprendre la complexité de la situation de design.
+VI
+Cette recherche a aussi soulevé des questions par rapport à l’effet de démocratisation
+de l’Internet. Bien que les usagers n’ont pas l’éducation, ni les habiletés des
+designers, ils aspirent à démocratiser le processus du design en voulant participer
+activement et en exposant leurs besoins, idées et solutions. Nous avons pu déterminer
+que les usagers n’étaient pas qualifiés pour entreprendre le processus complet du
+design comme les designers professionnels, mais nous avons observé directement la
+capacité des usagers à mettre de l’avant leur créativité. À propos de la relation entre
+les usagers créatifs et les designers, nous avons étudié des langages communs tels
+les scénarios et les prototypes. Tous deux sont présents dans le contenu généré par
+les usagers que nous avons récolté dans nos recherches sur Internet. Ceci nous a
+mené vers une nouvelle perspective sur l’activité du design où des opportunités
+créatives ressortent d’une conversation avec les usagers.
+Cette recherche a dévoilé de grandes tendances dans la manière dont les usagers
+communiquent naturellement dans un processus de design. Nous espérons avoir
+offert un aperçu de comment les designers peuvent prendre avantage de tous les
+types de contenu généré par les usagers en ligne. Dans le futur, nous souhaitons que
+les designers aient la possibilité d’interagir avec les participants en prenant le rôle de
+facilitateur de la conversation. La responsabilité du résultat ne tombe pas sur les
+épaules du designer car son mandat est d’assurer le bon fonctionnement du
+processus. Les designers rejoignent les usagers en ne demandant plus comment les
+choses peuvent être créées, mais pourquoi elles devraient exister. En tant que
+designers, nous aspirons à générer plus à partir de nouvelles connaissances, nous
+aspirons à créer plus de sens.
+Mots clés: Recherche en design, complexité, design participatif, contenu généré par
+les usagers, démocratisation, Internet, créativité, crowdsourcing, brainstorming,
+brainsourcing, réflexion-en-action." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="Abstract
+This research started with the idea that the Internet is changing the way we gather
+knowledge and create content. The Internet was used to bring multiple points of views
+to interact and amplify each other within the design process. A complex approach
+helped understand the Internet as a system and consequently a platform for
+innovation. The Internet’s open structure led to a rise of participative users exposing
+their needs, wants and solutions. Our research has studied this user generated
+content over the Internet and its relevance to the design process.
+Creative users want to express themselves and to participate directly and proactively
+in the design development process. This research argues that designers have much to
+benefit from user generated content because users submit elements pertaining to all
+design spaces and reveal elements of the relationships present in a design situation
+under study. To learn more about this new content we ask: What type of information
+does user-generated content provide for researching for design? To further narrow the
+scope of this research, we also wondered: Is this information more pertinent to product
+design, service design or product service systems?
+In a participatory like effort, our methodology was developed to learn how user
+generated content could influence the design process. To do so, we chose to search
+over the Internet for content concerning mobility via the use of an automobile. The
+three different media types we considered were videos on YouTube, images on Flickr
+and text entries on Blogger. To answer our first research question, we focused our
+attention on two elements when researching for design: design spaces and design
+relationships. Firstly, we categorized the content we gathered between problem,
+creative and solution spaces. Secondly, we categorized the content depending on
+which design relationship it portrayed, thus affecting a combination of users, objects
+and contexts. To answer the second question of this research, we examined design
+outcomes of three types: private automobiles as a product, car sharing program as a
+product-service system, and taxis as a service. Each element of pertinent user
+generated content found in our research was categorized until we collected 50
+samples for every combination of variables. We ended up with a matrix where 50
+II
+elements of each design outcome had been collected in the form of each type of
+media and then categorized according to both design spaces and design relationships.
+This study has shown that the Internet as a medium produces the right conditions for
+users to share a large quantity of original and diverse content pertinent to a design
+situation. From our data collection, we were able to identify some trends in user
+generated content. More importantly, we can affirm that user generated content
+provides pertinent information when researching for design in all design spaces and
+design relationships. The same results were found for the outcomes of design as
+content relevant to products, product-service systems and services were all available
+and pertinent. In summary, we found that the Internet supports creativity and thus
+thrives on creative user content.
+Following in the path laid out by researchers in participatory design, this study should
+be considered as another example of a means for designers to perceive tacit needs by
+allowing for users to express their ideas. As the users create freely and intuitively while
+expressing their needs, solutions and ideas, the designers can have a third person
+point of view on the results. By combining techniques such as crowdsourcing and
+brainstorming, we have created a new activity and the neologism: brainsourcing.
+With some perspective on the sum of the participants’ ideas, the designers can better
+understand the complexity of the design situation. While remaining in a form of
+reflective practice, the designers can then reflect and add upon the users’ generated
+content which is unbiased by a design education or design culture. This process is
+similar to the professional participatory design process where we introduce
+brainsourcing as a similar activity.
+This research also raised the question whether the Internet could be democratizing the
+design process. Although users might not have the education and skills to be
+designers, they are democratizing the design process by participating actively and by
+exposing their needs, solutions and ideas. We determined that users weren’t
+undertaking the whole design process like professional designers but we observed that
+they were particularly creative. In light of this relationship between creative users and
+designers, we reviewed common languages, like scenarios and prototypes, which are
+III
+present in the user generated creative content we collected over the Internet. This led
+to a new point of view on the design activity where creative opportunities come from
+engaging a conversation with the users.
+This research has revealed many trends in the way users naturally communicate
+within a design process. In the end, we provided some insight on how designers can
+take advantage of all types of user generated content. In the future, we hope designers
+will be able to interact with participants while taking on the role of a facilitator of
+conversation, assuring the creative process is right. No longer are designers asking
+what products and services could be created, but why users would need it in the first
+place.
+Keywords: Design research, complexity, participatory design, user generated content,
+democratization, Internet, creativity, crowdsourcing, brainstorming, brainsourcing,
+reflection-in-action." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Design research; Recherche en design; Complexity; Complexité; Participatory design; Design participatif; User generated content; Contenu généré par les usagers; Democratization; Démocratisation; Internet; Internet; Creativity; Créativité; Crowdsourcing; Brainstorming; Brainsourcing; Reflection-in-action; Réflexion-en-action; Communications and the Arts - Design and Decorative Arts / Communications et les arts - Dessin et arts décoratifs (UMI : 0389); Thèse ou mémoire / Thesis or Dissertation; Aménagement (Design et complexité)" name="citation_keywords"/>
+<meta content="User Generated Content in Researching for Design: How the Internet Supports Creativity" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Joyce, Alexandre" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/2784/4/Joyce_Alexandre_2008_these.pdf" name="citation_pdf_url"/>
+<meta content="2009-03-05" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/2784" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2784?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2784?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2784?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2784?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2784?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2784?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2592" role="menuitem">Faculté de l'aménagement</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2593" role="menuitem">Faculté de l'aménagement – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2592">Faculté de l'aménagement</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2593">Faculté de l'aménagement – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2593"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2593/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2593/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2593/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2593/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2593/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2593/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2593/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2593/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/2784/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/2784">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2784/mets.xml-->
+<h2 class="page-header first-page-header">User Generated Content in Researching for Design: How the Internet Supports Creativity</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Lalande, Philippe</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Joyce, Alexandre</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2009-04-23T17:30:48Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2009-04-23T17:30:48Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2009-03-05</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2008-06</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/2784</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Design research</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Recherche en design</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Complexity</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Complexité</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Participatory design</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Design participatif</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">User generated content</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Contenu généré par les usagers</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Democratization</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Démocratisation</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Internet</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Internet</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Creativity</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Créativité</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Crowdsourcing</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Brainstorming</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Brainsourcing</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Reflection-in-action</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Réflexion-en-action</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Communications and the Arts - Design and Decorative Arts / Communications et les arts - Dessin et arts décoratifs (UMI : 0389)</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">User Generated Content in Researching for Design: How the Internet Supports Creativity</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Aménagement (Design et complexité)</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Maîtrise / Master's</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">M. Sc. A.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Résumé
+Cette recherche a débuté avec l’idée que l’Internet est en train de changer la manière
+dont nous créons des connaissances et du contenu culturel. Notre point de départ était
+d’utiliser l’Internet afin de rassembler et amplifier plusieurs points de vue dans un
+processus de design. Une approche complexe a exposé l’Internet comme un système
+et conséquemment comme une plateforme pour l’innovation. La structure ouverte de
+l’Internet a soutenu le mouvement participatif des usagers qui ont choisi de partager
+leurs besoins, leurs désirs et leurs solutions. Notre recherche a pour but d’étudier ce
+contenu généré par les usagers en ligne et comprendre sa valeur pour les designers.
+Les usagers créatifs veulent s’exprimer et participer activement dans le processus de
+design. Notre recherche tente de démontrer que les designers ont beaucoup à
+apprendre du contenu généré par les usagers car ceux-ci soumettent des éléments
+qui ont attrait à toutes les étapes du processus de design et révèlent des relations
+présentes dans la situation de design à l’étude. Pour en apprendre plus sur ce contenu
+nous nous demandons : Quel type d’information offre le contenu généré par les
+usagers pour la phase de recherche dans le processus de design. Afin de centrer la
+portée de l’étude, nous nous sommes aussi questionné si cette information est plus
+pertinente au design de produits, au design de services ou au design de système de
+produits et de services.
+Aspirant aux idéaux du design participatif, notre méthodologie fut développée afin
+d’apprendre comment le contenu généré par les usagers pourrait influencer le
+processus de design. Pour ce faire, nous avons choisi de chercher sur l’Internet pour
+du contenu qui concerne la mobilité via l’usage d’une automobile. Les trois différents
+types de média considérés étaient les vidéos sur YouTube, les images sur Flickr et les
+textes sur Blogger. Afin de répondre à notre première question de recherche, nous
+nous sommes penchés sur deux éléments lorsque l’on recherche pour le design : les
+espaces de design et les relations de design. Premièrement, nous avons catégorisé le
+contenu récolté selon l’espace problème, créatif et solution. Deuxièmement, nous
+avons catégorisé le contenu dépendant de laquelle des relations de design elle
+démontrait soit une combinaison d’usagers, objets et contextes. Dans le but de
+répondre à la deuxième question de cette recherche, nous avons examiné trois types
+V
+de produits de design : les automobiles privées comme produit, le partage de voiture
+comme système de produit et de service, et le taxi comme service. Chaque élément
+pertinent généré par les usagés trouvé dans cette recherche fut catégorisé jusqu’à ce
+que l’on récolte 50 échantillons pour chaque combinaison de ces variables. Nous en
+sommes arrivés avec une matrice de 50 éléments de chaque produit de design, pour
+chacun des médias, puis catégorisé selon les espaces de design et les relations dans
+le design.
+Cette recherche démontre que l’Internet, comme médium, produit les conditions
+avantageuses pour que les usagers partagent de grandes quantités de contenu
+original et diversifié qui est pertinent aux situations de design. À partir de nos données
+de recherche, nous avons identifié des tendances dans le contenu généré par les
+usagers. Notamment, nous sommes en mesure d’affirmer que le contenu généré par
+les usagers offre de l’information pertinente à la recherche pour le design, et ce dans
+tous les espaces de design et toutes les relations de design. Il en fut de même pour
+les différentes issues du design car du contenu sur les produits, les systèmes de
+produits et de services et les services était présent et pertinent. Bref, nous avons
+démontré que l’Internet supporte la créativité et conséquemment il y abonde de
+contenu créatif produit par les usagers.
+Suivant dans les traces dessinées par d’autres chercheurs en design participatif, cette
+étude devrait être considérée comme un nouvel exemple des moyens qu’ont les
+designers pour percevoir les besoins tacites des usagers en leur permettant
+d’exprimer leurs idées. Alors que ceux-ci créent librement et intuitivement ainsi
+exposant leurs besoins, solutions et idées, les designers peuvent porter un regard de
+tierce partie sur les résultats. Jumelant des techniques comme le crowdsourcing et le
+brainstorming, nous avons créé une nouvelle activité et le néologisme : brainsourcing.
+En demeurant dans une forme de pratique réflexive, les designers peuvent réfléchir et
+ajouter au contenu généré par les usagers qui lui n’est pas biaisé par une éducation
+ou une culture du design. Ce processus est similaire au design participatif
+professionnel où le brainsourcing est une activité parallèle lorsque le designer fait des
+recherches pour le design. C’est cette perspective sur la somme des idées des
+participants qui peut contribuer à comprendre la complexité de la situation de design.
+VI
+Cette recherche a aussi soulevé des questions par rapport à l’effet de démocratisation
+de l’Internet. Bien que les usagers n’ont pas l’éducation, ni les habiletés des
+designers, ils aspirent à démocratiser le processus du design en voulant participer
+activement et en exposant leurs besoins, idées et solutions. Nous avons pu déterminer
+que les usagers n’étaient pas qualifiés pour entreprendre le processus complet du
+design comme les designers professionnels, mais nous avons observé directement la
+capacité des usagers à mettre de l’avant leur créativité. À propos de la relation entre
+les usagers créatifs et les designers, nous avons étudié des langages communs tels
+les scénarios et les prototypes. Tous deux sont présents dans le contenu généré par
+les usagers que nous avons récolté dans nos recherches sur Internet. Ceci nous a
+mené vers une nouvelle perspective sur l’activité du design où des opportunités
+créatives ressortent d’une conversation avec les usagers.
+Cette recherche a dévoilé de grandes tendances dans la manière dont les usagers
+communiquent naturellement dans un processus de design. Nous espérons avoir
+offert un aperçu de comment les designers peuvent prendre avantage de tous les
+types de contenu généré par les usagers en ligne. Dans le futur, nous souhaitons que
+les designers aient la possibilité d’interagir avec les participants en prenant le rôle de
+facilitateur de la conversation. La responsabilité du résultat ne tombe pas sur les
+épaules du designer car son mandat est d’assurer le bon fonctionnement du
+processus. Les designers rejoignent les usagers en ne demandant plus comment les
+choses peuvent être créées, mais pourquoi elles devraient exister. En tant que
+designers, nous aspirons à générer plus à partir de nouvelles connaissances, nous
+aspirons à créer plus de sens.
+Mots clés: Recherche en design, complexité, design participatif, contenu généré par
+les usagers, démocratisation, Internet, créativité, crowdsourcing, brainstorming,
+brainsourcing, réflexion-en-action.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Abstract
+This research started with the idea that the Internet is changing the way we gather
+knowledge and create content. The Internet was used to bring multiple points of views
+to interact and amplify each other within the design process. A complex approach
+helped understand the Internet as a system and consequently a platform for
+innovation. The Internet’s open structure led to a rise of participative users exposing
+their needs, wants and solutions. Our research has studied this user generated
+content over the Internet and its relevance to the design process.
+Creative users want to express themselves and to participate directly and proactively
+in the design development process. This research argues that designers have much to
+benefit from user generated content because users submit elements pertaining to all
+design spaces and reveal elements of the relationships present in a design situation
+under study. To learn more about this new content we ask: What type of information
+does user-generated content provide for researching for design? To further narrow the
+scope of this research, we also wondered: Is this information more pertinent to product
+design, service design or product service systems?
+In a participatory like effort, our methodology was developed to learn how user
+generated content could influence the design process. To do so, we chose to search
+over the Internet for content concerning mobility via the use of an automobile. The
+three different media types we considered were videos on YouTube, images on Flickr
+and text entries on Blogger. To answer our first research question, we focused our
+attention on two elements when researching for design: design spaces and design
+relationships. Firstly, we categorized the content we gathered between problem,
+creative and solution spaces. Secondly, we categorized the content depending on
+which design relationship it portrayed, thus affecting a combination of users, objects
+and contexts. To answer the second question of this research, we examined design
+outcomes of three types: private automobiles as a product, car sharing program as a
+product-service system, and taxis as a service. Each element of pertinent user
+generated content found in our research was categorized until we collected 50
+samples for every combination of variables. We ended up with a matrix where 50
+II
+elements of each design outcome had been collected in the form of each type of
+media and then categorized according to both design spaces and design relationships.
+This study has shown that the Internet as a medium produces the right conditions for
+users to share a large quantity of original and diverse content pertinent to a design
+situation. From our data collection, we were able to identify some trends in user
+generated content. More importantly, we can affirm that user generated content
+provides pertinent information when researching for design in all design spaces and
+design relationships. The same results were found for the outcomes of design as
+content relevant to products, product-service systems and services were all available
+and pertinent. In summary, we found that the Internet supports creativity and thus
+thrives on creative user content.
+Following in the path laid out by researchers in participatory design, this study should
+be considered as another example of a means for designers to perceive tacit needs by
+allowing for users to express their ideas. As the users create freely and intuitively while
+expressing their needs, solutions and ideas, the designers can have a third person
+point of view on the results. By combining techniques such as crowdsourcing and
+brainstorming, we have created a new activity and the neologism: brainsourcing.
+With some perspective on the sum of the participants’ ideas, the designers can better
+understand the complexity of the design situation. While remaining in a form of
+reflective practice, the designers can then reflect and add upon the users’ generated
+content which is unbiased by a design education or design culture. This process is
+similar to the professional participatory design process where we introduce
+brainsourcing as a similar activity.
+This research also raised the question whether the Internet could be democratizing the
+design process. Although users might not have the education and skills to be
+designers, they are democratizing the design process by participating actively and by
+exposing their needs, solutions and ideas. We determined that users weren’t
+undertaking the whole design process like professional designers but we observed that
+they were particularly creative. In light of this relationship between creative users and
+designers, we reviewed common languages, like scenarios and prototypes, which are
+III
+present in the user generated creative content we collected over the Internet. This led
+to a new point of view on the design activity where creative opportunities come from
+engaging a conversation with the users.
+This research has revealed many trends in the way users naturally communicate
+within a design process. In the end, we provided some insight on how designers can
+take advantage of all types of user generated content. In the future, we hope designers
+will be able to interact with participants while taking on the role of a facilitator of
+conversation, assuring the creative process is right. No longer are designers asking
+what products and services could be created, but why users would need it in the first
+place.
+Keywords: Design research, complexity, participatory design, user generated content,
+democratization, Internet, creativity, crowdsourcing, brainstorming, brainsourcing,
+reflection-in-action.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F2784&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Am%C3%A9nagement+%28Design+et+complexit%C3%A9%29&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Ma%C3%AEtrise+%2F+Master%27s&amp;rft.degree=M.+Sc.+A."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/2784/Joyce_Alexandre_2008_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/2784/Joyce_Alexandre_2008_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Joyce_Alexandre_2008_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/2784/Joyce_Alexandre_2008_these.pdf?sequence=4&amp;isAllowed=y">Joyce_Alexandre_2008_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">10.11Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Mémoire">Mémoire</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2593/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2593">Faculté de l'aménagement – Thèses et mémoires</a> [359]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/2784">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

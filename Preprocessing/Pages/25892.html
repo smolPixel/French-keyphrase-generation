@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Development of a tissue engineering platform using bovine species as a model : placental scaffolds seeded with bovine adipose-derived cells</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Murphy, Bruce D." name="DC.contributor">
+<meta content="Mansano Garcia, Joaquim" name="DC.contributor">
+<meta content="Baracho Trindade Hill, Amanda" name="DC.creator">
+<meta content="2022-01-13T20:03:37Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2022-01-13T20:03:37Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-11-03" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2019-10" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/25892" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Cartilage tissue engineering" name="DC.subject" xml:lang="fr"/>
+<meta content="Bone tissue engineering" name="DC.subject" xml:lang="fr"/>
+<meta content="Placenta" name="DC.subject" xml:lang="fr"/>
+<meta content="Mesenchymal stem cells" name="DC.subject" xml:lang="fr"/>
+<meta content="Decellularization" name="DC.subject" xml:lang="fr"/>
+<meta content="Recellularization" name="DC.subject" xml:lang="fr"/>
+<meta content="Cows" name="DC.subject" xml:lang="fr"/>
+<meta content="Translational medicine" name="DC.subject" xml:lang="fr"/>
+<meta content="Engenharia tecidual de cartilagem" name="DC.subject" xml:lang="fr"/>
+<meta content="Engenharia tecidual óssea" name="DC.subject" xml:lang="fr"/>
+<meta content="Células tronco mesenquimais" name="DC.subject" xml:lang="fr"/>
+<meta content="Descelularização" name="DC.subject" xml:lang="fr"/>
+<meta content="Recelularização" name="DC.subject" xml:lang="fr"/>
+<meta content="Vacas" name="DC.subject" xml:lang="fr"/>
+<meta content="Medicina translacional" name="DC.subject" xml:lang="fr"/>
+<meta content="Ingénierie tissulaire du cartilage" name="DC.subject" xml:lang="fr"/>
+<meta content="Ingénierie des tissus osseux" name="DC.subject" xml:lang="fr"/>
+<meta content="Cellules souches mésenchymateuses" name="DC.subject" xml:lang="fr"/>
+<meta content="Décellularisation" name="DC.subject" xml:lang="fr"/>
+<meta content="Recellularisation" name="DC.subject" xml:lang="fr"/>
+<meta content="Vaches" name="DC.subject" xml:lang="fr"/>
+<meta content="Médecine translationnelle" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Veterinary Science / Biologie - Science vétérinaire (UMI : 0778)" name="DC.subject" xml:lang="fr"/>
+<meta content="Development of a tissue engineering platform using bovine species as a model : placental scaffolds seeded with bovine adipose-derived cells" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La technologie des cellules souches et les sciences de biomatériaux ont obtenu des grands progrès au cours des dernières décennies et sont devenues plus populaires dans le monde. Les chercheurs cherchent à étudier et à évaluer les différentes sources de cellules et de biomatériaux qui, en combinaison, peuvent fournir une plateforme d’ingénierie tissulaire produite à grande échelle et à bas prix, pour être utilisée aux tests de médicaments, aux thérapies cellulaires et transplantations, dans le but de fournir un soutien thérapeutique aux blessures et à la régénération des tissus endommagés. En général, les trois constituants les plus importants de l’ingénierie tissulaire sont : le choix du type cellulaire, la source du biomatérial (charpente), la création et le maintien d’un lieu favorable à la formation des tissus. Lorsque ces trois constituants sont gérés avec succès, le microenvironnement cellulaire in vitro est plus similaire à ce que la cellule est exposée in vivo, en permettant que la croissance et la différenciation cellulaire survient de façon plus fiable et efficace. Le placenta bovin décellularisé a démontré avoir une riche matrice extracellulaire, des vaisseaux bien développés, étant un biomatérial à haute disponibilité et à bas prix. Mais, on ne sait pas si les charpentes placentaires ont le potentiel d’être repeuplés avec des cellules souches mésenchymateuses (MSC) dérivées du tissu adipeux, et ce processus s’appelle recelularisation. Encore, on ne sait pas si les charpentes placentaires ont la capacité d’offrir, après recelularisation, un ambient approprié pour différencier ces cellules en différentes lignées. Ainsi, afin de fournir des informations sur la capacité du complexe MSC – charpente placentaire à être utilisé avec succès dans l’ingénierie tissulaire, les objectifs de cette thèse ont été : étudier le potentiel des charpentes placentaires bovins en offrir un soutien à la recelularisation par des cellules dérivées du tissu adipeux bovin, et aussi bien qu’évaluer la capacité de différenciation cellulaire en lignées ostéogéniques et chondrogéniques. Le premier article de cette thèse c’est une revue de la littérature qui aborde la nature des cellules souches mésenchymateuses, leurs applications en médicine régénérative, l’importance de la technologie des cellules souches dans l’industrie de l’élevage et l’utilisation de l’espèce bovine en médicine translationnelle. Le deuxième article aborde l’évaluation de la recelularisation et la différenciation cellulaire. Les placentas bovins ont été décellularisés par perfusion de SDS du vaisseau ombilical et les lignées cellulaires établies après la digestion enzymatique du tissu adipeux de six vaches et la sélection par adhésion rapide à la plaque de culture. Ensuite, les cellules ont été cultivées avec les charpentes dans un système d’agitation 2D pendant 21 jours en milieu de différenciation ou de maintenance. Lorsqu’elles sont cultivées sur la plaque de culture, les cellules isolées ont présenté morphologie similaire au fibroblaste, l’expression de CD90, CD73 et CD105, tandis qu’elles n’ont pas exprimé les marqueurs CD34 et CD45. Par ailleurs, les cellules ont été capables de se différencier en lignées chondrogéniques et ostéogeniques, en fournant des preuves de leur nature mésenchymateuse. Ensuite, quand elles ont été cultivées avec les charpentes, les cellules y ont adhéré par des projections cellulaires, établies une communication cellule-charpente et se sont proliférées, fait mis en évidence par l’analyse histologique et microscopie électronique à balayage (MEB). Après, le potentiel des cellules à se différencier en lignées ostéogéniques a été exploré, lorsqu’elles ont été cultivées avec charpente. Au cours d’une période de culture de 21 jours en milieu ostéogénique, les cellules ont proliféré et se sont différenciées de façon dépendante du temps, c’est-à-dire, à chaque semaine, la plus grande abudance de cellules a été observée, fait en évidence par la coloration des noyaux cellulaires et l’augmentation de l’intensité de la coloration pour COLLAGEN 1 (COL1), qui a aussi été exprimée par réaction quantitative en chaîne de la polymérase en temps réel (qRT-PCR). Le standard a été observé par l’analyse histologique, les accumulations généralisées de calcium a aussi été plus abondantes dans les charpentes au cours de la troisième semaine de culture, demontré par la coloration de Von Kossa. L’analyse MEB a montré que les cellules ont sécrété des structures globulaires lorsqu’elles ont été cultivées sur conditions d’induction ostéogénique, cohérentes avec la sécrétion observée par l’analyse histologique. Sur la différenciation chondrogénique, les colorants Safranine et Vert Solide ont démontré succès à la différenciation, grâce à la coloration des protéoglycanes, des cellules similaires aux chondrocytes et aux collagène type II. L’analyse MEB a montré que les cellules ont changé leur morphologie de fibroblastes en globulaires quand elles ont été cultivées avec milieu d’induction chondrogène pendant 21 jours. De plus, les complexes de cellules-charpentes ont exprimé un marqueur de la lignée cartilagineuse, COLLAGEN 2 (COL2), qui est cohérent avec les observations histologiques et MEB. Face aux résultats obtenus, cette étude a démontré que les charpentes placentaires cultivés avec des cellules dérivées du tissu adipeux ont le potentiel d’être utilisés dans l’ingénierie de tissus osseux et cartilagineux." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="A tecnologia de células-tronco e as ciências de biomateriais obtiveram um grande avanço nas últimas décadas e se tornaram mais populares em todo o mundo. Pesquisadores buscam investigar e avaliar diferentes fontes de células e de biomateriais que, em combinação, possam fornecer uma plataforma de engenharia tecidual de baixo custo e produzida em larga escala, para serem utilizadas em testes  de drogas, terapias celulares e transplantes, com objetivo de fornecer suporte terapêutico à lesões e regeneração de tecidos danificados. Em geral, os três componentes mais importantes da engenharia de tecidos são: a escolha do tipo de célula, a fonte do biomaterial (scaffold), criação e manutenção de um ambiente propício à formação tecidual. Quando esses três componentes são gerenciados com sucesso, o microambiente celular in vitro é mais semelhante ao que a célula está exposta in vivo, permitindo que o crescimento e diferenciação celular ocorra de maneira mais fidedigna e eficiente. A placenta bovina descelularizada demonstrou ter uma rica matriz extracelular, vasos bem desenvolvidos, sendo um biomaterial com alta disponibilidade e baixo custo. No entanto, não há informação sobre o potencial dos scaffolds placentários em serem repovoados com células-tronco mesenquimais (MSC) derivadas do tecido adiposo, processo chamado recelularização. Ainda, também não há informação sobre a capacidade dos scaffolds placentários, de após recelularização, oferecer um ambiente adequado para diferenciação dessas células em diferentes linhagens. Assim, a fim de fornecer informações sobre a capacidade do complexo MSC - scaffold placentário em ser usado com sucesso na engenharia tecidual, os objetivos desta tese foram: estudar o potencial dos scaffolds placentários bovinos em oferecer suporte para recelularização por células-tronco derivadas do tecido adiposo bovino, bem como avaliar a capacidade de diferenciação celular em linhagens osteogênica e condrogênica. O primeiro artigo desta tese trata-se de uma revisão de literatura, que discute a natureza das células-tronco mesenquimais, suas aplicações na medicina regenerativa, a importância da tecnologia com células- tronco na indústria pecuária e o uso da espécie bovina na medicina translacional. O segundo artigo consiste na avaliação da recelularização e da diferenciação celular. As placentas bovinas foram decelularizadas por perfusão de SDS do vaso umbilical e as linhas celulares estabelecidas após digestão enzimática do tecido adiposo de seis vacas e seleção por adesão rápida à placa de cultivo. Em seguida, as células foram cultivadas com os scaffolds em um sistema de agitação 2D por 21 dias em meio de diferenciação ou manutenção. Quando cultivadas na placa de cultivo, as células isoladas exibiram morfologia semelhante ao fibroblasto, expressão de CD90, CD73 e CD105, enquanto não expressaram os marcadores CD34 e CD45. Além disso, as células foram capazes de se diferenciar em linhagens condrogênicas e osteogênicas, fornecendo evidências de sua natureza mesenquimal. Posteriormente, quando cultivadas com os scaffolds, as células aderiram-se aos mesmos por projeções celulares, estabeleceram comunicação célula-scaffold e se proliferaram, fato evidenciado por análise histológica e microscopia eletrônica de varredura (SEM). Em seguida, o potencial das células em se diferenciarem em linhagem osteogênica quando cultivadas com scaffold foi avaliado. Durante um período de cultivo de 21 dias no meio osteogênico, as células se proliferaram e diferenciaram de maneira dependente do tempo, ou seja, a cada semana pode ser observado maior abundância de células, evidenciada pela coloração dos núcleos celulares e aumento da intensidade da coloração para COLAGENO 1 (COL1), que também foi expresso por reação quantitativa em cadeia da polimerase em tempo real (qRT-PCR). O mesmo padrão foi observado pela análise histológica; acúmulos generalizados de cálcio também foram mais abundantes nos scaffolds na terceira semana de cultivo, evidenciado pela coloração de Von Kossa. A análise SEM revelou que as células secretaram estruturas globulares quando cultivadas sob condições de indução osteogênica, condizente com a secreção observada pela análise histológica. Em relação à diferenciação condrogênica, os corantes Safranina e Fast Green revelaram sucesso na diferenciação, através    da    coloração de proteoglicanos, células semelhantes aos condrócitos e colágeno tipo II. A análise SEM mostrou que as células mudaram sua morfologia de fibroblastos para globulares quando cultivadas com meio de indução condrogênica por 21 dias. Além disso, os complexos células-scaffold expressaram um marcador de linhagem cartilaginosa, COLAGENO 2 (COL2), condizente com as observações histológicas e SEM. Considerando os resultados, este estudo demonstrou que os scaffolds placentários bovinos cultivados com células-tronco derivadas de tecido adiposo bovino possuem potencial para serem utilizados na engenharia de tecidos ósseos e cartilaginosos." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Stem cell technologies and biomaterial sciences have advanced and grown more popular all over the world. The researchers aim to investigate and evaluate different sources of cells and biomaterials that, in combination, could provide a low cost, highly scalable tissue engineering platform that could be used in drug tests, cell therapies and cell transplantation. The three most important components of tissue engineering systems in general are cell source, biomaterial source (scaffolding system), and the creation and maintenance of an environment that is conducive to tissue formation. When these three components are successfully managed, the tissue engineering treatment achieves a faithful imitation of the in vivo environment, allowing for the differentiation of cells into the desirable cell types. Decellularized bovine placenta has been demonstrated to be rich in extracellular matrix (ECM) and to have well-developed vasculature, representing a highly available, low cost, practically scalable biomaterial. However, it is not known if placental scaffolds have the potential to support recellularization with adipose-derived cells and their subsequent differentiation into different lineages. Thus, in order to provide information on the ability of the mesenchymal stem cell (MSC) - placental scaffold complex to be used in tissue engineering approaches, the objectives of this thesis were: to study the potential of bovine placental scaffolds to support adipose-derived cell recellularization and their differentiation into osteogenic and chondrogenic lineages. The first article of this thesis is a literature review that discusses the nature of mesenchymal stem cells, their applications in regenerative medicine, the importance of stem cell technologies to the livestock industry and the use of bovine species for translational medicine. The second article consists of an evaluation of scaffold recellularization and the differentiation of cells on the scaffolds. The bovine placentae were decellularized by umbilical vessel sodium dodecyl sulfate (SDS) perfusion and cell lines were established after the enzymatic digestion of adipose tissue from six cows and cell selection by rapid adherence to the culture plate. Then, cells were seeded onto the scaffolds and cultured in a 2D rocker system for 21 days in either differentiation or maintenance medium. The isolated cells, when cultured in the plastic dish, exhibited fibroblast-like morphology, CD90, CD73 and CD105 expression, and lacked CD34 and CD45 expression. Moreover, the cells were able to undergo differentiation into chondrogenic and osteogenic lineages, providing evidence of their mesenchymal nature.
+8
+Subsequently, the cells adhered to the scaffolds by cell projections, established cell-scaffold communication, and proliferated while maintaining cell-cell communication, which was evidenced by histological and scanning electron microscopy (SEM) assays. Throughout a 21- day culture period in the osteogenic medium, the cells exhibited proliferation and differentiation in a time-dependent manner, which can be observed by the greater abundance of cells in later periods, evidenced by cell nuclei staining (4′,6-diamidino-2- phenylindole - DAPI) and increased intensity of staining for COLLAGEN 1 (COL1) in the immunohistochemical assay, and by its expression as measured by real time polymerase chain reaction (qRT-PCR). This same pattern was observed by histological analysis. Widespread calcium accumulations were also more abundant on the scaffolds as time progressed, as evidenced by Von Kossa staining. The SEM analysis revealed that cells secreted globular/round structures when seeded under osteogenic induction conditions, in accordance with histological findings. Regarding chondrogenic differentiation, Safranin O and Fast Green staining revealed successful differentiation through staining of proteoglycans, chondrocyte-like cells and type II collagen on the scaffold. The SEM analysis showed that the cells changed morphology from fibroblast-like to globular when cultured with chondrogenic induction medium for 21 days. Additionally, cell-scaffold complexes expressed a cartilage marker, COLLAGEN 2 (COL2), which is conducive to the histological and SEM observations. Considering the results as a whole, this study demonstrated that placental scaffolds seeded with adipose-derived cells have the potential to be used in bone and cartilage tissue- engineering applications" name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Cartilage tissue engineering; Bone tissue engineering; Placenta; Mesenchymal stem cells; Decellularization; Recellularization; Cows; Translational medicine; Engenharia tecidual de cartilagem; Engenharia tecidual óssea; Células tronco mesenquimais; Descelularização; Recelularização; Vacas; Medicina translacional; Ingénierie tissulaire du cartilage; Ingénierie des tissus osseux; Cellules souches mésenchymateuses; Décellularisation; Recellularisation; Vaches; Médecine translationnelle; Biology - Veterinary Science / Biologie - Science vétérinaire (UMI : 0778); Thèse ou mémoire / Thesis or Dissertation; Sciences vétérinaires" name="citation_keywords"/>
+<meta content="Development of a tissue engineering platform using bovine species as a model : placental scaffolds seeded with bovine adipose-derived cells" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Baracho Trindade Hill, Amanda" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/25892/2/Hill_Trindade_Baracho_Amanda_2020_these.pdf" name="citation_pdf_url"/>
+<meta content="2021-11-03" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/25892" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25892?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25892?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25892?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25892?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25892?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25892?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2919" role="menuitem">Faculté de médecine vétérinaire</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2966" role="menuitem">Faculté de médecine vétérinaire – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2919">Faculté de médecine vétérinaire</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2966">Faculté de médecine vétérinaire – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2966"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/25892/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25892">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/25892/mets.xml-->
+<h2 class="page-header first-page-header">Development of a tissue engineering platform using bovine species as a model : placental scaffolds seeded with bovine adipose-derived cells</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Murphy, Bruce D.</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Mansano Garcia, Joaquim</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Baracho Trindade Hill, Amanda</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2022-01-13T20:03:37Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2022-01-13T20:03:37Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-11-03</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2019-10</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/25892</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Cartilage tissue engineering</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Bone tissue engineering</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Placenta</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Mesenchymal stem cells</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Decellularization</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Recellularization</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Cows</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Translational medicine</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Engenharia tecidual de cartilagem</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Engenharia tecidual óssea</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Células tronco mesenquimais</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Descelularização</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Recelularização</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Vacas</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Medicina translacional</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Ingénierie tissulaire du cartilage</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Ingénierie des tissus osseux</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Cellules souches mésenchymateuses</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Décellularisation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Recellularisation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Vaches</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Médecine translationnelle</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Veterinary Science / Biologie - Science vétérinaire (UMI : 0778)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Development of a tissue engineering platform using bovine species as a model : placental scaffolds seeded with bovine adipose-derived cells</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences vétérinaires</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La technologie des cellules souches et les sciences de biomatériaux ont obtenu des grands progrès au cours des dernières décennies et sont devenues plus populaires dans le monde. Les chercheurs cherchent à étudier et à évaluer les différentes sources de cellules et de biomatériaux qui, en combinaison, peuvent fournir une plateforme d’ingénierie tissulaire produite à grande échelle et à bas prix, pour être utilisée aux tests de médicaments, aux thérapies cellulaires et transplantations, dans le but de fournir un soutien thérapeutique aux blessures et à la régénération des tissus endommagés. En général, les trois constituants les plus importants de l’ingénierie tissulaire sont : le choix du type cellulaire, la source du biomatérial (charpente), la création et le maintien d’un lieu favorable à la formation des tissus. Lorsque ces trois constituants sont gérés avec succès, le microenvironnement cellulaire in vitro est plus similaire à ce que la cellule est exposée in vivo, en permettant que la croissance et la différenciation cellulaire survient de façon plus fiable et efficace. Le placenta bovin décellularisé a démontré avoir une riche matrice extracellulaire, des vaisseaux bien développés, étant un biomatérial à haute disponibilité et à bas prix. Mais, on ne sait pas si les charpentes placentaires ont le potentiel d’être repeuplés avec des cellules souches mésenchymateuses (MSC) dérivées du tissu adipeux, et ce processus s’appelle recelularisation. Encore, on ne sait pas si les charpentes placentaires ont la capacité d’offrir, après recelularisation, un ambient approprié pour différencier ces cellules en différentes lignées. Ainsi, afin de fournir des informations sur la capacité du complexe MSC – charpente placentaire à être utilisé avec succès dans l’ingénierie tissulaire, les objectifs de cette thèse ont été : étudier le potentiel des charpentes placentaires bovins en offrir un soutien à la recelularisation par des cellules dérivées du tissu adipeux bovin, et aussi bien qu’évaluer la capacité de différenciation cellulaire en lignées ostéogéniques et chondrogéniques. Le premier article de cette thèse c’est une revue de la littérature qui aborde la nature des cellules souches mésenchymateuses, leurs applications en médicine régénérative, l’importance de la technologie des cellules souches dans l’industrie de l’élevage et l’utilisation de l’espèce bovine en médicine translationnelle. Le deuxième article aborde l’évaluation de la recelularisation et la différenciation cellulaire. Les placentas bovins ont été décellularisés par perfusion de SDS du vaisseau ombilical et les lignées cellulaires établies après la digestion enzymatique du tissu adipeux de six vaches et la sélection par adhésion rapide à la plaque de culture. Ensuite, les cellules ont été cultivées avec les charpentes dans un système d’agitation 2D pendant 21 jours en milieu de différenciation ou de maintenance. Lorsqu’elles sont cultivées sur la plaque de culture, les cellules isolées ont présenté morphologie similaire au fibroblaste, l’expression de CD90, CD73 et CD105, tandis qu’elles n’ont pas exprimé les marqueurs CD34 et CD45. Par ailleurs, les cellules ont été capables de se différencier en lignées chondrogéniques et ostéogeniques, en fournant des preuves de leur nature mésenchymateuse. Ensuite, quand elles ont été cultivées avec les charpentes, les cellules y ont adhéré par des projections cellulaires, établies une communication cellule-charpente et se sont proliférées, fait mis en évidence par l’analyse histologique et microscopie électronique à balayage (MEB). Après, le potentiel des cellules à se différencier en lignées ostéogéniques a été exploré, lorsqu’elles ont été cultivées avec charpente. Au cours d’une période de culture de 21 jours en milieu ostéogénique, les cellules ont proliféré et se sont différenciées de façon dépendante du temps, c’est-à-dire, à chaque semaine, la plus grande abudance de cellules a été observée, fait en évidence par la coloration des noyaux cellulaires et l’augmentation de l’intensité de la coloration pour COLLAGEN 1 (COL1), qui a aussi été exprimée par réaction quantitative en chaîne de la polymérase en temps réel (qRT-PCR). Le standard a été observé par l’analyse histologique, les accumulations généralisées de calcium a aussi été plus abondantes dans les charpentes au cours de la troisième semaine de culture, demontré par la coloration de Von Kossa. L’analyse MEB a montré que les cellules ont sécrété des structures globulaires lorsqu’elles ont été cultivées sur conditions d’induction ostéogénique, cohérentes avec la sécrétion observée par l’analyse histologique. Sur la différenciation chondrogénique, les colorants Safranine et Vert Solide ont démontré succès à la différenciation, grâce à la coloration des protéoglycanes, des cellules similaires aux chondrocytes et aux collagène type II. L’analyse MEB a montré que les cellules ont changé leur morphologie de fibroblastes en globulaires quand elles ont été cultivées avec milieu d’induction chondrogène pendant 21 jours. De plus, les complexes de cellules-charpentes ont exprimé un marqueur de la lignée cartilagineuse, COLLAGEN 2 (COL2), qui est cohérent avec les observations histologiques et MEB. Face aux résultats obtenus, cette étude a démontré que les charpentes placentaires cultivés avec des cellules dérivées du tissu adipeux ont le potentiel d’être utilisés dans l’ingénierie de tissus osseux et cartilagineux.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">A tecnologia de células-tronco e as ciências de biomateriais obtiveram um grande avanço nas últimas décadas e se tornaram mais populares em todo o mundo. Pesquisadores buscam investigar e avaliar diferentes fontes de células e de biomateriais que, em combinação, possam fornecer uma plataforma de engenharia tecidual de baixo custo e produzida em larga escala, para serem utilizadas em testes  de drogas, terapias celulares e transplantes, com objetivo de fornecer suporte terapêutico à lesões e regeneração de tecidos danificados. Em geral, os três componentes mais importantes da engenharia de tecidos são: a escolha do tipo de célula, a fonte do biomaterial (scaffold), criação e manutenção de um ambiente propício à formação tecidual. Quando esses três componentes são gerenciados com sucesso, o microambiente celular in vitro é mais semelhante ao que a célula está exposta in vivo, permitindo que o crescimento e diferenciação celular ocorra de maneira mais fidedigna e eficiente. A placenta bovina descelularizada demonstrou ter uma rica matriz extracelular, vasos bem desenvolvidos, sendo um biomaterial com alta disponibilidade e baixo custo. No entanto, não há informação sobre o potencial dos scaffolds placentários em serem repovoados com células-tronco mesenquimais (MSC) derivadas do tecido adiposo, processo chamado recelularização. Ainda, também não há informação sobre a capacidade dos scaffolds placentários, de após recelularização, oferecer um ambiente adequado para diferenciação dessas células em diferentes linhagens. Assim, a fim de fornecer informações sobre a capacidade do complexo MSC - scaffold placentário em ser usado com sucesso na engenharia tecidual, os objetivos desta tese foram: estudar o potencial dos scaffolds placentários bovinos em oferecer suporte para recelularização por células-tronco derivadas do tecido adiposo bovino, bem como avaliar a capacidade de diferenciação celular em linhagens osteogênica e condrogênica. O primeiro artigo desta tese trata-se de uma revisão de literatura, que discute a natureza das células-tronco mesenquimais, suas aplicações na medicina regenerativa, a importância da tecnologia com células- tronco na indústria pecuária e o uso da espécie bovina na medicina translacional. O segundo artigo consiste na avaliação da recelularização e da diferenciação celular. As placentas bovinas foram decelularizadas por perfusão de SDS do vaso umbilical e as linhas celulares estabelecidas após digestão enzimática do tecido adiposo de seis vacas e seleção por adesão rápida à placa de cultivo. Em seguida, as células foram cultivadas com os scaffolds em um sistema de agitação 2D por 21 dias em meio de diferenciação ou manutenção. Quando cultivadas na placa de cultivo, as células isoladas exibiram morfologia semelhante ao fibroblasto, expressão de CD90, CD73 e CD105, enquanto não expressaram os marcadores CD34 e CD45. Além disso, as células foram capazes de se diferenciar em linhagens condrogênicas e osteogênicas, fornecendo evidências de sua natureza mesenquimal. Posteriormente, quando cultivadas com os scaffolds, as células aderiram-se aos mesmos por projeções celulares, estabeleceram comunicação célula-scaffold e se proliferaram, fato evidenciado por análise histológica e microscopia eletrônica de varredura (SEM). Em seguida, o potencial das células em se diferenciarem em linhagem osteogênica quando cultivadas com scaffold foi avaliado. Durante um período de cultivo de 21 dias no meio osteogênico, as células se proliferaram e diferenciaram de maneira dependente do tempo, ou seja, a cada semana pode ser observado maior abundância de células, evidenciada pela coloração dos núcleos celulares e aumento da intensidade da coloração para COLAGENO 1 (COL1), que também foi expresso por reação quantitativa em cadeia da polimerase em tempo real (qRT-PCR). O mesmo padrão foi observado pela análise histológica; acúmulos generalizados de cálcio também foram mais abundantes nos scaffolds na terceira semana de cultivo, evidenciado pela coloração de Von Kossa. A análise SEM revelou que as células secretaram estruturas globulares quando cultivadas sob condições de indução osteogênica, condizente com a secreção observada pela análise histológica. Em relação à diferenciação condrogênica, os corantes Safranina e Fast Green revelaram sucesso na diferenciação, através    da    coloração de proteoglicanos, células semelhantes aos condrócitos e colágeno tipo II. A análise SEM mostrou que as células mudaram sua morfologia de fibroblastos para globulares quando cultivadas com meio de indução condrogênica por 21 dias. Além disso, os complexos células-scaffold expressaram um marcador de linhagem cartilaginosa, COLAGENO 2 (COL2), condizente com as observações histológicas e SEM. Considerando os resultados, este estudo demonstrou que os scaffolds placentários bovinos cultivados com células-tronco derivadas de tecido adiposo bovino possuem potencial para serem utilizados na engenharia de tecidos ósseos e cartilaginosos.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Stem cell technologies and biomaterial sciences have advanced and grown more popular all over the world. The researchers aim to investigate and evaluate different sources of cells and biomaterials that, in combination, could provide a low cost, highly scalable tissue engineering platform that could be used in drug tests, cell therapies and cell transplantation. The three most important components of tissue engineering systems in general are cell source, biomaterial source (scaffolding system), and the creation and maintenance of an environment that is conducive to tissue formation. When these three components are successfully managed, the tissue engineering treatment achieves a faithful imitation of the in vivo environment, allowing for the differentiation of cells into the desirable cell types. Decellularized bovine placenta has been demonstrated to be rich in extracellular matrix (ECM) and to have well-developed vasculature, representing a highly available, low cost, practically scalable biomaterial. However, it is not known if placental scaffolds have the potential to support recellularization with adipose-derived cells and their subsequent differentiation into different lineages. Thus, in order to provide information on the ability of the mesenchymal stem cell (MSC) - placental scaffold complex to be used in tissue engineering approaches, the objectives of this thesis were: to study the potential of bovine placental scaffolds to support adipose-derived cell recellularization and their differentiation into osteogenic and chondrogenic lineages. The first article of this thesis is a literature review that discusses the nature of mesenchymal stem cells, their applications in regenerative medicine, the importance of stem cell technologies to the livestock industry and the use of bovine species for translational medicine. The second article consists of an evaluation of scaffold recellularization and the differentiation of cells on the scaffolds. The bovine placentae were decellularized by umbilical vessel sodium dodecyl sulfate (SDS) perfusion and cell lines were established after the enzymatic digestion of adipose tissue from six cows and cell selection by rapid adherence to the culture plate. Then, cells were seeded onto the scaffolds and cultured in a 2D rocker system for 21 days in either differentiation or maintenance medium. The isolated cells, when cultured in the plastic dish, exhibited fibroblast-like morphology, CD90, CD73 and CD105 expression, and lacked CD34 and CD45 expression. Moreover, the cells were able to undergo differentiation into chondrogenic and osteogenic lineages, providing evidence of their mesenchymal nature.
+8
+Subsequently, the cells adhered to the scaffolds by cell projections, established cell-scaffold communication, and proliferated while maintaining cell-cell communication, which was evidenced by histological and scanning electron microscopy (SEM) assays. Throughout a 21- day culture period in the osteogenic medium, the cells exhibited proliferation and differentiation in a time-dependent manner, which can be observed by the greater abundance of cells in later periods, evidenced by cell nuclei staining (4′,6-diamidino-2- phenylindole - DAPI) and increased intensity of staining for COLLAGEN 1 (COL1) in the immunohistochemical assay, and by its expression as measured by real time polymerase chain reaction (qRT-PCR). This same pattern was observed by histological analysis. Widespread calcium accumulations were also more abundant on the scaffolds as time progressed, as evidenced by Von Kossa staining. The SEM analysis revealed that cells secreted globular/round structures when seeded under osteogenic induction conditions, in accordance with histological findings. Regarding chondrogenic differentiation, Safranin O and Fast Green staining revealed successful differentiation through staining of proteoglycans, chondrocyte-like cells and type II collagen on the scaffold. The SEM analysis showed that the cells changed morphology from fibroblast-like to globular when cultured with chondrogenic induction medium for 21 days. Additionally, cell-scaffold complexes expressed a cartilage marker, COLLAGEN 2 (COL2), which is conducive to the histological and SEM observations. Considering the results as a whole, this study demonstrated that placental scaffolds seeded with adipose-derived cells have the potential to be used in bone and cartilage tissue- engineering applications</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F25892&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+v%C3%A9t%C3%A9rinaires&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/25892/Hill_Trindade_Baracho_Amanda_2020_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25892/Hill_Trindade_Baracho_Amanda_2020_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Hill_Trindade_Baracho_Amanda_2020_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/25892/Hill_Trindade_Baracho_Amanda_2020_these.pdf?sequence=2&amp;isAllowed=y">Hill_Trindade_Baracho_Amanda_2 ...</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">6.846Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2966/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2966">Faculté de médecine vétérinaire – Thèses et mémoires</a> [509]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25892">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

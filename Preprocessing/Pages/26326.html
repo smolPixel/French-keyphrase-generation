@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Études de perturbations de l’enveloppe de Vibrio cholerae et Escherichia coli : mécanismes de vulnérabilités ou de résistances</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Duperthuy, Marylise" name="DC.contributor">
+<meta content="Paradis-Bleau, Catherine" name="DC.contributor">
+<meta content="Giacomucci, Sean" name="DC.creator">
+<meta content="2022-02-15T16:36:50Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="MONTHS_WITHHELD:12" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2022-02-15T16:36:50Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-11-25" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2021-08" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/26326" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Vibrio cholerae" name="DC.subject" xml:lang="fr"/>
+<meta content="Escherichia coli" name="DC.subject" xml:lang="fr"/>
+<meta content="biofilm" name="DC.subject" xml:lang="fr"/>
+<meta content="mobilité" name="DC.subject" xml:lang="fr"/>
+<meta content="virulence" name="DC.subject" xml:lang="fr"/>
+<meta content="résistance aux antibiotiques" name="DC.subject" xml:lang="fr"/>
+<meta content="peptides antimicrobiens" name="DC.subject" xml:lang="fr"/>
+<meta content="paroi" name="DC.subject" xml:lang="fr"/>
+<meta content="cibles et homéostasie de l’enveloppe" name="DC.subject" xml:lang="fr"/>
+<meta content="Vibrio cholerae" name="DC.subject" xml:lang="fr"/>
+<meta content="Escherichia coli" name="DC.subject" xml:lang="fr"/>
+<meta content="motility" name="DC.subject" xml:lang="fr"/>
+<meta content="virulence" name="DC.subject" xml:lang="fr"/>
+<meta content="antibiotic  résistance" name="DC.subject" xml:lang="fr"/>
+<meta content="antimicrobial peptides" name="DC.subject" xml:lang="fr"/>
+<meta content="cell wall" name="DC.subject" xml:lang="fr"/>
+<meta content="envelope homeostasis and targets" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Microbiology / Biologie - Microbiologie (UMI : 0410)" name="DC.subject" xml:lang="fr"/>
+<meta content="Études de perturbations de l’enveloppe de Vibrio cholerae et Escherichia coli : mécanismes de vulnérabilités ou de résistances" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="L’augmentation de l’incidence des infections bactériennes par des souches résistantes, multirésistantes, voire même ultrarésistantes, aux antibiotiques, combinés à la crise de découverte de nouvelles molécules depuis les années 1960 et du sous-investissement chronique de certains états dans la recherche publique, pourrait coûter la vie à 10 millions d’êtres humains par an d’ici 2050. L’écrasante majorité des souches bactériennes résistantes aux antibiotiques sont des bactéries à Gram négatif. Ceci est notamment dû à la composition intrinsèque de leur enveloppe, leur permettant d’être insensibles à de nombreuses molécules pourtant létales pour d’autres types de bactéries. L’étude des composants et des mécanismes de biosynthèse de l’enveloppe, qui sont essentiels au maintien de l'intégrité des bactéries et peuvent être impliqués dans leur virulence, devrait permettre l’identification de nouvelles cibles thérapeutiques. Dans le premier chapitre, nous allons tout d’abord faire un tour d’horizon des éléments composant l’enveloppe des bactéries à Gram négatif, des mécanismes de résistance aux antibiotiques et du danger que représentent les bactéries à Gram négatif. Mes résultats de recherches, présentés sous forme de quatre articles aux chapitres deux à cinq, sont précédés d’une mise en contexte des recherches propres aux deux laboratoires, portant d’une part sur les biofilms et la mobilité de Vibrio cholerae et d’autre part sur l’enveloppe de Escherichia coli.
+Dans le premier article, nous avons déterminé par quel mécanisme la polymyxine B en concentration sous-inhibitrice affecte la formation de biofilm chez Vibrio cholerae. Nous avons observé que la polymyxine B affecte principalement le flagelle par une action mécanique. La formation de biofilm nécessitant le flagelle dans ses premières étapes de formation, nous avons conclu que l’action de la polymyxine B prévenait ce changement d’état. Dans le second article, nous avons conçu un protocole d’évolution expérimentale qui nous a permis d’identifier des mutations dans différents gènes permettant à Vibrio cholerae de se déplacer plus rapidement en présence de concentration sous-inhibitrice de polymyxine B. Nous avons alors identifié chez plusieurs souches différentes mutations ayant probablement réduit ou anéanti la fonction des protéines IhfA, DacB, VacJ (MlaA) et MlaF. En nous basant sur la littérature, nous proposons que la perte de fonction de ces
+  5
+protéines induisant l’augmentation de la mobilité en présence de polymyxine B puisse s’expliquer selon trois mécanismes, impliquant la stabilité de l’enveloppe, la sécrétion de vésicules de membrane ou une altération de l’expression de différents gènes. Dans le troisième article, nous avons étudié l’implication du stress oxydatif dans l’arrêt de la synthèse de la paroi qui est fatal au mutant ∆elyC de Escherichia coli. Nous avons alors démontré que la lyse du mutant ∆elyC est causée par la surproduction de radicaux hydroxyles dans son enveloppe. Cette molécule cause des dommages dans l’enveloppe suffisamment importants pour provoquer l’arrêt de synthèse de la paroi. Le mécanisme provoquant cette surproduction de radicaux toxiques reste encore à déterminer. Par le biais de l’étude de la fonction du facteur ElyC, nous avons découvert une nouvelle vulnérabilité dans l’homéostasie de l’enveloppe qu’il nous tarde de pouvoir exploiter. Dans le dernier article, nous avons étudié l’importance de la voie de synthèse de l’antigène commun aux entérobactéries dans le processus létal apparaissant en l’absence du facteur ElyC. Nous avons découvert que le mutant ∆elyC accumule un élément commun aux voies de synthèse de la paroi et de l’antigène commun aux entérobactéries, l’undécaprényl pyrophosphate. Nous avons également découvert que l’augmentation du recyclage de cette dernière via la surexpression du gène codant pour la protéine PgpB permettait de prévenir la lyse du mutant. Notre hypothèse est que l’absence de ElyC induit une mauvaise répartition de l’undécaprényl phosphate entre les voies de synthèse de la paroi et de l’antigène commun aux entérobactéries. La suractivité de la voie de synthèse de l’antigène commun aux entérobactéries induirait l’accumulation d’undécaprényl pyrophosphate provoquant l’inhibition de Pbp1b, empêchant l’ajout de nouvelles sous-unités à la paroi conduisant ainsi à la lyse du mutant ∆elyC.
+Ainsi l’ensemble de ces travaux a permis de mieux comprendre et d’identifier des vulnérabilités de l’enveloppe de Vibrio cholerae et Escherichia coli, de préciser certains mécanismes ainsi que d’entrevoir le rôle de divers facteurs impliqués dans l’homéostasie de leur enveloppe." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="The increased incidence of bacterial infections by resistant, multiresistant and even extensively drug-resistant strain, combined with the crisis of new molecules discovery since the 1960s and the chronic underinvestment of certain states in public research, could cost 10 million human lives per year by 2050. The overwhelming majority of resistant bacteria are the Gram-negative one. This is mainly due to the intrinsic composition of their envelope, allowing them to be insensitive to many molecules yet lethal for other types of bacteria. The study of envelope components and biosynthetic mechanisms, which are essential for the maintenance of bacterial integrity and could be involved in their virulence, should lead to the identification of new therapeutic targets. The first chapter gave an overview of the different elements composing Gram-negative bacteria envelope, mechanisms of resistance and the threat that Gram-negative bacteria represent. The presentation of my work, divided in four articles from chapter two to chapter five, was preceded by a contextualization of the research projects specific to both laboratories, on biofilm and motility of Vibrio cholerae on one hand and on Escherichia coli envelope from the other hand.
+In the first paper, we determined the mechanism by which a sub-inhibitory concentration of polymyxin B affects biofilm formation in Vibrio cholerae. We observed that polymyxin B mainly affected the flagellum by a mechanical action. Since biofilm formation requires the flagellum in the early stages of its formation, we concluded that the action of polymyxin B prevented this change in Vibrio cholerae lifestyle. In the second paper, we designed an experimental evolution protocol which allowed us to identify mutations in different genes that increase Vibrio cholerae motility in the presence of sub-inhibitory concentration of polymyxin B. We then identified that different mutations had altered ihfA, dacB, vacJ (mlaA) and mlaF genes in different mutants. These mutations have probably induced reduction or loss of function of the proteins for which they respectively code. Based on literature, we hypothesize that the loss function of these proteins inducing increase in mobility in the presence of polymyxin B could be explained by three
+  7
+mechanisms involving envelope stability, secretion of membrane vesicles or altered expression of various genes.
+In the third paper, we investigated the involvement of oxidative stress in the fatal peptidoglycan synthesis arrest occurring in the ∆elyC mutant of Escherichia coli. We then demonstrated that lysis of the ∆elyC mutant is caused by the overproduction of hydroxyl radicals in its envelope. This molecule causes multiple and sufficiently important damages in the envelope to stop the synthesis of the wall. The mechanism causing this overproduction of toxic radicals has yet to be determined. By studying the function of the ElyC factor, we have discovered a new weakness in envelope homeostasis that we are eager to exploit. In the last paper, based on a previously formulated hypothesis, we investigated the importance of the enterobacterial common antigen synthesis pathway in the lethal process occurring in the absence of ElyC. We found that the ∆elyC mutant accumulates common element to the cell wall and enterobacterial common antigen synthesis pathways, undecaprenyl pyrophosphate. We also observed that the ∆elyC mutant lysis phenotype could be suppressed by increasing undecaprenyl pyrophosphate recycling via the overexpression of the gene coding for the phosphatase PgpB. We propose that the absence of ElyC induces a misallocation of undecaprenyl phosphate between the cell wall and enterobacterial common antigen synthesis pathways, in favors the latter pathway. Overactivation of the enterobacterial common antigen pathway would induce undecaprenyl phosphate accumulation, causing inhibition of Pbp1b, thus blocking addition of new subunits to the cell wall and leading to its lysis.
+Ultimately, all the original data generated by my research project has led to a better understanding of envelope vulnerabilities of Vibrio cholerae and Escherichia coli, to clarify certain mechanisms but also to glimpse the role of various factors involved in the homeostasis of their envelope." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="L'aumento dell’incidenza delle infezioni da batteri resistenti, multi-resistenti e anche estremamente resistenti agli antibiotici, combinata con la rarefazione della scoperta di nuove molecole fra gli anni 1960 e il sotto investimento cronico di certe nazioni nella ricerca pubblica, potrebbe costare la vita a 10 milioni di essere umano all'anno nel 2050. La stragrande maggioranza delle specie resistenti agli antibiotici sono batteri Gram- negativi. Questo è dovuto principalmente alla composizione intrinseca dei loro involucri che permette loro di essere insensibili a molte molecole che sono letali per altri tipi di batteri. Lo studio delle componenti e i meccanismi di sintesi dell’incurvo, che sono essenziali nell’integrità dei batteri e che possono essere coinvolti nella loro virulenza, dovrebbe permettere l'identificazione di nuovi bersagli terapeutici. Nel primo capitolo, avremo una panoramica dei diversi elementi che compongono l'involucro dei batteri Gram-negativi, dei meccanismi di resistenza e della minaccia che i batteri Gram-negativi rappresentano. La presentazione del mio lavoro, diviso in quattro articoli dal capitolo due a cinque, sarà preceduta da una contestualizzazione dei progetti di ricerca specifici di ciascuno dei due laboratori, sul biofilm e la motilità di Vibrio cholerae da un lato e sull'involucro di Escherichia coli dall'altro.
+Nel primo articolo, abbiamo determinato il meccanismo con cui la polimixina B in concentrazione sub-inibitoria influenza la formazione de biofilm in Vibrio cholerae. Abbiamo osservato che la polimixina B danneggia principalmente il flagello attraverso un'azione meccanica. Poiché la formazione del biofilm richiede il flagello nelle prime fasi della sua formazione, abbiamo concluso che l'azione della polimixina B ha impedito questo cambiamento nello stile di vita di Vibrio cholerae. Nel secondo articolo, abbiamo messo a punto un protocollo di evoluzione sperimentale che ci ha permesso di identificare diversi geni che aumentano la motilità di Vibrio cholerae in presenza di una concentrazione sub-inibitoria di polimixina B. Abbiamo quindi identificato vari mutazioni in diversi varianti che hanno probabilmente provocato la riduzione o il soppresso della funzione delle proteine IhfA, DacB, VacJ (MlaA) e MlaF. Sulla base della letteratura, proponiamo che la perdita di funzione di queste proteine inducendo un aumento della
+  9
+mobilità in presenza di polimixina B può essere spiegato attraverso tre meccanismi coinvolgendo la stabilità dell'involucro, la secrezione di vescicole di membrana o l’alterazione dell’espressione di diversi geni.
+Nel terzo articolo, abbiamo studiato il coinvolgimento dello stress ossidativo nell'arresto della sintesi del peptidoglicano che è fatale al mutante ∆elyC di Escherichia coli. Abbiamo poi dimostrato con numerosi esperimenti che la lisi del mutante ∆elyC è causata dalla sovrapproduzione di radicali idrossilici nel suo involucro. Questa molecola causa importanti danni nell’involucro provocando l’inibendo della sintesi del peptidoglicano. Il meccanismo che causa questa sovrapproduzione di radicali tossici deve ancora essere determinato. Studiando la funzione del fattore ElyC, abbiamo scoperto una nuova vulnerabilità nell'omeostasi dell’involucro che siamo in fretta di sfruttare. Nel nostro ultimo articolo, basandoci su un'ipotesi precedentemente formulata, abbiamo studiato l'importanza della via di sintesi dell'antigene comune agli enterobatteri nel processo letale che si svolge in assenza di ElyC. Abbiamo scoperto che il mutante ∆elyC accumula un elemento comune alle vie di sintesi del peptidoglicano e dell'antigene comune agli enterobatteri, l'undecaprenil pirofosfato. Abbiamo anche scoperto che l'aumento del riciclaggio di quest'ultimo attraverso la sovraespressione del gene pgpB previene la lisi del mutante. Proponiamo che l'assenza di ElyC induce una allocazione diffetosa del undecaprenil fosfato tra le vie di sintesi del peptidoglicano e dell'antigene comune agli enterobatteri. L'iperattivazione della via dell'antigene comune agli enterobatteri provoca l'accumulo di undecaprenil pirofosfato, causando l'inibizione di Pbp1b e dunque dell’aggiunta di nuove unità al peptidoglicano, provocandone quindi la lisi.
+Quindi, questo lavoro ha portato a una migliore comprensione o identificazione delle vulnerabilità dell'involucro di Vibrio cholerae ed Escherichia coli, a chiarire certi meccanismi essenziali ma anche a intravedere il ruolo di vari fattori coinvolti nell'omeostasi del loro involucro." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Travaux de recherche effectués sous la supervision de la docteure Marylise Duperthuy (directrice) et de la docteure Catherine Paradis-Bleau (codirectrice)." name="DCTERMS.description" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Vibrio cholerae; Escherichia coli; biofilm; mobilité; virulence; résistance aux antibiotiques; peptides antimicrobiens; paroi; cibles et homéostasie de l’enveloppe; Vibrio cholerae; Escherichia coli; motility; virulence; antibiotic  résistance; antimicrobial peptides; cell wall; envelope homeostasis and targets; Biology - Microbiology / Biologie - Microbiologie (UMI : 0410); Thèse ou mémoire / Thesis or Dissertation; Microbiologie et immunologie" name="citation_keywords"/>
+<meta content="Études de perturbations de l’enveloppe de Vibrio cholerae et Escherichia coli : mécanismes de vulnérabilités ou de résistances" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Giacomucci, Sean" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/26326/6/Giacomucci_Sean_2021_these.pdf" name="citation_pdf_url"/>
+<meta content="2021-11-25" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/26326" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26326?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26326?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26326?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26326?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26326?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26326?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/26326/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26326">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/26326/mets.xml-->
+<h2 class="page-header first-page-header">Études de perturbations de l’enveloppe de Vibrio cholerae et Escherichia coli : mécanismes de vulnérabilités ou de résistances</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Duperthuy, Marylise</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Paradis-Bleau, Catherine</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Giacomucci, Sean</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2022-02-15T16:36:50Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">MONTHS_WITHHELD:12</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2022-02-15T16:36:50Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-11-25</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2021-08</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/26326</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Vibrio cholerae</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Escherichia coli</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">biofilm</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">mobilité</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">virulence</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">résistance aux antibiotiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">peptides antimicrobiens</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">paroi</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">cibles et homéostasie de l’enveloppe</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Vibrio cholerae</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Escherichia coli</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">motility</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">virulence</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">antibiotic  résistance</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">antimicrobial peptides</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">cell wall</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">envelope homeostasis and targets</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Microbiology / Biologie - Microbiologie (UMI : 0410)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Études de perturbations de l’enveloppe de Vibrio cholerae et Escherichia coli : mécanismes de vulnérabilités ou de résistances</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Microbiologie et immunologie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">L’augmentation de l’incidence des infections bactériennes par des souches résistantes, multirésistantes, voire même ultrarésistantes, aux antibiotiques, combinés à la crise de découverte de nouvelles molécules depuis les années 1960 et du sous-investissement chronique de certains états dans la recherche publique, pourrait coûter la vie à 10 millions d’êtres humains par an d’ici 2050. L’écrasante majorité des souches bactériennes résistantes aux antibiotiques sont des bactéries à Gram négatif. Ceci est notamment dû à la composition intrinsèque de leur enveloppe, leur permettant d’être insensibles à de nombreuses molécules pourtant létales pour d’autres types de bactéries. L’étude des composants et des mécanismes de biosynthèse de l’enveloppe, qui sont essentiels au maintien de l'intégrité des bactéries et peuvent être impliqués dans leur virulence, devrait permettre l’identification de nouvelles cibles thérapeutiques. Dans le premier chapitre, nous allons tout d’abord faire un tour d’horizon des éléments composant l’enveloppe des bactéries à Gram négatif, des mécanismes de résistance aux antibiotiques et du danger que représentent les bactéries à Gram négatif. Mes résultats de recherches, présentés sous forme de quatre articles aux chapitres deux à cinq, sont précédés d’une mise en contexte des recherches propres aux deux laboratoires, portant d’une part sur les biofilms et la mobilité de Vibrio cholerae et d’autre part sur l’enveloppe de Escherichia coli.
+Dans le premier article, nous avons déterminé par quel mécanisme la polymyxine B en concentration sous-inhibitrice affecte la formation de biofilm chez Vibrio cholerae. Nous avons observé que la polymyxine B affecte principalement le flagelle par une action mécanique. La formation de biofilm nécessitant le flagelle dans ses premières étapes de formation, nous avons conclu que l’action de la polymyxine B prévenait ce changement d’état. Dans le second article, nous avons conçu un protocole d’évolution expérimentale qui nous a permis d’identifier des mutations dans différents gènes permettant à Vibrio cholerae de se déplacer plus rapidement en présence de concentration sous-inhibitrice de polymyxine B. Nous avons alors identifié chez plusieurs souches différentes mutations ayant probablement réduit ou anéanti la fonction des protéines IhfA, DacB, VacJ (MlaA) et MlaF. En nous basant sur la littérature, nous proposons que la perte de fonction de ces
+  5
+protéines induisant l’augmentation de la mobilité en présence de polymyxine B puisse s’expliquer selon trois mécanismes, impliquant la stabilité de l’enveloppe, la sécrétion de vésicules de membrane ou une altération de l’expression de différents gènes. Dans le troisième article, nous avons étudié l’implication du stress oxydatif dans l’arrêt de la synthèse de la paroi qui est fatal au mutant ∆elyC de Escherichia coli. Nous avons alors démontré que la lyse du mutant ∆elyC est causée par la surproduction de radicaux hydroxyles dans son enveloppe. Cette molécule cause des dommages dans l’enveloppe suffisamment importants pour provoquer l’arrêt de synthèse de la paroi. Le mécanisme provoquant cette surproduction de radicaux toxiques reste encore à déterminer. Par le biais de l’étude de la fonction du facteur ElyC, nous avons découvert une nouvelle vulnérabilité dans l’homéostasie de l’enveloppe qu’il nous tarde de pouvoir exploiter. Dans le dernier article, nous avons étudié l’importance de la voie de synthèse de l’antigène commun aux entérobactéries dans le processus létal apparaissant en l’absence du facteur ElyC. Nous avons découvert que le mutant ∆elyC accumule un élément commun aux voies de synthèse de la paroi et de l’antigène commun aux entérobactéries, l’undécaprényl pyrophosphate. Nous avons également découvert que l’augmentation du recyclage de cette dernière via la surexpression du gène codant pour la protéine PgpB permettait de prévenir la lyse du mutant. Notre hypothèse est que l’absence de ElyC induit une mauvaise répartition de l’undécaprényl phosphate entre les voies de synthèse de la paroi et de l’antigène commun aux entérobactéries. La suractivité de la voie de synthèse de l’antigène commun aux entérobactéries induirait l’accumulation d’undécaprényl pyrophosphate provoquant l’inhibition de Pbp1b, empêchant l’ajout de nouvelles sous-unités à la paroi conduisant ainsi à la lyse du mutant ∆elyC.
+Ainsi l’ensemble de ces travaux a permis de mieux comprendre et d’identifier des vulnérabilités de l’enveloppe de Vibrio cholerae et Escherichia coli, de préciser certains mécanismes ainsi que d’entrevoir le rôle de divers facteurs impliqués dans l’homéostasie de leur enveloppe.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The increased incidence of bacterial infections by resistant, multiresistant and even extensively drug-resistant strain, combined with the crisis of new molecules discovery since the 1960s and the chronic underinvestment of certain states in public research, could cost 10 million human lives per year by 2050. The overwhelming majority of resistant bacteria are the Gram-negative one. This is mainly due to the intrinsic composition of their envelope, allowing them to be insensitive to many molecules yet lethal for other types of bacteria. The study of envelope components and biosynthetic mechanisms, which are essential for the maintenance of bacterial integrity and could be involved in their virulence, should lead to the identification of new therapeutic targets. The first chapter gave an overview of the different elements composing Gram-negative bacteria envelope, mechanisms of resistance and the threat that Gram-negative bacteria represent. The presentation of my work, divided in four articles from chapter two to chapter five, was preceded by a contextualization of the research projects specific to both laboratories, on biofilm and motility of Vibrio cholerae on one hand and on Escherichia coli envelope from the other hand.
+In the first paper, we determined the mechanism by which a sub-inhibitory concentration of polymyxin B affects biofilm formation in Vibrio cholerae. We observed that polymyxin B mainly affected the flagellum by a mechanical action. Since biofilm formation requires the flagellum in the early stages of its formation, we concluded that the action of polymyxin B prevented this change in Vibrio cholerae lifestyle. In the second paper, we designed an experimental evolution protocol which allowed us to identify mutations in different genes that increase Vibrio cholerae motility in the presence of sub-inhibitory concentration of polymyxin B. We then identified that different mutations had altered ihfA, dacB, vacJ (mlaA) and mlaF genes in different mutants. These mutations have probably induced reduction or loss of function of the proteins for which they respectively code. Based on literature, we hypothesize that the loss function of these proteins inducing increase in mobility in the presence of polymyxin B could be explained by three
+  7
+mechanisms involving envelope stability, secretion of membrane vesicles or altered expression of various genes.
+In the third paper, we investigated the involvement of oxidative stress in the fatal peptidoglycan synthesis arrest occurring in the ∆elyC mutant of Escherichia coli. We then demonstrated that lysis of the ∆elyC mutant is caused by the overproduction of hydroxyl radicals in its envelope. This molecule causes multiple and sufficiently important damages in the envelope to stop the synthesis of the wall. The mechanism causing this overproduction of toxic radicals has yet to be determined. By studying the function of the ElyC factor, we have discovered a new weakness in envelope homeostasis that we are eager to exploit. In the last paper, based on a previously formulated hypothesis, we investigated the importance of the enterobacterial common antigen synthesis pathway in the lethal process occurring in the absence of ElyC. We found that the ∆elyC mutant accumulates common element to the cell wall and enterobacterial common antigen synthesis pathways, undecaprenyl pyrophosphate. We also observed that the ∆elyC mutant lysis phenotype could be suppressed by increasing undecaprenyl pyrophosphate recycling via the overexpression of the gene coding for the phosphatase PgpB. We propose that the absence of ElyC induces a misallocation of undecaprenyl phosphate between the cell wall and enterobacterial common antigen synthesis pathways, in favors the latter pathway. Overactivation of the enterobacterial common antigen pathway would induce undecaprenyl phosphate accumulation, causing inhibition of Pbp1b, thus blocking addition of new subunits to the cell wall and leading to its lysis.
+Ultimately, all the original data generated by my research project has led to a better understanding of envelope vulnerabilities of Vibrio cholerae and Escherichia coli, to clarify certain mechanisms but also to glimpse the role of various factors involved in the homeostasis of their envelope.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">L'aumento dell’incidenza delle infezioni da batteri resistenti, multi-resistenti e anche estremamente resistenti agli antibiotici, combinata con la rarefazione della scoperta di nuove molecole fra gli anni 1960 e il sotto investimento cronico di certe nazioni nella ricerca pubblica, potrebbe costare la vita a 10 milioni di essere umano all'anno nel 2050. La stragrande maggioranza delle specie resistenti agli antibiotici sono batteri Gram- negativi. Questo è dovuto principalmente alla composizione intrinseca dei loro involucri che permette loro di essere insensibili a molte molecole che sono letali per altri tipi di batteri. Lo studio delle componenti e i meccanismi di sintesi dell’incurvo, che sono essenziali nell’integrità dei batteri e che possono essere coinvolti nella loro virulenza, dovrebbe permettere l'identificazione di nuovi bersagli terapeutici. Nel primo capitolo, avremo una panoramica dei diversi elementi che compongono l'involucro dei batteri Gram-negativi, dei meccanismi di resistenza e della minaccia che i batteri Gram-negativi rappresentano. La presentazione del mio lavoro, diviso in quattro articoli dal capitolo due a cinque, sarà preceduta da una contestualizzazione dei progetti di ricerca specifici di ciascuno dei due laboratori, sul biofilm e la motilità di Vibrio cholerae da un lato e sull'involucro di Escherichia coli dall'altro.
+Nel primo articolo, abbiamo determinato il meccanismo con cui la polimixina B in concentrazione sub-inibitoria influenza la formazione de biofilm in Vibrio cholerae. Abbiamo osservato che la polimixina B danneggia principalmente il flagello attraverso un'azione meccanica. Poiché la formazione del biofilm richiede il flagello nelle prime fasi della sua formazione, abbiamo concluso che l'azione della polimixina B ha impedito questo cambiamento nello stile di vita di Vibrio cholerae. Nel secondo articolo, abbiamo messo a punto un protocollo di evoluzione sperimentale che ci ha permesso di identificare diversi geni che aumentano la motilità di Vibrio cholerae in presenza di una concentrazione sub-inibitoria di polimixina B. Abbiamo quindi identificato vari mutazioni in diversi varianti che hanno probabilmente provocato la riduzione o il soppresso della funzione delle proteine IhfA, DacB, VacJ (MlaA) e MlaF. Sulla base della letteratura, proponiamo che la perdita di funzione di queste proteine inducendo un aumento della
+  9
+mobilità in presenza di polimixina B può essere spiegato attraverso tre meccanismi coinvolgendo la stabilità dell'involucro, la secrezione di vescicole di membrana o l’alterazione dell’espressione di diversi geni.
+Nel terzo articolo, abbiamo studiato il coinvolgimento dello stress ossidativo nell'arresto della sintesi del peptidoglicano che è fatale al mutante ∆elyC di Escherichia coli. Abbiamo poi dimostrato con numerosi esperimenti che la lisi del mutante ∆elyC è causata dalla sovrapproduzione di radicali idrossilici nel suo involucro. Questa molecola causa importanti danni nell’involucro provocando l’inibendo della sintesi del peptidoglicano. Il meccanismo che causa questa sovrapproduzione di radicali tossici deve ancora essere determinato. Studiando la funzione del fattore ElyC, abbiamo scoperto una nuova vulnerabilità nell'omeostasi dell’involucro che siamo in fretta di sfruttare. Nel nostro ultimo articolo, basandoci su un'ipotesi precedentemente formulata, abbiamo studiato l'importanza della via di sintesi dell'antigene comune agli enterobatteri nel processo letale che si svolge in assenza di ElyC. Abbiamo scoperto che il mutante ∆elyC accumula un elemento comune alle vie di sintesi del peptidoglicano e dell'antigene comune agli enterobatteri, l'undecaprenil pirofosfato. Abbiamo anche scoperto che l'aumento del riciclaggio di quest'ultimo attraverso la sovraespressione del gene pgpB previene la lisi del mutante. Proponiamo che l'assenza di ElyC induce una allocazione diffetosa del undecaprenil fosfato tra le vie di sintesi del peptidoglicano e dell'antigene comune agli enterobatteri. L'iperattivazione della via dell'antigene comune agli enterobatteri provoca l'accumulo di undecaprenil pirofosfato, causando l'inibizione di Pbp1b e dunque dell’aggiunta di nuove unità al peptidoglicano, provocandone quindi la lisi.
+Quindi, questo lavoro ha portato a una migliore comprensione o identificazione delle vulnerabilità dell'involucro di Vibrio cholerae ed Escherichia coli, a chiarire certi meccanismi essenziali ma anche a intravedere il ruolo di vari fattori coinvolti nell'omeostasi del loro involucro.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.description</td><td class="word-break">Travaux de recherche effectués sous la supervision de la docteure Marylise Duperthuy (directrice) et de la docteure Catherine Paradis-Bleau (codirectrice).</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">UdeM.ORCIDAuteurThese</td><td class="word-break">0000-0001-5746-7742</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F26326&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Microbiologie+et+immunologie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a href="/xmlui/bitstream/handle/1866/26326/Giacomucci_Sean_2021_these.pdf?sequence=6&amp;isAllowed=y"><img alt="PDF" class="thumbnail-papyrus thumbnail_icone" height="122" src="/xmlui/themes/Mirage2/images/mimes/mime_pdf.png" style="height: 122px;" title="PDF" width="92"/></a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Giacomucci_Sean_2021_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/26326/Giacomucci_Sean_2021_these.pdf?sequence=6&amp;isAllowed=y">Giacomucci_Sean_2021_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">19.17Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+<div>
+<span class="bold embargo"><span class="dateembargo">Under embargo</span> until: </span> <span class="embargo dateembargo">2022-11-25</span>
+<div class="btn_request_a_copy">
+<a class="btn_request_a_copy" href="/xmlui/bitstream/handle/1866/26326/Giacomucci_Sean_2021_these.pdf?sequence=6&amp;isAllowed=y">🔓 Request copy</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26326">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

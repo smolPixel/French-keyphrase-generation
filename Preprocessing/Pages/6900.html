@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Technologies de prescription informatisée et transformation du rôle des pharmaciens communautaires</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Sicotte, Claude" name="DC.contributor">
+<meta content="Lamothe, Lise" name="DC.contributor">
+<meta content="Motulsky, Aude" name="DC.creator">
+<meta content="2012-03-26T20:13:00Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2012-03-26T20:13:00Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2012-03-01" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2012-01" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/6900" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Pharmacien communautaire" name="DC.subject" xml:lang="en"/>
+<meta content="Technologie de prescription informatisée" name="DC.subject" xml:lang="en"/>
+<meta content="Gestion des médicaments" name="DC.subject" xml:lang="en"/>
+<meta content="Soins primaires" name="DC.subject" xml:lang="en"/>
+<meta content="Etude de cas" name="DC.subject" xml:lang="en"/>
+<meta content="Revue systématique" name="DC.subject" xml:lang="en"/>
+<meta content="Analyse des processus" name="DC.subject" xml:lang="en"/>
+<meta content="Professionnalisation" name="DC.subject" xml:lang="en"/>
+<meta content="Juridiction" name="DC.subject" xml:lang="en"/>
+<meta content="Community pharmacist" name="DC.subject" xml:lang="en"/>
+<meta content="Electronic prescription technology" name="DC.subject" xml:lang="en"/>
+<meta content="Medication management" name="DC.subject" xml:lang="en"/>
+<meta content="Primary care" name="DC.subject" xml:lang="en"/>
+<meta content="Case study" name="DC.subject" xml:lang="en"/>
+<meta content="Systematic review" name="DC.subject" xml:lang="en"/>
+<meta content="Process analysis" name="DC.subject" xml:lang="en"/>
+<meta content="Professionalization" name="DC.subject" xml:lang="en"/>
+<meta content="Jurisdiction" name="DC.subject" xml:lang="en"/>
+<meta content="Health Sciences - Public Health / Sciences de la santé - Santé publique (UMI : 0573)" name="DC.subject" xml:lang="en"/>
+<meta content="Technologies de prescription informatisée et transformation du rôle des pharmaciens communautaires" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="L’amélioration de la qualité de l’utilisation des médicaments dans les soins primaires est devenue un enjeu crucial. Les pharmaciens communautaires se présentent comme des acteurs centraux dans l’atteinte de cet objectif, en réclamant une extension de leur rôle. L’objectif principal de cette thèse est de mieux comprendre comment les technologies de prescription informatisée (eRx) influencent la transformation du rôle des pharmaciens communautaires. 
+
+Le premier article présente les résultats d’une étude de cas qui aborde la transformation du rôle des pharmaciens communautaires à partir du concept de professionnalisation. Elle propose un modèle logique des influences d’une technologie de eRx sur cette professionnalisation, élaboré à partir de la typologie de Davenport. Ce modèle logique a été validé en interviewant douze pharmaciens communautaires participant à un projet pilote typique de technologie de eRx. A partir des perceptions des pharmaciens communautaires, nous avons établi que la technologie était susceptible de soutenir la professionnalisation des pharmaciens en passant par cinq mécanismes : la capacité analytique, l’élimination des intermédiaires, l’intégration, l’automatisation et la diffusion des connaissances. 
+
+Le deuxième article analyse les perturbations induites par les différentes fonctions des technologies de eRx sur la stabilité de la juridiction des pharmaciens communautaires, en se basant sur un cadre de référence adapté d’Abbott. À partir de trente-trois entrevues, avec des praticiens (médecins et pharmaciens) et des élites, cette étude de cas a permis de décrire en détail les influences des différentes fonctions sur les modalités d’action des professionnels, ainsi que les enjeux soulevés par ces possibilités. La perturbation principale est liée aux changements dans la distribution des informations, ce qui influence les activités de diagnostic et d’inférence des professionnels. La technologie peut redistribuer les informations relatives à la gestion des médicaments autant au bénéfice des médecins qu’au bénéfice des pharmaciens, ce qui suscite des tensions entre les médecins et les pharmaciens, mais aussi parmi les pharmaciens. 
+
+Le troisième article présente une revue systématique visant à faire une synthèse des études ayant évalué les effets des technologies de eRx de deuxième génération sur la gestion des médicaments dans les soins primaires. Cette revue regroupe dix-neuf études menées avec des méthodes observationnelles. Les résultats rapportés révèlent que les technologies sont très hétérogènes, le plus souvent immatures, et que les effets ont été peu étudiés au-delà des perceptions des utilisateurs, qui sont mitigées. Le seul effet positif démontré est une amélioration de la qualité du profil pharmacologique accessible aux professionnels, alors que des effets négatifs ont été démontrés au niveau de l’exécution des prescriptions, tels que l’augmentation du nombre d’appels de clarification du pharmacien au prescripteur. Il semble donc que l’on en connaisse peu sur les effets des technologies de eRx de deuxième génération. 
+
+Ces trois études permettent de constater que les nouvelles technologies de eRx peuvent effectivement influencer la transformation du rôle du pharmacien communautaire en perturbant les caractéristiques des prescriptions, et surtout, l’information et sa distribution. Ces perturbations génèrent des possibilités pour une extension du rôle des pharmaciens communautaires, tout en soulignant les défis intra et interprofessionnels associés à l’actualisation de ces possibilités. Dans l’ensemble, nos résultats soulignent que les perturbations associées aux technologies de eRx dépassent les éléments techniques du travail des utilisateurs, pour englober de multiples perturbations quant à la nature même du travail et du rôle des professionnels. Les décideurs et acteurs impliqués dans le déploiement des technologies de eRx auraient avantage à prendre en compte l’ensemble de ces considérations pour rapprocher les effets observés des bénéfices promis de ces technologies." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="The quality of medication use in primary care needs to improve: this has become a crucial issue. Community pharmacists want to play a key role in meeting this objective and are calling for an expanded role. The main objective of this thesis is to better understand how electronic prescription (eRx) technologies are influencing the transformation of the role played by community pharmacists. 
+
+The first article presents results from a case study on the transformation of the community pharmacists’ role, based on the concept of professionalization. It proposes a logical model of how an eRx technology influences this professionalization, developed from the Davenport typology. The logical model was validated by interviewing twelve community pharmacists participating in a typical pilot project involving an eRx technology. Based on the perceptions of community pharmacists, we have determined that there are five mechanisms by which the technology is likely to support the professionalization of pharmacists: analytic capacity, the elimination of intermediaries, integration, automation and the dissemination of knowledge. 
+
+The second article analyzes the disturbances produced by the various functions of eRx technologies on the jurisdiction of community pharmacists, based on an adaptation of Abbott’s model. Using data from 33 interviews with practitioners, physicians and pharmacists, as well as elite members of these two professions, this case study provides a detailed description of how different functions influence professionals’ modalities of action, as well as the issues raised by these possibilities. The primary disturbance is associated with changes in the distribution of information, which can influence the diagnostic and inference activities of professionals. The technology may redistribute information on the management of medication to the benefit of both physicians and pharmacists, and this creates tensions, not only between physicians and pharmacists but also among pharmacists. 
+
+The third article presents a systematic review that synthesized studies assessing the impacts of second-generation eRx technologies on the management of medication in primary care. It examined 19 studies that applied observational methods. The findings reveal that the technologies are very heterogeneous and often far from mature, and that their effects received little attention beyond the perceptions of users, which were mixed. The only positive impact shown is an improvement to the quality of the pharmacological profile available to professionals. Negative impacts touched on the execution of prescriptions, such as a greater number of calls from pharmacists to prescribers to clarify information. It would therefore appear that little is known about the impacts of second-generation eRx technologies. 
+
+These three studies allow us to conclude that new eRx technologies may well influence how the role of the community pharmacist is being transformed, specifically by disturbing the characteristics of prescriptions and, above all, information and its distribution. These disturbances generate opportunities for extending the role of community pharmacists, while underscoring the intra and interprofessional challenges associated with their realization. Overall, our results suggest that the disturbances associated with eRx technologies go beyond technical aspects of users’ work, to include multiple disturbances of the very nature of the professionals’ work and role. The decision makers and actors involved in deploying eRx technologies would be well advised to take all these considerations into account to bring the observed effects of these technologies more in line with their promised benefits." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Pharmacien communautaire; Technologie de prescription informatisée; Gestion des médicaments; Soins primaires; Etude de cas; Revue systématique; Analyse des processus; Professionnalisation; Juridiction; Community pharmacist; Electronic prescription technology; Medication management; Primary care; Case study; Systematic review; Process analysis; Professionalization; Jurisdiction; Health Sciences - Public Health / Sciences de la santé - Santé publique (UMI : 0573); Thèse ou mémoire / Thesis or Dissertation; Santé publique" name="citation_keywords"/>
+<meta content="Technologies de prescription informatisée et transformation du rôle des pharmaciens communautaires" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Motulsky, Aude" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/6900/4/Motulsky_Aude_2012_these.pdf" name="citation_pdf_url"/>
+<meta content="2012-03-01" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/6900" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/6900?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/6900?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/6900?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/6900?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/6900?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/6900?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/6900/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/6900">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/6900/mets.xml-->
+<h2 class="page-header first-page-header">Technologies de prescription informatisée et transformation du rôle des pharmaciens communautaires</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Sicotte, Claude</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Lamothe, Lise</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Motulsky, Aude</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2012-03-26T20:13:00Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2012-03-26T20:13:00Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2012-03-01</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2012-01</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/6900</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pharmacien communautaire</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Technologie de prescription informatisée</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Gestion des médicaments</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Soins primaires</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Etude de cas</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Revue systématique</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Analyse des processus</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Professionnalisation</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Juridiction</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Community pharmacist</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Electronic prescription technology</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Medication management</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Primary care</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Case study</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Systematic review</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Process analysis</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Professionalization</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Jurisdiction</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Health Sciences - Public Health / Sciences de la santé - Santé publique (UMI : 0573)</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Technologies de prescription informatisée et transformation du rôle des pharmaciens communautaires</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Santé publique</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">L’amélioration de la qualité de l’utilisation des médicaments dans les soins primaires est devenue un enjeu crucial. Les pharmaciens communautaires se présentent comme des acteurs centraux dans l’atteinte de cet objectif, en réclamant une extension de leur rôle. L’objectif principal de cette thèse est de mieux comprendre comment les technologies de prescription informatisée (eRx) influencent la transformation du rôle des pharmaciens communautaires. 
+
+Le premier article présente les résultats d’une étude de cas qui aborde la transformation du rôle des pharmaciens communautaires à partir du concept de professionnalisation. Elle propose un modèle logique des influences d’une technologie de eRx sur cette professionnalisation, élaboré à partir de la typologie de Davenport. Ce modèle logique a été validé en interviewant douze pharmaciens communautaires participant à un projet pilote typique de technologie de eRx. A partir des perceptions des pharmaciens communautaires, nous avons établi que la technologie était susceptible de soutenir la professionnalisation des pharmaciens en passant par cinq mécanismes : la capacité analytique, l’élimination des intermédiaires, l’intégration, l’automatisation et la diffusion des connaissances. 
+
+Le deuxième article analyse les perturbations induites par les différentes fonctions des technologies de eRx sur la stabilité de la juridiction des pharmaciens communautaires, en se basant sur un cadre de référence adapté d’Abbott. À partir de trente-trois entrevues, avec des praticiens (médecins et pharmaciens) et des élites, cette étude de cas a permis de décrire en détail les influences des différentes fonctions sur les modalités d’action des professionnels, ainsi que les enjeux soulevés par ces possibilités. La perturbation principale est liée aux changements dans la distribution des informations, ce qui influence les activités de diagnostic et d’inférence des professionnels. La technologie peut redistribuer les informations relatives à la gestion des médicaments autant au bénéfice des médecins qu’au bénéfice des pharmaciens, ce qui suscite des tensions entre les médecins et les pharmaciens, mais aussi parmi les pharmaciens. 
+
+Le troisième article présente une revue systématique visant à faire une synthèse des études ayant évalué les effets des technologies de eRx de deuxième génération sur la gestion des médicaments dans les soins primaires. Cette revue regroupe dix-neuf études menées avec des méthodes observationnelles. Les résultats rapportés révèlent que les technologies sont très hétérogènes, le plus souvent immatures, et que les effets ont été peu étudiés au-delà des perceptions des utilisateurs, qui sont mitigées. Le seul effet positif démontré est une amélioration de la qualité du profil pharmacologique accessible aux professionnels, alors que des effets négatifs ont été démontrés au niveau de l’exécution des prescriptions, tels que l’augmentation du nombre d’appels de clarification du pharmacien au prescripteur. Il semble donc que l’on en connaisse peu sur les effets des technologies de eRx de deuxième génération. 
+
+Ces trois études permettent de constater que les nouvelles technologies de eRx peuvent effectivement influencer la transformation du rôle du pharmacien communautaire en perturbant les caractéristiques des prescriptions, et surtout, l’information et sa distribution. Ces perturbations génèrent des possibilités pour une extension du rôle des pharmaciens communautaires, tout en soulignant les défis intra et interprofessionnels associés à l’actualisation de ces possibilités. Dans l’ensemble, nos résultats soulignent que les perturbations associées aux technologies de eRx dépassent les éléments techniques du travail des utilisateurs, pour englober de multiples perturbations quant à la nature même du travail et du rôle des professionnels. Les décideurs et acteurs impliqués dans le déploiement des technologies de eRx auraient avantage à prendre en compte l’ensemble de ces considérations pour rapprocher les effets observés des bénéfices promis de ces technologies.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The quality of medication use in primary care needs to improve: this has become a crucial issue. Community pharmacists want to play a key role in meeting this objective and are calling for an expanded role. The main objective of this thesis is to better understand how electronic prescription (eRx) technologies are influencing the transformation of the role played by community pharmacists. 
+
+The first article presents results from a case study on the transformation of the community pharmacists’ role, based on the concept of professionalization. It proposes a logical model of how an eRx technology influences this professionalization, developed from the Davenport typology. The logical model was validated by interviewing twelve community pharmacists participating in a typical pilot project involving an eRx technology. Based on the perceptions of community pharmacists, we have determined that there are five mechanisms by which the technology is likely to support the professionalization of pharmacists: analytic capacity, the elimination of intermediaries, integration, automation and the dissemination of knowledge. 
+
+The second article analyzes the disturbances produced by the various functions of eRx technologies on the jurisdiction of community pharmacists, based on an adaptation of Abbott’s model. Using data from 33 interviews with practitioners, physicians and pharmacists, as well as elite members of these two professions, this case study provides a detailed description of how different functions influence professionals’ modalities of action, as well as the issues raised by these possibilities. The primary disturbance is associated with changes in the distribution of information, which can influence the diagnostic and inference activities of professionals. The technology may redistribute information on the management of medication to the benefit of both physicians and pharmacists, and this creates tensions, not only between physicians and pharmacists but also among pharmacists. 
+
+The third article presents a systematic review that synthesized studies assessing the impacts of second-generation eRx technologies on the management of medication in primary care. It examined 19 studies that applied observational methods. The findings reveal that the technologies are very heterogeneous and often far from mature, and that their effects received little attention beyond the perceptions of users, which were mixed. The only positive impact shown is an improvement to the quality of the pharmacological profile available to professionals. Negative impacts touched on the execution of prescriptions, such as a greater number of calls from pharmacists to prescribers to clarify information. It would therefore appear that little is known about the impacts of second-generation eRx technologies. 
+
+These three studies allow us to conclude that new eRx technologies may well influence how the role of the community pharmacist is being transformed, specifically by disturbing the characteristics of prescriptions and, above all, information and its distribution. These disturbances generate opportunities for extending the role of community pharmacists, while underscoring the intra and interprofessional challenges associated with their realization. Overall, our results suggest that the disturbances associated with eRx technologies go beyond technical aspects of users’ work, to include multiple disturbances of the very nature of the professionals’ work and role. The decision makers and actors involved in deploying eRx technologies would be well advised to take all these considerations into account to bring the observed effects of these technologies more in line with their promised benefits.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F6900&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sant%C3%A9+publique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/6900/Motulsky_Aude_2012_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/6900/Motulsky_Aude_2012_these.pdf.jpg?sequence=8&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Motulsky_Aude_2012_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/6900/Motulsky_Aude_2012_these.pdf?sequence=4&amp;isAllowed=y">Motulsky_Aude_2012_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">5.211Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10094/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a> [603]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/6900">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

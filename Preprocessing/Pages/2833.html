@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Assemblage oligomérique des récepteurs couplés aux protéines G avec les RAMPs</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Bouvier, Michel" name="DC.contributor">
+<meta content="Héroux, Madeleine" name="DC.creator">
+<meta content="2009-06-02T14:22:56Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2009-06-02T14:22:56Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2009-04-16" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2009-03" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/2833" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Récepteurs couplés aux protéines G" name="DC.subject" xml:lang="en"/>
+<meta content="Protéines modifiant l’activité des récepteurs" name="DC.subject" xml:lang="en"/>
+<meta content="Récepteur similaire au récepteur de la calcitonine" name="DC.subject" xml:lang="en"/>
+<meta content="Peptide relié au gène de la calcitonine" name="DC.subject" xml:lang="en"/>
+<meta content="Oligomérisation" name="DC.subject" xml:lang="en"/>
+<meta content="Transfert d’énergie de résonance de bioluminescence" name="DC.subject" xml:lang="en"/>
+<meta content="Complémentation de fluorescence bimoléculaire" name="DC.subject" xml:lang="en"/>
+<meta content="BRET/BiFC" name="DC.subject" xml:lang="en"/>
+<meta content="RAMPs" name="DC.subject" xml:lang="en"/>
+<meta content="CGRP" name="DC.subject" xml:lang="en"/>
+<meta content="G protein coupled receptors" name="DC.subject" xml:lang="en"/>
+<meta content="Receptor activity-modifying proteins" name="DC.subject" xml:lang="en"/>
+<meta content="Calcitonin-like receptor" name="DC.subject" xml:lang="en"/>
+<meta content="Calcitonin gene-related peptide" name="DC.subject" xml:lang="en"/>
+<meta content="Oligomerization" name="DC.subject" xml:lang="en"/>
+<meta content="Bioluminescence resonance energy transfer" name="DC.subject" xml:lang="en"/>
+<meta content="Bimolecular fluorescence complementation" name="DC.subject" xml:lang="en"/>
+<meta content="Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307)" name="DC.subject" xml:lang="en"/>
+<meta content="Assemblage oligomérique des récepteurs couplés aux protéines G avec les RAMPs" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Les récepteurs couplés aux protéines G (RCPGs) constituent la plus grande classe de récepteurs membranaires impliqués dans la transmission des signaux extracellulaires.  Traditionnellement, la transmission de la signalisation par les RCPGs implique l’activation d’une protéine G hétéro-trimérique qui pourra à son tour moduler l’activité de divers effecteurs intracellulaires. Ce schéma classique de signalisation s’est complexifié au fils des années et l’on sait maintenant qu’en plus d’interagir avec les protéines G, les RCPGs s’associent avec une panoplie d’autres protéines afin de transmettre adéquatement les signaux extracellulaires. En particulier, la découverte d’une famille de protéines transmembranaires modulant la fonction des RCPGs, baptisées protéines modifiant l’activité des récepteurs (« receptor activity-modifying proteins » ; RAMPs), a changé la façon de concevoir la signalisation par certains RCPGs. Dans le cas du récepteur similaire au récepteur de la calcitonine (« calcitonin-like receptor » ; CLR), l’association avec les RAMPs permet l’acheminement à la surface cellulaire du récepteur tout en modulant ses propriétés pharmacologiques. Lorsqu’il est associé avec RAMP1, le CLR fonctionne comme un récepteur du peptide relié au gène de la calcitonine (« calcitonin gene-related peptide » ; CGRP), alors qu’il devient un récepteur de l’adrénomedulline lorsqu’il interagit avec RAMP2 ou RAMP3. D’autre part, en plus d’interagir avec des protéines accessoires transmembranaires telles les RAMPs, les RCPGs peuvent aussi s’associer entre eux pour former des oligomères de récepteurs. Dans cette thèse, nous nous sommes penchés sur les interactions entre les RCPGs et les RAMPs, et plus particulièrement sur l’interrelation entre ce type d’association RCPG/RAMP et l’assemblage en oligomères de récepteurs, en utilisant le récepteur du CGRP comme modèle d’étude.
+Une première étude nous a tout d’abord permis de confirmer l’interaction entre le récepteur CLR et RAMP1, dans un contexte de cellules vivantes. Nous avons démontré que ce complexe CLR/RAMP1 active la protéine G et recrute la protéine de signalisation -arrestine suite à une stimulation par le CGRP. Ensuite, nous avons déterminé que même s’il doit obligatoirement former un hétéro-oligomère avec les RAMPs pour être actif, le CLR conserve malgré tout sa capacité à interagir avec d’autres RCPGs. En plus d’observer la présence d’homo-oligomère de CLR, nous avons constaté que tout comme les RCPGs, les RAMPs peuvent eux-aussi s’associer entre eux pour former des complexes oligomériques pouvant comprendre différents sous-types (RAMP1/RAMP2 et RAMP1/RAMP3). 
+Cette observation de la présence d’homo-oligomères de CLR et de RAMP1, nous a amené à nous questionner sur la stœchiométrie d’interaction du complexe CLR/RAMP1. Dans une deuxième étude ayant pour but d’établir la composition moléculaire du récepteur CGRP1 in vivo, nous avons développé une nouvelle approche permettant l’étude de l’interaction entre trois protéines dans un contexte de cellules vivantes. Cette technique baptisée BRET/BiFC, est basée sur le transfert d’énergie de résonance de bioluminescence entre un donneur luminescent, la Renilla  luciférase, et un accepteur fluorescent, la protéine fluorescente jaune (YFP), reconstituée suite au ré-assemblage de ces deux fragments. En utilisant cette approche, nous avons pu déterminer que le récepteur CGRP1 est constitué d’un homo-oligomère de CLR interagissant avec un monomère de RAMP1. 
+En démontrant un assemblage oligomérique asymétrique pour le récepteur CGRP1 à partir d’une nouvelle approche biophysique, nous croyons que les travaux présentés dans cette thèse ont contribué à élargir nos connaissances sur le fonctionnement de la grande famille des RCPGs, et seront utile à la poursuite des recherches sur les complexes protéiques impliqués dans la signalisation." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="G protein coupled receptors (GPCRs) constitute the largest family of membrane receptors involved in signal transduction. Traditionally, signal transduction by GPCRs involves the activation of a hetero-trimeric G protein which will then modulate the activity of several intracellular effectors. We can now appreciate the fact that in addition to their interaction with G proteins, GPCRs also associate with several other proteins, in order to allow proper signal transduction. In particular, the discovery of a family of proteins called receptor activity-modifying proteins (RAMPs) has challenged the traditional views of signal transduction by some GPCRs. In the case of the calcitonin-like receptor (CLR), the association with RAMPs allows the proper cell surface targeting of the receptor in addition to modulate it’s pharmacological properties. Co-expression of CLR with RAMP1 leads to a calcitonin gene-related peptide (CGRP) receptor, whereas CLR association with RAMP2 or RAMP3 promotes the formation of an adrenomedullin receptor. In addition to their interaction with transmembrane accessory proteins such as RAMPs, GPCRs can also interact with other receptors to form receptors oligomers. In this thesis, we were interested in the interactions between GPCRs and RAMPs, and particularly, in the link between these GPCR/RAMP interactions and the assembly of receptor oligomers, using CGRP1 receptor as a model.
+We first confirmed the interaction between CLR and RAMP1 in living cells. We showed that this CLR/RAMP1 complex activates G proteins and recruits the signalling protein -arrestin upon CGRP stimulation. Next, we demonstrated that even if the CLR requires hetero-oligomeric assembly with RAMPs in order to be active, this receptor can still interact with other GPCRs. In addition to CLR homo-oligomers, we observed that RAMPs can also self-associate to form oligomeric complexes which can involve different subtypes (RAMP1/RAMP2 and RAMP1/RAMP3).
+This observation of the presence of CLR and RAMP1 homo-oligomers raised the question of the stoiechiometry of interaction of the CLR/RAMP1 complex. In order to establish the molecular composition of the CGRP1 receptor in vivo, we developed a novel approach allowing the detection of the interaction between three proteins in living cells. This method called BRET/BiFC is based on the bioluminescence resonance energy transfer between a luminescent energy donor, Renilla luciferase, and a fluorescent energy acceptor, the yellow fluorescent protein (YFP), reconstituted after the re-association of its two fragments. Using this approach, we showed that the CGRP1 receptor consist of a homo-oligomer of CLR interacting with a monomer of RAMP1.
+By demonstrating the asymmetrical organization of the CGRP1 receptor complex using a novel biophysical approach, we believe that the results presented herein have contributed to increase our knowledge of the mechanisms of function of the large family of GPCRs and will be useful for the pursuit of research on protein complexes involved in signalling pathways." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Récepteurs couplés aux protéines G; Protéines modifiant l’activité des récepteurs; Récepteur similaire au récepteur de la calcitonine; Peptide relié au gène de la calcitonine; Oligomérisation; Transfert d’énergie de résonance de bioluminescence; Complémentation de fluorescence bimoléculaire; BRET/BiFC; RAMPs; CGRP; G protein coupled receptors; Receptor activity-modifying proteins; Calcitonin-like receptor; Calcitonin gene-related peptide; Oligomerization; Bioluminescence resonance energy transfer; Bimolecular fluorescence complementation; Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307); Thèse ou mémoire / Thesis or Dissertation; Biochimie" name="citation_keywords"/>
+<meta content="Assemblage oligomérique des récepteurs couplés aux protéines G avec les RAMPs" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Héroux, Madeleine" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/2833/6/Heroux_Madeleine_2009_these.pdf" name="citation_pdf_url"/>
+<meta content="2009-04-16" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/2833" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2833?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2833?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2833?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2833?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2833?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2833?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/2833/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/2833">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2833/mets.xml-->
+<h2 class="page-header first-page-header">Assemblage oligomérique des récepteurs couplés aux protéines G avec les RAMPs</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Bouvier, Michel</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Héroux, Madeleine</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2009-06-02T14:22:56Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2009-06-02T14:22:56Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2009-04-16</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2009-03</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/2833</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Récepteurs couplés aux protéines G</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Protéines modifiant l’activité des récepteurs</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Récepteur similaire au récepteur de la calcitonine</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Peptide relié au gène de la calcitonine</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Oligomérisation</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Transfert d’énergie de résonance de bioluminescence</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Complémentation de fluorescence bimoléculaire</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">BRET/BiFC</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">RAMPs</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">CGRP</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">G protein coupled receptors</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Receptor activity-modifying proteins</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Calcitonin-like receptor</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Calcitonin gene-related peptide</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Oligomerization</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Bioluminescence resonance energy transfer</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Bimolecular fluorescence complementation</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307)</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Assemblage oligomérique des récepteurs couplés aux protéines G avec les RAMPs</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Biochimie</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les récepteurs couplés aux protéines G (RCPGs) constituent la plus grande classe de récepteurs membranaires impliqués dans la transmission des signaux extracellulaires.  Traditionnellement, la transmission de la signalisation par les RCPGs implique l’activation d’une protéine G hétéro-trimérique qui pourra à son tour moduler l’activité de divers effecteurs intracellulaires. Ce schéma classique de signalisation s’est complexifié au fils des années et l’on sait maintenant qu’en plus d’interagir avec les protéines G, les RCPGs s’associent avec une panoplie d’autres protéines afin de transmettre adéquatement les signaux extracellulaires. En particulier, la découverte d’une famille de protéines transmembranaires modulant la fonction des RCPGs, baptisées protéines modifiant l’activité des récepteurs (« receptor activity-modifying proteins » ; RAMPs), a changé la façon de concevoir la signalisation par certains RCPGs. Dans le cas du récepteur similaire au récepteur de la calcitonine (« calcitonin-like receptor » ; CLR), l’association avec les RAMPs permet l’acheminement à la surface cellulaire du récepteur tout en modulant ses propriétés pharmacologiques. Lorsqu’il est associé avec RAMP1, le CLR fonctionne comme un récepteur du peptide relié au gène de la calcitonine (« calcitonin gene-related peptide » ; CGRP), alors qu’il devient un récepteur de l’adrénomedulline lorsqu’il interagit avec RAMP2 ou RAMP3. D’autre part, en plus d’interagir avec des protéines accessoires transmembranaires telles les RAMPs, les RCPGs peuvent aussi s’associer entre eux pour former des oligomères de récepteurs. Dans cette thèse, nous nous sommes penchés sur les interactions entre les RCPGs et les RAMPs, et plus particulièrement sur l’interrelation entre ce type d’association RCPG/RAMP et l’assemblage en oligomères de récepteurs, en utilisant le récepteur du CGRP comme modèle d’étude.
+Une première étude nous a tout d’abord permis de confirmer l’interaction entre le récepteur CLR et RAMP1, dans un contexte de cellules vivantes. Nous avons démontré que ce complexe CLR/RAMP1 active la protéine G et recrute la protéine de signalisation -arrestine suite à une stimulation par le CGRP. Ensuite, nous avons déterminé que même s’il doit obligatoirement former un hétéro-oligomère avec les RAMPs pour être actif, le CLR conserve malgré tout sa capacité à interagir avec d’autres RCPGs. En plus d’observer la présence d’homo-oligomère de CLR, nous avons constaté que tout comme les RCPGs, les RAMPs peuvent eux-aussi s’associer entre eux pour former des complexes oligomériques pouvant comprendre différents sous-types (RAMP1/RAMP2 et RAMP1/RAMP3). 
+Cette observation de la présence d’homo-oligomères de CLR et de RAMP1, nous a amené à nous questionner sur la stœchiométrie d’interaction du complexe CLR/RAMP1. Dans une deuxième étude ayant pour but d’établir la composition moléculaire du récepteur CGRP1 in vivo, nous avons développé une nouvelle approche permettant l’étude de l’interaction entre trois protéines dans un contexte de cellules vivantes. Cette technique baptisée BRET/BiFC, est basée sur le transfert d’énergie de résonance de bioluminescence entre un donneur luminescent, la Renilla  luciférase, et un accepteur fluorescent, la protéine fluorescente jaune (YFP), reconstituée suite au ré-assemblage de ces deux fragments. En utilisant cette approche, nous avons pu déterminer que le récepteur CGRP1 est constitué d’un homo-oligomère de CLR interagissant avec un monomère de RAMP1. 
+En démontrant un assemblage oligomérique asymétrique pour le récepteur CGRP1 à partir d’une nouvelle approche biophysique, nous croyons que les travaux présentés dans cette thèse ont contribué à élargir nos connaissances sur le fonctionnement de la grande famille des RCPGs, et seront utile à la poursuite des recherches sur les complexes protéiques impliqués dans la signalisation.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">G protein coupled receptors (GPCRs) constitute the largest family of membrane receptors involved in signal transduction. Traditionally, signal transduction by GPCRs involves the activation of a hetero-trimeric G protein which will then modulate the activity of several intracellular effectors. We can now appreciate the fact that in addition to their interaction with G proteins, GPCRs also associate with several other proteins, in order to allow proper signal transduction. In particular, the discovery of a family of proteins called receptor activity-modifying proteins (RAMPs) has challenged the traditional views of signal transduction by some GPCRs. In the case of the calcitonin-like receptor (CLR), the association with RAMPs allows the proper cell surface targeting of the receptor in addition to modulate it’s pharmacological properties. Co-expression of CLR with RAMP1 leads to a calcitonin gene-related peptide (CGRP) receptor, whereas CLR association with RAMP2 or RAMP3 promotes the formation of an adrenomedullin receptor. In addition to their interaction with transmembrane accessory proteins such as RAMPs, GPCRs can also interact with other receptors to form receptors oligomers. In this thesis, we were interested in the interactions between GPCRs and RAMPs, and particularly, in the link between these GPCR/RAMP interactions and the assembly of receptor oligomers, using CGRP1 receptor as a model.
+We first confirmed the interaction between CLR and RAMP1 in living cells. We showed that this CLR/RAMP1 complex activates G proteins and recruits the signalling protein -arrestin upon CGRP stimulation. Next, we demonstrated that even if the CLR requires hetero-oligomeric assembly with RAMPs in order to be active, this receptor can still interact with other GPCRs. In addition to CLR homo-oligomers, we observed that RAMPs can also self-associate to form oligomeric complexes which can involve different subtypes (RAMP1/RAMP2 and RAMP1/RAMP3).
+This observation of the presence of CLR and RAMP1 homo-oligomers raised the question of the stoiechiometry of interaction of the CLR/RAMP1 complex. In order to establish the molecular composition of the CGRP1 receptor in vivo, we developed a novel approach allowing the detection of the interaction between three proteins in living cells. This method called BRET/BiFC is based on the bioluminescence resonance energy transfer between a luminescent energy donor, Renilla luciferase, and a fluorescent energy acceptor, the yellow fluorescent protein (YFP), reconstituted after the re-association of its two fragments. Using this approach, we showed that the CGRP1 receptor consist of a homo-oligomer of CLR interacting with a monomer of RAMP1.
+By demonstrating the asymmetrical organization of the CGRP1 receptor complex using a novel biophysical approach, we believe that the results presented herein have contributed to increase our knowledge of the mechanisms of function of the large family of GPCRs and will be useful for the pursuit of research on protein complexes involved in signalling pathways.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F2833&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Biochimie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/2833/Heroux_Madeleine_2009_these.pdf?sequence=6&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/2833/Heroux_Madeleine_2009_these.pdf.jpg?sequence=10&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Heroux_Madeleine_2009_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/2833/Heroux_Madeleine_2009_these.pdf?sequence=6&amp;isAllowed=y">Heroux_Madeleine_2009_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">7.827Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/2833">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

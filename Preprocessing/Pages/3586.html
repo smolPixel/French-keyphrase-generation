@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Étude des voies d’apprêtement des antigènes viraux menant à la présentation antigénique par les CMH de classe I</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Desjardins, Michel" name="DC.contributor">
+<meta content="English, Luc" name="DC.creator">
+<meta content="2010-03-19T16:34:58Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="MONTHS_WITHHELD:60" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2010-03-19T16:34:58Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2010-02-04" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2009-06" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/3586" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Autophagie" name="DC.subject" xml:lang="en"/>
+<meta content="présentation antigénique" name="DC.subject" xml:lang="en"/>
+<meta content="phagosomes" name="DC.subject" xml:lang="en"/>
+<meta content="virus" name="DC.subject" xml:lang="en"/>
+<meta content="apprêtement antigénique" name="DC.subject" xml:lang="en"/>
+<meta content="herpès" name="DC.subject" xml:lang="en"/>
+<meta content="lymphocyte T CD8+" name="DC.subject" xml:lang="en"/>
+<meta content="CMH" name="DC.subject" xml:lang="en"/>
+<meta content="macrophage" name="DC.subject" xml:lang="en"/>
+<meta content="réticulum endoplasmique" name="DC.subject" xml:lang="en"/>
+<meta content="autophagy" name="DC.subject" xml:lang="en"/>
+<meta content="antigen presentation" name="DC.subject" xml:lang="en"/>
+<meta content="herpes" name="DC.subject" xml:lang="en"/>
+<meta content="virus" name="DC.subject" xml:lang="en"/>
+<meta content="CD8+ T lymphocyte" name="DC.subject" xml:lang="en"/>
+<meta content="MHC" name="DC.subject" xml:lang="en"/>
+<meta content="antigen processing" name="DC.subject" xml:lang="en"/>
+<meta content="macrophage" name="DC.subject" xml:lang="en"/>
+<meta content="endoplasmic reticulum" name="DC.subject" xml:lang="en"/>
+<meta content="phagosome" name="DC.subject" xml:lang="en"/>
+<meta content="Biology - Virology / Biologie - Virologie (UMI : 0720)" name="DC.subject" xml:lang="en"/>
+<meta content="Étude des voies d’apprêtement des antigènes viraux menant à la présentation antigénique par les CMH de classe I" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Le contrôle immunitaire des infections virales est effectué, en grande partie, par les lymphocytes T CD8+ cytotoxiques. Pour y parvenir, les lymphocytes T CD8+ doivent être en mesure de reconnaître les cellules infectées et de les éliminer. Cette reconnaissance des cellules infectées s’effectue par l’interaction du récepteur T (TCR) des lymphocytes T CD8+ et des peptides viraux associés au complexe majeur d’histocompatibilité (CMH) de classe I à la surface des cellules hôtes. Cette interaction constitue l’élément déclencheur permettant l’élimination de la cellule infectée. On comprend donc toute l’importance des mécanismes cellulaires menant à la génération des peptides antigéniques à partir des protéines virales produites au cours d’une infection. 
+La vision traditionnelle de cet apprêtement protéique menant à la présentation d’antigènes par les molécules du CMH propose deux voies cataboliques distinctes. En effet, il est largement admis que les antigènes endogènes sont apprêtés par la voie dite ‘‘classique’’ de présentation antigénique par les CMH de classe I. Cette voie implique la dégradation des antigènes intracellulaires par le protéasome dans le cytoplasme, le transport des peptides résultant de cette dégradation à l’intérieur du réticulum endoplasmique, leur chargement sur les molécules du CMH de classe I et finalement le transport des complexes peptide-CMH à la surface de la cellule où ils pourront activer les lymphocytes T CD8+. Dans la seconde voie impliquant des antigènes exogènes, le dogme veut que ceux-ci soient apprêtés par les protéases du compartiment endovacuolaire. Les peptides ainsi générés sont directement chargés sur les molécules de CMH de classe II à l’intérieur de ce compartiment. Par la suite, des mécanismes de recyclage vésiculaire assurent le transport des complexes peptide-CMH de classe II à la surface de la cellule afin de stimuler les lymphocytes T CD4+. Cependant, cette stricte ségrégation des voies d’apprêtement antigénique a été durement éprouvée par la capacité des cellules présentatrices d’antigènes à effectuer l’apprêtement d’antigènes exogènes et permettre leur présentation sur des molécules de CMH de classe I. De plus, l’identification récente de peptides d’origine intracellulaire associés à des molécules de CMH de classe II a clairement indiqué la présence d’interactions entre les deux voies d’apprêtement antigénique permettant de transgresser  le dogme préalablement établi. 
+L’objectif du travail présenté ici était de caractériser les voies d’apprêtement antigénique menant à la présentation d’antigènes viraux par les molécules du CMH de classe I lors d’une infection par le virus de l’Herpès simplex de type I (HSV-1). Dans les résultats rapportés ici, nous décrivons une nouvelle voie d’apprêtement antigénique résultant de la formation d’autophagosomes dans les cellules infectées. Cette nouvelle voie permet le transfert d’antigènes viraux vers un compartiment vacuolaire dégradatif dans la phase tardive de l’infection par le virus HSV-1. Cette mise en branle d’une seconde voie d’apprêtement antigénique permet d’augmenter le niveau de présentation de la glycoprotéine B (gB) virale utilisée comme modèle dans cette étude. De plus, nos résultats décrivent la formation d’une nouvelle forme d’autophagosomes dérivés de l’enveloppe nucléaire en réponse à l’infection par le virus HSV-1. Ces nouveaux autophagosomes permettent le transfert d’antigènes viraux vers un compartiment vacuolaire lytique, action également assurée par les autophagosomes dits classiques. Dans la deuxième partie du travail présenté ici, nous utilisons l’infection par le virus HSV-1 et la production de la gB qui en résulte pour étudier le trafic membranaire permettant le transfert de la gB vers un compartiment vacuolaire dégradatif. Nos résultats mettent en valeur l’importance du réticulum endoplasmique, et des compartiments autophagiques qui en dérivent, dans ces mécanismes de transfert antigénique permettant d’amplifier la présentation antigénique de la protéine virale gB sur des CMH de classe I via une voie vacuolaire.  L’ensemble de nos résultats démontrent également une étroite collaboration entre la voie classique de présentation antigénique par les CMH de classe I et la voie vacuolaire soulignant, encore une fois, la présence d’interaction entre les deux voies." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="Immune control of viral infections is mainly carried out by cytotoxic CD8+ T lymphocytes. To achieve this, CD8+ T lymphocytes must be able to recognize infected cells and eliminate them. This recognition of infected cells occurs by the interaction of the T cell receptor (TCR) of CD8+ T lymphocytes and viral peptides associated with major histocompatibility complex (MHC) class I on the surface of host cells. This interaction is the key element triggering the elimination of infected cells. This emphasizes the major role of cellular mechanisms leading to the generation of antigenic peptides from viral proteins.
+
+The traditional view of antigen presentation by MHC molecules proposes two segregated pathways. Indeed, it is widely accepted that endogenous antigens are processed by the ''classical'' MHC class I presentation pathway. This pathway involves the degradation of intracellular antigens by the proteasome complex in the cytoplasm of the cell, the resulting peptides are then translocated in the endoplasmic reticulum where they are loaded on MHC class I molecules, and finally peptide-MHC complex are exported at the cell surface to activate CD8+ T lymphocytes. In contrast, exogenous antigens internalized by endocytosis or phagocytosis are processed by hydrolases in the lytic endovacuolar compartment and the resulting peptides are loaded on MHC class II molecules. Thereafter, vesicle recycling mechanisms transport the peptide-MHC class II complex on the cell surface where they can stimulate CD4+ T lymphocytes.
+
+However, the strict segregation of these two pathways has been revisited to account for the ability of antigen presenting cells to present exogenous antigens on MHC class I molecules by a process called cross-presentation. Moreover, the recent finding that intracellular peptides might also be presented by MHC class II molecules clearly emphasized the presence of interactions between these two antigen processing pathways that transgress the previously established dogma.
+The objective of the work presented here was to characterize the antigen processing pathways leading to antigen MHC class I presentation during herpes simplex type I (HSV-1) infection. In the results reported here, we describe a new antigen processing pathway resulting from the formation of autophagosomes in HSV-1 infected cells. This new pathway allows the transfer of viral antigens in a lytic vacuolar compartment during the late phase of infection. The development and activation of this second pathway of antigen processing leads to an increased MHC class I presentation of the viral glycoprotein B (gB) used as a model in this study. Moreover, our results describe the establishment of a new form of autophagosomes derived from the nuclear envelope in response to HSV-1 infection. This new form of autophagosomes also contributes to viral antigen transfer to lytic vacuolar compartment in parallel to the action of classical autophagy. Our results also show a close collaboration between the classical MHC class I presentation pathway and vacuolar pathway induced by the formation of autophagosomes, still reinforcing the idea that these two pathways interact together to ensure optimal antigens processing during viral infection. In the second part of the work presented here, we use HSV-1 infection and the resulting viral glycoprotein B to study membrane trafficking allowing the transfer of gB to degradative vacuolar compartments. Our results highlight the role of the endoplasmic reticulum in antigen transfer mechanisms that induce an amplified MHC class I presentation of the viral glycoprotein B." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Autophagie; présentation antigénique; phagosomes; virus; apprêtement antigénique; herpès; lymphocyte T CD8+; CMH; macrophage; réticulum endoplasmique; autophagy; antigen presentation; herpes; virus; CD8+ T lymphocyte; MHC; antigen processing; macrophage; endoplasmic reticulum; phagosome; Biology - Virology / Biologie - Virologie (UMI : 0720); Thèse ou mémoire / Thesis or Dissertation; Pathologie et biologie cellulaires" name="citation_keywords"/>
+<meta content="Étude des voies d’apprêtement des antigènes viraux menant à la présentation antigénique par les CMH de classe I" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="English, Luc" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/3586/2/English_Luc_2009_Th%c3%a8se.pdf" name="citation_pdf_url"/>
+<meta content="2010-02-04" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/3586" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3586?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3586?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3586?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3586?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3586?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3586?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/3586/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/3586">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3586/mets.xml-->
+<h2 class="page-header first-page-header">Étude des voies d’apprêtement des antigènes viraux menant à la présentation antigénique par les CMH de classe I</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Desjardins, Michel</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">English, Luc</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2010-03-19T16:34:58Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">MONTHS_WITHHELD:60</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2010-03-19T16:34:58Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2010-02-04</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2009-06</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/3586</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Autophagie</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">présentation antigénique</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">phagosomes</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">virus</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">apprêtement antigénique</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">herpès</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">lymphocyte T CD8+</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">CMH</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">macrophage</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">réticulum endoplasmique</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">autophagy</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">antigen presentation</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">herpes</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">virus</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">CD8+ T lymphocyte</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">MHC</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">antigen processing</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">macrophage</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">endoplasmic reticulum</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">phagosome</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Virology / Biologie - Virologie (UMI : 0720)</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Étude des voies d’apprêtement des antigènes viraux menant à la présentation antigénique par les CMH de classe I</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Pathologie et biologie cellulaires</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Le contrôle immunitaire des infections virales est effectué, en grande partie, par les lymphocytes T CD8+ cytotoxiques. Pour y parvenir, les lymphocytes T CD8+ doivent être en mesure de reconnaître les cellules infectées et de les éliminer. Cette reconnaissance des cellules infectées s’effectue par l’interaction du récepteur T (TCR) des lymphocytes T CD8+ et des peptides viraux associés au complexe majeur d’histocompatibilité (CMH) de classe I à la surface des cellules hôtes. Cette interaction constitue l’élément déclencheur permettant l’élimination de la cellule infectée. On comprend donc toute l’importance des mécanismes cellulaires menant à la génération des peptides antigéniques à partir des protéines virales produites au cours d’une infection. 
+La vision traditionnelle de cet apprêtement protéique menant à la présentation d’antigènes par les molécules du CMH propose deux voies cataboliques distinctes. En effet, il est largement admis que les antigènes endogènes sont apprêtés par la voie dite ‘‘classique’’ de présentation antigénique par les CMH de classe I. Cette voie implique la dégradation des antigènes intracellulaires par le protéasome dans le cytoplasme, le transport des peptides résultant de cette dégradation à l’intérieur du réticulum endoplasmique, leur chargement sur les molécules du CMH de classe I et finalement le transport des complexes peptide-CMH à la surface de la cellule où ils pourront activer les lymphocytes T CD8+. Dans la seconde voie impliquant des antigènes exogènes, le dogme veut que ceux-ci soient apprêtés par les protéases du compartiment endovacuolaire. Les peptides ainsi générés sont directement chargés sur les molécules de CMH de classe II à l’intérieur de ce compartiment. Par la suite, des mécanismes de recyclage vésiculaire assurent le transport des complexes peptide-CMH de classe II à la surface de la cellule afin de stimuler les lymphocytes T CD4+. Cependant, cette stricte ségrégation des voies d’apprêtement antigénique a été durement éprouvée par la capacité des cellules présentatrices d’antigènes à effectuer l’apprêtement d’antigènes exogènes et permettre leur présentation sur des molécules de CMH de classe I. De plus, l’identification récente de peptides d’origine intracellulaire associés à des molécules de CMH de classe II a clairement indiqué la présence d’interactions entre les deux voies d’apprêtement antigénique permettant de transgresser  le dogme préalablement établi. 
+L’objectif du travail présenté ici était de caractériser les voies d’apprêtement antigénique menant à la présentation d’antigènes viraux par les molécules du CMH de classe I lors d’une infection par le virus de l’Herpès simplex de type I (HSV-1). Dans les résultats rapportés ici, nous décrivons une nouvelle voie d’apprêtement antigénique résultant de la formation d’autophagosomes dans les cellules infectées. Cette nouvelle voie permet le transfert d’antigènes viraux vers un compartiment vacuolaire dégradatif dans la phase tardive de l’infection par le virus HSV-1. Cette mise en branle d’une seconde voie d’apprêtement antigénique permet d’augmenter le niveau de présentation de la glycoprotéine B (gB) virale utilisée comme modèle dans cette étude. De plus, nos résultats décrivent la formation d’une nouvelle forme d’autophagosomes dérivés de l’enveloppe nucléaire en réponse à l’infection par le virus HSV-1. Ces nouveaux autophagosomes permettent le transfert d’antigènes viraux vers un compartiment vacuolaire lytique, action également assurée par les autophagosomes dits classiques. Dans la deuxième partie du travail présenté ici, nous utilisons l’infection par le virus HSV-1 et la production de la gB qui en résulte pour étudier le trafic membranaire permettant le transfert de la gB vers un compartiment vacuolaire dégradatif. Nos résultats mettent en valeur l’importance du réticulum endoplasmique, et des compartiments autophagiques qui en dérivent, dans ces mécanismes de transfert antigénique permettant d’amplifier la présentation antigénique de la protéine virale gB sur des CMH de classe I via une voie vacuolaire.  L’ensemble de nos résultats démontrent également une étroite collaboration entre la voie classique de présentation antigénique par les CMH de classe I et la voie vacuolaire soulignant, encore une fois, la présence d’interaction entre les deux voies.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Immune control of viral infections is mainly carried out by cytotoxic CD8+ T lymphocytes. To achieve this, CD8+ T lymphocytes must be able to recognize infected cells and eliminate them. This recognition of infected cells occurs by the interaction of the T cell receptor (TCR) of CD8+ T lymphocytes and viral peptides associated with major histocompatibility complex (MHC) class I on the surface of host cells. This interaction is the key element triggering the elimination of infected cells. This emphasizes the major role of cellular mechanisms leading to the generation of antigenic peptides from viral proteins.
+
+The traditional view of antigen presentation by MHC molecules proposes two segregated pathways. Indeed, it is widely accepted that endogenous antigens are processed by the ''classical'' MHC class I presentation pathway. This pathway involves the degradation of intracellular antigens by the proteasome complex in the cytoplasm of the cell, the resulting peptides are then translocated in the endoplasmic reticulum where they are loaded on MHC class I molecules, and finally peptide-MHC complex are exported at the cell surface to activate CD8+ T lymphocytes. In contrast, exogenous antigens internalized by endocytosis or phagocytosis are processed by hydrolases in the lytic endovacuolar compartment and the resulting peptides are loaded on MHC class II molecules. Thereafter, vesicle recycling mechanisms transport the peptide-MHC class II complex on the cell surface where they can stimulate CD4+ T lymphocytes.
+
+However, the strict segregation of these two pathways has been revisited to account for the ability of antigen presenting cells to present exogenous antigens on MHC class I molecules by a process called cross-presentation. Moreover, the recent finding that intracellular peptides might also be presented by MHC class II molecules clearly emphasized the presence of interactions between these two antigen processing pathways that transgress the previously established dogma.
+The objective of the work presented here was to characterize the antigen processing pathways leading to antigen MHC class I presentation during herpes simplex type I (HSV-1) infection. In the results reported here, we describe a new antigen processing pathway resulting from the formation of autophagosomes in HSV-1 infected cells. This new pathway allows the transfer of viral antigens in a lytic vacuolar compartment during the late phase of infection. The development and activation of this second pathway of antigen processing leads to an increased MHC class I presentation of the viral glycoprotein B (gB) used as a model in this study. Moreover, our results describe the establishment of a new form of autophagosomes derived from the nuclear envelope in response to HSV-1 infection. This new form of autophagosomes also contributes to viral antigen transfer to lytic vacuolar compartment in parallel to the action of classical autophagy. Our results also show a close collaboration between the classical MHC class I presentation pathway and vacuolar pathway induced by the formation of autophagosomes, still reinforcing the idea that these two pathways interact together to ensure optimal antigens processing during viral infection. In the second part of the work presented here, we use HSV-1 infection and the resulting viral glycoprotein B to study membrane trafficking allowing the transfer of gB to degradative vacuolar compartments. Our results highlight the role of the endoplasmic reticulum in antigen transfer mechanisms that induce an amplified MHC class I presentation of the viral glycoprotein B.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F3586&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Pathologie+et+biologie+cellulaires&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/3586/English_Luc_2009_Th%c3%a8se.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/3586/English_Luc_2009_Th%c3%a8se.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="English_Luc_2009_Thèse.pdf">
+<a href="/xmlui/bitstream/handle/1866/3586/English_Luc_2009_Th%c3%a8se.pdf?sequence=2&amp;isAllowed=y">English_Luc_2009_Thèse.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">37.14Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/3586">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

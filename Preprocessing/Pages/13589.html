@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>The plant ovule omics : an integrative approach for 
+pollen−pistil interactions and pollen tube guidance studies 
+in solanaceous species</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Matton, Daniel Philippe" name="DC.contributor">
+<meta content="Liu, Yang" name="DC.creator">
+<meta content="2016-04-15T17:43:26Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2016-04-15T17:43:26Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2016-03-23" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2015-10" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/13589" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Interactions pollen–pistil" name="DC.subject" xml:lang="fr"/>
+<meta content="Ovule" name="DC.subject" xml:lang="fr"/>
+<meta content="Sac embryonnaire" name="DC.subject" xml:lang="fr"/>
+<meta content="Maturation" name="DC.subject" xml:lang="fr"/>
+<meta content="Guidage du tube pollinique" name="DC.subject" xml:lang="fr"/>
+<meta content="Chimio-attractants" name="DC.subject" xml:lang="fr"/>
+<meta content="Peptide riche en cystéine" name="DC.subject" xml:lang="fr"/>
+<meta content="RNA-seq" name="DC.subject" xml:lang="fr"/>
+<meta content="Spectrométrie de masse" name="DC.subject" xml:lang="fr"/>
+<meta content="Sécrétome" name="DC.subject" xml:lang="fr"/>
+<meta content="Pollen–pistil interactions" name="DC.subject" xml:lang="fr"/>
+<meta content="Embryo sac" name="DC.subject" xml:lang="fr"/>
+<meta content="Pollen tube guidance" name="DC.subject" xml:lang="fr"/>
+<meta content="Chemoattractants" name="DC.subject" xml:lang="fr"/>
+<meta content="Cysteine-rich peptide" name="DC.subject" xml:lang="fr"/>
+<meta content="Mass spectrometry" name="DC.subject" xml:lang="fr"/>
+<meta content="Secretome" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307)" name="DC.subject" xml:lang="fr"/>
+<meta content="The plant ovule omics : an integrative approach for 
+pollen−pistil interactions and pollen tube guidance studies 
+in solanaceous species" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Chez les plantes à fleurs, l’ovaire est l’organe reproducteur femelle et il interagit de façon importante avec les gamètes mâles durant la croissance, le guidage, la réception et la rupture du tube pollinique ainsi que la fusion des gamètes. Le processus débute lorsque de nombreux gènes de l’ovule sont activés à longue distance lors de la réception du pollen sur le stigmate. Afin d’explorer les signaux provenant de l’ovule ayant un impact important sur les interactions pollen–pistil, particulièrement les molécules sécrétées impliquées dans la signalisation espècespécifique, l’expression génique des ovules sous forme d’ARNm ainsi et la sécrétion protéique ont été étudiées chez Solanum chacoense, une espèce diploïde de pomme de terre sauvage. S. chacoense a subi beaucoup d’hybridation interspécifique avec d’autres espèces sympathiques de solanacées, facilitant ainsi grandement l’étude des interactions pollen–ovule de façon espècespécifique ainsi que leur évolution. Dans ce projet, des ovules provenant de trois conditions différentes ont été comparés: des ovules matures de type sauvage, des ovules légèrement immatures, récoltés deux jours avant l’anthèse et des ovules provenant du mutant frk1 pour lesquels le sac embryonnaire est absent. Un séquençage d’ARN à haut débit a d’abord été effectué sur les ovules de type sauvage de S. chacoense afin de générer un assemblage de référence comprenant 33852 séquences codantes. D’autres séquençages ont été effectués sur les trois conditions d’ovules et sur les feuilles afin de faire une analyse d’expression différentielle des gènes. En comparaison avec les ovules de type sauvage, 818 gènes sont réprimés dans les ovules du mutant frk1. Un sous-groupe de 284 gènes, étaient également sous-exprimés dans les ovules légèrement immatures, suggérant un rôle spécifique dans les stades tardifs de la maturation du sac embryonnaire (stade de développent FG6 à FG7) ainsi que du guidage du tube pollinique, puisque ni les ovules du mutant frk1 ni ceux légèrement immatures ne sont capables d’attirer les tubes polliniques lors d’essais de croissance semi in vivo. De plus, 21% de ces gènes sont des peptides riches en cystéines (CRPs). En utilisant un transcriptome assemblé de novo provenant de deux proches parents de S. chacoense, S. gandarillasii et S. tarijense, une analyse d’orthologie a été effectuée sur ces CRPs, révélant une grande variabilité et une évolution rapide chez les solanacées. De nouveaux motifs de cystéine uniques à cette famille ont également été découverts. En comparant avec des études similaires chez Arabidopsis, le sac embryonnaire de S. chacoense montre un transcriptome fortement divergent, particulièrement en en ce qui a trait à la catégorisation fonctionnelle des gènes et de la similarité entre les gènes orthologues. De plus,même si la glycosylation n’est pas requise lors du guidage mycropylaire du tube pollinique chez Arabidopsis, Torenia ou le maïs, des extraits d’ovules glycosylés de S. chacoense sont capables d’augmenter la capacité de guidage de 18%. Cette étude est donc la première à montrer une corrélation entre glycosylation et le guidage du tube pollinique par l’ovule. En complément à l’approche transcriptomique, une approche protéomique portant sur les protéine sécrétées par l’ovule (le secrétome) a été utilisée afin d’identifier des protéines impliquées dans l’interaction entre ovule et tube pollinique. Des exsudats d’ovules matures (capables d’attirer le tube pollinique) et d’ovules immatures (incapables d’attirer le tube pollinique) ont été récoltés en utilisant une nouvelle méthode d’extraction par gravité permettant de réduire efficacement les contaminants cytosoliques à moins de 1% de l’échantillon. Un total de 305 protéines sécrétées par les ovules (OSPs) ont été identifiées par spectrométrie de masse, parmi lesquelles 58% étaient spécifiques aux ovules lorsque comparées avec des données de protéines sécrétées par des tissus végétatifs. De plus, la sécrétion de 128 OSPs est augmentée dans les ovules matures par rapport aux ovules immatures. Ces 128 protéines sont donc considérées en tant que candidates potentiellement impliquées dans la maturation tardive de l’ovule et dans le guidage du tube pollinique. Cette étude a également montré que la maturation du sac embryonnaire du stade FG6 au stade FG7 influence le niveau de sécrétion de 44% du sécrétome total de l’ovule. De façon surprenante, la grande majorité (83%) de ces protéines n’est pas régulée au niveau de l’ARN, soulignant ainsi l’importance de cette approche dans l’étude du guidage du tube pollinique comme complément essentiel aux études transcriptomiques. Parmi tous les signaux sécrétés par l’ovule et reliés au guidage, obtenus à partir des approches transcriptomiques et protéomiques décrites ci-haut, nous avons spécifiquement évalué l’implication des CRPs dans le guidage du tube pollinique par l’ovule chez S. chacoense, vu l’implication de ce type de protéine dans les interactions pollen-pistil et le guidage du tube pollinique chez d’autres espèces. Au total, 28 CRPs étaient présentes dans les ovules capables d’attirer le tube pollinique tout en étant absentes dans les ovules incapables de l’attirer, et ce, soit au niveau de l’ARNm et/ou au niveau du sécrétome. De celles-ci, 17 CRPs ont été exprimées dans un système bactérien et purifiées en quantité suffisante pour tester le guidage. Alors que des exsudats d’ovules ont été utilisés avec succès pour attirer par chimiotactisme le tube pollinique, les candidats exprimés dans les bactéries n’ont quant à eux pas été capables d’attirer les tubes polliniques. Comme l’utilisation de systèmes d’expression hétérologue eucaryote peut permettre un meilleur repliement et une plus grande activité des protéines, les candidats restants seront de nouveau exprimés, cette fois dans un système de levure ainsi que dans un système végétal pour produire les peptides sécrétés. Ceux-ci seront ensuite utilisés lors d’essais fonctionnels pour évaluer leur capacité à guider les tubes polliniques et ainsi isoler les attractants chimiques responsable du guidage du tube pollinique chez les solanacées comme S. chacoense." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="In flowering plants, the ovary is the female reproductive organ that interacts extensively with the male gametophyte during pollen tube (PT) growth, guidance, reception, discharge and gamete fusion. The process begins when numerous ovule-expressed genes are activated when pollen lands on the stigma. To explore the ovular signals that have a great impact on successful pollen–pistil interactions, especially the secreted molecules that mediate species-specific signalling events, ovule mRNA expression and protein secretion profiles were studied in Solanum chacoense, a wild diploid potato species. Solanum chacoense has undergone extensive interspecific hybridization with sympatric solanaceous species that greatly facilitates the study of species-specific pollen–ovule interactions and evolution. In this project, three ovule conditions were studied: wild-type mature ovules, slightly immature ovules at two days before anthesis (2DBA), and frk1 mutant ovules that lack an embryo sac (ES). RNA-seq was performed on S. chacoense ovules to provide a scaffold assembly comprising 33852 CDS-containing sequences, then to provide read counts for differential gene expression analyses on three ovule conditions as well as on leaf. Compared to wild-type ovules, 818 genes were downregulated in frk1 ovules. A subset of 284 genes was concurrently under-expressed in 2DBA ovules, suggestive of their specific involvement in late stages of ES maturation (female gametophyte (FG), FG6 to FG7 developmental stage), as well as in PT guidance processes, as neither frk1 nor 2DBA ovules attract semi in vivo-grown PTs. Of these 284, 21% encoded cysteine-rich peptides (CRPs). Using de novo assembled ovule transcriptomes of two close relatives, S. gandarillasii and S. tarijense, an orthology survey was conducted on these CRPs, revealing their highly polymorphic nature among species and rapid evolution. Interestingly, novel cysteine motifs unique to this family were also uncovered. As compared to parallel studies in Arabidopsis, S. chacoense was found to possess a highly divergent ES transcriptome, in terms of both functional categories and individual ortholog similarities. Although glycosylation is not required for micropylar guidance cues to attract PTs in Arabidopsis, Torenia or maize, glycosylated ovule extracts from S.
+chacoense showed enhanced PT guidance competency by 18%. This is the first time a positive regulation between glycosylation and ovular PT guidance has been observed. As a complement to the transcriptomic approach, a proteomic approach using secreted proteins from the ovule (secretome) was employed to identify proteins involved in pollen–pistil interactions. Ovule exudates were collected from mature ovules (PT attracting) and immature ovules at 2DBA (PT nonattracting), using a novel tissue free-gravity extraction method (tf-GEM), which efficiently reduced the cytosolic contamination to less than 1%. Through mass spectrometry analyses, a total of 305 ovule-secreted proteins (OSPs) were identified, of which 58% were considered ovule-specific when compared to secretome studies conducted in other plant tissues. The secretion of 128 OSPs was upregulated in mature ovules vs. immature ovules. These OSPs were considered as candidate proteins involved in late ovule maturation and PT guidance. This study demonstrated that the ES maturation from FG6 to FG7 stages influenced the secretion status of 44% of ovule secretome. Surprisingly, the majority (83%) of these proteins were not regulated at the RNA level, vindicating this novel approach in the study of PT guidance as a robust
+complement to transcriptomic studies. Among all identified guidance-related ovular signals from the transcriptomic and proteomic approaches described above, we focused on the evaluation of the involvement of CRPs in ovular PT guidance of S. chacoense, due to the implication of various CRPs in pollen–pistil interactions and, especially, in PT guidance. A total of 28 CRPs were present in PT attracting ovules while being low or absent in nonattracting ovules, at the mRNA and/or protein secretion levels. Of these, 17 CRPs were expressed in bacteria and purified in sufficient amount for PT guidance assays. However, while ovule exudates were shown to induce PT chemotropism in the bead assay, refolded candidates did not show guidance competency. Since the use of eukaryotic protein expression systems might lead to better refolding and higher protein activity, the remaining candidates will be expressed in both yeast and plant-based expression systems and tested for their ability to attract PTs in a semi in-vivo assay, in order to lead us toward the isolation of PT guidance chemoattractants in solanaceous species like S. chacoense." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Interactions pollen–pistil; Ovule; Sac embryonnaire; Maturation; Guidage du tube pollinique; Chimio-attractants; Peptide riche en cystéine; RNA-seq; Spectrométrie de masse; Sécrétome; Pollen–pistil interactions; Embryo sac; Pollen tube guidance; Chemoattractants; Cysteine-rich peptide; Mass spectrometry; Secretome; Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307); Thèse ou mémoire / Thesis or Dissertation; Sciences biologiques" name="citation_keywords"/>
+<meta content="The plant ovule omics : an integrative approach for 
+pollen−pistil interactions and pollen tube guidance studies 
+in solanaceous species" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Liu, Yang" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/13589/4/Liu_Yang_2015_these.pdf" name="citation_pdf_url"/>
+<meta content="2016-03-23" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/13589" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13589?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13589?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13589?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13589?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13589?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13589?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2953" role="menuitem">Faculté des arts et des sciences – Département de sciences biologiques</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2994" role="menuitem">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2953">Faculté des arts et des sciences – Département de sciences biologiques</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2994">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2994"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/13589/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/13589">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/13589/mets.xml-->
+<h2 class="page-header first-page-header">The plant ovule omics : an integrative approach for 
+pollen−pistil interactions and pollen tube guidance studies 
+in solanaceous species</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Matton, Daniel Philippe</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Liu, Yang</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2016-04-15T17:43:26Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2016-04-15T17:43:26Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2016-03-23</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2015-10</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/13589</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Interactions pollen–pistil</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Ovule</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Sac embryonnaire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Maturation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Guidage du tube pollinique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Chimio-attractants</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Peptide riche en cystéine</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">RNA-seq</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Spectrométrie de masse</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Sécrétome</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Pollen–pistil interactions</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Embryo sac</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Pollen tube guidance</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Chemoattractants</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Cysteine-rich peptide</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Mass spectrometry</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Secretome</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">The plant ovule omics : an integrative approach for 
+pollen−pistil interactions and pollen tube guidance studies 
+in solanaceous species</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences biologiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Chez les plantes à fleurs, l’ovaire est l’organe reproducteur femelle et il interagit de façon importante avec les gamètes mâles durant la croissance, le guidage, la réception et la rupture du tube pollinique ainsi que la fusion des gamètes. Le processus débute lorsque de nombreux gènes de l’ovule sont activés à longue distance lors de la réception du pollen sur le stigmate. Afin d’explorer les signaux provenant de l’ovule ayant un impact important sur les interactions pollen–pistil, particulièrement les molécules sécrétées impliquées dans la signalisation espècespécifique, l’expression génique des ovules sous forme d’ARNm ainsi et la sécrétion protéique ont été étudiées chez Solanum chacoense, une espèce diploïde de pomme de terre sauvage. S. chacoense a subi beaucoup d’hybridation interspécifique avec d’autres espèces sympathiques de solanacées, facilitant ainsi grandement l’étude des interactions pollen–ovule de façon espècespécifique ainsi que leur évolution. Dans ce projet, des ovules provenant de trois conditions différentes ont été comparés: des ovules matures de type sauvage, des ovules légèrement immatures, récoltés deux jours avant l’anthèse et des ovules provenant du mutant frk1 pour lesquels le sac embryonnaire est absent. Un séquençage d’ARN à haut débit a d’abord été effectué sur les ovules de type sauvage de S. chacoense afin de générer un assemblage de référence comprenant 33852 séquences codantes. D’autres séquençages ont été effectués sur les trois conditions d’ovules et sur les feuilles afin de faire une analyse d’expression différentielle des gènes. En comparaison avec les ovules de type sauvage, 818 gènes sont réprimés dans les ovules du mutant frk1. Un sous-groupe de 284 gènes, étaient également sous-exprimés dans les ovules légèrement immatures, suggérant un rôle spécifique dans les stades tardifs de la maturation du sac embryonnaire (stade de développent FG6 à FG7) ainsi que du guidage du tube pollinique, puisque ni les ovules du mutant frk1 ni ceux légèrement immatures ne sont capables d’attirer les tubes polliniques lors d’essais de croissance semi in vivo. De plus, 21% de ces gènes sont des peptides riches en cystéines (CRPs). En utilisant un transcriptome assemblé de novo provenant de deux proches parents de S. chacoense, S. gandarillasii et S. tarijense, une analyse d’orthologie a été effectuée sur ces CRPs, révélant une grande variabilité et une évolution rapide chez les solanacées. De nouveaux motifs de cystéine uniques à cette famille ont également été découverts. En comparant avec des études similaires chez Arabidopsis, le sac embryonnaire de S. chacoense montre un transcriptome fortement divergent, particulièrement en en ce qui a trait à la catégorisation fonctionnelle des gènes et de la similarité entre les gènes orthologues. De plus,même si la glycosylation n’est pas requise lors du guidage mycropylaire du tube pollinique chez Arabidopsis, Torenia ou le maïs, des extraits d’ovules glycosylés de S. chacoense sont capables d’augmenter la capacité de guidage de 18%. Cette étude est donc la première à montrer une corrélation entre glycosylation et le guidage du tube pollinique par l’ovule. En complément à l’approche transcriptomique, une approche protéomique portant sur les protéine sécrétées par l’ovule (le secrétome) a été utilisée afin d’identifier des protéines impliquées dans l’interaction entre ovule et tube pollinique. Des exsudats d’ovules matures (capables d’attirer le tube pollinique) et d’ovules immatures (incapables d’attirer le tube pollinique) ont été récoltés en utilisant une nouvelle méthode d’extraction par gravité permettant de réduire efficacement les contaminants cytosoliques à moins de 1% de l’échantillon. Un total de 305 protéines sécrétées par les ovules (OSPs) ont été identifiées par spectrométrie de masse, parmi lesquelles 58% étaient spécifiques aux ovules lorsque comparées avec des données de protéines sécrétées par des tissus végétatifs. De plus, la sécrétion de 128 OSPs est augmentée dans les ovules matures par rapport aux ovules immatures. Ces 128 protéines sont donc considérées en tant que candidates potentiellement impliquées dans la maturation tardive de l’ovule et dans le guidage du tube pollinique. Cette étude a également montré que la maturation du sac embryonnaire du stade FG6 au stade FG7 influence le niveau de sécrétion de 44% du sécrétome total de l’ovule. De façon surprenante, la grande majorité (83%) de ces protéines n’est pas régulée au niveau de l’ARN, soulignant ainsi l’importance de cette approche dans l’étude du guidage du tube pollinique comme complément essentiel aux études transcriptomiques. Parmi tous les signaux sécrétés par l’ovule et reliés au guidage, obtenus à partir des approches transcriptomiques et protéomiques décrites ci-haut, nous avons spécifiquement évalué l’implication des CRPs dans le guidage du tube pollinique par l’ovule chez S. chacoense, vu l’implication de ce type de protéine dans les interactions pollen-pistil et le guidage du tube pollinique chez d’autres espèces. Au total, 28 CRPs étaient présentes dans les ovules capables d’attirer le tube pollinique tout en étant absentes dans les ovules incapables de l’attirer, et ce, soit au niveau de l’ARNm et/ou au niveau du sécrétome. De celles-ci, 17 CRPs ont été exprimées dans un système bactérien et purifiées en quantité suffisante pour tester le guidage. Alors que des exsudats d’ovules ont été utilisés avec succès pour attirer par chimiotactisme le tube pollinique, les candidats exprimés dans les bactéries n’ont quant à eux pas été capables d’attirer les tubes polliniques. Comme l’utilisation de systèmes d’expression hétérologue eucaryote peut permettre un meilleur repliement et une plus grande activité des protéines, les candidats restants seront de nouveau exprimés, cette fois dans un système de levure ainsi que dans un système végétal pour produire les peptides sécrétés. Ceux-ci seront ensuite utilisés lors d’essais fonctionnels pour évaluer leur capacité à guider les tubes polliniques et ainsi isoler les attractants chimiques responsable du guidage du tube pollinique chez les solanacées comme S. chacoense.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">In flowering plants, the ovary is the female reproductive organ that interacts extensively with the male gametophyte during pollen tube (PT) growth, guidance, reception, discharge and gamete fusion. The process begins when numerous ovule-expressed genes are activated when pollen lands on the stigma. To explore the ovular signals that have a great impact on successful pollen–pistil interactions, especially the secreted molecules that mediate species-specific signalling events, ovule mRNA expression and protein secretion profiles were studied in Solanum chacoense, a wild diploid potato species. Solanum chacoense has undergone extensive interspecific hybridization with sympatric solanaceous species that greatly facilitates the study of species-specific pollen–ovule interactions and evolution. In this project, three ovule conditions were studied: wild-type mature ovules, slightly immature ovules at two days before anthesis (2DBA), and frk1 mutant ovules that lack an embryo sac (ES). RNA-seq was performed on S. chacoense ovules to provide a scaffold assembly comprising 33852 CDS-containing sequences, then to provide read counts for differential gene expression analyses on three ovule conditions as well as on leaf. Compared to wild-type ovules, 818 genes were downregulated in frk1 ovules. A subset of 284 genes was concurrently under-expressed in 2DBA ovules, suggestive of their specific involvement in late stages of ES maturation (female gametophyte (FG), FG6 to FG7 developmental stage), as well as in PT guidance processes, as neither frk1 nor 2DBA ovules attract semi in vivo-grown PTs. Of these 284, 21% encoded cysteine-rich peptides (CRPs). Using de novo assembled ovule transcriptomes of two close relatives, S. gandarillasii and S. tarijense, an orthology survey was conducted on these CRPs, revealing their highly polymorphic nature among species and rapid evolution. Interestingly, novel cysteine motifs unique to this family were also uncovered. As compared to parallel studies in Arabidopsis, S. chacoense was found to possess a highly divergent ES transcriptome, in terms of both functional categories and individual ortholog similarities. Although glycosylation is not required for micropylar guidance cues to attract PTs in Arabidopsis, Torenia or maize, glycosylated ovule extracts from S.
+chacoense showed enhanced PT guidance competency by 18%. This is the first time a positive regulation between glycosylation and ovular PT guidance has been observed. As a complement to the transcriptomic approach, a proteomic approach using secreted proteins from the ovule (secretome) was employed to identify proteins involved in pollen–pistil interactions. Ovule exudates were collected from mature ovules (PT attracting) and immature ovules at 2DBA (PT nonattracting), using a novel tissue free-gravity extraction method (tf-GEM), which efficiently reduced the cytosolic contamination to less than 1%. Through mass spectrometry analyses, a total of 305 ovule-secreted proteins (OSPs) were identified, of which 58% were considered ovule-specific when compared to secretome studies conducted in other plant tissues. The secretion of 128 OSPs was upregulated in mature ovules vs. immature ovules. These OSPs were considered as candidate proteins involved in late ovule maturation and PT guidance. This study demonstrated that the ES maturation from FG6 to FG7 stages influenced the secretion status of 44% of ovule secretome. Surprisingly, the majority (83%) of these proteins were not regulated at the RNA level, vindicating this novel approach in the study of PT guidance as a robust
+complement to transcriptomic studies. Among all identified guidance-related ovular signals from the transcriptomic and proteomic approaches described above, we focused on the evaluation of the involvement of CRPs in ovular PT guidance of S. chacoense, due to the implication of various CRPs in pollen–pistil interactions and, especially, in PT guidance. A total of 28 CRPs were present in PT attracting ovules while being low or absent in nonattracting ovules, at the mRNA and/or protein secretion levels. Of these, 17 CRPs were expressed in bacteria and purified in sufficient amount for PT guidance assays. However, while ovule exudates were shown to induce PT chemotropism in the bead assay, refolded candidates did not show guidance competency. Since the use of eukaryotic protein expression systems might lead to better refolding and higher protein activity, the remaining candidates will be expressed in both yeast and plant-based expression systems and tested for their ability to attract PTs in a semi in-vivo assay, in order to lead us toward the isolation of PT guidance chemoattractants in solanaceous species like S. chacoense.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F13589&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+biologiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/13589/Liu_Yang_2015_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/13589/Liu_Yang_2015_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Liu_Yang_2015_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/13589/Liu_Yang_2015_these.pdf?sequence=4&amp;isAllowed=y">Liu_Yang_2015_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">17.73Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2994/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2994">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a> [388]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/13589">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

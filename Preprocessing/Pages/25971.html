@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Health capabilities, public policies and the determinants of infant mortality in Brazil</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Borgès Da Silva, Roxane" name="DC.contributor">
+<meta content="Sicotte, Claude" name="DC.contributor">
+<meta content="Dowbor, Ladislau" name="DC.contributor">
+<meta content="Bugelli, Alexandre" name="DC.creator">
+<meta content="2022-01-19T16:38:40Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2022-01-19T16:38:40Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF"/>
+<meta content="2021-11-01" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2020-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/25971" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Mortalité infantile" name="DC.subject" xml:lang="fr"/>
+<meta content="Capabilités en santé" name="DC.subject" xml:lang="fr"/>
+<meta content="Politiques publiques" name="DC.subject" xml:lang="fr"/>
+<meta content="Déterminants sociaux de la santé" name="DC.subject" xml:lang="fr"/>
+<meta content="Programme Bolsa Familia" name="DC.subject" xml:lang="fr"/>
+<meta content="Données de panel" name="DC.subject" xml:lang="fr"/>
+<meta content="Économie de la santé" name="DC.subject" xml:lang="fr"/>
+<meta content="Programme de transfert conditionnel en espèce" name="DC.subject" xml:lang="fr"/>
+<meta content="Brésil" name="DC.subject" xml:lang="fr"/>
+<meta content="Infant mortality" name="DC.subject" xml:lang="fr"/>
+<meta content="Health capabilities" name="DC.subject" xml:lang="fr"/>
+<meta content="Capabilities approach" name="DC.subject" xml:lang="fr"/>
+<meta content="Public policies" name="DC.subject" xml:lang="fr"/>
+<meta content="Social determinants of health" name="DC.subject" xml:lang="fr"/>
+<meta content="Conditional cash transfer program" name="DC.subject" xml:lang="fr"/>
+<meta content="Bolsa Família" name="DC.subject" xml:lang="fr"/>
+<meta content="Multilevel panel data with fixed effect nested within-cluster" name="DC.subject" xml:lang="fr"/>
+<meta content="Health Economics" name="DC.subject" xml:lang="fr"/>
+<meta content="Brazil" name="DC.subject" xml:lang="fr"/>
+<meta content="Health Sciences - Public Health / Sciences de la santé - Santé publique (UMI : 0573)" name="DC.subject" xml:lang="fr"/>
+<meta content="Health capabilities, public policies and the determinants of infant mortality in Brazil" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type" xml:lang="fr"/>
+<meta content="Résumé
+Le taux de mortalité infantile est un indicateur de santé des populations et de l'efficacité des systèmes de santé. Il est également capable d'estimer l'ampleur des inégalités sociales et en matière de santé entre populations. Au cours des 30 dernières années, le Brésil a enregistré des réductions significatives des taux de mortalité infantile. Entre 1990 et 2017, le taux de mortalité des moins de cinq ans est passé de 53,7 décès pour mille naissances vivantes à 15,6. Une réduction de 71% sur la période. La moyenne nationale de réduction était de 6% par an dans les années 90, passant à 4,8% dans les années 2000 et à 3,2% par an entre 2011 et 2015. De nombreux facteurs ont été signalés comme la cause de ces améliorations.
+Malgré la mise en œuvre de politiques sociales et de santé qui ont eu un impact positif sur la santé des populations brésiliennes au cours des dernières décennies, depuis 2009 le pays a connu une lente diminution de la baisse de la mortalité infantile qui est restée à des niveaux élevés, enregistrant de grandes disparités régionales. Après une crise économique qui a évolué vers une période troublée de crise politique, le pays a enregistré en 2016 une augmentation de la mortalité infantile chez les moins d'un an et de cinq ans, qui est passé de 12,43 à 12,72 décès pour mille naissances vivantes et de 14,28 décès à 14,89 décès pour mille naissances vivantes, respectivement.
+Ces éléments attirent l'attention sur l'impact possible des déterminants sociaux de la santé sur les taux de mortalité infantile au Brésil après la mise en œuvre de ces politiques sociales et de santé. Cette anomalie observée dans la tendance de la mortalité infantile, combinée aux disparités régionales et à une lente diminution de la baisse des taux de mortalité infantile est préoccupante. Elle soulève des questions sur l'impact de ces politiques sociales et de santé, sur la capacité du pays à maintenir une réduction du taux de mortalité infantile à long terme, et sa capacité à rejoindre les taux des pays développés, ainsi quels sont les déterminants de la mortalité infantile au Brésil après la mise en œuvre de ces politiques publiques?
+L'objectif premier de cette thèse était d'identifier les déterminants de la mortalité infantile au Brésil après la mise en œuvre du programme Stratégie Santé Famille et du Programme Bolsa Família afin de formuler des hypothèses plausibles, relatives au ralentissement du taux de mortalité chez les moins d’un an et de cinq ans, aux disparités régionales et à l’anomalie observée dans la tendance à la baisse du taux de mortalité infantile au Brésil. Pour atteindre cet objectif, nous avons effectué trois études: 1) un examen de la portée qui visait à identifier et à résumer les déterminants de la mortalité infantile au Brésil sous l'influence de ces programmes, en vue de formuler des hypothèses relativement à l’évolution récente des taux de mortalité infantile au Brésil et d’identifier les lacunes, en termes de recherche, concernant les déterminants de la mortalité infantile dans le pays; 2) une analyse descriptive rétrospective, dans une optique de santé publique et des inégalités en matière de santé, en adoptant le cadre analytique proposé par la Commission de l'OMS sur les déterminants sociaux de la santé, en utilisant les données du taux de mortalité chez les enfants de moins d'un an et des possibles déterminants de la mortalité infantile au Brésil selon les conclusions de notre examen de la portée (article 1); 3) une proposition de méthodologie pour faire face aux défis liés au développement d'un modèle de données de panel en utilisant des données agrégées des 26 états brésiliens et des différentes sous-régions, selon le « Conceptual Model of Health Capability » , afin d'inférer des associations possibles entre nos variables indépendantes et les taux de mortalité infantile au Brésil et pour vérifier l'hypothèse soulevée dans l'examen de cadrage sur les récents changements des indicateurs de mortalité infantile du pays.
+Les résultats globaux de ces études ont démontré qu'à la lumière du « Conceptual Model of Health Capability » et des déterminants sociaux de la santé, les disparités régionales liées aux inégalités, notamment aux niveaux du revenu, de l'éducation, de l'emploi, du taux de fécondité, de l'accès et de la qualité des services de santé, expliquent les inégalités en termes de taux de mortalité infantile, en particulier dans les macro-régions du nord et du nord-est du pays, ce qui freine probablement la baisse du taux de mortalité infantile. Ces inégalités expliqueraient à la fois la lenteur de la réduction du taux de mortalité infantile et sa tendance à demeurer à des niveaux relativement élevés. Les résultats ont également montré que les variations de ces facteurs, pour des raisons liées à la crise économique et politique, ont probablement perturbé la tendance à la baisse des taux de mortalité infantile. À cet égard, les résultats suggèrent qu'une forte réduction du taux d'emploi, observée entre 2014 et 2015 entre autres facteurs, pourrait avoir eu un impact différé sur le TMI en 2016. Les résultats ont également permis d’établir une association entre l'emploi et différents indicateurs de mortalité infantile, le taux d'emploi pouvant avoir un impact sur la mortalité infantile jusqu'à trois ans. Enfin, les études ont démontré qu'il existe un seuil de revenu des ménages, qui agit comme facteur de protection contre la mortalité infantile, en dessous duquel plus la proportion de ménages est élevée, plus le risque d'augmentation de la mortalité infantile est élevé." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Abstract
+The infant mortality rate is an indicator of population health and the effectiveness of health systems that is also capable of estimating the extent of social and health inequalities between populations. Over the last 30 years, Brazil has recorded significant reductions in child mortality rates. Between 1990 and 2017, the under-five mortality rate dropped from 53.7 to 15.6 deaths per thousand live births, a 71% reduction over the period. The national reduction average was 6% per year in the 1990s, decreasing to 4.8% in the 2000s and to 3.2% per year between 2011 and 2015, and many factors have been reported as the cause of these improvements. 
+Even after the implementation of health and social policies that positively affected the health of the populations in Brazil in the last decades, since 2009 the country has experienced a slow decrease in the decline in infant mortality that remained at high levels, registering great regional disparities. After an economic crisis that evolved into a troubled period of political crisis, in 2016 the country recorded increases in under-one-year infant mortality and under-five-year infant mortality rates, that raised from 12.43 deaths to 12.72 deaths per thousand live births and from 14.28 deaths to 14.89 deaths per thousand live births, respectively. 
+These facts call attention to the possible impact of social determinants of health on infant mortality rates in Brazil after the implementation of these health and social policies.
+This anomaly in the trend of child mortality, particularly when combined with regional disparities and a slow decrease in the decline in infant mortality rates is of great concern and raise questions about what is the extent of these health and social policies on the country’s ability to maintain a longer-term decline in the infant mortality rate, is it capable of placing this rate at the level of developed countries and what are the determinants of infant mortality in Brazil after the implementation of these public policies. 
+The overarching goal of this thesis was to identify the determinants of infant mortality in Brazil after the implementation of  the Family Health Strategy and the Bolsa Família programs in order to raise plausible hypotheses for the slowdown, the regional disparities, and the anomaly observed in the trend of declines in the infant mortality rate in Brazil. To attain this objective, we conducted three research papers: 1. a scoping review that aimed at identifying and summarizing the determinants of infant mortality in Brazil under the influence of Family Health Strategy and Bolsa Família programs, with a view of raising hypothesis for the recent changes in the infant mortality rates in Brazil and identifying gaps in terms of research concerning the determinants of infant mortality in the country, 2. a descriptive retrospective analysis according to the perspective of Public Health and health inequalities by adopting the analytical framework proposed by the World Health Organization’s Commission on Social Determinants of Health, using data from under-one-year old infant mortality rate and from possible determinants of infant mortality in Brazil according to the findings of our scoping review (article 1), and 3. a methodological proposal in order to overcome the challenges to developing a panel data model using aggregated data from the 26 Brazilian states and different subregions according to the Conceptual Model of Health Capability, with a view of inferring possible associations between our independent variables and infant mortality rates in Brazil, aiming at reviewing the hypothesis raised in the scoping review about the recent changes in the country's infant mortality indicators. 
+The global results of these studies demonstrated that in the light of the Conceptual Model of Health Capability and the social determinants of health, regional disparities related to inequalities in factors such as income, education, employment, fertility rate, access, and quality of health services, account for inequalities in infant mortality rates, especially in the north and Northeast macro-regions of the country, which likely hamper further reductions of infant mortality. Those inequalities would explain both the slowdown in the reduction and the tendency of the infant mortality rate to remain at relatively high levels. Results also demonstrated that variations in those factors for reasons relating to the economic and political crisis, likely have interrupted the secular trend of declining infant mortality rates. In this regard, results suggest that a sharp reduction in employment rate observed between 2014 and 2015, among other factors, may have had a delayed impact on infant mortality rates in 2016. The results also identified an association between employment and different infant mortality indicators, with employment rate possibly impacting child mortality up to three years. Finally, the studies have shown that a household income threshold acts as a protective factor against child mortality, the bigger the proportion of households below this income bracket, the greater the risk of an increase in child mortality." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Mortalité infantile; Capabilités en santé; Politiques publiques; Déterminants sociaux de la santé; Programme Bolsa Familia; Données de panel; Économie de la santé; Programme de transfert conditionnel en espèce; Brésil; Infant mortality; Health capabilities; Capabilities approach; Public policies; Social determinants of health; Conditional cash transfer program; Bolsa Família; Multilevel panel data with fixed effect nested within-cluster; Health Economics; Brazil; Health Sciences - Public Health / Sciences de la santé - Santé publique (UMI : 0573); Thèse ou mémoire / Thesis or Dissertation; Santé publique" name="citation_keywords"/>
+<meta content="Health capabilities, public policies and the determinants of infant mortality in Brazil" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Bugelli, Alexandre" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/25971/2/Bugelli_Alexandre_2020_these.pdf" name="citation_pdf_url"/>
+<meta content="2021-11-01" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/25971" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25971?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25971?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25971?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25971?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25971?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25971?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/10070" role="menuitem">École de santé publique</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/10094" role="menuitem">École de santé publique – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/10070">École de santé publique</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/10094"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/25971/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25971">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/25971/mets.xml-->
+<h2 class="page-header first-page-header">Health capabilities, public policies and the determinants of infant mortality in Brazil</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Borgès Da Silva, Roxane</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Sicotte, Claude</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Dowbor, Ladislau</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Bugelli, Alexandre</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2022-01-19T16:38:40Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2022-01-19T16:38:40Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-11-01</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2020-12</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/25971</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Mortalité infantile</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Capabilités en santé</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Politiques publiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Déterminants sociaux de la santé</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Programme Bolsa Familia</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Données de panel</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Économie de la santé</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Programme de transfert conditionnel en espèce</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Brésil</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Infant mortality</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Health capabilities</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Capabilities approach</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Public policies</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Social determinants of health</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Conditional cash transfer program</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Bolsa Família</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Multilevel panel data with fixed effect nested within-cluster</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Health Economics</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Brazil</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Health Sciences - Public Health / Sciences de la santé - Santé publique (UMI : 0573)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Health capabilities, public policies and the determinants of infant mortality in Brazil</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Santé publique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Résumé
+Le taux de mortalité infantile est un indicateur de santé des populations et de l'efficacité des systèmes de santé. Il est également capable d'estimer l'ampleur des inégalités sociales et en matière de santé entre populations. Au cours des 30 dernières années, le Brésil a enregistré des réductions significatives des taux de mortalité infantile. Entre 1990 et 2017, le taux de mortalité des moins de cinq ans est passé de 53,7 décès pour mille naissances vivantes à 15,6. Une réduction de 71% sur la période. La moyenne nationale de réduction était de 6% par an dans les années 90, passant à 4,8% dans les années 2000 et à 3,2% par an entre 2011 et 2015. De nombreux facteurs ont été signalés comme la cause de ces améliorations.
+Malgré la mise en œuvre de politiques sociales et de santé qui ont eu un impact positif sur la santé des populations brésiliennes au cours des dernières décennies, depuis 2009 le pays a connu une lente diminution de la baisse de la mortalité infantile qui est restée à des niveaux élevés, enregistrant de grandes disparités régionales. Après une crise économique qui a évolué vers une période troublée de crise politique, le pays a enregistré en 2016 une augmentation de la mortalité infantile chez les moins d'un an et de cinq ans, qui est passé de 12,43 à 12,72 décès pour mille naissances vivantes et de 14,28 décès à 14,89 décès pour mille naissances vivantes, respectivement.
+Ces éléments attirent l'attention sur l'impact possible des déterminants sociaux de la santé sur les taux de mortalité infantile au Brésil après la mise en œuvre de ces politiques sociales et de santé. Cette anomalie observée dans la tendance de la mortalité infantile, combinée aux disparités régionales et à une lente diminution de la baisse des taux de mortalité infantile est préoccupante. Elle soulève des questions sur l'impact de ces politiques sociales et de santé, sur la capacité du pays à maintenir une réduction du taux de mortalité infantile à long terme, et sa capacité à rejoindre les taux des pays développés, ainsi quels sont les déterminants de la mortalité infantile au Brésil après la mise en œuvre de ces politiques publiques?
+L'objectif premier de cette thèse était d'identifier les déterminants de la mortalité infantile au Brésil après la mise en œuvre du programme Stratégie Santé Famille et du Programme Bolsa Família afin de formuler des hypothèses plausibles, relatives au ralentissement du taux de mortalité chez les moins d’un an et de cinq ans, aux disparités régionales et à l’anomalie observée dans la tendance à la baisse du taux de mortalité infantile au Brésil. Pour atteindre cet objectif, nous avons effectué trois études: 1) un examen de la portée qui visait à identifier et à résumer les déterminants de la mortalité infantile au Brésil sous l'influence de ces programmes, en vue de formuler des hypothèses relativement à l’évolution récente des taux de mortalité infantile au Brésil et d’identifier les lacunes, en termes de recherche, concernant les déterminants de la mortalité infantile dans le pays; 2) une analyse descriptive rétrospective, dans une optique de santé publique et des inégalités en matière de santé, en adoptant le cadre analytique proposé par la Commission de l'OMS sur les déterminants sociaux de la santé, en utilisant les données du taux de mortalité chez les enfants de moins d'un an et des possibles déterminants de la mortalité infantile au Brésil selon les conclusions de notre examen de la portée (article 1); 3) une proposition de méthodologie pour faire face aux défis liés au développement d'un modèle de données de panel en utilisant des données agrégées des 26 états brésiliens et des différentes sous-régions, selon le « Conceptual Model of Health Capability » , afin d'inférer des associations possibles entre nos variables indépendantes et les taux de mortalité infantile au Brésil et pour vérifier l'hypothèse soulevée dans l'examen de cadrage sur les récents changements des indicateurs de mortalité infantile du pays.
+Les résultats globaux de ces études ont démontré qu'à la lumière du « Conceptual Model of Health Capability » et des déterminants sociaux de la santé, les disparités régionales liées aux inégalités, notamment aux niveaux du revenu, de l'éducation, de l'emploi, du taux de fécondité, de l'accès et de la qualité des services de santé, expliquent les inégalités en termes de taux de mortalité infantile, en particulier dans les macro-régions du nord et du nord-est du pays, ce qui freine probablement la baisse du taux de mortalité infantile. Ces inégalités expliqueraient à la fois la lenteur de la réduction du taux de mortalité infantile et sa tendance à demeurer à des niveaux relativement élevés. Les résultats ont également montré que les variations de ces facteurs, pour des raisons liées à la crise économique et politique, ont probablement perturbé la tendance à la baisse des taux de mortalité infantile. À cet égard, les résultats suggèrent qu'une forte réduction du taux d'emploi, observée entre 2014 et 2015 entre autres facteurs, pourrait avoir eu un impact différé sur le TMI en 2016. Les résultats ont également permis d’établir une association entre l'emploi et différents indicateurs de mortalité infantile, le taux d'emploi pouvant avoir un impact sur la mortalité infantile jusqu'à trois ans. Enfin, les études ont démontré qu'il existe un seuil de revenu des ménages, qui agit comme facteur de protection contre la mortalité infantile, en dessous duquel plus la proportion de ménages est élevée, plus le risque d'augmentation de la mortalité infantile est élevé.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Abstract
+The infant mortality rate is an indicator of population health and the effectiveness of health systems that is also capable of estimating the extent of social and health inequalities between populations. Over the last 30 years, Brazil has recorded significant reductions in child mortality rates. Between 1990 and 2017, the under-five mortality rate dropped from 53.7 to 15.6 deaths per thousand live births, a 71% reduction over the period. The national reduction average was 6% per year in the 1990s, decreasing to 4.8% in the 2000s and to 3.2% per year between 2011 and 2015, and many factors have been reported as the cause of these improvements. 
+Even after the implementation of health and social policies that positively affected the health of the populations in Brazil in the last decades, since 2009 the country has experienced a slow decrease in the decline in infant mortality that remained at high levels, registering great regional disparities. After an economic crisis that evolved into a troubled period of political crisis, in 2016 the country recorded increases in under-one-year infant mortality and under-five-year infant mortality rates, that raised from 12.43 deaths to 12.72 deaths per thousand live births and from 14.28 deaths to 14.89 deaths per thousand live births, respectively. 
+These facts call attention to the possible impact of social determinants of health on infant mortality rates in Brazil after the implementation of these health and social policies.
+This anomaly in the trend of child mortality, particularly when combined with regional disparities and a slow decrease in the decline in infant mortality rates is of great concern and raise questions about what is the extent of these health and social policies on the country’s ability to maintain a longer-term decline in the infant mortality rate, is it capable of placing this rate at the level of developed countries and what are the determinants of infant mortality in Brazil after the implementation of these public policies. 
+The overarching goal of this thesis was to identify the determinants of infant mortality in Brazil after the implementation of  the Family Health Strategy and the Bolsa Família programs in order to raise plausible hypotheses for the slowdown, the regional disparities, and the anomaly observed in the trend of declines in the infant mortality rate in Brazil. To attain this objective, we conducted three research papers: 1. a scoping review that aimed at identifying and summarizing the determinants of infant mortality in Brazil under the influence of Family Health Strategy and Bolsa Família programs, with a view of raising hypothesis for the recent changes in the infant mortality rates in Brazil and identifying gaps in terms of research concerning the determinants of infant mortality in the country, 2. a descriptive retrospective analysis according to the perspective of Public Health and health inequalities by adopting the analytical framework proposed by the World Health Organization’s Commission on Social Determinants of Health, using data from under-one-year old infant mortality rate and from possible determinants of infant mortality in Brazil according to the findings of our scoping review (article 1), and 3. a methodological proposal in order to overcome the challenges to developing a panel data model using aggregated data from the 26 Brazilian states and different subregions according to the Conceptual Model of Health Capability, with a view of inferring possible associations between our independent variables and infant mortality rates in Brazil, aiming at reviewing the hypothesis raised in the scoping review about the recent changes in the country's infant mortality indicators. 
+The global results of these studies demonstrated that in the light of the Conceptual Model of Health Capability and the social determinants of health, regional disparities related to inequalities in factors such as income, education, employment, fertility rate, access, and quality of health services, account for inequalities in infant mortality rates, especially in the north and Northeast macro-regions of the country, which likely hamper further reductions of infant mortality. Those inequalities would explain both the slowdown in the reduction and the tendency of the infant mortality rate to remain at relatively high levels. Results also demonstrated that variations in those factors for reasons relating to the economic and political crisis, likely have interrupted the secular trend of declining infant mortality rates. In this regard, results suggest that a sharp reduction in employment rate observed between 2014 and 2015, among other factors, may have had a delayed impact on infant mortality rates in 2016. The results also identified an association between employment and different infant mortality indicators, with employment rate possibly impacting child mortality up to three years. Finally, the studies have shown that a household income threshold acts as a protective factor against child mortality, the bigger the proportion of households below this income bracket, the greater the risk of an increase in child mortality.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">UdeM.ORCIDAuteurThese</td><td class="word-break">0000-0001-8527-1253</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F25971&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sant%C3%A9+publique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/25971/Bugelli_Alexandre_2020_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25971/Bugelli_Alexandre_2020_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Bugelli_Alexandre_2020_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/25971/Bugelli_Alexandre_2020_these.pdf?sequence=2&amp;isAllowed=y">Bugelli_Alexandre_2020_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">4.738Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10094/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a> [603]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25971">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

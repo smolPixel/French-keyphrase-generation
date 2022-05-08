@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Étude exploratoire du soutien social dans le processus menant à l'hébergement des aînés en perte d'autonomie</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Firbank, Oscar E." name="DC.contributor">
+<meta content="Truchon, Martin" name="DC.creator">
+<meta content="2010-03-19T16:05:10Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2010-03-19T16:05:10Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2010-02-04" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2009-07" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/3574" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Hébergement" name="DC.subject" xml:lang="en"/>
+<meta content="Transition" name="DC.subject" xml:lang="en"/>
+<meta content="Soutien social" name="DC.subject" xml:lang="en"/>
+<meta content="Réseau de soutien" name="DC.subject" xml:lang="en"/>
+<meta content="Réseau social" name="DC.subject" xml:lang="en"/>
+<meta content="Personnes âgées" name="DC.subject" xml:lang="en"/>
+<meta content="Institutionnalisation" name="DC.subject" xml:lang="en"/>
+<meta content="Parcours de vie" name="DC.subject" xml:lang="en"/>
+<meta content="Trajectoire résidentielle" name="DC.subject" xml:lang="en"/>
+<meta content="Théorie ancrée" name="DC.subject" xml:lang="en"/>
+<meta content="Housing" name="DC.subject" xml:lang="en"/>
+<meta content="Transition" name="DC.subject" xml:lang="en"/>
+<meta content="Social support" name="DC.subject" xml:lang="en"/>
+<meta content="Support network" name="DC.subject" xml:lang="en"/>
+<meta content="Social network" name="DC.subject" xml:lang="en"/>
+<meta content="Elderly" name="DC.subject" xml:lang="en"/>
+<meta content="Institutionalization" name="DC.subject" xml:lang="en"/>
+<meta content="Life course" name="DC.subject" xml:lang="en"/>
+<meta content="Residential trajectory" name="DC.subject" xml:lang="en"/>
+<meta content="Grounded theory" name="DC.subject" xml:lang="en"/>
+<meta content="Social Sciences - Social Work / Sciences sociales - Travail social (UMI : 0452)" name="DC.subject" xml:lang="en"/>
+<meta content="Étude exploratoire du soutien social dans le processus menant à l'hébergement des aînés en perte d'autonomie" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Contexte : Au Québec, la très grande majorité des personnes âgées vivent dans un logement conventionnel. Pour celles qui sont en plus grande perte d’autonomie et qui ont besoin d’un environnement adapté à leurs besoins, soit environ 12 % de la population âgée de 65 ans ou plus en 2006, les options sont relativement limitées. Au 1er rang, on retrouve les résidences privées, pour ceux et celles qui en ont les moyens. Pour les autres, il y a les centres de soins de longue durée publics ou privés. Viennent ensuite les organismes sans but lucratif qui opèrent des projets résidentiels pour aînés, les communautés religieuses qui accueillent des personnes âgées dans leurs résidences, les ressources intermédiaires, les ressources de type familial, les habitations à loyer modique pour personnes âgées et les coopératives d’habitation. Les ressources alternatives du type projets novateurs arrivent en dernière position, ce qui explique que l’on en sait encore très peu sur la transition vers ce type d’hébergement.
+Problème et objet de recherche : La transition vers un milieu de vie substitut est un processus qui peut être potentiellement stressant dans la vie d’une personne âgée. Son réseau de soutien peut être appelé à jouer un rôle important pour l’aider à vivre cette transition avec plus de facilité. Si la littérature sur le soutien social est abondante, elle est plus limitée en ce qui concerne la relation entre le soutien social et la transition en milieu d’hébergement. La plupart des travaux recensés étudient les conséquences de l’hébergement durant les mois qui suivent le relogement. Quelques études analysent le processus décisionnel mais rares sont celles qui s’intéressent à toutes les étapes du processus qui précèdent le relogement. La plupart des recherches analysent surtout le point de vue des aidants et parfois celui des professionnels. Celui des personnes âgées est moins connu.
+But et objectifs : Le but de cette étude consiste à mieux comprendre comment opèrent les différentes formes de soutien social auprès des personnes âgées durant les diverses étapes du processus de transition en milieu d’hébergement. Plus précisément, elle vise à mieux comprendre comment ces personnes perçoivent les différents types de soutien apporté par leur réseau de soutien durant la transition, la signification que prend pour elles l’aide reçue, les besoins auxquels répond le soutien reçu et pourquoi elles apprécient ou non le soutien reçu.
+Cadre conceptuel : Cette recherche de type exploratoire et rétrospective se situe dans une approche des parcours de vie. La transition en milieu d’hébergement est étudiée comme un processus faisant partie de la trajectoire résidentielle de la personne. On privilégie une approche interactionnelle et constructiviste du soutien social qui accorde une attention plus grande aux interprétations subjectives des personnes faisant partie des réseaux de soutien.
+Méthodologie : On a interviewé huit (8) résidents (6 femmes et 2 hommes) de 64 ans ou plus, vivant dans un milieu d’hébergement alternatif de type projet novateur : les Habitations St-Christophe, une ressource alternative située dans la ville de Laval au Québec. Les perceptions des sujets du soutien social reçu durant la transition sont analysées à l’aide de la théorisation ancrée, la plus appropriée pour comprendre de l’intérieur le point de vue des participants.
+Résultats : L’analyse des perceptions des résidents interviewés du processus qui les a conduits aux Habitations St-Christophe a permis de mieux comprendre l’influence de leurs trajectoires résidentielles, les transitions ayant mené à leur hébergement, leurs perceptions du processus décisionnel et du rôle joué par des tiers dans les décisions prises, ainsi que les motifs de ces décisions, de même que le rôle joué par le soutien social durant la transition. Trois modèles de réseaux ont été identifiés, en tenant compte de la fréquence des contacts, de l’intensité des liens et de la disponibilité du soutien. Les formes les plus importantes de soutien reçu ont été identifiées à partir des perceptions des sujets de l’aide émotionnelle, instrumentale et cognitive fournie pendant la transition et de leur appréciation du soutien reçu. L’analyse a permis d’identifier deux modèles de transition (transition réfléchie, préparée et anticipée versus transition précipitée) et deux modèles de soutien (soutien valorisé versus soutien peu valorisé).
+Conclusions : Outre les éléments de convergence et les points de divergence observés entre nos résultats et la littérature, un certain nombre d’enseignements ont été retenus au niveau de l’intervention. Ceux-ci concernent les conditions gagnantes à mettre en place par les gestionnaires des services publics, certains principes à respecter dans les interventions, les mesures à prendre pour améliorer les interventions des professionnels et les interventions à mettre en place à l’intention des personnes âgées et de leurs proches aidants." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="Context : In Quebec, a vast majority of senior citizens live within the community. For the elderly who has greater difficulty or who needs to be in an environment adapted to their specific needs are about 12% of the population aged 65 years and over in 2006, the options are relatively limited. Firstly, we have private seniors homes, for those who can afford it. Next, we have non-profit organizations that provides housing projects for the elderly; religious communities who welcomes senior citizens in their homes; board and care homes; foster and care homes; low-income public housing for the elderly and cooperative housing. Then, lastly we have the innovative projects of alternative model housing, which explains that very little is known on the transition towards this type of habitation. 
+Subject : The transition towards supportive housing is a process that can be potentially stressful for senior citizens. Their support network may be called upon to play an important role to help make the transition easier for the individuals involved. If the literature on the social network is abundant, it is even more limited when it comes to the relationship between the social support and the transition to supportive housing. Most censuses done, studies the effects after relocation. Some studies analyse the decision making process but it is rare that they are interested in every step of the relocation process. The majority of researchers analyses the perception of caregivers, and sometimes those of professionals. That of the elderly less is known. 
+Goals &amp; Objectives : The goal of this study helps to better understand how the various forms of social support operates close to the elderly during the different stages of the transition process in supportive housing. More precisely, it helps to understand how these people perceive the different types of support received from their networks during the transition, the meaning of help received, the support responds to the needs and why they appreciate or not the support received. 
+Conceptual Framework : This exploratory and retrospective study has a life course approach. The transition to supportive housing is studied as being part of the residential trajectory process of the person. We prefer an interactive and constructive approach to the social support, which accords more attention to the subjective interpretations of the people who are part of the social networks.
+Methodology : We interviewed eight residents (6 females and 2 males) aged from 64 years or more living in an innovative project of alternative model of housing : Les Habitations St-Christophe, an alternative resource located in the city of Laval, in the province of Quebec, Canada. The subject perceptions of the social support received during the transition were analysed with the grounded theory, the most appropriate strategy for better understanding of residents’ perceptions.
+Results : The analysis of the residents’ perceptions of the housing process at the Habitations St-Christophe gives a better understanding of the influence on their residential trajectories, housing transition, their perceptions of the decision making process, role played by others relatives in this process, as well as motivations, also the role played by the social support group during this transition. Three network models were identified, taking into account the frequency of the contacts, intensity of the links, and the support available. The most important forms of support received were identified from the subjects’ perceptions of emotional, instrumental, and cognitive help or assistance received during the transition, and their satisfaction level of the assistance given by their relatives. The analysis revealed two transition models (anticipated, considered and prepared transition versus precipitated transition) and also two support models (valued support versus not valued support). 
+Conclusions : In addition to the convergence elements and different points observed among our results and the literature, a number of practice lessons for the intervention were found. These include certain conditions to be put in place by managers in the public services, some principles to respect when intervening by the professionals, measures to take to improve the operations, and the interventions to take for seniors citizens and the caregivers." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Hébergement; Transition; Soutien social; Réseau de soutien; Réseau social; Personnes âgées; Institutionnalisation; Parcours de vie; Trajectoire résidentielle; Théorie ancrée; Housing; Transition; Social support; Support network; Social network; Elderly; Institutionalization; Life course; Residential trajectory; Grounded theory; Social Sciences - Social Work / Sciences sociales - Travail social (UMI : 0452); Thèse ou mémoire / Thesis or Dissertation; Service social" name="citation_keywords"/>
+<meta content="Étude exploratoire du soutien social dans le processus menant à l'hébergement des aînés en perte d'autonomie" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Truchon, Martin" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/3574/2/Truchon_Martin_2009_these.pdf" name="citation_pdf_url"/>
+<meta content="2010-02-04" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/3574" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3574?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3574?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3574?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3574?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3574?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3574?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2961" role="menuitem">Faculté des arts et des sciences – École de travail social</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3005" role="menuitem">Faculté des arts et des sciences – École de travail social – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2961">Faculté des arts et des sciences – École de travail social</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3005">Faculté des arts et des sciences – École de travail social – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/3005"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3005/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3005/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3005/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3005/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3005/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3005/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3005/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3005/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/3574/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/3574">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3574/mets.xml-->
+<h2 class="page-header first-page-header">Étude exploratoire du soutien social dans le processus menant à l'hébergement des aînés en perte d'autonomie</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Firbank, Oscar E.</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Truchon, Martin</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2010-03-19T16:05:10Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2010-03-19T16:05:10Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2010-02-04</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2009-07</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/3574</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Hébergement</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Transition</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Soutien social</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Réseau de soutien</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Réseau social</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Personnes âgées</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Institutionnalisation</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Parcours de vie</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Trajectoire résidentielle</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Théorie ancrée</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Housing</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Transition</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Social support</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Support network</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Social network</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Elderly</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Institutionalization</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Life course</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Residential trajectory</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Grounded theory</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Social Sciences - Social Work / Sciences sociales - Travail social (UMI : 0452)</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Étude exploratoire du soutien social dans le processus menant à l'hébergement des aînés en perte d'autonomie</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Service social</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Contexte : Au Québec, la très grande majorité des personnes âgées vivent dans un logement conventionnel. Pour celles qui sont en plus grande perte d’autonomie et qui ont besoin d’un environnement adapté à leurs besoins, soit environ 12 % de la population âgée de 65 ans ou plus en 2006, les options sont relativement limitées. Au 1er rang, on retrouve les résidences privées, pour ceux et celles qui en ont les moyens. Pour les autres, il y a les centres de soins de longue durée publics ou privés. Viennent ensuite les organismes sans but lucratif qui opèrent des projets résidentiels pour aînés, les communautés religieuses qui accueillent des personnes âgées dans leurs résidences, les ressources intermédiaires, les ressources de type familial, les habitations à loyer modique pour personnes âgées et les coopératives d’habitation. Les ressources alternatives du type projets novateurs arrivent en dernière position, ce qui explique que l’on en sait encore très peu sur la transition vers ce type d’hébergement.
+Problème et objet de recherche : La transition vers un milieu de vie substitut est un processus qui peut être potentiellement stressant dans la vie d’une personne âgée. Son réseau de soutien peut être appelé à jouer un rôle important pour l’aider à vivre cette transition avec plus de facilité. Si la littérature sur le soutien social est abondante, elle est plus limitée en ce qui concerne la relation entre le soutien social et la transition en milieu d’hébergement. La plupart des travaux recensés étudient les conséquences de l’hébergement durant les mois qui suivent le relogement. Quelques études analysent le processus décisionnel mais rares sont celles qui s’intéressent à toutes les étapes du processus qui précèdent le relogement. La plupart des recherches analysent surtout le point de vue des aidants et parfois celui des professionnels. Celui des personnes âgées est moins connu.
+But et objectifs : Le but de cette étude consiste à mieux comprendre comment opèrent les différentes formes de soutien social auprès des personnes âgées durant les diverses étapes du processus de transition en milieu d’hébergement. Plus précisément, elle vise à mieux comprendre comment ces personnes perçoivent les différents types de soutien apporté par leur réseau de soutien durant la transition, la signification que prend pour elles l’aide reçue, les besoins auxquels répond le soutien reçu et pourquoi elles apprécient ou non le soutien reçu.
+Cadre conceptuel : Cette recherche de type exploratoire et rétrospective se situe dans une approche des parcours de vie. La transition en milieu d’hébergement est étudiée comme un processus faisant partie de la trajectoire résidentielle de la personne. On privilégie une approche interactionnelle et constructiviste du soutien social qui accorde une attention plus grande aux interprétations subjectives des personnes faisant partie des réseaux de soutien.
+Méthodologie : On a interviewé huit (8) résidents (6 femmes et 2 hommes) de 64 ans ou plus, vivant dans un milieu d’hébergement alternatif de type projet novateur : les Habitations St-Christophe, une ressource alternative située dans la ville de Laval au Québec. Les perceptions des sujets du soutien social reçu durant la transition sont analysées à l’aide de la théorisation ancrée, la plus appropriée pour comprendre de l’intérieur le point de vue des participants.
+Résultats : L’analyse des perceptions des résidents interviewés du processus qui les a conduits aux Habitations St-Christophe a permis de mieux comprendre l’influence de leurs trajectoires résidentielles, les transitions ayant mené à leur hébergement, leurs perceptions du processus décisionnel et du rôle joué par des tiers dans les décisions prises, ainsi que les motifs de ces décisions, de même que le rôle joué par le soutien social durant la transition. Trois modèles de réseaux ont été identifiés, en tenant compte de la fréquence des contacts, de l’intensité des liens et de la disponibilité du soutien. Les formes les plus importantes de soutien reçu ont été identifiées à partir des perceptions des sujets de l’aide émotionnelle, instrumentale et cognitive fournie pendant la transition et de leur appréciation du soutien reçu. L’analyse a permis d’identifier deux modèles de transition (transition réfléchie, préparée et anticipée versus transition précipitée) et deux modèles de soutien (soutien valorisé versus soutien peu valorisé).
+Conclusions : Outre les éléments de convergence et les points de divergence observés entre nos résultats et la littérature, un certain nombre d’enseignements ont été retenus au niveau de l’intervention. Ceux-ci concernent les conditions gagnantes à mettre en place par les gestionnaires des services publics, certains principes à respecter dans les interventions, les mesures à prendre pour améliorer les interventions des professionnels et les interventions à mettre en place à l’intention des personnes âgées et de leurs proches aidants.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Context : In Quebec, a vast majority of senior citizens live within the community. For the elderly who has greater difficulty or who needs to be in an environment adapted to their specific needs are about 12% of the population aged 65 years and over in 2006, the options are relatively limited. Firstly, we have private seniors homes, for those who can afford it. Next, we have non-profit organizations that provides housing projects for the elderly; religious communities who welcomes senior citizens in their homes; board and care homes; foster and care homes; low-income public housing for the elderly and cooperative housing. Then, lastly we have the innovative projects of alternative model housing, which explains that very little is known on the transition towards this type of habitation. 
+Subject : The transition towards supportive housing is a process that can be potentially stressful for senior citizens. Their support network may be called upon to play an important role to help make the transition easier for the individuals involved. If the literature on the social network is abundant, it is even more limited when it comes to the relationship between the social support and the transition to supportive housing. Most censuses done, studies the effects after relocation. Some studies analyse the decision making process but it is rare that they are interested in every step of the relocation process. The majority of researchers analyses the perception of caregivers, and sometimes those of professionals. That of the elderly less is known. 
+Goals &amp; Objectives : The goal of this study helps to better understand how the various forms of social support operates close to the elderly during the different stages of the transition process in supportive housing. More precisely, it helps to understand how these people perceive the different types of support received from their networks during the transition, the meaning of help received, the support responds to the needs and why they appreciate or not the support received. 
+Conceptual Framework : This exploratory and retrospective study has a life course approach. The transition to supportive housing is studied as being part of the residential trajectory process of the person. We prefer an interactive and constructive approach to the social support, which accords more attention to the subjective interpretations of the people who are part of the social networks.
+Methodology : We interviewed eight residents (6 females and 2 males) aged from 64 years or more living in an innovative project of alternative model of housing : Les Habitations St-Christophe, an alternative resource located in the city of Laval, in the province of Quebec, Canada. The subject perceptions of the social support received during the transition were analysed with the grounded theory, the most appropriate strategy for better understanding of residents’ perceptions.
+Results : The analysis of the residents’ perceptions of the housing process at the Habitations St-Christophe gives a better understanding of the influence on their residential trajectories, housing transition, their perceptions of the decision making process, role played by others relatives in this process, as well as motivations, also the role played by the social support group during this transition. Three network models were identified, taking into account the frequency of the contacts, intensity of the links, and the support available. The most important forms of support received were identified from the subjects’ perceptions of emotional, instrumental, and cognitive help or assistance received during the transition, and their satisfaction level of the assistance given by their relatives. The analysis revealed two transition models (anticipated, considered and prepared transition versus precipitated transition) and also two support models (valued support versus not valued support). 
+Conclusions : In addition to the convergence elements and different points observed among our results and the literature, a number of practice lessons for the intervention were found. These include certain conditions to be put in place by managers in the public services, some principles to respect when intervening by the professionals, measures to take to improve the operations, and the interventions to take for seniors citizens and the caregivers.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F3574&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Service+social&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/3574/Truchon_Martin_2009_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/3574/Truchon_Martin_2009_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Truchon_Martin_2009_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/3574/Truchon_Martin_2009_these.pdf?sequence=2&amp;isAllowed=y">Truchon_Martin_2009_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1.131Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3005/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/3005">Faculté des arts et des sciences – École de travail social – Thèses et mémoires</a> [160]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/3574">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

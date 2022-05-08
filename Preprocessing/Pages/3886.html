@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Exogeneity, weak identification and instrument selection in econometrics</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Dufour, Jean Marie" name="DC.contributor">
+<meta content="Doko Tchatoka, Sabro Firmin" name="DC.creator">
+<meta content="2010-07-07T16:05:16Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2010-07-07T16:05:16Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2010-05-05" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2010-02" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/3886" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Modèle structurels" name="DC.subject" xml:lang="en"/>
+<meta content="Instruments faibles" name="DC.subject" xml:lang="en"/>
+<meta content="Instruments endogènes" name="DC.subject" xml:lang="en"/>
+<meta content="Tests robustes à l'identification" name="DC.subject" xml:lang="en"/>
+<meta content="Tests de Monte Carlo exacts pour l'exogénéité" name="DC.subject" xml:lang="en"/>
+<meta content="Régions de confiance" name="DC.subject" xml:lang="en"/>
+<meta content="Sélection d'instruments" name="DC.subject" xml:lang="en"/>
+<meta content="Tests d'exogénéité partielle" name="DC.subject" xml:lang="en"/>
+<meta content="Estimateurs IV partiel" name="DC.subject" xml:lang="en"/>
+<meta content="Structural models" name="DC.subject" xml:lang="en"/>
+<meta content="Weak instruments" name="DC.subject" xml:lang="en"/>
+<meta content="Invalid instruments" name="DC.subject" xml:lang="en"/>
+<meta content="Identification-robust tests" name="DC.subject" xml:lang="en"/>
+<meta content="Exact Monte Carlo exogeneity tests" name="DC.subject" xml:lang="en"/>
+<meta content="Confidence sets" name="DC.subject" xml:lang="en"/>
+<meta content="Instrument selection" name="DC.subject" xml:lang="en"/>
+<meta content="partial exogeneity tests" name="DC.subject" xml:lang="en"/>
+<meta content="partial IV estimators" name="DC.subject" xml:lang="en"/>
+<meta content="Economics - Theory / Économie - Théorie (UMI : 0511)" name="DC.subject" xml:lang="en"/>
+<meta content="Exogeneity, weak identification and instrument selection in econometrics" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La dernière décennie a connu un intérêt croissant pour les problèmes posés par les variables instrumentales
+faibles dans la littérature économétrique, c’est-à-dire les situations où les variables
+instrumentales sont faiblement corrélées avec la variable à instrumenter. En effet, il est bien connu
+que lorsque les instruments sont faibles, les distributions des statistiques de Student, de Wald, du
+ratio de vraisemblance et du multiplicateur de Lagrange ne sont plus standard et dépendent souvent
+de paramètres de nuisance. Plusieurs études empiriques portant notamment sur les modèles de rendements
+à l’éducation [Angrist et Krueger (1991, 1995), Angrist et al. (1999), Bound et al. (1995),
+Dufour et Taamouti (2007)] et d’évaluation des actifs financiers (C-CAPM) [Hansen et Singleton
+(1982,1983), Stock et Wright (2000)], où les variables instrumentales sont faiblement corrélées avec
+la variable à instrumenter, ont montré que l’utilisation de ces statistiques conduit souvent à des résultats
+peu fiables. Un remède à ce problème est l’utilisation de tests robustes à l’identification [Anderson
+et Rubin (1949), Moreira (2002), Kleibergen (2003), Dufour et Taamouti (2007)]. Cependant,
+il n’existe aucune littérature économétrique sur la qualité des procédures robustes à l’identification
+lorsque les instruments disponibles sont endogènes ou à la fois endogènes et faibles. Cela soulève
+la question de savoir ce qui arrive aux procédures d’inférence robustes à l’identification lorsque certaines
+variables instrumentales supposées exogènes ne le sont pas effectivement. Plus précisément,
+qu’arrive-t-il si une variable instrumentale invalide est ajoutée à un ensemble d’instruments valides?
+Ces procédures se comportent-elles différemment? Et si l’endogénéité des variables instrumentales
+pose des difficultés majeures à l’inférence statistique, peut-on proposer des procédures de tests qui
+sélectionnent les instruments lorsqu’ils sont à la fois forts et valides? Est-il possible de proposer
+les proédures de sélection d’instruments qui demeurent valides même en présence d’identification
+faible?
+Cette thèse se focalise sur les modèles structurels (modèles à équations simultanées) et apporte
+des réponses à ces questions à travers quatre essais.
+Le premier essai est publié dans Journal of Statistical Planning and Inference 138 (2008)
+2649 – 2661. Dans cet essai, nous analysons les effets de l’endogénéité des instruments sur deux
+statistiques de test robustes à l’identification: la statistique d’Anderson et Rubin (AR, 1949) et la
+statistique de Kleibergen (K, 2003), avec ou sans instruments faibles. D’abord, lorsque le paramètre
+qui contrôle l’endogénéité des instruments est fixe (ne dépend pas de la taille de l’échantillon), nous
+montrons que toutes ces procédures sont en général convergentes contre la présence d’instruments
+invalides (c’est-à-dire détectent la présence d’instruments invalides) indépendamment de leur qualité
+(forts ou faibles). Nous décrivons aussi des cas où cette convergence peut ne pas tenir, mais
+la distribution asymptotique est modifiée d’une manière qui pourrait conduire à des distorsions de
+niveau même pour de grands échantillons. Ceci inclut, en particulier, les cas où l’estimateur des
+double moindres carrés demeure convergent, mais les tests sont asymptotiquement invalides. Ensuite,
+lorsque les instruments sont localement exogènes (c’est-à-dire le paramètre d’endogénéité
+converge vers zéro lorsque la taille de l’échantillon augmente), nous montrons que ces tests convergent
+vers des distributions chi-carré non centrées, que les instruments soient forts ou faibles. Nous
+caractérisons aussi les situations où le paramètre de non centralité est nul et la distribution asymptotique
+des statistiques demeure la même que dans le cas des instruments valides (malgré la présence
+des instruments invalides).
+Le deuxième essai étudie l’impact des instruments faibles sur les tests de spécification du type
+Durbin-Wu-Hausman (DWH) ainsi que le test de Revankar et Hartley (1973). Nous proposons une
+analyse en petit et grand échantillon de la distribution de ces tests sous l’hypothèse nulle (niveau)
+et l’alternative (puissance), incluant les cas où l’identification est déficiente ou faible (instruments
+faibles). Notre analyse en petit échantillon founit plusieurs perspectives ainsi que des extensions
+des précédentes procédures. En effet, la caractérisation de la distribution de ces statistiques en petit
+échantillon permet la construction des tests de Monte Carlo exacts pour l’exogénéité même avec
+les erreurs non Gaussiens. Nous montrons que ces tests sont typiquement robustes aux intruments
+faibles (le niveau est contrôlé). De plus, nous fournissons une caractérisation de la puissance des
+tests, qui exhibe clairement les facteurs qui déterminent la puissance. Nous montrons que les tests
+n’ont pas de puissance lorsque tous les instruments sont faibles [similaire à Guggenberger(2008)].
+Cependant, la puissance existe tant qu’au moins un seul instruments est fort. La conclusion de
+Guggenberger (2008) concerne le cas où tous les instruments sont faibles (un cas d’intérêt mineur
+en pratique). Notre théorie asymptotique sous les hypothèses affaiblies confirme la théorie en échantillon
+fini.
+Par ailleurs, nous présentons une analyse de Monte Carlo indiquant que: (1) l’estimateur des
+moindres carrés ordinaires est plus efficace que celui des doubles moindres carrés lorsque les instruments
+sont faibles et l’endogenéité modérée [conclusion similaire à celle de Kiviet and Niemczyk
+(2007)]; (2) les estimateurs pré-test basés sur les tests d’exogenété ont une excellente performance
+par rapport aux doubles moindres carrés. Ceci suggère que la méthode des variables instrumentales
+ne devrait être appliquée que si l’on a la certitude d’avoir des instruments forts. Donc, les
+conclusions de Guggenberger (2008) sont mitigées et pourraient être trompeuses.
+Nous illustrons nos résultats théoriques à travers des expériences de simulation et deux applications
+empiriques: la relation entre le taux d’ouverture et la croissance économique et le problème
+bien connu du rendement à l’éducation.
+Le troisième essai étend le test d’exogénéité du type Wald proposé par Dufour (1987) aux cas
+où les erreurs de la régression ont une distribution non-normale. Nous proposons une nouvelle
+version du précédent test qui est valide même en présence d’erreurs non-Gaussiens. Contrairement
+aux procédures de test d’exogénéité usuelles (tests de Durbin-Wu-Hausman et de Rvankar-
+Hartley), le test de Wald permet de résoudre un problème courant dans les travaux empiriques
+qui consiste à tester l’exogénéité partielle d’un sous ensemble de variables. Nous proposons deux
+nouveaux estimateurs pré-test basés sur le test de Wald qui performent mieux (en terme d’erreur
+quadratique moyenne) que l’estimateur IV usuel lorsque les variables instrumentales sont faibles et
+l’endogénéité modérée. Nous montrons également que ce test peut servir de procédure de sélection
+de variables instrumentales. Nous illustrons les résultats théoriques par deux applications
+empiriques: le modèle bien connu d’équation du salaire [Angist et Krueger (1991, 1999)] et les
+rendements d’échelle [Nerlove (1963)]. Nos résultats suggèrent que l’éducation de la mère expliquerait
+le décrochage de son fils, que l’output est une variable endogène dans l’estimation du coût
+de la firme et que le prix du fuel en est un instrument valide pour l’output.
+Le quatrième essai résout deux problèmes très importants dans la littérature économétrique.
+D’abord, bien que le test de Wald initial ou étendu permette de construire les régions de confiance
+et de tester les restrictions linéaires sur les covariances, il suppose que les paramètres du modèle
+sont identifiés. Lorsque l’identification est faible (instruments faiblement corrélés avec la variable
+à instrumenter), ce test n’est en général plus valide. Cet essai développe une procédure d’inférence
+robuste à l’identification (instruments faibles) qui permet de construire des régions de confiance
+pour la matrices de covariances entre les erreurs de la régression et les variables explicatives (possiblement
+endogènes). Nous fournissons les expressions analytiques des régions de confiance et
+caractérisons les conditions nécessaires et suffisantes sous lesquelles ils sont bornés. La procédure
+proposée demeure valide même pour de petits échantillons et elle est aussi asymptotiquement
+robuste à l’hétéroscédasticité et l’autocorrélation des erreurs.
+Ensuite, les résultats sont utilisés pour développer les tests d’exogénéité partielle robustes à
+l’identification. Les simulations Monte Carlo indiquent que ces tests contrôlent le niveau et ont
+de la puissance même si les instruments sont faibles. Ceci nous permet de proposer une procédure
+valide de sélection de variables instrumentales même s’il y a un problème d’identification. La
+procédure de sélection des instruments est basée sur deux nouveaux estimateurs pré-test qui combinent
+l’estimateur IV usuel et les estimateurs IV partiels. Nos simulations montrent que: (1) tout
+comme l’estimateur des moindres carrés ordinaires, les estimateurs IV partiels sont plus efficaces
+que l’estimateur IV usuel lorsque les instruments sont faibles et l’endogénéité modérée; (2) les estimateurs
+pré-test ont globalement une excellente performance comparés à l’estimateur IV usuel.
+Nous illustrons nos résultats théoriques par deux applications empiriques: la relation entre le taux
+d’ouverture et la croissance économique et le modèle de rendements à l’éducation. Dans la première
+application, les études antérieures ont conclu que les instruments n’étaient pas trop faibles
+[Dufour et Taamouti (2007)] alors qu’ils le sont fortement dans la seconde [Bound (1995), Doko et
+Dufour (2009)]. Conformément à nos résultats théoriques, nous trouvons les régions de confiance
+non bornées pour la covariance dans le cas où les instruments sont assez faibles." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content='The last decade shows growing interest for the so-called weak instruments problems in the
+econometric literature, i.e. situations where instruments are poorly correlated with endogenous explanatory
+variables. More generally, these can be viewed as situations where model parameters are
+not identified or nearly so (see Dufour and Hsiao, 2008). It is well known that when instruments
+are weak, the limiting distributions of standard test statistics - like Student, Wald, likelihood ratio
+and Lagrange multiplier criteria in structural models - have non-standard distributions and often
+depend heavily on nuisance parameters. Several empirical studies including the estimation of returns
+to education [Angrist and Krueger (1991, 1995), Angrist et al. (1999), Bound et al. (1995),
+Dufour and Taamouti (2007)] and asset pricing model (C-CAPM) [Hansen and Singleton (1982,
+1983), Stock and Wright (2000)], have showed that the above procedures are unreliable in presence
+of weak identification. As a result, identification-robust tests [Anderson and Rubin (1949), Moreira
+(2003), Kleibergen (2002), Dufour and Taamouti (2007)] are often used to make reliable inference.
+However, little is known about the quality of these procedures when the instruments are invalid or
+both weak and invalid. This raises the following question: what happens to inference procedures
+when some instruments are endogenous or both weak and endogenous? In particular, what happens
+if an invalid instrument is added to a set of valid instruments? How robust are these inference
+procedures to instrument endogeneity? Do alternative inference procedures behave differently? If
+instrument endogeneity makes statistical inference unreliable, can we propose the procedures for selecting
+"good instruments" (i.e. strong and valid instruments)? Can we propose instrument selection
+procedure which will be valid even in presence of weak identification?
+This thesis focuses on structural models and answers these questions through four chapiters.
+The first chapter is published in Journal of Statistical Planning and Inference 138 (2008) 2649
+– 2661. In this chapter, we analyze the effects of instrument endogeneity on two identificationrobust
+procedures: Anderson and Rubin (1949, AR) and Kleibergen (2002, K) test statistics, with
+or without weak instruments. First, when the level of instrument endogeneity is fixed (does not
+depend on the sample size), we show that all these procedures are in general consistent against
+the presence of invalid instruments (hence asymptotically invalid for the hypothesis of interest),
+whether the instruments are "strong" or "weak". We also describe situations where this consistency
+may not hold, but the asymptotic distribution is modified in a way that would lead to size distortions
+in large samples. These include, in particular, cases where 2SLS estimator remains consistent, but
+the tests are asymptotically invalid. Second, when the instruments are locally exogenous (the level
+of instrument endogeneity approaches zero as the sample size increases), we find asymptotic noncentral
+chi-square distributions with or without weak instruments, and describe situations where the
+non-centrality parameter is zero and the asymptotic distribution remains the same as in the case of
+valid instruments (despite the presence of invalid instruments).
+The second chapter analyzes the effects of weak identification on Durbin-Wu-Hausman (DWH)
+specification tests an Revankar-Harttley exogeneity test. We propose a finite-and large-sample analysis
+of the distribution of DWH tests under the null hypothesis (level) and the alternative hypothesis
+(power), including when identification is deficient or weak (weak instruments). Our finite-sample
+analysis provides several new insights and extensions of earlier procedures. The characterization
+of the finite-sample distribution of the test-statistics allows the construction of exact identificationrobust
+exogeneity tests even with non-Gaussian errors (Monte Carlos tests) and shows that such
+tests are typically robust to weak instruments (level is controlled).
+Furthermore, we provide a characterization of the power of the tests, which clearly exhibits
+factors which determine power. We show that DWH-tests have no power when all instruments are
+weak [similar to Guggenberger(2008)]. However, power does exist as soon as we have one strong
+instruments. The conclusions of Guggenberger (2008) focus on the case where all instruments
+are weak (a case of little practical interest). Our asymptotic distributional theory under weaker
+assumptions confirms the finite-sample theory.
+Moreover, we present simulation evidence indicating: (1) over a wide range cases, including
+weak IV and moderate endogeneity, OLS performs better than 2SLS [finding similar to Kiviet and
+Niemczyk (2007)]; (2) pretest-estimators based on exogeneity tests have an excellent overall performance
+compared with usual IV estimator.
+We illustrate our theoretical results through simulation experiment and two empirical applications:
+the relation between trade and economic growth and the widely studied problem of returns to
+education.
+In the third chapter, we extend the generalized Wald partial exogeneity test [Dufour (1987)]
+to non-gaussian errors. Testing whether a subset of explanatory variables is exogenous is an important
+challenge in econometrics. This problem occurs in many applied works. For example, in
+the well know wage model, one should like to assess if mother’s education is exogenous without
+imposing additional assumptions on ability and schooling. In the growth model, the exogeneity of
+the constructed instrument on the basis of geographical characteristics for the trade share is often
+questioned and needs to be tested without constraining trade share and the other variables. Standard
+exogeneity tests of the type proposed by Durbin-Wu-Hausman and Revankar-Hartley cannot solve
+such problems. A potential cure for dealing with partial exogeneity is the use of the generalized
+linear Wald (GW) method (Dufour, 1987). The GW-procedure however assumes the normality of
+model errors and it is not clear how robust is this test to non-gaussian errors.
+We develop in this chapter, a modified version of earlier procedure which is valid even when
+model errors are not normally distributed. We present simulation evidence indicating that when
+identification is strong, the standard GW-test is size distorted in presence of non-gaussian errors.
+Furthermore, our analysis of the performance of different pretest-estimators based on GW-tests
+allow us to propose two new pretest-estimators of the structural parameter. The Monte Carlo simulations indicate that these pretest-estimators have a better performance over a wide range cases
+compared with 2SLS. Therefore, this can be viewed as a procedure for selecting variable where a
+GW-test is used in the first stage to decide which variables should be instruments and which ones
+are valid instruments.
+We illustrate our theoretical results through two empirical applications: the well known wage
+equation and the returns to scale in electricity supply. The results show that the GW-tests cannot
+reject the exogeneity of mother’s education, i.e. mother’s education may constitute a valid IV for
+schooling. However, the output in cost equation is endogenous and the price of fuel is a valid IV for
+estimating the returns to scale.
+The fourth chapter develops identification-robust inference for the covariances between errors
+and regressors of an IV regression. The results are then applied to develop partial exogeneity tests
+and partial IV pretest-estimators which are more efficient than usual IV estimator.
+When more than one stochastic explanatory variables are involved in the model, it is often
+necessary to determine which ones are independent of the disturbances. This problem arises in
+many empirical applications. For example, in the New Keynesian Phillips Curve, one should like to
+assess whether the interest rate is exogenous without imposing additional assumptions on inflation
+rate and the other variables. Standard Wu-Durbin-Hausman (DWH) tests which are commonly
+used in applied work are inappropriate to deal with such a problem. The generalized Wald (GW)
+procedure (Dufour, 1987) which typically allows the construction of confidence sets as well as
+testing linear restrictions on covariances assumes that the available instruments are strong. When
+the instruments are weak, the GW-test is in general size distorted. As a result, its application in
+models where instruments are possibly weak–returns to education, trade and economic growth, life
+cycle labor supply, New Keynesian Phillips Curve, pregnancy and the demand for cigarettes–may
+be misleading.
+To answer this problem, we develop a finite-and large-sample valid procedure for building confidence
+sets for covariances allowing for the presence of weak instruments. We provide analytic
+forms of the confidence sets and characterize necessary and sufficient conditions under which they
+are bounded.
+Moreover, we propose two new pretest-estimators of structural parameters based on our above
+procedure. Both estimators combine 2SLS and partial IV-estimators. The Monte Carlo experiment
+shows that: (1) partial IV-estimators outperform 2SLS when the instruments are weak; (2) pretestestimators
+have an excellent overall performance–bias and MSE– compared with 2SLS. Therefore,
+this can be viewed as a variable selection method where the projection-based techniques is used to
+decide which variables should be instrumented and which ones are valid instruments.
+We illustrate our results through two empirical applications: the relation between trade and economic
+growth and the widely studied problem of returns to education. The results show unbounded
+confidence sets, suggesting that the IV are relatively poor in these models, as questioned in the
+literature [Bound (1995)].' name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Modèle structurels; Instruments faibles; Instruments endogènes; Tests robustes à l'identification; Tests de Monte Carlo exacts pour l'exogénéité; Régions de confiance; Sélection d'instruments; Tests d'exogénéité partielle; Estimateurs IV partiel; Structural models; Weak instruments; Invalid instruments; Identification-robust tests; Exact Monte Carlo exogeneity tests; Confidence sets; Instrument selection; partial exogeneity tests; partial IV estimators; Economics - Theory / Économie - Théorie (UMI : 0511); Thèse ou mémoire / Thesis or Dissertation; Sciences économiques" name="citation_keywords"/>
+<meta content="Exogeneity, weak identification and instrument selection in econometrics" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Doko Tchatoka, Sabro Firmin" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/3886/4/Doko_Firmin_T_2010_these.pdf" name="citation_pdf_url"/>
+<meta content="2010-05-05" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/3886" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3886?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3886?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3886?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3886?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3886?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3886?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/149" role="menuitem">Faculté des arts et des sciences – Département de sciences économiques</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2995" role="menuitem">Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/149">Faculté des arts et des sciences – Département de sciences économiques</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2995">Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2995"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/3886/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/3886">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3886/mets.xml-->
+<h2 class="page-header first-page-header">Exogeneity, weak identification and instrument selection in econometrics</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Dufour, Jean Marie</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Doko Tchatoka, Sabro Firmin</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2010-07-07T16:05:16Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2010-07-07T16:05:16Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2010-05-05</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2010-02</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/3886</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Modèle structurels</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Instruments faibles</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Instruments endogènes</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Tests robustes à l'identification</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Tests de Monte Carlo exacts pour l'exogénéité</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Régions de confiance</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Sélection d'instruments</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Tests d'exogénéité partielle</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Estimateurs IV partiel</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Structural models</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Weak instruments</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Invalid instruments</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Identification-robust tests</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Exact Monte Carlo exogeneity tests</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Confidence sets</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Instrument selection</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">partial exogeneity tests</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">partial IV estimators</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Economics - Theory / Économie - Théorie (UMI : 0511)</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Exogeneity, weak identification and instrument selection in econometrics</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences économiques</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La dernière décennie a connu un intérêt croissant pour les problèmes posés par les variables instrumentales
+faibles dans la littérature économétrique, c’est-à-dire les situations où les variables
+instrumentales sont faiblement corrélées avec la variable à instrumenter. En effet, il est bien connu
+que lorsque les instruments sont faibles, les distributions des statistiques de Student, de Wald, du
+ratio de vraisemblance et du multiplicateur de Lagrange ne sont plus standard et dépendent souvent
+de paramètres de nuisance. Plusieurs études empiriques portant notamment sur les modèles de rendements
+à l’éducation [Angrist et Krueger (1991, 1995), Angrist et al. (1999), Bound et al. (1995),
+Dufour et Taamouti (2007)] et d’évaluation des actifs financiers (C-CAPM) [Hansen et Singleton
+(1982,1983), Stock et Wright (2000)], où les variables instrumentales sont faiblement corrélées avec
+la variable à instrumenter, ont montré que l’utilisation de ces statistiques conduit souvent à des résultats
+peu fiables. Un remède à ce problème est l’utilisation de tests robustes à l’identification [Anderson
+et Rubin (1949), Moreira (2002), Kleibergen (2003), Dufour et Taamouti (2007)]. Cependant,
+il n’existe aucune littérature économétrique sur la qualité des procédures robustes à l’identification
+lorsque les instruments disponibles sont endogènes ou à la fois endogènes et faibles. Cela soulève
+la question de savoir ce qui arrive aux procédures d’inférence robustes à l’identification lorsque certaines
+variables instrumentales supposées exogènes ne le sont pas effectivement. Plus précisément,
+qu’arrive-t-il si une variable instrumentale invalide est ajoutée à un ensemble d’instruments valides?
+Ces procédures se comportent-elles différemment? Et si l’endogénéité des variables instrumentales
+pose des difficultés majeures à l’inférence statistique, peut-on proposer des procédures de tests qui
+sélectionnent les instruments lorsqu’ils sont à la fois forts et valides? Est-il possible de proposer
+les proédures de sélection d’instruments qui demeurent valides même en présence d’identification
+faible?
+Cette thèse se focalise sur les modèles structurels (modèles à équations simultanées) et apporte
+des réponses à ces questions à travers quatre essais.
+Le premier essai est publié dans Journal of Statistical Planning and Inference 138 (2008)
+2649 – 2661. Dans cet essai, nous analysons les effets de l’endogénéité des instruments sur deux
+statistiques de test robustes à l’identification: la statistique d’Anderson et Rubin (AR, 1949) et la
+statistique de Kleibergen (K, 2003), avec ou sans instruments faibles. D’abord, lorsque le paramètre
+qui contrôle l’endogénéité des instruments est fixe (ne dépend pas de la taille de l’échantillon), nous
+montrons que toutes ces procédures sont en général convergentes contre la présence d’instruments
+invalides (c’est-à-dire détectent la présence d’instruments invalides) indépendamment de leur qualité
+(forts ou faibles). Nous décrivons aussi des cas où cette convergence peut ne pas tenir, mais
+la distribution asymptotique est modifiée d’une manière qui pourrait conduire à des distorsions de
+niveau même pour de grands échantillons. Ceci inclut, en particulier, les cas où l’estimateur des
+double moindres carrés demeure convergent, mais les tests sont asymptotiquement invalides. Ensuite,
+lorsque les instruments sont localement exogènes (c’est-à-dire le paramètre d’endogénéité
+converge vers zéro lorsque la taille de l’échantillon augmente), nous montrons que ces tests convergent
+vers des distributions chi-carré non centrées, que les instruments soient forts ou faibles. Nous
+caractérisons aussi les situations où le paramètre de non centralité est nul et la distribution asymptotique
+des statistiques demeure la même que dans le cas des instruments valides (malgré la présence
+des instruments invalides).
+Le deuxième essai étudie l’impact des instruments faibles sur les tests de spécification du type
+Durbin-Wu-Hausman (DWH) ainsi que le test de Revankar et Hartley (1973). Nous proposons une
+analyse en petit et grand échantillon de la distribution de ces tests sous l’hypothèse nulle (niveau)
+et l’alternative (puissance), incluant les cas où l’identification est déficiente ou faible (instruments
+faibles). Notre analyse en petit échantillon founit plusieurs perspectives ainsi que des extensions
+des précédentes procédures. En effet, la caractérisation de la distribution de ces statistiques en petit
+échantillon permet la construction des tests de Monte Carlo exacts pour l’exogénéité même avec
+les erreurs non Gaussiens. Nous montrons que ces tests sont typiquement robustes aux intruments
+faibles (le niveau est contrôlé). De plus, nous fournissons une caractérisation de la puissance des
+tests, qui exhibe clairement les facteurs qui déterminent la puissance. Nous montrons que les tests
+n’ont pas de puissance lorsque tous les instruments sont faibles [similaire à Guggenberger(2008)].
+Cependant, la puissance existe tant qu’au moins un seul instruments est fort. La conclusion de
+Guggenberger (2008) concerne le cas où tous les instruments sont faibles (un cas d’intérêt mineur
+en pratique). Notre théorie asymptotique sous les hypothèses affaiblies confirme la théorie en échantillon
+fini.
+Par ailleurs, nous présentons une analyse de Monte Carlo indiquant que: (1) l’estimateur des
+moindres carrés ordinaires est plus efficace que celui des doubles moindres carrés lorsque les instruments
+sont faibles et l’endogenéité modérée [conclusion similaire à celle de Kiviet and Niemczyk
+(2007)]; (2) les estimateurs pré-test basés sur les tests d’exogenété ont une excellente performance
+par rapport aux doubles moindres carrés. Ceci suggère que la méthode des variables instrumentales
+ne devrait être appliquée que si l’on a la certitude d’avoir des instruments forts. Donc, les
+conclusions de Guggenberger (2008) sont mitigées et pourraient être trompeuses.
+Nous illustrons nos résultats théoriques à travers des expériences de simulation et deux applications
+empiriques: la relation entre le taux d’ouverture et la croissance économique et le problème
+bien connu du rendement à l’éducation.
+Le troisième essai étend le test d’exogénéité du type Wald proposé par Dufour (1987) aux cas
+où les erreurs de la régression ont une distribution non-normale. Nous proposons une nouvelle
+version du précédent test qui est valide même en présence d’erreurs non-Gaussiens. Contrairement
+aux procédures de test d’exogénéité usuelles (tests de Durbin-Wu-Hausman et de Rvankar-
+Hartley), le test de Wald permet de résoudre un problème courant dans les travaux empiriques
+qui consiste à tester l’exogénéité partielle d’un sous ensemble de variables. Nous proposons deux
+nouveaux estimateurs pré-test basés sur le test de Wald qui performent mieux (en terme d’erreur
+quadratique moyenne) que l’estimateur IV usuel lorsque les variables instrumentales sont faibles et
+l’endogénéité modérée. Nous montrons également que ce test peut servir de procédure de sélection
+de variables instrumentales. Nous illustrons les résultats théoriques par deux applications
+empiriques: le modèle bien connu d’équation du salaire [Angist et Krueger (1991, 1999)] et les
+rendements d’échelle [Nerlove (1963)]. Nos résultats suggèrent que l’éducation de la mère expliquerait
+le décrochage de son fils, que l’output est une variable endogène dans l’estimation du coût
+de la firme et que le prix du fuel en est un instrument valide pour l’output.
+Le quatrième essai résout deux problèmes très importants dans la littérature économétrique.
+D’abord, bien que le test de Wald initial ou étendu permette de construire les régions de confiance
+et de tester les restrictions linéaires sur les covariances, il suppose que les paramètres du modèle
+sont identifiés. Lorsque l’identification est faible (instruments faiblement corrélés avec la variable
+à instrumenter), ce test n’est en général plus valide. Cet essai développe une procédure d’inférence
+robuste à l’identification (instruments faibles) qui permet de construire des régions de confiance
+pour la matrices de covariances entre les erreurs de la régression et les variables explicatives (possiblement
+endogènes). Nous fournissons les expressions analytiques des régions de confiance et
+caractérisons les conditions nécessaires et suffisantes sous lesquelles ils sont bornés. La procédure
+proposée demeure valide même pour de petits échantillons et elle est aussi asymptotiquement
+robuste à l’hétéroscédasticité et l’autocorrélation des erreurs.
+Ensuite, les résultats sont utilisés pour développer les tests d’exogénéité partielle robustes à
+l’identification. Les simulations Monte Carlo indiquent que ces tests contrôlent le niveau et ont
+de la puissance même si les instruments sont faibles. Ceci nous permet de proposer une procédure
+valide de sélection de variables instrumentales même s’il y a un problème d’identification. La
+procédure de sélection des instruments est basée sur deux nouveaux estimateurs pré-test qui combinent
+l’estimateur IV usuel et les estimateurs IV partiels. Nos simulations montrent que: (1) tout
+comme l’estimateur des moindres carrés ordinaires, les estimateurs IV partiels sont plus efficaces
+que l’estimateur IV usuel lorsque les instruments sont faibles et l’endogénéité modérée; (2) les estimateurs
+pré-test ont globalement une excellente performance comparés à l’estimateur IV usuel.
+Nous illustrons nos résultats théoriques par deux applications empiriques: la relation entre le taux
+d’ouverture et la croissance économique et le modèle de rendements à l’éducation. Dans la première
+application, les études antérieures ont conclu que les instruments n’étaient pas trop faibles
+[Dufour et Taamouti (2007)] alors qu’ils le sont fortement dans la seconde [Bound (1995), Doko et
+Dufour (2009)]. Conformément à nos résultats théoriques, nous trouvons les régions de confiance
+non bornées pour la covariance dans le cas où les instruments sont assez faibles.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The last decade shows growing interest for the so-called weak instruments problems in the
+econometric literature, i.e. situations where instruments are poorly correlated with endogenous explanatory
+variables. More generally, these can be viewed as situations where model parameters are
+not identified or nearly so (see Dufour and Hsiao, 2008). It is well known that when instruments
+are weak, the limiting distributions of standard test statistics - like Student, Wald, likelihood ratio
+and Lagrange multiplier criteria in structural models - have non-standard distributions and often
+depend heavily on nuisance parameters. Several empirical studies including the estimation of returns
+to education [Angrist and Krueger (1991, 1995), Angrist et al. (1999), Bound et al. (1995),
+Dufour and Taamouti (2007)] and asset pricing model (C-CAPM) [Hansen and Singleton (1982,
+1983), Stock and Wright (2000)], have showed that the above procedures are unreliable in presence
+of weak identification. As a result, identification-robust tests [Anderson and Rubin (1949), Moreira
+(2003), Kleibergen (2002), Dufour and Taamouti (2007)] are often used to make reliable inference.
+However, little is known about the quality of these procedures when the instruments are invalid or
+both weak and invalid. This raises the following question: what happens to inference procedures
+when some instruments are endogenous or both weak and endogenous? In particular, what happens
+if an invalid instrument is added to a set of valid instruments? How robust are these inference
+procedures to instrument endogeneity? Do alternative inference procedures behave differently? If
+instrument endogeneity makes statistical inference unreliable, can we propose the procedures for selecting
+"good instruments" (i.e. strong and valid instruments)? Can we propose instrument selection
+procedure which will be valid even in presence of weak identification?
+This thesis focuses on structural models and answers these questions through four chapiters.
+The first chapter is published in Journal of Statistical Planning and Inference 138 (2008) 2649
+– 2661. In this chapter, we analyze the effects of instrument endogeneity on two identificationrobust
+procedures: Anderson and Rubin (1949, AR) and Kleibergen (2002, K) test statistics, with
+or without weak instruments. First, when the level of instrument endogeneity is fixed (does not
+depend on the sample size), we show that all these procedures are in general consistent against
+the presence of invalid instruments (hence asymptotically invalid for the hypothesis of interest),
+whether the instruments are "strong" or "weak". We also describe situations where this consistency
+may not hold, but the asymptotic distribution is modified in a way that would lead to size distortions
+in large samples. These include, in particular, cases where 2SLS estimator remains consistent, but
+the tests are asymptotically invalid. Second, when the instruments are locally exogenous (the level
+of instrument endogeneity approaches zero as the sample size increases), we find asymptotic noncentral
+chi-square distributions with or without weak instruments, and describe situations where the
+non-centrality parameter is zero and the asymptotic distribution remains the same as in the case of
+valid instruments (despite the presence of invalid instruments).
+The second chapter analyzes the effects of weak identification on Durbin-Wu-Hausman (DWH)
+specification tests an Revankar-Harttley exogeneity test. We propose a finite-and large-sample analysis
+of the distribution of DWH tests under the null hypothesis (level) and the alternative hypothesis
+(power), including when identification is deficient or weak (weak instruments). Our finite-sample
+analysis provides several new insights and extensions of earlier procedures. The characterization
+of the finite-sample distribution of the test-statistics allows the construction of exact identificationrobust
+exogeneity tests even with non-Gaussian errors (Monte Carlos tests) and shows that such
+tests are typically robust to weak instruments (level is controlled).
+Furthermore, we provide a characterization of the power of the tests, which clearly exhibits
+factors which determine power. We show that DWH-tests have no power when all instruments are
+weak [similar to Guggenberger(2008)]. However, power does exist as soon as we have one strong
+instruments. The conclusions of Guggenberger (2008) focus on the case where all instruments
+are weak (a case of little practical interest). Our asymptotic distributional theory under weaker
+assumptions confirms the finite-sample theory.
+Moreover, we present simulation evidence indicating: (1) over a wide range cases, including
+weak IV and moderate endogeneity, OLS performs better than 2SLS [finding similar to Kiviet and
+Niemczyk (2007)]; (2) pretest-estimators based on exogeneity tests have an excellent overall performance
+compared with usual IV estimator.
+We illustrate our theoretical results through simulation experiment and two empirical applications:
+the relation between trade and economic growth and the widely studied problem of returns to
+education.
+In the third chapter, we extend the generalized Wald partial exogeneity test [Dufour (1987)]
+to non-gaussian errors. Testing whether a subset of explanatory variables is exogenous is an important
+challenge in econometrics. This problem occurs in many applied works. For example, in
+the well know wage model, one should like to assess if mother’s education is exogenous without
+imposing additional assumptions on ability and schooling. In the growth model, the exogeneity of
+the constructed instrument on the basis of geographical characteristics for the trade share is often
+questioned and needs to be tested without constraining trade share and the other variables. Standard
+exogeneity tests of the type proposed by Durbin-Wu-Hausman and Revankar-Hartley cannot solve
+such problems. A potential cure for dealing with partial exogeneity is the use of the generalized
+linear Wald (GW) method (Dufour, 1987). The GW-procedure however assumes the normality of
+model errors and it is not clear how robust is this test to non-gaussian errors.
+We develop in this chapter, a modified version of earlier procedure which is valid even when
+model errors are not normally distributed. We present simulation evidence indicating that when
+identification is strong, the standard GW-test is size distorted in presence of non-gaussian errors.
+Furthermore, our analysis of the performance of different pretest-estimators based on GW-tests
+allow us to propose two new pretest-estimators of the structural parameter. The Monte Carlo simulations indicate that these pretest-estimators have a better performance over a wide range cases
+compared with 2SLS. Therefore, this can be viewed as a procedure for selecting variable where a
+GW-test is used in the first stage to decide which variables should be instruments and which ones
+are valid instruments.
+We illustrate our theoretical results through two empirical applications: the well known wage
+equation and the returns to scale in electricity supply. The results show that the GW-tests cannot
+reject the exogeneity of mother’s education, i.e. mother’s education may constitute a valid IV for
+schooling. However, the output in cost equation is endogenous and the price of fuel is a valid IV for
+estimating the returns to scale.
+The fourth chapter develops identification-robust inference for the covariances between errors
+and regressors of an IV regression. The results are then applied to develop partial exogeneity tests
+and partial IV pretest-estimators which are more efficient than usual IV estimator.
+When more than one stochastic explanatory variables are involved in the model, it is often
+necessary to determine which ones are independent of the disturbances. This problem arises in
+many empirical applications. For example, in the New Keynesian Phillips Curve, one should like to
+assess whether the interest rate is exogenous without imposing additional assumptions on inflation
+rate and the other variables. Standard Wu-Durbin-Hausman (DWH) tests which are commonly
+used in applied work are inappropriate to deal with such a problem. The generalized Wald (GW)
+procedure (Dufour, 1987) which typically allows the construction of confidence sets as well as
+testing linear restrictions on covariances assumes that the available instruments are strong. When
+the instruments are weak, the GW-test is in general size distorted. As a result, its application in
+models where instruments are possibly weak–returns to education, trade and economic growth, life
+cycle labor supply, New Keynesian Phillips Curve, pregnancy and the demand for cigarettes–may
+be misleading.
+To answer this problem, we develop a finite-and large-sample valid procedure for building confidence
+sets for covariances allowing for the presence of weak instruments. We provide analytic
+forms of the confidence sets and characterize necessary and sufficient conditions under which they
+are bounded.
+Moreover, we propose two new pretest-estimators of structural parameters based on our above
+procedure. Both estimators combine 2SLS and partial IV-estimators. The Monte Carlo experiment
+shows that: (1) partial IV-estimators outperform 2SLS when the instruments are weak; (2) pretestestimators
+have an excellent overall performance–bias and MSE– compared with 2SLS. Therefore,
+this can be viewed as a variable selection method where the projection-based techniques is used to
+decide which variables should be instrumented and which ones are valid instruments.
+We illustrate our results through two empirical applications: the relation between trade and economic
+growth and the widely studied problem of returns to education. The results show unbounded
+confidence sets, suggesting that the IV are relatively poor in these models, as questioned in the
+literature [Bound (1995)].</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F3886&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+%C3%A9conomiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/3886/Doko_Firmin_T_2010_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/3886/Doko_Firmin_T_2010_these.pdf.jpg?sequence=7&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Doko_Firmin_T_2010_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/3886/Doko_Firmin_T_2010_these.pdf?sequence=4&amp;isAllowed=y">Doko_Firmin_T_2010_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1001.Kb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2995/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2995">Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires</a> [317]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/3886">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

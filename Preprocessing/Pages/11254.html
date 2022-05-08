@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Développement d’outils utilisant la surveillance biologique pour évaluer l’exposition et les risques pour la santé : application au méthylmercure et au sélénium</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Carrier, Gaétan" name="DC.contributor">
+<meta content="Bouchard, Michèle" name="DC.contributor">
+<meta content="Noisel, Nolwenn" name="DC.creator">
+<meta content="2014-10-20T19:57:03Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2014-10-20T19:57:03Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2014-09-22" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2014-05" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/11254" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Méthylmercure" name="DC.subject" xml:lang="fr"/>
+<meta content="Sélénium" name="DC.subject" xml:lang="fr"/>
+<meta content="Questionnaires alimentaires" name="DC.subject" xml:lang="fr"/>
+<meta content="Surveillance biologique" name="DC.subject" xml:lang="fr"/>
+<meta content="Sang" name="DC.subject" xml:lang="fr"/>
+<meta content="Cheveux" name="DC.subject" xml:lang="fr"/>
+<meta content="Ongles" name="DC.subject" xml:lang="fr"/>
+<meta content="Urine" name="DC.subject" xml:lang="fr"/>
+<meta content="Shampoing" name="DC.subject" xml:lang="fr"/>
+<meta content="Consommation de poisson" name="DC.subject" xml:lang="fr"/>
+<meta content="Methylmercury" name="DC.subject" xml:lang="fr"/>
+<meta content="Selenuim" name="DC.subject" xml:lang="fr"/>
+<meta content="Food questionnaires" name="DC.subject" xml:lang="fr"/>
+<meta content="Biomonitoring" name="DC.subject" xml:lang="fr"/>
+<meta content="Blood" name="DC.subject" xml:lang="fr"/>
+<meta content="Hair" name="DC.subject" xml:lang="fr"/>
+<meta content="Toenail" name="DC.subject" xml:lang="fr"/>
+<meta content="Urine" name="DC.subject" xml:lang="fr"/>
+<meta content="Shampoo" name="DC.subject" xml:lang="fr"/>
+<meta content="Fish consumption" name="DC.subject" xml:lang="fr"/>
+<meta content="Health Sciences - Toxicology / Sciences de la santé - Toxicologie (UMI : 0383)" name="DC.subject" xml:lang="fr"/>
+<meta content="Développement d’outils utilisant la surveillance biologique pour évaluer l’exposition et les risques pour la santé : application au méthylmercure et au sélénium" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type" xml:lang="fr"/>
+<meta content="Dans une perspective d’analyse des risques pour la santé publique, l’estimation de l’exposition revêt une importance capitale. Parmi les approches existantes d’estimation de l’exposition, l’utilisation d’outils, tels que des questionnaires alimentaires, la modélisation toxicocinétique ou les reconstructions de doses, en complément de la surveillance biologique, permet de raffiner les estimations, et ainsi, de mieux caractériser les risques pour la santé.
+
+Ces différents outils et approches ont été développés et appliqués à deux substances d’intérêt, le méthylmercure et le sélénium en raison des effets toxiques bien connus du méthylmercure, de l’interaction entre le méthylmercure et le sélénium réduisant potentiellement ces effets toxiques, et de l’existence de sources communes via la consommation de poisson. Ainsi, l’objectif général de cette thèse consistait à produire des données cinétiques et comparatives manquantes pour la validation et l’interprétation d’approches et d’outils d’évaluation de l’exposition au méthylmercure et au sélénium.
+
+Pour ce faire, l’influence du choix de la méthode d’évaluation de l’exposition au méthylmercure a été déterminée en comparant les apports quotidiens et les risques pour la santé estimés par différentes approches (évaluation directe de l’exposition par la surveillance biologique combinée à la modélisation toxicocinétique ou évaluation indirecte par questionnaire alimentaire). D’importantes différences entre ces deux approches ont été observées : les apports quotidiens de méthylmercure estimés par questionnaires sont en moyenne six fois plus élevés que ceux estimés à l’aide de surveillance biologique et modélisation. Ces deux méthodes conduisent à une appréciation des risques pour la santé divergente puisqu’avec l’approche indirecte, les doses quotidiennes estimées de méthylmercure dépassent les normes de Santé Canada pour 21 des 23 volontaires, alors qu’avec l’approche directe, seulement 2 des 23 volontaires sont susceptibles de dépasser les normes. Ces différences pourraient être dues, entre autres, à des biais de mémoire et de désirabilité lors de la complétion des questionnaires. 
+
+En outre, l’étude de la distribution du sélénium dans différentes matrices biologiques suite à une exposition non alimentaire (shampoing à forte teneur en sélénium) visait, d’une part, à étudier la cinétique du sélénium provenant de cette source d’exposition et, d’autre part, à évaluer la contribution de cette source à la charge corporelle totale. Un suivi des concentrations biologiques (sang, urine, cheveux et ongles) pendant une période de 18 mois chez des volontaires exposés à une source non alimentaire de sélénium a contribué à mieux expliciter les mécanismes de transfert du sélénium du site d’absorption vers le sang (concomitance des voies régulées et non régulées). Ceci a permis de montrer que, contrairement au méthylmercure, l’utilisation des cheveux comme biomarqueur peut mener à une surestimation importante de la charge corporelle réelle en sélénium en cas de non contrôle de facteurs confondants tels que l’utilisation de shampoing contenant du sélénium.
+
+Finalement, une analyse exhaustive des données de surveillance biologique du sélénium issues de 75 études publiées dans la littérature a permis de mieux comprendre la cinétique globale du sélénium dans l’organisme humain. En particulier, elle a permis le développement d’un outil reliant les apports quotidiens et les concentrations biologiques de sélénium dans les différentes matrices à l’aide d’algorithmes mathématiques. Conséquemment, à l’aide de ces données cinétiques exprimées par un système d’équations logarithmiques et de leur représentation graphique, il est possible d’estimer les apports quotidiens chez un individu à partir de divers prélèvements biologiques, et ainsi, de faciliter la comparaison d’études de surveillance biologique du sélénium utilisant des biomarqueurs différents.
+
+L’ensemble de ces résultats de recherche montre que la méthode choisie pour évaluer l’exposition a un impact important sur les estimations des risques associés. De plus, les recherches menées ont permis de mettre en évidence que le sélénium non alimentaire ne contribue pas de façon significative à la charge corporelle totale, mais constitue un facteur de confusion pour l’estimation de la charge corporelle réelle en sélénium. Finalement, la détermination des équations et des coefficients reliant les concentrations de sélénium entre différentes matrices biologiques, à l’aide d’une vaste base de données cinétiques, concourt à mieux interpréter les résultats de surveillance biologique." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="In the context of public health risk analysis, exposure assessments are of primary importance. Among the approaches used to assess exposure, tools such as food questionnaires, toxicokinetic modelling or reverse dosimetry, combined with biomonitoring allow to refine exposure estimates as well as toxicological health risk estimates. 
+
+Such approaches and tools have been developed and applied to two contaminants of interest - methylmercury and selenium - due to the known toxic effect of methylmercury, the interaction between methylmercury and selenium which reduces its toxicity, and common sources of exposure through fish consumption. Hence, the main objective of this thesis consists in producing kinetic and comparative data for the validation and the interpretation of approaches and tools used for exposure assessment to methylmercury and selenium. These data are currently lacking.
+
+To achieve this goal, the influence of the method used to assess methylmercury exposure was determined by comparing daily intakes and health risk estimated with different approaches (direct exposure assessment using biomonitoring and toxicokinetic modelling or indirect exposure assessment using food questionnaires). Important discrepancies between these two methods have been observed: the questionnaire-based intakes are higher than modeled intakes higher by a six-fold factor. These two approaches lead to divergent health risk estimates considering that, with the direct exposure assessment, methylmercury daily intakes are above Health Canada guidelines in most cases (21 of 23 volunteers) while only 2 volunteers have intakes above guidelines when using the direct approach. Among possible reasons, discrepancies could be due to recall and desirability bias related to the completion of food questionnaire.
+
+Subsequently, the study of selenium distribution in different biological matrices following a non-dietary exposure (selenium-containing shampoo) aimed to study the kinetic of the selenium originating from this exposure as well as assess the contribution of this source to the total Se body burden. The time courses of selenium biological concentration in blood, urine, hair and nails over 18 months for volunteers exposed to a non-dietary source of selenium contributed to better elucidate the mechanisms of selenium transfer to blood (concurrency of regulated and non-regulated pathways). This study also confirms that, unlike methylmercury, the use of hair as a biomarker can lead to a significant overestimate of the actual selenium body burden if confounding factors such as the use of selenium-containing shampoo are not controlled. 
+
+In addition, a detailed analysis of selenium biomonitoring data from 75 published studies in the literature was conducted in order to better understand the kinetic of selenium in the human body. In particular, this analysis led to the development of a tool that relates daily intakes and selenium concentrations in biological matrices using mathematical algorithms. Consequently, by using these kinetic data expressed as a system of logarithmic equations and graphical representations, it enables the assessment of daily intakes in an individual from various biological sampling. Moreover, it facilitates the comparison of selenium biomonitoring data from studies using different biomarkers. 
+
+Overall, these results show that the approach used to assess exposure has a sound impact on health risk estimates. Research showed that selenium from a non-dietary source does not contribute significantly to total body burden, however it constitutes a confounding factor. Finally, the determination of equations and coefficients using an extensive kinetic database relating selenium concentrations from different biological matrices helps to better interpret biomonitoring data." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Méthylmercure; Sélénium; Questionnaires alimentaires; Surveillance biologique; Sang; Cheveux; Ongles; Urine; Shampoing; Consommation de poisson; Methylmercury; Selenuim; Food questionnaires; Biomonitoring; Blood; Hair; Toenail; Urine; Shampoo; Fish consumption; Health Sciences - Toxicology / Sciences de la santé - Toxicologie (UMI : 0383); Thèse ou mémoire / Thesis or Dissertation; Santé publique" name="citation_keywords"/>
+<meta content="Développement d’outils utilisant la surveillance biologique pour évaluer l’exposition et les risques pour la santé : application au méthylmercure et au sélénium" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Noisel, Nolwenn" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/11254/4/Noisel_Nolwenn_2014_these.pdf" name="citation_pdf_url"/>
+<meta content="2014-09-22" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/11254" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11254?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11254?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11254?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11254?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11254?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11254?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/10070" role="menuitem">École de santé publique</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/10094" role="menuitem">École de santé publique – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/10070">École de santé publique</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/10094"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/11254/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/11254">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/11254/mets.xml-->
+<h2 class="page-header first-page-header">Développement d’outils utilisant la surveillance biologique pour évaluer l’exposition et les risques pour la santé : application au méthylmercure et au sélénium</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Carrier, Gaétan</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Bouchard, Michèle</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Noisel, Nolwenn</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2014-10-20T19:57:03Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2014-10-20T19:57:03Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2014-09-22</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2014-05</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/11254</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Méthylmercure</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Sélénium</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Questionnaires alimentaires</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Surveillance biologique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Sang</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Cheveux</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Ongles</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Urine</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Shampoing</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Consommation de poisson</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Methylmercury</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Selenuim</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Food questionnaires</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Biomonitoring</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Blood</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Hair</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Toenail</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Urine</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Shampoo</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Fish consumption</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Health Sciences - Toxicology / Sciences de la santé - Toxicologie (UMI : 0383)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Développement d’outils utilisant la surveillance biologique pour évaluer l’exposition et les risques pour la santé : application au méthylmercure et au sélénium</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Santé publique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Dans une perspective d’analyse des risques pour la santé publique, l’estimation de l’exposition revêt une importance capitale. Parmi les approches existantes d’estimation de l’exposition, l’utilisation d’outils, tels que des questionnaires alimentaires, la modélisation toxicocinétique ou les reconstructions de doses, en complément de la surveillance biologique, permet de raffiner les estimations, et ainsi, de mieux caractériser les risques pour la santé.
+
+Ces différents outils et approches ont été développés et appliqués à deux substances d’intérêt, le méthylmercure et le sélénium en raison des effets toxiques bien connus du méthylmercure, de l’interaction entre le méthylmercure et le sélénium réduisant potentiellement ces effets toxiques, et de l’existence de sources communes via la consommation de poisson. Ainsi, l’objectif général de cette thèse consistait à produire des données cinétiques et comparatives manquantes pour la validation et l’interprétation d’approches et d’outils d’évaluation de l’exposition au méthylmercure et au sélénium.
+
+Pour ce faire, l’influence du choix de la méthode d’évaluation de l’exposition au méthylmercure a été déterminée en comparant les apports quotidiens et les risques pour la santé estimés par différentes approches (évaluation directe de l’exposition par la surveillance biologique combinée à la modélisation toxicocinétique ou évaluation indirecte par questionnaire alimentaire). D’importantes différences entre ces deux approches ont été observées : les apports quotidiens de méthylmercure estimés par questionnaires sont en moyenne six fois plus élevés que ceux estimés à l’aide de surveillance biologique et modélisation. Ces deux méthodes conduisent à une appréciation des risques pour la santé divergente puisqu’avec l’approche indirecte, les doses quotidiennes estimées de méthylmercure dépassent les normes de Santé Canada pour 21 des 23 volontaires, alors qu’avec l’approche directe, seulement 2 des 23 volontaires sont susceptibles de dépasser les normes. Ces différences pourraient être dues, entre autres, à des biais de mémoire et de désirabilité lors de la complétion des questionnaires. 
+
+En outre, l’étude de la distribution du sélénium dans différentes matrices biologiques suite à une exposition non alimentaire (shampoing à forte teneur en sélénium) visait, d’une part, à étudier la cinétique du sélénium provenant de cette source d’exposition et, d’autre part, à évaluer la contribution de cette source à la charge corporelle totale. Un suivi des concentrations biologiques (sang, urine, cheveux et ongles) pendant une période de 18 mois chez des volontaires exposés à une source non alimentaire de sélénium a contribué à mieux expliciter les mécanismes de transfert du sélénium du site d’absorption vers le sang (concomitance des voies régulées et non régulées). Ceci a permis de montrer que, contrairement au méthylmercure, l’utilisation des cheveux comme biomarqueur peut mener à une surestimation importante de la charge corporelle réelle en sélénium en cas de non contrôle de facteurs confondants tels que l’utilisation de shampoing contenant du sélénium.
+
+Finalement, une analyse exhaustive des données de surveillance biologique du sélénium issues de 75 études publiées dans la littérature a permis de mieux comprendre la cinétique globale du sélénium dans l’organisme humain. En particulier, elle a permis le développement d’un outil reliant les apports quotidiens et les concentrations biologiques de sélénium dans les différentes matrices à l’aide d’algorithmes mathématiques. Conséquemment, à l’aide de ces données cinétiques exprimées par un système d’équations logarithmiques et de leur représentation graphique, il est possible d’estimer les apports quotidiens chez un individu à partir de divers prélèvements biologiques, et ainsi, de faciliter la comparaison d’études de surveillance biologique du sélénium utilisant des biomarqueurs différents.
+
+L’ensemble de ces résultats de recherche montre que la méthode choisie pour évaluer l’exposition a un impact important sur les estimations des risques associés. De plus, les recherches menées ont permis de mettre en évidence que le sélénium non alimentaire ne contribue pas de façon significative à la charge corporelle totale, mais constitue un facteur de confusion pour l’estimation de la charge corporelle réelle en sélénium. Finalement, la détermination des équations et des coefficients reliant les concentrations de sélénium entre différentes matrices biologiques, à l’aide d’une vaste base de données cinétiques, concourt à mieux interpréter les résultats de surveillance biologique.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">In the context of public health risk analysis, exposure assessments are of primary importance. Among the approaches used to assess exposure, tools such as food questionnaires, toxicokinetic modelling or reverse dosimetry, combined with biomonitoring allow to refine exposure estimates as well as toxicological health risk estimates. 
+
+Such approaches and tools have been developed and applied to two contaminants of interest - methylmercury and selenium - due to the known toxic effect of methylmercury, the interaction between methylmercury and selenium which reduces its toxicity, and common sources of exposure through fish consumption. Hence, the main objective of this thesis consists in producing kinetic and comparative data for the validation and the interpretation of approaches and tools used for exposure assessment to methylmercury and selenium. These data are currently lacking.
+
+To achieve this goal, the influence of the method used to assess methylmercury exposure was determined by comparing daily intakes and health risk estimated with different approaches (direct exposure assessment using biomonitoring and toxicokinetic modelling or indirect exposure assessment using food questionnaires). Important discrepancies between these two methods have been observed: the questionnaire-based intakes are higher than modeled intakes higher by a six-fold factor. These two approaches lead to divergent health risk estimates considering that, with the direct exposure assessment, methylmercury daily intakes are above Health Canada guidelines in most cases (21 of 23 volunteers) while only 2 volunteers have intakes above guidelines when using the direct approach. Among possible reasons, discrepancies could be due to recall and desirability bias related to the completion of food questionnaire.
+
+Subsequently, the study of selenium distribution in different biological matrices following a non-dietary exposure (selenium-containing shampoo) aimed to study the kinetic of the selenium originating from this exposure as well as assess the contribution of this source to the total Se body burden. The time courses of selenium biological concentration in blood, urine, hair and nails over 18 months for volunteers exposed to a non-dietary source of selenium contributed to better elucidate the mechanisms of selenium transfer to blood (concurrency of regulated and non-regulated pathways). This study also confirms that, unlike methylmercury, the use of hair as a biomarker can lead to a significant overestimate of the actual selenium body burden if confounding factors such as the use of selenium-containing shampoo are not controlled. 
+
+In addition, a detailed analysis of selenium biomonitoring data from 75 published studies in the literature was conducted in order to better understand the kinetic of selenium in the human body. In particular, this analysis led to the development of a tool that relates daily intakes and selenium concentrations in biological matrices using mathematical algorithms. Consequently, by using these kinetic data expressed as a system of logarithmic equations and graphical representations, it enables the assessment of daily intakes in an individual from various biological sampling. Moreover, it facilitates the comparison of selenium biomonitoring data from studies using different biomarkers. 
+
+Overall, these results show that the approach used to assess exposure has a sound impact on health risk estimates. Research showed that selenium from a non-dietary source does not contribute significantly to total body burden, however it constitutes a confounding factor. Finally, the determination of equations and coefficients using an extensive kinetic database relating selenium concentrations from different biological matrices helps to better interpret biomonitoring data.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F11254&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sant%C3%A9+publique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/11254/Noisel_Nolwenn_2014_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/11254/Noisel_Nolwenn_2014_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Noisel_Nolwenn_2014_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/11254/Noisel_Nolwenn_2014_these.pdf?sequence=4&amp;isAllowed=y">Noisel_Nolwenn_2014_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">3.552Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10094/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a> [603]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/11254">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

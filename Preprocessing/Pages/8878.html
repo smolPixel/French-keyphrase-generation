@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Impacts and Detection of Design Smells</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Aïmeur, Esma" name="DC.contributor">
+<meta content="Gueheneuc, Yann-Gael" name="DC.contributor">
+<meta content="Maiga, Abdou" name="DC.creator">
+<meta content="2013-02-27T18:59:32Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2013-02-27T18:59:32Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2013-02-01" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2012-08" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/8878" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Défaut de conception" name="DC.subject" xml:lang="en"/>
+<meta content="Design smells" name="DC.subject" xml:lang="en"/>
+<meta content="Anti-patrons" name="DC.subject" xml:lang="en"/>
+<meta content="Antipatterns" name="DC.subject" xml:lang="en"/>
+<meta content="Défauts de code" name="DC.subject" xml:lang="en"/>
+<meta content="Code smells" name="DC.subject" xml:lang="en"/>
+<meta content="Mauvaises odeurs" name="DC.subject" xml:lang="en"/>
+<meta content="Bad smells" name="DC.subject" xml:lang="en"/>
+<meta content="Détection" name="DC.subject" xml:lang="en"/>
+<meta content="Detection" name="DC.subject" xml:lang="en"/>
+<meta content="Restructurations" name="DC.subject" xml:lang="en"/>
+<meta content="Restructuring" name="DC.subject" xml:lang="en"/>
+<meta content="Refactorisations" name="DC.subject" xml:lang="en"/>
+<meta content="Refactorings" name="DC.subject" xml:lang="en"/>
+<meta content="Compréhension de programme" name="DC.subject" xml:lang="en"/>
+<meta content="Program comprehension" name="DC.subject" xml:lang="en"/>
+<meta content="Maintenance de programme" name="DC.subject" xml:lang="en"/>
+<meta content="Program maintenance" name="DC.subject" xml:lang="en"/>
+<meta content="Correction de faute" name="DC.subject" xml:lang="en"/>
+<meta content="Fault fix" name="DC.subject" xml:lang="en"/>
+<meta content="Génie logiciel empirique" name="DC.subject" xml:lang="en"/>
+<meta content="Empirical software engineering" name="DC.subject" xml:lang="en"/>
+<meta content="Applied Sciences - Computer Science / Sciences appliqués et technologie - Informatique (UMI : 0984)" name="DC.subject" xml:lang="en"/>
+<meta content="Impacts and Detection of Design Smells" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Les changements sont faits de façon continue dans le code source des logiciels pour prendre en compte les besoins des clients et corriger les fautes. Les changements continus peuvent conduire aux défauts de code et de conception. Les défauts de conception sont des mauvaises solutions à des problèmes récurrents de conception ou d’implémentation, généralement dans le développement orienté objet. Au cours des activités de compréhension et de changement et en raison du temps d’accès au marché, du manque de compréhension, et de leur expérience, les développeurs ne peuvent pas toujours suivre les normes de conception et les techniques de codage comme les patrons de conception. Par conséquent, ils introduisent des défauts de conception dans leurs systèmes. Dans la littérature, plusieurs auteurs ont fait valoir que les défauts de conception rendent les systèmes orientés objet plus difficile à comprendre, plus sujets aux fautes, et plus difficiles à changer que les systèmes sans les défauts de conception. Pourtant, seulement quelques-uns de ces auteurs ont fait une étude empirique sur l’impact des défauts de conception sur la compréhension et aucun d’entre eux n’a étudié l’impact des défauts de conception sur l’effort des développeurs pour corriger les fautes.
+
+Dans cette thèse, nous proposons trois principales contributions. La première contribution est une étude empirique pour apporter des preuves de l’impact des défauts de conception sur la compréhension et le changement. Nous concevons et effectuons deux expériences avec 59 sujets, afin d’évaluer l’impact de la composition de deux occurrences de Blob ou deux occurrences de spaghetti code sur la performance des développeurs effectuant des tâches de compréhension et de changement. Nous mesurons la performance des développeurs en utilisant: (1) l’indice de charge de travail de la NASA pour leurs efforts, (2) le temps qu’ils ont passé dans l’accomplissement de leurs tâches, et (3) les pourcentages de bonnes réponses. Les résultats des deux expériences ont montré que deux occurrences de Blob ou de spaghetti code sont un obstacle significatif pour la performance des développeurs lors de tâches de compréhension et de changement. Les résultats obtenus justifient les recherches antérieures sur la spécification et la détection des défauts de conception. Les équipes de développement de logiciels doivent mettre en garde les développeurs contre le nombre élevé d’occurrences de défauts de conception et recommander des refactorisations à chaque étape du processus de développement pour supprimer ces défauts de conception quand c’est possible.
+
+Dans la deuxième contribution, nous étudions la relation entre les défauts de conception et les fautes. Nous étudions l’impact de la présence des défauts de conception sur l’effort nécessaire pour corriger les fautes. Nous mesurons l’effort pour corriger les fautes à l’aide de trois indicateurs: (1) la durée de la période de correction, (2) le nombre de champs et méthodes touchés par la correction des fautes et (3) l’entropie des corrections de fautes dans le code-source. Nous menons une étude empirique avec 12 défauts de conception détectés dans 54 versions de quatre systèmes: ArgoUML, Eclipse, Mylyn, et Rhino. Nos résultats ont montré que la durée de la période de correction est plus longue pour les fautes impliquant des classes avec des défauts de conception. En outre, la correction des fautes dans les classes avec des défauts de conception fait changer plus de fichiers, plus les champs et des méthodes. Nous avons également observé que, après la correction  d’une faute, le nombre d’occurrences de défauts de conception dans les classes impliquées dans la correction de la faute diminue. Comprendre l’impact des défauts de conception sur l’effort des développeurs pour corriger les fautes est important afin d’aider les équipes de développement pour mieux évaluer et prévoir l’impact de leurs décisions de conception et donc canaliser leurs efforts pour améliorer la qualité de leurs systèmes. Les équipes de développement doivent contrôler et supprimer les défauts de conception de leurs systèmes car ils sont susceptibles d’augmenter les efforts de changement.
+
+La troisième contribution concerne la détection des défauts de conception. Pendant les activités de maintenance, il est important de disposer d’un outil capable de détecter les défauts de conception de façon incrémentale et itérative. Ce processus de détection incrémentale et itérative pourrait réduire les coûts, les efforts et les ressources en permettant aux praticiens d’identifier et de prendre en compte les occurrences de défauts de conception comme ils les trouvent lors de la compréhension et des changements. Les chercheurs ont proposé des approches pour détecter les occurrences de défauts de conception, mais ces approches ont actuellement quatre limites: (1) elles nécessitent une connaissance approfondie des défauts de conception, (2) elles ont une précision et un rappel limités, (3) elles ne sont pas itératives et incrémentales et (4) elles ne peuvent pas être appliquées sur des sous-ensembles de systèmes. Pour surmonter ces limitations, nous introduisons SMURF, une nouvelle approche pour détecter les défauts de conception, basé sur une technique d’apprentissage automatique — machines à vecteur de support — et prenant en compte les retours des praticiens. Grâce à une étude empirique portant sur trois systèmes et quatre défauts de conception, nous avons montré que la précision et le rappel de SMURF sont supérieurs à ceux de DETEX et BDTEX lors de la détection des occurrences de défauts de conception. Nous avons également montré que SMURF peut être appliqué à la fois dans les configurations intra-système et inter-système. Enfin, nous avons montré que la précision et le rappel de SMURF sont améliorés quand on prend en compte les retours des praticiens." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="Changes are continuously made in the source code to take into account the needs of the customers and fix the faults. Continuous change can lead to antipatterns and code smells, collectively called “design smells” to occur in the source code. Design smells are poor solutions to recurring design or implementation problems, typically in object-oriented development. During comprehension and changes activities and due to the time-to-market, lack of understanding, and the developers’ experience, developers cannot always follow standard designing and coding techniques, i.e., design patterns. Consequently, they introduce design smells in their systems. In the literature, several authors claimed that design smells make object-oriented software systems more difficult to understand, more fault-prone, and harder to change than systems without such design smells. Yet, few of these authors empirically investigate the impact of design smells on software understandability and none of them authors studied the impact of design smells on developers’ effort.
+
+In this thesis, we propose three principal contributions. The first contribution is an empirical study to bring evidence of the impact of design smells on comprehension and change. We design and conduct two experiments with 59 subjects, to assess the impact of the composition of two Blob or two Spaghetti Code on the performance of developers performing comprehension and change tasks. We measure developers’ performance using: (1) the NASA task load index for their effort; (2) the time that they spent performing their tasks; and, (3) their percentages of correct answers. The results of the two experiments showed that two occurrences of Blob or Spaghetti Code design smells impedes significantly developers performance during comprehension and change tasks. The obtained results justify a posteriori previous researches on the specification and detection of design smells. Software development teams should warn developers against high number of occurrences of design smells and recommend refactorings at each step of the development to remove them when possible.
+
+In the second contribution, we investigate the relation between design smells and faults in classes from the point of view of developers who must fix faults. We study the impact of the presence of design smells on the effort required to fix faults, which we measure using three metrics: (1) the duration of the fixing period; (2) the number of fields and methods impacted by fault-fixes; and, (3) the entropy of the fault-fixes in the source code. We conduct an empirical study with 12 design smells detected in 54 releases of four systems: ArgoUML, Eclipse, Mylyn, and Rhino. Our results showed that the duration of the fixing period is longer for faults involving classes with design smells. Also, fixing faults in classes with design smells impacts more files, more fields, and more methods. We also observed that after a fault is fixed, the number of occurrences of design smells in the classes involved in the fault decreases. Understanding the impact of design smells on development effort is important to help development teams better assess and forecast the impact of their design decisions and therefore lead their effort to improve the quality of their software systems. Development teams should monitor and remove design smells from their software systems because they are likely to increase the change efforts.
+
+The third contribution concerns design smells detection. During maintenance and evolution tasks, it is important to have a tool able to detect design smells incrementally and iteratively. This incremental and iterative detection process could reduce costs, effort, and resources by allowing practitioners to identify and take into account occurrences of design smells as they find them during comprehension and change. Researchers have proposed approaches to detect occurrences of design smells but these approaches have currently four limitations: (1) they require extensive knowledge of design smells; (2) they have limited precision and recall; (3) they are not incremental; and (4) they cannot be applied on subsets of systems. To overcome these limitations, we introduce SMURF, a novel approach to detect design smells, based on a machine learning technique—support vector machines—and taking into account practitioners’ feedback. Through an empirical study involving three systems and four design smells, we showed that the accuracy of SMURF is greater than that of DETEX and BDTEX when detecting design smells occurrences. We also showed that SMURF can be applied in both intra-system and inter-system configurations. Finally, we reported that SMURF accuracy improves when using practitioners’ feedback." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Défaut de conception; Design smells; Anti-patrons; Antipatterns; Défauts de code; Code smells; Mauvaises odeurs; Bad smells; Détection; Detection; Restructurations; Restructuring; Refactorisations; Refactorings; Compréhension de programme; Program comprehension; Maintenance de programme; Program maintenance; Correction de faute; Fault fix; Génie logiciel empirique; Empirical software engineering; Applied Sciences - Computer Science / Sciences appliqués et technologie - Informatique (UMI : 0984); Thèse ou mémoire / Thesis or Dissertation; Informatique" name="citation_keywords"/>
+<meta content="Impacts and Detection of Design Smells" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Maiga, Abdou" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/8878/2/Maiga_Abdou_2012_these.pdf" name="citation_pdf_url"/>
+<meta content="2013-02-01" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/8878" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8878?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8878?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8878?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8878?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8878?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8878?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2958" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3001" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2958">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/3001"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/8878/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/8878">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/8878/mets.xml-->
+<h2 class="page-header first-page-header">Impacts and Detection of Design Smells</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Aïmeur, Esma</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Gueheneuc, Yann-Gael</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Maiga, Abdou</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2013-02-27T18:59:32Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2013-02-27T18:59:32Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2013-02-01</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2012-08</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/8878</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Défaut de conception</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Design smells</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Anti-patrons</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Antipatterns</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Défauts de code</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Code smells</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Mauvaises odeurs</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Bad smells</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Détection</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Detection</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Restructurations</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Restructuring</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Refactorisations</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Refactorings</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Compréhension de programme</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Program comprehension</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Maintenance de programme</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Program maintenance</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Correction de faute</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Fault fix</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Génie logiciel empirique</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Empirical software engineering</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Applied Sciences - Computer Science / Sciences appliqués et technologie - Informatique (UMI : 0984)</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Impacts and Detection of Design Smells</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Informatique</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les changements sont faits de façon continue dans le code source des logiciels pour prendre en compte les besoins des clients et corriger les fautes. Les changements continus peuvent conduire aux défauts de code et de conception. Les défauts de conception sont des mauvaises solutions à des problèmes récurrents de conception ou d’implémentation, généralement dans le développement orienté objet. Au cours des activités de compréhension et de changement et en raison du temps d’accès au marché, du manque de compréhension, et de leur expérience, les développeurs ne peuvent pas toujours suivre les normes de conception et les techniques de codage comme les patrons de conception. Par conséquent, ils introduisent des défauts de conception dans leurs systèmes. Dans la littérature, plusieurs auteurs ont fait valoir que les défauts de conception rendent les systèmes orientés objet plus difficile à comprendre, plus sujets aux fautes, et plus difficiles à changer que les systèmes sans les défauts de conception. Pourtant, seulement quelques-uns de ces auteurs ont fait une étude empirique sur l’impact des défauts de conception sur la compréhension et aucun d’entre eux n’a étudié l’impact des défauts de conception sur l’effort des développeurs pour corriger les fautes.
+
+Dans cette thèse, nous proposons trois principales contributions. La première contribution est une étude empirique pour apporter des preuves de l’impact des défauts de conception sur la compréhension et le changement. Nous concevons et effectuons deux expériences avec 59 sujets, afin d’évaluer l’impact de la composition de deux occurrences de Blob ou deux occurrences de spaghetti code sur la performance des développeurs effectuant des tâches de compréhension et de changement. Nous mesurons la performance des développeurs en utilisant: (1) l’indice de charge de travail de la NASA pour leurs efforts, (2) le temps qu’ils ont passé dans l’accomplissement de leurs tâches, et (3) les pourcentages de bonnes réponses. Les résultats des deux expériences ont montré que deux occurrences de Blob ou de spaghetti code sont un obstacle significatif pour la performance des développeurs lors de tâches de compréhension et de changement. Les résultats obtenus justifient les recherches antérieures sur la spécification et la détection des défauts de conception. Les équipes de développement de logiciels doivent mettre en garde les développeurs contre le nombre élevé d’occurrences de défauts de conception et recommander des refactorisations à chaque étape du processus de développement pour supprimer ces défauts de conception quand c’est possible.
+
+Dans la deuxième contribution, nous étudions la relation entre les défauts de conception et les fautes. Nous étudions l’impact de la présence des défauts de conception sur l’effort nécessaire pour corriger les fautes. Nous mesurons l’effort pour corriger les fautes à l’aide de trois indicateurs: (1) la durée de la période de correction, (2) le nombre de champs et méthodes touchés par la correction des fautes et (3) l’entropie des corrections de fautes dans le code-source. Nous menons une étude empirique avec 12 défauts de conception détectés dans 54 versions de quatre systèmes: ArgoUML, Eclipse, Mylyn, et Rhino. Nos résultats ont montré que la durée de la période de correction est plus longue pour les fautes impliquant des classes avec des défauts de conception. En outre, la correction des fautes dans les classes avec des défauts de conception fait changer plus de fichiers, plus les champs et des méthodes. Nous avons également observé que, après la correction  d’une faute, le nombre d’occurrences de défauts de conception dans les classes impliquées dans la correction de la faute diminue. Comprendre l’impact des défauts de conception sur l’effort des développeurs pour corriger les fautes est important afin d’aider les équipes de développement pour mieux évaluer et prévoir l’impact de leurs décisions de conception et donc canaliser leurs efforts pour améliorer la qualité de leurs systèmes. Les équipes de développement doivent contrôler et supprimer les défauts de conception de leurs systèmes car ils sont susceptibles d’augmenter les efforts de changement.
+
+La troisième contribution concerne la détection des défauts de conception. Pendant les activités de maintenance, il est important de disposer d’un outil capable de détecter les défauts de conception de façon incrémentale et itérative. Ce processus de détection incrémentale et itérative pourrait réduire les coûts, les efforts et les ressources en permettant aux praticiens d’identifier et de prendre en compte les occurrences de défauts de conception comme ils les trouvent lors de la compréhension et des changements. Les chercheurs ont proposé des approches pour détecter les occurrences de défauts de conception, mais ces approches ont actuellement quatre limites: (1) elles nécessitent une connaissance approfondie des défauts de conception, (2) elles ont une précision et un rappel limités, (3) elles ne sont pas itératives et incrémentales et (4) elles ne peuvent pas être appliquées sur des sous-ensembles de systèmes. Pour surmonter ces limitations, nous introduisons SMURF, une nouvelle approche pour détecter les défauts de conception, basé sur une technique d’apprentissage automatique — machines à vecteur de support — et prenant en compte les retours des praticiens. Grâce à une étude empirique portant sur trois systèmes et quatre défauts de conception, nous avons montré que la précision et le rappel de SMURF sont supérieurs à ceux de DETEX et BDTEX lors de la détection des occurrences de défauts de conception. Nous avons également montré que SMURF peut être appliqué à la fois dans les configurations intra-système et inter-système. Enfin, nous avons montré que la précision et le rappel de SMURF sont améliorés quand on prend en compte les retours des praticiens.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Changes are continuously made in the source code to take into account the needs of the customers and fix the faults. Continuous change can lead to antipatterns and code smells, collectively called “design smells” to occur in the source code. Design smells are poor solutions to recurring design or implementation problems, typically in object-oriented development. During comprehension and changes activities and due to the time-to-market, lack of understanding, and the developers’ experience, developers cannot always follow standard designing and coding techniques, i.e., design patterns. Consequently, they introduce design smells in their systems. In the literature, several authors claimed that design smells make object-oriented software systems more difficult to understand, more fault-prone, and harder to change than systems without such design smells. Yet, few of these authors empirically investigate the impact of design smells on software understandability and none of them authors studied the impact of design smells on developers’ effort.
+
+In this thesis, we propose three principal contributions. The first contribution is an empirical study to bring evidence of the impact of design smells on comprehension and change. We design and conduct two experiments with 59 subjects, to assess the impact of the composition of two Blob or two Spaghetti Code on the performance of developers performing comprehension and change tasks. We measure developers’ performance using: (1) the NASA task load index for their effort; (2) the time that they spent performing their tasks; and, (3) their percentages of correct answers. The results of the two experiments showed that two occurrences of Blob or Spaghetti Code design smells impedes significantly developers performance during comprehension and change tasks. The obtained results justify a posteriori previous researches on the specification and detection of design smells. Software development teams should warn developers against high number of occurrences of design smells and recommend refactorings at each step of the development to remove them when possible.
+
+In the second contribution, we investigate the relation between design smells and faults in classes from the point of view of developers who must fix faults. We study the impact of the presence of design smells on the effort required to fix faults, which we measure using three metrics: (1) the duration of the fixing period; (2) the number of fields and methods impacted by fault-fixes; and, (3) the entropy of the fault-fixes in the source code. We conduct an empirical study with 12 design smells detected in 54 releases of four systems: ArgoUML, Eclipse, Mylyn, and Rhino. Our results showed that the duration of the fixing period is longer for faults involving classes with design smells. Also, fixing faults in classes with design smells impacts more files, more fields, and more methods. We also observed that after a fault is fixed, the number of occurrences of design smells in the classes involved in the fault decreases. Understanding the impact of design smells on development effort is important to help development teams better assess and forecast the impact of their design decisions and therefore lead their effort to improve the quality of their software systems. Development teams should monitor and remove design smells from their software systems because they are likely to increase the change efforts.
+
+The third contribution concerns design smells detection. During maintenance and evolution tasks, it is important to have a tool able to detect design smells incrementally and iteratively. This incremental and iterative detection process could reduce costs, effort, and resources by allowing practitioners to identify and take into account occurrences of design smells as they find them during comprehension and change. Researchers have proposed approaches to detect occurrences of design smells but these approaches have currently four limitations: (1) they require extensive knowledge of design smells; (2) they have limited precision and recall; (3) they are not incremental; and (4) they cannot be applied on subsets of systems. To overcome these limitations, we introduce SMURF, a novel approach to detect design smells, based on a machine learning technique—support vector machines—and taking into account practitioners’ feedback. Through an empirical study involving three systems and four design smells, we showed that the accuracy of SMURF is greater than that of DETEX and BDTEX when detecting design smells occurrences. We also showed that SMURF can be applied in both intra-system and inter-system configurations. Finally, we reported that SMURF accuracy improves when using practitioners’ feedback.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F8878&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Informatique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/8878/Maiga_Abdou_2012_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/8878/Maiga_Abdou_2012_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Maiga_Abdou_2012_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/8878/Maiga_Abdou_2012_these.pdf?sequence=2&amp;isAllowed=y">Maiga_Abdou_2012_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">882.2Kb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3001/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a> [795]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/8878">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

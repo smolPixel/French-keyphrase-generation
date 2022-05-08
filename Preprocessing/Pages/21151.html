@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Étude des propriétés magnétiques des aimants frustrés Ba(Dy,Ho)2O4 et SrHo2O4 par diffusion de neutrons</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Bianchi, Andrea" name="DC.contributor">
+<meta content="Prévost, Bobby" name="DC.creator">
+<meta content="2018-12-18T18:40:54Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2018-12-18T18:40:54Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2018-10-18" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2018-07" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/21151" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Physique de la matière condensée" name="DC.subject" xml:lang="fr"/>
+<meta content="Magnétisme" name="DC.subject" xml:lang="fr"/>
+<meta content="Frustration magnétique" name="DC.subject" xml:lang="fr"/>
+<meta content="Diffusion de neutrons" name="DC.subject" xml:lang="fr"/>
+<meta content="Diffraction de neutrons" name="DC.subject" xml:lang="fr"/>
+<meta content="Spectroscopie" name="DC.subject" xml:lang="fr"/>
+<meta content="Champs cristallins électriques" name="DC.subject" xml:lang="fr"/>
+<meta content="Magnétisme à basse dimension" name="DC.subject" xml:lang="fr"/>
+<meta content="Transition de phase" name="DC.subject" xml:lang="fr"/>
+<meta content="Croissance de cristaux" name="DC.subject" xml:lang="fr"/>
+<meta content="Condensed matter physics" name="DC.subject" xml:lang="fr"/>
+<meta content="Magnetism" name="DC.subject" xml:lang="fr"/>
+<meta content="Magnetic frustration" name="DC.subject" xml:lang="fr"/>
+<meta content="Neutron scattering" name="DC.subject" xml:lang="fr"/>
+<meta content="Neutron diffraction" name="DC.subject" xml:lang="fr"/>
+<meta content="Spectroscopy" name="DC.subject" xml:lang="fr"/>
+<meta content="Crystalline electric field" name="DC.subject" xml:lang="fr"/>
+<meta content="Low-dimensional magnetism" name="DC.subject" xml:lang="fr"/>
+<meta content="Phase transition" name="DC.subject" xml:lang="fr"/>
+<meta content="Crystal growth" name="DC.subject" xml:lang="fr"/>
+<meta content="Physics - Condensed Matter / Physique - Matière condensée (UMI : 0611)" name="DC.subject" xml:lang="fr"/>
+<meta content="Étude des propriétés magnétiques des aimants frustrés Ba(Dy,Ho)2O4 et SrHo2O4 par diffusion de neutrons" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Les aimants frustrés sont des systèmes dans lesquels des moments magnétiques localisés interagissent grâce à des interactions d’échange en compétition, créant une forte dégénérescence de l’état fondamental. Cette frustration est généralement induite par la géométrie du système, mais peut tout autant provenir d’un équilibre précaire des forces d’interactions magnétiques J1–J2 avec les premier et deuxième plus proches voisins. Les systèmes étudiés appartiennent à la famille AkLn2O4 (où Ak = métal alcalino-terreux et Ln = lanthanide) dans lesquels les atomes magnétiques sont pavés de manière hexagonale sur le plan ab et forment des chaînes zigzag le long de l’axe c. Dans cette structure, les ions de terre rare se situent à l’intérieur d’octaèdres d’oxygènes déformés, menant à deux sites magnétiques inéquivalents avec des champs cristallins distincts pouvant être décrits par un système effectif unidimensionnel.
+
+C’est en mettant à profit des techniques de pointe en diffraction et en spectroscopie de neutrons qu’il est possible de sonder les interactions magnétiques entre les atomes des composés et de déterminer les excitations des états fondamentaux. Des mesures en ce sens ont été effectuées avec de nouveaux échantillons polycristallins de Ba(Dy,Ho)2O4, préparés par réaction à l’état solide. En couplant ces résultats à un calcul détaillé des champs cristallins électriques, il a été possible de démontrer l’indépendance des ordres magnétiques se trouvant sur chacun des sites de terres rares. Ainsi, l’affinement des structures magnétiques de ces deux systèmes montre la coexistence de deux types d’ordres à longue portée. Dans les deux cas, on y observe également une vaste diffraction diffuse pouvant être modélisée à l’aide d’un modèle d’interaction unidimensionnel avec les premier et deuxième plus proches voisins. Ces corrélations persistent à des températures bien en deçà des températures de transitions magnétiques, indiquant la présence de sites où ordre et fluctuations magnétiques cohabitent.
+
+Une autre caractéristique de cette famille de composés est la supposition de phases magnétiques induites sous l’application d’un champ magnétique. Dans le SrHo2O4, des mesures d’aimantation en fonction du champ magnétique montrent ainsi la présence d’un large plateau se situant au tiers de l’aimantation totale. Cette phase magnétique induite est caractérisée par des mesures de diffraction de neutrons sur des monocristaux pour lesquels la croissance a été effectuée par la technique optique à zone flottante. De fait, l’application d’un champ magnétique montre l’existence d’une transition d’un des sites magnétiques d’un ordre double Néel vers un ordre à courte portée intermédiaire. L’affinement de la structure magnétique, complexe en raison de la courte portée des interactions, suggère d’une part la présence d’aimantation non-uniforme d’un site à l’autre et, d’autre part, la présence d’un moment magnétique transversal.
+
+Une revue de concepts théoriques de magnétisme se retrouve dans le premier chapitre de cette thèse, afin de définir la frustration. Le prochain chapitre est une courte revue de la littérature des systèmes de cette famille, avec l’accent sur les principales caractéristiques de la structure cristalline et magnétique, ainsi que du développement de plateaux dans l’aimantation. Le troisième chapitre présente la caractérisation de la structure magnétique du BaDy2O4 et du BaHo2O4 par diffraction et spectroscopie de neutron. Finalement, une description de la phase magnétique induite en champ magnétique du SrHo2O4 est faite." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Frustrated magnets are systems where localized magnetic moments interact through competing exchange interactions, creating a degeneracy of the ground state. While normally introduced by the geometry of the systems, the frustration can originate from the delicate balance of the strength of the interactions J1–J2 between the nearest and the next-nearest neighbours. The systems studied belong to the AkLn2O4 family (where Ak = alkaline earth metal and Ln = lanthanide) for which the lattices of magnetic rare earth ions are built from hexagonal tiles in the ab-plane, and zigzag chains along the c-axis. In this structure, each rare earth ion is located inside a differently distorted oxygen octahedron, resulting in two inequivalent rare earth sites with a distinct crystal field environment. It has been argued that the unusual magnetism in these materials originates from the chains, which can be described as an effective one-dimensional system.
+
+
+Using novel techniques in neutron diffraction and spectroscopy, it is possible to probe the magnetic interactions between the atoms within a system and to determine the excitations of the ground states. Measurements were performed with the new polycrystalline samples Ba(Dy,Ho)2O4, prepared by solid state reaction. Combined with the detailed calculation of the crystal electric field, it was possible to demonstrate the independence of the magnetic orders located on each rare earth site. Thus, the refinement of the magnetic structures of both system shows the coexistence of two types of long range orders. In the two cases, a vast diffuse scattering is observed, which was modelled using a one- dimensional interaction model between the nearest and next-nearest neighbours. These correlations persist at temperatures well below the magnetic transitions temperatures, a sign that there are sites where magnetic order and fluctuations are in cohabitation.
+
+
+Another characteristic of this family of compounds is the assumption of field induced magnetic phase. In SrHo2O4, measurements of the magnetic field dependence of the magnetization show the presence of a large plateau located at one third of the total magnetization. This induced phase was characterized using neutron diffraction on single crystals grown with an optical floating zone furnace. Indeed, the application of a magnetic field uncovers a transition of one of the magnetic sites from a double Néel to a short range intermediary phase. The refinement of the structure, complex due to the short range nature of the interactions, suggests on one hand the presence of a non-uniform magnetization of a site, and on the other, the presence of a transversal magnetic moment.
+
+
+The first chapter of this thesis reviews the concepts of theoretical magnetism to de- fine the frustration. The next chapter is a short literature review of the systems studied, outlining the principal characteristics of the crystalline and magnetic structures, as well as the development of plateaux in magnetization. The third chapter presents the characterization of the magnetic structure of BaDy2O4 and BaHo2O4 through neutron diffraction and neutron spectroscopy. At last, the magnetic field-induced phase in SrHo2O4 is described." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Physique de la matière condensée; Magnétisme; Frustration magnétique; Diffusion de neutrons; Diffraction de neutrons; Spectroscopie; Champs cristallins électriques; Magnétisme à basse dimension; Transition de phase; Croissance de cristaux; Condensed matter physics; Magnetism; Magnetic frustration; Neutron scattering; Neutron diffraction; Spectroscopy; Crystalline electric field; Low-dimensional magnetism; Phase transition; Crystal growth; Physics - Condensed Matter / Physique - Matière condensée (UMI : 0611); Thèse ou mémoire / Thesis or Dissertation; Physique" name="citation_keywords"/>
+<meta content="Étude des propriétés magnétiques des aimants frustrés Ba(Dy,Ho)2O4 et SrHo2O4 par diffusion de neutrons" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Prévost, Bobby" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/21151/2/Prevost_Bobby_2018_these.pdf" name="citation_pdf_url"/>
+<meta content="2018-10-18" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/21151" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21151?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21151?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21151?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21151?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21151?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21151?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2329" role="menuitem">Faculté des arts et des sciences – Département de physique</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2990" role="menuitem">Faculté des arts et des sciences – Département de physique - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2329">Faculté des arts et des sciences – Département de physique</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2990">Faculté des arts et des sciences – Département de physique - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2990"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/21151/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/21151">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/21151/mets.xml-->
+<h2 class="page-header first-page-header">Étude des propriétés magnétiques des aimants frustrés Ba(Dy,Ho)2O4 et SrHo2O4 par diffusion de neutrons</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Bianchi, Andrea</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Prévost, Bobby</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2018-12-18T18:40:54Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2018-12-18T18:40:54Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2018-10-18</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2018-07</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/21151</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Physique de la matière condensée</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Magnétisme</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Frustration magnétique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Diffusion de neutrons</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Diffraction de neutrons</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Spectroscopie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Champs cristallins électriques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Magnétisme à basse dimension</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Transition de phase</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Croissance de cristaux</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Condensed matter physics</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Magnetism</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Magnetic frustration</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Neutron scattering</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Neutron diffraction</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Spectroscopy</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Crystalline electric field</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Low-dimensional magnetism</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Phase transition</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Crystal growth</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Physics - Condensed Matter / Physique - Matière condensée (UMI : 0611)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Étude des propriétés magnétiques des aimants frustrés Ba(Dy,Ho)2O4 et SrHo2O4 par diffusion de neutrons</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Physique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les aimants frustrés sont des systèmes dans lesquels des moments magnétiques localisés interagissent grâce à des interactions d’échange en compétition, créant une forte dégénérescence de l’état fondamental. Cette frustration est généralement induite par la géométrie du système, mais peut tout autant provenir d’un équilibre précaire des forces d’interactions magnétiques J1–J2 avec les premier et deuxième plus proches voisins. Les systèmes étudiés appartiennent à la famille AkLn2O4 (où Ak = métal alcalino-terreux et Ln = lanthanide) dans lesquels les atomes magnétiques sont pavés de manière hexagonale sur le plan ab et forment des chaînes zigzag le long de l’axe c. Dans cette structure, les ions de terre rare se situent à l’intérieur d’octaèdres d’oxygènes déformés, menant à deux sites magnétiques inéquivalents avec des champs cristallins distincts pouvant être décrits par un système effectif unidimensionnel.
+
+C’est en mettant à profit des techniques de pointe en diffraction et en spectroscopie de neutrons qu’il est possible de sonder les interactions magnétiques entre les atomes des composés et de déterminer les excitations des états fondamentaux. Des mesures en ce sens ont été effectuées avec de nouveaux échantillons polycristallins de Ba(Dy,Ho)2O4, préparés par réaction à l’état solide. En couplant ces résultats à un calcul détaillé des champs cristallins électriques, il a été possible de démontrer l’indépendance des ordres magnétiques se trouvant sur chacun des sites de terres rares. Ainsi, l’affinement des structures magnétiques de ces deux systèmes montre la coexistence de deux types d’ordres à longue portée. Dans les deux cas, on y observe également une vaste diffraction diffuse pouvant être modélisée à l’aide d’un modèle d’interaction unidimensionnel avec les premier et deuxième plus proches voisins. Ces corrélations persistent à des températures bien en deçà des températures de transitions magnétiques, indiquant la présence de sites où ordre et fluctuations magnétiques cohabitent.
+
+Une autre caractéristique de cette famille de composés est la supposition de phases magnétiques induites sous l’application d’un champ magnétique. Dans le SrHo2O4, des mesures d’aimantation en fonction du champ magnétique montrent ainsi la présence d’un large plateau se situant au tiers de l’aimantation totale. Cette phase magnétique induite est caractérisée par des mesures de diffraction de neutrons sur des monocristaux pour lesquels la croissance a été effectuée par la technique optique à zone flottante. De fait, l’application d’un champ magnétique montre l’existence d’une transition d’un des sites magnétiques d’un ordre double Néel vers un ordre à courte portée intermédiaire. L’affinement de la structure magnétique, complexe en raison de la courte portée des interactions, suggère d’une part la présence d’aimantation non-uniforme d’un site à l’autre et, d’autre part, la présence d’un moment magnétique transversal.
+
+Une revue de concepts théoriques de magnétisme se retrouve dans le premier chapitre de cette thèse, afin de définir la frustration. Le prochain chapitre est une courte revue de la littérature des systèmes de cette famille, avec l’accent sur les principales caractéristiques de la structure cristalline et magnétique, ainsi que du développement de plateaux dans l’aimantation. Le troisième chapitre présente la caractérisation de la structure magnétique du BaDy2O4 et du BaHo2O4 par diffraction et spectroscopie de neutron. Finalement, une description de la phase magnétique induite en champ magnétique du SrHo2O4 est faite.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Frustrated magnets are systems where localized magnetic moments interact through competing exchange interactions, creating a degeneracy of the ground state. While normally introduced by the geometry of the systems, the frustration can originate from the delicate balance of the strength of the interactions J1–J2 between the nearest and the next-nearest neighbours. The systems studied belong to the AkLn2O4 family (where Ak = alkaline earth metal and Ln = lanthanide) for which the lattices of magnetic rare earth ions are built from hexagonal tiles in the ab-plane, and zigzag chains along the c-axis. In this structure, each rare earth ion is located inside a differently distorted oxygen octahedron, resulting in two inequivalent rare earth sites with a distinct crystal field environment. It has been argued that the unusual magnetism in these materials originates from the chains, which can be described as an effective one-dimensional system.
+
+
+Using novel techniques in neutron diffraction and spectroscopy, it is possible to probe the magnetic interactions between the atoms within a system and to determine the excitations of the ground states. Measurements were performed with the new polycrystalline samples Ba(Dy,Ho)2O4, prepared by solid state reaction. Combined with the detailed calculation of the crystal electric field, it was possible to demonstrate the independence of the magnetic orders located on each rare earth site. Thus, the refinement of the magnetic structures of both system shows the coexistence of two types of long range orders. In the two cases, a vast diffuse scattering is observed, which was modelled using a one- dimensional interaction model between the nearest and next-nearest neighbours. These correlations persist at temperatures well below the magnetic transitions temperatures, a sign that there are sites where magnetic order and fluctuations are in cohabitation.
+
+
+Another characteristic of this family of compounds is the assumption of field induced magnetic phase. In SrHo2O4, measurements of the magnetic field dependence of the magnetization show the presence of a large plateau located at one third of the total magnetization. This induced phase was characterized using neutron diffraction on single crystals grown with an optical floating zone furnace. Indeed, the application of a magnetic field uncovers a transition of one of the magnetic sites from a double Néel to a short range intermediary phase. The refinement of the structure, complex due to the short range nature of the interactions, suggests on one hand the presence of a non-uniform magnetization of a site, and on the other, the presence of a transversal magnetic moment.
+
+
+The first chapter of this thesis reviews the concepts of theoretical magnetism to de- fine the frustration. The next chapter is a short literature review of the systems studied, outlining the principal characteristics of the crystalline and magnetic structures, as well as the development of plateaux in magnetization. The third chapter presents the characterization of the magnetic structure of BaDy2O4 and BaHo2O4 through neutron diffraction and neutron spectroscopy. At last, the magnetic field-induced phase in SrHo2O4 is described.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F21151&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Physique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/21151/Prevost_Bobby_2018_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/21151/Prevost_Bobby_2018_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Prevost_Bobby_2018_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/21151/Prevost_Bobby_2018_these.pdf?sequence=2&amp;isAllowed=y">Prevost_Bobby_2018_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">36.22Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2990/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2990">Faculté des arts et des sciences – Département de physique - Thèses et mémoires</a> [501]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/21151">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

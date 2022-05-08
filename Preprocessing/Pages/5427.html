@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Investigating the role of potential genetic markers that can predict risk for steroid refractory inflammatory bowel disease</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Amre, Devendra" name="DC.contributor">
+<meta content="Seidman, Ernest" name="DC.contributor">
+<meta content="Krupoves, Alfreda" name="DC.creator">
+<meta content="2011-10-27T16:34:15Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2011-10-27T16:34:15Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2011-09-01" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2010-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/5427" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Épidémiologie génétique" name="DC.subject" xml:lang="en"/>
+<meta content="Genetic epidemiology" name="DC.subject" xml:lang="en"/>
+<meta content="Étude d’association génétique" name="DC.subject" xml:lang="en"/>
+<meta content="Genetic association study" name="DC.subject" xml:lang="en"/>
+<meta content="Gène candidat" name="DC.subject" xml:lang="en"/>
+<meta content="Gene candidate" name="DC.subject" xml:lang="en"/>
+<meta content="Maladie inflammatoire de l’intestin" name="DC.subject" xml:lang="en"/>
+<meta content="Inflammatory bowel disease" name="DC.subject" xml:lang="en"/>
+<meta content="Maladie de Crohn" name="DC.subject" xml:lang="en"/>
+<meta content="Crohn’s disease" name="DC.subject" xml:lang="en"/>
+<meta content="Réponse aux médicaments" name="DC.subject" xml:lang="en"/>
+<meta content="Drug response" name="DC.subject" xml:lang="en"/>
+<meta content="Variations interindividuelles" name="DC.subject" xml:lang="en"/>
+<meta content="Inter-individual variations" name="DC.subject" xml:lang="en"/>
+<meta content="ABCB1" name="DC.subject" xml:lang="en"/>
+<meta content="ABCB1" name="DC.subject" xml:lang="en"/>
+<meta content="NR3C1" name="DC.subject" xml:lang="en"/>
+<meta content="NR3C1" name="DC.subject" xml:lang="en"/>
+<meta content="Polymorphismes d’un nucléotide simple (SNPs)" name="DC.subject" xml:lang="en"/>
+<meta content="Single nucleotide polymorphisms (SNPs)" name="DC.subject" xml:lang="en"/>
+<meta content="Health Sciences - Epidemiology / Sciences de la santé - Épidémiologie (UMI : 0766)" name="DC.subject" xml:lang="en"/>
+<meta content="Investigating the role of potential genetic markers that can predict risk for steroid refractory inflammatory bowel disease" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Contexte - La variation interindividuelle de la réponse aux corticostéroïdes (CS) est un problème important chez les patients atteints de maladies inflammatoires d’intestin. Ce problème est bien plus accentué chez les enfants avec la prévalence de la corticodépendance extrêmement (~40 %) élevée. La maladie réfractaire au CS a des répercussions sur le développement et le bien-être physique et psychologique des patients et impose des coûts médicaux élevés, particulièrement avec la maladie active comparativement à la maladie en rémission, le coût étant 2-3 fois plus élevé en ambulatoire et 20 fois plus élevé en hôpital. Il est ainsi primordial de déterminer les marqueurs prédictifs de la réponse aux CS. Les efforts précédents de découvrir les marqueurs cliniques et démographiques ont été équivoques, ce qui souligne davantage le besoin de marqueurs moléculaires. L'action des CS se base sur des processus complexes déterminés génétiquement. Deux gènes, le ABCB1, appartenant à la famille des transporteurs transmembraneaux, et le NR3C1, encodant le récepteur glucocorticoïde, sont des éléments importants des voies métaboliques. Nous avons postulé que les variations dans ces gènes ont un rôle dans la variabilité observée de la réponse aux CS et pourraient servir en tant que les marqueurs prédictifs.
+Objectifs - Nous avons visé à: (1) examiner le fardeau de la maladie réfractaire aux CS chez les enfants avec la maladie de Crohn (MC) et le rôle des caractéristiques cliniques et démographiques potentiellement liés à la réponse; (2) étudier l'association entre les variantes d'ADN de gène ABCB1 et la réponse aux CS; (3) étudier les associations entre les variantes d'ADN de gène NR3C1 et la réponse aux CS.
+Méthodes - Afin d’atteindre ces objectifs, nous avons mené une étude de cohorte des patients recrutés dans deux cliniques pédiatriques tertiaires de gastroentérologie à l’Ottawa (CHEO) et à Montréal (HSJ). Les patients avec la MC ont été diagnostiqués avant l'âge de 18 ans selon les critères standard radiologiques, endoscopiques et histopathologiques. La corticorésistance et la corticodépendance ont été définies en adaptant les critères reconnus. L’ADN, acquise soit du sang ou de la salive, était génotypée pour des variations à travers de gènes ABCB1 et NR3C1 sélectionnées à l’aide de la méthodologie de tag-SNP. La fréquence de la corticorésistance et la corticodépendance a été estimée assumant une distribution binomiale. Les associations entre les variables cliniques/démographiques et la réponse aux CS ont été examinées en utilisant la régression logistique en ajustant pour des variables potentielles de confusion. Les associations entre variantes génétiques de ABCB1 et NR3C1 et la réponse aux CS ont été examinées en utilisant la régression logistique assumant différents modèles de la transmission. Les associations multimarqueurs ont été examinées en utilisant l'analyse de haplotypes. Les variantes nongénotypées ont été imputées en utilisant les données de HAPMAP et les associations avec SNPs imputés ont été examinées en utilisant des méthodes standard.
+Résultats - Parmi 645 patients avec la MC, 364 (56.2%) ont reçu CS. La majorité de patients étaient des hommes (54.9 %); présentaient la maladie de l’iléocôlon (51.7%) ou la maladie inflammatoire (84.6%) au diagnostic et étaient les Caucasiens (95.6 %). Huit pourcents de patients étaient corticorésistants et 40.9% - corticodépendants. Le plus bas âge au diagnostic (OR=1.34, 95% CI: 1.03-3.01, p=0.040), la maladie cœxistante de la région digestive supérieure (OR=1.35, 95% CI: 95% CI: 1.06-3.07, p=0.031) et l’usage simultané des immunomodulateurs (OR=0.35, 95% CI: 0.16-0.75, p=0.007) ont été associés avec la corticodépendance. Un total de 27 marqueurs génotypés à travers de ABCB1 (n=14) et NR3C1 (n=13) ont été en l'Équilibre de Hardy-Weinberg, à l’exception d’un dans le gène NR3C1 (rs258751, exclu). 
+Dans ABCB1, l'allèle rare de rs2032583 (OR=0.56, 95% CI: 0.34-0.95, p=0.029) et génotype hétérozygote (OR=0.52, 95% CI: 0.28-0.95 p=0.035) ont été négativement associes avec la dépendance de CS. Un haplotype à 3 marqueurs, comprenant le SNP fonctionnel rs1045642 a été associé avec la dépendance de CS (p empirique=0.004). 24 SNPs imputés introniques et six haplotypes ont été significativement associés avec la dépendance de CS. Aucune de ces associations n'a cependant maintenu la signification après des corrections pour des comparaisons multiples. Dans NR3C1, trois SNPs: rs10482682 (OR=1.43, 95% CI: 0.99-2.08, p=0.047), rs6196 (OR=0.55, 95% CI: 0.31-0.95, p=0.024), et rs2963155 (OR=0.64, 95% CI: 0.42-0.98, p=0.039), ont été associés sous un modèle additif, tandis que rs4912911 (OR=0.37, 95% CI: 0.13-1.00, p=0.03) et rs2963156 (OR=0.32, 95% CI: 0.07-1.12, p=0.047) - sous un modèle récessif. Deux haplotypes incluant ces 5 SNPs (AAACA et GGGCG) ont été significativement (p=0.006 et 0.01 empiriques) associés avec la corticodépendance. 19 SNPs imputés ont été associés avec la dépendance de CS. Deux haplotypes multimarqueurs (p=0.001), incluant les SNPs génotypés et imputés, ont été associés avec la dépendance de CS.
+Conclusion - Nos études suggèrent que le fardeau de la corticodépendance est élevé parmi les enfants avec le CD. Les enfants plus jeunes au diagnostic et ceux avec la maladie coexistante de la région supérieure ainsi que ceux avec des variations dans les gènes ABCB1 et NR3C1 étaient plus susceptibles de devenir corticodépendants." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="Background - Inter-individual variation in response to treatment by corticosteroids (CS) is an important problem in the management of inflammatory bowel disease (IBD) patient’s. This problem is even more prominent in children, the prevalence of steroid dependence (~40%) in whom is extremely high. Steroid refractoriness has a considerable impact on the physical and psychological development of these children, also imposing high medical costs related to treatment. Active disease, as opposed to quiescent, increases medical costs 2-3 times in ambulatory patients and 20 times in hospitalized cases. Identifying markers that could predict steroid response is therefore a high clinical priority. Previous attempts to investigate potential clinical and demographic markers have been equivocal, highlighting the need for further investigations of other predictive markers. It is well known that the action of CS entails complex processes controlled by genetic factors. Two genes, the ABCB1 gene, which belongs to the family of trans-membrane transporters, and the NR3C1 gene, coding for the glucocorticoid receptor, are major elements of the pathway. We postulated that inter-individual variations in these genes may play a role in the observed variability of the response to CS and could serve as potential predictors. 
+Objectives - We aimed to: (1) examine the burden of steroid refractoriness in children diagnosed with CD and explore the potential clinical/demographic factors related to CS response; (2) study the association between DNA variants in the ABCB1 gene and CS response; (3) investigate the associations between DNA variants in the NR3C1 gene and CS response. 
+Methods - We investigated these objectives in a cohort of CD patients recruited from two tertiary paediatric gastroenterology clinics from Ottawa (CHEO) and Montreal (HSJ). CD patients diagnosed prior to age 18 using standard clinical, radiological, endoscopic and histopathological criteria were included. Published criteria were adapted to define CS-resistance and dependence. DNA acquired from blood and/or saliva was genotyped for variations across the ABCB1 and NR3C1 genes selected using the tag-SNP methodology. The frequencies of steroid resistance and dependence were estimated assuming a binomial distribution. Associations between clinical/demographic variables and steroid responses were examined using logistic regression modeling after accounting for potential confounding variables. Associations between ABCB1 and NR3C1 genes’ variants and steroid responses were examined using logistic regression assuming different models of inheritance. Multi-marker associations were examined via haplotype analysis. Un-genotyped variants in the genes were imputed using HAPMAP data as the reference panel and associations with imputed SNPs examined using standard methods. 
+Results - Among 645 CD patients diagnosed at the study centers, 364 (56.2%) received corticosteroids during the first year since diagnosis. The majority of patients were male (54.9%), had inflammatory (84.6%), ileo-colonic (51.7%) disease phenotypes at diagnosis and were Caucasians (95.6%). Eight percent of patients developed CS-resistance and 40.9% became CS-dependent. Younger age at diagnosis (OR=1.34, 95% CI: 1.03-3.01, p=0.040), coexisting upper digestive tract involvement (OR=1.35, 95% CI: 1.06-3.07, p=0.031) and concomitant immunomodulators use (OR=0.35, 95% CI: 0.16-0.75, p=0.007) were significantly associated with CS-dependency in multivariate analysis. From among the 27 markers genotyped across the ABCB1 (n=14) and NR3C1 genes (n=13), all except one in NR3C1 gene (rs258751, excluded) were in Hardy-Weinberg Equilibrium. For ABCB1, the rare allele of rs2032583 (OR=0.56, 95% CI: 0.34-0.95, p=0.029) and heterozygous genotype (OR=0.52, 95% CI: 0.28-0.95, p=0.035) conferred protection from CS dependency. A 3-marker haplotype including the functional SNP rs1045642 was associated with CS-dependence (empiric p-value=0.004). On imputation 24 intronic SNPs and six haplotypes were statistically significantly associated with CS dependence. None of these associations however maintained significance after corrections for multiple comparisons. 
+For the NR3C1 gene 3 SNPs, rs10482682 (OR=1.43, 95% CI: 0.99-2.08, p=0.047), rs6196 (OR=0.55, 95% CI: 0.31-0.95, p=0.024), and rs2963155 (OR=0.64, 95% CI: 0.42-0.98, p=0.039), showed associations under an additive model whereas rs4912911 (OR=0.37, 95% CI: 0.13-1.00, p=0.03) and rs2963156 (OR=0.32, 95% CI: 0.07-1.12, p=0.047) showed associations under a recessive model. Two haplotypes encompassing these 5 SNPs (AAACA and GGGCG) were significantly (empirical p=0.006 and 0.01 respectively) were associated with CS-dependence. On imputation 19 SNPs were associated with CS-dependence. Two multi-marker haplotypes (p-values=0.001 each) including genotyped and imputed SNPs conferred susceptibility for CS-dependency. Conclusions - Our studies suggest that the burden of steroid dependence is high among children with CD. Children diagnosed at a younger age, those with co-existent upper tract disease and with variations in the ABCB1 and NR3C1 genes were more likely to become CS dependent." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Épidémiologie génétique; Genetic epidemiology; Étude d’association génétique; Genetic association study; Gène candidat; Gene candidate; Maladie inflammatoire de l’intestin; Inflammatory bowel disease; Maladie de Crohn; Crohn’s disease; Réponse aux médicaments; Drug response; Variations interindividuelles; Inter-individual variations; ABCB1; ABCB1; NR3C1; NR3C1; Polymorphismes d’un nucléotide simple (SNPs); Single nucleotide polymorphisms (SNPs); Health Sciences - Epidemiology / Sciences de la santé - Épidémiologie (UMI : 0766); Thèse ou mémoire / Thesis or Dissertation; Santé publique" name="citation_keywords"/>
+<meta content="Investigating the role of potential genetic markers that can predict risk for steroid refractory inflammatory bowel disease" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Krupoves, Alfreda" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/5427/4/Alfreda_Krupoves_2010_these.pdf" name="citation_pdf_url"/>
+<meta content="2011-09-01" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/5427" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5427?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5427?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5427?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5427?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5427?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5427?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/5427/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/5427">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/5427/mets.xml-->
+<h2 class="page-header first-page-header">Investigating the role of potential genetic markers that can predict risk for steroid refractory inflammatory bowel disease</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Amre, Devendra</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Seidman, Ernest</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Krupoves, Alfreda</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2011-10-27T16:34:15Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2011-10-27T16:34:15Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2011-09-01</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2010-12</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/5427</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Épidémiologie génétique</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Genetic epidemiology</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Étude d’association génétique</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Genetic association study</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Gène candidat</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Gene candidate</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Maladie inflammatoire de l’intestin</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Inflammatory bowel disease</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Maladie de Crohn</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Crohn’s disease</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Réponse aux médicaments</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Drug response</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Variations interindividuelles</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Inter-individual variations</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">ABCB1</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">ABCB1</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">NR3C1</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">NR3C1</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Polymorphismes d’un nucléotide simple (SNPs)</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Single nucleotide polymorphisms (SNPs)</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Health Sciences - Epidemiology / Sciences de la santé - Épidémiologie (UMI : 0766)</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Investigating the role of potential genetic markers that can predict risk for steroid refractory inflammatory bowel disease</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Santé publique</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Contexte - La variation interindividuelle de la réponse aux corticostéroïdes (CS) est un problème important chez les patients atteints de maladies inflammatoires d’intestin. Ce problème est bien plus accentué chez les enfants avec la prévalence de la corticodépendance extrêmement (~40 %) élevée. La maladie réfractaire au CS a des répercussions sur le développement et le bien-être physique et psychologique des patients et impose des coûts médicaux élevés, particulièrement avec la maladie active comparativement à la maladie en rémission, le coût étant 2-3 fois plus élevé en ambulatoire et 20 fois plus élevé en hôpital. Il est ainsi primordial de déterminer les marqueurs prédictifs de la réponse aux CS. Les efforts précédents de découvrir les marqueurs cliniques et démographiques ont été équivoques, ce qui souligne davantage le besoin de marqueurs moléculaires. L'action des CS se base sur des processus complexes déterminés génétiquement. Deux gènes, le ABCB1, appartenant à la famille des transporteurs transmembraneaux, et le NR3C1, encodant le récepteur glucocorticoïde, sont des éléments importants des voies métaboliques. Nous avons postulé que les variations dans ces gènes ont un rôle dans la variabilité observée de la réponse aux CS et pourraient servir en tant que les marqueurs prédictifs.
+Objectifs - Nous avons visé à: (1) examiner le fardeau de la maladie réfractaire aux CS chez les enfants avec la maladie de Crohn (MC) et le rôle des caractéristiques cliniques et démographiques potentiellement liés à la réponse; (2) étudier l'association entre les variantes d'ADN de gène ABCB1 et la réponse aux CS; (3) étudier les associations entre les variantes d'ADN de gène NR3C1 et la réponse aux CS.
+Méthodes - Afin d’atteindre ces objectifs, nous avons mené une étude de cohorte des patients recrutés dans deux cliniques pédiatriques tertiaires de gastroentérologie à l’Ottawa (CHEO) et à Montréal (HSJ). Les patients avec la MC ont été diagnostiqués avant l'âge de 18 ans selon les critères standard radiologiques, endoscopiques et histopathologiques. La corticorésistance et la corticodépendance ont été définies en adaptant les critères reconnus. L’ADN, acquise soit du sang ou de la salive, était génotypée pour des variations à travers de gènes ABCB1 et NR3C1 sélectionnées à l’aide de la méthodologie de tag-SNP. La fréquence de la corticorésistance et la corticodépendance a été estimée assumant une distribution binomiale. Les associations entre les variables cliniques/démographiques et la réponse aux CS ont été examinées en utilisant la régression logistique en ajustant pour des variables potentielles de confusion. Les associations entre variantes génétiques de ABCB1 et NR3C1 et la réponse aux CS ont été examinées en utilisant la régression logistique assumant différents modèles de la transmission. Les associations multimarqueurs ont été examinées en utilisant l'analyse de haplotypes. Les variantes nongénotypées ont été imputées en utilisant les données de HAPMAP et les associations avec SNPs imputés ont été examinées en utilisant des méthodes standard.
+Résultats - Parmi 645 patients avec la MC, 364 (56.2%) ont reçu CS. La majorité de patients étaient des hommes (54.9 %); présentaient la maladie de l’iléocôlon (51.7%) ou la maladie inflammatoire (84.6%) au diagnostic et étaient les Caucasiens (95.6 %). Huit pourcents de patients étaient corticorésistants et 40.9% - corticodépendants. Le plus bas âge au diagnostic (OR=1.34, 95% CI: 1.03-3.01, p=0.040), la maladie cœxistante de la région digestive supérieure (OR=1.35, 95% CI: 95% CI: 1.06-3.07, p=0.031) et l’usage simultané des immunomodulateurs (OR=0.35, 95% CI: 0.16-0.75, p=0.007) ont été associés avec la corticodépendance. Un total de 27 marqueurs génotypés à travers de ABCB1 (n=14) et NR3C1 (n=13) ont été en l'Équilibre de Hardy-Weinberg, à l’exception d’un dans le gène NR3C1 (rs258751, exclu). 
+Dans ABCB1, l'allèle rare de rs2032583 (OR=0.56, 95% CI: 0.34-0.95, p=0.029) et génotype hétérozygote (OR=0.52, 95% CI: 0.28-0.95 p=0.035) ont été négativement associes avec la dépendance de CS. Un haplotype à 3 marqueurs, comprenant le SNP fonctionnel rs1045642 a été associé avec la dépendance de CS (p empirique=0.004). 24 SNPs imputés introniques et six haplotypes ont été significativement associés avec la dépendance de CS. Aucune de ces associations n'a cependant maintenu la signification après des corrections pour des comparaisons multiples. Dans NR3C1, trois SNPs: rs10482682 (OR=1.43, 95% CI: 0.99-2.08, p=0.047), rs6196 (OR=0.55, 95% CI: 0.31-0.95, p=0.024), et rs2963155 (OR=0.64, 95% CI: 0.42-0.98, p=0.039), ont été associés sous un modèle additif, tandis que rs4912911 (OR=0.37, 95% CI: 0.13-1.00, p=0.03) et rs2963156 (OR=0.32, 95% CI: 0.07-1.12, p=0.047) - sous un modèle récessif. Deux haplotypes incluant ces 5 SNPs (AAACA et GGGCG) ont été significativement (p=0.006 et 0.01 empiriques) associés avec la corticodépendance. 19 SNPs imputés ont été associés avec la dépendance de CS. Deux haplotypes multimarqueurs (p=0.001), incluant les SNPs génotypés et imputés, ont été associés avec la dépendance de CS.
+Conclusion - Nos études suggèrent que le fardeau de la corticodépendance est élevé parmi les enfants avec le CD. Les enfants plus jeunes au diagnostic et ceux avec la maladie coexistante de la région supérieure ainsi que ceux avec des variations dans les gènes ABCB1 et NR3C1 étaient plus susceptibles de devenir corticodépendants.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Background - Inter-individual variation in response to treatment by corticosteroids (CS) is an important problem in the management of inflammatory bowel disease (IBD) patient’s. This problem is even more prominent in children, the prevalence of steroid dependence (~40%) in whom is extremely high. Steroid refractoriness has a considerable impact on the physical and psychological development of these children, also imposing high medical costs related to treatment. Active disease, as opposed to quiescent, increases medical costs 2-3 times in ambulatory patients and 20 times in hospitalized cases. Identifying markers that could predict steroid response is therefore a high clinical priority. Previous attempts to investigate potential clinical and demographic markers have been equivocal, highlighting the need for further investigations of other predictive markers. It is well known that the action of CS entails complex processes controlled by genetic factors. Two genes, the ABCB1 gene, which belongs to the family of trans-membrane transporters, and the NR3C1 gene, coding for the glucocorticoid receptor, are major elements of the pathway. We postulated that inter-individual variations in these genes may play a role in the observed variability of the response to CS and could serve as potential predictors. 
+Objectives - We aimed to: (1) examine the burden of steroid refractoriness in children diagnosed with CD and explore the potential clinical/demographic factors related to CS response; (2) study the association between DNA variants in the ABCB1 gene and CS response; (3) investigate the associations between DNA variants in the NR3C1 gene and CS response. 
+Methods - We investigated these objectives in a cohort of CD patients recruited from two tertiary paediatric gastroenterology clinics from Ottawa (CHEO) and Montreal (HSJ). CD patients diagnosed prior to age 18 using standard clinical, radiological, endoscopic and histopathological criteria were included. Published criteria were adapted to define CS-resistance and dependence. DNA acquired from blood and/or saliva was genotyped for variations across the ABCB1 and NR3C1 genes selected using the tag-SNP methodology. The frequencies of steroid resistance and dependence were estimated assuming a binomial distribution. Associations between clinical/demographic variables and steroid responses were examined using logistic regression modeling after accounting for potential confounding variables. Associations between ABCB1 and NR3C1 genes’ variants and steroid responses were examined using logistic regression assuming different models of inheritance. Multi-marker associations were examined via haplotype analysis. Un-genotyped variants in the genes were imputed using HAPMAP data as the reference panel and associations with imputed SNPs examined using standard methods. 
+Results - Among 645 CD patients diagnosed at the study centers, 364 (56.2%) received corticosteroids during the first year since diagnosis. The majority of patients were male (54.9%), had inflammatory (84.6%), ileo-colonic (51.7%) disease phenotypes at diagnosis and were Caucasians (95.6%). Eight percent of patients developed CS-resistance and 40.9% became CS-dependent. Younger age at diagnosis (OR=1.34, 95% CI: 1.03-3.01, p=0.040), coexisting upper digestive tract involvement (OR=1.35, 95% CI: 1.06-3.07, p=0.031) and concomitant immunomodulators use (OR=0.35, 95% CI: 0.16-0.75, p=0.007) were significantly associated with CS-dependency in multivariate analysis. From among the 27 markers genotyped across the ABCB1 (n=14) and NR3C1 genes (n=13), all except one in NR3C1 gene (rs258751, excluded) were in Hardy-Weinberg Equilibrium. For ABCB1, the rare allele of rs2032583 (OR=0.56, 95% CI: 0.34-0.95, p=0.029) and heterozygous genotype (OR=0.52, 95% CI: 0.28-0.95, p=0.035) conferred protection from CS dependency. A 3-marker haplotype including the functional SNP rs1045642 was associated with CS-dependence (empiric p-value=0.004). On imputation 24 intronic SNPs and six haplotypes were statistically significantly associated with CS dependence. None of these associations however maintained significance after corrections for multiple comparisons. 
+For the NR3C1 gene 3 SNPs, rs10482682 (OR=1.43, 95% CI: 0.99-2.08, p=0.047), rs6196 (OR=0.55, 95% CI: 0.31-0.95, p=0.024), and rs2963155 (OR=0.64, 95% CI: 0.42-0.98, p=0.039), showed associations under an additive model whereas rs4912911 (OR=0.37, 95% CI: 0.13-1.00, p=0.03) and rs2963156 (OR=0.32, 95% CI: 0.07-1.12, p=0.047) showed associations under a recessive model. Two haplotypes encompassing these 5 SNPs (AAACA and GGGCG) were significantly (empirical p=0.006 and 0.01 respectively) were associated with CS-dependence. On imputation 19 SNPs were associated with CS-dependence. Two multi-marker haplotypes (p-values=0.001 each) including genotyped and imputed SNPs conferred susceptibility for CS-dependency. Conclusions - Our studies suggest that the burden of steroid dependence is high among children with CD. Children diagnosed at a younger age, those with co-existent upper tract disease and with variations in the ABCB1 and NR3C1 genes were more likely to become CS dependent.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F5427&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sant%C3%A9+publique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/5427/Alfreda_Krupoves_2010_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/5427/Alfreda_Krupoves_2010_these.pdf.jpg?sequence=9&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Alfreda_Krupoves_2010_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/5427/Alfreda_Krupoves_2010_these.pdf?sequence=4&amp;isAllowed=y">Alfreda_Krupoves_2010_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">4.496Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10094/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a> [603]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/5427">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Solution Methods for Service Network Design with Resource Management Consideration</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Crainic, Teodor Gabriel" name="DC.contributor">
+<meta content="Toulouse, Michel" name="DC.contributor">
+<meta content="Vu, Duc Minh" name="DC.creator">
+<meta content="2014-10-07T19:48:41Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2014-10-07T19:48:41Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2014-09-29" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2014-06" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/11207" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Transport de marchandises" name="DC.subject" xml:lang="fr"/>
+<meta content="conception de réseaux de services" name="DC.subject" xml:lang="fr"/>
+<meta content="gestion des ressources" name="DC.subject" xml:lang="fr"/>
+<meta content="méta-heuristiques" name="DC.subject" xml:lang="fr"/>
+<meta content="algorithme exact" name="DC.subject" xml:lang="fr"/>
+<meta content="formulation en cycles" name="DC.subject" xml:lang="fr"/>
+<meta content="la recherche tabou" name="DC.subject" xml:lang="fr"/>
+<meta content="la composition de chemins" name="DC.subject" xml:lang="fr"/>
+<meta content="slope-scaling" name="DC.subject" xml:lang="fr"/>
+<meta content="la génération de colonnes" name="DC.subject" xml:lang="fr"/>
+<meta content="Freight transportation" name="DC.subject" xml:lang="fr"/>
+<meta content="service network design" name="DC.subject" xml:lang="fr"/>
+<meta content="asset management" name="DC.subject" xml:lang="fr"/>
+<meta content="cycle-based formulations" name="DC.subject" xml:lang="fr"/>
+<meta content="meta-heuristics" name="DC.subject" xml:lang="fr"/>
+<meta content="exact algorithm" name="DC.subject" xml:lang="fr"/>
+<meta content="tabu search" name="DC.subject" xml:lang="fr"/>
+<meta content="path-relinking" name="DC.subject" xml:lang="fr"/>
+<meta content="slope-scaling" name="DC.subject" xml:lang="fr"/>
+<meta content="column generation" name="DC.subject" xml:lang="fr"/>
+<meta content="Applied Sciences - Operations Research / Sciences appliqués et technologie - Recherche opérationnelle (UMI : 0796)" name="DC.subject" xml:lang="fr"/>
+<meta content="Solution Methods for Service Network Design with Resource Management Consideration" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content='La gestion des ressources, équipements, équipes de travail, et autres, devrait être prise en compte lors de la conception de tout plan réalisable pour le problème de conception de réseaux de services. Cependant, les travaux de recherche portant sur la gestion des ressources et la conception de réseaux de services restent limités. La présente thèse a pour objectif de combler cette lacune en faisant l’examen de problèmes de conception de réseaux de services prenant en compte la gestion des ressources. Pour ce faire, cette thèse se décline en trois études portant sur la conception de réseaux.
+La première étude considère le problème de capacitated multi-commodity fixed cost network design with design-balance constraints(DBCMND). La structure multi-produits avec capacité sur les arcs du DBCMND, de même que ses contraintes design-balance, font qu’il apparaît comme sous-problème dans de nombreux problèmes reliés à la conception de réseaux de services, d’où l’intérêt d’étudier le DBCMND dans le contexte de cette thèse. Nous proposons une nouvelle approche pour résoudre ce problème combinant la recherche tabou, la recomposition de chemin, et une procédure d’intensification de la recherche dans une région particulière de l’espace de solutions. Dans un premier temps la recherche tabou identifie de bonnes solutions réalisables. Ensuite la recomposition de chemin est utilisée pour augmenter le nombre de solutions réalisables. Les solutions trouvées par ces deux méta-heuristiques permettent d’identifier un sous-ensemble d’arcs qui ont de bonnes chances d’avoir un statut ouvert ou fermé dans une solution optimale. Le statut de ces arcs est alors fixé selon la valeur qui prédomine dans les solutions trouvées préalablement. Enfin, nous utilisons la puissance d’un solveur de programmation mixte en nombres entiers pour intensifier la recherche sur le problème restreint par le statut fixé ouvert/fermé de certains arcs. Les tests montrent que cette approche est capable de trouver de bonnes solutions aux problèmes de grandes tailles dans des temps raisonnables. Cette recherche est publiée dans la revue scientifique Journal of heuristics.
+La deuxième étude introduit la gestion des ressources au niveau de la conception de réseaux de services en prenant en compte explicitement le nombre fini de véhicules utilisés à chaque terminal pour le transport de produits. Une approche de solution faisant appel au slope-scaling, la génération de colonnes et des heuristiques basées sur une formulation en cycles est ainsi proposée. La génération de colonnes résout une relaxation linéaire du problème de conception de réseaux, générant des colonnes qui sont ensuite utilisées par le slope-scaling. Le slope-scaling résout une approximation linéaire du problème de conception de réseaux, d’où l’utilisation d’une heuristique pour convertir les solutions obtenues par le slope-scaling en solutions réalisables pour le problème original. L’algorithme se termine avec une procédure de perturbation
+qui améliore les solutions réalisables. Les tests montrent que l’algorithme proposé est capable de trouver de bonnes solutions au problème de conception de réseaux de services avec un nombre fixe des ressources à chaque terminal. Les résultats de cette recherche seront publiés dans la revue scientifique Transportation Science.                           La troisième étude élargie nos considérations sur la gestion des ressources en prenant en compte l’achat ou la location de nouvelles ressources de même que le repositionnement de ressources existantes. Nous faisons les hypothèses suivantes: une unité de ressource est nécessaire pour faire fonctionner un service, chaque ressource doit retourner à son terminal d’origine, il existe un nombre fixe de ressources à chaque terminal, et la longueur du circuit des ressources est limitée. Nous considérons les alternatives suivantes dans la gestion des ressources: 1)
+repositionnement de ressources entre les terminaux pour tenir compte des changements de la demande, 2) achat et/ou location de nouvelles ressources et leur distribution à différents terminaux, 3) externalisation de certains services. Nous présentons une formulation intégrée combinant les décisions reliées à la gestion des ressources avec les décisions reliées à la conception
+des réseaux de services. Nous présentons également une méthode de résolution matheuristique
+combinant le slope-scaling et la génération de colonnes. Nous discutons des performances de
+cette méthode de résolution, et nous faisons une analyse de l’impact de différentes décisions de gestion des ressources dans le contexte de la conception de réseaux de services. Cette étude sera présentée au XII International Symposium On Locational Decision, en conjonction avec XXI Meeting of EURO Working Group on Locational Analysis, Naples/Capri (Italy), 2014.                                                                                                            En résumé, trois études différentes sont considérées dans la présente thèse. La première porte sur une nouvelle méthode de solution pour le "capacitated multi-commodity fixed cost network design with design-balance constraints". Nous y proposons une matheuristique comprenant la recherche tabou, la recomposition de chemin, et l’optimisation exacte. Dans la deuxième étude, nous présentons un nouveau modèle de conception de réseaux de services prenant en compte un nombre fini de ressources à chaque terminal. Nous y proposons une matheuristique avancée
+basée sur la formulation en cycles comprenant le slope-scaling, la génération de colonnes, des heuristiques et l’optimisation exacte. Enfin, nous étudions l’allocation des ressources dans la conception de réseaux de services en introduisant des formulations qui modèlent le repositionnement, l’acquisition et la location de ressources, et l’externalisation de certains services. À cet égard, un cadre de solution slope-scaling développé à partir d’une formulation en cycles est proposé. Ce dernier comporte la génération de colonnes et une heuristique. Les méthodes proposées dans ces trois études ont montré leur capacité à trouver de bonnes solutions.' name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Resource management in freight transportation service network design is an important issue
+that has been studied extensively in recent years. Resources such as vehicles, crews, etc. are
+factors that can not be ignored when designing a feasible plan for any service network design
+problem. However, contributions related to resource management issues and service network
+design are still limited. The goal of the thesis is to fill this gap by taking into account service
+network design problems with resource management issues. In this thesis, we propose and
+address three service network design problems that consider resource management.
+In the first study, we consider the capacitated multi-commodity fixed cost network design
+with design-balance constraints which is a basic sub-problem for many service design problems
+because of the capacitated multi-commodity structure as well as its design-balance property.
+We propose a three-phase matheuristic that combines tabu-search, path-relinking and an exactbased intensification procedure to find high quality solutions. Tabu-search identifies feasible
+solutions while path-relinking extends the set of feasible solutions. The solutions found by
+these two meta-heuristics are used to fix arcs as open or close. An exact solver intensifies
+the search on a restricted problem derived from fixing arcs. The experiments on benchmark
+instances show that the solution approach finds good solutions to large-scale problems in a
+reasonable amount of time. The contribution with regard to this study has been accepted in the
+Journal of Heuristics.
+In the second study, together with the consideration of the design of routes to transport a
+set of commodities by vehicles, we extend resources management by explicitly taking account
+of the number of available vehicles at each terminal. We introduce a matheuristic solution
+framework based on a cycle-based formulation that includes column generation, slope-scaling,
+heuristic and exact optimization techniques. As far as we know, this is the first matheuristic
+procedure developed for a cycle-based formulation. The column generation solves the linear
+relaxation model and provides a set of cycles to define the approximation model used in slopescaling loop. A heuristic is used to convert each solution to the approximation problem into a
+feasible solution. Memory-based perturbation procedure is used to enhance the performance
+of the algorithm. Experiments show that the proposed algorithm is able to find good feasible
+solutions for the problem. The contribution with regard to this study has been accepted for
+publication in Transportation Science. In the third study, we examine resources allocation issues in service network design. We
+aim to address a number of fleet utilization issues which usually appear at the beginning of the
+season because of the change of demand patterns: 1) reposition resources among terminals to
+account for shifts in demand patterns; 2) acquire (buy or long-term rent) new resources and as
+sign them to terminals; 3) outsource particular services. We present an integrated formulation
+combining these selection-location and scheduled service design decisions. The mixed-integer
+formulation is defined over a time-space network, the initial period modeling the location de
+cisions on resource acquisition and positioning, while the decisions on service selection and
+scheduling, resource assignment and cycling routing, and demand satisfaction being modeled
+on the rest of the network. We also present a matheuristic solution method combining slope
+scaling and column generation, discuss its algorithmic performance, and explore the impact
+of combining the location and design decisions in the context of consolidation carrier service
+design. This study will be presented at XII International Symposium On Locational Deci
+sion, in conjunction with the XXI Meeting of EURO Working Group on Locational Analysis,
+Naples/Capri (Italy), 2014.
+In summary, three studies are considered in this thesis. The first one considers the capaciated
+multi-commodity fixed cost network design with design-balance constraints, a basic problem
+in many service network design problems with design-balance constraints. We propose an ef
+ficient three-phase matheuristic solution method that includes tabu search, path relinking and
+exact optimization. In the second study, we propose a new service network design model
+that takes into account resources limitations at each terminal. We also propose an advanced
+matheuristic framework solution method based on a cycle-based formulation which includes
+slope-scaling, column generation, heuristics and exact optimization for this problem. The last
+study addresses resources allocation issues in service network design. We introduce formula
+tions that model the reposition, acquisition/renting of resources and outsourcing of services. A
+solution framework based on the slope-scaling approach on cycle-based formulations is pro
+posed. Tests indicate that these proposed algorithms are able to find good feasible solutions for
+each of threse problems." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Transport de marchandises; conception de réseaux de services; gestion des ressources; méta-heuristiques; algorithme exact; formulation en cycles; la recherche tabou; la composition de chemins; slope-scaling; la génération de colonnes; Freight transportation; service network design; asset management; cycle-based formulations; meta-heuristics; exact algorithm; tabu search; path-relinking; slope-scaling; column generation; Applied Sciences - Operations Research / Sciences appliqués et technologie - Recherche opérationnelle (UMI : 0796); Thèse ou mémoire / Thesis or Dissertation; Informatique" name="citation_keywords"/>
+<meta content="Solution Methods for Service Network Design with Resource Management Consideration" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Vu, Duc Minh" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/11207/2/Vu_Duc_Minh_2014_these.pdf" name="citation_pdf_url"/>
+<meta content="2014-09-29" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/11207" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11207?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11207?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11207?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11207?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11207?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11207?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2958" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3001" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2958">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/3001"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/11207/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/11207">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/11207/mets.xml-->
+<h2 class="page-header first-page-header">Solution Methods for Service Network Design with Resource Management Consideration</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Crainic, Teodor Gabriel</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Toulouse, Michel</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Vu, Duc Minh</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2014-10-07T19:48:41Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2014-10-07T19:48:41Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2014-09-29</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2014-06</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/11207</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Transport de marchandises</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">conception de réseaux de services</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">gestion des ressources</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">méta-heuristiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">algorithme exact</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">formulation en cycles</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">la recherche tabou</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">la composition de chemins</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">slope-scaling</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">la génération de colonnes</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Freight transportation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">service network design</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">asset management</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">cycle-based formulations</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">meta-heuristics</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">exact algorithm</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">tabu search</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">path-relinking</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">slope-scaling</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">column generation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Applied Sciences - Operations Research / Sciences appliqués et technologie - Recherche opérationnelle (UMI : 0796)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Solution Methods for Service Network Design with Resource Management Consideration</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Informatique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La gestion des ressources, équipements, équipes de travail, et autres, devrait être prise en compte lors de la conception de tout plan réalisable pour le problème de conception de réseaux de services. Cependant, les travaux de recherche portant sur la gestion des ressources et la conception de réseaux de services restent limités. La présente thèse a pour objectif de combler cette lacune en faisant l’examen de problèmes de conception de réseaux de services prenant en compte la gestion des ressources. Pour ce faire, cette thèse se décline en trois études portant sur la conception de réseaux.
+La première étude considère le problème de capacitated multi-commodity fixed cost network design with design-balance constraints(DBCMND). La structure multi-produits avec capacité sur les arcs du DBCMND, de même que ses contraintes design-balance, font qu’il apparaît comme sous-problème dans de nombreux problèmes reliés à la conception de réseaux de services, d’où l’intérêt d’étudier le DBCMND dans le contexte de cette thèse. Nous proposons une nouvelle approche pour résoudre ce problème combinant la recherche tabou, la recomposition de chemin, et une procédure d’intensification de la recherche dans une région particulière de l’espace de solutions. Dans un premier temps la recherche tabou identifie de bonnes solutions réalisables. Ensuite la recomposition de chemin est utilisée pour augmenter le nombre de solutions réalisables. Les solutions trouvées par ces deux méta-heuristiques permettent d’identifier un sous-ensemble d’arcs qui ont de bonnes chances d’avoir un statut ouvert ou fermé dans une solution optimale. Le statut de ces arcs est alors fixé selon la valeur qui prédomine dans les solutions trouvées préalablement. Enfin, nous utilisons la puissance d’un solveur de programmation mixte en nombres entiers pour intensifier la recherche sur le problème restreint par le statut fixé ouvert/fermé de certains arcs. Les tests montrent que cette approche est capable de trouver de bonnes solutions aux problèmes de grandes tailles dans des temps raisonnables. Cette recherche est publiée dans la revue scientifique Journal of heuristics.
+La deuxième étude introduit la gestion des ressources au niveau de la conception de réseaux de services en prenant en compte explicitement le nombre fini de véhicules utilisés à chaque terminal pour le transport de produits. Une approche de solution faisant appel au slope-scaling, la génération de colonnes et des heuristiques basées sur une formulation en cycles est ainsi proposée. La génération de colonnes résout une relaxation linéaire du problème de conception de réseaux, générant des colonnes qui sont ensuite utilisées par le slope-scaling. Le slope-scaling résout une approximation linéaire du problème de conception de réseaux, d’où l’utilisation d’une heuristique pour convertir les solutions obtenues par le slope-scaling en solutions réalisables pour le problème original. L’algorithme se termine avec une procédure de perturbation
+qui améliore les solutions réalisables. Les tests montrent que l’algorithme proposé est capable de trouver de bonnes solutions au problème de conception de réseaux de services avec un nombre fixe des ressources à chaque terminal. Les résultats de cette recherche seront publiés dans la revue scientifique Transportation Science.                           La troisième étude élargie nos considérations sur la gestion des ressources en prenant en compte l’achat ou la location de nouvelles ressources de même que le repositionnement de ressources existantes. Nous faisons les hypothèses suivantes: une unité de ressource est nécessaire pour faire fonctionner un service, chaque ressource doit retourner à son terminal d’origine, il existe un nombre fixe de ressources à chaque terminal, et la longueur du circuit des ressources est limitée. Nous considérons les alternatives suivantes dans la gestion des ressources: 1)
+repositionnement de ressources entre les terminaux pour tenir compte des changements de la demande, 2) achat et/ou location de nouvelles ressources et leur distribution à différents terminaux, 3) externalisation de certains services. Nous présentons une formulation intégrée combinant les décisions reliées à la gestion des ressources avec les décisions reliées à la conception
+des réseaux de services. Nous présentons également une méthode de résolution matheuristique
+combinant le slope-scaling et la génération de colonnes. Nous discutons des performances de
+cette méthode de résolution, et nous faisons une analyse de l’impact de différentes décisions de gestion des ressources dans le contexte de la conception de réseaux de services. Cette étude sera présentée au XII International Symposium On Locational Decision, en conjonction avec XXI Meeting of EURO Working Group on Locational Analysis, Naples/Capri (Italy), 2014.                                                                                                            En résumé, trois études différentes sont considérées dans la présente thèse. La première porte sur une nouvelle méthode de solution pour le "capacitated multi-commodity fixed cost network design with design-balance constraints". Nous y proposons une matheuristique comprenant la recherche tabou, la recomposition de chemin, et l’optimisation exacte. Dans la deuxième étude, nous présentons un nouveau modèle de conception de réseaux de services prenant en compte un nombre fini de ressources à chaque terminal. Nous y proposons une matheuristique avancée
+basée sur la formulation en cycles comprenant le slope-scaling, la génération de colonnes, des heuristiques et l’optimisation exacte. Enfin, nous étudions l’allocation des ressources dans la conception de réseaux de services en introduisant des formulations qui modèlent le repositionnement, l’acquisition et la location de ressources, et l’externalisation de certains services. À cet égard, un cadre de solution slope-scaling développé à partir d’une formulation en cycles est proposé. Ce dernier comporte la génération de colonnes et une heuristique. Les méthodes proposées dans ces trois études ont montré leur capacité à trouver de bonnes solutions.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Resource management in freight transportation service network design is an important issue
+that has been studied extensively in recent years. Resources such as vehicles, crews, etc. are
+factors that can not be ignored when designing a feasible plan for any service network design
+problem. However, contributions related to resource management issues and service network
+design are still limited. The goal of the thesis is to fill this gap by taking into account service
+network design problems with resource management issues. In this thesis, we propose and
+address three service network design problems that consider resource management.
+In the first study, we consider the capacitated multi-commodity fixed cost network design
+with design-balance constraints which is a basic sub-problem for many service design problems
+because of the capacitated multi-commodity structure as well as its design-balance property.
+We propose a three-phase matheuristic that combines tabu-search, path-relinking and an exactbased intensification procedure to find high quality solutions. Tabu-search identifies feasible
+solutions while path-relinking extends the set of feasible solutions. The solutions found by
+these two meta-heuristics are used to fix arcs as open or close. An exact solver intensifies
+the search on a restricted problem derived from fixing arcs. The experiments on benchmark
+instances show that the solution approach finds good solutions to large-scale problems in a
+reasonable amount of time. The contribution with regard to this study has been accepted in the
+Journal of Heuristics.
+In the second study, together with the consideration of the design of routes to transport a
+set of commodities by vehicles, we extend resources management by explicitly taking account
+of the number of available vehicles at each terminal. We introduce a matheuristic solution
+framework based on a cycle-based formulation that includes column generation, slope-scaling,
+heuristic and exact optimization techniques. As far as we know, this is the first matheuristic
+procedure developed for a cycle-based formulation. The column generation solves the linear
+relaxation model and provides a set of cycles to define the approximation model used in slopescaling loop. A heuristic is used to convert each solution to the approximation problem into a
+feasible solution. Memory-based perturbation procedure is used to enhance the performance
+of the algorithm. Experiments show that the proposed algorithm is able to find good feasible
+solutions for the problem. The contribution with regard to this study has been accepted for
+publication in Transportation Science. In the third study, we examine resources allocation issues in service network design. We
+aim to address a number of fleet utilization issues which usually appear at the beginning of the
+season because of the change of demand patterns: 1) reposition resources among terminals to
+account for shifts in demand patterns; 2) acquire (buy or long-term rent) new resources and as
+sign them to terminals; 3) outsource particular services. We present an integrated formulation
+combining these selection-location and scheduled service design decisions. The mixed-integer
+formulation is defined over a time-space network, the initial period modeling the location de
+cisions on resource acquisition and positioning, while the decisions on service selection and
+scheduling, resource assignment and cycling routing, and demand satisfaction being modeled
+on the rest of the network. We also present a matheuristic solution method combining slope
+scaling and column generation, discuss its algorithmic performance, and explore the impact
+of combining the location and design decisions in the context of consolidation carrier service
+design. This study will be presented at XII International Symposium On Locational Deci
+sion, in conjunction with the XXI Meeting of EURO Working Group on Locational Analysis,
+Naples/Capri (Italy), 2014.
+In summary, three studies are considered in this thesis. The first one considers the capaciated
+multi-commodity fixed cost network design with design-balance constraints, a basic problem
+in many service network design problems with design-balance constraints. We propose an ef
+ficient three-phase matheuristic solution method that includes tabu search, path relinking and
+exact optimization. In the second study, we propose a new service network design model
+that takes into account resources limitations at each terminal. We also propose an advanced
+matheuristic framework solution method based on a cycle-based formulation which includes
+slope-scaling, column generation, heuristics and exact optimization for this problem. The last
+study addresses resources allocation issues in service network design. We introduce formula
+tions that model the reposition, acquisition/renting of resources and outsourcing of services. A
+solution framework based on the slope-scaling approach on cycle-based formulations is pro
+posed. Tests indicate that these proposed algorithms are able to find good feasible solutions for
+each of threse problems.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F11207&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Informatique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/11207/Vu_Duc_Minh_2014_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/11207/Vu_Duc_Minh_2014_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Vu_Duc_Minh_2014_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/11207/Vu_Duc_Minh_2014_these.pdf?sequence=2&amp;isAllowed=y">Vu_Duc_Minh_2014_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1.985Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3001/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a> [795]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/11207">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

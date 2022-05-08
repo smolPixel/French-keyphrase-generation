@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Improving the microbial production of biofuels through metabolic engineering</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Hallenbeck, Patrick" name="DC.contributor">
+<meta content="Yargeau, Vivian" name="DC.contributor">
+<meta content="Ghosh, Dipankar" name="DC.creator">
+<meta content="2014-01-16T19:13:44Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2014-01-16T19:13:44Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2013-11-07" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2013-07" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/10227" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Biocarburants" name="DC.subject" xml:lang="fr"/>
+<meta content="Production d'hydrogène" name="DC.subject" xml:lang="fr"/>
+<meta content="Photofermentation" name="DC.subject" xml:lang="fr"/>
+<meta content="Fermentation" name="DC.subject" xml:lang="fr"/>
+<meta content="Génie métabolique" name="DC.subject" xml:lang="fr"/>
+<meta content="Biofuel" name="DC.subject" xml:lang="fr"/>
+<meta content="Hydrogen production" name="DC.subject" xml:lang="fr"/>
+<meta content="Photofermentation" name="DC.subject" xml:lang="fr"/>
+<meta content="Dark fermentation" name="DC.subject" xml:lang="fr"/>
+<meta content="Metabolic engineering" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Microbiology / Biologie - Microbiologie (UMI : 0410)" name="DC.subject" xml:lang="fr"/>
+<meta content="Improving the microbial production of biofuels through metabolic engineering" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Les défis conjoints du changement climatique d'origine anthropique et la diminution des réserves de combustibles fossiles sont le moteur de recherche intense pour des sources d'énergie alternatives. Une avenue attrayante est d'utiliser un processus biologique pour produire un biocarburant. Parmi les différentes options en matière de biocarburants, le bio-hydrogène gazeux est un futur vecteur énergétique attrayant en raison de son efficacité potentiellement plus élevé de conversion de puissance utilisable, il est faible en génération inexistante de polluants et de haute densité d'énergie. Cependant, les faibles rendements et taux de production ont été les principaux obstacles à l'application pratique des technologies de bio-hydrogène. Des recherches intensives sur bio-hydrogène sont en cours, et dans les dernières années, plusieurs nouvelles approches ont été proposées et étudiées pour dépasser ces inconvénients. À cette fin, l'objectif principal de cette thèse était d'améliorer le rendement en hydrogène moléculaire avec un accent particulier sur l'ingénierie métabolique et l’utilisation de bioprocédés à variables indépendantes.
+Une de nos hypothèses était que la production d’hydrogène pourrait être améliorée et rendue plus économiquement viable par ingénierie métabolique de souches d’Escherichia coli  producteurs d’hydrogène en utilisant le glucose ainsi que diverses autres sources de carbone, y compris les pentoses. Les effets du pH, de la température et de sources de carbone ont été étudiés. La production maximale d'hydrogène a été obtenue à partir de glucose, à un pH initial de 6.5 et une température de 35°C. Les études de cinétiques de croissance ont montré que la μmax était 0.0495 h-1 avec un Ks de 0.0274 g L-1 lorsque le glucose est la seule source de carbone en milieu minimal M9. .Parmi les nombreux sucres et les dérivés de sucres testés, les rendements les plus élevés d'hydrogène sont avec du fructose, sorbitol et D-glucose; 1.27, 1.46 et 1.51 mol H2 mol-1 de substrat, respectivement.
+En outre, pour obtenir les interactions entre les variables importantes et pour atteindre une production maximale d'hydrogène, un design 3K factoriel complet Box-Behnken et la méthodologie de réponse de surface (RSM) ont été employées pour la conception expérimentale et l'analyse de la souche d'Escherichia coli DJT135. Le rendement en hydrogène molaire maximale de 1.69 mol H2 mol-1 de glucose a été obtenu dans les conditions optimales de 75 mM de glucose, à 35°C et un pH de 6.5. Ainsi, la RSM avec un design Box-Behken était un outil statistique utile pour atteindre des rendements plus élevés d'hydrogène molaires par des organismes modifiés génétiquement.
+Ensuite, l'expression hétérologue de l’hydrogénases soluble [Ni-Fe] de Ralstonia eutropha H16 (l'hydrogénase SH) a tenté de démontrer que la mise en place d'une voie capable de dériver l'hydrogène à partir de NADH pourrait surpasser le rendement stoechiométrique en hydrogène.. L’expression a été démontrée par des tests in vitro de l'activité enzymatique. Par ailleurs, l'expression de SH a restaurée la croissance en anaérobie de souches mutantes pour adhE, normalement inhibées en raison de l'incapacité de réoxyder le NADH. La mesure de la production d'hydrogène in vivo a montré que plusieurs souches modifiées métaboliquement sont capables d'utiliser l'hydrogénase SH pour dériver deux moles d’hydrogène par mole de glucose consommé, proche du maximum théorique.
+Une autre stratégie a montré que le glycérol brut pourrait être converti en hydrogène par photofermentation utilisant Rhodopseudomonas palustris par photofermentation. Les effets de la source d'azote et de différentes concentrations de glycérol brut sur ce processus ont été évalués. À 20 mM de glycérol, 4 mM glutamate, 6.1 mol hydrogène / mole de glycérol brut ont été obtenus dans des conditions optimales, un rendement de 87% de la théorie, et significativement plus élevés que ce qui a été réalisé auparavant. En prolongement de cette étude, l'optimisation des paramètres a également été utilisée. Dans des conditions optimales, une intensité lumineuse de 175 W/m2, 30 mM glycérol et 4.5 mM de glutamate, 6.69 mol hydrogène / mole de glycérol brut ont été obtenus, soit un rendement de 96% de la valeur théorique. La détermination de l'activité de la nitrogénase et ses niveaux d'expression ont montré qu'il y avait relativement peu de variation de la quantité de nitrogénase avec le changement des variables alors que l'activité de la nitrogénase variait considérablement, avec une activité maximale (228 nmol de C2H4/ml/min) au point central optimal.
+Dans la dernière section, la production d'hydrogène à partir du glucose via la photofermentation en une seule étape a été examinée avec la bactérie photosynthétique Rhodobacter capsulatus JP91 (hup-).  La méthodologie de surface de réponse avec Box-Behnken a été utilisée pour optimiser les variables expérimentales de façon indépendante, soit  la concentration de glucose, la concentration du glutamate et l'intensité lumineuse, ainsi que d'examiner leurs effets interactifs pour la maximisation du rendement en hydrogène moléculaire. Dans des conditions optimales, avec une intensité lumineuse de 175 W/m2, 35 mM de glucose, et 4.5 mM de glutamate,, un rendement maximal d'hydrogène de 5.5 (± 0.15) mol hydrogène /mol glucose, et un maximum d'activité de la nitrogénase de 246 (± 3.5) nmol C2H4/ml/min ont été obtenus. L'analyse densitométrique de l'expression de la protéine-Fe nitrogenase dans les différentes conditions a montré une variation significative de l'expression protéique avec un maximum au point central optimisé. Même dans des conditions optimales pour la production d'hydrogène, une fraction significative de la protéine Fe a été trouvée dans l'état ADP-ribosylée, suggérant que d'autres améliorations des rendements pourraient être possibles. À cette fin, un mutant amtB  dérivé de Rhodobacter capsulatus JP91 (hup-) a été créé en utilisant le vecteur de suicide pSUP202. Les résultats expérimentaux préliminaires montrent que la souche nouvellement conçue métaboliquement, R. capsulatus DG9, produit 8.2 (± 0.06) mol hydrogène / mole de glucose dans des conditions optimales de cultures discontinues (intensité lumineuse, 175 W/m2, 35 mM de glucose et 4.5 mM glutamate). Le statut d'ADP-ribosylation de la nitrogénase-protéine Fe a été obtenu par Western Blot pour la  souche R. capsulatus DG9.
+En bref, la production d'hydrogène est limitée par une barrière métabolique. La principale barrière métabolique est due au manque d'outils moléculaires possibles pour atteindre ou dépasser le rendement stochiométrique en bio-hydrogène depuis les dernières décennies en utilisant les microbes. À cette fin, une nouvelle approche  d’ingénierie métabolique semble très prometteuse pour surmonter cette contrainte vers l'industrialisation et s'assurer de la faisabilité de la technologie de la production d'hydrogène. Dans la présente étude, il a été démontré que l’ingénierie métabolique de bactéries anaérobiques facultatives (Escherichia coli) et de bactéries anaérobiques photosynthétiques (Rhodobacter capsulatus et Rhodopseudomonas palustris) peuvent produire de l'hydrogène en tant que produit majeur à travers le mode de fermentation par redirection métabolique vers la production d'énergie potentielle. D'autre part, la méthodologie de surface de réponse utilisée dans cette étude représente un outil potentiel pour optimiser la production d'hydrogène en générant des informations appropriées concernant la corrélation entre les variables et des producteurs de bio-de hydrogène modifiés par ingénierie métabolique. Ainsi, un outil d'optimisation des paramètres représente une nouvelle avenue pour faire un pont entre le laboratoire et la production d'hydrogène à l'échelle industrielle en fournissant un modèle mathématique potentiel pour intensifier la production de bio-hydrogène. Par conséquent, il a été clairement mis en évidence dans ce projet que l'effort combiné de l'ingénierie métabolique et la méthodologie de surface de réponse peut rendre la technologie de production de bio-hydrogène potentiellement possible vers sa commercialisation dans un avenir rapproché." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="The joint challenges of anthropogenic climate change and dwindling fossil fuel reserves are driving intense research into alternative energy sources. One attractive avenue is to use a biological process to produce a biofuel. Among the various biofuel options, biohydrogen gas is an attractive future energy carrier due to its potentially higher efficiency of conversion to usable power, low to non-existent generation of pollutants and high energy density. However, low yields and production rates have been major barriers to the practical application of biohydrogen technologies. Intensive research on biohydrogen is underway, and in the last few years several novel approaches have been proposed and studied to surpass these drawbacks. To this end the main aim of this thesis was to improve the molar hydrogen yield with special emphasis of metabolic engineering using the interactive effect with bioprocess independent variable. 
+One investigated hypothesis was that H2 production could be improved and made more economically viable by metabolic engineering on the facultative hydrogen producer Escherichia coli from glucose as well as various other carbon sources, including pentoses. The effects of pH, temperature and carbon source were investigated in batch experiments. Maximal hydrogen production from glucose was obtained at an initial pH of 6.5 and temperature of 35°C. Kinetic growth studies showed that the μmax was 0.0495 h−1 with a Ks of 0.0274 g L−1 when glucose was the sole carbon source in M9 (1X) minimal medium. Among the many sugar and sugar derivatives tested, hydrogen yields were highest with fructose, sorbitol and d-glucose; 1.27, 1.46 and 1.51 mol H2 mol−1 substrate respectively. 
+In addition, to obtain the interactions between the variables important for achieving maximum hydrogen production, a 3K full factorial Box–Behnken design and response surface methodology (RSM) were employed for experimental design and analysis on a metabolically engineered Escherichia coli strain, DJT135. A maximum molar hydrogen yield of 1.69 mol H2 mol−1 glucose was obtained under the optimal conditions of 75 mM glucose, 35°C and pH 6.5. Thus, RSM with Box–Behnken design was a useful statistical tool for achieving higher molar hydrogen yields by metabolically engineered organisms. 
+Furthermore, the heterologous expression of the soluble [Ni-Fe] hydrogenase from Ralstonia eutropha H16 (the SH hydrogenase) was attempted to demonstrate the introduction of a pathway capable of deriving hydrogen from NADH to surpass the stoichiometric molar hydrogen yield. Successful expression was demonstrated by in vitro assay of enzyme activity.  Moreover, expression of SH restored anaerobic growth on glucose to adhE strains, normally blocked for growth due to the inability to re-oxidize NADH.  Measurement of in vivo hydrogen production showed that several metabolically engineered strains were capable of using the SH hydrogenase to derive 2 mol H2 per mol of glucose consumed, close to the theoretical maximum.  
+Using another strategy, it was shown that crude glycerol could be converted to hydrogen, a possible future clean energy carrier, by photofermentation using Rhodopseudomonas palustris through photofermentation. Here, the effects of nitrogen source and different concentrations of crude glycerol on this process were assessed. At 20 mM glycerol, 4 mM glutamate, 6.1 mol hydrogen/mole of crude glycerol were obtained under optimal conditions, a yield of 87% of the theoretical, and significantly higher than what was achieved previously. As a continuation of this study, multiprocess parameter optimization was also involved. Under optimal conditions, a light intensity of 175 W/m2, 30 mM glycerol, and 4.5 mM glutamate, 6.69 mol hydrogen/mole of crude glycerol were obtained, a yield 96% of theoretical. Determination of nitrogenase activity and expression levels showed that there was relatively little variation in levels of nitrogenase protein with changes in process variables whereas nitrogenase activity varied considerably, with maximal nitrogenase activity (228 nmol of C2H4/ml/min) at the optimal central point.
+In the final section, hydrogen production from glucose via single-stage photofermentation was examined with the photosynthetic bacterium Rhodobacter capsulatus JP91 (hup-). Response surface methodology with Box–Behnken design was used to optimize the independent experimental variables of glucose concentration, glutamate concentration and light intensity, as well as examining their interactive effects for maximization of molar hydrogen yield. Under optimal condition with a light intensity of 175 W/m2, 35 mM glucose, and 4.5 mM glutamate, a maximum hydrogen yield of 5.5 (±0.15) mol H2/mol glucose, and a maximum nitrogenase activity of 246 (±3.5) nmol C2H4/ml/min were obtained. Densitometric analysis of nitrogenase Fe-protein expression under different conditions showed significant variation in Fe-protein expression with a maximum at the optimized central point. Even under optimum conditions for hydrogen production, a significant fraction of the Fe-protein was found in the ADP-ribosylated state, suggesting that further improvement in yields might be possible. To this end an AmtB- derivative of Rhodobacter capsulatus JP91 (hup-) was created by conjugating in amtB::Km using the suicide vector pSUP202. Preliminary experimental results showed that the newly metabolically engineered strain, R. capsulatus DG9, produced 8.2 (±0.06) mol hydrogen/mole of glucose under optimal conditions in batch cultures (light intensity, 175 W/m2; 35 mM glucose, and 4.5 mM glutamate).  Western blot analyses of the ADP-ribosylation status of the nitrogenase Fe-protein were investigated on metabolically engineered strain R. capsulatus DG9. 
+In brief, the progress on hydrogen production technology has been limited due to the metabolic barrier. The major metabolic barrier is due to lacking of potential consistent molecular tools to reach or surpass the stochiometric biohydrogen yield since last decades using microbes. To this end a novel approach “metabolic engineering” seems very promising to overcome this constraint towards industrialization to ensure the feasibility of hydrogen production technology. In this present study it has been shown that metabolically engineered facultative (Escherichia coli) anaerobe and photosynthetic bacteria (Rhodobacter capsulatus and Rhodopseudomonas palustris) can produce hydrogen as a major product through fermentative mode by metabolic redirection toward potential energy generation. On the other hand, response surface methodology has depicted in this study as another potential tool to statistically optimize the hydrogen production by generating suitable information concerning interactive correlation between process variables and metabolically engineered biohydrogen producers. Thus, multi process parameter optimization tool has been creating a novel avenue to make a crosslink between lab scale and pilot scale hydrogen production by providing potential mathematical model for scaling up biohydrogen production using metabolically engineered biohydrogen producers. Therefore, it has been clearly revealed in this project that combined effort of metabolic engineering and response surface methodology can make biohydrogen production technology potentially feasible towards its commercialization in near future." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Biocarburants; Production d'hydrogène; Photofermentation; Fermentation; Génie métabolique; Biofuel; Hydrogen production; Photofermentation; Dark fermentation; Metabolic engineering; Biology - Microbiology / Biologie - Microbiologie (UMI : 0410); Thèse ou mémoire / Thesis or Dissertation; Microbiologie et immunologie" name="citation_keywords"/>
+<meta content="Improving the microbial production of biofuels through metabolic engineering" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Ghosh, Dipankar" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/10227/4/Ghosh_Dipankar_2013_these.pdf" name="citation_pdf_url"/>
+<meta content="2013-11-07" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/10227" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10227?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10227?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10227?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10227?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10227?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10227?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/10227/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/10227">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10227/mets.xml-->
+<h2 class="page-header first-page-header">Improving the microbial production of biofuels through metabolic engineering</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Hallenbeck, Patrick</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Yargeau, Vivian</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Ghosh, Dipankar</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2014-01-16T19:13:44Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2014-01-16T19:13:44Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2013-11-07</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2013-07</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/10227</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Biocarburants</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Production d'hydrogène</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Photofermentation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Fermentation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Génie métabolique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Biofuel</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Hydrogen production</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Photofermentation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Dark fermentation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Metabolic engineering</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Microbiology / Biologie - Microbiologie (UMI : 0410)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Improving the microbial production of biofuels through metabolic engineering</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Microbiologie et immunologie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les défis conjoints du changement climatique d'origine anthropique et la diminution des réserves de combustibles fossiles sont le moteur de recherche intense pour des sources d'énergie alternatives. Une avenue attrayante est d'utiliser un processus biologique pour produire un biocarburant. Parmi les différentes options en matière de biocarburants, le bio-hydrogène gazeux est un futur vecteur énergétique attrayant en raison de son efficacité potentiellement plus élevé de conversion de puissance utilisable, il est faible en génération inexistante de polluants et de haute densité d'énergie. Cependant, les faibles rendements et taux de production ont été les principaux obstacles à l'application pratique des technologies de bio-hydrogène. Des recherches intensives sur bio-hydrogène sont en cours, et dans les dernières années, plusieurs nouvelles approches ont été proposées et étudiées pour dépasser ces inconvénients. À cette fin, l'objectif principal de cette thèse était d'améliorer le rendement en hydrogène moléculaire avec un accent particulier sur l'ingénierie métabolique et l’utilisation de bioprocédés à variables indépendantes.
+Une de nos hypothèses était que la production d’hydrogène pourrait être améliorée et rendue plus économiquement viable par ingénierie métabolique de souches d’Escherichia coli  producteurs d’hydrogène en utilisant le glucose ainsi que diverses autres sources de carbone, y compris les pentoses. Les effets du pH, de la température et de sources de carbone ont été étudiés. La production maximale d'hydrogène a été obtenue à partir de glucose, à un pH initial de 6.5 et une température de 35°C. Les études de cinétiques de croissance ont montré que la μmax était 0.0495 h-1 avec un Ks de 0.0274 g L-1 lorsque le glucose est la seule source de carbone en milieu minimal M9. .Parmi les nombreux sucres et les dérivés de sucres testés, les rendements les plus élevés d'hydrogène sont avec du fructose, sorbitol et D-glucose; 1.27, 1.46 et 1.51 mol H2 mol-1 de substrat, respectivement.
+En outre, pour obtenir les interactions entre les variables importantes et pour atteindre une production maximale d'hydrogène, un design 3K factoriel complet Box-Behnken et la méthodologie de réponse de surface (RSM) ont été employées pour la conception expérimentale et l'analyse de la souche d'Escherichia coli DJT135. Le rendement en hydrogène molaire maximale de 1.69 mol H2 mol-1 de glucose a été obtenu dans les conditions optimales de 75 mM de glucose, à 35°C et un pH de 6.5. Ainsi, la RSM avec un design Box-Behken était un outil statistique utile pour atteindre des rendements plus élevés d'hydrogène molaires par des organismes modifiés génétiquement.
+Ensuite, l'expression hétérologue de l’hydrogénases soluble [Ni-Fe] de Ralstonia eutropha H16 (l'hydrogénase SH) a tenté de démontrer que la mise en place d'une voie capable de dériver l'hydrogène à partir de NADH pourrait surpasser le rendement stoechiométrique en hydrogène.. L’expression a été démontrée par des tests in vitro de l'activité enzymatique. Par ailleurs, l'expression de SH a restaurée la croissance en anaérobie de souches mutantes pour adhE, normalement inhibées en raison de l'incapacité de réoxyder le NADH. La mesure de la production d'hydrogène in vivo a montré que plusieurs souches modifiées métaboliquement sont capables d'utiliser l'hydrogénase SH pour dériver deux moles d’hydrogène par mole de glucose consommé, proche du maximum théorique.
+Une autre stratégie a montré que le glycérol brut pourrait être converti en hydrogène par photofermentation utilisant Rhodopseudomonas palustris par photofermentation. Les effets de la source d'azote et de différentes concentrations de glycérol brut sur ce processus ont été évalués. À 20 mM de glycérol, 4 mM glutamate, 6.1 mol hydrogène / mole de glycérol brut ont été obtenus dans des conditions optimales, un rendement de 87% de la théorie, et significativement plus élevés que ce qui a été réalisé auparavant. En prolongement de cette étude, l'optimisation des paramètres a également été utilisée. Dans des conditions optimales, une intensité lumineuse de 175 W/m2, 30 mM glycérol et 4.5 mM de glutamate, 6.69 mol hydrogène / mole de glycérol brut ont été obtenus, soit un rendement de 96% de la valeur théorique. La détermination de l'activité de la nitrogénase et ses niveaux d'expression ont montré qu'il y avait relativement peu de variation de la quantité de nitrogénase avec le changement des variables alors que l'activité de la nitrogénase variait considérablement, avec une activité maximale (228 nmol de C2H4/ml/min) au point central optimal.
+Dans la dernière section, la production d'hydrogène à partir du glucose via la photofermentation en une seule étape a été examinée avec la bactérie photosynthétique Rhodobacter capsulatus JP91 (hup-).  La méthodologie de surface de réponse avec Box-Behnken a été utilisée pour optimiser les variables expérimentales de façon indépendante, soit  la concentration de glucose, la concentration du glutamate et l'intensité lumineuse, ainsi que d'examiner leurs effets interactifs pour la maximisation du rendement en hydrogène moléculaire. Dans des conditions optimales, avec une intensité lumineuse de 175 W/m2, 35 mM de glucose, et 4.5 mM de glutamate,, un rendement maximal d'hydrogène de 5.5 (± 0.15) mol hydrogène /mol glucose, et un maximum d'activité de la nitrogénase de 246 (± 3.5) nmol C2H4/ml/min ont été obtenus. L'analyse densitométrique de l'expression de la protéine-Fe nitrogenase dans les différentes conditions a montré une variation significative de l'expression protéique avec un maximum au point central optimisé. Même dans des conditions optimales pour la production d'hydrogène, une fraction significative de la protéine Fe a été trouvée dans l'état ADP-ribosylée, suggérant que d'autres améliorations des rendements pourraient être possibles. À cette fin, un mutant amtB  dérivé de Rhodobacter capsulatus JP91 (hup-) a été créé en utilisant le vecteur de suicide pSUP202. Les résultats expérimentaux préliminaires montrent que la souche nouvellement conçue métaboliquement, R. capsulatus DG9, produit 8.2 (± 0.06) mol hydrogène / mole de glucose dans des conditions optimales de cultures discontinues (intensité lumineuse, 175 W/m2, 35 mM de glucose et 4.5 mM glutamate). Le statut d'ADP-ribosylation de la nitrogénase-protéine Fe a été obtenu par Western Blot pour la  souche R. capsulatus DG9.
+En bref, la production d'hydrogène est limitée par une barrière métabolique. La principale barrière métabolique est due au manque d'outils moléculaires possibles pour atteindre ou dépasser le rendement stochiométrique en bio-hydrogène depuis les dernières décennies en utilisant les microbes. À cette fin, une nouvelle approche  d’ingénierie métabolique semble très prometteuse pour surmonter cette contrainte vers l'industrialisation et s'assurer de la faisabilité de la technologie de la production d'hydrogène. Dans la présente étude, il a été démontré que l’ingénierie métabolique de bactéries anaérobiques facultatives (Escherichia coli) et de bactéries anaérobiques photosynthétiques (Rhodobacter capsulatus et Rhodopseudomonas palustris) peuvent produire de l'hydrogène en tant que produit majeur à travers le mode de fermentation par redirection métabolique vers la production d'énergie potentielle. D'autre part, la méthodologie de surface de réponse utilisée dans cette étude représente un outil potentiel pour optimiser la production d'hydrogène en générant des informations appropriées concernant la corrélation entre les variables et des producteurs de bio-de hydrogène modifiés par ingénierie métabolique. Ainsi, un outil d'optimisation des paramètres représente une nouvelle avenue pour faire un pont entre le laboratoire et la production d'hydrogène à l'échelle industrielle en fournissant un modèle mathématique potentiel pour intensifier la production de bio-hydrogène. Par conséquent, il a été clairement mis en évidence dans ce projet que l'effort combiné de l'ingénierie métabolique et la méthodologie de surface de réponse peut rendre la technologie de production de bio-hydrogène potentiellement possible vers sa commercialisation dans un avenir rapproché.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The joint challenges of anthropogenic climate change and dwindling fossil fuel reserves are driving intense research into alternative energy sources. One attractive avenue is to use a biological process to produce a biofuel. Among the various biofuel options, biohydrogen gas is an attractive future energy carrier due to its potentially higher efficiency of conversion to usable power, low to non-existent generation of pollutants and high energy density. However, low yields and production rates have been major barriers to the practical application of biohydrogen technologies. Intensive research on biohydrogen is underway, and in the last few years several novel approaches have been proposed and studied to surpass these drawbacks. To this end the main aim of this thesis was to improve the molar hydrogen yield with special emphasis of metabolic engineering using the interactive effect with bioprocess independent variable. 
+One investigated hypothesis was that H2 production could be improved and made more economically viable by metabolic engineering on the facultative hydrogen producer Escherichia coli from glucose as well as various other carbon sources, including pentoses. The effects of pH, temperature and carbon source were investigated in batch experiments. Maximal hydrogen production from glucose was obtained at an initial pH of 6.5 and temperature of 35°C. Kinetic growth studies showed that the μmax was 0.0495 h−1 with a Ks of 0.0274 g L−1 when glucose was the sole carbon source in M9 (1X) minimal medium. Among the many sugar and sugar derivatives tested, hydrogen yields were highest with fructose, sorbitol and d-glucose; 1.27, 1.46 and 1.51 mol H2 mol−1 substrate respectively. 
+In addition, to obtain the interactions between the variables important for achieving maximum hydrogen production, a 3K full factorial Box–Behnken design and response surface methodology (RSM) were employed for experimental design and analysis on a metabolically engineered Escherichia coli strain, DJT135. A maximum molar hydrogen yield of 1.69 mol H2 mol−1 glucose was obtained under the optimal conditions of 75 mM glucose, 35°C and pH 6.5. Thus, RSM with Box–Behnken design was a useful statistical tool for achieving higher molar hydrogen yields by metabolically engineered organisms. 
+Furthermore, the heterologous expression of the soluble [Ni-Fe] hydrogenase from Ralstonia eutropha H16 (the SH hydrogenase) was attempted to demonstrate the introduction of a pathway capable of deriving hydrogen from NADH to surpass the stoichiometric molar hydrogen yield. Successful expression was demonstrated by in vitro assay of enzyme activity.  Moreover, expression of SH restored anaerobic growth on glucose to adhE strains, normally blocked for growth due to the inability to re-oxidize NADH.  Measurement of in vivo hydrogen production showed that several metabolically engineered strains were capable of using the SH hydrogenase to derive 2 mol H2 per mol of glucose consumed, close to the theoretical maximum.  
+Using another strategy, it was shown that crude glycerol could be converted to hydrogen, a possible future clean energy carrier, by photofermentation using Rhodopseudomonas palustris through photofermentation. Here, the effects of nitrogen source and different concentrations of crude glycerol on this process were assessed. At 20 mM glycerol, 4 mM glutamate, 6.1 mol hydrogen/mole of crude glycerol were obtained under optimal conditions, a yield of 87% of the theoretical, and significantly higher than what was achieved previously. As a continuation of this study, multiprocess parameter optimization was also involved. Under optimal conditions, a light intensity of 175 W/m2, 30 mM glycerol, and 4.5 mM glutamate, 6.69 mol hydrogen/mole of crude glycerol were obtained, a yield 96% of theoretical. Determination of nitrogenase activity and expression levels showed that there was relatively little variation in levels of nitrogenase protein with changes in process variables whereas nitrogenase activity varied considerably, with maximal nitrogenase activity (228 nmol of C2H4/ml/min) at the optimal central point.
+In the final section, hydrogen production from glucose via single-stage photofermentation was examined with the photosynthetic bacterium Rhodobacter capsulatus JP91 (hup-). Response surface methodology with Box–Behnken design was used to optimize the independent experimental variables of glucose concentration, glutamate concentration and light intensity, as well as examining their interactive effects for maximization of molar hydrogen yield. Under optimal condition with a light intensity of 175 W/m2, 35 mM glucose, and 4.5 mM glutamate, a maximum hydrogen yield of 5.5 (±0.15) mol H2/mol glucose, and a maximum nitrogenase activity of 246 (±3.5) nmol C2H4/ml/min were obtained. Densitometric analysis of nitrogenase Fe-protein expression under different conditions showed significant variation in Fe-protein expression with a maximum at the optimized central point. Even under optimum conditions for hydrogen production, a significant fraction of the Fe-protein was found in the ADP-ribosylated state, suggesting that further improvement in yields might be possible. To this end an AmtB- derivative of Rhodobacter capsulatus JP91 (hup-) was created by conjugating in amtB::Km using the suicide vector pSUP202. Preliminary experimental results showed that the newly metabolically engineered strain, R. capsulatus DG9, produced 8.2 (±0.06) mol hydrogen/mole of glucose under optimal conditions in batch cultures (light intensity, 175 W/m2; 35 mM glucose, and 4.5 mM glutamate).  Western blot analyses of the ADP-ribosylation status of the nitrogenase Fe-protein were investigated on metabolically engineered strain R. capsulatus DG9. 
+In brief, the progress on hydrogen production technology has been limited due to the metabolic barrier. The major metabolic barrier is due to lacking of potential consistent molecular tools to reach or surpass the stochiometric biohydrogen yield since last decades using microbes. To this end a novel approach “metabolic engineering” seems very promising to overcome this constraint towards industrialization to ensure the feasibility of hydrogen production technology. In this present study it has been shown that metabolically engineered facultative (Escherichia coli) anaerobe and photosynthetic bacteria (Rhodobacter capsulatus and Rhodopseudomonas palustris) can produce hydrogen as a major product through fermentative mode by metabolic redirection toward potential energy generation. On the other hand, response surface methodology has depicted in this study as another potential tool to statistically optimize the hydrogen production by generating suitable information concerning interactive correlation between process variables and metabolically engineered biohydrogen producers. Thus, multi process parameter optimization tool has been creating a novel avenue to make a crosslink between lab scale and pilot scale hydrogen production by providing potential mathematical model for scaling up biohydrogen production using metabolically engineered biohydrogen producers. Therefore, it has been clearly revealed in this project that combined effort of metabolic engineering and response surface methodology can make biohydrogen production technology potentially feasible towards its commercialization in near future.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F10227&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Microbiologie+et+immunologie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/10227/Ghosh_Dipankar_2013_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/10227/Ghosh_Dipankar_2013_these.pdf.jpg?sequence=8&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Ghosh_Dipankar_2013_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/10227/Ghosh_Dipankar_2013_these.pdf?sequence=4&amp;isAllowed=y">Ghosh_Dipankar_2013_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">4.980Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/10227">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

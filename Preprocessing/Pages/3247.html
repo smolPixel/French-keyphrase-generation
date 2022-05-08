@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Validation des modèles de pharmacologie de sécurité et évaluation de la valeur thérapeutique de l'oxytocine dans le traitement de l'infarctus du myocarde</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Troncy, Éric" name="DC.contributor">
+<meta content="Blaise, Gilbert" name="DC.contributor">
+<meta content="Tanguay, Jean-François" name="DC.contributor">
+<meta content="Authier, Simon" name="DC.creator">
+<meta content="2010-01-19T15:19:40Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2010-01-19T15:19:40Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF"/>
+<meta content="2009-12-03" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2009-06" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/3247" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Oxytocine" name="DC.subject" xml:lang="en"/>
+<meta content="Pharmacologie de Sécurité" name="DC.subject" xml:lang="en"/>
+<meta content="Effets Cardiovasculaires Adverses" name="DC.subject" xml:lang="en"/>
+<meta content="Pharmacologie" name="DC.subject" xml:lang="en"/>
+<meta content="Physiologie" name="DC.subject" xml:lang="en"/>
+<meta content="Toxicologie" name="DC.subject" xml:lang="en"/>
+<meta content="Étude préclinique" name="DC.subject" xml:lang="en"/>
+<meta content="Infarctus du Myocarde" name="DC.subject" xml:lang="en"/>
+<meta content="Fraction d’Éjection" name="DC.subject" xml:lang="en"/>
+<meta content="Planimétrie" name="DC.subject" xml:lang="en"/>
+<meta content="Porc" name="DC.subject" xml:lang="en"/>
+<meta content="Utilisation Thérapeutique" name="DC.subject" xml:lang="en"/>
+<meta content="Infusion Continue" name="DC.subject" xml:lang="en"/>
+<meta content="Pharmacocinétique" name="DC.subject" xml:lang="en"/>
+<meta content="Oxytocin" name="DC.subject" xml:lang="en"/>
+<meta content="Safety Pharmacology" name="DC.subject" xml:lang="en"/>
+<meta content="Cardiovascular effects" name="DC.subject" xml:lang="en"/>
+<meta content="Pharmacology" name="DC.subject" xml:lang="en"/>
+<meta content="Physiology" name="DC.subject" xml:lang="en"/>
+<meta content="Toxicology" name="DC.subject" xml:lang="en"/>
+<meta content="Preclinical study" name="DC.subject" xml:lang="en"/>
+<meta content="Myocardial infarct" name="DC.subject" xml:lang="en"/>
+<meta content="Ejection fraction" name="DC.subject" xml:lang="en"/>
+<meta content="Planimetry" name="DC.subject" xml:lang="en"/>
+<meta content="Pig" name="DC.subject" xml:lang="en"/>
+<meta content="Therapeutic use" name="DC.subject" xml:lang="en"/>
+<meta content="Continuous infusion" name="DC.subject" xml:lang="en"/>
+<meta content="Pharmacokinetic" name="DC.subject" xml:lang="en"/>
+<meta content="Biology - Veterinary Science / Biologie - Science vétérinaire (UMI : 0778)" name="DC.subject" xml:lang="en"/>
+<meta content="Validation des modèles de pharmacologie de sécurité et évaluation de la valeur thérapeutique de l'oxytocine dans le traitement de l'infarctus du myocarde" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="En février, 2009 un rapport de PHRMA (Pharmaceutical Research and Manufacturers of America) confirmait que plus de 300 médicaments pour le traitement des maladies cardiaques étaient en phase d’essais cliniques ou en révision par les agences règlementaires. Malgré cette abondance de nouvelles thérapies cardiovasculaires, le nombre de nouveaux médicaments approuvés chaque année (toutes indications confondues) est en déclin avec seulement 17 et 24 nouveaux médicaments approuvés en 2007 et 2008, respectivement. Seulement 1 médicament sur 5000 sera approuvé après 10 à 15 ans de développement au coût moyen de 800 millions $. De nombreuses initiatives ont été lancées par les agences règlementaires afin d’augmenter le taux de succès lors du développement des nouveaux médicaments mais les résultats tardent. Cette stagnation est attribuée au manque d’efficacité du nouveau médicament dans bien des cas mais les évaluations d’innocuité remportent la palme des causes d’arrêt de développement. Primum non nocere, la maxime d’Hippocrate, père de la médecine, demeure d’actualité en développement préclinique et clinique des médicaments. Environ 3% des médicaments approuvés au cours des 20 dernières années ont, par la suite, été retirés du marché suite à l’identification d’effets adverses. Les effets adverses cardiovasculaires représentent la plus fréquente cause d’arrêt de développement ou de retrait de médicament (27%) suivi par les effets sur le système nerveux. Après avoir défini le contexte des évaluations de pharmacologie de sécurité et l’utilisation des bio-marqueurs, nous avons validé des modèles d’évaluation de l’innocuité des nouveaux médicaments sur les systèmes cardiovasculaires, respiratoires et nerveux. 
+Évoluant parmi les contraintes et les défis des programmes de développements des médicaments, nous avons évalué l’efficacité et l’innocuité de l’oxytocine (OT), un peptide endogène à des fins thérapeutiques. L’OT, une hormone historiquement associée à la reproduction, a démontré la capacité d’induire la différentiation in vitro de lignées cellulaires (P19) mais aussi de cellules souches embryonnaires en cardiomyocytes battants. Ces observations nous ont amené à considérer l’utilisation de l’OT dans le traitement de l’infarctus du myocarde. Afin d’arriver à cet objectif ultime, nous avons d’abord évalué la pharmacocinétique de l’OT dans un modèle de rat anesthésié. Ces études ont mis en évidence des caractéristiques uniques de l’OT dont une courte demi-vie et un profil pharmacocinétique non-linéaire en relation avec la dose administrée. 
+Ensuite, nous avons évalué les effets cardiovasculaires de l’OT sur des animaux sains de différentes espèces. En recherche préclinique, l’utilisation de plusieurs espèces ainsi que de différents états (conscients et anesthésiés) est reconnue comme étant une des meilleures approches afin d’accroître la valeur prédictive des résultats obtenus chez les animaux à la réponse chez l’humain. Des modèles de rats anesthésiés et éveillés, de chiens anesthésiés et éveillés et de singes éveillés avec suivi cardiovasculaire par télémétrie ont été utilisés. L’OT s’est avéré être un agent ayant d’importants effets hémodynamiques présentant une réponse variable selon l’état (anesthésié ou éveillé), la dose, le mode d’administration (bolus ou infusion) et l’espèce utilisée. Ces études nous ont permis d’établir les doses et régimes de traitement n’ayant pas d’effets cardiovasculaires adverses et pouvant être utilisées dans le cadre des études d’efficacité subséquentes. 
+Un modèle porcin d’infarctus du myocarde avec reperfusion a été utilisé afin d’évaluer les effets de l’OT dans le traitement de l’infarctus du myocarde. Dans le cadre d’un projet pilote, l’infusion continue d’OT initiée immédiatement au moment de la reperfusion coronarienne a induit des effets cardiovasculaires adverses chez tous les animaux traités incluant une réduction de la fraction de raccourcissement ventriculaire gauche et une aggravation de la cardiomyopathie dilatée suite à l’infarctus. Considérant ces observations, l’approche thérapeutique fût révisée afin d’éviter le traitement pendant la période d’inflammation aigüe considérée maximale autour du 3ième jour suite à l’ischémie. Lorsqu’initié 8 jours après l’ischémie myocardique, l’infusion d’OT a engendré des effets adverses chez les animaux ayant des niveaux endogènes d’OT élevés. Par ailleurs, aucun effet adverse (amélioration non-significative) ne fût observé chez les animaux ayant un faible niveau endogène d’OT. Chez les animaux du groupe placebo, une tendance à observer une meilleure récupération chez ceux ayant des niveaux endogènes initiaux élevés fût notée. Bien que la taille de la zone ischémique à risque soit comparable à celle rencontrée chez les patients atteints d’infarctus, l’utilisation d’animaux juvéniles et l’absence de maladies coronariennes sont des limitations importantes du modèle porcin utilisé. 
+
+Le potentiel de l’OT pour le traitement de l’infarctus du myocarde demeure mais nos résultats suggèrent qu’une administration systémique à titre de thérapie de remplacement de l’OT devrait être considérée en fonction du niveau endogène. De plus amples évaluations de la sécurité du traitement avec l’OT dans des modèles animaux d’infarctus du myocarde seront nécessaires avant de considérer l’utilisation d’OT dans une population de patients atteint d’un infarctus du myocarde. En contre partie, les niveaux endogènes d’OT pourraient posséder une valeur pronostique et des études cliniques à cet égard pourraient être d’intérêt." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="In february 2009, a report from PHRMA (Pharmaceutical Research and Manufacturers of America) confirmed that more than 300 drugs for treatment of cardiovascular diseases were in clinical trials or under review by regulatory agencies. Despite the abundance of new cardiovascular therapies, the number of new drugs approved each year (all indications combined) is declining steadily with only 17 and 24 new drugs approved in 2007 and 2008, respectively. Only 1 drug out of 5000 candidates will be approved after 10 to 15 years of development with an average cost of $800 millions. Several initiatives have been launched by regulatory agencies to increase the success rate in drug development but results are still awaited. This stagnation is attributed to the lack of efficacy of several drug candidates but safety assessments are the leading cause of drug development discontinuation. Primum non nocere, the maxim from Hippocrate, father of medicine, remains of major relevance in preclinical and clinical drug development.  Over the past 20 years, approximately 3% of approved drugs were subsequently withdrawn from the market due to adverse effects. Cardiovascular adverse effects represent the most frequent cause of drug development discontinuation or withdrawal (27%) followed by effects on the nervous system. After defining the context of safety pharmacology evaluations and the use of biomarkers in drug development, we validated safety pharmacology models to investigate drug-induced cardiovascular, respiratory and neurological effects. 
+As we progressed within constraints and challenges of drug development, we evaluated the efficacy and safety of oxytocin, an endogenous peptide with therapeutic potential. Oxytocin (OT), a hormone historically associated with reproduction, demonstrated the ability to induce in vitro differentiation of cell lines (P19) but also embryonic stem cells into beating cardiomyocytes. These observations lead us to consider the use of OT as a treatment for myocardial infarct. To achieve this ultimate goal, we first evaluated the pharmacokinetic of OT in an anesthetized rat model. These investigations highlighted the unique characteristics of OT including a very short half-life and a non-linear pharmacokinetic profile in response to the dose. 
+Cardiovascular effects of OT in healthy animals were then evaluated in various species. In preclinical research, the use of various animal species and state of consciousness (conscious or anesthetized) is recognized as one of the best strategies to increase the predictive value of results obtained in animals to the human response. Our initial investigations of OT treatment regimens used various animal models including conscious and anesthetized rats, anesthetized pigs, conscious dogs with indirect blood pressure monitoring and diuresis and conscious monkeys with cardiovascular telemetry monitoring. These studies confirmed OT to have significant hemodynamic effects with variable responses depending on the state of consciousness (conscious or anesthetized), the dose, the administration protocol (bolus or infusion) and the species that were used. These screening studies enabled selection of a treatment regimen and dose without adverse effects that could subsequently be tested in efficacy studies.
+A porcine myocardial infarct (MI) model with reperfusion was used to evaluate the effects of OT following myocardial ischemia. In a pilot project, continuous infusion of OT initiated immediately at coronary reperfusion induced cardiovascular adverse effects in all treated animals including a reduction of left ventricular fraction shortening and worsening of dilated cardiomyopathy which is typical following MI. Considering these observations, the therapeutic strategy was revised to avoid OT treatment during the inflammatory phase which was considered maximal around day 3 post-ischemia. When initiated 8 days after MI, OT infusion induced adverse effects in animals with elevated endogenous levels of OT. In contrast, no significant effects (not statistically significant improvement) were observed in animals with low endogenous OT baseline. In placebo treated animals, a trend to observe a better recovery was noted in animals with high endogenous OT baseline. While the size of the ischemic zone was comparable to human patients with MI, the use of juvenile animals and the absence of coronary disease are important limitations of the porcine model. 
+
+The potential of OT for treatment of MI remains but our results suggest that systemic administration of OT by continuous infusion as part of a replacement therapy should be investigated further in relation to endogenous levels. Further investigations on safety of the treatment with OT on animal MI models are warranted before the use of OT can be considered in the patient population after myocardial infarct. On the other hand, endogenous levels of OT may have a prognostic value and clinical trials to investigate this hypothesis may be of interest." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Oxytocine; Pharmacologie de Sécurité; Effets Cardiovasculaires Adverses; Pharmacologie; Physiologie; Toxicologie; Étude préclinique; Infarctus du Myocarde; Fraction d’Éjection; Planimétrie; Porc; Utilisation Thérapeutique; Infusion Continue; Pharmacocinétique; Oxytocin; Safety Pharmacology; Cardiovascular effects; Pharmacology; Physiology; Toxicology; Preclinical study; Myocardial infarct; Ejection fraction; Planimetry; Pig; Therapeutic use; Continuous infusion; Pharmacokinetic; Biology - Veterinary Science / Biologie - Science vétérinaire (UMI : 0778); Thèse ou mémoire / Thesis or Dissertation; Sciences vétérinaires" name="citation_keywords"/>
+<meta content="Validation des modèles de pharmacologie de sécurité et évaluation de la valeur thérapeutique de l'oxytocine dans le traitement de l'infarctus du myocarde" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Authier, Simon" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/3247/6/Authier_Simon_2009_these.pdf" name="citation_pdf_url"/>
+<meta content="2009-12-03" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/3247" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3247?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3247?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3247?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3247?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3247?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3247?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2919" role="menuitem">Faculté de médecine vétérinaire</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2966" role="menuitem">Faculté de médecine vétérinaire – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2919">Faculté de médecine vétérinaire</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2966">Faculté de médecine vétérinaire – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2966"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/3247/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/3247">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3247/mets.xml-->
+<h2 class="page-header first-page-header">Validation des modèles de pharmacologie de sécurité et évaluation de la valeur thérapeutique de l'oxytocine dans le traitement de l'infarctus du myocarde</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Troncy, Éric</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Blaise, Gilbert</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Tanguay, Jean-François</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Authier, Simon</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2010-01-19T15:19:40Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2010-01-19T15:19:40Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2009-12-03</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2009-06</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/3247</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Oxytocine</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pharmacologie de Sécurité</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Effets Cardiovasculaires Adverses</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pharmacologie</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Physiologie</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Toxicologie</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Étude préclinique</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Infarctus du Myocarde</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Fraction d’Éjection</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Planimétrie</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Porc</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Utilisation Thérapeutique</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Infusion Continue</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pharmacocinétique</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Oxytocin</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Safety Pharmacology</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Cardiovascular effects</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pharmacology</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Physiology</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Toxicology</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Preclinical study</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Myocardial infarct</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Ejection fraction</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Planimetry</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Pig</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Therapeutic use</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Continuous infusion</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pharmacokinetic</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Veterinary Science / Biologie - Science vétérinaire (UMI : 0778)</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Validation des modèles de pharmacologie de sécurité et évaluation de la valeur thérapeutique de l'oxytocine dans le traitement de l'infarctus du myocarde</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences vétérinaires</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">En février, 2009 un rapport de PHRMA (Pharmaceutical Research and Manufacturers of America) confirmait que plus de 300 médicaments pour le traitement des maladies cardiaques étaient en phase d’essais cliniques ou en révision par les agences règlementaires. Malgré cette abondance de nouvelles thérapies cardiovasculaires, le nombre de nouveaux médicaments approuvés chaque année (toutes indications confondues) est en déclin avec seulement 17 et 24 nouveaux médicaments approuvés en 2007 et 2008, respectivement. Seulement 1 médicament sur 5000 sera approuvé après 10 à 15 ans de développement au coût moyen de 800 millions $. De nombreuses initiatives ont été lancées par les agences règlementaires afin d’augmenter le taux de succès lors du développement des nouveaux médicaments mais les résultats tardent. Cette stagnation est attribuée au manque d’efficacité du nouveau médicament dans bien des cas mais les évaluations d’innocuité remportent la palme des causes d’arrêt de développement. Primum non nocere, la maxime d’Hippocrate, père de la médecine, demeure d’actualité en développement préclinique et clinique des médicaments. Environ 3% des médicaments approuvés au cours des 20 dernières années ont, par la suite, été retirés du marché suite à l’identification d’effets adverses. Les effets adverses cardiovasculaires représentent la plus fréquente cause d’arrêt de développement ou de retrait de médicament (27%) suivi par les effets sur le système nerveux. Après avoir défini le contexte des évaluations de pharmacologie de sécurité et l’utilisation des bio-marqueurs, nous avons validé des modèles d’évaluation de l’innocuité des nouveaux médicaments sur les systèmes cardiovasculaires, respiratoires et nerveux. 
+Évoluant parmi les contraintes et les défis des programmes de développements des médicaments, nous avons évalué l’efficacité et l’innocuité de l’oxytocine (OT), un peptide endogène à des fins thérapeutiques. L’OT, une hormone historiquement associée à la reproduction, a démontré la capacité d’induire la différentiation in vitro de lignées cellulaires (P19) mais aussi de cellules souches embryonnaires en cardiomyocytes battants. Ces observations nous ont amené à considérer l’utilisation de l’OT dans le traitement de l’infarctus du myocarde. Afin d’arriver à cet objectif ultime, nous avons d’abord évalué la pharmacocinétique de l’OT dans un modèle de rat anesthésié. Ces études ont mis en évidence des caractéristiques uniques de l’OT dont une courte demi-vie et un profil pharmacocinétique non-linéaire en relation avec la dose administrée. 
+Ensuite, nous avons évalué les effets cardiovasculaires de l’OT sur des animaux sains de différentes espèces. En recherche préclinique, l’utilisation de plusieurs espèces ainsi que de différents états (conscients et anesthésiés) est reconnue comme étant une des meilleures approches afin d’accroître la valeur prédictive des résultats obtenus chez les animaux à la réponse chez l’humain. Des modèles de rats anesthésiés et éveillés, de chiens anesthésiés et éveillés et de singes éveillés avec suivi cardiovasculaire par télémétrie ont été utilisés. L’OT s’est avéré être un agent ayant d’importants effets hémodynamiques présentant une réponse variable selon l’état (anesthésié ou éveillé), la dose, le mode d’administration (bolus ou infusion) et l’espèce utilisée. Ces études nous ont permis d’établir les doses et régimes de traitement n’ayant pas d’effets cardiovasculaires adverses et pouvant être utilisées dans le cadre des études d’efficacité subséquentes. 
+Un modèle porcin d’infarctus du myocarde avec reperfusion a été utilisé afin d’évaluer les effets de l’OT dans le traitement de l’infarctus du myocarde. Dans le cadre d’un projet pilote, l’infusion continue d’OT initiée immédiatement au moment de la reperfusion coronarienne a induit des effets cardiovasculaires adverses chez tous les animaux traités incluant une réduction de la fraction de raccourcissement ventriculaire gauche et une aggravation de la cardiomyopathie dilatée suite à l’infarctus. Considérant ces observations, l’approche thérapeutique fût révisée afin d’éviter le traitement pendant la période d’inflammation aigüe considérée maximale autour du 3ième jour suite à l’ischémie. Lorsqu’initié 8 jours après l’ischémie myocardique, l’infusion d’OT a engendré des effets adverses chez les animaux ayant des niveaux endogènes d’OT élevés. Par ailleurs, aucun effet adverse (amélioration non-significative) ne fût observé chez les animaux ayant un faible niveau endogène d’OT. Chez les animaux du groupe placebo, une tendance à observer une meilleure récupération chez ceux ayant des niveaux endogènes initiaux élevés fût notée. Bien que la taille de la zone ischémique à risque soit comparable à celle rencontrée chez les patients atteints d’infarctus, l’utilisation d’animaux juvéniles et l’absence de maladies coronariennes sont des limitations importantes du modèle porcin utilisé. 
+
+Le potentiel de l’OT pour le traitement de l’infarctus du myocarde demeure mais nos résultats suggèrent qu’une administration systémique à titre de thérapie de remplacement de l’OT devrait être considérée en fonction du niveau endogène. De plus amples évaluations de la sécurité du traitement avec l’OT dans des modèles animaux d’infarctus du myocarde seront nécessaires avant de considérer l’utilisation d’OT dans une population de patients atteint d’un infarctus du myocarde. En contre partie, les niveaux endogènes d’OT pourraient posséder une valeur pronostique et des études cliniques à cet égard pourraient être d’intérêt.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">In february 2009, a report from PHRMA (Pharmaceutical Research and Manufacturers of America) confirmed that more than 300 drugs for treatment of cardiovascular diseases were in clinical trials or under review by regulatory agencies. Despite the abundance of new cardiovascular therapies, the number of new drugs approved each year (all indications combined) is declining steadily with only 17 and 24 new drugs approved in 2007 and 2008, respectively. Only 1 drug out of 5000 candidates will be approved after 10 to 15 years of development with an average cost of $800 millions. Several initiatives have been launched by regulatory agencies to increase the success rate in drug development but results are still awaited. This stagnation is attributed to the lack of efficacy of several drug candidates but safety assessments are the leading cause of drug development discontinuation. Primum non nocere, the maxim from Hippocrate, father of medicine, remains of major relevance in preclinical and clinical drug development.  Over the past 20 years, approximately 3% of approved drugs were subsequently withdrawn from the market due to adverse effects. Cardiovascular adverse effects represent the most frequent cause of drug development discontinuation or withdrawal (27%) followed by effects on the nervous system. After defining the context of safety pharmacology evaluations and the use of biomarkers in drug development, we validated safety pharmacology models to investigate drug-induced cardiovascular, respiratory and neurological effects. 
+As we progressed within constraints and challenges of drug development, we evaluated the efficacy and safety of oxytocin, an endogenous peptide with therapeutic potential. Oxytocin (OT), a hormone historically associated with reproduction, demonstrated the ability to induce in vitro differentiation of cell lines (P19) but also embryonic stem cells into beating cardiomyocytes. These observations lead us to consider the use of OT as a treatment for myocardial infarct. To achieve this ultimate goal, we first evaluated the pharmacokinetic of OT in an anesthetized rat model. These investigations highlighted the unique characteristics of OT including a very short half-life and a non-linear pharmacokinetic profile in response to the dose. 
+Cardiovascular effects of OT in healthy animals were then evaluated in various species. In preclinical research, the use of various animal species and state of consciousness (conscious or anesthetized) is recognized as one of the best strategies to increase the predictive value of results obtained in animals to the human response. Our initial investigations of OT treatment regimens used various animal models including conscious and anesthetized rats, anesthetized pigs, conscious dogs with indirect blood pressure monitoring and diuresis and conscious monkeys with cardiovascular telemetry monitoring. These studies confirmed OT to have significant hemodynamic effects with variable responses depending on the state of consciousness (conscious or anesthetized), the dose, the administration protocol (bolus or infusion) and the species that were used. These screening studies enabled selection of a treatment regimen and dose without adverse effects that could subsequently be tested in efficacy studies.
+A porcine myocardial infarct (MI) model with reperfusion was used to evaluate the effects of OT following myocardial ischemia. In a pilot project, continuous infusion of OT initiated immediately at coronary reperfusion induced cardiovascular adverse effects in all treated animals including a reduction of left ventricular fraction shortening and worsening of dilated cardiomyopathy which is typical following MI. Considering these observations, the therapeutic strategy was revised to avoid OT treatment during the inflammatory phase which was considered maximal around day 3 post-ischemia. When initiated 8 days after MI, OT infusion induced adverse effects in animals with elevated endogenous levels of OT. In contrast, no significant effects (not statistically significant improvement) were observed in animals with low endogenous OT baseline. In placebo treated animals, a trend to observe a better recovery was noted in animals with high endogenous OT baseline. While the size of the ischemic zone was comparable to human patients with MI, the use of juvenile animals and the absence of coronary disease are important limitations of the porcine model. 
+
+The potential of OT for treatment of MI remains but our results suggest that systemic administration of OT by continuous infusion as part of a replacement therapy should be investigated further in relation to endogenous levels. Further investigations on safety of the treatment with OT on animal MI models are warranted before the use of OT can be considered in the patient population after myocardial infarct. On the other hand, endogenous levels of OT may have a prognostic value and clinical trials to investigate this hypothesis may be of interest.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F3247&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+v%C3%A9t%C3%A9rinaires&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/3247/Authier_Simon_2009_these.pdf?sequence=6&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/3247/Authier_Simon_2009_these.pdf.jpg?sequence=8&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Authier_Simon_2009_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/3247/Authier_Simon_2009_these.pdf?sequence=6&amp;isAllowed=y">Authier_Simon_2009_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">2.592Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2966/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2966">Faculté de médecine vétérinaire – Thèses et mémoires</a> [509]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/3247">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

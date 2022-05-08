@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Essays on oil price fluctuations and macroeconomic activity</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Cardia, Emanuela" name="DC.contributor">
+<meta content="Perron, Benoit" name="DC.contributor">
+<meta content="Mètoiolè Somé, Dommèbèiwin Juste" name="DC.creator">
+<meta content="2015-03-19T13:52:15Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2015-03-19T13:52:15Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2015-02-18" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2014-08" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/11604" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Estimation Bayésienne" name="DC.subject" xml:lang="fr"/>
+<meta content="Modèles d'équilibre général dynamique stochastique" name="DC.subject" xml:lang="fr"/>
+<meta content="Modèles vecteurs autorégressifs en panel" name="DC.subject" xml:lang="fr"/>
+<meta content="Chocs de demande et d'offre de pétroliers" name="DC.subject" xml:lang="fr"/>
+<meta content="Bien-être social" name="DC.subject" xml:lang="fr"/>
+<meta content="Emploi" name="DC.subject" xml:lang="fr"/>
+<meta content="Industries manufacturières" name="DC.subject" xml:lang="fr"/>
+<meta content="Économie ouverte" name="DC.subject" xml:lang="fr"/>
+<meta content="Canada" name="DC.subject" xml:lang="fr"/>
+<meta content="Bayesian estimation" name="DC.subject" xml:lang="fr"/>
+<meta content="DSGE models" name="DC.subject" xml:lang="fr"/>
+<meta content="Panel VAR models" name="DC.subject" xml:lang="fr"/>
+<meta content="Oil demand and supply shocks" name="DC.subject" xml:lang="fr"/>
+<meta content="Employment" name="DC.subject" xml:lang="fr"/>
+<meta content="Manufacturing industries" name="DC.subject" xml:lang="fr"/>
+<meta content="Open economy" name="DC.subject" xml:lang="fr"/>
+<meta content="Canada" name="DC.subject" xml:lang="fr"/>
+<meta content="Economics - General / Économie - Généralités (UMI : 0501)" name="DC.subject" xml:lang="fr"/>
+<meta content="Essays on oil price fluctuations and macroeconomic activity" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Dans cette thèse, je me suis intéressé aux effets des fluctuations du prix de pétrole sur l'activité macroéconomique selon la cause sous-jacente ces fluctuations. Les modèles économiques utilisés dans cette thèse sont principalement les modèles d'équilibre général dynamique stochastique (de l'anglais Dynamic Stochastic General Equilibrium, DSGE) et les modèles Vecteurs Autorégressifs, VAR.
+
+Plusieurs études ont examiné les effets des fluctuations du prix de pétrole sur les principaux variables macroéconomiques, mais très peu d'entre elles ont fait spécifiquement le lien entre les effets des fluctuations du prix du pétrole et la l'origine de ces fluctuations. Pourtant, il est largement admis dans les études plus récentes que les augmentations du prix du pétrole peuvent avoir des effets très différents en fonction de la cause sous-jacente de cette augmentation. Ma thèse, structurée en trois chapitres, porte une attention particulière aux sources de fluctuations du prix de pétrole et leurs impacts sur l'activité macroéconomique en général, et en particulier sur l'économie du Canada.
+
+Le premier chapitre examine comment les chocs d'offre de pétrole, de demande agrégée, et de demande de précaution de pétrole affectent l'économie du Canada, dans un Modèle d'équilibre Général Dynamique Stochastique estimé. L'estimation est réalisée par la méthode Bayésienne, en utilisant des données trimestrielles canadiennes sur la période 1983Q1 à 2010Q4. Les résultats montrent que les effets dynamiques des fluctuations du prix du pétrole sur les principaux agrégats macro-économiques canadiens varient en fonction de leurs sources. En particulier, une augmentation de 10% du prix réel du pétrole causée par des chocs positifs sur la demande globale étrangère a un effet positif significatif de l'ordre de 0,4% sur le PIB réel du Canada au moment de l'impact et l'effet reste positif sur tous les horizons. En revanche, une augmentation du prix réel du pétrole causée par des chocs négatifs sur l'offre de pétrole ou par des chocs positifs de la demande de pétrole de précaution a un effet négligeable sur le PIB réel du Canada au moment de l'impact, mais provoque une baisse légèrement significative après l'impact. En outre, parmi les chocs pétroliers identifiés, les chocs sur la demande globale étrangère ont été relativement plus important pour expliquer la fluctuation des principaux agrégats macroéconomiques du Canada au cours de la période d'estimation.
+
+Le deuxième chapitre utilise un modèle Structurel VAR en Panel pour examiner les liens entre les chocs de demande et d'offre de pétrole et les ajustements de la demande de travail et des salaires dans les industries manufacturières au Canada. Le modèle est estimé sur des données annuelles désagrégées au niveau industriel sur la période de 1975 à 2008. Les principaux résultats suggèrent qu'un choc positif de demande globale a un effet positif sur la demande de travail et les salaires, à court terme et à long terme. Un choc négatif sur l'offre de pétrole a un effet négatif relativement faible au moment de l'impact, mais l'effet devient positif après la première année. En revanche, un choc positif sur la demande précaution de pétrole a un impact négatif à tous les horizons. Les estimations industrie-par-industrie confirment les précédents résultats en panel. En outre, le papier examine comment les effets des différents chocs pétroliers sur la demande travail et les salaires varient en fonction du degré d'exposition commerciale et de l'intensité en énergie dans la production. Il ressort que les industries fortement exposées au commerce international et les industries fortement intensives en énergie sont plus vulnérables aux fluctuations du prix du pétrole causées par des chocs d'offre de pétrole ou des chocs de demande globale.
+
+Le dernier chapitre examine les implications en terme de bien-être social de l'introduction des inventaires en pétrole sur le marché mondial à l'aide d'un modèle DSGE de trois pays dont deux pays importateurs de pétrole et un pays exportateur de pétrole. Les gains de bien-être sont mesurés par la variation compensatoire de la consommation sous deux règles de politique monétaire. Les principaux résultats montrent que l'introduction des inventaires en pétrole a des effets négatifs sur le bien-être des consommateurs dans chacun des deux pays importateurs de pétrole, alors qu'il a des effets positifs sur le bien-être des consommateurs dans le pays exportateur de pétrole, quelle que soit la règle de politique monétaire. Par ailleurs, l'inclusion de la dépréciation du taux de change dans les règles de politique monétaire permet de réduire les coûts sociaux pour les pays importateurs de pétrole. Enfin, l'ampleur des effets de bien-être dépend du niveau d'inventaire en pétrole à l'état stationnaire et est principalement expliquée par les chocs sur les inventaires en pétrole." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="In this thesis, I am interested in the effects of fluctuations in oil prices on macroeconomic activity depending on the underlying cause of these fluctuations. The economic models used in this thesis include the Dynamic Stochastic General Equilibrium (DSGE) Models and Vector Autoregressive (VAR) Models.
+
+Several studies have examined the effects of fluctuations in oil price on the main macroeconomic variables, but very few of theses studies have specifically made the link between the effects of fluctuations in oil prices and the origin of these fluctuations. However, it is widely accepted in more recent studies that oil price increases may have very different effects depending on the underlying cause of that increase. My thesis, structured in three chapters, is focused on the sources of fluctuations in oil price and their impacts on the macroeconomic activity in general, and in particular on the canadian economy.
+
+
+The first chapter of the thesis investigates how oil supply shocks, aggregate demand shocks, and precautionary oil demand shocks affect Canada's economy, within an estimated Dynamic Stochastic General Equilibrium (DSGE) model. The estimation is conducted using Bayesian methods, with Canadian quarterly data from 1983Q1 to 2010Q4. The results suggest that the dynamic effects of oil price shocks on Canadian macroeconomic variables vary according to their sources. In particular, a 10% increase in the real price of oil driven by positive foreign aggregate demand shocks has a significant positive effect of about 0.4% on Canada's real GDP upon impact and the effect remains positive over time. In contrast, an increase in the real price of oil driven by negative foreign oil supply shocks  or by positive  precautionary oil demand shocks causes an insignificant effect on Canada's real GDP upon impact but causes a slightly significant decline afterwards. The intuition is that a positive innovation in aggregate demand tends to increase the demand for Canada's overall exports. Oil supply disruptions in foreign countries or positive precautionary oil demand shocks increase the uncertainty about future oil prices, which leads firms to postpone irreversible investment expenditures, and tends to reduce Canada's real GDP. Furthermore, among the identified oil shocks, foreign aggregate demand shocks have been relatively more important in explaining the variations of most of Canadian macroeconomic variables over the estimation period.
+
+The second chapter examines the links between oil demand and supply shocks and labor market adjustments in Canadian manufacturing industries using a panel structural VAR model. The model is estimated with disaggregated annual data at the industry level from 1975 to 2008. The results show that a positive aggregate demand shock increases both labor and the price of labor over a 20-year period. A negative oil supply shock has a relatively small negative effect upon impact but the effect turns positive after the first year. In contrast, a positive precautionary oil demand shock has a negative impact over all horizons. The paper also examines how the responses to different types of oil shocks vary from industry to industry. The results suggest that industries with higher net trade exposure/oil-intensity are more vulnerable to oil price increases driven by oil supply shocks and aggregate demand shocks.
+
+The third chapter examines the welfare implications of introducing competitive storage on the global oil market using a three country DSGE model characterized by two oil-importing countries and one oil-exporting country. The welfare gains are measured by consumption compensating variation under two alternative monetary policy rules. The main results indicate that the introduction of oil storage has negative welfare effects for each of the two oil importing countries, while it has positive welfare effects for the oil exporting country, whatever the monetary policy rule. I also found that including the exchange rate depreciation in the monetary policy rules allows to slightly reduce the welfare costs for both oil importing countries. Finally, the magnitude of the welfare effects depends on the steady state level of oil storage and is mainly driven by oil storage shocks." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Estimation Bayésienne; Modèles d'équilibre général dynamique stochastique; Modèles vecteurs autorégressifs en panel; Chocs de demande et d'offre de pétroliers; Bien-être social; Emploi; Industries manufacturières; Économie ouverte; Canada; Bayesian estimation; DSGE models; Panel VAR models; Oil demand and supply shocks; Employment; Manufacturing industries; Open economy; Canada; Economics - General / Économie - Généralités (UMI : 0501); Thèse ou mémoire / Thesis or Dissertation; Sciences économiques" name="citation_keywords"/>
+<meta content="Essays on oil price fluctuations and macroeconomic activity" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Mètoiolè Somé, Dommèbèiwin Juste" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/11604/4/Metoiole_Some_Dommebeiwin_Juste_these.pdf" name="citation_pdf_url"/>
+<meta content="2015-02-18" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/11604" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11604?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11604?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11604?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11604?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11604?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11604?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/149" role="menuitem">Faculté des arts et des sciences – Département de sciences économiques</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2995" role="menuitem">Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/149">Faculté des arts et des sciences – Département de sciences économiques</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2995">Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2995"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/11604/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/11604">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/11604/mets.xml-->
+<h2 class="page-header first-page-header">Essays on oil price fluctuations and macroeconomic activity</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Cardia, Emanuela</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Perron, Benoit</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Mètoiolè Somé, Dommèbèiwin Juste</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2015-03-19T13:52:15Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2015-03-19T13:52:15Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2015-02-18</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2014-08</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/11604</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Estimation Bayésienne</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Modèles d'équilibre général dynamique stochastique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Modèles vecteurs autorégressifs en panel</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Chocs de demande et d'offre de pétroliers</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Bien-être social</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Emploi</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Industries manufacturières</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Économie ouverte</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Canada</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Bayesian estimation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">DSGE models</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Panel VAR models</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Oil demand and supply shocks</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Employment</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Manufacturing industries</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Open economy</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Canada</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Economics - General / Économie - Généralités (UMI : 0501)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Essays on oil price fluctuations and macroeconomic activity</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences économiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Dans cette thèse, je me suis intéressé aux effets des fluctuations du prix de pétrole sur l'activité macroéconomique selon la cause sous-jacente ces fluctuations. Les modèles économiques utilisés dans cette thèse sont principalement les modèles d'équilibre général dynamique stochastique (de l'anglais Dynamic Stochastic General Equilibrium, DSGE) et les modèles Vecteurs Autorégressifs, VAR.
+
+Plusieurs études ont examiné les effets des fluctuations du prix de pétrole sur les principaux variables macroéconomiques, mais très peu d'entre elles ont fait spécifiquement le lien entre les effets des fluctuations du prix du pétrole et la l'origine de ces fluctuations. Pourtant, il est largement admis dans les études plus récentes que les augmentations du prix du pétrole peuvent avoir des effets très différents en fonction de la cause sous-jacente de cette augmentation. Ma thèse, structurée en trois chapitres, porte une attention particulière aux sources de fluctuations du prix de pétrole et leurs impacts sur l'activité macroéconomique en général, et en particulier sur l'économie du Canada.
+
+Le premier chapitre examine comment les chocs d'offre de pétrole, de demande agrégée, et de demande de précaution de pétrole affectent l'économie du Canada, dans un Modèle d'équilibre Général Dynamique Stochastique estimé. L'estimation est réalisée par la méthode Bayésienne, en utilisant des données trimestrielles canadiennes sur la période 1983Q1 à 2010Q4. Les résultats montrent que les effets dynamiques des fluctuations du prix du pétrole sur les principaux agrégats macro-économiques canadiens varient en fonction de leurs sources. En particulier, une augmentation de 10% du prix réel du pétrole causée par des chocs positifs sur la demande globale étrangère a un effet positif significatif de l'ordre de 0,4% sur le PIB réel du Canada au moment de l'impact et l'effet reste positif sur tous les horizons. En revanche, une augmentation du prix réel du pétrole causée par des chocs négatifs sur l'offre de pétrole ou par des chocs positifs de la demande de pétrole de précaution a un effet négligeable sur le PIB réel du Canada au moment de l'impact, mais provoque une baisse légèrement significative après l'impact. En outre, parmi les chocs pétroliers identifiés, les chocs sur la demande globale étrangère ont été relativement plus important pour expliquer la fluctuation des principaux agrégats macroéconomiques du Canada au cours de la période d'estimation.
+
+Le deuxième chapitre utilise un modèle Structurel VAR en Panel pour examiner les liens entre les chocs de demande et d'offre de pétrole et les ajustements de la demande de travail et des salaires dans les industries manufacturières au Canada. Le modèle est estimé sur des données annuelles désagrégées au niveau industriel sur la période de 1975 à 2008. Les principaux résultats suggèrent qu'un choc positif de demande globale a un effet positif sur la demande de travail et les salaires, à court terme et à long terme. Un choc négatif sur l'offre de pétrole a un effet négatif relativement faible au moment de l'impact, mais l'effet devient positif après la première année. En revanche, un choc positif sur la demande précaution de pétrole a un impact négatif à tous les horizons. Les estimations industrie-par-industrie confirment les précédents résultats en panel. En outre, le papier examine comment les effets des différents chocs pétroliers sur la demande travail et les salaires varient en fonction du degré d'exposition commerciale et de l'intensité en énergie dans la production. Il ressort que les industries fortement exposées au commerce international et les industries fortement intensives en énergie sont plus vulnérables aux fluctuations du prix du pétrole causées par des chocs d'offre de pétrole ou des chocs de demande globale.
+
+Le dernier chapitre examine les implications en terme de bien-être social de l'introduction des inventaires en pétrole sur le marché mondial à l'aide d'un modèle DSGE de trois pays dont deux pays importateurs de pétrole et un pays exportateur de pétrole. Les gains de bien-être sont mesurés par la variation compensatoire de la consommation sous deux règles de politique monétaire. Les principaux résultats montrent que l'introduction des inventaires en pétrole a des effets négatifs sur le bien-être des consommateurs dans chacun des deux pays importateurs de pétrole, alors qu'il a des effets positifs sur le bien-être des consommateurs dans le pays exportateur de pétrole, quelle que soit la règle de politique monétaire. Par ailleurs, l'inclusion de la dépréciation du taux de change dans les règles de politique monétaire permet de réduire les coûts sociaux pour les pays importateurs de pétrole. Enfin, l'ampleur des effets de bien-être dépend du niveau d'inventaire en pétrole à l'état stationnaire et est principalement expliquée par les chocs sur les inventaires en pétrole.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">In this thesis, I am interested in the effects of fluctuations in oil prices on macroeconomic activity depending on the underlying cause of these fluctuations. The economic models used in this thesis include the Dynamic Stochastic General Equilibrium (DSGE) Models and Vector Autoregressive (VAR) Models.
+
+Several studies have examined the effects of fluctuations in oil price on the main macroeconomic variables, but very few of theses studies have specifically made the link between the effects of fluctuations in oil prices and the origin of these fluctuations. However, it is widely accepted in more recent studies that oil price increases may have very different effects depending on the underlying cause of that increase. My thesis, structured in three chapters, is focused on the sources of fluctuations in oil price and their impacts on the macroeconomic activity in general, and in particular on the canadian economy.
+
+
+The first chapter of the thesis investigates how oil supply shocks, aggregate demand shocks, and precautionary oil demand shocks affect Canada's economy, within an estimated Dynamic Stochastic General Equilibrium (DSGE) model. The estimation is conducted using Bayesian methods, with Canadian quarterly data from 1983Q1 to 2010Q4. The results suggest that the dynamic effects of oil price shocks on Canadian macroeconomic variables vary according to their sources. In particular, a 10% increase in the real price of oil driven by positive foreign aggregate demand shocks has a significant positive effect of about 0.4% on Canada's real GDP upon impact and the effect remains positive over time. In contrast, an increase in the real price of oil driven by negative foreign oil supply shocks  or by positive  precautionary oil demand shocks causes an insignificant effect on Canada's real GDP upon impact but causes a slightly significant decline afterwards. The intuition is that a positive innovation in aggregate demand tends to increase the demand for Canada's overall exports. Oil supply disruptions in foreign countries or positive precautionary oil demand shocks increase the uncertainty about future oil prices, which leads firms to postpone irreversible investment expenditures, and tends to reduce Canada's real GDP. Furthermore, among the identified oil shocks, foreign aggregate demand shocks have been relatively more important in explaining the variations of most of Canadian macroeconomic variables over the estimation period.
+
+The second chapter examines the links between oil demand and supply shocks and labor market adjustments in Canadian manufacturing industries using a panel structural VAR model. The model is estimated with disaggregated annual data at the industry level from 1975 to 2008. The results show that a positive aggregate demand shock increases both labor and the price of labor over a 20-year period. A negative oil supply shock has a relatively small negative effect upon impact but the effect turns positive after the first year. In contrast, a positive precautionary oil demand shock has a negative impact over all horizons. The paper also examines how the responses to different types of oil shocks vary from industry to industry. The results suggest that industries with higher net trade exposure/oil-intensity are more vulnerable to oil price increases driven by oil supply shocks and aggregate demand shocks.
+
+The third chapter examines the welfare implications of introducing competitive storage on the global oil market using a three country DSGE model characterized by two oil-importing countries and one oil-exporting country. The welfare gains are measured by consumption compensating variation under two alternative monetary policy rules. The main results indicate that the introduction of oil storage has negative welfare effects for each of the two oil importing countries, while it has positive welfare effects for the oil exporting country, whatever the monetary policy rule. I also found that including the exchange rate depreciation in the monetary policy rules allows to slightly reduce the welfare costs for both oil importing countries. Finally, the magnitude of the welfare effects depends on the steady state level of oil storage and is mainly driven by oil storage shocks.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F11604&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+%C3%A9conomiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/11604/Metoiole_Some_Dommebeiwin_Juste_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/11604/Metoiole_Some_Dommebeiwin_Juste_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Metoiole_Some_Dommebeiwin_Juste_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/11604/Metoiole_Some_Dommebeiwin_Juste_these.pdf?sequence=4&amp;isAllowed=y">Metoiole_Some_Dommebeiwin_Just ...</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1002.Kb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2995/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2995">Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires</a> [317]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/11604">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

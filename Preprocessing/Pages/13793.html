@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Implication de Syngap1 dans la transmission GABAergique et la plasticité synaptique</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Michaud, Jacques" name="DC.contributor">
+<meta content="Di Cristo, Graziella" name="DC.contributor">
+<meta content="Lacaille, Jean-Claude" name="DC.contributor">
+<meta content="Xing, Paul" name="DC.creator">
+<meta content="2016-04-26T19:18:29Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="MONTHS_WITHHELD:24" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2016-04-26T19:18:29Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF"/>
+<meta content="2016-03-17" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2015-08" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/13793" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="autisme" name="DC.subject" xml:lang="fr"/>
+<meta content="AMPAR" name="DC.subject" xml:lang="fr"/>
+<meta content="déficience intellectuelle" name="DC.subject" xml:lang="fr"/>
+<meta content="équilibre excitation/inhibition" name="DC.subject" xml:lang="fr"/>
+<meta content="hippocampe" name="DC.subject" xml:lang="fr"/>
+<meta content="interneurones GABAergiques" name="DC.subject" xml:lang="fr"/>
+<meta content="LTP" name="DC.subject" xml:lang="fr"/>
+<meta content="LTD" name="DC.subject" xml:lang="fr"/>
+<meta content="néocortex" name="DC.subject" xml:lang="fr"/>
+<meta content="mEPSCs" name="DC.subject" xml:lang="fr"/>
+<meta content="mIPSCs" name="DC.subject" xml:lang="fr"/>
+<meta content="NMDAR" name="DC.subject" xml:lang="fr"/>
+<meta content="Syngap1" name="DC.subject" xml:lang="fr"/>
+<meta content="autism" name="DC.subject" xml:lang="fr"/>
+<meta content="excitation/inhibition balance" name="DC.subject" xml:lang="fr"/>
+<meta content="GABAergic interneurons" name="DC.subject" xml:lang="fr"/>
+<meta content="hippocampus" name="DC.subject" xml:lang="fr"/>
+<meta content="intellectual disability" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Neuroscience / Biologie - Neurologie (UMI : 0317)" name="DC.subject" xml:lang="fr"/>
+<meta content="Implication de Syngap1 dans la transmission GABAergique et la plasticité synaptique" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La déficience intellectuelle affecte de 1 à 3% de la population mondiale, ce qui en fait le trouble cognitif le plus commun de l’enfance. Notre groupe à découvert que des mutations dans le gène SYNGAP1 sont une cause fréquente de déficience intellectuelle non-syndromique, qui compte pour 1-3% de l’ensemble des cas. À titre d’exemple, le syndrome du X fragile, qui est la cause monogénique la plus fréquente de déficience intellectuelle, compte pour environ 2% des cas. Plusieurs patients affectés au niveau de SYNGAP1 présentent également des symptômes de l’autisme et d’une forme d’épilepsie. Notre groupe a également montré que SYNGAP1 cause la déficience intellectuelle par un mécanisme d’haploinsuffisance. SYNGAP1 code pour une protéine exprimée exclusivement dans le cerveau qui interagit avec la sous-unité GluN2B des récepteurs glutamatergique de type NMDA (NMDAR). SYNGAP1 possède une activité activatrice de Ras-GTPase qui régule négativement Ras au niveau des synapses excitatrices.
+Les souris hétérozygotes pour Syngap1 (souris Syngap1+/-) présentent des anomalies de comportement et des déficits cognitifs, ce qui en fait un bon modèle d’étude. Plusieurs études rapportent que l’haploinsuffisance de Syngap1 affecte le développement cérébral en perturbant l’activité et la plasticité des neurones excitateurs. Le déséquilibre excitation/inhibition est une théorie émergente de l’origine de la déficience intellectuelle et de l’autisme. Cependant, plusieurs groupes y compris le nôtre ont rapporté que Syngap1 est également exprimé dans au moins une sous-population d’interneurones GABAergiques. Notre hypothèse était donc que l’haploinsuffisance de Syngap1 dans les interneurones contribuerait en partie aux déficits cognitifs et au déséquilibre d’excitation/inhibition observés chez les souris Syngap1+/-.
+Pour tester cette hypothèse, nous avons généré un modèle de souris transgéniques dont l’expression de Syngap1 a été diminuée uniquement dans les interneurones dérivés des éminences ganglionnaires médianes qui expriment le facteur de transcription Nkx2.1 (souris Tg(Nkx2,1-Cre);Syngap1). Nous avons observé une diminution des courants postsynaptiques inhibiteurs miniatures (mIPSCs) au niveau des cellules pyramidales des couches 2/3 du cortex somatosensoriel primaire (S1) et dans le CA1 de l’hippocampe des souris Tg(Nkx2,1-Cre);Syngap1. Ces résultats supportent donc l’hypothèse selon laquelle la perte de Syngap1 dans les interneurones contribue au déséquilibre d’excitation/inhibition. De manière intéressante, nous avons également observé que les courants postsynaptiques excitateurs miniatures (mEPSCs) étaient augmentés dans le cortex S1, mais diminués dans le CA1 de l’hippocampe.
+Par la suite, nous avons testé si les mécanismes de plasticité synaptique qui sous-tendraient l’apprentissage étaient affectés par l’haploinsuffisance de Syngap1 dans les interneurones. Nous avons pu montrer que la potentialisation à long terme (LTP) NMDAR-dépendante était diminuée chez les souris Tg(Nkx2,1-Cre);Syngap1, sans que la dépression à long terme (LTD) NMDAR-dépendante soit affectée. Nous avons également montré que l’application d’un bloqueur des récepteurs GABAA renversait en partie le déficit de LTP rapporté chez les souris Syngap1+/-, suggérant qu’un déficit de désinhibition serait présent chez ces souris.
+L’ensemble de ces résultats supporte un rôle de Syngap1 dans les interneurones qui contribue aux déficits observés chez les souris affectées par l’haploinsuffisance de Syngap1." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Intellectual disability affects 1-3% of the world population, which make it the most common cognitive disorder of childhood. Our group discovered that mutation in the SYNGAP1 gene was a frequent cause of non-syndromic intellectual disability, accounting for 1-3% of the cases. For example, the fragile X syndrome, which is the most common monogenic cause of intellectual disability, accounts for 2% of all cases. Some patients affected by SYNGAP1 also showed autism spectrum disorder and epileptic seizures. Our group also showed that mutations in SYNGAP1 caused intellectual disability by an haploinsufficiency mechanism. SYNGAP1 codes for a protein expressed only in the brain which interacts with the GluN2B subunit of NMDA glutamatergic receptors (NMDAR). SYNGAP1 possesses a Ras-GAP activating activity which negatively regulates Ras at excitatory synapses.
+Heterozygote mice for Syngap1 (Syngap1+/- mice) show behaviour abnormalities and learning deficits, which makes them a good model of intellectual disability. Some studies showed that Syngap1 affects the brain development by perturbing the activity and plasticity of excitatory neurons. The excitatory/inhibitory imbalance is an emerging theory of the origin of intellectual disability and autism. However, some groups including ours, showed that Syngap1 is expressed in at least a subpopulation of GABAergic interneurons. Therefore, our hypothesis was that Syngap1 happloinsufficiency in interneurons contributes in part to the cognitive deficits and excitation/inhibition imbalance observed in Syngap1+/- mice.
+To test this hypothesis, we generated a transgenic mouse model where Syngap1 expression was decreased only in GABAergic interneurons derived from the medial ganglionic eminence, which expresses the transcription factor Nkx2.1 (Tg(Nkx2,1-Cre);Syngap1 mouse). We showed that miniature inhibitory postsynaptic currents (mIPSCs) were decreased in pyramidal cells in layers 2/3 in primary somatosensory cortex (S1) and in CA1 region of the hippocampus of Tg(Nkx2,1-Cre);Syngap1 mice. Those results suggest that Syngap1 haploinsufficiency in GABAergic interneurons contributes in part to the excitation/inhibition imbalance observed in Syngap1+/- mice. Interestingly, we also observed that miniature excitatory postsynaptic currents (mEPSCs) were increased in cortex S1 but decreased in CA1 region of the hippocampus.
+We further tested whether synaptic plasticity mechanisms that are thought to underlie learning and memory were affected by Syngap1 haploinsufficiency in GABAergic interneurons. We showed that NMDAR-dependent long-term potentiation (LTP) but not NMDAR-dependent long-term depression (LTD) was decreased in Tg(Nkx2,1-Cre);Syngap1 mice. We also showed that GABAA receptor blockade rescued in part the LTP deficit in Syngap1+/- mice, suggesting that a disinhibition deficit is present in these mice.
+Altogether, the results support a functional role of Syngap1 in GABAergic interneurons, which may in turn contributes to the deficit observed in Syngap1+/- mice." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="autisme; AMPAR; déficience intellectuelle; équilibre excitation/inhibition; hippocampe; interneurones GABAergiques; LTP; LTD; néocortex; mEPSCs; mIPSCs; NMDAR; Syngap1; autism; excitation/inhibition balance; GABAergic interneurons; hippocampus; intellectual disability; Biology - Neuroscience / Biologie - Neurologie (UMI : 0317); Thèse ou mémoire / Thesis or Dissertation; Sciences neurologiques" name="citation_keywords"/>
+<meta content="Implication de Syngap1 dans la transmission GABAergique et la plasticité synaptique" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Xing, Paul" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/13793/2/XING_Paul_2015_memoire.pdf" name="citation_pdf_url"/>
+<meta content="2016-03-17" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/13793" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13793?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13793?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13793?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13793?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13793?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13793?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/13793/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/13793">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/13793/mets.xml-->
+<h2 class="page-header first-page-header">Implication de Syngap1 dans la transmission GABAergique et la plasticité synaptique</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Michaud, Jacques</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Di Cristo, Graziella</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Lacaille, Jean-Claude</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Xing, Paul</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2016-04-26T19:18:29Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">MONTHS_WITHHELD:24</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2016-04-26T19:18:29Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2016-03-17</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2015-08</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/13793</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">autisme</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">AMPAR</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">déficience intellectuelle</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">équilibre excitation/inhibition</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">hippocampe</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">interneurones GABAergiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">LTP</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">LTD</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">néocortex</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">mEPSCs</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">mIPSCs</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">NMDAR</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Syngap1</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">autism</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">excitation/inhibition balance</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">GABAergic interneurons</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">hippocampus</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">intellectual disability</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Neuroscience / Biologie - Neurologie (UMI : 0317)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Implication de Syngap1 dans la transmission GABAergique et la plasticité synaptique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences neurologiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Maîtrise / Master's</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">M. Sc.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La déficience intellectuelle affecte de 1 à 3% de la population mondiale, ce qui en fait le trouble cognitif le plus commun de l’enfance. Notre groupe à découvert que des mutations dans le gène SYNGAP1 sont une cause fréquente de déficience intellectuelle non-syndromique, qui compte pour 1-3% de l’ensemble des cas. À titre d’exemple, le syndrome du X fragile, qui est la cause monogénique la plus fréquente de déficience intellectuelle, compte pour environ 2% des cas. Plusieurs patients affectés au niveau de SYNGAP1 présentent également des symptômes de l’autisme et d’une forme d’épilepsie. Notre groupe a également montré que SYNGAP1 cause la déficience intellectuelle par un mécanisme d’haploinsuffisance. SYNGAP1 code pour une protéine exprimée exclusivement dans le cerveau qui interagit avec la sous-unité GluN2B des récepteurs glutamatergique de type NMDA (NMDAR). SYNGAP1 possède une activité activatrice de Ras-GTPase qui régule négativement Ras au niveau des synapses excitatrices.
+Les souris hétérozygotes pour Syngap1 (souris Syngap1+/-) présentent des anomalies de comportement et des déficits cognitifs, ce qui en fait un bon modèle d’étude. Plusieurs études rapportent que l’haploinsuffisance de Syngap1 affecte le développement cérébral en perturbant l’activité et la plasticité des neurones excitateurs. Le déséquilibre excitation/inhibition est une théorie émergente de l’origine de la déficience intellectuelle et de l’autisme. Cependant, plusieurs groupes y compris le nôtre ont rapporté que Syngap1 est également exprimé dans au moins une sous-population d’interneurones GABAergiques. Notre hypothèse était donc que l’haploinsuffisance de Syngap1 dans les interneurones contribuerait en partie aux déficits cognitifs et au déséquilibre d’excitation/inhibition observés chez les souris Syngap1+/-.
+Pour tester cette hypothèse, nous avons généré un modèle de souris transgéniques dont l’expression de Syngap1 a été diminuée uniquement dans les interneurones dérivés des éminences ganglionnaires médianes qui expriment le facteur de transcription Nkx2.1 (souris Tg(Nkx2,1-Cre);Syngap1). Nous avons observé une diminution des courants postsynaptiques inhibiteurs miniatures (mIPSCs) au niveau des cellules pyramidales des couches 2/3 du cortex somatosensoriel primaire (S1) et dans le CA1 de l’hippocampe des souris Tg(Nkx2,1-Cre);Syngap1. Ces résultats supportent donc l’hypothèse selon laquelle la perte de Syngap1 dans les interneurones contribue au déséquilibre d’excitation/inhibition. De manière intéressante, nous avons également observé que les courants postsynaptiques excitateurs miniatures (mEPSCs) étaient augmentés dans le cortex S1, mais diminués dans le CA1 de l’hippocampe.
+Par la suite, nous avons testé si les mécanismes de plasticité synaptique qui sous-tendraient l’apprentissage étaient affectés par l’haploinsuffisance de Syngap1 dans les interneurones. Nous avons pu montrer que la potentialisation à long terme (LTP) NMDAR-dépendante était diminuée chez les souris Tg(Nkx2,1-Cre);Syngap1, sans que la dépression à long terme (LTD) NMDAR-dépendante soit affectée. Nous avons également montré que l’application d’un bloqueur des récepteurs GABAA renversait en partie le déficit de LTP rapporté chez les souris Syngap1+/-, suggérant qu’un déficit de désinhibition serait présent chez ces souris.
+L’ensemble de ces résultats supporte un rôle de Syngap1 dans les interneurones qui contribue aux déficits observés chez les souris affectées par l’haploinsuffisance de Syngap1.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Intellectual disability affects 1-3% of the world population, which make it the most common cognitive disorder of childhood. Our group discovered that mutation in the SYNGAP1 gene was a frequent cause of non-syndromic intellectual disability, accounting for 1-3% of the cases. For example, the fragile X syndrome, which is the most common monogenic cause of intellectual disability, accounts for 2% of all cases. Some patients affected by SYNGAP1 also showed autism spectrum disorder and epileptic seizures. Our group also showed that mutations in SYNGAP1 caused intellectual disability by an haploinsufficiency mechanism. SYNGAP1 codes for a protein expressed only in the brain which interacts with the GluN2B subunit of NMDA glutamatergic receptors (NMDAR). SYNGAP1 possesses a Ras-GAP activating activity which negatively regulates Ras at excitatory synapses.
+Heterozygote mice for Syngap1 (Syngap1+/- mice) show behaviour abnormalities and learning deficits, which makes them a good model of intellectual disability. Some studies showed that Syngap1 affects the brain development by perturbing the activity and plasticity of excitatory neurons. The excitatory/inhibitory imbalance is an emerging theory of the origin of intellectual disability and autism. However, some groups including ours, showed that Syngap1 is expressed in at least a subpopulation of GABAergic interneurons. Therefore, our hypothesis was that Syngap1 happloinsufficiency in interneurons contributes in part to the cognitive deficits and excitation/inhibition imbalance observed in Syngap1+/- mice.
+To test this hypothesis, we generated a transgenic mouse model where Syngap1 expression was decreased only in GABAergic interneurons derived from the medial ganglionic eminence, which expresses the transcription factor Nkx2.1 (Tg(Nkx2,1-Cre);Syngap1 mouse). We showed that miniature inhibitory postsynaptic currents (mIPSCs) were decreased in pyramidal cells in layers 2/3 in primary somatosensory cortex (S1) and in CA1 region of the hippocampus of Tg(Nkx2,1-Cre);Syngap1 mice. Those results suggest that Syngap1 haploinsufficiency in GABAergic interneurons contributes in part to the excitation/inhibition imbalance observed in Syngap1+/- mice. Interestingly, we also observed that miniature excitatory postsynaptic currents (mEPSCs) were increased in cortex S1 but decreased in CA1 region of the hippocampus.
+We further tested whether synaptic plasticity mechanisms that are thought to underlie learning and memory were affected by Syngap1 haploinsufficiency in GABAergic interneurons. We showed that NMDAR-dependent long-term potentiation (LTP) but not NMDAR-dependent long-term depression (LTD) was decreased in Tg(Nkx2,1-Cre);Syngap1 mice. We also showed that GABAA receptor blockade rescued in part the LTP deficit in Syngap1+/- mice, suggesting that a disinhibition deficit is present in these mice.
+Altogether, the results support a functional role of Syngap1 in GABAergic interneurons, which may in turn contributes to the deficit observed in Syngap1+/- mice.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F13793&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+neurologiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Ma%C3%AEtrise+%2F+Master%27s&amp;rft.degree=M.+Sc."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/13793/XING_Paul_2015_memoire.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/13793/XING_Paul_2015_memoire.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="XING_Paul_2015_memoire.pdf">
+<a href="/xmlui/bitstream/handle/1866/13793/XING_Paul_2015_memoire.pdf?sequence=2&amp;isAllowed=y">XING_Paul_2015_memoire.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">8.713Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Mémoire">Mémoire</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/13793">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

@@ -16,6 +16,7 @@ languages_abstracts={}
 num_franco=0
 num_multilingue=0
 i=0
+
 while True:
 	i+=1
 	# print(i)
@@ -38,6 +39,7 @@ while True:
 		"""First putting everything in json format for faster access"""
 		dict = {'index': index_start, 'title': title, 'abstract': abstracts,
 				'keyphrases':keywords}
+
 		json.dump(dict, file, ensure_ascii=False)
 		file.write('\n')
 		index_start-=1

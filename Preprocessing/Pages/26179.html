@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Développement de nouveaux systèmes de délivrance de substances actives administrées par la voie transcutanée</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Marleau, Sylvie" name="DC.contributor">
+<meta content="Kirilov, Plamen" name="DC.contributor">
+<meta content="Esposito, Cloé" name="DC.creator">
+<meta content="2022-01-31T16:44:24Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2022-01-31T16:44:24Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-11-17" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2021-10" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/26179" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="LMOGs" name="DC.subject" xml:lang="fr"/>
+<meta content="Organogels" name="DC.subject" xml:lang="fr"/>
+<meta content="Acide 12-hydroxystéarique" name="DC.subject" xml:lang="fr"/>
+<meta content="Absorption cutanée" name="DC.subject" xml:lang="fr"/>
+<meta content="Timbre de microaiguilles" name="DC.subject" xml:lang="fr"/>
+<meta content="GHRP-6" name="DC.subject" xml:lang="fr"/>
+<meta content="Cytotoxicité" name="DC.subject" xml:lang="fr"/>
+<meta content="Implants se formant in situ" name="DC.subject" xml:lang="fr"/>
+<meta content="12-hydroxystearic acid" name="DC.subject" xml:lang="fr"/>
+<meta content="Microneedle patch" name="DC.subject" xml:lang="fr"/>
+<meta content="Skin absorption" name="DC.subject" xml:lang="fr"/>
+<meta content="Cytotoxicity" name="DC.subject" xml:lang="fr"/>
+<meta content="In situ forming implants" name="DC.subject" xml:lang="fr"/>
+<meta content="Health Sciences - Pharmacy / Sciences de la santé - Pharmacie (UMI : 0572)" name="DC.subject" xml:lang="fr"/>
+<meta content="Développement de nouveaux systèmes de délivrance de substances actives administrées par la voie transcutanée" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Le développement de nouveaux systèmes pour l’administration de médicaments par la voie transcutanée ne cesse de susciter un intérêt croissant pour élaborer de nouvelles stratégies visant à traverser la barrière du stratum corneum et transporter efficacement les agents thérapeutiques à travers la peau. Bien que l’administration par voie orale soit la plus favorable chez les patients, une faible biodisponibilité est souvent rencontrée pour certains médicaments et notamment pour les produits biopharmaceutiques. Ainsi, la peau représente un site accessible et pratique pour l’absorption de médicaments, mais détient un potentiel encore sous-estimé comme voie alternative à l’administration par voie orale. La conception de systèmes d'administration parentérale prolongée de médicaments capables de contrôler la libération du médicament au long terme et réduire la fréquence d’administration des médicaments pourrait présenter une option de traitement attrayante. Parmi les systèmes d’implants se formant in situ, les implants d’organogel offrent de nombreux avantages pour libérer au long terme une grande variété de molécules médicamenteuses et notamment des substances actives lipophiles piégées dans les huiles gélifiées. Cependant si l’objectif visé est une administration minimalement invasive et rapide de substances actives, les timbres de microaiguilles dissolvant dans la peau seraient d’un grand intérêt en raison de leur auto-administration, leur sécurité d’emploi et leur capacité à administrer des médicaments à base de peptides. Malgré les effets bénéfiques de ces deux nouveaux systèmes d’administration, les rôles exacts de la composition des organogels et des paramètres géométriques des microaiguilles hydrosolubles sur la libération de médicaments restent peu explorés. 
+Le premier objectif principal de cette thèse était de déterminer l’effet de la composition des organogels se formant in situ par rapport au pourcentage massique en organogélifiant de bas poids moléculaire (acide 12-hydroxystéarique, 12-HSA) et de l’ajout de tensioactif (polysorbate 80) dans le système sur le taux de libération de substances actives hydrophile (acyclovir) et lipophile (clotrimazole). De plus, l'influence des paramètres de composition de ces organogels sur l'induction d'effets toxiques au niveau des fibroblastes de prépuce humain a également été étudiée. Pour ce faire, des systèmes d’organogel formant un dépôt sous-cutané à base de 12-HSA ont été développés en utilisant une faible quantité de solvant organique miscible à l’eau (N-méthyl-2-pyrrolidone) en tant qu’agent inhibant partiellement la gélation, favorisant ainsi l’injection des formulations. Au contact du milieu aqueux, les molécules de 12-HSA ont précipité en immobilisant simultanément l’huile et la substance active en son sein. Une augmentation du pourcentage massique en 12-HSA a conduit à une augmentation de la résistance du gel à la déformation grâce à la formation d’une structure de réseau en trois dimensions complexe. Cependant, l’ajout de polysorbate 80 dans le système a conduit à une structure plus fluide (de faible résistance) diminuant la capacité d’injectabilité des formulations et augmentant l’érosion du gel en surface. Ce dernier phénomène étant amplifié avec un plus faible pourcentage massique en 12-HSA. Les organogels de 12-HSA ont montré diminuer significativement les taux de libération au long terme de l’acyclovir comparé aux formulations de clotrimazole in vitro et ex vivo à travers la peau de porc excisé. La toxicité cellulaire était dépendante du pourcentage massique en 12-HSA et du type de culture cellulaire utilisée. En effet, les effets cytotoxiques étaient plus élevés en augmentant la quantité de 12-HSA dans l’implant pour une sensibilité plus élevée dans la culture cellulaire tridimensionnelle que dans celle bidimensionnelle. Ces résultats semblent néanmoins influencés par le type d’huile utilisé et son potentiel cytotoxique.
+Le deuxième objectif principal de cette thèse était de déterminer l’effet de la hauteur des microaiguilles en forme de pyramide et solubles dans l’eau sur le taux de libération d’un peptide modèle, le growth hormone-releasing peptide-6 (GHRP-6). À cet effet, les microaiguilles ont été préparées par micro-moulage à l’aide de deux polymères biocompatibles hydrosolubles approuvés par la Food and Drug Agency (FDA), l’alcool polyvinylique (PVA) et polyvinylpyrrolidone (PVP). Les timbres de microaiguilles ainsi développés permettaient de pénétrer efficacement dans la peau de porc tout en libérant la molécule encapsulée à l’interface entre l’épiderme et le derme supérieur. La quantification du GHRP-6 dans différentes matrices (peau, microaiguilles, plasma) a pu être réalisée grâce à une méthode analytique robuste et sensible utilisant la chromatographie liquide ultra performance couplée à la spectrométrie de masse en tandem. Les études de libération du GHRP-6 ex vivo sur la peau de porc ont montré que le taux de libération du GHRP-6 était plus élevé au long terme pour une hauteur en aiguille plus grande (800 µm contre 500 µm) tout en permettant d’augmenter l’encapsulation du GHRP-6 dans le système. 
+En conclusion, ces résultats suggèrent que les organogels de 12-HSA pourraient constituer une approche prometteuse pour l’administration prolongée de substance active et notamment celles hydrophiles. Toutefois, les formulations développées devront être efficaces in vivo tout en minimisant les effets toxiques par l’utilisation d’huiles plus biocompatibles. Pour une libération rapide de substances actives, les timbres de microaiguilles représentent une avenue très prometteuse notamment pour les médicaments innovants de nature peptidique. Leur efficacité pour la libération de GHRP-6 et de leurs dérivés azapeptides devra être confirmée lors d’études in vivo (pharmacocinétique, pharmacodynamique, biodistribution), ce qui pourrait constituer une avancée dans l’administration de thérapie à base de peptides pour la gestion de l’inflammation chronique." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="The development of novel transcutaneous drug delivery systems has gained increasing interest, with the focus on overcoming the stratum corneum barrier and efficiently transport therapeutic agents through the skin. Although oral administration is the most favorable route for patients, low bioavailability is often reported for certain drugs and especially for biopharmaceuticals. Accordingly, the skin represents an accessible and convenient site for drug absorption, but has yet to fully achieve its potential as an alternative to oral delivery. The design of parenteral sustained drug delivery systems capable of controlling long-term delivery of drugs and reducing the frequency of drug administration could present an attractive treatment option. Among in situ forming implants, in situ forming organogels offer many advantages such as controlled-release of a wide variety of drug molecules over a longer period of time, including lipophilic active substances trapped within gelled oil solutions. However, if the objective is the rapid administration of active substances, minimally invasive, dissolving microneedle patches would be of great interest due to their self-administration, their safety and their ability to deliver peptide-based drugs. Despite the beneficial effects of these two new delivery systems, the exact roles of the composition of organogels and geometrical parameters of microneedles on drug delivery are largely understudied.
+
+The first main objective of this thesis was to determine the effect of the composition of in situ forming organogels with respect to the organogelator concentration (12-hydroxystearic acid, 12-HSA) and the addition of a nonionic surfactant (polysorbate 80) to the system on the release rate of a hydrophilic (acyclovir) and a lipophilic (clotrimazole) active substances. In addition, the toxic effects of these organogels of different compositions on human foreskin fibroblasts were also studied. To do so, 12-HSA-based organogel systems forming a depot in the subcutaneous tissue have been developed using a small amount of water-miscible organic solvent (N-methyl-2-pyrrolidone) as an agent that can partially inhibit gelation, thus enhancing injectability of the formulations. Upon contact with aqueous medium, 12-HSA molecules precipitated simultaneously immobilizing the oil and the active substance therein. An increase in the concentration of 12-HSA led to an increase in the resistance of the gel to deformation thanks to the formation of a complex three-dimensional network structure. However, the addition of polysorbate 80 to the system resulted in fluid-matrix organogel (weak gel) decreasing the syringability of the formulations while increasing the erosion of the gel on the surface. The latter phenomenon is also intensified with a lower concentration of 12-HSA. 12-HSA organogels have been shown to significantly decrease acyclovir release rates for a longer time period in vitro and ex vivo through excised pig skin compared to clotrimazole formulations. Cellular cytotoxicity was dependent on the concentration of 12-HSA and the type of cell culture used. Indeed, the cytotoxic effects were higher by increasing the concentration of 12-HSA in the implant for a higher sensitivity in the three-dimensional cell culture than in the two-dimensional one. However, these results seem to be influenced by the type of oil used and its cytotoxic potential.
+
+The second main objective of this thesis was to determine the effect of dissolving pyramidal microneedles height on the release rate of a model peptide, the growth hormone-releasing peptide-6 (GHRP-6). For this purpose, the microneedles were prepared by micromolding process using two water-soluble biocompatible polymers approved by the Food and Drug Agency (FDA), poly(vinyl alcohol) (PVA) and polyvinylpyrrolidone (PVP). The microneedle patches allowed the microneedles to efficiently penetrate pig skin while releasing the encapsulated molecule at the interface between the epidermis and upper dermis. The quantification of GHRP-6 in different matrices (skin, microneedles, plasma) was achieved using a robust and sensitive analytical method using ultra performance liquid chromatography - tandem mass spectrometry. Ex vivo GHRP-6 release studies on pig skin showed that the release rate of GHRP-6 was higher over time for high-height microneedle (800 µm vs. 500 µm) while increasing the amount of GHRP-6 loaded in microneedles.
+
+In conclusion, these results suggest that 12-HSA organogels could constitute a promising approach as a sustained-release dosage form of active substances and in particular hydrophilic ones. However, the formulations developed must be effective in vivo while minimizing toxic effects through the use of more biocompatible oils. For a rapid release of drugs, microneedle patches represent a very promising avenue, in particular for emerging peptide drugs. Their efficacy for the release of GHRP-6 and azapeptide derivatives of GHRP-6 needs to be confirmed using in vivo studies (pharmacokinetic, pharmacodynamic, biodistribution), which may represent a breakthrough in the transdermal delivery of therapeutic peptides for the management of chronic inflammation." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="LMOGs; Organogels; Acide 12-hydroxystéarique; Absorption cutanée; Timbre de microaiguilles; GHRP-6; Cytotoxicité; Implants se formant in situ; 12-hydroxystearic acid; Microneedle patch; Skin absorption; Cytotoxicity; In situ forming implants; Health Sciences - Pharmacy / Sciences de la santé - Pharmacie (UMI : 0572); Thèse ou mémoire / Thesis or Dissertation; Sciences pharmaceutiques" name="citation_keywords"/>
+<meta content="Développement de nouveaux systèmes de délivrance de substances actives administrées par la voie transcutanée" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Esposito, Cloé" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/26179/2/Esposito_Cloe_2021_these.pdf" name="citation_pdf_url"/>
+<meta content="2021-11-17" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/26179" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26179?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26179?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26179?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26179?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26179?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26179?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2925" role="menuitem">Faculté de pharmacie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2969" role="menuitem">Faculté de pharmacie – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2925">Faculté de pharmacie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2969">Faculté de pharmacie – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2969"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/26179/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26179">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/26179/mets.xml-->
+<h2 class="page-header first-page-header">Développement de nouveaux systèmes de délivrance de substances actives administrées par la voie transcutanée</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Marleau, Sylvie</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Kirilov, Plamen</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Esposito, Cloé</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2022-01-31T16:44:24Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2022-01-31T16:44:24Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-11-17</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2021-10</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/26179</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">LMOGs</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Organogels</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Acide 12-hydroxystéarique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Absorption cutanée</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Timbre de microaiguilles</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">GHRP-6</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Cytotoxicité</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Implants se formant in situ</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">12-hydroxystearic acid</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Microneedle patch</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Skin absorption</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Cytotoxicity</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">In situ forming implants</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Health Sciences - Pharmacy / Sciences de la santé - Pharmacie (UMI : 0572)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Développement de nouveaux systèmes de délivrance de substances actives administrées par la voie transcutanée</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences pharmaceutiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Le développement de nouveaux systèmes pour l’administration de médicaments par la voie transcutanée ne cesse de susciter un intérêt croissant pour élaborer de nouvelles stratégies visant à traverser la barrière du stratum corneum et transporter efficacement les agents thérapeutiques à travers la peau. Bien que l’administration par voie orale soit la plus favorable chez les patients, une faible biodisponibilité est souvent rencontrée pour certains médicaments et notamment pour les produits biopharmaceutiques. Ainsi, la peau représente un site accessible et pratique pour l’absorption de médicaments, mais détient un potentiel encore sous-estimé comme voie alternative à l’administration par voie orale. La conception de systèmes d'administration parentérale prolongée de médicaments capables de contrôler la libération du médicament au long terme et réduire la fréquence d’administration des médicaments pourrait présenter une option de traitement attrayante. Parmi les systèmes d’implants se formant in situ, les implants d’organogel offrent de nombreux avantages pour libérer au long terme une grande variété de molécules médicamenteuses et notamment des substances actives lipophiles piégées dans les huiles gélifiées. Cependant si l’objectif visé est une administration minimalement invasive et rapide de substances actives, les timbres de microaiguilles dissolvant dans la peau seraient d’un grand intérêt en raison de leur auto-administration, leur sécurité d’emploi et leur capacité à administrer des médicaments à base de peptides. Malgré les effets bénéfiques de ces deux nouveaux systèmes d’administration, les rôles exacts de la composition des organogels et des paramètres géométriques des microaiguilles hydrosolubles sur la libération de médicaments restent peu explorés. 
+Le premier objectif principal de cette thèse était de déterminer l’effet de la composition des organogels se formant in situ par rapport au pourcentage massique en organogélifiant de bas poids moléculaire (acide 12-hydroxystéarique, 12-HSA) et de l’ajout de tensioactif (polysorbate 80) dans le système sur le taux de libération de substances actives hydrophile (acyclovir) et lipophile (clotrimazole). De plus, l'influence des paramètres de composition de ces organogels sur l'induction d'effets toxiques au niveau des fibroblastes de prépuce humain a également été étudiée. Pour ce faire, des systèmes d’organogel formant un dépôt sous-cutané à base de 12-HSA ont été développés en utilisant une faible quantité de solvant organique miscible à l’eau (N-méthyl-2-pyrrolidone) en tant qu’agent inhibant partiellement la gélation, favorisant ainsi l’injection des formulations. Au contact du milieu aqueux, les molécules de 12-HSA ont précipité en immobilisant simultanément l’huile et la substance active en son sein. Une augmentation du pourcentage massique en 12-HSA a conduit à une augmentation de la résistance du gel à la déformation grâce à la formation d’une structure de réseau en trois dimensions complexe. Cependant, l’ajout de polysorbate 80 dans le système a conduit à une structure plus fluide (de faible résistance) diminuant la capacité d’injectabilité des formulations et augmentant l’érosion du gel en surface. Ce dernier phénomène étant amplifié avec un plus faible pourcentage massique en 12-HSA. Les organogels de 12-HSA ont montré diminuer significativement les taux de libération au long terme de l’acyclovir comparé aux formulations de clotrimazole in vitro et ex vivo à travers la peau de porc excisé. La toxicité cellulaire était dépendante du pourcentage massique en 12-HSA et du type de culture cellulaire utilisée. En effet, les effets cytotoxiques étaient plus élevés en augmentant la quantité de 12-HSA dans l’implant pour une sensibilité plus élevée dans la culture cellulaire tridimensionnelle que dans celle bidimensionnelle. Ces résultats semblent néanmoins influencés par le type d’huile utilisé et son potentiel cytotoxique.
+Le deuxième objectif principal de cette thèse était de déterminer l’effet de la hauteur des microaiguilles en forme de pyramide et solubles dans l’eau sur le taux de libération d’un peptide modèle, le growth hormone-releasing peptide-6 (GHRP-6). À cet effet, les microaiguilles ont été préparées par micro-moulage à l’aide de deux polymères biocompatibles hydrosolubles approuvés par la Food and Drug Agency (FDA), l’alcool polyvinylique (PVA) et polyvinylpyrrolidone (PVP). Les timbres de microaiguilles ainsi développés permettaient de pénétrer efficacement dans la peau de porc tout en libérant la molécule encapsulée à l’interface entre l’épiderme et le derme supérieur. La quantification du GHRP-6 dans différentes matrices (peau, microaiguilles, plasma) a pu être réalisée grâce à une méthode analytique robuste et sensible utilisant la chromatographie liquide ultra performance couplée à la spectrométrie de masse en tandem. Les études de libération du GHRP-6 ex vivo sur la peau de porc ont montré que le taux de libération du GHRP-6 était plus élevé au long terme pour une hauteur en aiguille plus grande (800 µm contre 500 µm) tout en permettant d’augmenter l’encapsulation du GHRP-6 dans le système. 
+En conclusion, ces résultats suggèrent que les organogels de 12-HSA pourraient constituer une approche prometteuse pour l’administration prolongée de substance active et notamment celles hydrophiles. Toutefois, les formulations développées devront être efficaces in vivo tout en minimisant les effets toxiques par l’utilisation d’huiles plus biocompatibles. Pour une libération rapide de substances actives, les timbres de microaiguilles représentent une avenue très prometteuse notamment pour les médicaments innovants de nature peptidique. Leur efficacité pour la libération de GHRP-6 et de leurs dérivés azapeptides devra être confirmée lors d’études in vivo (pharmacocinétique, pharmacodynamique, biodistribution), ce qui pourrait constituer une avancée dans l’administration de thérapie à base de peptides pour la gestion de l’inflammation chronique.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The development of novel transcutaneous drug delivery systems has gained increasing interest, with the focus on overcoming the stratum corneum barrier and efficiently transport therapeutic agents through the skin. Although oral administration is the most favorable route for patients, low bioavailability is often reported for certain drugs and especially for biopharmaceuticals. Accordingly, the skin represents an accessible and convenient site for drug absorption, but has yet to fully achieve its potential as an alternative to oral delivery. The design of parenteral sustained drug delivery systems capable of controlling long-term delivery of drugs and reducing the frequency of drug administration could present an attractive treatment option. Among in situ forming implants, in situ forming organogels offer many advantages such as controlled-release of a wide variety of drug molecules over a longer period of time, including lipophilic active substances trapped within gelled oil solutions. However, if the objective is the rapid administration of active substances, minimally invasive, dissolving microneedle patches would be of great interest due to their self-administration, their safety and their ability to deliver peptide-based drugs. Despite the beneficial effects of these two new delivery systems, the exact roles of the composition of organogels and geometrical parameters of microneedles on drug delivery are largely understudied.
+
+The first main objective of this thesis was to determine the effect of the composition of in situ forming organogels with respect to the organogelator concentration (12-hydroxystearic acid, 12-HSA) and the addition of a nonionic surfactant (polysorbate 80) to the system on the release rate of a hydrophilic (acyclovir) and a lipophilic (clotrimazole) active substances. In addition, the toxic effects of these organogels of different compositions on human foreskin fibroblasts were also studied. To do so, 12-HSA-based organogel systems forming a depot in the subcutaneous tissue have been developed using a small amount of water-miscible organic solvent (N-methyl-2-pyrrolidone) as an agent that can partially inhibit gelation, thus enhancing injectability of the formulations. Upon contact with aqueous medium, 12-HSA molecules precipitated simultaneously immobilizing the oil and the active substance therein. An increase in the concentration of 12-HSA led to an increase in the resistance of the gel to deformation thanks to the formation of a complex three-dimensional network structure. However, the addition of polysorbate 80 to the system resulted in fluid-matrix organogel (weak gel) decreasing the syringability of the formulations while increasing the erosion of the gel on the surface. The latter phenomenon is also intensified with a lower concentration of 12-HSA. 12-HSA organogels have been shown to significantly decrease acyclovir release rates for a longer time period in vitro and ex vivo through excised pig skin compared to clotrimazole formulations. Cellular cytotoxicity was dependent on the concentration of 12-HSA and the type of cell culture used. Indeed, the cytotoxic effects were higher by increasing the concentration of 12-HSA in the implant for a higher sensitivity in the three-dimensional cell culture than in the two-dimensional one. However, these results seem to be influenced by the type of oil used and its cytotoxic potential.
+
+The second main objective of this thesis was to determine the effect of dissolving pyramidal microneedles height on the release rate of a model peptide, the growth hormone-releasing peptide-6 (GHRP-6). For this purpose, the microneedles were prepared by micromolding process using two water-soluble biocompatible polymers approved by the Food and Drug Agency (FDA), poly(vinyl alcohol) (PVA) and polyvinylpyrrolidone (PVP). The microneedle patches allowed the microneedles to efficiently penetrate pig skin while releasing the encapsulated molecule at the interface between the epidermis and upper dermis. The quantification of GHRP-6 in different matrices (skin, microneedles, plasma) was achieved using a robust and sensitive analytical method using ultra performance liquid chromatography - tandem mass spectrometry. Ex vivo GHRP-6 release studies on pig skin showed that the release rate of GHRP-6 was higher over time for high-height microneedle (800 µm vs. 500 µm) while increasing the amount of GHRP-6 loaded in microneedles.
+
+In conclusion, these results suggest that 12-HSA organogels could constitute a promising approach as a sustained-release dosage form of active substances and in particular hydrophilic ones. However, the formulations developed must be effective in vivo while minimizing toxic effects through the use of more biocompatible oils. For a rapid release of drugs, microneedle patches represent a very promising avenue, in particular for emerging peptide drugs. Their efficacy for the release of GHRP-6 and azapeptide derivatives of GHRP-6 needs to be confirmed using in vivo studies (pharmacokinetic, pharmacodynamic, biodistribution), which may represent a breakthrough in the transdermal delivery of therapeutic peptides for the management of chronic inflammation.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F26179&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+pharmaceutiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/26179/Esposito_Cloe_2021_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/26179/Esposito_Cloe_2021_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Esposito_Cloe_2021_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/26179/Esposito_Cloe_2021_these.pdf?sequence=2&amp;isAllowed=y">Esposito_Cloe_2021_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">29.33Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2969/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2969">Faculté de pharmacie – Thèses et mémoires</a> [388]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26179">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

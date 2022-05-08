@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Dynamic Programming Approaches for Estimating and Applying Large-scale Discrete Choice Models</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Frejinger, Emma" name="DC.contributor">
+<meta content="Bastin, Fabian" name="DC.contributor">
+<meta content="Mai, Anh Tien" name="DC.creator">
+<meta content="2016-10-12T15:23:49Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2016-10-12T15:23:49Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2016-04-20" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2015-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/15871" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Discrete choice modeling" name="DC.subject" xml:lang="fr"/>
+<meta content="Route choice modeling" name="DC.subject" xml:lang="fr"/>
+<meta content="Dynamic programing" name="DC.subject" xml:lang="fr"/>
+<meta content="Dynamic discrete choice models" name="DC.subject" xml:lang="fr"/>
+<meta content="Misspecification tests" name="DC.subject" xml:lang="fr"/>
+<meta content="Nonlinear optimization algorithms" name="DC.subject" xml:lang="fr"/>
+<meta content="Maximum likelihood estimation" name="DC.subject" xml:lang="fr"/>
+<meta content="Prediction" name="DC.subject" xml:lang="fr"/>
+<meta content="Modélisation" name="DC.subject" xml:lang="fr"/>
+<meta content="Choix discrets" name="DC.subject" xml:lang="fr"/>
+<meta content="Choix d'itinéraire" name="DC.subject" xml:lang="fr"/>
+<meta content="Choix discrets dynamiques" name="DC.subject" xml:lang="fr"/>
+<meta content="Programmation dynamique" name="DC.subject" xml:lang="fr"/>
+<meta content="Tests de spécification" name="DC.subject" xml:lang="fr"/>
+<meta content="Estimation du maximum de vraisemblance" name="DC.subject" xml:lang="fr"/>
+<meta content="Algorithmes d'optimisation" name="DC.subject" xml:lang="fr"/>
+<meta content="Prédiction" name="DC.subject" xml:lang="fr"/>
+<meta content="Social Sciences - Transportation / Sciences sociales - Transports (UMI : 0709)" name="DC.subject" xml:lang="fr"/>
+<meta content="Dynamic Programming Approaches for Estimating and Applying Large-scale Discrete Choice Models" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="People go through their life making all kinds of decisions, and some of these decisions affect their demand for transportation, for example, their choices of where to live and where to work, how and when to travel and which route to take. Transport related choices are typically time dependent and characterized by large number of alternatives that can be spatially correlated. This thesis deals with models that can be used to analyze  and predict discrete choices in large-scale networks. The proposed models and methods are highly relevant for, but not limited to, transport applications.  	
+
+We model decisions as sequences of choices within the dynamic discrete choice framework, also known as parametric Markov decision processes. Such models are known to be difficult to estimate and to apply to make predictions because dynamic programming problems need to be solved in order to compute choice probabilities. In this thesis we show that it is possible to explore the network structure and the flexibility of dynamic programming so that the dynamic discrete choice modeling approach is not only useful to model time dependent choices, but also makes it easier to model large-scale static choices.  
+  
+The thesis consists of seven  articles containing a number of models and methods for estimating, applying and testing large-scale discrete choice models. In the following we group the contributions under three themes: route choice modeling, large-scale multivariate extreme value (MEV) model estimation and nonlinear optimization algorithms. 
+
+Five articles are related to route choice modeling. We propose  different dynamic discrete choice models that allow paths to be correlated based on the MEV and mixed logit models. The resulting route choice models become expensive to estimate and we deal with this challenge by proposing innovative methods that allow to reduce the  estimation cost. For example, we propose a decomposition method that not only opens up for possibility of mixing, but also speeds up the estimation for simple logit models, which has implications also for traffic simulation. Moreover, we compare the utility maximization and regret minimization decision rules, and we propose a misspecification test for logit-based route choice models.  
+
+The second theme is related to the estimation of static discrete choice models with large choice sets. 
+We establish that a class of MEV models can be reformulated as dynamic discrete choice models on the networks of correlation structures. These dynamic models can then be estimated quickly using dynamic programming techniques and an efficient nonlinear optimization algorithm. 
+
+Finally, the third theme focuses on structured quasi-Newton techniques for estimating discrete choice models by maximum likelihood. We examine and adapt switching methods that can be easily integrated into usual optimization algorithms (line search and trust region) to accelerate the estimation process.
+
+The proposed dynamic discrete choice models and estimation methods can be used in various  discrete choice applications. In the area of big data analytics, models that can deal with large choice sets and sequential choices are important.
+Our research can therefore be of interest in various demand analysis applications (predictive analytics) or can be integrated with optimization models (prescriptive analytics). Furthermore, our studies indicate the potential of dynamic programming techniques in this context, even for static models, which opens up a variety of future research directions." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Les gens consacrent une importante part de leur existence à prendre diverses décisions, pouvant affecter leur demande en transport, par exemple les choix de lieux d'habitation et de travail, les modes de transport, les heures de départ, le nombre et type de voitures dans le ménage, les itinéraires ... Les choix liés au transport sont généralement fonction du temps et caractérisés par un grand nombre de solutions alternatives qui peuvent être spatialement corrélées. Cette thèse traite de modèles pouvant être utilisés pour analyser et prédire les choix discrets dans les applications liées aux réseaux de grandes tailles. Les modèles et méthodes proposées sont particulièrement pertinents pour les applications en transport, sans toutefois s'y limiter.
+
+Nous modélisons les décisions comme des séquences de choix, dans le cadre des choix discrets dynamiques, aussi connus comme processus de décision de Markov paramétriques. Ces modèles sont réputés difficiles à estimer et à appliquer en prédiction, puisque  le calcul des probabilités de choix requiert la résolution de problèmes de programmation dynamique. Nous montrons dans cette thèse qu'il est possible d'exploiter la structure du réseau et la flexibilité de la programmation dynamique afin de rendre l'approche de modélisation dynamique en choix discrets non seulement utile pour représenter les choix dépendant du temps, mais également pour modéliser plus facilement des choix statiques au sein d'ensembles de choix de très grande taille.
+
+La thèse se compose de sept articles, présentant divers modèles et méthodes d'estimation, leur application ainsi que des expériences numériques sur des modèles de choix discrets de grande taille. Nous regroupons les contributions en trois principales thématiques: modélisation du choix de route, estimation de modèles en valeur extrême multivariée (MEV) de grande taille et algorithmes d'optimisation non-linéaire.
+
+Cinq articles sont associés à la modélisation de choix de route. Nous proposons différents modèles de choix discrets dynamiques permettant aux utilités des chemins d'être corrélées, sur base de formulations MEV et logit mixte.
+Les modèles résultants devenant coûteux à estimer, nous présentons de nouvelles approches permettant de diminuer les efforts de calcul. Nous proposons par exemple une méthode de décomposition qui non seulement ouvre la possibilité d'estimer efficacement des modèles logit mixte, mais également d'accélérer l'estimation de modèles simples comme les modèles logit multinomiaux, ce qui a également des implications en simulation de trafic. De plus, nous comparons les règles de décision basées sur le principe de maximisation d'utilité de celles sur la minimisation du regret pour ce type de modèles. Nous proposons finalement un test statistique sur les erreurs de spécification pour les modèles de choix de route basés sur le logit multinomial.
+
+Le second thème porte sur l'estimation de modèles de choix discrets statiques avec de grands ensembles de choix. Nous établissons que certains types de modèles MEV peuvent être reformulés comme des modèles de choix discrets dynamiques, construits sur des réseaux de structure de corrélation. Ces modèles peuvent alors être estimées rapidement en utilisant des techniques de programmation dynamique en combinaison avec un algorithme efficace d'optimisation non-linéaire.
+
+La troisième et dernière thématique concerne les algorithmes d'optimisation non-linéaires dans le cadre de l'estimation de modèles complexes de choix discrets par maximum de vraisemblance. Nous examinons et adaptons des méthodes quasi-Newton structurées qui peuvent être facilement intégrées dans des algorithmes d'optimisation usuels (recherche linéaire et région  de confiance) afin d'accélérer le processus d'estimation.
+
+
+Les modèles  de choix discrets dynamiques et les méthodes d'optimisation proposés peuvent être employés dans diverses applications de choix discrets. Dans le domaine des sciences de données, des modèles qui peuvent traiter de grands ensembles de choix et des ensembles de choix séquentiels sont importants. Nos recherches peuvent dès lors être d'intérêt dans diverses applications d'analyse de la demande (analyse prédictive) ou peuvent être intégrées à des modèles d'optimisation (analyse prescriptive). De plus, nos études mettent en évidence le potentiel des techniques de programmation dynamique dans ce contexte, y compris pour des modèles statiques, ouvrant la voie à de multiples directions de recherche future." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Discrete choice modeling; Route choice modeling; Dynamic programing; Dynamic discrete choice models; Misspecification tests; Nonlinear optimization algorithms; Maximum likelihood estimation; Prediction; Modélisation; Choix discrets; Choix d'itinéraire; Choix discrets dynamiques; Programmation dynamique; Tests de spécification; Estimation du maximum de vraisemblance; Algorithmes d'optimisation; Prédiction; Social Sciences - Transportation / Sciences sociales - Transports (UMI : 0709); Thèse ou mémoire / Thesis or Dissertation; Informatique" name="citation_keywords"/>
+<meta content="Dynamic Programming Approaches for Estimating and Applying Large-scale Discrete Choice Models" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Mai, Anh Tien" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/15871/2/Mai_Tien_2015_these.pdf" name="citation_pdf_url"/>
+<meta content="2016-04-20" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/15871" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/15871?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/15871?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/15871?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/15871?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/15871?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/15871?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2958" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3001" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2958">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/3001"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/15871/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/15871">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/15871/mets.xml-->
+<h2 class="page-header first-page-header">Dynamic Programming Approaches for Estimating and Applying Large-scale Discrete Choice Models</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Frejinger, Emma</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Bastin, Fabian</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Mai, Anh Tien</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2016-10-12T15:23:49Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2016-10-12T15:23:49Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2016-04-20</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2015-12</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/15871</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Discrete choice modeling</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Route choice modeling</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Dynamic programing</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Dynamic discrete choice models</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Misspecification tests</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Nonlinear optimization algorithms</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Maximum likelihood estimation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Prediction</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Modélisation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Choix discrets</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Choix d'itinéraire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Choix discrets dynamiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Programmation dynamique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Tests de spécification</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Estimation du maximum de vraisemblance</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Algorithmes d'optimisation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Prédiction</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Social Sciences - Transportation / Sciences sociales - Transports (UMI : 0709)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Dynamic Programming Approaches for Estimating and Applying Large-scale Discrete Choice Models</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Informatique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">People go through their life making all kinds of decisions, and some of these decisions affect their demand for transportation, for example, their choices of where to live and where to work, how and when to travel and which route to take. Transport related choices are typically time dependent and characterized by large number of alternatives that can be spatially correlated. This thesis deals with models that can be used to analyze  and predict discrete choices in large-scale networks. The proposed models and methods are highly relevant for, but not limited to, transport applications.  	
+
+We model decisions as sequences of choices within the dynamic discrete choice framework, also known as parametric Markov decision processes. Such models are known to be difficult to estimate and to apply to make predictions because dynamic programming problems need to be solved in order to compute choice probabilities. In this thesis we show that it is possible to explore the network structure and the flexibility of dynamic programming so that the dynamic discrete choice modeling approach is not only useful to model time dependent choices, but also makes it easier to model large-scale static choices.  
+  
+The thesis consists of seven  articles containing a number of models and methods for estimating, applying and testing large-scale discrete choice models. In the following we group the contributions under three themes: route choice modeling, large-scale multivariate extreme value (MEV) model estimation and nonlinear optimization algorithms. 
+
+Five articles are related to route choice modeling. We propose  different dynamic discrete choice models that allow paths to be correlated based on the MEV and mixed logit models. The resulting route choice models become expensive to estimate and we deal with this challenge by proposing innovative methods that allow to reduce the  estimation cost. For example, we propose a decomposition method that not only opens up for possibility of mixing, but also speeds up the estimation for simple logit models, which has implications also for traffic simulation. Moreover, we compare the utility maximization and regret minimization decision rules, and we propose a misspecification test for logit-based route choice models.  
+
+The second theme is related to the estimation of static discrete choice models with large choice sets. 
+We establish that a class of MEV models can be reformulated as dynamic discrete choice models on the networks of correlation structures. These dynamic models can then be estimated quickly using dynamic programming techniques and an efficient nonlinear optimization algorithm. 
+
+Finally, the third theme focuses on structured quasi-Newton techniques for estimating discrete choice models by maximum likelihood. We examine and adapt switching methods that can be easily integrated into usual optimization algorithms (line search and trust region) to accelerate the estimation process.
+
+The proposed dynamic discrete choice models and estimation methods can be used in various  discrete choice applications. In the area of big data analytics, models that can deal with large choice sets and sequential choices are important.
+Our research can therefore be of interest in various demand analysis applications (predictive analytics) or can be integrated with optimization models (prescriptive analytics). Furthermore, our studies indicate the potential of dynamic programming techniques in this context, even for static models, which opens up a variety of future research directions.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les gens consacrent une importante part de leur existence à prendre diverses décisions, pouvant affecter leur demande en transport, par exemple les choix de lieux d'habitation et de travail, les modes de transport, les heures de départ, le nombre et type de voitures dans le ménage, les itinéraires ... Les choix liés au transport sont généralement fonction du temps et caractérisés par un grand nombre de solutions alternatives qui peuvent être spatialement corrélées. Cette thèse traite de modèles pouvant être utilisés pour analyser et prédire les choix discrets dans les applications liées aux réseaux de grandes tailles. Les modèles et méthodes proposées sont particulièrement pertinents pour les applications en transport, sans toutefois s'y limiter.
+
+Nous modélisons les décisions comme des séquences de choix, dans le cadre des choix discrets dynamiques, aussi connus comme processus de décision de Markov paramétriques. Ces modèles sont réputés difficiles à estimer et à appliquer en prédiction, puisque  le calcul des probabilités de choix requiert la résolution de problèmes de programmation dynamique. Nous montrons dans cette thèse qu'il est possible d'exploiter la structure du réseau et la flexibilité de la programmation dynamique afin de rendre l'approche de modélisation dynamique en choix discrets non seulement utile pour représenter les choix dépendant du temps, mais également pour modéliser plus facilement des choix statiques au sein d'ensembles de choix de très grande taille.
+
+La thèse se compose de sept articles, présentant divers modèles et méthodes d'estimation, leur application ainsi que des expériences numériques sur des modèles de choix discrets de grande taille. Nous regroupons les contributions en trois principales thématiques: modélisation du choix de route, estimation de modèles en valeur extrême multivariée (MEV) de grande taille et algorithmes d'optimisation non-linéaire.
+
+Cinq articles sont associés à la modélisation de choix de route. Nous proposons différents modèles de choix discrets dynamiques permettant aux utilités des chemins d'être corrélées, sur base de formulations MEV et logit mixte.
+Les modèles résultants devenant coûteux à estimer, nous présentons de nouvelles approches permettant de diminuer les efforts de calcul. Nous proposons par exemple une méthode de décomposition qui non seulement ouvre la possibilité d'estimer efficacement des modèles logit mixte, mais également d'accélérer l'estimation de modèles simples comme les modèles logit multinomiaux, ce qui a également des implications en simulation de trafic. De plus, nous comparons les règles de décision basées sur le principe de maximisation d'utilité de celles sur la minimisation du regret pour ce type de modèles. Nous proposons finalement un test statistique sur les erreurs de spécification pour les modèles de choix de route basés sur le logit multinomial.
+
+Le second thème porte sur l'estimation de modèles de choix discrets statiques avec de grands ensembles de choix. Nous établissons que certains types de modèles MEV peuvent être reformulés comme des modèles de choix discrets dynamiques, construits sur des réseaux de structure de corrélation. Ces modèles peuvent alors être estimées rapidement en utilisant des techniques de programmation dynamique en combinaison avec un algorithme efficace d'optimisation non-linéaire.
+
+La troisième et dernière thématique concerne les algorithmes d'optimisation non-linéaires dans le cadre de l'estimation de modèles complexes de choix discrets par maximum de vraisemblance. Nous examinons et adaptons des méthodes quasi-Newton structurées qui peuvent être facilement intégrées dans des algorithmes d'optimisation usuels (recherche linéaire et région  de confiance) afin d'accélérer le processus d'estimation.
+
+
+Les modèles  de choix discrets dynamiques et les méthodes d'optimisation proposés peuvent être employés dans diverses applications de choix discrets. Dans le domaine des sciences de données, des modèles qui peuvent traiter de grands ensembles de choix et des ensembles de choix séquentiels sont importants. Nos recherches peuvent dès lors être d'intérêt dans diverses applications d'analyse de la demande (analyse prédictive) ou peuvent être intégrées à des modèles d'optimisation (analyse prescriptive). De plus, nos études mettent en évidence le potentiel des techniques de programmation dynamique dans ce contexte, y compris pour des modèles statiques, ouvrant la voie à de multiples directions de recherche future.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F15871&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Informatique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/15871/Mai_Tien_2015_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/15871/Mai_Tien_2015_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Mai_Tien_2015_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/15871/Mai_Tien_2015_these.pdf?sequence=2&amp;isAllowed=y">Mai_Tien_2015_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1.889Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3001/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a> [795]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/15871">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

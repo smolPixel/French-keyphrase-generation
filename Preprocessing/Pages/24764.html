@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Étude mécanistique computationnelle des réactions d’amination catalysées par des dimères de rhodium</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Ernzerhof, Matthias" name="DC.contributor">
+<meta content="Lebel, Hélène" name="DC.contributor">
+<meta content="Azek, Emna" name="DC.creator">
+<meta content="2021-02-10T16:53:03Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2021-02-10T16:53:03Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2020-12-16" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2020-01" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/24764" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Dimères de rhodium" name="DC.subject" xml:lang="fr"/>
+<meta content="N-Mésyloxycarbamates" name="DC.subject" xml:lang="fr"/>
+<meta content="DFT" name="DC.subject" xml:lang="fr"/>
+<meta content="Amination de Liens C-H" name="DC.subject" xml:lang="fr"/>
+<meta content="PBE" name="DC.subject" xml:lang="fr"/>
+<meta content="Aziridination Catalytique" name="DC.subject" xml:lang="fr"/>
+<meta content="MECP" name="DC.subject" xml:lang="fr"/>
+<meta content="Dimères de Rhodium Chiraux" name="DC.subject" xml:lang="fr"/>
+<meta content="Espèces Nitrènes de Rhodium" name="DC.subject" xml:lang="fr"/>
+<meta content="Complexe Nitrénoïde" name="DC.subject" xml:lang="fr"/>
+<meta content="Sulfimidation" name="DC.subject" xml:lang="fr"/>
+<meta content="Bis(DMAP)CH2Cl2" name="DC.subject" xml:lang="fr"/>
+<meta content="Réactivité via Différents États de Spin" name="DC.subject" xml:lang="fr"/>
+<meta content="Rhodium Dimers" name="DC.subject" xml:lang="fr"/>
+<meta content="N-Mesyloxycarbamates" name="DC.subject" xml:lang="fr"/>
+<meta content="Chiral Rhodium Dimer" name="DC.subject" xml:lang="fr"/>
+<meta content="Rhodium Nitrene Species" name="DC.subject" xml:lang="fr"/>
+<meta content="Nitrenoid Complex" name="DC.subject" xml:lang="fr"/>
+<meta content="C-H Bond Amination" name="DC.subject" xml:lang="fr"/>
+<meta content="Catalytic Aziridination" name="DC.subject" xml:lang="fr"/>
+<meta content="Multi-States Reactivity" name="DC.subject" xml:lang="fr"/>
+<meta content="Diastereoselective Aziridination" name="DC.subject" xml:lang="fr"/>
+<meta content="Chemistry - Organic / Chimie organique (UMI : 0490)" name="DC.subject" xml:lang="fr"/>
+<meta content="Étude mécanistique computationnelle des réactions d’amination catalysées par des dimères de rhodium" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Catalytic amination reactions are a powerful tool in organic synthesis. They aim to introduce nitrogen atom to alkane, alkene or thioether moieties, giving rise to amine products that have various medical and industrial applications. The Lebel group has developed catalytic amination reactions in the presence of rhodium dimers using N-sulfonyloxycarbamates as nitrene precursors. In the presence of a base, N-sulfonyloxycarbamates presumably afforded rhodium nitrenes which underwent C-H insertions, C=C additions or reactions with the sulfur atom of thioethers resulting in acyclic and cyclic carbamates, aziridines and sulfilimines respectively. In addition, good diastereoselectivities were observed in the presence of a chiral N-sulfonyloxycarbamate reagent and a chiral rhodium dimer for all three reactions.
+In this dissertation, we are interested in the mechanistic aspects of these amination reactions. Given the absence of experimental proofs of in-situ generated rhodium nitrene species, playing the role of the amination agent, nor of its precomplex, the rhodium nitrenoid, the different amination reactions mechanisms remain uncertain. Our approach is based on the scan of the potential energy surfaces of different mechanistic paths, for each of the amination reactions, well established on the experimental level, by resorting to the Functional Theory of Density (DFT). 
+The Ernzerhof research group is expert on the development of exchange-correlation functionals, therefore relevant strict criteria have been considered when choosing and validating the theoretical model used during the mechanistic studies. The correlation exchange functional developed by Perdew-Burke-Ernzerhof (PBE) was established as the best to study reactions involving rhodium dimers where the electronic correlation is strong. We studied the formation and reactivity of rhodium nitrene species considering their two lower energy spin states. Singlet rhodium nitrenes appeared to be the most reactive intermediates for the C-H amination reaction. In addition, singlet rhodium nitrenes were shown responsible for the formation of secondary products such as carbonyls and primary carbamates derived from the corresponding N-mesyloxycarbamates. In sharp contrast, in the aziridination reaction, both singlet and triplet rhodium nitrene species acted as aminating agents in a process involving an intersystem spin crossover. To further rationalize the asymmetric induction of catalytic aziridination reactions, we have undertaken the calculation of the diastereoselectivity ratios in the presence of the chiral catalyst Rh2[(S)-nttl]4. An exhaustive study was performed and it revealed that the asymmetric induction was due to a reactive conformation of rhodium nitrene species in which the ligand adopts C4 symmetry.
+Up to now, no mechanistic study involving DFT calculations have been reported in the literature for the amination of thioethers, no matter what catalytic system is used. To study catalytic sulfimidation reactions, we calculated the different mechanistic paths of rhodium catalyzed thioanisole imidation with and without DMAP and bis(DMAP)CH2Cl2 additives. The study showed a 'classical' insertion mechanism of rhodium nitrene species into the thioether in absence of bis(DMAP)CH2Cl2. In the presence of the latter, the mechanism diverged to a thioether insertion/salt (bis(DMAP)CH2Cl-OMs) elimination reaction where the rhodium nitrenoid complex was, henceforth, the imidation reagent." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Les réactions d’amination catalytiques sont un outil très efficace en synthèse organique.
+Elles consistent à introduire un azote sur différents composés organiques, permettant de
+synthétiser des produits aminés qui peuvent être utilisés pour différentes applications
+médicales et industrielles. Le groupe de recherche du Pr Lebel a développé des réactions
+d’amination faisant appel aux dimères de rhodium comme catalyseurs et en utilisant les Nsulfonyloxycarbamates,
+comme précurseurs de nitrènes métalliques. En effet, en présence
+d’une base, les N-sulfonyloxycarbamates forment possiblement un intermédiaire de type
+nitrène de rhodium qui peuvent s’insérer dans un lien C-H, s’additionner sur un lien C=C ou
+réagir avec un atome de soufre d’un thioéther. On peut ainsi préparer des carbamates cycliques
+et acycliques, des aziridines et des sulfilimines respectivement. Dans le cas où les réactions
+d’amination sont catalysées par des dimères de rhodium chiraux, on obtient de bonnes
+diastéréosélectivités en présence d’un réactif N-sulfonyloxycarbamate chiral.
+Dans cette dissertation, nous nous sommes intéressés aux aspects mécanistiques de ces
+réactions d’amination. À défaut de preuves expérimentales solides pour prouver la génération
+in-situ des espèces nitrènes de rhodium, lesquelles sont les agents d’amination clés, ni de celle
+du pré-complexe, nitrénoïde de rhodium, des incertitudes subsistaient toujours concernant les
+mécanismes des différentes réactions d’amination. Notre approche se base sur l’étude des
+surfaces d’énergies potentielles de différents chemins mécanistiques possibles pour chacune
+des réactions d’amination, bien établie sur le plan expérimental, en faisant recours à la Théorie
+des Fonctionnelles de la Densité (DFT).
+Le groupe de recherche du Pr Ernzerhof est expert dans le développement des
+fonctionnelles d’échange-corrélation. Pour ce, des critères strictes et pertinents ont été pris en
+compte lors du choix et de la validation du modèle théorique utilisé dans ces études
+mécanistiques. La fonctionnelle d’échange corrélation développée par Perdew–Burke–
+Ernzerhof (PBE) s’est révélé être la meilleure pour décrire ces systèmes réactionnels faisant
+intervenir les dimères de rhodium dont la corrélation électronique est forte. À l’aide de cette
+fonctionnelle pure, nous avons étudié la formation et la réactivité des espèces nitrènes de
+rhodium en fonction de leurs deux états de spin de plus basse énergie. Les nitrènes de rhodium
+singulet se sont révélés être les intermédiaires les plus réactifs dans l`amination de liens C-H.
+De plus, les nitrènes de rhodium à l’état singulet sont responsables de la formation des
+produits secondaires tels que les carbonyles et les carbamates primaires dérivés des Nmésyloxycarbamates
+correspondants. Dans la réaction d’aziridination, les espèces nitrènes de
+rhodium à l’état singulet et triplet peuvent toutes les deux agir comme agents d'amination et
+les processus font intervenir un croisement intersystème de spin. Afin de rationaliser
+l’induction asymétrique des réactions d’aziridination catalytiques, nous avons entrepris le
+calcul des ratios de diastéréosélectivités en présence du catalyseur chiral Rh2[(S)-nttl]4.
+L’étude exhaustive de cette réaction a permis de déterminer que l’induction asymétrique
+provient d’une conformation réactive de l’espèce nitrène de rhodium de symétrie C4.
+Aucune étude mécanistique s’appuyant sur la chimie computationnelle n’a été rapportée
+dans la littérature pour la réaction d’amination de thioéthers et ce peu importe le système
+catalytique. Afin d’étudier les réactions de sulfimidation catalytiques, nous avons calculé les
+différents chemins mécanistiques de l’imidation du thioanisole catalysée par un complexe de
+rhodium avec et sans les additifs DMAP et bis(DMAP)CH2Cl2. L’étude montre que le
+mécanisme procède via une insertion ‘classique’ des espèces nitrènes de rhodium dans le
+thioéther en absence de bis(DMAP)CH2Cl2. En présence de ce dernier, le mécanisme diverge
+vers une réaction d’insertion du thioéther/élimination d’un sel (bis(DMAP)CH2Cl-OMs) où le
+complexe nitrénoïde de rhodium devient, désormais, l’agent d’imidation." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Dimères de rhodium; N-Mésyloxycarbamates; DFT; Amination de Liens C-H; PBE; Aziridination Catalytique; MECP; Dimères de Rhodium Chiraux; Espèces Nitrènes de Rhodium; Complexe Nitrénoïde; Sulfimidation; Bis(DMAP)CH2Cl2; Réactivité via Différents États de Spin; Rhodium Dimers; N-Mesyloxycarbamates; Chiral Rhodium Dimer; Rhodium Nitrene Species; Nitrenoid Complex; C-H Bond Amination; Catalytic Aziridination; Multi-States Reactivity; Diastereoselective Aziridination; Chemistry - Organic / Chimie organique (UMI : 0490); Thèse ou mémoire / Thesis or Dissertation; Chimie" name="citation_keywords"/>
+<meta content="Étude mécanistique computationnelle des réactions d’amination catalysées par des dimères de rhodium" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Azek, Emna" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/24764/2/Azek_Emna_2020_these.pdf" name="citation_pdf_url"/>
+<meta content="2020-12-16" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/24764" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24764?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24764?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24764?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24764?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24764?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24764?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2942" role="menuitem">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2977" role="menuitem">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2942">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2977"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/24764/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/24764">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/24764/mets.xml-->
+<h2 class="page-header first-page-header">Étude mécanistique computationnelle des réactions d’amination catalysées par des dimères de rhodium</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Ernzerhof, Matthias</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Lebel, Hélène</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Azek, Emna</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2021-02-10T16:53:03Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2021-02-10T16:53:03Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2020-12-16</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2020-01</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/24764</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Dimères de rhodium</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">N-Mésyloxycarbamates</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">DFT</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Amination de Liens C-H</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">PBE</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Aziridination Catalytique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">MECP</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Dimères de Rhodium Chiraux</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Espèces Nitrènes de Rhodium</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Complexe Nitrénoïde</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Sulfimidation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Bis(DMAP)CH2Cl2</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Réactivité via Différents États de Spin</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Rhodium Dimers</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">N-Mesyloxycarbamates</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Chiral Rhodium Dimer</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Rhodium Nitrene Species</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Nitrenoid Complex</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">C-H Bond Amination</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Catalytic Aziridination</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Multi-States Reactivity</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Diastereoselective Aziridination</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Chemistry - Organic / Chimie organique (UMI : 0490)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Étude mécanistique computationnelle des réactions d’amination catalysées par des dimères de rhodium</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Chimie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Catalytic amination reactions are a powerful tool in organic synthesis. They aim to introduce nitrogen atom to alkane, alkene or thioether moieties, giving rise to amine products that have various medical and industrial applications. The Lebel group has developed catalytic amination reactions in the presence of rhodium dimers using N-sulfonyloxycarbamates as nitrene precursors. In the presence of a base, N-sulfonyloxycarbamates presumably afforded rhodium nitrenes which underwent C-H insertions, C=C additions or reactions with the sulfur atom of thioethers resulting in acyclic and cyclic carbamates, aziridines and sulfilimines respectively. In addition, good diastereoselectivities were observed in the presence of a chiral N-sulfonyloxycarbamate reagent and a chiral rhodium dimer for all three reactions.
+In this dissertation, we are interested in the mechanistic aspects of these amination reactions. Given the absence of experimental proofs of in-situ generated rhodium nitrene species, playing the role of the amination agent, nor of its precomplex, the rhodium nitrenoid, the different amination reactions mechanisms remain uncertain. Our approach is based on the scan of the potential energy surfaces of different mechanistic paths, for each of the amination reactions, well established on the experimental level, by resorting to the Functional Theory of Density (DFT). 
+The Ernzerhof research group is expert on the development of exchange-correlation functionals, therefore relevant strict criteria have been considered when choosing and validating the theoretical model used during the mechanistic studies. The correlation exchange functional developed by Perdew-Burke-Ernzerhof (PBE) was established as the best to study reactions involving rhodium dimers where the electronic correlation is strong. We studied the formation and reactivity of rhodium nitrene species considering their two lower energy spin states. Singlet rhodium nitrenes appeared to be the most reactive intermediates for the C-H amination reaction. In addition, singlet rhodium nitrenes were shown responsible for the formation of secondary products such as carbonyls and primary carbamates derived from the corresponding N-mesyloxycarbamates. In sharp contrast, in the aziridination reaction, both singlet and triplet rhodium nitrene species acted as aminating agents in a process involving an intersystem spin crossover. To further rationalize the asymmetric induction of catalytic aziridination reactions, we have undertaken the calculation of the diastereoselectivity ratios in the presence of the chiral catalyst Rh2[(S)-nttl]4. An exhaustive study was performed and it revealed that the asymmetric induction was due to a reactive conformation of rhodium nitrene species in which the ligand adopts C4 symmetry.
+Up to now, no mechanistic study involving DFT calculations have been reported in the literature for the amination of thioethers, no matter what catalytic system is used. To study catalytic sulfimidation reactions, we calculated the different mechanistic paths of rhodium catalyzed thioanisole imidation with and without DMAP and bis(DMAP)CH2Cl2 additives. The study showed a 'classical' insertion mechanism of rhodium nitrene species into the thioether in absence of bis(DMAP)CH2Cl2. In the presence of the latter, the mechanism diverged to a thioether insertion/salt (bis(DMAP)CH2Cl-OMs) elimination reaction where the rhodium nitrenoid complex was, henceforth, the imidation reagent.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les réactions d’amination catalytiques sont un outil très efficace en synthèse organique.
+Elles consistent à introduire un azote sur différents composés organiques, permettant de
+synthétiser des produits aminés qui peuvent être utilisés pour différentes applications
+médicales et industrielles. Le groupe de recherche du Pr Lebel a développé des réactions
+d’amination faisant appel aux dimères de rhodium comme catalyseurs et en utilisant les Nsulfonyloxycarbamates,
+comme précurseurs de nitrènes métalliques. En effet, en présence
+d’une base, les N-sulfonyloxycarbamates forment possiblement un intermédiaire de type
+nitrène de rhodium qui peuvent s’insérer dans un lien C-H, s’additionner sur un lien C=C ou
+réagir avec un atome de soufre d’un thioéther. On peut ainsi préparer des carbamates cycliques
+et acycliques, des aziridines et des sulfilimines respectivement. Dans le cas où les réactions
+d’amination sont catalysées par des dimères de rhodium chiraux, on obtient de bonnes
+diastéréosélectivités en présence d’un réactif N-sulfonyloxycarbamate chiral.
+Dans cette dissertation, nous nous sommes intéressés aux aspects mécanistiques de ces
+réactions d’amination. À défaut de preuves expérimentales solides pour prouver la génération
+in-situ des espèces nitrènes de rhodium, lesquelles sont les agents d’amination clés, ni de celle
+du pré-complexe, nitrénoïde de rhodium, des incertitudes subsistaient toujours concernant les
+mécanismes des différentes réactions d’amination. Notre approche se base sur l’étude des
+surfaces d’énergies potentielles de différents chemins mécanistiques possibles pour chacune
+des réactions d’amination, bien établie sur le plan expérimental, en faisant recours à la Théorie
+des Fonctionnelles de la Densité (DFT).
+Le groupe de recherche du Pr Ernzerhof est expert dans le développement des
+fonctionnelles d’échange-corrélation. Pour ce, des critères strictes et pertinents ont été pris en
+compte lors du choix et de la validation du modèle théorique utilisé dans ces études
+mécanistiques. La fonctionnelle d’échange corrélation développée par Perdew–Burke–
+Ernzerhof (PBE) s’est révélé être la meilleure pour décrire ces systèmes réactionnels faisant
+intervenir les dimères de rhodium dont la corrélation électronique est forte. À l’aide de cette
+fonctionnelle pure, nous avons étudié la formation et la réactivité des espèces nitrènes de
+rhodium en fonction de leurs deux états de spin de plus basse énergie. Les nitrènes de rhodium
+singulet se sont révélés être les intermédiaires les plus réactifs dans l`amination de liens C-H.
+De plus, les nitrènes de rhodium à l’état singulet sont responsables de la formation des
+produits secondaires tels que les carbonyles et les carbamates primaires dérivés des Nmésyloxycarbamates
+correspondants. Dans la réaction d’aziridination, les espèces nitrènes de
+rhodium à l’état singulet et triplet peuvent toutes les deux agir comme agents d'amination et
+les processus font intervenir un croisement intersystème de spin. Afin de rationaliser
+l’induction asymétrique des réactions d’aziridination catalytiques, nous avons entrepris le
+calcul des ratios de diastéréosélectivités en présence du catalyseur chiral Rh2[(S)-nttl]4.
+L’étude exhaustive de cette réaction a permis de déterminer que l’induction asymétrique
+provient d’une conformation réactive de l’espèce nitrène de rhodium de symétrie C4.
+Aucune étude mécanistique s’appuyant sur la chimie computationnelle n’a été rapportée
+dans la littérature pour la réaction d’amination de thioéthers et ce peu importe le système
+catalytique. Afin d’étudier les réactions de sulfimidation catalytiques, nous avons calculé les
+différents chemins mécanistiques de l’imidation du thioanisole catalysée par un complexe de
+rhodium avec et sans les additifs DMAP et bis(DMAP)CH2Cl2. L’étude montre que le
+mécanisme procède via une insertion ‘classique’ des espèces nitrènes de rhodium dans le
+thioéther en absence de bis(DMAP)CH2Cl2. En présence de ce dernier, le mécanisme diverge
+vers une réaction d’insertion du thioéther/élimination d’un sel (bis(DMAP)CH2Cl-OMs) où le
+complexe nitrénoïde de rhodium devient, désormais, l’agent d’imidation.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F24764&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Chimie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/24764/Azek_Emna_2020_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/24764/Azek_Emna_2020_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Azek_Emna_2020_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/24764/Azek_Emna_2020_these.pdf?sequence=2&amp;isAllowed=y">Azek_Emna_2020_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">85.88Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2977/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a> [594]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/24764">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

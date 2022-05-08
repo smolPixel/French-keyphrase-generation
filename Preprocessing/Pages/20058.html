@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Élaboration et validation d’un modèle d’épreuve certificative en lecture et écriture, axé sur l’approche par compétences (APC) en 6e année du primaire au Sénégal</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Durand, Micheline-Johanne" name="DC.contributor">
+<meta content="Sakho, Ibrahima" name="DC.creator">
+<meta content="2018-05-25T17:42:15Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2018-05-25T17:42:15Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2018-03-21" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2017-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/20058" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Évaluation certificative" name="DC.subject" xml:lang="fr"/>
+<meta content="Compétences" name="DC.subject" xml:lang="fr"/>
+<meta content="Lecture" name="DC.subject" xml:lang="fr"/>
+<meta content="Écriture" name="DC.subject" xml:lang="fr"/>
+<meta content="Situation d'évaluation" name="DC.subject" xml:lang="fr"/>
+<meta content="Grille descriptive" name="DC.subject" xml:lang="fr"/>
+<meta content="Interprétation" name="DC.subject" xml:lang="fr"/>
+<meta content="Certification testing" name="DC.subject" xml:lang="fr"/>
+<meta content="Competencies" name="DC.subject" xml:lang="fr"/>
+<meta content="Reading" name="DC.subject" xml:lang="fr"/>
+<meta content="Writing" name="DC.subject" xml:lang="fr"/>
+<meta content="Assessment situation" name="DC.subject" xml:lang="fr"/>
+<meta content="Descriptive grid" name="DC.subject" xml:lang="fr"/>
+<meta content="Interpretation" name="DC.subject" xml:lang="fr"/>
+<meta content="Education - Elementary / Éducation - Enseignement primaire (UMI : 0524)" name="DC.subject" xml:lang="fr"/>
+<meta content="Élaboration et validation d’un modèle d’épreuve certificative en lecture et écriture, axé sur l’approche par compétences (APC) en 6e année du primaire au Sénégal" name="DC.title"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Cette thèse s’intéresse à l’évaluation des compétences en lecture et écriture dans une visée certificative en contexte d’approche par compétences. En effet, depuis plus d’une quinzaine d’années, les systèmes éducatifs de nombreux pays d’Europe (France, Belgique, Suisse, etc.), d’Amérique (Canada, États-Unis, etc.) et d’Afrique (Sénégal, Tunisie, Maroc, etc.) ont adopté des curricula définis en termes de compétences à développer dans le processus d’enseignement-apprentissage. Dans ce contexte, la question de l’évaluation soulève davantage d’interrogations aussi bien dans les milieux professionnels que scientifiques. Ces interrogations sont d’autant plus légitimes que l’évaluation relève d’une pratique sociale qui soulève des enjeux socio-éthiques d’importance. Qui plus est, comme le soutient Legendre (2007), l’évaluation est considérée comme le « nœud » des réformes, en ce sens qu’elle peut en compromettre les orientations et pervertir leur mise en œuvre. Au Sénégal, l’utilisation du français comme langue d’enseignement complexifie les approches pédagogiques. En effet, la façon dont s’opère l’acquisition des connaissances par les apprenants dans un environnement où le français langue d’enseignement est une langue seconde qui côtoie une ou plusieurs langues locales reste une préoccupation majeure. Le français est, de ce fait, une discipline fondamentale par laquelle passe la maîtrise des autres acquisitions. C’est ce qui justifie le choix de cette discipline dans cette recherche.
+Nous avons opté pour une recherche qualitative de type développemental. Ainsi, une démarche en cinq étapes s’imposait: 1) l’analyse des besoins; 2) la conception du modèle; 3) les validations; 4) la mise à l’essai; 5) la description, l’analyse et l’évaluation du prototype. Avec différents outils de collecte auprès de divers acteurs, il a été possible de proposer une structure de modèle d’épreuve certificative en adéquation avec les théories éprouvées en didactique de la lecture et de l’écriture et en cohérence avec l’approche par compétences. 
+Le modèle proposé est composé d’une situation en lecture et en écriture conçues sur la base des constituants didactiques de ces compétences. Ensuite, les grilles descriptives ont été produites pour faciliter l’interprétation des productions des élèves. Enfin, d’autres outils permettant de faciliter la réalisation des tâches (outils pour les élèves) et l’harmonisation du soutien dans l’administration des épreuves dans un contexte d’évaluation à large échelle (guide d’administration) y sont annexés.
+Les validations successives ont permis d’ajuster les différents constituants du prototype et de les mettre en contexte. En effet, des acteurs de terrain à différents niveaux, très au fait de l’environnement des apprentissages, ont participé à ce travail. La mise à l’essai a été l’occasion de constater le niveau d’efficacité des outils. En effet, l’évaluation certificative en APC devrait être qualitative (Alter, 2000; Boston, 2002; Blanchard, McCord, Mente, Lalush, Abrams, Loboa, et Nagle, 2004). Autrement dit, les évaluateurs portent leur jugement sur la qualité des ressources mobilisées, la pertinence des stratégies empruntées par les élèves pour réaliser la tâche. Dès lors, pour assurer la fiabilité de ces évaluations, l’explicitation des critères sur lesquels repose le jugement (Boston, 2002), la précision du seuil de réussite et la clarification du barème de notation sont nécessaires (Durand et Trépanier, 2011). Noyau (2011) relève la difficulté des enseignants à opérer une évaluation correcte selon l’APC. En effet, les correcteurs ne disposent pas de grilles d’observation avec des critères bien précisés et déclinés en indicateurs observables. 
+La mise à l’essai a donc permis de recueillir l’avis de six (06) enseignants du primaire sur la valeur des grilles descriptives analytiques proposées. Aussi, cette étape rend-elle compte de la position de ces enseignants en regard de l’efficacité de ces grilles à porter un jugement sur les travaux réalisés par des élèves de 6e année. 
+Enfin, à l’étape de la description, de l’analyse et de l’évaluation, notre cadre conceptuel a été la loupe avec laquelle nous avons observé les données produites et les prescrits documentaires pour en ressortir un portrait des observations. Une occasion de constater que la perspective instrumentale que nous avions adoptée n’est pas la seule qui sous-tend le jugement professionnel des enseignants en évaluation. Cette nouvelle dimension a d’ailleurs permis d’alimenter notre dernier chapitre." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="This thesis focuses on the assessment of reading and writing skills for certification purposes in a context of competency-based approach. Indeed, for more than fifteen years, the educational systems of many countries in Europe (France, Belgium, Switzerland, etc.), America (Canada, the United States, etc.) and Africa (Senegal, Tunisia, Morocco, etc.) have adopted curricula defined in terms of skills to be developed in the teaching-learning process. In this context, the question of evaluation raises more questions both in professional and scientific circles
+These questions are all the more legitimate the evaluation takes place in the context of a social practice with increased socio-ethical stakes. Moreover, as Legendre (2007) argued, evaluation is seen as the &quot;knot&quot; of reforms, in the sense that it can undermine their direction and pervert their implementation
+In Senegal, the use of French as a language of instruction complicates pedagogical approaches. Indeed, the way learners acquire knowledge in an environment where French is a second language that stands alongside one or more local languages remains a major concern. French is, therefore, a fundamental school subject that is instrumental to the mastery of other acquisitions. This is what justifies the choice of this school subject in this research.
+We have opted for qualitative research of the developmental type. Thus, a five-step approach was required: 1) Needs Analysis; 2) Design of the Model; 3) Validations; (4) Testing; And (5) Description, Analysis and Evaluation of the prototype. With a variety of tools for collecting data from various stakeholders, it was possible to propose a template (model) structure for certification tests in line with the theories proved in the didactics of reading and writing and in coherence with the competency-based approach.
+The proposed model consists of a situation in reading and writing designed on the basis of the didactic constituents of these competences. Then, the descriptive grids were produced to facilitate the interpretation of students' productions. Finally, other tools for facilitating the completion of tasks (tools for pupils) and the harmonization of support in testing processes in a context of large-scale evaluation (testing guide) are annexed the model.
+The successive validations made it possible to adjust the different constituents of the prototype and put them in context. Indeed, actors on the ground operating at different
+iv
+levels, and who are very familiar with the learning environment, have participated in this work. The trial provided an opportunity to observe the efficiency level of the tools. Indeed, the APC assessment should be qualitative (Alter, 2000, Boston, 2002, Blanchard, McCord, Mente, Lalush, Abrams, Loboa, and Nagle, 2004). In other words, the evaluators judge the quality of the resources mobilized, the relevance of the strategies borrowed by the students to carry out the task. Thus, in order to ensure the reliability of these assessments, the following are necessary: the judgement criteria (Boston, 2002), clearly set passing standards and the clarification of the scoring scale (Durand and Trépanier, 2011). Noyau (2011) notes the difficulty teachers face in conducting a correct assessment according to the APC. Indeed, the markers do not have observation grids with well-defined criteria and declined into observable indicators.
+Thanks to the trial, six (06) primary school teachers were consulted on the value of the proposed analytical descriptive grids. This stage also reflects the position of these teachers in terms of the effectiveness of these grids in making an &quot;objective&quot; assessment of the work done by Grade 6 students. Finally, at the stage of description, analysis and evaluation, our conceptual framework was the lense through which we observed the data produced and the prescribed documentation to come up with a picture of the observations. This constituted an opportunity to see that the instrumental perspective we have adopted is not the only one that underpins the professional judgment of teachers in assesment processes. This new dimension served to fuel our last chapter." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Évaluation certificative; Compétences; Lecture; Écriture; Situation d'évaluation; Grille descriptive; Interprétation; Certification testing; Competencies; Reading; Writing; Assessment situation; Descriptive grid; Interpretation; Education - Elementary / Éducation - Enseignement primaire (UMI : 0524); Thèse ou mémoire / Thesis or Dissertation; Sciences de l'éducation - Mesure et évaluation en éducation" name="citation_keywords"/>
+<meta content="Élaboration et validation d’un modèle d’épreuve certificative en lecture et écriture, axé sur l’approche par compétences (APC) en 6e année du primaire au Sénégal" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Sakho, Ibrahima" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/20058/2/Sakho_Ibrahima_2017_These.pdf" name="citation_pdf_url"/>
+<meta content="2018-03-21" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/20058" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20058?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20058?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20058?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20058?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20058?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20058?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2926" role="menuitem">Faculté des sciences de l'éducation</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2971" role="menuitem">Faculté des sciences de l'éducation – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2926">Faculté des sciences de l'éducation</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2971">Faculté des sciences de l'éducation – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2971"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/20058/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/20058">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/20058/mets.xml-->
+<h2 class="page-header first-page-header">Élaboration et validation d’un modèle d’épreuve certificative en lecture et écriture, axé sur l’approche par compétences (APC) en 6e année du primaire au Sénégal</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Durand, Micheline-Johanne</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Sakho, Ibrahima</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2018-05-25T17:42:15Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2018-05-25T17:42:15Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2018-03-21</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2017-12</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/20058</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Évaluation certificative</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Compétences</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Lecture</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Écriture</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Situation d'évaluation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Grille descriptive</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Interprétation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Certification testing</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Competencies</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Reading</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Writing</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Assessment situation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Descriptive grid</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Interpretation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Education - Elementary / Éducation - Enseignement primaire (UMI : 0524)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Élaboration et validation d’un modèle d’épreuve certificative en lecture et écriture, axé sur l’approche par compétences (APC) en 6e année du primaire au Sénégal</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences de l'éducation - Mesure et évaluation en éducation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Cette thèse s’intéresse à l’évaluation des compétences en lecture et écriture dans une visée certificative en contexte d’approche par compétences. En effet, depuis plus d’une quinzaine d’années, les systèmes éducatifs de nombreux pays d’Europe (France, Belgique, Suisse, etc.), d’Amérique (Canada, États-Unis, etc.) et d’Afrique (Sénégal, Tunisie, Maroc, etc.) ont adopté des curricula définis en termes de compétences à développer dans le processus d’enseignement-apprentissage. Dans ce contexte, la question de l’évaluation soulève davantage d’interrogations aussi bien dans les milieux professionnels que scientifiques. Ces interrogations sont d’autant plus légitimes que l’évaluation relève d’une pratique sociale qui soulève des enjeux socio-éthiques d’importance. Qui plus est, comme le soutient Legendre (2007), l’évaluation est considérée comme le « nœud » des réformes, en ce sens qu’elle peut en compromettre les orientations et pervertir leur mise en œuvre. Au Sénégal, l’utilisation du français comme langue d’enseignement complexifie les approches pédagogiques. En effet, la façon dont s’opère l’acquisition des connaissances par les apprenants dans un environnement où le français langue d’enseignement est une langue seconde qui côtoie une ou plusieurs langues locales reste une préoccupation majeure. Le français est, de ce fait, une discipline fondamentale par laquelle passe la maîtrise des autres acquisitions. C’est ce qui justifie le choix de cette discipline dans cette recherche.
+Nous avons opté pour une recherche qualitative de type développemental. Ainsi, une démarche en cinq étapes s’imposait: 1) l’analyse des besoins; 2) la conception du modèle; 3) les validations; 4) la mise à l’essai; 5) la description, l’analyse et l’évaluation du prototype. Avec différents outils de collecte auprès de divers acteurs, il a été possible de proposer une structure de modèle d’épreuve certificative en adéquation avec les théories éprouvées en didactique de la lecture et de l’écriture et en cohérence avec l’approche par compétences. 
+Le modèle proposé est composé d’une situation en lecture et en écriture conçues sur la base des constituants didactiques de ces compétences. Ensuite, les grilles descriptives ont été produites pour faciliter l’interprétation des productions des élèves. Enfin, d’autres outils permettant de faciliter la réalisation des tâches (outils pour les élèves) et l’harmonisation du soutien dans l’administration des épreuves dans un contexte d’évaluation à large échelle (guide d’administration) y sont annexés.
+Les validations successives ont permis d’ajuster les différents constituants du prototype et de les mettre en contexte. En effet, des acteurs de terrain à différents niveaux, très au fait de l’environnement des apprentissages, ont participé à ce travail. La mise à l’essai a été l’occasion de constater le niveau d’efficacité des outils. En effet, l’évaluation certificative en APC devrait être qualitative (Alter, 2000; Boston, 2002; Blanchard, McCord, Mente, Lalush, Abrams, Loboa, et Nagle, 2004). Autrement dit, les évaluateurs portent leur jugement sur la qualité des ressources mobilisées, la pertinence des stratégies empruntées par les élèves pour réaliser la tâche. Dès lors, pour assurer la fiabilité de ces évaluations, l’explicitation des critères sur lesquels repose le jugement (Boston, 2002), la précision du seuil de réussite et la clarification du barème de notation sont nécessaires (Durand et Trépanier, 2011). Noyau (2011) relève la difficulté des enseignants à opérer une évaluation correcte selon l’APC. En effet, les correcteurs ne disposent pas de grilles d’observation avec des critères bien précisés et déclinés en indicateurs observables. 
+La mise à l’essai a donc permis de recueillir l’avis de six (06) enseignants du primaire sur la valeur des grilles descriptives analytiques proposées. Aussi, cette étape rend-elle compte de la position de ces enseignants en regard de l’efficacité de ces grilles à porter un jugement sur les travaux réalisés par des élèves de 6e année. 
+Enfin, à l’étape de la description, de l’analyse et de l’évaluation, notre cadre conceptuel a été la loupe avec laquelle nous avons observé les données produites et les prescrits documentaires pour en ressortir un portrait des observations. Une occasion de constater que la perspective instrumentale que nous avions adoptée n’est pas la seule qui sous-tend le jugement professionnel des enseignants en évaluation. Cette nouvelle dimension a d’ailleurs permis d’alimenter notre dernier chapitre.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">This thesis focuses on the assessment of reading and writing skills for certification purposes in a context of competency-based approach. Indeed, for more than fifteen years, the educational systems of many countries in Europe (France, Belgium, Switzerland, etc.), America (Canada, the United States, etc.) and Africa (Senegal, Tunisia, Morocco, etc.) have adopted curricula defined in terms of skills to be developed in the teaching-learning process. In this context, the question of evaluation raises more questions both in professional and scientific circles
+These questions are all the more legitimate the evaluation takes place in the context of a social practice with increased socio-ethical stakes. Moreover, as Legendre (2007) argued, evaluation is seen as the "knot" of reforms, in the sense that it can undermine their direction and pervert their implementation
+In Senegal, the use of French as a language of instruction complicates pedagogical approaches. Indeed, the way learners acquire knowledge in an environment where French is a second language that stands alongside one or more local languages remains a major concern. French is, therefore, a fundamental school subject that is instrumental to the mastery of other acquisitions. This is what justifies the choice of this school subject in this research.
+We have opted for qualitative research of the developmental type. Thus, a five-step approach was required: 1) Needs Analysis; 2) Design of the Model; 3) Validations; (4) Testing; And (5) Description, Analysis and Evaluation of the prototype. With a variety of tools for collecting data from various stakeholders, it was possible to propose a template (model) structure for certification tests in line with the theories proved in the didactics of reading and writing and in coherence with the competency-based approach.
+The proposed model consists of a situation in reading and writing designed on the basis of the didactic constituents of these competences. Then, the descriptive grids were produced to facilitate the interpretation of students' productions. Finally, other tools for facilitating the completion of tasks (tools for pupils) and the harmonization of support in testing processes in a context of large-scale evaluation (testing guide) are annexed the model.
+The successive validations made it possible to adjust the different constituents of the prototype and put them in context. Indeed, actors on the ground operating at different
+iv
+levels, and who are very familiar with the learning environment, have participated in this work. The trial provided an opportunity to observe the efficiency level of the tools. Indeed, the APC assessment should be qualitative (Alter, 2000, Boston, 2002, Blanchard, McCord, Mente, Lalush, Abrams, Loboa, and Nagle, 2004). In other words, the evaluators judge the quality of the resources mobilized, the relevance of the strategies borrowed by the students to carry out the task. Thus, in order to ensure the reliability of these assessments, the following are necessary: the judgement criteria (Boston, 2002), clearly set passing standards and the clarification of the scoring scale (Durand and Trépanier, 2011). Noyau (2011) notes the difficulty teachers face in conducting a correct assessment according to the APC. Indeed, the markers do not have observation grids with well-defined criteria and declined into observable indicators.
+Thanks to the trial, six (06) primary school teachers were consulted on the value of the proposed analytical descriptive grids. This stage also reflects the position of these teachers in terms of the effectiveness of these grids in making an "objective" assessment of the work done by Grade 6 students. Finally, at the stage of description, analysis and evaluation, our conceptual framework was the lense through which we observed the data produced and the prescribed documentation to come up with a picture of the observations. This constituted an opportunity to see that the instrumental perspective we have adopted is not the only one that underpins the professional judgment of teachers in assesment processes. This new dimension served to fuel our last chapter.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F20058&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+de+l%27%C3%A9ducation+-+Mesure+et+%C3%A9valuation+en+%C3%A9ducation&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/20058/Sakho_Ibrahima_2017_These.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/20058/Sakho_Ibrahima_2017_These.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Sakho_Ibrahima_2017_These.pdf">
+<a href="/xmlui/bitstream/handle/1866/20058/Sakho_Ibrahima_2017_These.pdf?sequence=2&amp;isAllowed=y">Sakho_Ibrahima_2017_These.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">9.370Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2971/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2971">Faculté des sciences de l'éducation – Thèses et mémoires</a> [646]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/20058">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

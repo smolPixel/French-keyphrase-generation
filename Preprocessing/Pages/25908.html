@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Virtual reality therapy for Alzheimer’s disease with speech instruction and real-time neurofeedback system</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Frasson, Claude" name="DC.contributor">
+<meta content="Ai, Yan" name="DC.creator">
+<meta content="2022-01-14T17:47:11Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2022-01-14T17:47:11Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-10-21" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2021-05" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/25908" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Alzheimer’s Disease" name="DC.subject" xml:lang="fr"/>
+<meta content="EEG" name="DC.subject" xml:lang="fr"/>
+<meta content="Intelligent Agent" name="DC.subject" xml:lang="fr"/>
+<meta content="Zoo Therapy" name="DC.subject" xml:lang="fr"/>
+<meta content="Emotion" name="DC.subject" xml:lang="fr"/>
+<meta content="Immersive Virtual Reality" name="DC.subject" xml:lang="fr"/>
+<meta content="Reinforcement learning" name="DC.subject" xml:lang="fr"/>
+<meta content="Proximal Policy Optimization Algorithms" name="DC.subject" xml:lang="fr"/>
+<meta content="Auto encoder" name="DC.subject" xml:lang="fr"/>
+<meta content="Neurofeedback" name="DC.subject" xml:lang="fr"/>
+<meta content="Speech Recognition" name="DC.subject" xml:lang="fr"/>
+<meta content="Immersive environment" name="DC.subject" xml:lang="fr"/>
+<meta content="Maladie d’Alzheimer" name="DC.subject" xml:lang="fr"/>
+<meta content="Réalité virtuelle immersive" name="DC.subject" xml:lang="fr"/>
+<meta content="Reconnaissance vocale" name="DC.subject" xml:lang="fr"/>
+<meta content="Zoo thérapie" name="DC.subject" xml:lang="fr"/>
+<meta content="Émotions" name="DC.subject" xml:lang="fr"/>
+<meta content="Apprentissage par renforcement" name="DC.subject" xml:lang="fr"/>
+<meta content="Encodeur automatique" name="DC.subject" xml:lang="fr"/>
+<meta content="Algorithmes d’optimisation de la politique proximale" name="DC.subject" xml:lang="fr"/>
+<meta content="Environnement immersif" name="DC.subject" xml:lang="fr"/>
+<meta content="Applied Sciences - Artificial Intelligence / Sciences appliqués et technologie - Intelligence artificielle (UMI : 0800)" name="DC.subject" xml:lang="fr"/>
+<meta content="Virtual reality therapy for Alzheimer’s disease with speech instruction and real-time neurofeedback system" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La maladie d'Alzheimer (MA) est une maladie cérébrale dégénérative qui entraîne une perte progressive de la mémoire, un déclin cognitif et une détérioration graduelle de la capacité d'une personne à faire face à la complexité et à l'exigence des tâches quotidiennes nécessaires pour vivre en autonomie dans notre société actuelle. Les traitements pharmacologiques actuels peuvent ralentir le processus de dégradation attribué à la maladie, mais ces traitements peuvent également provoquer certains effets secondaires indésirables. L'un des traitements non pharmacologiques qui peut soulager efficacement les symptômes est la thérapie assistée par l'animal (T.A.A.). Mais en raison de certaines limitations telles que le prix des animaux et des problèmes d'hygiène, des animaux virtuels sont utilisés dans ce domaine. Cependant, les animaux virtuels animés, la qualité d'image approximative et le mode d'interaction unidirectionnel des animaux qui attendent passivement les instructions de l’utilisateur, peuvent difficilement stimuler le retour émotionnel entre l'utilisateur et les animaux virtuels, ce qui affaiblit considérablement l'effet thérapeutique.
+
+Cette étude vise à explorer l'efficacité de l'utilisation d'animaux virtuels à la place d’animaux vivants et leur impact sur la réduction des émotions négatives chez le patient. Cet objectif a été gardé à l'esprit lors de la conception du projet Zoo Therapy, qui présente un environnement immersif d'animaux virtuels en 3D, où l'impact sur l'émotion du patient est mesuré en temps réel par électroencéphalographie (EEG). Les objets statiques et les animaux virtuels de Zoo Therapy sont tous présentés à l'aide de modèles 3D réels. Les mouvements des animaux, les sons et les systèmes de repérage spécialement développés prennent en charge le comportement interactif simulé des animaux virtuels. De plus, pour que l'expérience d'interaction de l'utilisateur soit plus réelle, Zoo Therapy propose un mécanisme de communication novateur qui met en œuvre une interaction bidirectionnelle homme-machine soutenue par 3 méthodes d'interaction : le menu sur les panneaux, les instructions vocales et le Neurofeedback.
+
+La manière la plus directe d'interagir avec l'environnement de réalité virtuelle (RV) est le menu sur les panneaux, c'est-à-dire une interaction en cliquant sur les boutons des panneaux par le contrôleur de RV. Cependant, il était difficile pour certains utilisateurs ayant la MA d'utiliser le contrôleur de RV. Pour accommoder ceux qui ne sont pas bien adaptés ou compatibles avec le contrôleur de RV, un système d'instructions vocales peut être utilisé comme interface. Ce système a été reçu positivement par les 5 participants qui l'ont essayé.
+
+Même si l'utilisateur choisit de ne pas interagir activement avec l'animal virtuel dans les deux méthodes ci-dessus, le système de Neurofeedback guidera l'animal pour qu'il interagisse activement avec l'utilisateur en fonction des émotions de ce dernier.
+Le système de Neurofeedback classique utilise un système de règles pour donner des instructions. Les limites de cette méthode sont la rigidité et l'impossibilité de prendre en compte la relation entre les différentes émotions du participant. Pour résoudre ces problèmes, ce mémoire présente une méthode basée sur l'apprentissage par renforcement (AR) qui donne des instructions à différentes personnes en fonction des différentes émotions. Dans l'expérience de simulation des données émotionnelles synthétiques de la MD, la méthode basée sur l’AR est plus sensible aux changements émotionnels que la méthode basée sur les règles et peut apprendre automatiquement des règles potentielles pour maximiser les émotions positives de l'utilisateur.
+
+En raison de l'épidémie de Covid-19, nous n'avons pas été en mesure de mener des expériences à grande échelle. Cependant, un projet de suivi a combiné la thérapie de RV Zoo avec la reconnaissance des gestes et a prouvé son efficacité en évaluant les valeurs d'émotion EEG des participants." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Alzheimer’s disease (AD) is a degenerative brain disease that causes progressive memory loss, cognitive decline, and gradually impairs one’s ability to cope with the complexity and requirement of the daily routine tasks necessary to live in autonomy in our current society. Actual pharmacological treatments can slow down the degradation process attributed to the disease, but such treatments may also cause some undesirable side effects. One of the non-pharmacological treatments that can effectively relieve symptoms is animal-assisted treatment (AAT). But due to some limitations such as animal cost and hygiene issues, virtual animals are used in this field. However, the animated virtual animals, the rough picture quality presentation, and the one-direction interaction mode of animals passively waiting for the user's instructions can hardly stimulate the emotional feedback background between the user and the virtual animals, which greatly weakens the therapeutic effect.
+
+This study aims to explore the effectiveness of using virtual animals in place of their living counterpart and their impact on the reduction of negative emotions in the patient. This approach has been implemented in the Zoo Therapy project, which presents an immersive 3D virtual reality animal environment, where the impact on the patient’s emotion is measured in real-time by using electroencephalography (EEG). The static objects and virtual animals in Zoo Therapy are all presented using real 3D models. The specially developed animal movements, sounds, and pathfinding systems support the simulated interactive behavior of virtual animals. In addition, for the user's interaction experience to be more real, the innovation of this approach is also in its communication mechanism as it implements a bidirectional human-computer interaction supported by 3 interaction methods: Menu panel, Speech instruction, and Neurofeedback.
+
+The most straightforward way to interact with the VR environment is through Menu panel, i.e., interaction by clicking buttons on panels by the VR controller. However, it was difficult for some AD users to use the VR controller. To accommodate those who are not well suited or compatible with VR controllers, a speech instruction system can be used as an interface, which was received positively by the 5 participants who tried it.
+
+Even if the user chooses not to actively interact with the virtual animal in the above two methods, the Neurofeedback system will guide the animal to actively interact with the user according to the user's emotions.
+The mainstream Neurofeedback system has been using artificial rules to give instructions. The limitation of this method is inflexibility and cannot take into account the relationship between the various emotions of the participant. To solve these problems, this thesis presents a reinforcement learning (RL)-based method that gives instructions to different people based on multiple emotions accordingly. In the synthetic AD emotional data simulation experiment, the RL-based method is more sensitive to emotional changes than the rule-based method and can automatically learn potential rules to maximize the user's positive emotions.
+
+Due to the Covid-19 epidemic, we were unable to conduct large-scale experiments. However, a follow-up project combined VR Zoo Therapy with gesture recognition and proved the effectiveness by evaluating participant's EEG emotion values." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Alzheimer’s Disease; EEG; Intelligent Agent; Zoo Therapy; Emotion; Immersive Virtual Reality; Reinforcement learning; Proximal Policy Optimization Algorithms; Auto encoder; Neurofeedback; Speech Recognition; Immersive environment; Maladie d’Alzheimer; Réalité virtuelle immersive; Reconnaissance vocale; Zoo thérapie; Émotions; Apprentissage par renforcement; Encodeur automatique; Algorithmes d’optimisation de la politique proximale; Environnement immersif; Applied Sciences - Artificial Intelligence / Sciences appliqués et technologie - Intelligence artificielle (UMI : 0800); Thèse ou mémoire / Thesis or Dissertation; Informatique" name="citation_keywords"/>
+<meta content="Virtual reality therapy for Alzheimer’s disease with speech instruction and real-time neurofeedback system" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Ai, Yan" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/25908/2/Ai_Yan_2021_memoire.pdf" name="citation_pdf_url"/>
+<meta content="2021-10-21" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/25908" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25908?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25908?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25908?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25908?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25908?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25908?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2958" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3001" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2958">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/3001"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/25908/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25908">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/25908/mets.xml-->
+<h2 class="page-header first-page-header">Virtual reality therapy for Alzheimer’s disease with speech instruction and real-time neurofeedback system</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Frasson, Claude</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Ai, Yan</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2022-01-14T17:47:11Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2022-01-14T17:47:11Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-10-21</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2021-05</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/25908</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Alzheimer’s Disease</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">EEG</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Intelligent Agent</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Zoo Therapy</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Emotion</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Immersive Virtual Reality</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Reinforcement learning</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Proximal Policy Optimization Algorithms</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Auto encoder</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Neurofeedback</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Speech Recognition</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Immersive environment</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Maladie d’Alzheimer</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Réalité virtuelle immersive</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Reconnaissance vocale</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Zoo thérapie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Émotions</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Apprentissage par renforcement</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Encodeur automatique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Algorithmes d’optimisation de la politique proximale</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Environnement immersif</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Applied Sciences - Artificial Intelligence / Sciences appliqués et technologie - Intelligence artificielle (UMI : 0800)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Virtual reality therapy for Alzheimer’s disease with speech instruction and real-time neurofeedback system</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Informatique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Maîtrise / Master's</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">M. Sc.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La maladie d'Alzheimer (MA) est une maladie cérébrale dégénérative qui entraîne une perte progressive de la mémoire, un déclin cognitif et une détérioration graduelle de la capacité d'une personne à faire face à la complexité et à l'exigence des tâches quotidiennes nécessaires pour vivre en autonomie dans notre société actuelle. Les traitements pharmacologiques actuels peuvent ralentir le processus de dégradation attribué à la maladie, mais ces traitements peuvent également provoquer certains effets secondaires indésirables. L'un des traitements non pharmacologiques qui peut soulager efficacement les symptômes est la thérapie assistée par l'animal (T.A.A.). Mais en raison de certaines limitations telles que le prix des animaux et des problèmes d'hygiène, des animaux virtuels sont utilisés dans ce domaine. Cependant, les animaux virtuels animés, la qualité d'image approximative et le mode d'interaction unidirectionnel des animaux qui attendent passivement les instructions de l’utilisateur, peuvent difficilement stimuler le retour émotionnel entre l'utilisateur et les animaux virtuels, ce qui affaiblit considérablement l'effet thérapeutique.
+
+Cette étude vise à explorer l'efficacité de l'utilisation d'animaux virtuels à la place d’animaux vivants et leur impact sur la réduction des émotions négatives chez le patient. Cet objectif a été gardé à l'esprit lors de la conception du projet Zoo Therapy, qui présente un environnement immersif d'animaux virtuels en 3D, où l'impact sur l'émotion du patient est mesuré en temps réel par électroencéphalographie (EEG). Les objets statiques et les animaux virtuels de Zoo Therapy sont tous présentés à l'aide de modèles 3D réels. Les mouvements des animaux, les sons et les systèmes de repérage spécialement développés prennent en charge le comportement interactif simulé des animaux virtuels. De plus, pour que l'expérience d'interaction de l'utilisateur soit plus réelle, Zoo Therapy propose un mécanisme de communication novateur qui met en œuvre une interaction bidirectionnelle homme-machine soutenue par 3 méthodes d'interaction : le menu sur les panneaux, les instructions vocales et le Neurofeedback.
+
+La manière la plus directe d'interagir avec l'environnement de réalité virtuelle (RV) est le menu sur les panneaux, c'est-à-dire une interaction en cliquant sur les boutons des panneaux par le contrôleur de RV. Cependant, il était difficile pour certains utilisateurs ayant la MA d'utiliser le contrôleur de RV. Pour accommoder ceux qui ne sont pas bien adaptés ou compatibles avec le contrôleur de RV, un système d'instructions vocales peut être utilisé comme interface. Ce système a été reçu positivement par les 5 participants qui l'ont essayé.
+
+Même si l'utilisateur choisit de ne pas interagir activement avec l'animal virtuel dans les deux méthodes ci-dessus, le système de Neurofeedback guidera l'animal pour qu'il interagisse activement avec l'utilisateur en fonction des émotions de ce dernier.
+Le système de Neurofeedback classique utilise un système de règles pour donner des instructions. Les limites de cette méthode sont la rigidité et l'impossibilité de prendre en compte la relation entre les différentes émotions du participant. Pour résoudre ces problèmes, ce mémoire présente une méthode basée sur l'apprentissage par renforcement (AR) qui donne des instructions à différentes personnes en fonction des différentes émotions. Dans l'expérience de simulation des données émotionnelles synthétiques de la MD, la méthode basée sur l’AR est plus sensible aux changements émotionnels que la méthode basée sur les règles et peut apprendre automatiquement des règles potentielles pour maximiser les émotions positives de l'utilisateur.
+
+En raison de l'épidémie de Covid-19, nous n'avons pas été en mesure de mener des expériences à grande échelle. Cependant, un projet de suivi a combiné la thérapie de RV Zoo avec la reconnaissance des gestes et a prouvé son efficacité en évaluant les valeurs d'émotion EEG des participants.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Alzheimer’s disease (AD) is a degenerative brain disease that causes progressive memory loss, cognitive decline, and gradually impairs one’s ability to cope with the complexity and requirement of the daily routine tasks necessary to live in autonomy in our current society. Actual pharmacological treatments can slow down the degradation process attributed to the disease, but such treatments may also cause some undesirable side effects. One of the non-pharmacological treatments that can effectively relieve symptoms is animal-assisted treatment (AAT). But due to some limitations such as animal cost and hygiene issues, virtual animals are used in this field. However, the animated virtual animals, the rough picture quality presentation, and the one-direction interaction mode of animals passively waiting for the user's instructions can hardly stimulate the emotional feedback background between the user and the virtual animals, which greatly weakens the therapeutic effect.
+
+This study aims to explore the effectiveness of using virtual animals in place of their living counterpart and their impact on the reduction of negative emotions in the patient. This approach has been implemented in the Zoo Therapy project, which presents an immersive 3D virtual reality animal environment, where the impact on the patient’s emotion is measured in real-time by using electroencephalography (EEG). The static objects and virtual animals in Zoo Therapy are all presented using real 3D models. The specially developed animal movements, sounds, and pathfinding systems support the simulated interactive behavior of virtual animals. In addition, for the user's interaction experience to be more real, the innovation of this approach is also in its communication mechanism as it implements a bidirectional human-computer interaction supported by 3 interaction methods: Menu panel, Speech instruction, and Neurofeedback.
+
+The most straightforward way to interact with the VR environment is through Menu panel, i.e., interaction by clicking buttons on panels by the VR controller. However, it was difficult for some AD users to use the VR controller. To accommodate those who are not well suited or compatible with VR controllers, a speech instruction system can be used as an interface, which was received positively by the 5 participants who tried it.
+
+Even if the user chooses not to actively interact with the virtual animal in the above two methods, the Neurofeedback system will guide the animal to actively interact with the user according to the user's emotions.
+The mainstream Neurofeedback system has been using artificial rules to give instructions. The limitation of this method is inflexibility and cannot take into account the relationship between the various emotions of the participant. To solve these problems, this thesis presents a reinforcement learning (RL)-based method that gives instructions to different people based on multiple emotions accordingly. In the synthetic AD emotional data simulation experiment, the RL-based method is more sensitive to emotional changes than the rule-based method and can automatically learn potential rules to maximize the user's positive emotions.
+
+Due to the Covid-19 epidemic, we were unable to conduct large-scale experiments. However, a follow-up project combined VR Zoo Therapy with gesture recognition and proved the effectiveness by evaluating participant's EEG emotion values.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F25908&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Informatique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Ma%C3%AEtrise+%2F+Master%27s&amp;rft.degree=M.+Sc."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/25908/Ai_Yan_2021_memoire.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25908/Ai_Yan_2021_memoire.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Ai_Yan_2021_memoire.pdf">
+<a href="/xmlui/bitstream/handle/1866/25908/Ai_Yan_2021_memoire.pdf?sequence=2&amp;isAllowed=y">Ai_Yan_2021_memoire.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">38.94Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Mémoire">Mémoire</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3001/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a> [795]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25908">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

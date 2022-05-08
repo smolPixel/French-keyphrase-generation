@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Les algorithmes de haute résolution en tomographie d'émission par positrons : développement et accélération sur les cartes graphiques</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Leroy, Claude" name="DC.contributor">
+<meta content="Carrier, Jean-François" name="DC.contributor">
+<meta content="Després, Philippe" name="DC.contributor">
+<meta content="Nassiri, Moulay Ali" name="DC.creator">
+<meta content="2015-10-21T18:16:22Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2015-10-21T18:16:22Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF"/>
+<meta content="2015-09-23" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2015-05" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/12353" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Tomographie d’émission par positrons" name="DC.subject" xml:lang="fr"/>
+<meta content="TEP" name="DC.subject" xml:lang="fr"/>
+<meta content="Reconstruction" name="DC.subject" xml:lang="fr"/>
+<meta content="Algorithmes" name="DC.subject" xml:lang="fr"/>
+<meta content="Haute résolution" name="DC.subject" xml:lang="fr"/>
+<meta content="Accélération" name="DC.subject" xml:lang="fr"/>
+<meta content="GPU" name="DC.subject" xml:lang="fr"/>
+<meta content="Mode liste" name="DC.subject" xml:lang="fr"/>
+<meta content="Sinogrammes" name="DC.subject" xml:lang="fr"/>
+<meta content="Matrice de sensibilité" name="DC.subject" xml:lang="fr"/>
+<meta content="Positron emission tomography" name="DC.subject" xml:lang="fr"/>
+<meta content="PET" name="DC.subject" xml:lang="fr"/>
+<meta content="Acceleration" name="DC.subject" xml:lang="fr"/>
+<meta content="List mode" name="DC.subject" xml:lang="fr"/>
+<meta content="Sinograms" name="DC.subject" xml:lang="fr"/>
+<meta content="Sensitivity matrix" name="DC.subject" xml:lang="fr"/>
+<meta content="multigrid" name="DC.subject" xml:lang="fr"/>
+<meta content="Multiframe" name="DC.subject" xml:lang="fr"/>
+<meta content="LM-OSEM" name="DC.subject" xml:lang="fr"/>
+<meta content="LMEM" name="DC.subject" xml:lang="fr"/>
+<meta content="MGMF-LMEM" name="DC.subject" xml:lang="fr"/>
+<meta content="LOR-OSEM" name="DC.subject" xml:lang="fr"/>
+<meta content="AW-LOR-OSEM" name="DC.subject" xml:lang="fr"/>
+<meta content="Physics - General / Physique - Généralités (UMI : 0605)" name="DC.subject" xml:lang="fr"/>
+<meta content="Les algorithmes de haute résolution en tomographie d'émission par positrons : développement et accélération sur les cartes graphiques" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La tomographie d’émission par positrons (TEP) est une modalité d’imagerie moléculaire utilisant des radiotraceurs marqués par des isotopes émetteurs de positrons permettant de quantifier et de sonder des processus biologiques et physiologiques. Cette modalité est surtout utilisée actuellement en oncologie, mais elle est aussi utilisée de plus en plus en cardiologie, en neurologie et en pharmacologie. En fait, c’est une modalité qui est intrinsèquement capable d’offrir avec une meilleure sensibilité des informations fonctionnelles sur le métabolisme cellulaire. Les limites de cette modalité sont surtout la faible résolution spatiale et le manque d’exactitude de la quantification. Par ailleurs, afin de dépasser ces limites qui constituent un obstacle pour élargir le champ des applications cliniques de la TEP, les nouveaux systèmes d’acquisition sont équipés d’un grand nombre de petits détecteurs ayant des meilleures performances de détection. La reconstruction de l’image se fait en utilisant les algorithmes stochastiques itératifs mieux adaptés aux acquisitions à faibles statistiques. De ce fait, le temps de reconstruction est devenu trop long pour une utilisation en milieu clinique. Ainsi, pour réduire ce temps, on les données d’acquisition sont compressées et des versions accélérées d’algorithmes stochastiques itératifs qui sont généralement moins exactes sont utilisées. Les performances améliorées par l’augmentation de nombre des détecteurs sont donc limitées par les contraintes de temps de calcul. 
+
+Afin de sortir de cette boucle et permettre l’utilisation des algorithmes de reconstruction robustes, de nombreux travaux ont été effectués pour accélérer ces algorithmes sur les dispositifs GPU (Graphics Processing Units) de calcul haute performance. Dans ce travail, nous avons rejoint cet effort de la communauté scientifique pour développer et introduire en clinique l’utilisation des algorithmes de reconstruction puissants qui améliorent la résolution spatiale et l’exactitude de la quantification en TEP.
+
+Nous avons d’abord travaillé sur le développement des stratégies pour accélérer sur les dispositifs GPU la reconstruction des images TEP à partir des données d’acquisition en mode liste. En fait, le mode liste offre de nombreux avantages par rapport à la reconstruction à partir des sinogrammes, entre autres : il permet d’implanter facilement et avec précision la correction du mouvement et le temps de vol (TOF : Time-Of Flight) pour améliorer l’exactitude de la quantification. Il permet aussi d’utiliser les fonctions de bases spatio-temporelles pour effectuer la reconstruction 4D afin d’estimer les paramètres cinétiques des métabolismes avec exactitude. Cependant, d’une part, l’utilisation de ce mode est très limitée en clinique, et d’autre part, il est surtout utilisé pour estimer la valeur normalisée de captation SUV qui est une grandeur semi-quantitative limitant le caractère fonctionnel de la TEP. Nos contributions sont les suivantes :
+
+- Le développement d’une nouvelle stratégie visant à accélérer sur les dispositifs GPU l’algorithme 3D LM-OSEM (List Mode Ordered-Subset Expectation-Maximization), y compris le calcul de la matrice de sensibilité intégrant les facteurs d’atténuation du patient et les coefficients de normalisation des détecteurs. Le temps de calcul obtenu est non seulement compatible avec une utilisation clinique des algorithmes 3D LM-OSEM, mais il permet également d’envisager des reconstructions rapides pour les applications TEP avancées telles que les études dynamiques en temps réel et des reconstructions d’images paramétriques à partir des données d’acquisitions directement.
+
+- Le développement et l’implantation sur GPU de l’approche Multigrilles/Multitrames pour accélérer l’algorithme LMEM (List-Mode Expectation-Maximization). L’objectif est de développer une nouvelle stratégie pour accélérer l’algorithme de référence LMEM qui est un algorithme convergent et puissant, mais qui a l’inconvénient de converger très lentement. Les résultats obtenus permettent d’entrevoir des reconstructions en temps quasi-réel que ce soit pour les examens utilisant un grand nombre de données d’acquisition aussi bien que pour les acquisitions dynamiques synchronisées.
+
+Par ailleurs, en clinique, la quantification est souvent faite à partir de données d’acquisition en sinogrammes généralement compressés. Mais des travaux antérieurs ont montré que cette approche pour accélérer la reconstruction diminue l’exactitude de la quantification et dégrade la résolution spatiale. Pour cette raison, nous avons parallélisé et implémenté sur GPU l’algorithme AW-LOR-OSEM (Attenuation-Weighted Line-of-Response-OSEM) ; une version de l’algorithme 3D OSEM qui effectue la reconstruction à partir de sinogrammes sans compression de données en intégrant les corrections de l’atténuation et de la normalisation dans les matrices de sensibilité. Nous avons comparé deux approches d’implantation : dans la première, la matrice système (MS) est calculée en temps réel au cours de la reconstruction, tandis que la seconde implantation utilise une MS pré- calculée avec une meilleure exactitude. Les résultats montrent que la première implantation offre une efficacité de calcul environ deux fois meilleure que celle obtenue dans la deuxième implantation. Les temps de reconstruction rapportés sont compatibles avec une utilisation clinique de ces deux stratégies." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Positron emission tomography (PET) is a molecular imaging modality that uses radiotracers labeled with positron emitting isotopes in order to quantify many biological processes. The clinical applications of this modality are largely in oncology, but  it  has a  potential to be a reference exam for many diseases in cardiology, neurology and pharmacology. In fact, it is intrinsically able to offer the functional information of cellular metabolism with a good sensitivity. The principal limitations of this modality are the limited spatial resolution and the limited accuracy of the quantification. To overcome these limits, the recent PET systems use a huge number of small detectors with better performances. The image reconstruction is also done using accurate algorithms such as the iterative stochastic algorithms. But as a consequence, the time of reconstruction becomes too long for a clinical use. So the acquired data are compressed and the accelerated versions of iterative stochastic algorithms which generally are non convergent are used to perform the reconstruction. Consequently, the obtained performance is compromised.
+In order to be able to use  the complex reconstruction algorithms in clinical applications  for the new PET systems, many previous studies were aiming to accelerate these algorithms on GPU devices. Therefore, in this thesis, we joined the effort of researchers for developing and introducing for routine clinical use the accurate reconstruction algorithms that improve the spatial resolution and the accuracy  of quantification for PET. 
+Therefore, we first worked to develop the new strategies for accelerating on GPU devices the reconstruction from list mode acquisition. In fact, this  mode offers many advantages over the histogram-mode, such as motion correction, the possibility of using time-of-flight (TOF) information to improve the quantification accuracy, the possibility of using temporal basis functions to perform 4D reconstruction and extract kinetic parameters with better accuracy directly from the acquired data. But, one of the main obstacles that limits the use of list-mode reconstruction approach for routine clinical use is the relatively long  reconstruction time. To overcome this obstacle we :
+developed a new strategy to accelerate on GPU devices fully 3D  list mode ordered-subset expectation-maximization (LM-OSEM) algorithm, including the calculation of the sensitivity matrix that accounts for the patient-specific attenuation and normalisation corrections. The reported reconstruction are not only compatible with a clinical use of 3D LM-OSEM algorithms, but also lets us envision fast reconstructions for advanced PET applications such as real time dynamic studies and parametric image reconstructions.
+ 
+developed and implemented on GPU a multigrid/multiframe approach of an expectation-maximization algorithm for list-mode acquisitions (MGMF-LMEM). The objective is to develop new strategies to accelerate the reconstruction of gold standard LMEM (list-mode expectation-maximization) algorithm which converges slowly. The GPU-based MGMF-LMEM algorithm processed data at a rate close to one million of events per second per iteration, and permits to perform near real-time reconstructions for large acquisitions or low-count acquisitions such as gated studies.
+ Moreover, for clinical use, the quantification is often done from acquired data organized in sinograms. This data is generally compressed in order to accelerate reconstruction. But previous works have shown that this approach to accelerate the reconstruction decreases the accuracy of quantification and  the spatial resolution. The  ordered-subset expectation-maximization (OSEM) is the most used reconstruction algorithm from sinograms in clinic.  Thus, we parallelized and implemented the attenuation-weighted line-of-response OSEM (AW-LOR-OSEM) algorithm which allows a PET image reconstruction from sinograms without any data compression and incorporates the attenuation and normalization corrections in the sensitivity matrices as weight factors. We compared two strategies of implementation: in the first, the system matrix (SM) is calculated on the fly during the reconstruction, while the second implementation uses a precalculated SM more accurately. The results show that the computational efficiency is about twice better for the implementation using calculated SM on-the-fly than the implementation using pre-calculated SM, but the reported reconstruction times are compatible with a clinical use for both strategies." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Tomographie d’émission par positrons; TEP; Reconstruction; Algorithmes; Haute résolution; Accélération; GPU; Mode liste; Sinogrammes; Matrice de sensibilité; Positron emission tomography; PET; Acceleration; List mode; Sinograms; Sensitivity matrix; multigrid; Multiframe; LM-OSEM; LMEM; MGMF-LMEM; LOR-OSEM; AW-LOR-OSEM; Physics - General / Physique - Généralités (UMI : 0605); Thèse ou mémoire / Thesis or Dissertation; Physique" name="citation_keywords"/>
+<meta content="Les algorithmes de haute résolution en tomographie d'émission par positrons : développement et accélération sur les cartes graphiques" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Nassiri, Moulay Ali" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/12353/4/Nassiri_Moulay-Ali_2015_these.pdf" name="citation_pdf_url"/>
+<meta content="2015-09-23" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/12353" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12353?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12353?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12353?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12353?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12353?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12353?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2329" role="menuitem">Faculté des arts et des sciences – Département de physique</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2990" role="menuitem">Faculté des arts et des sciences – Département de physique - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2329">Faculté des arts et des sciences – Département de physique</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2990">Faculté des arts et des sciences – Département de physique - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2990"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/12353/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/12353">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/12353/mets.xml-->
+<h2 class="page-header first-page-header">Les algorithmes de haute résolution en tomographie d'émission par positrons : développement et accélération sur les cartes graphiques</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Leroy, Claude</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Carrier, Jean-François</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Després, Philippe</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Nassiri, Moulay Ali</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2015-10-21T18:16:22Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2015-10-21T18:16:22Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2015-09-23</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2015-05</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/12353</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Tomographie d’émission par positrons</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">TEP</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Reconstruction</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Algorithmes</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Haute résolution</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Accélération</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">GPU</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Mode liste</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Sinogrammes</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Matrice de sensibilité</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Positron emission tomography</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">PET</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Acceleration</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">List mode</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Sinograms</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Sensitivity matrix</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">multigrid</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Multiframe</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">LM-OSEM</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">LMEM</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">MGMF-LMEM</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">LOR-OSEM</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">AW-LOR-OSEM</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Physics - General / Physique - Généralités (UMI : 0605)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Les algorithmes de haute résolution en tomographie d'émission par positrons : développement et accélération sur les cartes graphiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Physique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La tomographie d’émission par positrons (TEP) est une modalité d’imagerie moléculaire utilisant des radiotraceurs marqués par des isotopes émetteurs de positrons permettant de quantifier et de sonder des processus biologiques et physiologiques. Cette modalité est surtout utilisée actuellement en oncologie, mais elle est aussi utilisée de plus en plus en cardiologie, en neurologie et en pharmacologie. En fait, c’est une modalité qui est intrinsèquement capable d’offrir avec une meilleure sensibilité des informations fonctionnelles sur le métabolisme cellulaire. Les limites de cette modalité sont surtout la faible résolution spatiale et le manque d’exactitude de la quantification. Par ailleurs, afin de dépasser ces limites qui constituent un obstacle pour élargir le champ des applications cliniques de la TEP, les nouveaux systèmes d’acquisition sont équipés d’un grand nombre de petits détecteurs ayant des meilleures performances de détection. La reconstruction de l’image se fait en utilisant les algorithmes stochastiques itératifs mieux adaptés aux acquisitions à faibles statistiques. De ce fait, le temps de reconstruction est devenu trop long pour une utilisation en milieu clinique. Ainsi, pour réduire ce temps, on les données d’acquisition sont compressées et des versions accélérées d’algorithmes stochastiques itératifs qui sont généralement moins exactes sont utilisées. Les performances améliorées par l’augmentation de nombre des détecteurs sont donc limitées par les contraintes de temps de calcul. 
+
+Afin de sortir de cette boucle et permettre l’utilisation des algorithmes de reconstruction robustes, de nombreux travaux ont été effectués pour accélérer ces algorithmes sur les dispositifs GPU (Graphics Processing Units) de calcul haute performance. Dans ce travail, nous avons rejoint cet effort de la communauté scientifique pour développer et introduire en clinique l’utilisation des algorithmes de reconstruction puissants qui améliorent la résolution spatiale et l’exactitude de la quantification en TEP.
+
+Nous avons d’abord travaillé sur le développement des stratégies pour accélérer sur les dispositifs GPU la reconstruction des images TEP à partir des données d’acquisition en mode liste. En fait, le mode liste offre de nombreux avantages par rapport à la reconstruction à partir des sinogrammes, entre autres : il permet d’implanter facilement et avec précision la correction du mouvement et le temps de vol (TOF : Time-Of Flight) pour améliorer l’exactitude de la quantification. Il permet aussi d’utiliser les fonctions de bases spatio-temporelles pour effectuer la reconstruction 4D afin d’estimer les paramètres cinétiques des métabolismes avec exactitude. Cependant, d’une part, l’utilisation de ce mode est très limitée en clinique, et d’autre part, il est surtout utilisé pour estimer la valeur normalisée de captation SUV qui est une grandeur semi-quantitative limitant le caractère fonctionnel de la TEP. Nos contributions sont les suivantes :
+
+- Le développement d’une nouvelle stratégie visant à accélérer sur les dispositifs GPU l’algorithme 3D LM-OSEM (List Mode Ordered-Subset Expectation-Maximization), y compris le calcul de la matrice de sensibilité intégrant les facteurs d’atténuation du patient et les coefficients de normalisation des détecteurs. Le temps de calcul obtenu est non seulement compatible avec une utilisation clinique des algorithmes 3D LM-OSEM, mais il permet également d’envisager des reconstructions rapides pour les applications TEP avancées telles que les études dynamiques en temps réel et des reconstructions d’images paramétriques à partir des données d’acquisitions directement.
+
+- Le développement et l’implantation sur GPU de l’approche Multigrilles/Multitrames pour accélérer l’algorithme LMEM (List-Mode Expectation-Maximization). L’objectif est de développer une nouvelle stratégie pour accélérer l’algorithme de référence LMEM qui est un algorithme convergent et puissant, mais qui a l’inconvénient de converger très lentement. Les résultats obtenus permettent d’entrevoir des reconstructions en temps quasi-réel que ce soit pour les examens utilisant un grand nombre de données d’acquisition aussi bien que pour les acquisitions dynamiques synchronisées.
+
+Par ailleurs, en clinique, la quantification est souvent faite à partir de données d’acquisition en sinogrammes généralement compressés. Mais des travaux antérieurs ont montré que cette approche pour accélérer la reconstruction diminue l’exactitude de la quantification et dégrade la résolution spatiale. Pour cette raison, nous avons parallélisé et implémenté sur GPU l’algorithme AW-LOR-OSEM (Attenuation-Weighted Line-of-Response-OSEM) ; une version de l’algorithme 3D OSEM qui effectue la reconstruction à partir de sinogrammes sans compression de données en intégrant les corrections de l’atténuation et de la normalisation dans les matrices de sensibilité. Nous avons comparé deux approches d’implantation : dans la première, la matrice système (MS) est calculée en temps réel au cours de la reconstruction, tandis que la seconde implantation utilise une MS pré- calculée avec une meilleure exactitude. Les résultats montrent que la première implantation offre une efficacité de calcul environ deux fois meilleure que celle obtenue dans la deuxième implantation. Les temps de reconstruction rapportés sont compatibles avec une utilisation clinique de ces deux stratégies.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Positron emission tomography (PET) is a molecular imaging modality that uses radiotracers labeled with positron emitting isotopes in order to quantify many biological processes. The clinical applications of this modality are largely in oncology, but  it  has a  potential to be a reference exam for many diseases in cardiology, neurology and pharmacology. In fact, it is intrinsically able to offer the functional information of cellular metabolism with a good sensitivity. The principal limitations of this modality are the limited spatial resolution and the limited accuracy of the quantification. To overcome these limits, the recent PET systems use a huge number of small detectors with better performances. The image reconstruction is also done using accurate algorithms such as the iterative stochastic algorithms. But as a consequence, the time of reconstruction becomes too long for a clinical use. So the acquired data are compressed and the accelerated versions of iterative stochastic algorithms which generally are non convergent are used to perform the reconstruction. Consequently, the obtained performance is compromised.
+In order to be able to use  the complex reconstruction algorithms in clinical applications  for the new PET systems, many previous studies were aiming to accelerate these algorithms on GPU devices. Therefore, in this thesis, we joined the effort of researchers for developing and introducing for routine clinical use the accurate reconstruction algorithms that improve the spatial resolution and the accuracy  of quantification for PET. 
+Therefore, we first worked to develop the new strategies for accelerating on GPU devices the reconstruction from list mode acquisition. In fact, this  mode offers many advantages over the histogram-mode, such as motion correction, the possibility of using time-of-flight (TOF) information to improve the quantification accuracy, the possibility of using temporal basis functions to perform 4D reconstruction and extract kinetic parameters with better accuracy directly from the acquired data. But, one of the main obstacles that limits the use of list-mode reconstruction approach for routine clinical use is the relatively long  reconstruction time. To overcome this obstacle we :
+developed a new strategy to accelerate on GPU devices fully 3D  list mode ordered-subset expectation-maximization (LM-OSEM) algorithm, including the calculation of the sensitivity matrix that accounts for the patient-specific attenuation and normalisation corrections. The reported reconstruction are not only compatible with a clinical use of 3D LM-OSEM algorithms, but also lets us envision fast reconstructions for advanced PET applications such as real time dynamic studies and parametric image reconstructions.
+ 
+developed and implemented on GPU a multigrid/multiframe approach of an expectation-maximization algorithm for list-mode acquisitions (MGMF-LMEM). The objective is to develop new strategies to accelerate the reconstruction of gold standard LMEM (list-mode expectation-maximization) algorithm which converges slowly. The GPU-based MGMF-LMEM algorithm processed data at a rate close to one million of events per second per iteration, and permits to perform near real-time reconstructions for large acquisitions or low-count acquisitions such as gated studies.
+ Moreover, for clinical use, the quantification is often done from acquired data organized in sinograms. This data is generally compressed in order to accelerate reconstruction. But previous works have shown that this approach to accelerate the reconstruction decreases the accuracy of quantification and  the spatial resolution. The  ordered-subset expectation-maximization (OSEM) is the most used reconstruction algorithm from sinograms in clinic.  Thus, we parallelized and implemented the attenuation-weighted line-of-response OSEM (AW-LOR-OSEM) algorithm which allows a PET image reconstruction from sinograms without any data compression and incorporates the attenuation and normalization corrections in the sensitivity matrices as weight factors. We compared two strategies of implementation: in the first, the system matrix (SM) is calculated on the fly during the reconstruction, while the second implementation uses a precalculated SM more accurately. The results show that the computational efficiency is about twice better for the implementation using calculated SM on-the-fly than the implementation using pre-calculated SM, but the reported reconstruction times are compatible with a clinical use for both strategies.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F12353&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Physique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/12353/Nassiri_Moulay-Ali_2015_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/12353/Nassiri_Moulay-Ali_2015_these.pdf.jpg?sequence=7&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Nassiri_Moulay-Ali_2015_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/12353/Nassiri_Moulay-Ali_2015_these.pdf?sequence=4&amp;isAllowed=y">Nassiri_Moulay-Ali_2015_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">6.376Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2990/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2990">Faculté des arts et des sciences – Département de physique - Thèses et mémoires</a> [501]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/12353">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

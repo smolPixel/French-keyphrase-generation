@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Caractérisation de la composante toxicocinétique du facteur d’ajustement pour la variabilité interindividuelle utilisé en analyse du risque toxicologique</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Krishnan, Kannan" name="DC.contributor">
+<meta content="Valcke, Mathieu" name="DC.creator">
+<meta content="2011-12-22T17:46:59Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2011-12-22T17:46:59Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2011-12-01" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2011-11" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/6098" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Analyse du risque" name="DC.subject" xml:lang="en"/>
+<meta content="Conditions d’exposition" name="DC.subject" xml:lang="en"/>
+<meta content="Doses internes" name="DC.subject" xml:lang="en"/>
+<meta content="Facteur d’incertitude" name="DC.subject" xml:lang="en"/>
+<meta content="Modélisation toxicocinétique à base physiologique" name="DC.subject" xml:lang="en"/>
+<meta content="Simulations de Monte-Carlo" name="DC.subject" xml:lang="en"/>
+<meta content="Variabilité interindividuelle" name="DC.subject" xml:lang="en"/>
+<meta content="Voies métaboliques" name="DC.subject" xml:lang="en"/>
+<meta content="Exposure conditions" name="DC.subject" xml:lang="en"/>
+<meta content="Interindividual variability" name="DC.subject" xml:lang="en"/>
+<meta content="Internal dose" name="DC.subject" xml:lang="en"/>
+<meta content="Metabolic pathways" name="DC.subject" xml:lang="en"/>
+<meta content="Monte Carlo simulations" name="DC.subject" xml:lang="en"/>
+<meta content="Physiologically-based pharmacokinetic modeling" name="DC.subject" xml:lang="en"/>
+<meta content="Risk assessment" name="DC.subject" xml:lang="en"/>
+<meta content="Uncertainty factor" name="DC.subject" xml:lang="en"/>
+<meta content="Health Sciences - Toxicology / Sciences de la santé - Toxicologie (UMI : 0383)" name="DC.subject" xml:lang="en"/>
+<meta content="Caractérisation de la composante toxicocinétique du facteur d’ajustement pour la variabilité interindividuelle utilisé en analyse du risque toxicologique" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Un facteur d’incertitude de 10 est utilisé par défaut lors de l’élaboration des valeurs toxicologiques de référence en santé environnementale, afin de tenir compte de la variabilité interindividuelle dans la population. La composante toxicocinétique de cette variabilité correspond à racine de 10, soit 3,16. Sa validité a auparavant été étudiée sur la base de données pharmaceutiques colligées auprès de diverses populations (adultes, enfants, aînés). Ainsi, il est possible de comparer la valeur de 3,16 au Facteur d’ajustement pour la cinétique humaine (FACH), qui constitue le rapport entre un centile élevé (ex. : 95e) de la distribution de la dose interne dans des sous-groupes présumés sensibles et sa médiane chez l’adulte, ou encore à l’intérieur d’une population générale. Toutefois, les données expérimentales humaines sur les polluants environnementaux sont rares. De plus, ces substances ont généralement des propriétés sensiblement différentes de celles des médicaments. Il est donc difficile de valider, pour les polluants, les estimations faites à partir des données sur les médicaments. Pour résoudre ce problème, la modélisation toxicocinétique à base physiologique (TCBP) a été utilisée pour simuler la variabilité interindividuelle des doses internes lors de l’exposition aux polluants. Cependant, les études réalisées à ce jour n’ont que peu permis d’évaluer l’impact des conditions d’exposition (c.-à-d. voie, durée, intensité), des propriétés physico/biochimiques des polluants, et des caractéristiques de la population exposée sur la valeur du FACH et donc la validité de la valeur par défaut de 3,16. Les travaux de la présente thèse visent à combler ces lacunes. 
+À l’aide de simulations de Monte-Carlo, un modèle TCBP a d’abord été utilisé pour simuler la variabilité interindividuelle des doses internes (c.-à-d. chez les adultes, ainés, enfants, femmes enceintes) de contaminants de l’eau lors d’une exposition par voie orale, respiratoire, ou cutanée. Dans un deuxième temps, un tel modèle a été utilisé pour simuler cette variabilité lors de l’inhalation de contaminants à intensité et durée variables. Ensuite, un algorithme toxicocinétique à l’équilibre probabiliste a été utilisé pour estimer la variabilité interindividuelle des doses internes lors d’expositions chroniques à des contaminants hypothétiques aux propriétés physico/biochimiques variables. Ainsi, les propriétés de volatilité, de fraction métabolisée, de voie métabolique empruntée ainsi que de biodisponibilité orale ont fait l’objet d’analyses spécifiques. Finalement, l’impact du référent considéré et des caractéristiques démographiques sur la valeur du FACH lors de l’inhalation chronique a été évalué, en ayant recours également à un algorithme toxicocinétique à l’équilibre. Les distributions de doses internes générées dans les divers scénarios élaborés ont permis de calculer dans chaque cas le FACH selon l’approche décrite plus haut. Cette étude a mis en lumière les divers déterminants de la sensibilité toxicocinétique selon le sous-groupe et la mesure de dose interne considérée. Elle a permis de caractériser les déterminants du FACH et donc les cas où ce dernier dépasse la valeur par défaut de 3,16 (jusqu’à 28,3), observés presqu’uniquement chez les nouveau-nés et en fonction de la substance mère. Cette thèse contribue à améliorer les connaissances dans le domaine de l’analyse du risque toxicologique en caractérisant le FACH selon diverses considérations." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="A default uncertainty factor of 10 is used in toxicological risk assessment to account for human variability, and the toxicokinetic component of this factor corresponds to a value of square root of 10, or 3,16. The adequacy of this value has been studied in the literature on the basis of pharmaceutical data obtained in various subpopulations (e.g. adults, children, elderly). Indeed, it is possible to compare the default value of 3,16 to the Human Kinetic Adjustment Factor (HKAF), computed as the ratio of an upper percentile value (e.g. 95th) of the distribution of internal dose metrics in presumed sensitive subpopulation to its median in adults, or alternatively an entire population. However, human experimental data on environmental contaminants are sparse. Besides, these chemicals generally exhibit characteristics that are quite different as compared to drugs. As a result, it is difficult to extrapolate, for pollutants, estimates of HKAF that were made using data on drugs. To solve this problem, physiologically-based toxicokinetic (PBTK) modeling  has been used to simulate interindividual variability in internal dose metrics following exposure to xenobiotics. However, studies realized to date have not systematically evaluated the impact of the exposure conditions (route, duration and intensity), the physico/biochemical properties of the chemicals, and the characteristics of the exposed population, on the HKAF, and thus the adequacy of the default value. This thesis aims at compensating this lack of knowledge.
+
+First, a probabilistic PBTK model was used to simulate, by means of Monte Carlo simulations, the interindividual variability in internal dose metrics (i.e. in adults, children, elerly, pregnant women) following the oral, inhalation or dermal exposure to drinking water contaminants, taken separately. Second, a similar model was used to simulate this variability following inhalation exposures of various durations and intensities to air contaminants. Then, a probabilistic steady-state algorithm was used to estimate interindividual variability in internal dose metrics for chronic exposures to hypothetical contaminants exhibiting different physico/biochemical properties. These include volatility, the fraction metabolized, the metabolic pathway by which they are biotransformed and oral bioavailability. Finally, the impact of a population’s demographic characteristics and the referent considered on the HKAF for chronic inhalation exposure was studied, also using a probabilistic steady-state algorithm. The distributions of internal dose metrics that were generated for every scenario simulated were used to compute the HKAF as described above. This study has pointed out the determinants of the toxicokinetic sensitivity considering a given subpopulation and dose metric. It allowed identifying determinants of the numeric value of the HKAF, thus cases for which it exceeded the default value of 3,16. This happened almost exclusively in neonates and on the basis of the parent compound. Overall, this study has contributed to the field of toxicological risk assessment by characterizing the HKAF as a function of various considerations." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Analyse du risque; Conditions d’exposition; Doses internes; Facteur d’incertitude; Modélisation toxicocinétique à base physiologique; Simulations de Monte-Carlo; Variabilité interindividuelle; Voies métaboliques; Exposure conditions; Interindividual variability; Internal dose; Metabolic pathways; Monte Carlo simulations; Physiologically-based pharmacokinetic modeling; Risk assessment; Uncertainty factor; Health Sciences - Toxicology / Sciences de la santé - Toxicologie (UMI : 0383); Thèse ou mémoire / Thesis or Dissertation; Santé publique" name="citation_keywords"/>
+<meta content="Caractérisation de la composante toxicocinétique du facteur d’ajustement pour la variabilité interindividuelle utilisé en analyse du risque toxicologique" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Valcke, Mathieu" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/6098/4/Valcke_Mathieu_2011_these.pdf" name="citation_pdf_url"/>
+<meta content="2011-12-01" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/6098" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/6098?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/6098?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/6098?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/6098?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/6098?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/6098?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/6098/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/6098">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/6098/mets.xml-->
+<h2 class="page-header first-page-header">Caractérisation de la composante toxicocinétique du facteur d’ajustement pour la variabilité interindividuelle utilisé en analyse du risque toxicologique</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Krishnan, Kannan</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Valcke, Mathieu</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2011-12-22T17:46:59Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2011-12-22T17:46:59Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2011-12-01</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2011-11</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/6098</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Analyse du risque</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Conditions d’exposition</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Doses internes</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Facteur d’incertitude</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Modélisation toxicocinétique à base physiologique</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Simulations de Monte-Carlo</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Variabilité interindividuelle</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Voies métaboliques</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Exposure conditions</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Interindividual variability</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Internal dose</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Metabolic pathways</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Monte Carlo simulations</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Physiologically-based pharmacokinetic modeling</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Risk assessment</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Uncertainty factor</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Health Sciences - Toxicology / Sciences de la santé - Toxicologie (UMI : 0383)</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Caractérisation de la composante toxicocinétique du facteur d’ajustement pour la variabilité interindividuelle utilisé en analyse du risque toxicologique</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Santé publique</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Un facteur d’incertitude de 10 est utilisé par défaut lors de l’élaboration des valeurs toxicologiques de référence en santé environnementale, afin de tenir compte de la variabilité interindividuelle dans la population. La composante toxicocinétique de cette variabilité correspond à racine de 10, soit 3,16. Sa validité a auparavant été étudiée sur la base de données pharmaceutiques colligées auprès de diverses populations (adultes, enfants, aînés). Ainsi, il est possible de comparer la valeur de 3,16 au Facteur d’ajustement pour la cinétique humaine (FACH), qui constitue le rapport entre un centile élevé (ex. : 95e) de la distribution de la dose interne dans des sous-groupes présumés sensibles et sa médiane chez l’adulte, ou encore à l’intérieur d’une population générale. Toutefois, les données expérimentales humaines sur les polluants environnementaux sont rares. De plus, ces substances ont généralement des propriétés sensiblement différentes de celles des médicaments. Il est donc difficile de valider, pour les polluants, les estimations faites à partir des données sur les médicaments. Pour résoudre ce problème, la modélisation toxicocinétique à base physiologique (TCBP) a été utilisée pour simuler la variabilité interindividuelle des doses internes lors de l’exposition aux polluants. Cependant, les études réalisées à ce jour n’ont que peu permis d’évaluer l’impact des conditions d’exposition (c.-à-d. voie, durée, intensité), des propriétés physico/biochimiques des polluants, et des caractéristiques de la population exposée sur la valeur du FACH et donc la validité de la valeur par défaut de 3,16. Les travaux de la présente thèse visent à combler ces lacunes. 
+À l’aide de simulations de Monte-Carlo, un modèle TCBP a d’abord été utilisé pour simuler la variabilité interindividuelle des doses internes (c.-à-d. chez les adultes, ainés, enfants, femmes enceintes) de contaminants de l’eau lors d’une exposition par voie orale, respiratoire, ou cutanée. Dans un deuxième temps, un tel modèle a été utilisé pour simuler cette variabilité lors de l’inhalation de contaminants à intensité et durée variables. Ensuite, un algorithme toxicocinétique à l’équilibre probabiliste a été utilisé pour estimer la variabilité interindividuelle des doses internes lors d’expositions chroniques à des contaminants hypothétiques aux propriétés physico/biochimiques variables. Ainsi, les propriétés de volatilité, de fraction métabolisée, de voie métabolique empruntée ainsi que de biodisponibilité orale ont fait l’objet d’analyses spécifiques. Finalement, l’impact du référent considéré et des caractéristiques démographiques sur la valeur du FACH lors de l’inhalation chronique a été évalué, en ayant recours également à un algorithme toxicocinétique à l’équilibre. Les distributions de doses internes générées dans les divers scénarios élaborés ont permis de calculer dans chaque cas le FACH selon l’approche décrite plus haut. Cette étude a mis en lumière les divers déterminants de la sensibilité toxicocinétique selon le sous-groupe et la mesure de dose interne considérée. Elle a permis de caractériser les déterminants du FACH et donc les cas où ce dernier dépasse la valeur par défaut de 3,16 (jusqu’à 28,3), observés presqu’uniquement chez les nouveau-nés et en fonction de la substance mère. Cette thèse contribue à améliorer les connaissances dans le domaine de l’analyse du risque toxicologique en caractérisant le FACH selon diverses considérations.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">A default uncertainty factor of 10 is used in toxicological risk assessment to account for human variability, and the toxicokinetic component of this factor corresponds to a value of square root of 10, or 3,16. The adequacy of this value has been studied in the literature on the basis of pharmaceutical data obtained in various subpopulations (e.g. adults, children, elderly). Indeed, it is possible to compare the default value of 3,16 to the Human Kinetic Adjustment Factor (HKAF), computed as the ratio of an upper percentile value (e.g. 95th) of the distribution of internal dose metrics in presumed sensitive subpopulation to its median in adults, or alternatively an entire population. However, human experimental data on environmental contaminants are sparse. Besides, these chemicals generally exhibit characteristics that are quite different as compared to drugs. As a result, it is difficult to extrapolate, for pollutants, estimates of HKAF that were made using data on drugs. To solve this problem, physiologically-based toxicokinetic (PBTK) modeling  has been used to simulate interindividual variability in internal dose metrics following exposure to xenobiotics. However, studies realized to date have not systematically evaluated the impact of the exposure conditions (route, duration and intensity), the physico/biochemical properties of the chemicals, and the characteristics of the exposed population, on the HKAF, and thus the adequacy of the default value. This thesis aims at compensating this lack of knowledge.
+
+First, a probabilistic PBTK model was used to simulate, by means of Monte Carlo simulations, the interindividual variability in internal dose metrics (i.e. in adults, children, elerly, pregnant women) following the oral, inhalation or dermal exposure to drinking water contaminants, taken separately. Second, a similar model was used to simulate this variability following inhalation exposures of various durations and intensities to air contaminants. Then, a probabilistic steady-state algorithm was used to estimate interindividual variability in internal dose metrics for chronic exposures to hypothetical contaminants exhibiting different physico/biochemical properties. These include volatility, the fraction metabolized, the metabolic pathway by which they are biotransformed and oral bioavailability. Finally, the impact of a population’s demographic characteristics and the referent considered on the HKAF for chronic inhalation exposure was studied, also using a probabilistic steady-state algorithm. The distributions of internal dose metrics that were generated for every scenario simulated were used to compute the HKAF as described above. This study has pointed out the determinants of the toxicokinetic sensitivity considering a given subpopulation and dose metric. It allowed identifying determinants of the numeric value of the HKAF, thus cases for which it exceeded the default value of 3,16. This happened almost exclusively in neonates and on the basis of the parent compound. Overall, this study has contributed to the field of toxicological risk assessment by characterizing the HKAF as a function of various considerations.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F6098&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sant%C3%A9+publique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/6098/Valcke_Mathieu_2011_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/6098/Valcke_Mathieu_2011_these.pdf.jpg?sequence=8&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Valcke_Mathieu_2011_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/6098/Valcke_Mathieu_2011_these.pdf?sequence=4&amp;isAllowed=y">Valcke_Mathieu_2011_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1.438Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10094/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a> [603]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/6098">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

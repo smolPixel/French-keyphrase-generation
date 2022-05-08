@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>L’étude des stratégies de séparations préparatrices de protéines par électrophorèse capillaire</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Waldron, Karen" name="DC.contributor">
+<meta content="Santiagos, Denis" name="DC.creator">
+<meta content="2016-04-12T16:50:09Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2016-04-12T16:50:09Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2016-03-23" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2015-04" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/13439" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Protéomique" name="DC.subject" xml:lang="fr"/>
+<meta content="Électrophorèse capillaire" name="DC.subject" xml:lang="fr"/>
+<meta content="Fractionnement" name="DC.subject" xml:lang="fr"/>
+<meta content="Bromure de didodecyldiméthylammonium" name="DC.subject" xml:lang="fr"/>
+<meta content="Fluorescence induite par laser" name="DC.subject" xml:lang="fr"/>
+<meta content="Cartographie peptidique" name="DC.subject" xml:lang="fr"/>
+<meta content="Caractérisation de protéines" name="DC.subject" xml:lang="fr"/>
+<meta content="Proteomics" name="DC.subject" xml:lang="fr"/>
+<meta content="Capillary electrophoresis" name="DC.subject" xml:lang="fr"/>
+<meta content="Fractionation" name="DC.subject" xml:lang="fr"/>
+<meta content="Didodecyldimethylammonium bromide" name="DC.subject" xml:lang="fr"/>
+<meta content="Laser-induced fluorescence" name="DC.subject" xml:lang="fr"/>
+<meta content="Peptide mapping" name="DC.subject" xml:lang="fr"/>
+<meta content="Protein characterization" name="DC.subject" xml:lang="fr"/>
+<meta content="Chemistry - Analytical / Chimie analytique (UMI : 0486)" name="DC.subject" xml:lang="fr"/>
+<meta content="L’étude des stratégies de séparations préparatrices de protéines par électrophorèse capillaire" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La protéomique est un sujet d'intérêt puisque l'étude des fonctions et des structures de protéines est essentiel à la compréhension du fonctionnement d'un organisme donné. Ce projet se situe dans la catégorie des études structurales, ou plus précisément, la séquence primaire en acides aminés pour l’identification d’une protéine. La détermination des protéines commence par l'extraction d'un mélange protéique issu d'un tissu ou d'un fluide biologique pouvant contenir plus de 1000 protéines différentes. Ensuite, des techniques analytiques comme l’électrophorèse en gel polyacrylamide en deux dimensions (2D-SDS-PAGE), qui visent à séparer ce mélange en fonction du point isoélectrique et de la masse molaire des protéines, sont utilisées pour isoler les protéines et pour permettre leur identification par chromatographie liquide and spectrométrie de masse (MS), typiquement. Ce projet s'inspire de ce processus et propose que l'étape de fractionnement de l'extrait protéique avec la 2D-SDS-PAGE soit remplacé ou supporté par de multiples fractionnements en parallèle par électrophorèse capillaire (CE) quasi-multidimensionnelle. Les fractions obtenues, contenant une protéine seule ou un mélange de protéines moins complexe que l’extrait du départ, pourraient ensuite être soumises à des identifications de protéines par cartographie peptidique et cartographie protéique à l’aide des techniques de séparations analytiques et de la MS. Pour obtenir la carte peptidique d'un échantillon, il est nécessaire de procéder à la protéolyse enzymatique ou chimique des protéines purifiées et de séparer les fragments peptidiques issus de cette digestion. Les cartes peptidiques ainsi générées peuvent ensuite être comparées à des échantillons témoins ou les masses exactes des peptides enzymatiques sont soumises à des moteurs de recherche comme MASCOT™, ce qui permet l’identification des protéines en interrogeant les bases de données génomiques. 
+Les avantages exploitables de la CE, par rapport à la 2D-SDS-PAGE, sont sa haute efficacité de séparation, sa rapidité d'analyse et sa facilité d'automatisation. L’un des défis à surmonter est la faible quantité de masse de protéines disponible après analyses en CE, due partiellement à l'adsorption des protéines sur la paroi du capillaire, mais due majoritairement au faible volume d'échantillon en CE. Pour augmenter ce volume, un capillaire de 75 µm était utilisé. Aussi, le volume de la fraction collectée était diminué de 1000 à 100 µL et les fractions étaient accumulées 10 fois; c’est-à-dire que 10 produits de séparations étaient contenu dans chaque fraction. D'un autre côté, l'adsorption de protéines se traduit par la variation de l'aire d'un pic et du temps de migration d'une protéine donnée ce qui influence la reproductibilité de la séparation, un aspect très important puisque 10 séparations cumulatives sont nécessaires pour la collecte de fractions. De nombreuses approches existent pour diminuer ce problème (e.g. les extrêmes de pH de l’électrolyte de fond, les revêtements dynamique ou permanent du capillaire, etc.), mais dans ce mémoire, les études de revêtement portaient sur le bromure de N,N-didodecyl-N,N-dimethylammonium (DDAB), un surfactant qui forme un revêtement semi-permanent sur la paroi du capillaire. La grande majorité du mémoire visait à obtenir une séparation reproductible d'un mélange protéique standard préparé en laboratoire (contenant l’albumine de sérum de bovin, l'anhydrase carbonique, l’α-lactalbumine et la β-lactoglobulin) par CE avec le revêtement DDAB. Les études portées sur le revêtement montraient qu'il était nécessaire de régénérer le revêtement entre chaque injection du mélange de protéines dans les conditions étudiées : la collecte de 5 fractions de 6 min chacune à travers une séparation de 30 min, suivant le processus de régénération du DDAB, et tout ça répété 10 fois. Cependant, l’analyse en CE-UV et en HPLC-MS des fractions collectées ne montraient pas les protéines attendues puisqu'elles semblaient être en-dessous de la limite de détection. De plus, une analyse en MS montrait que le DDAB s’accumule dans les fractions collectées dû à sa désorption de la paroi du capillaire. Pour confirmer que les efforts pour recueillir une quantité de masse de protéine étaient suffisants, la méthode de CE avec détection par fluorescence induite par laser (CE-LIF) était utilisée pour séparer et collecter la protéine, albumine marquée de fluorescéine isothiocyanate (FITC), sans l'utilisation du revêtement DDAB. Ces analyses montraient que l'albumine-FITC était, en fait, présente dans la fraction collecté. La cartographie peptidique a été ensuite réalisée avec succès en employant l’enzyme chymotrypsine pour la digestion et CE-LIF pour obtenir la carte peptidique." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Proteomics is a field of growing interest because the study of protein function and structure is essential to understand how an organism operates. This project is concerned with structural studies, or more precisely the primary amino acid sequence for identification of proteins. Protein determination starts with a protein extract obtained from tissue or a biological fluid, which can contain more than 1000 distinct proteins. Analytical techniques like two-dimensional polyacrylamide gel electrophoresis (2D-SDS-PAGE), which separates proteins based on their isoelectric point and molar mass, are then used to isolate the different proteins and permit their identification by liquid chromatography and mass spectrometry (MS) typically. This project, inspired by the fractionation of a protein extract by 2D-SDS-PAGE, proposes to support or to replace it with multiple fractionations by capillary electrophoresis (CE) in a quasi-multidimensional scheme. The individual fractions, containing a single protein or a mixture of proteins much less complex than the original extract, would then be analyzed to identify the proteins by peptide mapping and by protein mass mapping using analytical separation techniques and MS. To obtain a peptide map of proteins isolated in a fraction, enzymatic or chemical proteolysis is carried out and the peptide fragments in the digest are separated. The generated peptide map is either compared to a second sample to reveal changes, or the exact masses of the peptides are submitted to search engine like MASCOT™, which permits the identification of proteins by interrogation of genomic data bases. 
+	The exploitable advantages of CE compared to 2D-SDS-PAGE are its high separation efficiency, its rapid analysis and its easy automation. The challenge to overcome is its small quantity of mass available after CE fractionation due in part to protein adsorption on the capillary walls, but due mainly to the tiny sample volumes used in CE. To increase mass, a 75 µm ID capillary was used in this study. Also, the volume into which each fraction is collected was decreased from 1000 to 100 µL and each fraction was collected 10 times; in other words 10 injections of the protein mixture were made. On the other hand, protein adsorption leads to variations in peak area and migration time of a given protein which influences the repeatability of CE separations, a very important aspect since 10 cumulative separations are needed for fraction collection. There are numerous approaches to reduce this problem (e.g. using pH extremes for the background electrolyte, using dynamic or permanent capillary coatings, etc.) but in this project, studies focused on didodecyldimethylammonium bromide (DDAB), a surfactant that forms a semi-permanent wall coating in the capillary. The majority of work presented here was aimed at obtaining a reproducible CE separation of a standard protein mixture prepared in house (containing bovine serum albumin, carbonic anhydrase, α-lactalbumin and β-lactoglobulin) while using the DDAB coating. Studies of this particular coating material revealed that it was necessary to regenerate the DDAB coating between each injection of the protein mixture under the studied conditions: collection of 5 fractions of 6 min each across a 30-min separation that followed the DDAB regeneration, repeated 10 times. However, CE-UV and HPLC-MS analyses of the collected fractions showed none of the expected proteins present; they seemed to be below the instrument detection limits. In addition, the MS analyses revealed that DDAB had accumulated in the collected fractions due to its desorption from the capillary walls. To confirm that our efforts to collect a certain protein mass were sufficient, CE coupled to laser-induced fluorescence detection (CE-LIF) was used to separate and then collect the protein albumin labeled with fluorescein isothiocyanate (FITC) without the DDAB coating in the capillary. Analyses demonstrated that albumin-FITC was, in fact, present in the collected fraction. Peptide mapping was then successfully carried out using the enzyme chymotrypsin for digestion and CE-LIF for peptide mapping." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Protéomique; Électrophorèse capillaire; Fractionnement; Bromure de didodecyldiméthylammonium; Fluorescence induite par laser; Cartographie peptidique; Caractérisation de protéines; Proteomics; Capillary electrophoresis; Fractionation; Didodecyldimethylammonium bromide; Laser-induced fluorescence; Peptide mapping; Protein characterization; Chemistry - Analytical / Chimie analytique (UMI : 0486); Thèse ou mémoire / Thesis or Dissertation; Chimie" name="citation_keywords"/>
+<meta content="L’étude des stratégies de séparations préparatrices de protéines par électrophorèse capillaire" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Santiagos, Denis" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/13439/2/Denis_Santiagos_Memoire_2015.pdf" name="citation_pdf_url"/>
+<meta content="2016-03-23" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/13439" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13439?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13439?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13439?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13439?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13439?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13439?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2942" role="menuitem">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2977" role="menuitem">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2942">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2977"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/13439/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/13439">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/13439/mets.xml-->
+<h2 class="page-header first-page-header">L’étude des stratégies de séparations préparatrices de protéines par électrophorèse capillaire</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Waldron, Karen</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Santiagos, Denis</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2016-04-12T16:50:09Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2016-04-12T16:50:09Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2016-03-23</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2015-04</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/13439</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Protéomique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Électrophorèse capillaire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Fractionnement</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Bromure de didodecyldiméthylammonium</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Fluorescence induite par laser</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Cartographie peptidique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Caractérisation de protéines</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Proteomics</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Capillary electrophoresis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Fractionation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Didodecyldimethylammonium bromide</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Laser-induced fluorescence</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Peptide mapping</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Protein characterization</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Chemistry - Analytical / Chimie analytique (UMI : 0486)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">L’étude des stratégies de séparations préparatrices de protéines par électrophorèse capillaire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Chimie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Maîtrise / Master's</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">M. Sc.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La protéomique est un sujet d'intérêt puisque l'étude des fonctions et des structures de protéines est essentiel à la compréhension du fonctionnement d'un organisme donné. Ce projet se situe dans la catégorie des études structurales, ou plus précisément, la séquence primaire en acides aminés pour l’identification d’une protéine. La détermination des protéines commence par l'extraction d'un mélange protéique issu d'un tissu ou d'un fluide biologique pouvant contenir plus de 1000 protéines différentes. Ensuite, des techniques analytiques comme l’électrophorèse en gel polyacrylamide en deux dimensions (2D-SDS-PAGE), qui visent à séparer ce mélange en fonction du point isoélectrique et de la masse molaire des protéines, sont utilisées pour isoler les protéines et pour permettre leur identification par chromatographie liquide and spectrométrie de masse (MS), typiquement. Ce projet s'inspire de ce processus et propose que l'étape de fractionnement de l'extrait protéique avec la 2D-SDS-PAGE soit remplacé ou supporté par de multiples fractionnements en parallèle par électrophorèse capillaire (CE) quasi-multidimensionnelle. Les fractions obtenues, contenant une protéine seule ou un mélange de protéines moins complexe que l’extrait du départ, pourraient ensuite être soumises à des identifications de protéines par cartographie peptidique et cartographie protéique à l’aide des techniques de séparations analytiques et de la MS. Pour obtenir la carte peptidique d'un échantillon, il est nécessaire de procéder à la protéolyse enzymatique ou chimique des protéines purifiées et de séparer les fragments peptidiques issus de cette digestion. Les cartes peptidiques ainsi générées peuvent ensuite être comparées à des échantillons témoins ou les masses exactes des peptides enzymatiques sont soumises à des moteurs de recherche comme MASCOT™, ce qui permet l’identification des protéines en interrogeant les bases de données génomiques. 
+Les avantages exploitables de la CE, par rapport à la 2D-SDS-PAGE, sont sa haute efficacité de séparation, sa rapidité d'analyse et sa facilité d'automatisation. L’un des défis à surmonter est la faible quantité de masse de protéines disponible après analyses en CE, due partiellement à l'adsorption des protéines sur la paroi du capillaire, mais due majoritairement au faible volume d'échantillon en CE. Pour augmenter ce volume, un capillaire de 75 µm était utilisé. Aussi, le volume de la fraction collectée était diminué de 1000 à 100 µL et les fractions étaient accumulées 10 fois; c’est-à-dire que 10 produits de séparations étaient contenu dans chaque fraction. D'un autre côté, l'adsorption de protéines se traduit par la variation de l'aire d'un pic et du temps de migration d'une protéine donnée ce qui influence la reproductibilité de la séparation, un aspect très important puisque 10 séparations cumulatives sont nécessaires pour la collecte de fractions. De nombreuses approches existent pour diminuer ce problème (e.g. les extrêmes de pH de l’électrolyte de fond, les revêtements dynamique ou permanent du capillaire, etc.), mais dans ce mémoire, les études de revêtement portaient sur le bromure de N,N-didodecyl-N,N-dimethylammonium (DDAB), un surfactant qui forme un revêtement semi-permanent sur la paroi du capillaire. La grande majorité du mémoire visait à obtenir une séparation reproductible d'un mélange protéique standard préparé en laboratoire (contenant l’albumine de sérum de bovin, l'anhydrase carbonique, l’α-lactalbumine et la β-lactoglobulin) par CE avec le revêtement DDAB. Les études portées sur le revêtement montraient qu'il était nécessaire de régénérer le revêtement entre chaque injection du mélange de protéines dans les conditions étudiées : la collecte de 5 fractions de 6 min chacune à travers une séparation de 30 min, suivant le processus de régénération du DDAB, et tout ça répété 10 fois. Cependant, l’analyse en CE-UV et en HPLC-MS des fractions collectées ne montraient pas les protéines attendues puisqu'elles semblaient être en-dessous de la limite de détection. De plus, une analyse en MS montrait que le DDAB s’accumule dans les fractions collectées dû à sa désorption de la paroi du capillaire. Pour confirmer que les efforts pour recueillir une quantité de masse de protéine étaient suffisants, la méthode de CE avec détection par fluorescence induite par laser (CE-LIF) était utilisée pour séparer et collecter la protéine, albumine marquée de fluorescéine isothiocyanate (FITC), sans l'utilisation du revêtement DDAB. Ces analyses montraient que l'albumine-FITC était, en fait, présente dans la fraction collecté. La cartographie peptidique a été ensuite réalisée avec succès en employant l’enzyme chymotrypsine pour la digestion et CE-LIF pour obtenir la carte peptidique.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Proteomics is a field of growing interest because the study of protein function and structure is essential to understand how an organism operates. This project is concerned with structural studies, or more precisely the primary amino acid sequence for identification of proteins. Protein determination starts with a protein extract obtained from tissue or a biological fluid, which can contain more than 1000 distinct proteins. Analytical techniques like two-dimensional polyacrylamide gel electrophoresis (2D-SDS-PAGE), which separates proteins based on their isoelectric point and molar mass, are then used to isolate the different proteins and permit their identification by liquid chromatography and mass spectrometry (MS) typically. This project, inspired by the fractionation of a protein extract by 2D-SDS-PAGE, proposes to support or to replace it with multiple fractionations by capillary electrophoresis (CE) in a quasi-multidimensional scheme. The individual fractions, containing a single protein or a mixture of proteins much less complex than the original extract, would then be analyzed to identify the proteins by peptide mapping and by protein mass mapping using analytical separation techniques and MS. To obtain a peptide map of proteins isolated in a fraction, enzymatic or chemical proteolysis is carried out and the peptide fragments in the digest are separated. The generated peptide map is either compared to a second sample to reveal changes, or the exact masses of the peptides are submitted to search engine like MASCOT™, which permits the identification of proteins by interrogation of genomic data bases. 
+	The exploitable advantages of CE compared to 2D-SDS-PAGE are its high separation efficiency, its rapid analysis and its easy automation. The challenge to overcome is its small quantity of mass available after CE fractionation due in part to protein adsorption on the capillary walls, but due mainly to the tiny sample volumes used in CE. To increase mass, a 75 µm ID capillary was used in this study. Also, the volume into which each fraction is collected was decreased from 1000 to 100 µL and each fraction was collected 10 times; in other words 10 injections of the protein mixture were made. On the other hand, protein adsorption leads to variations in peak area and migration time of a given protein which influences the repeatability of CE separations, a very important aspect since 10 cumulative separations are needed for fraction collection. There are numerous approaches to reduce this problem (e.g. using pH extremes for the background electrolyte, using dynamic or permanent capillary coatings, etc.) but in this project, studies focused on didodecyldimethylammonium bromide (DDAB), a surfactant that forms a semi-permanent wall coating in the capillary. The majority of work presented here was aimed at obtaining a reproducible CE separation of a standard protein mixture prepared in house (containing bovine serum albumin, carbonic anhydrase, α-lactalbumin and β-lactoglobulin) while using the DDAB coating. Studies of this particular coating material revealed that it was necessary to regenerate the DDAB coating between each injection of the protein mixture under the studied conditions: collection of 5 fractions of 6 min each across a 30-min separation that followed the DDAB regeneration, repeated 10 times. However, CE-UV and HPLC-MS analyses of the collected fractions showed none of the expected proteins present; they seemed to be below the instrument detection limits. In addition, the MS analyses revealed that DDAB had accumulated in the collected fractions due to its desorption from the capillary walls. To confirm that our efforts to collect a certain protein mass were sufficient, CE coupled to laser-induced fluorescence detection (CE-LIF) was used to separate and then collect the protein albumin labeled with fluorescein isothiocyanate (FITC) without the DDAB coating in the capillary. Analyses demonstrated that albumin-FITC was, in fact, present in the collected fraction. Peptide mapping was then successfully carried out using the enzyme chymotrypsin for digestion and CE-LIF for peptide mapping.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F13439&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Chimie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Ma%C3%AEtrise+%2F+Master%27s&amp;rft.degree=M.+Sc."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/13439/Denis_Santiagos_Memoire_2015.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/13439/Denis_Santiagos_Memoire_2015.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Denis_Santiagos_Memoire_2015.pdf">
+<a href="/xmlui/bitstream/handle/1866/13439/Denis_Santiagos_Memoire_2015.pdf?sequence=2&amp;isAllowed=y">Denis_Santiagos_Memoire_2015.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">3.736Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Mémoire">Mémoire</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2977/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a> [594]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/13439">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

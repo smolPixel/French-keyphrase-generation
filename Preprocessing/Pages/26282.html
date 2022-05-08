@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Développement et évaluation de l’efficacité d’une intervention visant la diminution des symptômes post-commotionnels</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="De Guise, Élaine" name="DC.contributor">
+<meta content="Beauchamp, Miriam" name="DC.contributor">
+<meta content="Audrit, Hélène" name="DC.creator">
+<meta content="2022-02-15T13:30:05Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2022-02-15T13:30:05Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-10-21" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2020-06" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/26282" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="commotion cérébrale" name="DC.subject" xml:lang="fr"/>
+<meta content="essai contrôlé randomisé" name="DC.subject" xml:lang="fr"/>
+<meta content="intervention" name="DC.subject" xml:lang="fr"/>
+<meta content="phase post-aiguë" name="DC.subject" xml:lang="fr"/>
+<meta content="soutien" name="DC.subject" xml:lang="fr"/>
+<meta content="psychoéducation" name="DC.subject" xml:lang="fr"/>
+<meta content="symptômes post-commotionnels" name="DC.subject" xml:lang="fr"/>
+<meta content="traumatisme craniocérébral léger" name="DC.subject" xml:lang="fr"/>
+<meta content="concussion" name="DC.subject" xml:lang="fr"/>
+<meta content="counseling" name="DC.subject" xml:lang="fr"/>
+<meta content="intervention" name="DC.subject" xml:lang="fr"/>
+<meta content="mild traumatic brain injury" name="DC.subject" xml:lang="fr"/>
+<meta content="post-acute phase" name="DC.subject" xml:lang="fr"/>
+<meta content="post-concussive symptoms" name="DC.subject" xml:lang="fr"/>
+<meta content="psychoeducation" name="DC.subject" xml:lang="fr"/>
+<meta content="randomized controlled trial" name="DC.subject" xml:lang="fr"/>
+<meta content="Psychology - Clinical / Psychologie clinique (UMI : 0622)" name="DC.subject" xml:lang="fr"/>
+<meta content="Développement et évaluation de l’efficacité d’une intervention visant la diminution des symptômes post-commotionnels" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Le traumatisme craniocérébral léger (TCCL) s'accompagne d'une constellation de symptômes de nature variée, appelés symptômes post-commotionnels (SPC). La majorité des patients se rétablissent complètement et rapidement, à savoir dans le mois qui suit l'accident. Cependant, 10 à 20 % d'entre eux présentent un rétablissement prolongé avec des SPC persistants (SPCP), lesquels entravent la qualité de vie, l'intégration à la communauté et le retour aux activités. Pour la minorité de patients présentant des SPCP, il est donc nécessaire d'intervenir au-delà de la psychoéducation préventive aiguë recommandée par les guides de pratique. Or, il existe très peu d'interventions visant spécifiquement à outiller ces patients afin de diminuer les SPC et ainsi, accélérer le rétablissement. En effet, à l’heure actuelle, les interventions psychologiques et psychoéducatives développées spécifiquement pour la phase post-aiguë, qui prend place entre les phases aiguë (0-1 mois après le TCCL) et chronique (&gt; 6 mois post-accident), sont particulièrement rares. Les quelques études existantes plaident en faveur d'une approche brève de quelques séances de psychoéducation et/ou de soutien. Cependant, il s'agit de données préliminaires et de nombreuses inconnues subsistent encore quant au format idéal (ex. : en personne vs par téléphone, individuel vs en groupe, nombre de séances, contenu précis). En outre, la pauvre qualité méthodologique des études complique significativement les interprétations possibles à ce sujet (ex. : absence de groupe contrôle, groupes non randomisés). L'objectif principal de cette thèse était donc de développer une nouvelle intervention de psychoéducation et de soutien destinée aux personnes en phase post-aiguë du rétablissement post-TCCL, et d’explorer sa faisabilité ainsi que son efficacité.
+L'objectif du premier article de la thèse (Chapitre 2) était de remédier à la pauvreté de la littérature en ce qui a trait, d'une part, à la description des protocoles d'intervention de psychoéducation et, d'autre part, relativement à leurs assises théoriques. Il avait donc pour objectif de présenter la démarche théorique et méthodologique associée au développement de l'intervention SAAM, un programme de quatre séances d'intervention individuelles d’une heure, données en personne, et visant chacune un type de SPC fréquent en phase post-aiguë : Sommeil/fatigue, Attention, Anxiété/humeur, Mémoire/organisation. Le programme offre de l'information au patient, le rassure sur son rétablissement et l'accompagne vers un retour graduel aux activités, en l'outillant à cet effet. Cette approche est ancrée dans un modèle théorique intégratif de persistance des symptômes (Hou et al., 2012), dont les composantes sont expliquées dans l'article. Celui-ci permet non seulement de mieux saisir les fondements théoriques associés à la création du nouvel outil d'intervention, mais en dévoile également son contenu. Il met donc en lumière une démarche qui s'inscrit parfaitement dans un effort de clarification et de transparence, essentiel au progrès de la recherche interventionnelle. Plus largement, ce travail permettra de faciliter la réplication scientifique et de soutenir le transfert de connaissances vers les milieux cliniques.
+Le deuxième article de la thèse (Chapitre 3) avait pour objectif d'estimer la faisabilité et d’explorer l'effet de l'intervention SAAM auprès de patients symptomatiques en phase post-aiguë de leur rétablissement. Une étude pilote d’essai contrôlé randomisé à deux groupes parallèles (expérimental, n = 13 et liste d'attente, n = 12) a permis de démontrer la faisabilité et la tolérance à l’intervention SAAM. Les données préliminaires suggèrent un effet de l’intervention sur la diminution des SPC en général. En ce qui a trait plus directement aux SPC visés par l'intervention SAAM, une amélioration des plaintes reliées aux symptômes dépressifs, à la fatigue et à la perception de la qualité du sommeil a été mise en évidence à la suite de l'intervention. Cependant, l’étude n'a pas montré d’effet bénéfique du programme SAAM en termes de plaintes somatiques ni de performance cognitive (attention, mémoire). De plus, aucun effet n'a été observé sur le plan de l'intégration à la communauté. Des analyses supplémentaires (Chapitre 4) suggèrent que l'intervention SAAM pourrait restaurer le besoin de compétence, un besoin psychologique fondamental intimement relié au bien-être des individus. Enfin, des analyses supplémentaires portant sur un questionnaire de satisfaction face à l'intervention confirment un haut taux de satisfaction des participants face à l'intervention, ce qui est de bon augure pour l'implémentation en milieux cliniques.
+Par son aspect novateur, son format standardisé bref et facilement accessible, ainsi que ses effets objectivés sur plusieurs SPCP particulièrement invalidants à la suite du TCCL, le programme d'intervention SAAM est prometteur. La portée clinique de cette thèse est donc particulièrement importante et est discutée, avec ses limites et les avenues de recherche futures, dans le dernier chapitre. Ces résultats soulignent l'importance de poursuivre la recherche dans le champ des interventions post-TCCL, afin d’outiller les cliniciens et d’offrir les meilleurs soins possibles aux patients ayant subi un TCCL." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Mild traumatic brain injury (mTBI) is accompanied by a constellation of manifestations known as post-concussive symptoms (PCS). The majority of patients recover completely and promptly, i.e. within one month of injury. However, 10-20 % experience prolonged recovery with persistent PCS (PPCS), which impact quality of life, community integration and resumption of activities. For the minority of patients who present PPCS, it is necessary to provide them with resources beyond the acute preventive psychoeducation recommended by practice guidelines. However, there are very few interventions available to reduce PCS and thus enhance recovery. To date, psychological and psychoeducational interventions developed specifically for the post-acute phase, which takes place between the acute (0-1 month after mTBI) and the chronic phase (&gt; 6 months post-injury), are particularly rare. The scarce existing evidence suggests that the optimal intervention should be brief, including a few sessions of psychoeducation and/or counseling. Nevertheless, these are preliminary data and many open questions remain regarding the optimal format (e.g., in person vs. on the phone, individual vs. group, number of sessions, specific content). Moreover, the poor methodological quality of previous intervention studies significantly complicate interpretations (e.g., absence of control groups, non-randomized groups). The main objective of this thesis was therefore to develop and explore the feasibility and treatment effect of a novel psychoeducational and counseling intervention program for the post-acute phase after mTBI.
+The objective of the first article of the thesis (Chapter 2) was to overcome the paucity of work describing psychoeducational intervention protocols and their theoretical underpinnings. The article therefore aimed to present the theoretical and methodological approach associated with the development of the SAAM intervention. SAAM is a program including four 1-hour individual intervention sessions given in person, each targeting a type of common PCS in the post-acute phase: Sleep/fatigue, Attention, Anxiety/mood, Memory/organization. It informs the patient, provides reassurance about recovery, and supports the gradual resumption of activities by giving the patient the tools to do so. This approach is anchored in an integrative theoretical model of symptom persistence (Hou et al., 2012), the components of which are explained in the article. The latter provides a better understanding of the theoretical rationale behind the development of the SAAM intervention, and includes a detailed description of the protocol. The article is meant to align with efforts to clarify the theoretical underpinnings of the intervention program and enhance transparency in scientific reporting, an essential step in the advancement of interventional research. More broadly, this work will facilitate scientific replication and knowledge transfer in clinical settings.
+The second article (Chapter 3) aimed to estimate feasibility and explore the treatment effect of the SAAM intervention in symptomatic patients during the post-acute phase. A pilot randomized controlled trial with two parallel groups (experimental, n = 13 and wait list, n = 12) demonstrated the feasibility and tolerability of the intervention. Preliminary data suggest an effect of the intervention in reducing overall PCS. More specifically, regarding the PCS targeted by the SAAM intervention, an improvement in complaints related to depressive symptoms, fatigue, and sleep quality perception was observed post-intervention. However, the intervention failed to show a positive effect in addressing anxiety or somatic complaints, nor was it significantly impactful in improving cognitive performance (attention, memory). No effect was observed in terms of community integration either. Nonetheless, additional analyses (Chapter 4) suggest that SAAM intervention might restore the need for competence, a basic psychological need closely related to the individual's well-being. Finally, additional analyses pertaining to an intervention satisfaction questionnaire confirm that participants report a high level of satisfaction with the intervention, which bodes well for clinical implementation.
+The SAAM intervention holds promise because of its innovative aspect, its brief and easily accessible standardized format, and its demonstrated effects on several disabling PCS. The clinical significance of this thesis is notable and is discussed, along with study limitations and future avenues of research, in the final chapter. This work emphasizes the importance of pursuing research efforts in the field of post-mTBI interventions, in order to provide clinicians with the tools they need to offer the best possible care to patients who have sustained mTBI." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="commotion cérébrale; essai contrôlé randomisé; intervention; phase post-aiguë; soutien; psychoéducation; symptômes post-commotionnels; traumatisme craniocérébral léger; concussion; counseling; intervention; mild traumatic brain injury; post-acute phase; post-concussive symptoms; psychoeducation; randomized controlled trial; Psychology - Clinical / Psychologie clinique (UMI : 0622); Thèse ou mémoire / Thesis or Dissertation; Psychologie - recherche et intervention" name="citation_keywords"/>
+<meta content="Développement et évaluation de l’efficacité d’une intervention visant la diminution des symptômes post-commotionnels" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Audrit, Hélène" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/26282/2/Audrit_Helene_2020_these.pdf" name="citation_pdf_url"/>
+<meta content="2021-10-21" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/26282" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26282?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26282?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26282?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26282?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26282?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26282?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2951" role="menuitem">Faculté des arts et des sciences – Département de psychologie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2991" role="menuitem">Faculté des arts et des sciences – Département de psychologie - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2951">Faculté des arts et des sciences – Département de psychologie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2991">Faculté des arts et des sciences – Département de psychologie - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2991"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2991/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2991/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2991/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2991/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2991/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2991/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2991/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2991/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/26282/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26282">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/26282/mets.xml-->
+<h2 class="page-header first-page-header">Développement et évaluation de l’efficacité d’une intervention visant la diminution des symptômes post-commotionnels</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">De Guise, Élaine</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Beauchamp, Miriam</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Audrit, Hélène</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2022-02-15T13:30:05Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2022-02-15T13:30:05Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-10-21</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2020-06</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/26282</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">commotion cérébrale</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">essai contrôlé randomisé</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">intervention</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">phase post-aiguë</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">soutien</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">psychoéducation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">symptômes post-commotionnels</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">traumatisme craniocérébral léger</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">concussion</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">counseling</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">intervention</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">mild traumatic brain injury</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">post-acute phase</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">post-concussive symptoms</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">psychoeducation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">randomized controlled trial</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Psychology - Clinical / Psychologie clinique (UMI : 0622)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Développement et évaluation de l’efficacité d’une intervention visant la diminution des symptômes post-commotionnels</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Psychologie - recherche et intervention</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Le traumatisme craniocérébral léger (TCCL) s'accompagne d'une constellation de symptômes de nature variée, appelés symptômes post-commotionnels (SPC). La majorité des patients se rétablissent complètement et rapidement, à savoir dans le mois qui suit l'accident. Cependant, 10 à 20 % d'entre eux présentent un rétablissement prolongé avec des SPC persistants (SPCP), lesquels entravent la qualité de vie, l'intégration à la communauté et le retour aux activités. Pour la minorité de patients présentant des SPCP, il est donc nécessaire d'intervenir au-delà de la psychoéducation préventive aiguë recommandée par les guides de pratique. Or, il existe très peu d'interventions visant spécifiquement à outiller ces patients afin de diminuer les SPC et ainsi, accélérer le rétablissement. En effet, à l’heure actuelle, les interventions psychologiques et psychoéducatives développées spécifiquement pour la phase post-aiguë, qui prend place entre les phases aiguë (0-1 mois après le TCCL) et chronique (&gt; 6 mois post-accident), sont particulièrement rares. Les quelques études existantes plaident en faveur d'une approche brève de quelques séances de psychoéducation et/ou de soutien. Cependant, il s'agit de données préliminaires et de nombreuses inconnues subsistent encore quant au format idéal (ex. : en personne vs par téléphone, individuel vs en groupe, nombre de séances, contenu précis). En outre, la pauvre qualité méthodologique des études complique significativement les interprétations possibles à ce sujet (ex. : absence de groupe contrôle, groupes non randomisés). L'objectif principal de cette thèse était donc de développer une nouvelle intervention de psychoéducation et de soutien destinée aux personnes en phase post-aiguë du rétablissement post-TCCL, et d’explorer sa faisabilité ainsi que son efficacité.
+L'objectif du premier article de la thèse (Chapitre 2) était de remédier à la pauvreté de la littérature en ce qui a trait, d'une part, à la description des protocoles d'intervention de psychoéducation et, d'autre part, relativement à leurs assises théoriques. Il avait donc pour objectif de présenter la démarche théorique et méthodologique associée au développement de l'intervention SAAM, un programme de quatre séances d'intervention individuelles d’une heure, données en personne, et visant chacune un type de SPC fréquent en phase post-aiguë : Sommeil/fatigue, Attention, Anxiété/humeur, Mémoire/organisation. Le programme offre de l'information au patient, le rassure sur son rétablissement et l'accompagne vers un retour graduel aux activités, en l'outillant à cet effet. Cette approche est ancrée dans un modèle théorique intégratif de persistance des symptômes (Hou et al., 2012), dont les composantes sont expliquées dans l'article. Celui-ci permet non seulement de mieux saisir les fondements théoriques associés à la création du nouvel outil d'intervention, mais en dévoile également son contenu. Il met donc en lumière une démarche qui s'inscrit parfaitement dans un effort de clarification et de transparence, essentiel au progrès de la recherche interventionnelle. Plus largement, ce travail permettra de faciliter la réplication scientifique et de soutenir le transfert de connaissances vers les milieux cliniques.
+Le deuxième article de la thèse (Chapitre 3) avait pour objectif d'estimer la faisabilité et d’explorer l'effet de l'intervention SAAM auprès de patients symptomatiques en phase post-aiguë de leur rétablissement. Une étude pilote d’essai contrôlé randomisé à deux groupes parallèles (expérimental, n = 13 et liste d'attente, n = 12) a permis de démontrer la faisabilité et la tolérance à l’intervention SAAM. Les données préliminaires suggèrent un effet de l’intervention sur la diminution des SPC en général. En ce qui a trait plus directement aux SPC visés par l'intervention SAAM, une amélioration des plaintes reliées aux symptômes dépressifs, à la fatigue et à la perception de la qualité du sommeil a été mise en évidence à la suite de l'intervention. Cependant, l’étude n'a pas montré d’effet bénéfique du programme SAAM en termes de plaintes somatiques ni de performance cognitive (attention, mémoire). De plus, aucun effet n'a été observé sur le plan de l'intégration à la communauté. Des analyses supplémentaires (Chapitre 4) suggèrent que l'intervention SAAM pourrait restaurer le besoin de compétence, un besoin psychologique fondamental intimement relié au bien-être des individus. Enfin, des analyses supplémentaires portant sur un questionnaire de satisfaction face à l'intervention confirment un haut taux de satisfaction des participants face à l'intervention, ce qui est de bon augure pour l'implémentation en milieux cliniques.
+Par son aspect novateur, son format standardisé bref et facilement accessible, ainsi que ses effets objectivés sur plusieurs SPCP particulièrement invalidants à la suite du TCCL, le programme d'intervention SAAM est prometteur. La portée clinique de cette thèse est donc particulièrement importante et est discutée, avec ses limites et les avenues de recherche futures, dans le dernier chapitre. Ces résultats soulignent l'importance de poursuivre la recherche dans le champ des interventions post-TCCL, afin d’outiller les cliniciens et d’offrir les meilleurs soins possibles aux patients ayant subi un TCCL.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Mild traumatic brain injury (mTBI) is accompanied by a constellation of manifestations known as post-concussive symptoms (PCS). The majority of patients recover completely and promptly, i.e. within one month of injury. However, 10-20 % experience prolonged recovery with persistent PCS (PPCS), which impact quality of life, community integration and resumption of activities. For the minority of patients who present PPCS, it is necessary to provide them with resources beyond the acute preventive psychoeducation recommended by practice guidelines. However, there are very few interventions available to reduce PCS and thus enhance recovery. To date, psychological and psychoeducational interventions developed specifically for the post-acute phase, which takes place between the acute (0-1 month after mTBI) and the chronic phase (&gt; 6 months post-injury), are particularly rare. The scarce existing evidence suggests that the optimal intervention should be brief, including a few sessions of psychoeducation and/or counseling. Nevertheless, these are preliminary data and many open questions remain regarding the optimal format (e.g., in person vs. on the phone, individual vs. group, number of sessions, specific content). Moreover, the poor methodological quality of previous intervention studies significantly complicate interpretations (e.g., absence of control groups, non-randomized groups). The main objective of this thesis was therefore to develop and explore the feasibility and treatment effect of a novel psychoeducational and counseling intervention program for the post-acute phase after mTBI.
+The objective of the first article of the thesis (Chapter 2) was to overcome the paucity of work describing psychoeducational intervention protocols and their theoretical underpinnings. The article therefore aimed to present the theoretical and methodological approach associated with the development of the SAAM intervention. SAAM is a program including four 1-hour individual intervention sessions given in person, each targeting a type of common PCS in the post-acute phase: Sleep/fatigue, Attention, Anxiety/mood, Memory/organization. It informs the patient, provides reassurance about recovery, and supports the gradual resumption of activities by giving the patient the tools to do so. This approach is anchored in an integrative theoretical model of symptom persistence (Hou et al., 2012), the components of which are explained in the article. The latter provides a better understanding of the theoretical rationale behind the development of the SAAM intervention, and includes a detailed description of the protocol. The article is meant to align with efforts to clarify the theoretical underpinnings of the intervention program and enhance transparency in scientific reporting, an essential step in the advancement of interventional research. More broadly, this work will facilitate scientific replication and knowledge transfer in clinical settings.
+The second article (Chapter 3) aimed to estimate feasibility and explore the treatment effect of the SAAM intervention in symptomatic patients during the post-acute phase. A pilot randomized controlled trial with two parallel groups (experimental, n = 13 and wait list, n = 12) demonstrated the feasibility and tolerability of the intervention. Preliminary data suggest an effect of the intervention in reducing overall PCS. More specifically, regarding the PCS targeted by the SAAM intervention, an improvement in complaints related to depressive symptoms, fatigue, and sleep quality perception was observed post-intervention. However, the intervention failed to show a positive effect in addressing anxiety or somatic complaints, nor was it significantly impactful in improving cognitive performance (attention, memory). No effect was observed in terms of community integration either. Nonetheless, additional analyses (Chapter 4) suggest that SAAM intervention might restore the need for competence, a basic psychological need closely related to the individual's well-being. Finally, additional analyses pertaining to an intervention satisfaction questionnaire confirm that participants report a high level of satisfaction with the intervention, which bodes well for clinical implementation.
+The SAAM intervention holds promise because of its innovative aspect, its brief and easily accessible standardized format, and its demonstrated effects on several disabling PCS. The clinical significance of this thesis is notable and is discussed, along with study limitations and future avenues of research, in the final chapter. This work emphasizes the importance of pursuing research efforts in the field of post-mTBI interventions, in order to provide clinicians with the tools they need to offer the best possible care to patients who have sustained mTBI.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F26282&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Psychologie+-+recherche+et+intervention&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/26282/Audrit_Helene_2020_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/26282/Audrit_Helene_2020_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Audrit_Helene_2020_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/26282/Audrit_Helene_2020_these.pdf?sequence=2&amp;isAllowed=y">Audrit_Helene_2020_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">2.350Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2991/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2991">Faculté des arts et des sciences – Département de psychologie - Thèses et mémoires</a> [864]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26282">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Observations multi-longueur d’onde d’amas et de groupes de galaxies proches</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Hlavacek-Larrondo, Julie" name="DC.contributor">
+<meta content="Gendron-Marsolais, Marie-Lou" name="DC.creator">
+<meta content="2019-05-14T14:31:39Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2019-05-14T14:31:39Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2019-03-13" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2018-07" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/21757" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Amas et groupes de galaxies" name="DC.subject" xml:lang="fr"/>
+<meta content="Galaxies" name="DC.subject" xml:lang="fr"/>
+<meta content="Noyaux actifs de galaxies" name="DC.subject" xml:lang="fr"/>
+<meta content="Milieu intra-amas et intra-groupe" name="DC.subject" xml:lang="fr"/>
+<meta content="Astronomie rayon X" name="DC.subject" xml:lang="fr"/>
+<meta content="Radio astronomie" name="DC.subject" xml:lang="fr"/>
+<meta content="Spectro-imagerie à transformée de Fourier" name="DC.subject" xml:lang="fr"/>
+<meta content="Jets" name="DC.subject" xml:lang="fr"/>
+<meta content="Cavities" name="DC.subject" xml:lang="fr"/>
+<meta content="Mini-halos" name="DC.subject" xml:lang="fr"/>
+<meta content="Trous noirs supermassifs" name="DC.subject" xml:lang="fr"/>
+<meta content="Galaxy clusters and groups" name="DC.subject" xml:lang="fr"/>
+<meta content="Active galactic nuclei" name="DC.subject" xml:lang="fr"/>
+<meta content="Intracluster and intragroup medium" name="DC.subject" xml:lang="fr"/>
+<meta content="X-ray astronomy" name="DC.subject" xml:lang="fr"/>
+<meta content="Radio astronomy" name="DC.subject" xml:lang="fr"/>
+<meta content="Fourier transform spectroscopy" name="DC.subject" xml:lang="fr"/>
+<meta content="Cavités" name="DC.subject" xml:lang="fr"/>
+<meta content="Supermassive black holes" name="DC.subject" xml:lang="fr"/>
+<meta content="Physics - Astronomy and Astrophysics / Physique - Astronomie et astrophysique (UMI : 0606)" name="DC.subject" xml:lang="fr"/>
+<meta content="Observations multi-longueur d’onde d’amas et de groupes de galaxies proches" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Les amas et les groupes de galaxies sont des environnements dynamiques constamment perturbés. D’une part, le trou noir supermassif de la galaxie centrale peut produire de puis- sants jets relativistes compensant les pertes radiatives du milieu intra-amas ou intra-groupe. C’est le mécanisme de rétroaction des noyaux actifs de galaxies. D’autre part, l’interaction de l’amas ou du groupe de galaxies avec d’autres galaxies peut aussi créer d’importantes perturbations sous forme de chocs ou de fronts froids par exemple. En général, ces per- turbations, internes ou externes, peuvent laisser des empreintes dans les observations des groupes et des amas, et ce, dans tout le spectre électromagnétique. Dans cette thèse, l’étude observationnelle multi-longueur d’onde d’un groupe et d’un amas de galaxies proches est pré- sentée. L’ensemble de ces travaux auront permis de mieux comprendre certains des processus physiques complexes qui caractérisent ces environnements.
+D’abord, l’analyse d’observations profondes (380 ks) de l’observatoire de rayons X Chan- dra de la galaxie NGC 4472 (z = 0.0038), galaxie dominante d’un groupe de galaxies plon- geant dans l’amas de la Vierge, est présentée. Ces nouvelles données ont permis l’étude détaillée de la dynamique des lobes radio. Des coquilles de gaz froid entourant les lobes radio ont été détectées et semblent être constituées de gaz provenant du centre du groupe. Nous estimons l’énergie requise pour soulever ce gaz à partir du centre de NGC 4472 à ∼ 1056 erg. Nous avons également mené l’analyse de la distribution de l’abondance de différents éléments (O, Ne, Mg, Si et Fe) à partir du spectre rayons X.
+Ensuite, nous avons produit une carte à basse fréquence radio de l’amas de Persée (z = 0.018) obtenue à partir de nouvelles observations du Karl G. Jansky Very Large Array à 230- 470 MHz en configuration B. Les étapes de réduction des données et de calibration de même que le processus d’imagerie ont été spécifiquement adaptés à l’analyse de ces observations, tenant compte à la fois de la forte présence des interférences des fréquences radio à ces fréquences et de la présence du noyau actif de galaxie très brillant au centre de l’amas. Ces observations ont révélé une multitude de nouvelles structures associées à l’émission radio centrale diffuse dans l’amas, le mini-halo. Ces structures incluent plusieurs filaments radiaux s’étendant dans diverses directions, une structure concave corrélant avec la baie et plusieurs autres correspondances avec les structures rayons X telles que les fronts froids. Ces résultats montrent que les mini-halos ne sont donc pas de simples sources radio diffuses et uniformes, mais possèdent plutôt une riche variété de structures complexes.
+Un portrait complet de la dynamique des filaments de la nébuleuse de gaz ionisé entou- rant la galaxie NGC 1275, galaxie dominante de l’amas de Persée, a également été révélée grâce aux observations de SITELLE («Spectromètre Imageur à Transformée de Fourier pour l’Étude en Long et en Large des raies d’Émission»), un nouveau spectro-imageur à transfor- mée de Fourier au télescope Canada-France-Hawaii. Grâce à son champ de vue de 11′ × 11′, il s’agit du seul instrument de ce type capable de couvrir la nébuleuse de 80kpc × 55kpc (3.8′ × 2.6′ à la distance de NGC 1275) de large dans son entièreté. Notre analyse de ces observations montre un gradient radial du ratio des raies [N II]λ6583/Hα, suggérant un changement dans la source et le mécanisme d’ionisation à travers la nébuleuse. Nous avons produit pour la première fois une carte de vitesse complète et détaillée des filaments. Cette carte révèle une structure dynamique complexe inconnue jusqu’à ce jour. Celle-ci ne montre pas de tendance radiale générale ni de signe de rotation globale, indiquant que les filaments ne sont pas en train de tomber uniformément vers la galaxie ni d’être uniformément entraînés vers l’extérieur. Une comparaison entre ces mesures et les résultats de Hitomi obtenus pour l’amas de Persée est également présentée.
+Enfin, nous avons créé une image haute résolution à 230-470 MHz de l’amas de Persée grâce aux nouvelles observations en configuration A du Karl G. Jansky Very Large Array. La gamme dynamique élevée et la haute résolution de cette image ont permis l’identification de nouvelles structures. Dû à la haute résolution, la majorité de l’émission étendue du mini- halo occupant le centre de l’amas disparait dans ces observations et seules les parties les plus brillantes vers l’ouest demeurent visibles. L’émission radio centrale remplit les cavités internes visibles en rayons X et s’étend vers les cavités externes. Les cavités externes étant visibles à plus basses fréquences radio, nous détectons donc une partie courbe dans le spectre à environ 350 MHz. Au-delà de l’émission centrale entourant NGC 1275, nous décrivons et analysons également la morphologie de plusieurs sources radio complexes situées dans l’amas de Persée : IC 310, NGC 1265, CR 15 et NGC 1272. Ces galaxies radio sont en train de tomber dans l’amas de Persée. Nous détectons des distorsions dans la queue d’émission radio de la source IC 310 de même que deux jets distincts. Nous rapportons la présence d’une structure filamenteuse globale associée à la galaxie NGC 1265. Finalement, les galaxies radio CR 15 et NGC 1272 sont également résolues dans l’image haute-résolution obtenue." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Clusters and groups of galaxies are dynamic environments, continually perturbed. On the one hand, the supermassive black hole of the central galaxy can release powerful rela- tivistic jets compensating the radiative losses of the intracluster or intragroup medium. This mechanism is called active galactic nucleus feedback. On the other hand, the interaction between the cluster or the group with other galaxies can also generate important perturba- tions such as shocks or cold fronts. In general, these internal or external perturbations leave their footprints into the observations of clusters and groups covering the entire electromag- netic spectrum. In this thesis, the multi-wavelength observational study of one group and one cluster of galaxies, both nearby, is presented. Overall, this work has contributed to the comprehension of some of the complex processes characterizing these environments.
+First, the analysis of deep observations (380 ks) from the X-ray observatory Chandra of the galaxy NGC 4472 (z = 0.0038), the dominant galaxy of a group falling into the Virgo cluster, is presented. These new observations have allowed the detailed study of the radio lobe dynamics. Rims of cold gas surrounding the radio lobes have been detected and seem to be constituted of gas originating from the group center. We estimate the energy required to lift this gas from the center of NGC 4472 to be ∼ 1056 erg. We have also led the analysis of the abundance distribution of different elements (O, Ne, Mg, Si et Fe) from the X-ray spectrum.
+Second, we have produced a radio-frequency map of the Perseus cluster (z = 0.018), obtained from new Karl G. Jansky Very Large Array observations at 230-470 MHz in B configuration. The data reduction and calibration steps as well as the imaging process were specifically adjusted for the analysis of these observations, taking into account the strong presence of radio frequency interferences at these frequencies and the presence of the ex- tremely bright central active galactic nucleus in the cluster center. The observations have revealed a multitude of new structures associated with the cluster central diffuse radio emis- sion, the mini-halo. These structures include several radial filaments stretching in different directions, a concave structure correlating with the bay and several other correspondences with the X-ray structures such as cold fronts. These results show that mini-halos are there- fore not simply diffuse, uniform radio sources, but rather have a rich variety of complex structures.
+A comprehensive picture of the dynamics of the filamentary emission-line nebula sur- rounding NGC 1275, the dominant galaxy of the Perseus cluster, has been revealed with the observations of SITELLE («Spectromètre Imageur à Transformée de Fourier pour l’Étude en Long et en Large des raies d’Émission»), a new optical imaging Fourier transform spec- trometer at Canada-France-Hawaii Telescope. With its wide field of view of 11′ × 11′, it is the only instrument of this type covering the 80kpc × 55kpc (3.8′ × 2.6′ at the distance of NGC 1275) large nebula in its entirety. Our analysis of these observations shows a smooth radial gradient of the [N II]λ6583/Hα line ratio, suggesting a change in the ionization source and mechanism across the nebula. We have produced for the first time a complete detailed velocity map of the filaments. This map reveal a previously unknown rich velocity structure. The velocity map shows no visible general radial trend or rotation, indicating that filaments are not falling uniformly onto the galaxy, nor being uniformly pulled out from it. A com- parison between these measurements and the Hitomi results on the Perseus cluster is also presented.
+Finally, we have created a high-resolution image at 230-470 MHz of the Perseus cluster with new Karl G. Jansky Very Large Array A configuration observations. The high dynamic range and resolution achieved in this image have allowed the identification of new structures. Most of the extended mini-halo emission filling the core of the Perseus cluster disappears in these observations due to the high resolution and only some of the brightest western parts remain visible. The central radio emission fills the inner X-ray cavities and extends toward the outer cavities. As the outer cavities are visible at lower frequencies, we are therefore catching the spectral turnover at around 350 MHz. Beyond the central emission surrounding NGC 1275, we also describe and analyze the morphology of four complex radio sources harbored in the Perseus cluster: IC 310, NGC 1265, CR 15 and NGC 1272. These radio galaxies are infalling into the Perseus cluster. We detect distortions in the tail of IC 310 as well as two distinct jets. We report the presence of a global radio filamentary structure associated with the galaxy NGC 1265. Lastly, the radio galaxies CR 15 and NGC 1272 are also resolved in this high-resolution image." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Amas et groupes de galaxies; Galaxies; Noyaux actifs de galaxies; Milieu intra-amas et intra-groupe; Astronomie rayon X; Radio astronomie; Spectro-imagerie à transformée de Fourier; Jets; Cavities; Mini-halos; Trous noirs supermassifs; Galaxy clusters and groups; Active galactic nuclei; Intracluster and intragroup medium; X-ray astronomy; Radio astronomy; Fourier transform spectroscopy; Cavités; Supermassive black holes; Physics - Astronomy and Astrophysics / Physique - Astronomie et astrophysique (UMI : 0606); Thèse ou mémoire / Thesis or Dissertation; Physique" name="citation_keywords"/>
+<meta content="Observations multi-longueur d’onde d’amas et de groupes de galaxies proches" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Gendron-Marsolais, Marie-Lou" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/21757/2/Gendron-Marsolais_Marie-Lou_2018_these.pdf" name="citation_pdf_url"/>
+<meta content="2019-03-13" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/21757" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21757?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21757?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21757?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21757?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21757?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21757?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2329" role="menuitem">Faculté des arts et des sciences – Département de physique</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2990" role="menuitem">Faculté des arts et des sciences – Département de physique - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2329">Faculté des arts et des sciences – Département de physique</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2990">Faculté des arts et des sciences – Département de physique - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2990"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/21757/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/21757">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/21757/mets.xml-->
+<h2 class="page-header first-page-header">Observations multi-longueur d’onde d’amas et de groupes de galaxies proches</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Hlavacek-Larrondo, Julie</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Gendron-Marsolais, Marie-Lou</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2019-05-14T14:31:39Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2019-05-14T14:31:39Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2019-03-13</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2018-07</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/21757</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Amas et groupes de galaxies</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Galaxies</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Noyaux actifs de galaxies</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Milieu intra-amas et intra-groupe</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Astronomie rayon X</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Radio astronomie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Spectro-imagerie à transformée de Fourier</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Jets</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Cavities</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Mini-halos</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Trous noirs supermassifs</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Galaxy clusters and groups</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Active galactic nuclei</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Intracluster and intragroup medium</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">X-ray astronomy</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Radio astronomy</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Fourier transform spectroscopy</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Cavités</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Supermassive black holes</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Physics - Astronomy and Astrophysics / Physique - Astronomie et astrophysique (UMI : 0606)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Observations multi-longueur d’onde d’amas et de groupes de galaxies proches</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Physique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les amas et les groupes de galaxies sont des environnements dynamiques constamment perturbés. D’une part, le trou noir supermassif de la galaxie centrale peut produire de puis- sants jets relativistes compensant les pertes radiatives du milieu intra-amas ou intra-groupe. C’est le mécanisme de rétroaction des noyaux actifs de galaxies. D’autre part, l’interaction de l’amas ou du groupe de galaxies avec d’autres galaxies peut aussi créer d’importantes perturbations sous forme de chocs ou de fronts froids par exemple. En général, ces per- turbations, internes ou externes, peuvent laisser des empreintes dans les observations des groupes et des amas, et ce, dans tout le spectre électromagnétique. Dans cette thèse, l’étude observationnelle multi-longueur d’onde d’un groupe et d’un amas de galaxies proches est pré- sentée. L’ensemble de ces travaux auront permis de mieux comprendre certains des processus physiques complexes qui caractérisent ces environnements.
+D’abord, l’analyse d’observations profondes (380 ks) de l’observatoire de rayons X Chan- dra de la galaxie NGC 4472 (z = 0.0038), galaxie dominante d’un groupe de galaxies plon- geant dans l’amas de la Vierge, est présentée. Ces nouvelles données ont permis l’étude détaillée de la dynamique des lobes radio. Des coquilles de gaz froid entourant les lobes radio ont été détectées et semblent être constituées de gaz provenant du centre du groupe. Nous estimons l’énergie requise pour soulever ce gaz à partir du centre de NGC 4472 à ∼ 1056 erg. Nous avons également mené l’analyse de la distribution de l’abondance de différents éléments (O, Ne, Mg, Si et Fe) à partir du spectre rayons X.
+Ensuite, nous avons produit une carte à basse fréquence radio de l’amas de Persée (z = 0.018) obtenue à partir de nouvelles observations du Karl G. Jansky Very Large Array à 230- 470 MHz en configuration B. Les étapes de réduction des données et de calibration de même que le processus d’imagerie ont été spécifiquement adaptés à l’analyse de ces observations, tenant compte à la fois de la forte présence des interférences des fréquences radio à ces fréquences et de la présence du noyau actif de galaxie très brillant au centre de l’amas. Ces observations ont révélé une multitude de nouvelles structures associées à l’émission radio centrale diffuse dans l’amas, le mini-halo. Ces structures incluent plusieurs filaments radiaux s’étendant dans diverses directions, une structure concave corrélant avec la baie et plusieurs autres correspondances avec les structures rayons X telles que les fronts froids. Ces résultats montrent que les mini-halos ne sont donc pas de simples sources radio diffuses et uniformes, mais possèdent plutôt une riche variété de structures complexes.
+Un portrait complet de la dynamique des filaments de la nébuleuse de gaz ionisé entou- rant la galaxie NGC 1275, galaxie dominante de l’amas de Persée, a également été révélée grâce aux observations de SITELLE («Spectromètre Imageur à Transformée de Fourier pour l’Étude en Long et en Large des raies d’Émission»), un nouveau spectro-imageur à transfor- mée de Fourier au télescope Canada-France-Hawaii. Grâce à son champ de vue de 11′ × 11′, il s’agit du seul instrument de ce type capable de couvrir la nébuleuse de 80kpc × 55kpc (3.8′ × 2.6′ à la distance de NGC 1275) de large dans son entièreté. Notre analyse de ces observations montre un gradient radial du ratio des raies [N II]λ6583/Hα, suggérant un changement dans la source et le mécanisme d’ionisation à travers la nébuleuse. Nous avons produit pour la première fois une carte de vitesse complète et détaillée des filaments. Cette carte révèle une structure dynamique complexe inconnue jusqu’à ce jour. Celle-ci ne montre pas de tendance radiale générale ni de signe de rotation globale, indiquant que les filaments ne sont pas en train de tomber uniformément vers la galaxie ni d’être uniformément entraînés vers l’extérieur. Une comparaison entre ces mesures et les résultats de Hitomi obtenus pour l’amas de Persée est également présentée.
+Enfin, nous avons créé une image haute résolution à 230-470 MHz de l’amas de Persée grâce aux nouvelles observations en configuration A du Karl G. Jansky Very Large Array. La gamme dynamique élevée et la haute résolution de cette image ont permis l’identification de nouvelles structures. Dû à la haute résolution, la majorité de l’émission étendue du mini- halo occupant le centre de l’amas disparait dans ces observations et seules les parties les plus brillantes vers l’ouest demeurent visibles. L’émission radio centrale remplit les cavités internes visibles en rayons X et s’étend vers les cavités externes. Les cavités externes étant visibles à plus basses fréquences radio, nous détectons donc une partie courbe dans le spectre à environ 350 MHz. Au-delà de l’émission centrale entourant NGC 1275, nous décrivons et analysons également la morphologie de plusieurs sources radio complexes situées dans l’amas de Persée : IC 310, NGC 1265, CR 15 et NGC 1272. Ces galaxies radio sont en train de tomber dans l’amas de Persée. Nous détectons des distorsions dans la queue d’émission radio de la source IC 310 de même que deux jets distincts. Nous rapportons la présence d’une structure filamenteuse globale associée à la galaxie NGC 1265. Finalement, les galaxies radio CR 15 et NGC 1272 sont également résolues dans l’image haute-résolution obtenue.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Clusters and groups of galaxies are dynamic environments, continually perturbed. On the one hand, the supermassive black hole of the central galaxy can release powerful rela- tivistic jets compensating the radiative losses of the intracluster or intragroup medium. This mechanism is called active galactic nucleus feedback. On the other hand, the interaction between the cluster or the group with other galaxies can also generate important perturba- tions such as shocks or cold fronts. In general, these internal or external perturbations leave their footprints into the observations of clusters and groups covering the entire electromag- netic spectrum. In this thesis, the multi-wavelength observational study of one group and one cluster of galaxies, both nearby, is presented. Overall, this work has contributed to the comprehension of some of the complex processes characterizing these environments.
+First, the analysis of deep observations (380 ks) from the X-ray observatory Chandra of the galaxy NGC 4472 (z = 0.0038), the dominant galaxy of a group falling into the Virgo cluster, is presented. These new observations have allowed the detailed study of the radio lobe dynamics. Rims of cold gas surrounding the radio lobes have been detected and seem to be constituted of gas originating from the group center. We estimate the energy required to lift this gas from the center of NGC 4472 to be ∼ 1056 erg. We have also led the analysis of the abundance distribution of different elements (O, Ne, Mg, Si et Fe) from the X-ray spectrum.
+Second, we have produced a radio-frequency map of the Perseus cluster (z = 0.018), obtained from new Karl G. Jansky Very Large Array observations at 230-470 MHz in B configuration. The data reduction and calibration steps as well as the imaging process were specifically adjusted for the analysis of these observations, taking into account the strong presence of radio frequency interferences at these frequencies and the presence of the ex- tremely bright central active galactic nucleus in the cluster center. The observations have revealed a multitude of new structures associated with the cluster central diffuse radio emis- sion, the mini-halo. These structures include several radial filaments stretching in different directions, a concave structure correlating with the bay and several other correspondences with the X-ray structures such as cold fronts. These results show that mini-halos are there- fore not simply diffuse, uniform radio sources, but rather have a rich variety of complex structures.
+A comprehensive picture of the dynamics of the filamentary emission-line nebula sur- rounding NGC 1275, the dominant galaxy of the Perseus cluster, has been revealed with the observations of SITELLE («Spectromètre Imageur à Transformée de Fourier pour l’Étude en Long et en Large des raies d’Émission»), a new optical imaging Fourier transform spec- trometer at Canada-France-Hawaii Telescope. With its wide field of view of 11′ × 11′, it is the only instrument of this type covering the 80kpc × 55kpc (3.8′ × 2.6′ at the distance of NGC 1275) large nebula in its entirety. Our analysis of these observations shows a smooth radial gradient of the [N II]λ6583/Hα line ratio, suggesting a change in the ionization source and mechanism across the nebula. We have produced for the first time a complete detailed velocity map of the filaments. This map reveal a previously unknown rich velocity structure. The velocity map shows no visible general radial trend or rotation, indicating that filaments are not falling uniformly onto the galaxy, nor being uniformly pulled out from it. A com- parison between these measurements and the Hitomi results on the Perseus cluster is also presented.
+Finally, we have created a high-resolution image at 230-470 MHz of the Perseus cluster with new Karl G. Jansky Very Large Array A configuration observations. The high dynamic range and resolution achieved in this image have allowed the identification of new structures. Most of the extended mini-halo emission filling the core of the Perseus cluster disappears in these observations due to the high resolution and only some of the brightest western parts remain visible. The central radio emission fills the inner X-ray cavities and extends toward the outer cavities. As the outer cavities are visible at lower frequencies, we are therefore catching the spectral turnover at around 350 MHz. Beyond the central emission surrounding NGC 1275, we also describe and analyze the morphology of four complex radio sources harbored in the Perseus cluster: IC 310, NGC 1265, CR 15 and NGC 1272. These radio galaxies are infalling into the Perseus cluster. We detect distortions in the tail of IC 310 as well as two distinct jets. We report the presence of a global radio filamentary structure associated with the galaxy NGC 1265. Lastly, the radio galaxies CR 15 and NGC 1272 are also resolved in this high-resolution image.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">UdeM.ORCIDAuteurThese</td><td class="word-break">0000-0002-7326-5793</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F21757&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Physique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/21757/Gendron-Marsolais_Marie-Lou_2018_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/21757/Gendron-Marsolais_Marie-Lou_2018_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Gendron-Marsolais_Marie-Lou_2018_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/21757/Gendron-Marsolais_Marie-Lou_2018_these.pdf?sequence=2&amp;isAllowed=y">Gendron-Marsolais_Marie-Lou_20 ...</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">28.35Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2990/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2990">Faculté des arts et des sciences – Département de physique - Thèses et mémoires</a> [501]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/21757">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

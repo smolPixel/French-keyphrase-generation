@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Analyse d’implantation d’un système de gestion intégrée en environnement et en santé et sécurité du travail</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Farand, Lambert" name="DC.contributor">
+<meta content="Gérin, Michel" name="DC.contributor">
+<meta content="Savary, Saôde" name="DC.creator">
+<meta content="2010-02-18T19:27:08Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2010-02-18T19:27:08Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2010-01-07" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2009-09" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/3500" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="ISO 14001" name="DC.subject" xml:lang="en"/>
+<meta content="OHSAS 18001" name="DC.subject" xml:lang="en"/>
+<meta content="Gestion de l'environnement" name="DC.subject" xml:lang="en"/>
+<meta content="Environmental management" name="DC.subject" xml:lang="en"/>
+<meta content="Gestion de la santé et sécurité du travai" name="DC.subject" xml:lang="en"/>
+<meta content="Occupational Health and safety management" name="DC.subject" xml:lang="en"/>
+<meta content="Systèmes de gestion intégrée" name="DC.subject" xml:lang="en"/>
+<meta content="Integrated management systems" name="DC.subject" xml:lang="en"/>
+<meta content="SGI" name="DC.subject" xml:lang="en"/>
+<meta content="IMS" name="DC.subject" xml:lang="en"/>
+<meta content="Risques environnementaux" name="DC.subject" xml:lang="en"/>
+<meta content="Environmental risks" name="DC.subject" xml:lang="en"/>
+<meta content="Risques en santé et sécurité du travail" name="DC.subject" xml:lang="en"/>
+<meta content="Occupational Health and safety risks" name="DC.subject" xml:lang="en"/>
+<meta content="Analyse d'implantation" name="DC.subject" xml:lang="en"/>
+<meta content="Implementation analysis" name="DC.subject" xml:lang="en"/>
+<meta content="Niveau d'implantation" name="DC.subject" xml:lang="en"/>
+<meta content="Implementation level" name="DC.subject" xml:lang="en"/>
+<meta content="Transfert du savoir" name="DC.subject" xml:lang="en"/>
+<meta content="Knowledge transfer" name="DC.subject" xml:lang="en"/>
+<meta content="Health Sciences - Public Health / Sciences de la santé - Santé publique (UMI : 0573)" name="DC.subject" xml:lang="en"/>
+<meta content="Analyse d’implantation d’un système de gestion intégrée en environnement et en santé et sécurité du travail" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Les systèmes de gestion intégrée en environnement et en santé et sécurité du travail (SGI) sont un nouveau paradigme de gestion dans les organisations modernes.  Ces systèmes sont construits à partir des normes ISO 14001 et d’OHSAS 18001, basées sur la prévention des risques et le principe de précaution.  
+
+La littérature sur les SGI témoigne d’un marasme conceptuel prédominant depuis plus de 10 ans; elle insiste sur l’urgence d’un consensus taxinomique et conceptuel afin de définir les systèmes de gestion intégrée et de différencier le mécanisme d’intégration de celui de l’implantation.  Cette lacune conceptuelle enlise les connaissances dans un fossé épistémologique, retardant ainsi le débat dans ce nouveau champ d’études.
+
+Les rares connaissances dont nous disposons dans ce domaine proviennent de quelques études théoriques et de six études empiriques, toutes préoccupées par la compatibilité des multiples systèmes et des avantages économiques de leur intégration.  Les évidences engendrées par ces études sont insuffisantes pour appréhender la dynamique du nouveau paradigme dont les effets demeurent peu connus.  Cette situation révèle l’urgence d’agir dans un contexte où l’utilisation des SGI se multiplie, et où leur tendance à minimiser l’importance des risques devient de plus en plus préoccupante.
+
+Aucune étude ne s’est encore penchée sur l’implantation d’un SGI en environnement et en santé et sécurité du travail construit uniquement à partir des normes ISO 14001 et d’OHSAS 18001.  Cette connaissance est importante pour expliquer les effets de tels systèmes.  C’est dans cette perspective que nous avons réalisé cette première étude empirique d’un SGI selon les normes ISO 14001 et d’OHSAS 18001.  Nos questions de recherche portent sur le mode, le degré d’implantation, les effets du SGI, ainsi que sur les facteurs contextuels qui interviennent pour expliquer les variations dans le degré d’implantation et les effets du SGI.
+
+Il s’agit d’une recherche à prélèvement qualitatif qui repose sur un devis d’étude de cas, avec des niveaux d’analyse imbriqués, et comportant une double visée descriptive et explicative.  Notre échantillon, de type raisonné, regroupait trente-cinq intervenants provenant de différentes instances hiérarchiques ; il incluait également des représentants syndicaux.  Notre échantillon était composé de 7 usines, accréditées aux normes ISO 14001, OHSAS 18001, et dispersées dans différentes villes du Québec.  Ces usines différaient tant par leur technologie, leur âge, leur taille, et leurs types de production.  Nos données ont été recueillies en 2004; elles sont basées sur des entrevues semi dirigées, sur des observations directes lors de la visite des lieux; elles s’appuient aussi sur des consultations de documents internes et sur des outils électroniques implantés.
+
+La transcription des entrevues effectuée, le contenu des discours a été catégorisé selon les cinq dimensions du SGI: engagement, planification, mise en opération, contrôle et revue de la direction.  Une condensation horizontale avait précédé l’analyse de chaque cas et l’analyse transversale des cas selon une approche à la fois inductive et déductive.
+
+Les résultats de notre recherche ont révélé deux modes d’implantation : le mode d’enrichissement et le mode de fusion.  Ces modes dépendaient de la nature des structures fonctionnelles en place.  La visée d’amélioration continue à la base du SGI n’avait pas réussi à concilier les approches traditionnelles bottom up et top down qui ont dominé cette implantation; son mécanisme était guidé par 4 types de stratégies : l’économie des ressources, le contrôle des forces d’influences, la stratégie des fruits faciles à cueillir et la stratégie à petits pas. 
+
+Pour analyser le degré d’implantation, nous avons tenu compte de l’effort de structuration du SGI et de la force d’utilisation des processus implantés à chacune des cinq dimensions du SGI.  Les résultats de notre recherche révèlent une variabilité certaine du degré d’implantation entre les usines d’une part, et entre les processus associés aux cinq dimensions du SGI d’autre part.  L’analyse des discours a permis de produire cinq hypothèses qui soutiennent l’effort de structuration et la force d’utilisation du SGI: (i) l’hypothèse de la force de cohésion, (ii) l’hypothèse de la spécificité du processus, (iii) l’hypothèse de la portée du processus, (iv) l’hypothèse de la capacité organisationnelle, (v) l’hypothèse de l’acceptation du changement.
+
+L’implantation du SGI était soumise à l’influence de multiples facteurs; ils étaient de nature politique, structurelle et organisationnelle.  Ces facteurs avaient agi sur le processus d’implantation en amorçant une cascade d’interactions au cours desquelles leurs forces d’influences se renforçaient, se neutralisaient ou s’additionnaient pour affecter le degré d’implantation.  Les facteurs facilitant touchaient surtout l’effort de structuration ; ils incluaient : l’expérience des systèmes de gestion, l’implication de la direction, celle du syndicat ou du CSS, la structure organisationnelle, le niveau d’éducation, l’âge et la taille de l’usine.  Quant aux facteurs contraignants, ils agissaient sur la force d’utilisation ; ils incluaient : la lourdeur procédurale, le manque de temps, le manque de formation, le manque de ressources, la culture organisationnelle, la structure organisationnelle, le fossé intergénérationnel, l’absence du syndicat et l’âge de l’usine. 
+
+Trois effets proximaux escomptés par l’entreprise ont été observés.  (i) La rigueur de la gestion était associée à l’application des exigences du SGI; elle touchait la gouvernance en environnement et en santé et sécurité du travail, les mécanismes de gestion et les procédés de production. (ii) La standardisation était reliée au mode d’implantation du SGI; elle concernait les pratiques, les outils, les méthodes de travail et l’organisation des ressources. (iii) La rupture des silos est un effet relié au mode d’implantation du SGI; elle touchait les structures départementales, les frontières professionnelles, les relations et climat de travail.  Ces effets proximaux avaient provoqué plusieurs effets émergents, plus distaux: une augmentation du pouvoir de contrôle syndical, un renforcement de la légitimité des recommandations soumises par les spécialistes professionnels, la création de réseaux inter organisationnels et le transfert du savoir.
+
+L’implantation du SGI avait transformé la gouvernance et les pratiques en environnement et en santé et sécurité du travail dans les sept usines.  Toutefois, elle ne semblait pas garantir l’immunité du processus de gestion des risques à l’environnement ni à la santé et sécurité du travail.  Sa capacité à diluer les risques devait retenir l’attention des politiques de santé publiques et des programmes de prévention des risques à l’environnement et à la santé et sécurité du travail.  L’amélioration de la gestion des risques demeurait un effet attendu non observé et soumis à des facteurs contextuels qui pourraient l’empêcher de se concrétiser.  À cet égard, le transfert du savoir, renforcé par l’émergence des réseaux inter organisationnels, semblait offrir une avenue beaucoup plus prometteuse et accessible.  C’est l’une des contributions de cette recherche.  Elle a aussi (i) proposé une typologie des modes d’implantation et des effets du SGI (ii) préconisé une méthode détaillée d’une meilleure appréciation du degré d’implantation (iii) précisé le rôle des facteurs contextuels dans l’explication des variations du degré d’implantation et dans la production des effets, (iv) proposé des hypothèses sur la structuration et l’utilisation du SGI (v) offert une perspective plurielle et approfondie de la dynamique de l’implantation du SGI grâce à la variété de l’échantillon des répondants et des usines.  Il s’agit de la première étude de terrain dans le domaine.  À notre connaissance, aucune autre étude n’a eu de tels résultats.
+
+Mots Clés : ISO 14001, OHSAS 18001, gestion intégrée, environnement, santé et sécurité du travail, risques environnementaux, risques en santé et sécurité du travail, analyse d’implantation, degré d’implantation, SGI, transfert du savoir." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="Integrated environmental, health and safety management systems (IMS) are a new management paradigm of modern organizations.  These systems are built mainly from the ISO 14001 and OHSAS 18001 norms, which are based on risk prevention and the precautionary principles.
+
+For the past ten years, the literature on IMS has been governed by a conceptual stagnation, which is now begging for a taxonomic consensus in order to define IMS, clarify both integration and implementation processes, and to move beyond structures to address processes.  As a result, the knowledge about IMS has been embroiled in an epistemological ditch, thus delaying debates in this emerging field of study.
+
+Scarce publications about IMS come from a few theoretical papers and six empirical investigations, all preoccupied by systems compatibility and the economic advantages of management systems integration.  Evidence generated by these studies is not sufficient to apprehend the dynamics of the new paradigm, whose effects remain little known about until now.  This situation is becoming alarming in a context where the use of integrated environmental health and safety management systems is increasing and where these IMS are raising concerns about their capacity to minimize risk in one domain or another.
+
+So far, no study has investigated the implementation of integrated environmental health and safety management systems built from ISO 14001 and OHSAS 18001 norms.  Such knowledge is cardinal to help explain the effects of such IMS.  It is in this perspective that we have undertaken this first empirical study of an IMS built from ISO 14001 and OHSAS 18001.  Our research questions address the mode of implementation, the degree of implementation and the effects of the IMS, as well as the contextual factors whose influence on the implementation help explain the variations in the degree of implementation and the effects of the IMS.
+
+This qualitative inquiry uses a single case study with multiple levels of analysis.  Our purposeful sample of thirty five participants was drawn from different levels of hierarchy, including union executives and representatives.  Our purposeful sample of plants consisted of seven ISO 14001 and OHSAS 18001 certified plants located in different cities in Quebec, Canada.  These plants differed by their technology, their age, their size and their types of production.  Our data were collected in 2004 from semi-directed interviews, direct observation during site visits, and consultation of documentation and assessment of functionalities of implemented management tools.
+
+Interviews were transcribed verbatim and their content was categorized based on the five dimensions of the IMS: commitment policy, planning, deployment, control and management review.  Horizontal condensation preceded within case and transversal analysis, using both inductive and deductive approaches.
+
+Our results indicate two implementation modes: the enrichment mode and the fusion mode, both related to the functional structures in place.  Despite its aim of continuous improvement, the IMS was unable to reconcile the two traditional approaches of top down and bottom up, which have dominated this implementation which was supported by four strategies: economy of resources, control of influence, low hanging fruits and the small steps strategy.
+
+In order to analyze the degree of the IMS implementation, we have taken into consideration two aspects of the process: The effort of structuring the IMS and the scope of utilization of the implemented processes.  Our results showed evidence of variation in the degree of IMS implementation; this variation was observed among the plants as well as among the processes implemented at each one of the five IMS steps.  The analysis of discourses has allowed the production of five hypotheses that support IMS structuring and utilization (i) Cohesion forces hypothesis (ii) Process specificity hypothesis (iii) Scope of process hypothesis (iv) Organizational readiness hypothesis (v) Acceptance of change hypothesis.
+
+IMS implementation was influenced by political, structural and organizational factors.  These factors have played their influence by catalyzing non -linear interactions, during which their influence could be neutralized, added or reinforced, hence generating variations in the degree of implementation.
+
+Facilitating factors have affected the effort of IMS structuring and included:  experience working with management system, upper management commitment, implication of union or of health and safety committee representatives, organizational structure, level of education, plant age and plant size. 
+
+Inhibiting factors have affected mainly the utilization of implemented processes. These factors included: procedural heaviness, lack of time, lack of training, lack of resource, organizational culture, organizational structure, intergeneration gap and lack of union implication.
+
+Three proximal effects anticipated by the organization under study were observed.  (i) Increase in the rigor of management is an effect which was associated with the application of IMS requirements.  It implied EHS governance, integrated management mechanisms and production processes (ii) Standardization is an effect which was associated rather with the implementation mode.  It implied EHS practices, tools, work methods and organization of resources. (iii) Rupture of departmental silo is an effect associated with the mode of implementation.  It involved organizational structures, professional boundaries and the working relations and climate.  These proximal effects have induced several emerging effects, which were more distal.  These were: increased control power of the union; increased legitimacy of recommendations by EHS professionals; creation of inter-organizational network and knowledge transfer. 
+
+The implementation of an integrated management system in environment, occupational health and safety has transformed EHS governance and practice in all seven plants.  However, this was not sufficient to grant immunity to EHS risk management processes.  The potential of IMS to dilute risks should be of concern to public health policies, as well as to risk prevention programs on environment and on occupational health and safety.  Improvement of EHS risk management was an expected effect but was not observed at the moment of our study.  Several contextual factors may have intervened to alter its occurrence.  To this regard, knowledge transfer, reinforced by the emergence of intra-organizational networks, seem to offer a very promising and affordable alternative.  This is one of the contributions of our study research, which, in addition has (i) proposed a nomenclature to classify the modes of implementation and effects of IMS (ii) proposed a detailed method to appreciate the degree of implementation (iii) stated the roles played by contextual factors in explaining variations in the degree of IMS implementation and in the production of effects (iv) proposed a hypothesis on IMS structuring and utilization (v) through the diversity of our sample, offered a plural and sound perspective on the dynamics of IMS implementation.  This is the first field study of this new paradigm.  To our knowledge, no other study has produced such results.
+
+Keywords : ISO 14001, OHSAS 18001, integrated management system, IMS, environment, Occupational Health and Safety, environmental risks, occupational health and safety risks, implementation analysis, implementation level, knowledge transfer." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="ISO 14001; OHSAS 18001; Gestion de l'environnement; Environmental management; Gestion de la santé et sécurité du travai; Occupational Health and safety management; Systèmes de gestion intégrée; Integrated management systems; SGI; IMS; Risques environnementaux; Environmental risks; Risques en santé et sécurité du travail; Occupational Health and safety risks; Analyse d'implantation; Implementation analysis; Niveau d'implantation; Implementation level; Transfert du savoir; Knowledge transfer; Health Sciences - Public Health / Sciences de la santé - Santé publique (UMI : 0573); Thèse ou mémoire / Thesis or Dissertation; Santé publique" name="citation_keywords"/>
+<meta content="Analyse d’implantation d’un système de gestion intégrée en environnement et en santé et sécurité du travail" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Savary, Saôde" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/3500/2/Savary_Saode_2009_these.pdf" name="citation_pdf_url"/>
+<meta content="2010-01-07" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/3500" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3500?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3500?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3500?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3500?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3500?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/3500?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/3500/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/3500">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3500/mets.xml-->
+<h2 class="page-header first-page-header">Analyse d’implantation d’un système de gestion intégrée en environnement et en santé et sécurité du travail</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Farand, Lambert</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Gérin, Michel</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Savary, Saôde</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2010-02-18T19:27:08Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2010-02-18T19:27:08Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2010-01-07</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2009-09</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/3500</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">ISO 14001</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">OHSAS 18001</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Gestion de l'environnement</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Environmental management</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Gestion de la santé et sécurité du travai</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Occupational Health and safety management</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Systèmes de gestion intégrée</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Integrated management systems</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">SGI</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">IMS</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Risques environnementaux</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Environmental risks</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Risques en santé et sécurité du travail</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Occupational Health and safety risks</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Analyse d'implantation</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Implementation analysis</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Niveau d'implantation</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Implementation level</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Transfert du savoir</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Knowledge transfer</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Health Sciences - Public Health / Sciences de la santé - Santé publique (UMI : 0573)</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Analyse d’implantation d’un système de gestion intégrée en environnement et en santé et sécurité du travail</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Santé publique</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les systèmes de gestion intégrée en environnement et en santé et sécurité du travail (SGI) sont un nouveau paradigme de gestion dans les organisations modernes.  Ces systèmes sont construits à partir des normes ISO 14001 et d’OHSAS 18001, basées sur la prévention des risques et le principe de précaution.  
+
+La littérature sur les SGI témoigne d’un marasme conceptuel prédominant depuis plus de 10 ans; elle insiste sur l’urgence d’un consensus taxinomique et conceptuel afin de définir les systèmes de gestion intégrée et de différencier le mécanisme d’intégration de celui de l’implantation.  Cette lacune conceptuelle enlise les connaissances dans un fossé épistémologique, retardant ainsi le débat dans ce nouveau champ d’études.
+
+Les rares connaissances dont nous disposons dans ce domaine proviennent de quelques études théoriques et de six études empiriques, toutes préoccupées par la compatibilité des multiples systèmes et des avantages économiques de leur intégration.  Les évidences engendrées par ces études sont insuffisantes pour appréhender la dynamique du nouveau paradigme dont les effets demeurent peu connus.  Cette situation révèle l’urgence d’agir dans un contexte où l’utilisation des SGI se multiplie, et où leur tendance à minimiser l’importance des risques devient de plus en plus préoccupante.
+
+Aucune étude ne s’est encore penchée sur l’implantation d’un SGI en environnement et en santé et sécurité du travail construit uniquement à partir des normes ISO 14001 et d’OHSAS 18001.  Cette connaissance est importante pour expliquer les effets de tels systèmes.  C’est dans cette perspective que nous avons réalisé cette première étude empirique d’un SGI selon les normes ISO 14001 et d’OHSAS 18001.  Nos questions de recherche portent sur le mode, le degré d’implantation, les effets du SGI, ainsi que sur les facteurs contextuels qui interviennent pour expliquer les variations dans le degré d’implantation et les effets du SGI.
+
+Il s’agit d’une recherche à prélèvement qualitatif qui repose sur un devis d’étude de cas, avec des niveaux d’analyse imbriqués, et comportant une double visée descriptive et explicative.  Notre échantillon, de type raisonné, regroupait trente-cinq intervenants provenant de différentes instances hiérarchiques ; il incluait également des représentants syndicaux.  Notre échantillon était composé de 7 usines, accréditées aux normes ISO 14001, OHSAS 18001, et dispersées dans différentes villes du Québec.  Ces usines différaient tant par leur technologie, leur âge, leur taille, et leurs types de production.  Nos données ont été recueillies en 2004; elles sont basées sur des entrevues semi dirigées, sur des observations directes lors de la visite des lieux; elles s’appuient aussi sur des consultations de documents internes et sur des outils électroniques implantés.
+
+La transcription des entrevues effectuée, le contenu des discours a été catégorisé selon les cinq dimensions du SGI: engagement, planification, mise en opération, contrôle et revue de la direction.  Une condensation horizontale avait précédé l’analyse de chaque cas et l’analyse transversale des cas selon une approche à la fois inductive et déductive.
+
+Les résultats de notre recherche ont révélé deux modes d’implantation : le mode d’enrichissement et le mode de fusion.  Ces modes dépendaient de la nature des structures fonctionnelles en place.  La visée d’amélioration continue à la base du SGI n’avait pas réussi à concilier les approches traditionnelles bottom up et top down qui ont dominé cette implantation; son mécanisme était guidé par 4 types de stratégies : l’économie des ressources, le contrôle des forces d’influences, la stratégie des fruits faciles à cueillir et la stratégie à petits pas. 
+
+Pour analyser le degré d’implantation, nous avons tenu compte de l’effort de structuration du SGI et de la force d’utilisation des processus implantés à chacune des cinq dimensions du SGI.  Les résultats de notre recherche révèlent une variabilité certaine du degré d’implantation entre les usines d’une part, et entre les processus associés aux cinq dimensions du SGI d’autre part.  L’analyse des discours a permis de produire cinq hypothèses qui soutiennent l’effort de structuration et la force d’utilisation du SGI: (i) l’hypothèse de la force de cohésion, (ii) l’hypothèse de la spécificité du processus, (iii) l’hypothèse de la portée du processus, (iv) l’hypothèse de la capacité organisationnelle, (v) l’hypothèse de l’acceptation du changement.
+
+L’implantation du SGI était soumise à l’influence de multiples facteurs; ils étaient de nature politique, structurelle et organisationnelle.  Ces facteurs avaient agi sur le processus d’implantation en amorçant une cascade d’interactions au cours desquelles leurs forces d’influences se renforçaient, se neutralisaient ou s’additionnaient pour affecter le degré d’implantation.  Les facteurs facilitant touchaient surtout l’effort de structuration ; ils incluaient : l’expérience des systèmes de gestion, l’implication de la direction, celle du syndicat ou du CSS, la structure organisationnelle, le niveau d’éducation, l’âge et la taille de l’usine.  Quant aux facteurs contraignants, ils agissaient sur la force d’utilisation ; ils incluaient : la lourdeur procédurale, le manque de temps, le manque de formation, le manque de ressources, la culture organisationnelle, la structure organisationnelle, le fossé intergénérationnel, l’absence du syndicat et l’âge de l’usine. 
+
+Trois effets proximaux escomptés par l’entreprise ont été observés.  (i) La rigueur de la gestion était associée à l’application des exigences du SGI; elle touchait la gouvernance en environnement et en santé et sécurité du travail, les mécanismes de gestion et les procédés de production. (ii) La standardisation était reliée au mode d’implantation du SGI; elle concernait les pratiques, les outils, les méthodes de travail et l’organisation des ressources. (iii) La rupture des silos est un effet relié au mode d’implantation du SGI; elle touchait les structures départementales, les frontières professionnelles, les relations et climat de travail.  Ces effets proximaux avaient provoqué plusieurs effets émergents, plus distaux: une augmentation du pouvoir de contrôle syndical, un renforcement de la légitimité des recommandations soumises par les spécialistes professionnels, la création de réseaux inter organisationnels et le transfert du savoir.
+
+L’implantation du SGI avait transformé la gouvernance et les pratiques en environnement et en santé et sécurité du travail dans les sept usines.  Toutefois, elle ne semblait pas garantir l’immunité du processus de gestion des risques à l’environnement ni à la santé et sécurité du travail.  Sa capacité à diluer les risques devait retenir l’attention des politiques de santé publiques et des programmes de prévention des risques à l’environnement et à la santé et sécurité du travail.  L’amélioration de la gestion des risques demeurait un effet attendu non observé et soumis à des facteurs contextuels qui pourraient l’empêcher de se concrétiser.  À cet égard, le transfert du savoir, renforcé par l’émergence des réseaux inter organisationnels, semblait offrir une avenue beaucoup plus prometteuse et accessible.  C’est l’une des contributions de cette recherche.  Elle a aussi (i) proposé une typologie des modes d’implantation et des effets du SGI (ii) préconisé une méthode détaillée d’une meilleure appréciation du degré d’implantation (iii) précisé le rôle des facteurs contextuels dans l’explication des variations du degré d’implantation et dans la production des effets, (iv) proposé des hypothèses sur la structuration et l’utilisation du SGI (v) offert une perspective plurielle et approfondie de la dynamique de l’implantation du SGI grâce à la variété de l’échantillon des répondants et des usines.  Il s’agit de la première étude de terrain dans le domaine.  À notre connaissance, aucune autre étude n’a eu de tels résultats.
+
+Mots Clés : ISO 14001, OHSAS 18001, gestion intégrée, environnement, santé et sécurité du travail, risques environnementaux, risques en santé et sécurité du travail, analyse d’implantation, degré d’implantation, SGI, transfert du savoir.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Integrated environmental, health and safety management systems (IMS) are a new management paradigm of modern organizations.  These systems are built mainly from the ISO 14001 and OHSAS 18001 norms, which are based on risk prevention and the precautionary principles.
+
+For the past ten years, the literature on IMS has been governed by a conceptual stagnation, which is now begging for a taxonomic consensus in order to define IMS, clarify both integration and implementation processes, and to move beyond structures to address processes.  As a result, the knowledge about IMS has been embroiled in an epistemological ditch, thus delaying debates in this emerging field of study.
+
+Scarce publications about IMS come from a few theoretical papers and six empirical investigations, all preoccupied by systems compatibility and the economic advantages of management systems integration.  Evidence generated by these studies is not sufficient to apprehend the dynamics of the new paradigm, whose effects remain little known about until now.  This situation is becoming alarming in a context where the use of integrated environmental health and safety management systems is increasing and where these IMS are raising concerns about their capacity to minimize risk in one domain or another.
+
+So far, no study has investigated the implementation of integrated environmental health and safety management systems built from ISO 14001 and OHSAS 18001 norms.  Such knowledge is cardinal to help explain the effects of such IMS.  It is in this perspective that we have undertaken this first empirical study of an IMS built from ISO 14001 and OHSAS 18001.  Our research questions address the mode of implementation, the degree of implementation and the effects of the IMS, as well as the contextual factors whose influence on the implementation help explain the variations in the degree of implementation and the effects of the IMS.
+
+This qualitative inquiry uses a single case study with multiple levels of analysis.  Our purposeful sample of thirty five participants was drawn from different levels of hierarchy, including union executives and representatives.  Our purposeful sample of plants consisted of seven ISO 14001 and OHSAS 18001 certified plants located in different cities in Quebec, Canada.  These plants differed by their technology, their age, their size and their types of production.  Our data were collected in 2004 from semi-directed interviews, direct observation during site visits, and consultation of documentation and assessment of functionalities of implemented management tools.
+
+Interviews were transcribed verbatim and their content was categorized based on the five dimensions of the IMS: commitment policy, planning, deployment, control and management review.  Horizontal condensation preceded within case and transversal analysis, using both inductive and deductive approaches.
+
+Our results indicate two implementation modes: the enrichment mode and the fusion mode, both related to the functional structures in place.  Despite its aim of continuous improvement, the IMS was unable to reconcile the two traditional approaches of top down and bottom up, which have dominated this implementation which was supported by four strategies: economy of resources, control of influence, low hanging fruits and the small steps strategy.
+
+In order to analyze the degree of the IMS implementation, we have taken into consideration two aspects of the process: The effort of structuring the IMS and the scope of utilization of the implemented processes.  Our results showed evidence of variation in the degree of IMS implementation; this variation was observed among the plants as well as among the processes implemented at each one of the five IMS steps.  The analysis of discourses has allowed the production of five hypotheses that support IMS structuring and utilization (i) Cohesion forces hypothesis (ii) Process specificity hypothesis (iii) Scope of process hypothesis (iv) Organizational readiness hypothesis (v) Acceptance of change hypothesis.
+
+IMS implementation was influenced by political, structural and organizational factors.  These factors have played their influence by catalyzing non -linear interactions, during which their influence could be neutralized, added or reinforced, hence generating variations in the degree of implementation.
+
+Facilitating factors have affected the effort of IMS structuring and included:  experience working with management system, upper management commitment, implication of union or of health and safety committee representatives, organizational structure, level of education, plant age and plant size. 
+
+Inhibiting factors have affected mainly the utilization of implemented processes. These factors included: procedural heaviness, lack of time, lack of training, lack of resource, organizational culture, organizational structure, intergeneration gap and lack of union implication.
+
+Three proximal effects anticipated by the organization under study were observed.  (i) Increase in the rigor of management is an effect which was associated with the application of IMS requirements.  It implied EHS governance, integrated management mechanisms and production processes (ii) Standardization is an effect which was associated rather with the implementation mode.  It implied EHS practices, tools, work methods and organization of resources. (iii) Rupture of departmental silo is an effect associated with the mode of implementation.  It involved organizational structures, professional boundaries and the working relations and climate.  These proximal effects have induced several emerging effects, which were more distal.  These were: increased control power of the union; increased legitimacy of recommendations by EHS professionals; creation of inter-organizational network and knowledge transfer. 
+
+The implementation of an integrated management system in environment, occupational health and safety has transformed EHS governance and practice in all seven plants.  However, this was not sufficient to grant immunity to EHS risk management processes.  The potential of IMS to dilute risks should be of concern to public health policies, as well as to risk prevention programs on environment and on occupational health and safety.  Improvement of EHS risk management was an expected effect but was not observed at the moment of our study.  Several contextual factors may have intervened to alter its occurrence.  To this regard, knowledge transfer, reinforced by the emergence of intra-organizational networks, seem to offer a very promising and affordable alternative.  This is one of the contributions of our study research, which, in addition has (i) proposed a nomenclature to classify the modes of implementation and effects of IMS (ii) proposed a detailed method to appreciate the degree of implementation (iii) stated the roles played by contextual factors in explaining variations in the degree of IMS implementation and in the production of effects (iv) proposed a hypothesis on IMS structuring and utilization (v) through the diversity of our sample, offered a plural and sound perspective on the dynamics of IMS implementation.  This is the first field study of this new paradigm.  To our knowledge, no other study has produced such results.
+
+Keywords : ISO 14001, OHSAS 18001, integrated management system, IMS, environment, Occupational Health and Safety, environmental risks, occupational health and safety risks, implementation analysis, implementation level, knowledge transfer.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F3500&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sant%C3%A9+publique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/3500/Savary_Saode_2009_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/3500/Savary_Saode_2009_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Savary_Saode_2009_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/3500/Savary_Saode_2009_these.pdf?sequence=2&amp;isAllowed=y">Savary_Saode_2009_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">2.179Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10094/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a> [603]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/3500">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

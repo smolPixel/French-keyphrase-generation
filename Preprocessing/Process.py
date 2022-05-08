@@ -55,12 +55,19 @@ while True:
 	abs=line['abstract']
 	keyphrases=line['keyphrases']
 	index=line['index']
+	if index==12533:
+		print(line)
 	dicoTemp={}
 	#Identify languages of abstract
 	languages_in_text=[]
 	for text in abs:
-		
-		language=detect_langs(text)
+		try:
+			language=detect_langs(text)
+		except:
+			if index==2764:
+				#Erroneously tagged abstract
+				continue
+			language='un'
 		language=str(language[0])[:2]
 		#If an abstract of this language already exists
 		if language in languages_in_text:
@@ -77,7 +84,8 @@ while True:
 	for kp in keyphrases:
 		total_keyphrases+=1
 		foundLanguage=False
-		if '(UMI' in kp[0] or '[JEL' in kp:
+
+		if '(UMI' in kp or '[JEL' in kp:
 			prop_weirdos+=1
 			# print(kp[0])
 			continue
@@ -91,7 +99,7 @@ while True:
 		#If it's word for word in an abstract, it belongs to that language
 		for lang, item in dicoTemp.items():
 			abstract, _=item
-			if kp[0].lower() in abstract.lower():
+			if kp.lower() in abstract.lower():
 				languages_of_kp.append(lang)
 				foundLanguage=True
 		if foundLanguage:

@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>A Multi-Modal, Modified-Feedback and Self-Paced Brain-Computer Interface (BCI) to Control an Embodied Avatar's Gait</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Labbé, David" name="DC.contributor">
+<meta content="Faubert, Jocelyn" name="DC.contributor">
+<meta content="Alchalabi, Bilal" name="DC.creator">
+<meta content="2021-08-31T17:45:06Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2021-08-31T17:45:06Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-07-13" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2020-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/25553" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Électroencéphalogramme (EEG)" name="DC.subject" xml:lang="fr"/>
+<meta content="Interface cerveau-ordinateur (ICO)" name="DC.subject" xml:lang="fr"/>
+<meta content="Synchronisation liée à l'événement" name="DC.subject" xml:lang="fr"/>
+<meta content="Imagination motrice" name="DC.subject" xml:lang="fr"/>
+<meta content="Système Neuoronale Mirroire (SNM)" name="DC.subject" xml:lang="fr"/>
+<meta content="Réalité Virtuelle (RV)" name="DC.subject" xml:lang="fr"/>
+<meta content="Classification de EEG" name="DC.subject" xml:lang="fr"/>
+<meta content="Navigation" name="DC.subject" xml:lang="fr"/>
+<meta content="Réadaptation de la marche" name="DC.subject" xml:lang="fr"/>
+<meta content="Avatar" name="DC.subject" xml:lang="fr"/>
+<meta content="Incarnation" name="DC.subject" xml:lang="fr"/>
+<meta content="EEG" name="DC.subject" xml:lang="fr"/>
+<meta content="Brain-computer interface (BCI)" name="DC.subject" xml:lang="fr"/>
+<meta content="Event-related synchronisation (ERS)" name="DC.subject" xml:lang="fr"/>
+<meta content="Motor Imagery (MI)" name="DC.subject" xml:lang="fr"/>
+<meta content="Mirror neuron system (MNS)" name="DC.subject" xml:lang="fr"/>
+<meta content="Virtual reality (VR)" name="DC.subject" xml:lang="fr"/>
+<meta content="EEG Classification" name="DC.subject" xml:lang="fr"/>
+<meta content="Gait rehabilitation" name="DC.subject" xml:lang="fr"/>
+<meta content="Embodiment" name="DC.subject" xml:lang="fr"/>
+<meta content="Engineering - Biomedical / Ingénierie - Biomédicale (UMI : 0541)" name="DC.subject" xml:lang="fr"/>
+<meta content="A Multi-Modal, Modified-Feedback and Self-Paced Brain-Computer Interface (BCI) to Control an Embodied Avatar's Gait" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Brain-computer interfaces (BCI) have been used to control the gait of a virtual self-avatar with the
+aim of being used in gait rehabilitation. A BCI decodes the brain signals representing a desire to
+do something and transforms them into a control command for controlling external devices.
+The feelings described by the participants when they control a self-avatar in an immersive virtual
+environment (VE) demonstrate that humans can be embodied in the surrogate body of an avatar
+(ownership illusion). It has recently been shown that inducing the ownership illusion and then
+manipulating the movements of one’s self-avatar can lead to compensatory motor control
+strategies.
+In order to maximize this effect, there is a need for a method that measures and monitors
+embodiment levels of participants immersed in virtual reality (VR) to induce and maintain a strong
+ownership illusion. This is particularly true given that reaching a high level of both BCI
+performance and embodiment are inter-connected. To reach one of them, the second must be
+reached as well. Some limitations of many existing systems hinder their adoption for
+neurorehabilitation: 1- some use motor imagery (MI) of movements other than gait; 2- most
+systems allow the user to take single steps or to walk but do not allow both, which prevents users
+from progressing from steps to gait; 3- most of them function in a single BCI mode (cue-paced or
+self-paced), which prevents users from progressing from machine-dependent to machine-independent
+walking. Overcoming the aforementioned limitations can be done by combining
+different control modes and options in one single system. However, this would have a negative
+impact on BCI performance, therefore diminishing its usefulness as a potential rehabilitation tool.
+In this case, there will be a need to enhance BCI performance. For such purpose, many techniques
+have been used in the literature, such as providing modified feedback (whereby the presented
+feedback is not consistent with the user’s MI), sequential training (recalibrating the classifier as
+more data becomes available).
+This thesis was developed over 3 studies. The objective in study 1 was to investigate the possibility
+of measuring the level of embodiment of an immersive self-avatar, during the performing,
+observing and imagining of gait, using electroencephalogram (EEG) techniques, by presenting
+visual feedback that conflicts with the desired movement of embodied participants.
+The objective of study 2 was to develop and validate a BCI to control single steps and forward
+walking of an immersive virtual reality (VR) self-avatar, using mental imagery of these actions, in
+cue-paced and self-paced modes. Different performance enhancement strategies were
+implemented to increase BCI performance.
+The data of these two studies were then used in study 3 to construct a generic classifier that could
+eliminate offline calibration for future users and shorten training time.
+Twenty different healthy participants took part in studies 1 and 2. In study 1, participants wore an
+EEG cap and motion capture markers, with an avatar displayed in a head-mounted display (HMD)
+from a first-person perspective (1PP). They were cued to either perform, watch or imagine a single
+step forward or to initiate walking on a treadmill. For some of the trials, the avatar took a step with
+the contralateral limb or stopped walking before the participant stopped (modified feedback).
+In study 2, participants completed a 4-day sequential training to control the gait of an avatar in
+both BCI modes. In cue-paced mode, they were cued to imagine a single step forward, using their
+right or left foot, or to walk forward. In the self-paced mode, they were instructed to reach a target
+using the MI of multiple steps (switch control mode) or maintaining the MI of forward walking
+(continuous control mode). The avatar moved as a response to two calibrated regularized linear
+discriminant analysis (RLDA) classifiers that used the μ power spectral density (PSD) over the
+foot area of the motor cortex as features. The classifiers were retrained after every session. During
+the training, and for some of the trials, positive modified feedback was presented to half of the
+participants, where the avatar moved correctly regardless of the participant’s real performance.
+In both studies, the participants’ subjective experience was analyzed using a questionnaire. Results
+of study 1 show that subjective levels of embodiment correlate strongly with the power differences
+of the event-related synchronization (ERS) within the μ frequency band, and over the motor and
+pre-motor cortices between the modified and regular feedback trials.
+Results of study 2 show that all participants were able to operate the cued-paced BCI and the selfpaced
+BCI in both modes. For the cue-paced BCI, the average offline performance (classification
+rate) on day 1 was 67±6.1% and 86±6.1% on day 3, showing that the recalibration of the classifiers
+enhanced the offline performance of the BCI (p &lt; 0.01). The average online performance was
+85.9±8.4% for the modified feedback group (77-97%) versus 75% for the non-modified feedback
+group. For self-paced BCI, the average performance was 83% at switch control and 92% at
+continuous control mode, with a maximum of 12 seconds of control. Modified feedback enhanced
+BCI performances (p =0.001). Finally, results of study 3 show that the constructed generic models
+performed as well as models obtained from participant-specific offline data. The results show that
+there it is possible to design a participant-independent zero-training BCI." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Les interfaces cerveau-ordinateur (ICO) ont été utilisées pour contrôler la marche d'un égo-avatar virtuel dans le but d'être utilisées dans la réadaptation de la marche. Une ICO décode les signaux du cerveau représentant un désir de faire produire un mouvement et les transforme en une commande de contrôle pour contrôler des appareils externes.  
+Les sentiments décrits par les participants lorsqu'ils contrôlent un égo-avatar dans un environnement virtuel immersif démontrent que les humains peuvent être incarnés dans un corps d'un avatar (illusion de propriété). Il a été récemment démontré que provoquer l’illusion de propriété puis manipuler les mouvements de l’égo-avatar peut conduire à des stratégies de contrôle moteur compensatoire.  
+Afin de maximiser cet effet, il existe un besoin d'une méthode qui mesure et surveille les niveaux d’incarnation des participants immergés dans la réalité virtuelle (RV) pour induire et maintenir une forte illusion de propriété.  
+D'autre part, atteindre un niveau élevé de performances (taux de classification) ICO et d’incarnation est interconnecté. Pour atteindre l'un d'eux, le second doit également être atteint. Certaines limitations de plusieurs de ces systèmes entravent leur adoption pour la neuroréhabilitation: 1- certains utilisent l'imagerie motrice (IM) des mouvements autres que la marche; 2- la plupart des systèmes permettent à l'utilisateur de faire des pas simples ou de marcher mais pas les deux, ce qui ne permet pas à un utilisateur de passer des pas à la marche; 3- la plupart fonctionnent en un seul mode d’ICO, rythmé (cue-paced) ou auto-rythmé (self-paced).  Surmonter les limitations susmentionnées peut être fait en combinant différents modes et options de commande dans un seul système. Cependant, cela aurait un impact négatif sur les performances de l’ICO, diminuant ainsi son utilité en tant qu'outil potentiel de réhabilitation. Dans ce cas, il sera nécessaire d'améliorer les performances des ICO. À cette fin, de nombreuses techniques ont été utilisées dans la littérature, telles que la rétroaction modifiée, le recalibrage du classificateur et l'utilisation d'un classificateur générique. 
+Le projet de cette thèse a été réalisé en 3 études, avec objectif d'étudier dans l'étude 1, la possibilité de mesurer le niveau d'incarnation d'un égo-avatar immersif, lors de l'exécution, de l'observation et de l'imagination de la marche, à l'aide des techniques encéphalogramme (EEG), en présentant une rétroaction visuelle qui entre en conflit avec la commande du contrôle moteur des sujets incarnés. L'objectif de l'étude 2 était de développer un BCI pour contrôler les pas et la marche vers l’avant d'un égo-avatar dans la réalité virtuelle immersive, en utilisant l'imagerie motrice de ces actions, dans des modes rythmés et auto-rythmés. Différentes stratégies d'amélioration des performances ont été mises en œuvre pour augmenter la performance (taux de classification) de l’ICO.  
+Les données de ces deux études ont ensuite été utilisées dans l'étude 3 pour construire des classificateurs génériques qui pourraient éliminer la calibration hors ligne pour les futurs utilisateurs et raccourcir le temps de formation.  
+Vingt participants sains différents ont participé aux études 1 et 2. Dans l'étude 1, les participants portaient un casque EEG et des marqueurs de capture de mouvement, avec un avatar affiché dans un casque de RV du point de vue de la première personne (1PP). Ils ont été invités à performer, à regarder ou à imaginer un seul pas en avant ou la marche vers l’avant (pour quelques secondes) sur le tapis roulant. Pour certains essais, l'avatar a fait un pas avec le membre controlatéral ou a arrêté de marcher avant que le participant ne s'arrête (rétroaction modifiée).  
+Dans l'étude 2, les participants ont participé à un entrainement séquentiel de 4 jours pour contrôler la marche d'un avatar dans les deux modes de l’ICO. En mode rythmé, ils ont imaginé un seul pas en avant, en utilisant leur pied droit ou gauche, ou la marche vers l’avant . En mode auto-rythmé, il leur a été demandé d'atteindre une cible en utilisant l'imagerie motrice (IM) de plusieurs pas (mode de contrôle intermittent) ou en maintenir l'IM de marche vers l’avant (mode de contrôle continu). L'avatar s'est déplacé en réponse à deux classificateurs ‘Regularized Linear Discriminant Analysis’ (RLDA) calibrés qui utilisaient comme caractéristiques la densité spectrale de puissance (Power Spectral Density; PSD) des bandes de fréquences µ (8-12 Hz) sur la zone du pied du cortex moteur. Les classificateurs ont été recalibrés après chaque session. Au cours de l’entrainement et pour certains des essais, une rétroaction modifiée positive a été présentée à la moitié des participants, où l'avatar s'est déplacé correctement quelle que soit la performance réelle du participant. Dans les deux études, l'expérience subjective des participants a été analysée à l'aide d'un questionnaire. 
+ Les résultats de l'étude 1 montrent que les niveaux subjectifs d’incarnation sont fortement corrélés à la différence de la puissance de la synchronisation liée à l’événement (Event-Related Synchronization; ERS) sur la bande de fréquence μ et sur le cortex moteur et prémoteur entre les essais de rétroaction modifiés et réguliers. L'étude 2 a montré que tous les participants étaient capables d’utiliser le BCI rythmé et auto-rythmé dans les deux modes. Pour le BCI rythmé, la performance hors ligne moyenne au jour 1 était de 67±6,1% et 86±6,1% au jour 3, ce qui montre que le recalibrage des classificateurs a amélioré la performance hors ligne du BCI (p &lt;0,01). La performance en ligne moyenne était de 85,9±8,4% pour le groupe de rétroaction modifié (77-97%) contre 75% pour le groupe de rétroaction non modifié. Pour le BCI auto-rythmé, la performance moyenne était de 83% en commande de commutateur et de 92% en mode de commande continue, avec un maximum de 12 secondes de commande. Les performances de l’ICO ont été améliorées par la rétroaction modifiée (p = 0,001). Enfin, les résultats de l'étude 3 montrent que pour la classification des initialisations des pas et de la marche, il a été possible de construire des modèles génériques à partir de données hors ligne spécifiques aux participants. Les résultats montrent la possibilité de concevoir une ICO ne nécessitant aucun entraînement spécifique au participant." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Électroencéphalogramme (EEG); Interface cerveau-ordinateur (ICO); Synchronisation liée à l'événement; Imagination motrice; Système Neuoronale Mirroire (SNM); Réalité Virtuelle (RV); Classification de EEG; Navigation; Réadaptation de la marche; Avatar; Incarnation; EEG; Brain-computer interface (BCI); Event-related synchronisation (ERS); Motor Imagery (MI); Mirror neuron system (MNS); Virtual reality (VR); EEG Classification; Gait rehabilitation; Embodiment; Engineering - Biomedical / Ingénierie - Biomédicale (UMI : 0541); Thèse ou mémoire / Thesis or Dissertation; Génie biomédical" name="citation_keywords"/>
+<meta content="A Multi-Modal, Modified-Feedback and Self-Paced Brain-Computer Interface (BCI) to Control an Embodied Avatar's Gait" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Alchalabi, Bilal" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/25553/4/Alchalabi_Bilal_2021_these.pdf" name="citation_pdf_url"/>
+<meta content="2021-07-13" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/25553" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25553?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25553?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25553?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25553?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25553?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25553?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/25553/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25553">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/25553/mets.xml-->
+<h2 class="page-header first-page-header">A Multi-Modal, Modified-Feedback and Self-Paced Brain-Computer Interface (BCI) to Control an Embodied Avatar's Gait</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Labbé, David</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Faubert, Jocelyn</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Alchalabi, Bilal</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2021-08-31T17:45:06Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2021-08-31T17:45:06Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-07-13</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2020-12</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/25553</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Électroencéphalogramme (EEG)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Interface cerveau-ordinateur (ICO)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Synchronisation liée à l'événement</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Imagination motrice</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Système Neuoronale Mirroire (SNM)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Réalité Virtuelle (RV)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Classification de EEG</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Navigation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Réadaptation de la marche</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Avatar</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Incarnation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">EEG</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Brain-computer interface (BCI)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Event-related synchronisation (ERS)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Motor Imagery (MI)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Mirror neuron system (MNS)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Virtual reality (VR)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">EEG Classification</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Gait rehabilitation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Embodiment</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Engineering - Biomedical / Ingénierie - Biomédicale (UMI : 0541)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">A Multi-Modal, Modified-Feedback and Self-Paced Brain-Computer Interface (BCI) to Control an Embodied Avatar's Gait</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Génie biomédical</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Brain-computer interfaces (BCI) have been used to control the gait of a virtual self-avatar with the
+aim of being used in gait rehabilitation. A BCI decodes the brain signals representing a desire to
+do something and transforms them into a control command for controlling external devices.
+The feelings described by the participants when they control a self-avatar in an immersive virtual
+environment (VE) demonstrate that humans can be embodied in the surrogate body of an avatar
+(ownership illusion). It has recently been shown that inducing the ownership illusion and then
+manipulating the movements of one’s self-avatar can lead to compensatory motor control
+strategies.
+In order to maximize this effect, there is a need for a method that measures and monitors
+embodiment levels of participants immersed in virtual reality (VR) to induce and maintain a strong
+ownership illusion. This is particularly true given that reaching a high level of both BCI
+performance and embodiment are inter-connected. To reach one of them, the second must be
+reached as well. Some limitations of many existing systems hinder their adoption for
+neurorehabilitation: 1- some use motor imagery (MI) of movements other than gait; 2- most
+systems allow the user to take single steps or to walk but do not allow both, which prevents users
+from progressing from steps to gait; 3- most of them function in a single BCI mode (cue-paced or
+self-paced), which prevents users from progressing from machine-dependent to machine-independent
+walking. Overcoming the aforementioned limitations can be done by combining
+different control modes and options in one single system. However, this would have a negative
+impact on BCI performance, therefore diminishing its usefulness as a potential rehabilitation tool.
+In this case, there will be a need to enhance BCI performance. For such purpose, many techniques
+have been used in the literature, such as providing modified feedback (whereby the presented
+feedback is not consistent with the user’s MI), sequential training (recalibrating the classifier as
+more data becomes available).
+This thesis was developed over 3 studies. The objective in study 1 was to investigate the possibility
+of measuring the level of embodiment of an immersive self-avatar, during the performing,
+observing and imagining of gait, using electroencephalogram (EEG) techniques, by presenting
+visual feedback that conflicts with the desired movement of embodied participants.
+The objective of study 2 was to develop and validate a BCI to control single steps and forward
+walking of an immersive virtual reality (VR) self-avatar, using mental imagery of these actions, in
+cue-paced and self-paced modes. Different performance enhancement strategies were
+implemented to increase BCI performance.
+The data of these two studies were then used in study 3 to construct a generic classifier that could
+eliminate offline calibration for future users and shorten training time.
+Twenty different healthy participants took part in studies 1 and 2. In study 1, participants wore an
+EEG cap and motion capture markers, with an avatar displayed in a head-mounted display (HMD)
+from a first-person perspective (1PP). They were cued to either perform, watch or imagine a single
+step forward or to initiate walking on a treadmill. For some of the trials, the avatar took a step with
+the contralateral limb or stopped walking before the participant stopped (modified feedback).
+In study 2, participants completed a 4-day sequential training to control the gait of an avatar in
+both BCI modes. In cue-paced mode, they were cued to imagine a single step forward, using their
+right or left foot, or to walk forward. In the self-paced mode, they were instructed to reach a target
+using the MI of multiple steps (switch control mode) or maintaining the MI of forward walking
+(continuous control mode). The avatar moved as a response to two calibrated regularized linear
+discriminant analysis (RLDA) classifiers that used the μ power spectral density (PSD) over the
+foot area of the motor cortex as features. The classifiers were retrained after every session. During
+the training, and for some of the trials, positive modified feedback was presented to half of the
+participants, where the avatar moved correctly regardless of the participant’s real performance.
+In both studies, the participants’ subjective experience was analyzed using a questionnaire. Results
+of study 1 show that subjective levels of embodiment correlate strongly with the power differences
+of the event-related synchronization (ERS) within the μ frequency band, and over the motor and
+pre-motor cortices between the modified and regular feedback trials.
+Results of study 2 show that all participants were able to operate the cued-paced BCI and the selfpaced
+BCI in both modes. For the cue-paced BCI, the average offline performance (classification
+rate) on day 1 was 67±6.1% and 86±6.1% on day 3, showing that the recalibration of the classifiers
+enhanced the offline performance of the BCI (p &lt; 0.01). The average online performance was
+85.9±8.4% for the modified feedback group (77-97%) versus 75% for the non-modified feedback
+group. For self-paced BCI, the average performance was 83% at switch control and 92% at
+continuous control mode, with a maximum of 12 seconds of control. Modified feedback enhanced
+BCI performances (p =0.001). Finally, results of study 3 show that the constructed generic models
+performed as well as models obtained from participant-specific offline data. The results show that
+there it is possible to design a participant-independent zero-training BCI.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les interfaces cerveau-ordinateur (ICO) ont été utilisées pour contrôler la marche d'un égo-avatar virtuel dans le but d'être utilisées dans la réadaptation de la marche. Une ICO décode les signaux du cerveau représentant un désir de faire produire un mouvement et les transforme en une commande de contrôle pour contrôler des appareils externes.  
+Les sentiments décrits par les participants lorsqu'ils contrôlent un égo-avatar dans un environnement virtuel immersif démontrent que les humains peuvent être incarnés dans un corps d'un avatar (illusion de propriété). Il a été récemment démontré que provoquer l’illusion de propriété puis manipuler les mouvements de l’égo-avatar peut conduire à des stratégies de contrôle moteur compensatoire.  
+Afin de maximiser cet effet, il existe un besoin d'une méthode qui mesure et surveille les niveaux d’incarnation des participants immergés dans la réalité virtuelle (RV) pour induire et maintenir une forte illusion de propriété.  
+D'autre part, atteindre un niveau élevé de performances (taux de classification) ICO et d’incarnation est interconnecté. Pour atteindre l'un d'eux, le second doit également être atteint. Certaines limitations de plusieurs de ces systèmes entravent leur adoption pour la neuroréhabilitation: 1- certains utilisent l'imagerie motrice (IM) des mouvements autres que la marche; 2- la plupart des systèmes permettent à l'utilisateur de faire des pas simples ou de marcher mais pas les deux, ce qui ne permet pas à un utilisateur de passer des pas à la marche; 3- la plupart fonctionnent en un seul mode d’ICO, rythmé (cue-paced) ou auto-rythmé (self-paced).  Surmonter les limitations susmentionnées peut être fait en combinant différents modes et options de commande dans un seul système. Cependant, cela aurait un impact négatif sur les performances de l’ICO, diminuant ainsi son utilité en tant qu'outil potentiel de réhabilitation. Dans ce cas, il sera nécessaire d'améliorer les performances des ICO. À cette fin, de nombreuses techniques ont été utilisées dans la littérature, telles que la rétroaction modifiée, le recalibrage du classificateur et l'utilisation d'un classificateur générique. 
+Le projet de cette thèse a été réalisé en 3 études, avec objectif d'étudier dans l'étude 1, la possibilité de mesurer le niveau d'incarnation d'un égo-avatar immersif, lors de l'exécution, de l'observation et de l'imagination de la marche, à l'aide des techniques encéphalogramme (EEG), en présentant une rétroaction visuelle qui entre en conflit avec la commande du contrôle moteur des sujets incarnés. L'objectif de l'étude 2 était de développer un BCI pour contrôler les pas et la marche vers l’avant d'un égo-avatar dans la réalité virtuelle immersive, en utilisant l'imagerie motrice de ces actions, dans des modes rythmés et auto-rythmés. Différentes stratégies d'amélioration des performances ont été mises en œuvre pour augmenter la performance (taux de classification) de l’ICO.  
+Les données de ces deux études ont ensuite été utilisées dans l'étude 3 pour construire des classificateurs génériques qui pourraient éliminer la calibration hors ligne pour les futurs utilisateurs et raccourcir le temps de formation.  
+Vingt participants sains différents ont participé aux études 1 et 2. Dans l'étude 1, les participants portaient un casque EEG et des marqueurs de capture de mouvement, avec un avatar affiché dans un casque de RV du point de vue de la première personne (1PP). Ils ont été invités à performer, à regarder ou à imaginer un seul pas en avant ou la marche vers l’avant (pour quelques secondes) sur le tapis roulant. Pour certains essais, l'avatar a fait un pas avec le membre controlatéral ou a arrêté de marcher avant que le participant ne s'arrête (rétroaction modifiée).  
+Dans l'étude 2, les participants ont participé à un entrainement séquentiel de 4 jours pour contrôler la marche d'un avatar dans les deux modes de l’ICO. En mode rythmé, ils ont imaginé un seul pas en avant, en utilisant leur pied droit ou gauche, ou la marche vers l’avant . En mode auto-rythmé, il leur a été demandé d'atteindre une cible en utilisant l'imagerie motrice (IM) de plusieurs pas (mode de contrôle intermittent) ou en maintenir l'IM de marche vers l’avant (mode de contrôle continu). L'avatar s'est déplacé en réponse à deux classificateurs ‘Regularized Linear Discriminant Analysis’ (RLDA) calibrés qui utilisaient comme caractéristiques la densité spectrale de puissance (Power Spectral Density; PSD) des bandes de fréquences µ (8-12 Hz) sur la zone du pied du cortex moteur. Les classificateurs ont été recalibrés après chaque session. Au cours de l’entrainement et pour certains des essais, une rétroaction modifiée positive a été présentée à la moitié des participants, où l'avatar s'est déplacé correctement quelle que soit la performance réelle du participant. Dans les deux études, l'expérience subjective des participants a été analysée à l'aide d'un questionnaire. 
+ Les résultats de l'étude 1 montrent que les niveaux subjectifs d’incarnation sont fortement corrélés à la différence de la puissance de la synchronisation liée à l’événement (Event-Related Synchronization; ERS) sur la bande de fréquence μ et sur le cortex moteur et prémoteur entre les essais de rétroaction modifiés et réguliers. L'étude 2 a montré que tous les participants étaient capables d’utiliser le BCI rythmé et auto-rythmé dans les deux modes. Pour le BCI rythmé, la performance hors ligne moyenne au jour 1 était de 67±6,1% et 86±6,1% au jour 3, ce qui montre que le recalibrage des classificateurs a amélioré la performance hors ligne du BCI (p &lt;0,01). La performance en ligne moyenne était de 85,9±8,4% pour le groupe de rétroaction modifié (77-97%) contre 75% pour le groupe de rétroaction non modifié. Pour le BCI auto-rythmé, la performance moyenne était de 83% en commande de commutateur et de 92% en mode de commande continue, avec un maximum de 12 secondes de commande. Les performances de l’ICO ont été améliorées par la rétroaction modifiée (p = 0,001). Enfin, les résultats de l'étude 3 montrent que pour la classification des initialisations des pas et de la marche, il a été possible de construire des modèles génériques à partir de données hors ligne spécifiques aux participants. Les résultats montrent la possibilité de concevoir une ICO ne nécessitant aucun entraînement spécifique au participant.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">UdeM.ORCIDAuteurThese</td><td class="word-break">0000-0001-5354-1474</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F25553&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=G%C3%A9nie+biom%C3%A9dical&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/25553/Alchalabi_Bilal_2021_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25553/Alchalabi_Bilal_2021_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Alchalabi_Bilal_2021_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/25553/Alchalabi_Bilal_2021_these.pdf?sequence=4&amp;isAllowed=y">Alchalabi_Bilal_2021_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">15.11Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25553">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

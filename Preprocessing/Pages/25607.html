@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Effets temporels et multi-échelles de l’urbanisation sur la diversité floristique et fonctionnelle des boisés</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Pellerin, Stéphanie" name="DC.contributor">
+<meta content="Lavoie, Claude" name="DC.contributor">
+<meta content="Bergeron, Alexandre" name="DC.creator">
+<meta content="2021-09-02T16:41:00Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="MONTHS_WITHHELD:24" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2021-09-02T16:41:00Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-07-14" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2020-11" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/25607" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Bioindicateur" name="DC.subject" xml:lang="fr"/>
+<meta content="Changements de biodiversité" name="DC.subject" xml:lang="fr"/>
+<meta content="Communauté végétale" name="DC.subject" xml:lang="fr"/>
+<meta content="Échelles spatiales" name="DC.subject" xml:lang="fr"/>
+<meta content="Filtre environnemental" name="DC.subject" xml:lang="fr"/>
+<meta content="Flore de Montréal" name="DC.subject" xml:lang="fr"/>
+<meta content="Homogénéisation biotique" name="DC.subject" xml:lang="fr"/>
+<meta content="Îlots de chaleur urbains" name="DC.subject" xml:lang="fr"/>
+<meta content="Traits fonctionnels" name="DC.subject" xml:lang="fr"/>
+<meta content="Urbanisation" name="DC.subject" xml:lang="fr"/>
+<meta content="Biodiversity changes" name="DC.subject" xml:lang="fr"/>
+<meta content="Bioindicator" name="DC.subject" xml:lang="fr"/>
+<meta content="Biotic homogenization" name="DC.subject" xml:lang="fr"/>
+<meta content="Environmental filter" name="DC.subject" xml:lang="fr"/>
+<meta content="Flora of Montreal" name="DC.subject" xml:lang="fr"/>
+<meta content="Functional traits" name="DC.subject" xml:lang="fr"/>
+<meta content="Plant community" name="DC.subject" xml:lang="fr"/>
+<meta content="Spatial scales" name="DC.subject" xml:lang="fr"/>
+<meta content="Urban heat islands" name="DC.subject" xml:lang="fr"/>
+<meta content="Urbanization" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Ecology / Biologie - Écologie (UMI : 0329)" name="DC.subject" xml:lang="fr"/>
+<meta content="Effets temporels et multi-échelles de l’urbanisation sur la diversité floristique et fonctionnelle des boisés" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="L’urbanisation transforme et fragmente le paysage en plus de changer son climat et d’induire une homogénéisation biotique mondiale, c’est-à-dire une perte de biodiversité inter-habitats. Qu’elles soient historiques ou contemporaines, naturelles ou humaines, les nombreuses perturbations au sein d’une ville compliquent l’étude des relations entre les plantes et leur environnement, mais l’originalité de cette thèse est de les décortiquer soigneusement à diverses échelles de temps et d’espace. Mes recherches visent à comprendre l’effet de l’urbanisation sur la diversité floristique et fonctionnelle des boisés. L’étude se déroule à Montréal et sur trois îles environnantes, au cœur de la région la plus peuplée du Québec. J’examine d’abord les changements temporels des communautés végétales d’un boisé, et identifie les processus en cause. La comparaison d’inventaires effectués au Bois-de-Saraguay (96 ha), avec ceux d’une étude similaire menée 30 ans plus tôt, a permis d’atteindre cet objectif. Je regarde ensuite s’il est possible de recourir aux ptéridophytes pour estimer l’intégrité forestière urbaine. À cette fin, la diversité ptéridologique a été répertoriée au sein de 82 boisés (paysage) et de 225 quadrats (microhabitats). Des variables révélatrices des perturbations ont servi à définir les niveaux d’intégrité. En troisième lieu, j’identifie les rôles des contraintes (filtres) associées à l’urbanisation et des processus sous-jacents dans l’assemblage des communautés de sous-bois. Pour ce faire, la diversité des plantes vasculaires de sous-bois a été recensée dans 50 boisés et 431 quadrats. Avec ces données, 18 aspects de la diversité taxinomique et fonctionnelle ont été examinés. Des filtres de grande (paysage) et fine (habitat) échelles ont été définis à partir de variables environnementales et spatiales. Mon dernier objectif consiste à dresser le portrait de la flore de l’aire d’étude. Mon analyse des communautés du Bois-de-Saraguay révèle qu’une homogénéisation fonctionnelle du sous-bois s’y est produite. Celle-ci résulte d’une réorganisation spatiale des populations dans laquelle des espèces similaires — comprenant les plantes ligneuses à fruits charnus et clonales — sont devenues dominantes. Selon mes résultats, ces changements ont commencé grâce à des événements de dissémination des espèces, puis en suivant les perturbations anthropiques en place. Mon analyse de la diversité ptéridologique montre qu’elle diminue dans les boisés perturbés par l’effet d’îlots de chaleur et par l’effet de lisières. Des niveaux d’intégrité du paysage forestier et des microhabitats peuvent donc être indiqués par les ptéridophytes. Mon analyse de la flore de sous-bois montre que les caractéristiques contemporaines des forêts, de la matrice urbaine et des habitats locaux représentent les trois catégories de filtres qui façonnent le plus d’aspects de la diversité végétale. L’histoire forestière influence peu d’aspects, hormis la présence de plantes exotiques par exemple. L’assemblage des communautés est principalement contrôlé par l’environnement et très secondairement par des processus spatiaux tels que la dissémination végétale. L’analyse des filtres révèle que les grands boisés sont riches en espèces, alors que les petits ou ceux de formes allongées favorisent les plantes clonales ou de grande taille. Les plantes se disséminant sans assistance se rencontrent davantage dans les boisés des zones faiblement urbanisées, les arbustes exotiques dans les zones résidentielles et les espèces à fruits adhésifs dans les zones fortement bâties. Les îlots de chaleur font chuter la diversité de traits fonctionnels. À petite échelle, la couverture arborée et arbustive influence fortement le type de diversité des sous-bois. De plus, mes inventaires dévoilent que les boisés étudiés sont très riches en plantes indigènes, qu’ils recèlent encore de nouvelles espèces pour le Québec, et ne comptent pas moins de 20 % de la flore provinciale. En somme, ma thèse milite en faveur de la conservation de l’ensemble des boisés urbains, même ceux de petite taille." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Urbanization transforms and fragments the landscape. It also changes its climate and induces a global biotic homogenization, namely a loss of between-habitat biodiversity. Whether historical or contemporary, natural or human, the numerous disturbances within a city make it difficult to study the relationships between plants and their environment. The originality of this thesis is to dissect them at various scales of time and space carefully. In this context, my main aim is to understand the effect of urbanization on the floristic and functional diversity of woodlands. My study takes place in Montreal and on three surrounding islands of the most populated region of Quebec. I first examine the temporal changes of communities in a forest park and identify the processes involved. The comparison of inventories carried out in the Bois-de-Saraguay (96 ha), with similar surveys conducted 30 years ago, made it possible to achieve this objective. Second, I consider the possibility of using pteridophytes to estimate the urban forest integrity. To this end, I recorded pteridological diversity among 82 woodlands (landscape) and 225 quadrats (microhabitats). I used metrics of disturbances to define the integrity levels. Third, I identify the roles of constraints (filters) associated with urbanization and underlying processes in the assembly of understorey communities. To this aim, I identified the diversity of understorey vascular plants in 50 woodlands and 431 quadrats. From these data, I examined 18 taxonomic and functional diversity aspects. I defined large (landscape) and fine (habitat) scale filters based on environmental and spatial variables. My final objective is to describe the flora of the study area. My analyses reveal that a functional homogenization occurred in the understorey communities of the Bois-de-Saraguay. This homogenization results from a spatial reorganization of communities in which species with similar traits — including woody plants with fleshy fruits and clonality — became dominant. According to my results, these changes began through species dispersal events, then following anthropogenic disturbances in place. Pteridological diversity decreases in woodlands disturbed by the heat island effect and by the edge effect, suggesting that this group of species is a good surrogate for urban forest integrity. My analyses of the understorey flora show that the contemporary features of forests, urban matrix and local habitats represent the three categories of filters that shape the most aspects of plant diversity. Forest history influences few aspects, apart from the presence of exotic plants for example. The assembly of communities is mainly controlled by the environment and secondarily by spatial processes such as plant dispersal. Analysis of the filters reveals that large woodlands are species rich, while small or elongated ones favor tall or clonal plants. Plants with unassisted dispersal are more common in forests located in weakly urbanized areas, exotic shrubs in residential areas, and adhesive-fruit species in highly built-up areas. Urban heat islands significantly reduced the diversity of functional traits. At the fine scale, tree and shrub cover strongly influences the type of understorey diversity. Finally, my inventories reveal that the studied forests are very rich in native plants. They still harbor unrecorded species for Québec and account for no less than 20% of the provincial flora. Overall, my thesis argues for the preservation of all the urban forests, even small ones." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Bioindicateur; Changements de biodiversité; Communauté végétale; Échelles spatiales; Filtre environnemental; Flore de Montréal; Homogénéisation biotique; Îlots de chaleur urbains; Traits fonctionnels; Urbanisation; Biodiversity changes; Bioindicator; Biotic homogenization; Environmental filter; Flora of Montreal; Functional traits; Plant community; Spatial scales; Urban heat islands; Urbanization; Biology - Ecology / Biologie - Écologie (UMI : 0329); Thèse ou mémoire / Thesis or Dissertation; Sciences biologiques" name="citation_keywords"/>
+<meta content="Effets temporels et multi-échelles de l’urbanisation sur la diversité floristique et fonctionnelle des boisés" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Bergeron, Alexandre" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/25607/2/Bergeron_Alexandre_2020_these.pdf" name="citation_pdf_url"/>
+<meta content="2021-07-14" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/25607" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25607?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25607?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25607?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25607?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25607?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25607?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2953" role="menuitem">Faculté des arts et des sciences – Département de sciences biologiques</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2994" role="menuitem">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2953">Faculté des arts et des sciences – Département de sciences biologiques</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2994">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2994"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/25607/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25607">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/25607/mets.xml-->
+<h2 class="page-header first-page-header">Effets temporels et multi-échelles de l’urbanisation sur la diversité floristique et fonctionnelle des boisés</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Pellerin, Stéphanie</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Lavoie, Claude</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Bergeron, Alexandre</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2021-09-02T16:41:00Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">MONTHS_WITHHELD:24</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2021-09-02T16:41:00Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-07-14</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2020-11</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/25607</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Bioindicateur</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Changements de biodiversité</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Communauté végétale</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Échelles spatiales</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Filtre environnemental</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Flore de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Homogénéisation biotique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Îlots de chaleur urbains</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Traits fonctionnels</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Urbanisation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Biodiversity changes</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Bioindicator</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Biotic homogenization</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Environmental filter</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Flora of Montreal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Functional traits</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Plant community</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Spatial scales</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Urban heat islands</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Urbanization</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Ecology / Biologie - Écologie (UMI : 0329)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Effets temporels et multi-échelles de l’urbanisation sur la diversité floristique et fonctionnelle des boisés</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences biologiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">L’urbanisation transforme et fragmente le paysage en plus de changer son climat et d’induire une homogénéisation biotique mondiale, c’est-à-dire une perte de biodiversité inter-habitats. Qu’elles soient historiques ou contemporaines, naturelles ou humaines, les nombreuses perturbations au sein d’une ville compliquent l’étude des relations entre les plantes et leur environnement, mais l’originalité de cette thèse est de les décortiquer soigneusement à diverses échelles de temps et d’espace. Mes recherches visent à comprendre l’effet de l’urbanisation sur la diversité floristique et fonctionnelle des boisés. L’étude se déroule à Montréal et sur trois îles environnantes, au cœur de la région la plus peuplée du Québec. J’examine d’abord les changements temporels des communautés végétales d’un boisé, et identifie les processus en cause. La comparaison d’inventaires effectués au Bois-de-Saraguay (96 ha), avec ceux d’une étude similaire menée 30 ans plus tôt, a permis d’atteindre cet objectif. Je regarde ensuite s’il est possible de recourir aux ptéridophytes pour estimer l’intégrité forestière urbaine. À cette fin, la diversité ptéridologique a été répertoriée au sein de 82 boisés (paysage) et de 225 quadrats (microhabitats). Des variables révélatrices des perturbations ont servi à définir les niveaux d’intégrité. En troisième lieu, j’identifie les rôles des contraintes (filtres) associées à l’urbanisation et des processus sous-jacents dans l’assemblage des communautés de sous-bois. Pour ce faire, la diversité des plantes vasculaires de sous-bois a été recensée dans 50 boisés et 431 quadrats. Avec ces données, 18 aspects de la diversité taxinomique et fonctionnelle ont été examinés. Des filtres de grande (paysage) et fine (habitat) échelles ont été définis à partir de variables environnementales et spatiales. Mon dernier objectif consiste à dresser le portrait de la flore de l’aire d’étude. Mon analyse des communautés du Bois-de-Saraguay révèle qu’une homogénéisation fonctionnelle du sous-bois s’y est produite. Celle-ci résulte d’une réorganisation spatiale des populations dans laquelle des espèces similaires — comprenant les plantes ligneuses à fruits charnus et clonales — sont devenues dominantes. Selon mes résultats, ces changements ont commencé grâce à des événements de dissémination des espèces, puis en suivant les perturbations anthropiques en place. Mon analyse de la diversité ptéridologique montre qu’elle diminue dans les boisés perturbés par l’effet d’îlots de chaleur et par l’effet de lisières. Des niveaux d’intégrité du paysage forestier et des microhabitats peuvent donc être indiqués par les ptéridophytes. Mon analyse de la flore de sous-bois montre que les caractéristiques contemporaines des forêts, de la matrice urbaine et des habitats locaux représentent les trois catégories de filtres qui façonnent le plus d’aspects de la diversité végétale. L’histoire forestière influence peu d’aspects, hormis la présence de plantes exotiques par exemple. L’assemblage des communautés est principalement contrôlé par l’environnement et très secondairement par des processus spatiaux tels que la dissémination végétale. L’analyse des filtres révèle que les grands boisés sont riches en espèces, alors que les petits ou ceux de formes allongées favorisent les plantes clonales ou de grande taille. Les plantes se disséminant sans assistance se rencontrent davantage dans les boisés des zones faiblement urbanisées, les arbustes exotiques dans les zones résidentielles et les espèces à fruits adhésifs dans les zones fortement bâties. Les îlots de chaleur font chuter la diversité de traits fonctionnels. À petite échelle, la couverture arborée et arbustive influence fortement le type de diversité des sous-bois. De plus, mes inventaires dévoilent que les boisés étudiés sont très riches en plantes indigènes, qu’ils recèlent encore de nouvelles espèces pour le Québec, et ne comptent pas moins de 20 % de la flore provinciale. En somme, ma thèse milite en faveur de la conservation de l’ensemble des boisés urbains, même ceux de petite taille.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Urbanization transforms and fragments the landscape. It also changes its climate and induces a global biotic homogenization, namely a loss of between-habitat biodiversity. Whether historical or contemporary, natural or human, the numerous disturbances within a city make it difficult to study the relationships between plants and their environment. The originality of this thesis is to dissect them at various scales of time and space carefully. In this context, my main aim is to understand the effect of urbanization on the floristic and functional diversity of woodlands. My study takes place in Montreal and on three surrounding islands of the most populated region of Quebec. I first examine the temporal changes of communities in a forest park and identify the processes involved. The comparison of inventories carried out in the Bois-de-Saraguay (96 ha), with similar surveys conducted 30 years ago, made it possible to achieve this objective. Second, I consider the possibility of using pteridophytes to estimate the urban forest integrity. To this end, I recorded pteridological diversity among 82 woodlands (landscape) and 225 quadrats (microhabitats). I used metrics of disturbances to define the integrity levels. Third, I identify the roles of constraints (filters) associated with urbanization and underlying processes in the assembly of understorey communities. To this aim, I identified the diversity of understorey vascular plants in 50 woodlands and 431 quadrats. From these data, I examined 18 taxonomic and functional diversity aspects. I defined large (landscape) and fine (habitat) scale filters based on environmental and spatial variables. My final objective is to describe the flora of the study area. My analyses reveal that a functional homogenization occurred in the understorey communities of the Bois-de-Saraguay. This homogenization results from a spatial reorganization of communities in which species with similar traits — including woody plants with fleshy fruits and clonality — became dominant. According to my results, these changes began through species dispersal events, then following anthropogenic disturbances in place. Pteridological diversity decreases in woodlands disturbed by the heat island effect and by the edge effect, suggesting that this group of species is a good surrogate for urban forest integrity. My analyses of the understorey flora show that the contemporary features of forests, urban matrix and local habitats represent the three categories of filters that shape the most aspects of plant diversity. Forest history influences few aspects, apart from the presence of exotic plants for example. The assembly of communities is mainly controlled by the environment and secondarily by spatial processes such as plant dispersal. Analysis of the filters reveals that large woodlands are species rich, while small or elongated ones favor tall or clonal plants. Plants with unassisted dispersal are more common in forests located in weakly urbanized areas, exotic shrubs in residential areas, and adhesive-fruit species in highly built-up areas. Urban heat islands significantly reduced the diversity of functional traits. At the fine scale, tree and shrub cover strongly influences the type of understorey diversity. Finally, my inventories reveal that the studied forests are very rich in native plants. They still harbor unrecorded species for Québec and account for no less than 20% of the provincial flora. Overall, my thesis argues for the preservation of all the urban forests, even small ones.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F25607&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+biologiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a href="/xmlui/bitstream/handle/1866/25607/Bergeron_Alexandre_2020_these.pdf?sequence=2&amp;isAllowed=y"><img alt="PDF" class="thumbnail-papyrus thumbnail_icone" height="122" src="/xmlui/themes/Mirage2/images/mimes/mime_pdf.png" style="height: 122px;" title="PDF" width="92"/></a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Bergeron_Alexandre_2020_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/25607/Bergeron_Alexandre_2020_these.pdf?sequence=2&amp;isAllowed=y">Bergeron_Alexandre_2020_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">27.57Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+<div>
+<span class="bold embargo"><span class="dateembargo">Under embargo</span> until: </span> <span class="embargo dateembargo">2023-07-14</span>
+<div class="btn_request_a_copy">
+<a class="btn_request_a_copy" href="/xmlui/bitstream/handle/1866/25607/Bergeron_Alexandre_2020_these.pdf?sequence=2&amp;isAllowed=y">🔓 Request copy</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2994/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2994">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a> [388]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25607">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

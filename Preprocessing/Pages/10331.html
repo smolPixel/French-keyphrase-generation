@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Pharmacométrie de la ropivacaïne suivant l’anesthésie locorégionale chez les patients orthopédiques : caractérisation de l’intensité et de la durée du bloc sensitif</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Varin, France" name="DC.contributor">
+<meta content="Drolet, Pierre" name="DC.contributor">
+<meta content="Gaudreault, Francois" name="DC.creator">
+<meta content="2014-03-24T14:34:43Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2014-03-24T14:34:43Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2014-03-03" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2013-04" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/10331" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="ropivacaine" name="DC.subject" xml:lang="fr"/>
+<meta content="pharmacocinétique" name="DC.subject" xml:lang="fr"/>
+<meta content="pharmacodynamie" name="DC.subject" xml:lang="fr"/>
+<meta content="âge" name="DC.subject" xml:lang="fr"/>
+<meta content="bloc nerveux périphérique" name="DC.subject" xml:lang="fr"/>
+<meta content="anesthésie spinale" name="DC.subject" xml:lang="fr"/>
+<meta content="patients orthopédiques" name="DC.subject" xml:lang="fr"/>
+<meta content="pharmacokinetics" name="DC.subject" xml:lang="fr"/>
+<meta content="pharmacodynamics" name="DC.subject" xml:lang="fr"/>
+<meta content="age" name="DC.subject" xml:lang="fr"/>
+<meta content="peripheral nerve block" name="DC.subject" xml:lang="fr"/>
+<meta content="spinal anesthesia" name="DC.subject" xml:lang="fr"/>
+<meta content="orthopedic patients" name="DC.subject" xml:lang="fr"/>
+<meta content="Health Sciences - Pharmacology / Sciences de la santé - Pharmacologie (UMI : 0419)" name="DC.subject" xml:lang="fr"/>
+<meta content="Pharmacométrie de la ropivacaïne suivant l’anesthésie locorégionale chez les patients orthopédiques : caractérisation de l’intensité et de la durée du bloc sensitif" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Introduction &amp; Objectifs : Pour assurer l’analgésie postopératoire, l’anesthésiste dispose, en plus des différentes classes de médicaments administrés par voie orale ou intraveineuse, de diverses techniques pour bloquer l’influx nerveux douloureux en administrant les anesthésiques locaux (AL) de manière centrale ou périphérique. La ropivacaïne (ROP), un AL à longue durée d’action, est un médicament de première intention partout dans le monde, en raison de sa grande efficacité et de son faible risque de toxicité. Contrairement à certains pays, la ROP n'est toujours pas indiquée au Canada pour la rachianesthésie (bloc central) en raison d'un manque de données probantes. Jusqu'à présent, les efforts de recherche ont essentiellement porté sur la sécurité ainsi que sur la durée d’action du médicament lorsqu’administré par voie spinale. De plus, les doses optimales de ROP pour l’anesthésie régionale périphérique ne sont pas encore précisément connues. La posologie devrait être adaptée au site d’administration ainsi qu’à l’intensité et la durée du stimulus produit par la chirurgie. Ultimement, cela permettrait aux cliniciens d’identifier le régime optimal en fonction des facteurs démographiques qui pourraient affecter la pharmacocinétique (PK) et la pharmacodynamie (PD) de l’AL (objectif global de ces travaux). 
+Validation de la Méthode Analytique  Manuscrit 1 : Une méthode analytique spécifique et sensible permettant de déterminer les concentrations plasmatiques de ROP a d’abord été optimisée et validée. 
+Validation du Biomarqueur   Manuscrit 2 : Nous avons ensuite mis au point et évalué la fiabilité d’une méthode quantitative basée sur la mesure du seuil de perception sensorielle (CPT) chez le volontaire sain. Ce test nécessite l’application d’un courant électrique transcutané qui augmente graduellement et qui, selon la fréquence choisie, est capable de stimuler spécifiquement les fibres nerveuses impliquées dans le cheminement de l’influx nerveux douloureux. Les résultats obtenus chez les volontaires sains indiquent que la mesure CPT est fiable, reproductible et permet de suivre l’évolution temporelle du bloc sensitif. 
+Études cliniques  Manuscrit 3 : Nous avons ensuite caractérisé, pendant plus de 72 h, l’absorption systémique de la ROP lorsqu’administrée pour un bloc du nerf fémoral chez 19 patients subissant une chirurgie du genou. Le modèle PK populationnel utilisé pour analyser nos résultats comporte une absorption biphasique durant laquelle une fraction de la dose administrée pénètre rapidement (temps d’absorption moyen : 27 min, IC % 19 – 38 min) dans le flux sanguin systémique pendant que l’autre partie, en provenance du site de dépôt, est redistribuée beaucoup plus lentement (demi-vie (T1/2) : 2.6 h, IC % 1.6 – 4.3 h) vers la circulation systémique. Une relation statistiquement significative entre l’âge de nos patients et la redistribution de l’AL suggère que la perméabilité tissulaire est augmentée avec l’âge. Manuscrit 4 : Une analyse PK-PD du comportement sensitif du bloc fémoral (CPT) a été effectuée. Le modèle développé a estimé à 20.2 ± 10.1 mg la quantité de ROP nécessaire au site d’action pour produire 90 % de l’effet maximal (AE90). À 2 X la AE90, le modèle prédit un début d’action de 23.4 ± 12.5 min et une durée de 22.9 ± 5.3 h. Il s’agit de la première étude ayant caractérisé le comportement sensitif d’un bloc nerveux périphérique. Manuscrit 5 : La troisième et dernière étude clinique a été conduite chez les patients qui devaient subir une chirurgie du genou sous rachianesthésie. Tout comme pour le bloc du nerf fémoral, le modèle PK le plus approprié pour nos données suggère que l’absorption systémique de la ROP à partir du liquide céphalo-rachidien est biphasique; c.à.d. une phase initiale (T1/2 : 49 min, IC %: 24 – 77 min) suivie (délai: 18 ± 2  min) d'une phase légèrement plus lente (T1/2 : 66 min, IC %: 36 – 97 min). L’effet maximal a été observé beaucoup plus rapidement, soit aux environs de 12.6 ± 4.9 min, avant de revenir aux valeurs de base 210 ± 55 min suivant l’administration de l’agent. Ces données ont permis d’estimer une AE50 de 7.3 ± 2.3 mg pour l'administration spinale. 
+Conclusion : En somme, ces modèles peuvent être utilisés pour prédire l’évolution temporelle du bloc sensitif de l’anesthésie  rachidienne et périphérique (fémorale), et par conséquent, optimiser l’utilisation clinique de la ROP en fonction des besoins des cliniciens, notamment en ce qui a trait à l’âge du patient." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Background &amp; Objectives: To provide postoperative analgesia, the anesthesiologist has at his disposal a panel of different medications and also regional techniques of neural blockade. Loco-regional analgesia (central or peripheral) blocks conduction of painful influx to the central nervous system by the use of local anesthetics (LA). Among these drugs, ropivacaine (ROP), has an enormous potential given is long-acting efficacy and low incidence of toxicity. Currently, ROP is not licensed for use in spinal anesthesia (central block) in all countries due to a lack of data from controlled clinical trials. So far, research efforts on this topic have mainly focused on safety and dose-finding issues. In addition, the most appropriate dose for a peripheral nerve block has never been estimated empirically. Dosing recommendation for LAs should be site-specific and adapted to the intensity of the stimuli produced by a surgery and to the duration of analgesia required. Ultimately, these should guide clinicians in identifying the most appropriate block for the individual patients by taking into account demographic factors that may affect the pharmacokinetics (PK) and pharmacodynamics (PD) of LA overall objective of the current research)
+Analytical Method Validation   Manuscript 1: First, a specific and sensitive assay has been developed and validated for the determination of ROP in human plasma. 
+Biomarker Validation Manuscript 2: Second, the reliability of a neurostimulator measuring current perception threshold (CPT) was assessed in healthy volunteers. The device uses a constant transcutaneous electrical sine wave stimulus at different frequencies specific to pain-conducting fibers. Our results suggest that CPT are reliable and can be applied to characterize, in a quantitative manner, the sensory onset of a peripheral nerve block in a clinical setting. 
+Clinical Studies Manuscript 3: The systemic absorption of ROP after a femoral nerve block in orthopedic patients was then characterized using extended rich PK-sampling, i.e. up to 4 days post-dosing. Our model used for data analysis confirms that, in a similar manner to neuraxial sites of LAs injection, the systemic absorption of ROP from the femoral space is biphasic, i.e. a rapid initial phase (mean absorption time of 25 min, % CI: 19 – 38 min) followed by a much slower phase (half-life (T1/2) of 3.9 h, % CI: 2.9 – 6.0 h). A significant age-related increase in the permeability of the LA was also observed in our elderly patients (n = 19, age = 62.6 ± 7.1 yr). 
+Manuscript 4: A population PK-PD analysis of the sensory anesthesia (CPT) of ROP using our PK model was also performed. The effect-site amount producing 90% of the maximum possible effect (AE90) was estimated as 20.2 ± 10.1 mg. At 2 x AE90, the sigmoid Emax model predicted an onset time of 23.4 ± 12.5 min and a duration of 22.9 ± 5.3 h. To the best of our knowledge, this is the first PK-PD model developed for a peripheral nerve block. 
+Manuscript 5: In the third and last study, a similar approach was used to characterise the PK-PD relationship of intrathecally administered ROP in patients undergoing minor lower limb surgery. The biphasic release of the agent from the intrathecal space was modeled using a rapid initial absorption phase (T1/2 of 49 min, % CI: 24 – 77 min) followed (lag-time of ~ 18 ± 2 min) by a slightly slower input rate (T1/2 of 66 min, % CI: 36 – 97 min). ROP maximal response was observed within 12.6 ± 4.9 min of dosing, with a subsequent return to baseline 210 ± 55 min after the administration of the LA. The effect-site amount producing 50 % of the Emax (AE50) was estimated at 7.3 ± 2.3 mg.  
+Conclusion: Altogether, the proposed models can be used to predict the time-course of sensory blockade after a femoral nerve block and spinal anesthesia using ROP and to optimize dosing regimen according to clinical needs with regard to important cofactors such as age." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="ropivacaine; pharmacocinétique; pharmacodynamie; âge; bloc nerveux périphérique; anesthésie spinale; patients orthopédiques; pharmacokinetics; pharmacodynamics; age; peripheral nerve block; spinal anesthesia; orthopedic patients; Health Sciences - Pharmacology / Sciences de la santé - Pharmacologie (UMI : 0419); Thèse ou mémoire / Thesis or Dissertation; Sciences pharmaceutiques" name="citation_keywords"/>
+<meta content="Pharmacométrie de la ropivacaïne suivant l’anesthésie locorégionale chez les patients orthopédiques : caractérisation de l’intensité et de la durée du bloc sensitif" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Gaudreault, Francois" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/10331/2/Gaudreault_Francois_2013_these.pdf" name="citation_pdf_url"/>
+<meta content="2014-03-03" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/10331" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10331?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10331?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10331?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10331?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10331?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10331?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2925" role="menuitem">Faculté de pharmacie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2969" role="menuitem">Faculté de pharmacie – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2925">Faculté de pharmacie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2969">Faculté de pharmacie – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2969"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2969/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/10331/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/10331">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10331/mets.xml-->
+<h2 class="page-header first-page-header">Pharmacométrie de la ropivacaïne suivant l’anesthésie locorégionale chez les patients orthopédiques : caractérisation de l’intensité et de la durée du bloc sensitif</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Varin, France</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Drolet, Pierre</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Gaudreault, Francois</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2014-03-24T14:34:43Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2014-03-24T14:34:43Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2014-03-03</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2013-04</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/10331</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">ropivacaine</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">pharmacocinétique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">pharmacodynamie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">âge</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">bloc nerveux périphérique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">anesthésie spinale</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">patients orthopédiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">pharmacokinetics</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">pharmacodynamics</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">age</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">peripheral nerve block</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">spinal anesthesia</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">orthopedic patients</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Health Sciences - Pharmacology / Sciences de la santé - Pharmacologie (UMI : 0419)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Pharmacométrie de la ropivacaïne suivant l’anesthésie locorégionale chez les patients orthopédiques : caractérisation de l’intensité et de la durée du bloc sensitif</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences pharmaceutiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Introduction &amp; Objectifs : Pour assurer l’analgésie postopératoire, l’anesthésiste dispose, en plus des différentes classes de médicaments administrés par voie orale ou intraveineuse, de diverses techniques pour bloquer l’influx nerveux douloureux en administrant les anesthésiques locaux (AL) de manière centrale ou périphérique. La ropivacaïne (ROP), un AL à longue durée d’action, est un médicament de première intention partout dans le monde, en raison de sa grande efficacité et de son faible risque de toxicité. Contrairement à certains pays, la ROP n'est toujours pas indiquée au Canada pour la rachianesthésie (bloc central) en raison d'un manque de données probantes. Jusqu'à présent, les efforts de recherche ont essentiellement porté sur la sécurité ainsi que sur la durée d’action du médicament lorsqu’administré par voie spinale. De plus, les doses optimales de ROP pour l’anesthésie régionale périphérique ne sont pas encore précisément connues. La posologie devrait être adaptée au site d’administration ainsi qu’à l’intensité et la durée du stimulus produit par la chirurgie. Ultimement, cela permettrait aux cliniciens d’identifier le régime optimal en fonction des facteurs démographiques qui pourraient affecter la pharmacocinétique (PK) et la pharmacodynamie (PD) de l’AL (objectif global de ces travaux). 
+Validation de la Méthode Analytique  Manuscrit 1 : Une méthode analytique spécifique et sensible permettant de déterminer les concentrations plasmatiques de ROP a d’abord été optimisée et validée. 
+Validation du Biomarqueur   Manuscrit 2 : Nous avons ensuite mis au point et évalué la fiabilité d’une méthode quantitative basée sur la mesure du seuil de perception sensorielle (CPT) chez le volontaire sain. Ce test nécessite l’application d’un courant électrique transcutané qui augmente graduellement et qui, selon la fréquence choisie, est capable de stimuler spécifiquement les fibres nerveuses impliquées dans le cheminement de l’influx nerveux douloureux. Les résultats obtenus chez les volontaires sains indiquent que la mesure CPT est fiable, reproductible et permet de suivre l’évolution temporelle du bloc sensitif. 
+Études cliniques  Manuscrit 3 : Nous avons ensuite caractérisé, pendant plus de 72 h, l’absorption systémique de la ROP lorsqu’administrée pour un bloc du nerf fémoral chez 19 patients subissant une chirurgie du genou. Le modèle PK populationnel utilisé pour analyser nos résultats comporte une absorption biphasique durant laquelle une fraction de la dose administrée pénètre rapidement (temps d’absorption moyen : 27 min, IC % 19 – 38 min) dans le flux sanguin systémique pendant que l’autre partie, en provenance du site de dépôt, est redistribuée beaucoup plus lentement (demi-vie (T1/2) : 2.6 h, IC % 1.6 – 4.3 h) vers la circulation systémique. Une relation statistiquement significative entre l’âge de nos patients et la redistribution de l’AL suggère que la perméabilité tissulaire est augmentée avec l’âge. Manuscrit 4 : Une analyse PK-PD du comportement sensitif du bloc fémoral (CPT) a été effectuée. Le modèle développé a estimé à 20.2 ± 10.1 mg la quantité de ROP nécessaire au site d’action pour produire 90 % de l’effet maximal (AE90). À 2 X la AE90, le modèle prédit un début d’action de 23.4 ± 12.5 min et une durée de 22.9 ± 5.3 h. Il s’agit de la première étude ayant caractérisé le comportement sensitif d’un bloc nerveux périphérique. Manuscrit 5 : La troisième et dernière étude clinique a été conduite chez les patients qui devaient subir une chirurgie du genou sous rachianesthésie. Tout comme pour le bloc du nerf fémoral, le modèle PK le plus approprié pour nos données suggère que l’absorption systémique de la ROP à partir du liquide céphalo-rachidien est biphasique; c.à.d. une phase initiale (T1/2 : 49 min, IC %: 24 – 77 min) suivie (délai: 18 ± 2  min) d'une phase légèrement plus lente (T1/2 : 66 min, IC %: 36 – 97 min). L’effet maximal a été observé beaucoup plus rapidement, soit aux environs de 12.6 ± 4.9 min, avant de revenir aux valeurs de base 210 ± 55 min suivant l’administration de l’agent. Ces données ont permis d’estimer une AE50 de 7.3 ± 2.3 mg pour l'administration spinale. 
+Conclusion : En somme, ces modèles peuvent être utilisés pour prédire l’évolution temporelle du bloc sensitif de l’anesthésie  rachidienne et périphérique (fémorale), et par conséquent, optimiser l’utilisation clinique de la ROP en fonction des besoins des cliniciens, notamment en ce qui a trait à l’âge du patient.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Background &amp; Objectives: To provide postoperative analgesia, the anesthesiologist has at his disposal a panel of different medications and also regional techniques of neural blockade. Loco-regional analgesia (central or peripheral) blocks conduction of painful influx to the central nervous system by the use of local anesthetics (LA). Among these drugs, ropivacaine (ROP), has an enormous potential given is long-acting efficacy and low incidence of toxicity. Currently, ROP is not licensed for use in spinal anesthesia (central block) in all countries due to a lack of data from controlled clinical trials. So far, research efforts on this topic have mainly focused on safety and dose-finding issues. In addition, the most appropriate dose for a peripheral nerve block has never been estimated empirically. Dosing recommendation for LAs should be site-specific and adapted to the intensity of the stimuli produced by a surgery and to the duration of analgesia required. Ultimately, these should guide clinicians in identifying the most appropriate block for the individual patients by taking into account demographic factors that may affect the pharmacokinetics (PK) and pharmacodynamics (PD) of LA overall objective of the current research)
+Analytical Method Validation   Manuscript 1: First, a specific and sensitive assay has been developed and validated for the determination of ROP in human plasma. 
+Biomarker Validation Manuscript 2: Second, the reliability of a neurostimulator measuring current perception threshold (CPT) was assessed in healthy volunteers. The device uses a constant transcutaneous electrical sine wave stimulus at different frequencies specific to pain-conducting fibers. Our results suggest that CPT are reliable and can be applied to characterize, in a quantitative manner, the sensory onset of a peripheral nerve block in a clinical setting. 
+Clinical Studies Manuscript 3: The systemic absorption of ROP after a femoral nerve block in orthopedic patients was then characterized using extended rich PK-sampling, i.e. up to 4 days post-dosing. Our model used for data analysis confirms that, in a similar manner to neuraxial sites of LAs injection, the systemic absorption of ROP from the femoral space is biphasic, i.e. a rapid initial phase (mean absorption time of 25 min, % CI: 19 – 38 min) followed by a much slower phase (half-life (T1/2) of 3.9 h, % CI: 2.9 – 6.0 h). A significant age-related increase in the permeability of the LA was also observed in our elderly patients (n = 19, age = 62.6 ± 7.1 yr). 
+Manuscript 4: A population PK-PD analysis of the sensory anesthesia (CPT) of ROP using our PK model was also performed. The effect-site amount producing 90% of the maximum possible effect (AE90) was estimated as 20.2 ± 10.1 mg. At 2 x AE90, the sigmoid Emax model predicted an onset time of 23.4 ± 12.5 min and a duration of 22.9 ± 5.3 h. To the best of our knowledge, this is the first PK-PD model developed for a peripheral nerve block. 
+Manuscript 5: In the third and last study, a similar approach was used to characterise the PK-PD relationship of intrathecally administered ROP in patients undergoing minor lower limb surgery. The biphasic release of the agent from the intrathecal space was modeled using a rapid initial absorption phase (T1/2 of 49 min, % CI: 24 – 77 min) followed (lag-time of ~ 18 ± 2 min) by a slightly slower input rate (T1/2 of 66 min, % CI: 36 – 97 min). ROP maximal response was observed within 12.6 ± 4.9 min of dosing, with a subsequent return to baseline 210 ± 55 min after the administration of the LA. The effect-site amount producing 50 % of the Emax (AE50) was estimated at 7.3 ± 2.3 mg.  
+Conclusion: Altogether, the proposed models can be used to predict the time-course of sensory blockade after a femoral nerve block and spinal anesthesia using ROP and to optimize dosing regimen according to clinical needs with regard to important cofactors such as age.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F10331&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+pharmaceutiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/10331/Gaudreault_Francois_2013_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/10331/Gaudreault_Francois_2013_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Gaudreault_Francois_2013_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/10331/Gaudreault_Francois_2013_these.pdf?sequence=2&amp;isAllowed=y">Gaudreault_Francois_2013_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">8.296Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2969/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2969">Faculté de pharmacie – Thèses et mémoires</a> [388]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/10331">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

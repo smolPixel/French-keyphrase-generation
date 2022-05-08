@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Evaluating the feasibility and impact of a synchronous health technology innovation in the provision of pediatric health care in a University Hospital.</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Sicotte, Claude" name="DC.contributor">
+<meta content="Jouvet, Philippe" name="DC.contributor">
+<meta content="Nadar, Mahmoud" name="DC.creator">
+<meta content="2020-06-16T18:52:39Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2020-06-16T18:52:39Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2020-03-24" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2019-06" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/23553" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Télémédecine synchrone" name="DC.subject" xml:lang="fr"/>
+<meta content="Télésanté" name="DC.subject" xml:lang="fr"/>
+<meta content="Pédiatrie" name="DC.subject" xml:lang="fr"/>
+<meta content="Soins intensifs" name="DC.subject" xml:lang="fr"/>
+<meta content="Soins critiques" name="DC.subject" xml:lang="fr"/>
+<meta content="Soins aigus" name="DC.subject" xml:lang="fr"/>
+<meta content="Revue systématique" name="DC.subject" xml:lang="fr"/>
+<meta content="Résultats cliniques" name="DC.subject" xml:lang="fr"/>
+<meta content="Fellows" name="DC.subject" xml:lang="fr"/>
+<meta content="Orthophonistes" name="DC.subject" xml:lang="fr"/>
+<meta content="Performance de voix" name="DC.subject" xml:lang="fr"/>
+<meta content="Synchronous telemedicine" name="DC.subject" xml:lang="fr"/>
+<meta content="Telehealth" name="DC.subject" xml:lang="fr"/>
+<meta content="e-health" name="DC.subject" xml:lang="fr"/>
+<meta content="Pediatric intensive care" name="DC.subject" xml:lang="fr"/>
+<meta content="Critical care" name="DC.subject" xml:lang="fr"/>
+<meta content="Acute care" name="DC.subject" xml:lang="fr"/>
+<meta content="Systematic review" name="DC.subject" xml:lang="fr"/>
+<meta content="Clinical outcomes" name="DC.subject" xml:lang="fr"/>
+<meta content="Fellows" name="DC.subject" xml:lang="fr"/>
+<meta content="Speech-language pathologists" name="DC.subject" xml:lang="fr"/>
+<meta content="Voice performance" name="DC.subject" xml:lang="fr"/>
+<meta content="Health Sciences - Public Health / Sciences de la santé - Santé publique (UMI : 0573)" name="DC.subject" xml:lang="fr"/>
+<meta content="Evaluating the feasibility and impact of a synchronous health technology innovation in the provision of pediatric health care in a University Hospital." name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type" xml:lang="fr"/>
+<meta content="La prestation de soins critiques et d'orthophonie en milieu pédiatrique nécessite beaucoup de travail pour atteindre le niveau de soins souhaité. Plusieurs facteurs contribuent à ce problème, parmi lesquels la pénurie de ressources, les besoins pressants et l’augmentation du nombre d’enfants malades. 
+Parmi les solutions proposées, beaucoup pensent que la télémédecine synchrone peut être utile en donnant un accès virtuel immédiat aux compétences à distance. Ainsi, l'expertise pourrait être instantanément disponible via une plateforme permettant une communication efficace et capable de soutenir les soins pédiatriques. La télémédecine s’est beaucoup développée dans la prestation des soins critiques et de réadaptation pédiatriques, et ce aux plans diagnostique et thérapeutique. Pourtant, peu d’études ont examiné la faisabilité et évalué l’impact de la télémédecine sur la qualité des soins critiques et de réadaptation pédiatrique. 
+L'objectif principal de cette thèse était d'évaluer la faisabilité de la télémédecine synchrone dans deux contextes pédiatriques, critique et réadaptation, et d'évaluer son influence sur le processus de prestation de soins pédiatriques.
+Le premier article présente les résultats d'une revue systématique qui synthétisait des études évaluant l'impact des modèles de télémédecine synchrone sur les résultats cliniques dans les établissements de soins de courte durée en pédiatrie. Les résultats ont révélé que l’utilisation de la télémédecine synchrone avait pour effet d’améliorer la qualité des soins, de diminuer le taux de transfert, de réduire de la durée du séjour, de modifier ou renforcer le plan de soins médicaux, de réduire les complications et la gravité de la maladie, et de diminuer le taux de mortalité hospitalière et standardisé. Cependant, la revue de l’état de connaissances a révélé que la qualité des études incluses était faible et que des preuves de haute qualité étaient nécessaires.
+Le deuxième article, fondé sur un devis pré/post, évalue la faisabilité de la télémédecine à domicile en orthophonie et son impact sur la satisfaction des enfants et orthophonistes, le coût économique, et les performances vocales. Cette étude a montré que la télémédecine en orthophonie était faisable et que les enfants et les orthophonistes étaient satisfaits du service. En outre, l'utilisation de la télémédecine en orthophonie a permis d'améliorer la voix et de faire économiser de l'argent aux parents.
+Le troisième article évalue la faisabilité de la mise en place d’une plate-forme de télémédecine synchrone dans l’unité des soins intensifs pédiatriques (USIP). Pour qu'une solution de télémédecine synchrone à l’USIP soit faisable, elle nécessite une bonne préparation préalable à la mise en œuvre de la plate-forme de télémédecine synchrone pour être réellement utile. Avec des médecins résidents compétents et autonomes, l’utilité d’une plate-forme de télémédecine synchrone reliant les intensivistes pédiatriques hors site et les médecins résidents sur site à l’USIP est faible. Cette étude a ajouté qu'un tel service pourrait être plus bénéfique que le modèle traditionnel des soins (face à face) pour les communications avec d'autres établissements de soins de santé éloignés, où le besoin d'expertise d'un intensiviste en soins intensifs pédiatriques est plus important.
+Ces trois études permettent de conclure que la télémédecine synchrone est réalisable et peut avoir un impact sur la qualité des soins intensifs et de réadaptation pédiatrique. On peut déduire de cette thèse qu'il est important de prendre en compte le contexte dans lequel la technologie sera mise en œuvre. Traiter le contexte de l’USIP et celui de réadaptation de la même manière n'aboutit pas aux mêmes résultats et une innovation technologique pourrait réussir dans un contexte et échouer dans un autre." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Delivering critical and speech-language pathology care in pediatric settings requires much hard work to reach the desired level of care for children. Several factors contribute to this problem, including resources shortage, pressing needs, and the growing number of ill children. Among the proposed solutions, many believe that synchronous telemedicine can play a role by providing virtual and immediate access to remote skills, with expertise could be made instantly available through a platform that allows efficient communication and is able to support pediatric care. Telemedicine has developed significantly in the provision of critical care and pediatric rehabilitation in terms of diagnosis and therapy. Yet, few studies have examined the feasibility and evaluated the impact of telemedicine on the quality of pediatric critical care and rehabilitation.
+The main objective of this dissertation was to assess the feasibility of synchronous telemedicine in two pediatric settings—critical care and rehabilitation—and to evaluate its influence on the process of providing pediatric care.
+The first article presented the results of a systematic review that synthesized studies evaluating the impacts of synchronous telemedicine models on clinical outcomes in pediatric acute care settings. The findings revealed that the use of synchronous telemedicine improved quality of care and resulted in a lower transfer rate, a shorter length of stay, a change in or reinforcement of the medical care plan, a reduction in complications and illness severity, and a low hospital standardized mortality rate. However, the review of the state of knowledge revealed that the quality of the included studies was weak, so more high-quality evidences is needed.
+The second article, which used a pre/post design, assesses the feasibility assessed the feasibility of home-based telepractice in speech-language pathology (TSLP) and its impact on satisfaction among the children and speech-language pathologists, economic cost, and voice performance. This study showed that TSLP is feasible and that both the children and the speech-language pathologists were satisfied with the service. In addition, the use of TSLP demonstrated more voice improvement at less cost to the parents.
+The third article evaluated the feasibility of implementing a synchronous telemedicine platform in a pediatric intensive care unit (STEP-PICU). For a STEP-PICU to be feasible and truly helpful, it needs good preparation for the implementation of the telemedicine solution. With competent and autonomous fellows (a fellow is a physician who has completed their residency and elects to complete further training in a subspecialty), the usefulness of an synchronous telemedicine (STM) platform linking off-site pediatric intensivists and on-site fellows in a PICU is limited. This study added that such a service could be more beneficial than the traditional model of care (face to face) for communications with other remote healthcare facilities, where there is a greater need for the expertise of a pediatric critical care intensivist.
+These three studies allow us to conclude that STM is feasible and can have an impact on the quality of pediatric intensive care and rehabilitation. This thesis underscores the importance of taking into consideration the context in which the technology will be implemented. Treating the PICU and the rehabilitation contexts in the same way does not lead to the same results, and a technological innovation that succeeds in one setting may fail in another." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Télémédecine synchrone; Télésanté; Pédiatrie; Soins intensifs; Soins critiques; Soins aigus; Revue systématique; Résultats cliniques; Fellows; Orthophonistes; Performance de voix; Synchronous telemedicine; Telehealth; e-health; Pediatric intensive care; Critical care; Acute care; Systematic review; Clinical outcomes; Fellows; Speech-language pathologists; Voice performance; Health Sciences - Public Health / Sciences de la santé - Santé publique (UMI : 0573); Thèse ou mémoire / Thesis or Dissertation; Santé publique" name="citation_keywords"/>
+<meta content="Evaluating the feasibility and impact of a synchronous health technology innovation in the provision of pediatric health care in a University Hospital." name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Nadar, Mahmoud" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/23553/2/Nadar_Mahmoud_2019_these.pdf" name="citation_pdf_url"/>
+<meta content="2020-03-24" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/23553" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23553?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23553?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23553?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23553?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23553?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23553?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/10070" role="menuitem">École de santé publique</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/10094" role="menuitem">École de santé publique – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/10070">École de santé publique</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/10094"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/23553/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/23553">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/23553/mets.xml-->
+<h2 class="page-header first-page-header">Evaluating the feasibility and impact of a synchronous health technology innovation in the provision of pediatric health care in a University Hospital.</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Sicotte, Claude</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Jouvet, Philippe</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Nadar, Mahmoud</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2020-06-16T18:52:39Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2020-06-16T18:52:39Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2020-03-24</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2019-06</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/23553</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Télémédecine synchrone</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Télésanté</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pédiatrie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Soins intensifs</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Soins critiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Soins aigus</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Revue systématique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Résultats cliniques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Fellows</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Orthophonistes</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Performance de voix</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Synchronous telemedicine</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Telehealth</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">e-health</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pediatric intensive care</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Critical care</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Acute care</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Systematic review</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Clinical outcomes</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Fellows</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Speech-language pathologists</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Voice performance</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Health Sciences - Public Health / Sciences de la santé - Santé publique (UMI : 0573)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Evaluating the feasibility and impact of a synchronous health technology innovation in the provision of pediatric health care in a University Hospital.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Santé publique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La prestation de soins critiques et d'orthophonie en milieu pédiatrique nécessite beaucoup de travail pour atteindre le niveau de soins souhaité. Plusieurs facteurs contribuent à ce problème, parmi lesquels la pénurie de ressources, les besoins pressants et l’augmentation du nombre d’enfants malades. 
+Parmi les solutions proposées, beaucoup pensent que la télémédecine synchrone peut être utile en donnant un accès virtuel immédiat aux compétences à distance. Ainsi, l'expertise pourrait être instantanément disponible via une plateforme permettant une communication efficace et capable de soutenir les soins pédiatriques. La télémédecine s’est beaucoup développée dans la prestation des soins critiques et de réadaptation pédiatriques, et ce aux plans diagnostique et thérapeutique. Pourtant, peu d’études ont examiné la faisabilité et évalué l’impact de la télémédecine sur la qualité des soins critiques et de réadaptation pédiatrique. 
+L'objectif principal de cette thèse était d'évaluer la faisabilité de la télémédecine synchrone dans deux contextes pédiatriques, critique et réadaptation, et d'évaluer son influence sur le processus de prestation de soins pédiatriques.
+Le premier article présente les résultats d'une revue systématique qui synthétisait des études évaluant l'impact des modèles de télémédecine synchrone sur les résultats cliniques dans les établissements de soins de courte durée en pédiatrie. Les résultats ont révélé que l’utilisation de la télémédecine synchrone avait pour effet d’améliorer la qualité des soins, de diminuer le taux de transfert, de réduire de la durée du séjour, de modifier ou renforcer le plan de soins médicaux, de réduire les complications et la gravité de la maladie, et de diminuer le taux de mortalité hospitalière et standardisé. Cependant, la revue de l’état de connaissances a révélé que la qualité des études incluses était faible et que des preuves de haute qualité étaient nécessaires.
+Le deuxième article, fondé sur un devis pré/post, évalue la faisabilité de la télémédecine à domicile en orthophonie et son impact sur la satisfaction des enfants et orthophonistes, le coût économique, et les performances vocales. Cette étude a montré que la télémédecine en orthophonie était faisable et que les enfants et les orthophonistes étaient satisfaits du service. En outre, l'utilisation de la télémédecine en orthophonie a permis d'améliorer la voix et de faire économiser de l'argent aux parents.
+Le troisième article évalue la faisabilité de la mise en place d’une plate-forme de télémédecine synchrone dans l’unité des soins intensifs pédiatriques (USIP). Pour qu'une solution de télémédecine synchrone à l’USIP soit faisable, elle nécessite une bonne préparation préalable à la mise en œuvre de la plate-forme de télémédecine synchrone pour être réellement utile. Avec des médecins résidents compétents et autonomes, l’utilité d’une plate-forme de télémédecine synchrone reliant les intensivistes pédiatriques hors site et les médecins résidents sur site à l’USIP est faible. Cette étude a ajouté qu'un tel service pourrait être plus bénéfique que le modèle traditionnel des soins (face à face) pour les communications avec d'autres établissements de soins de santé éloignés, où le besoin d'expertise d'un intensiviste en soins intensifs pédiatriques est plus important.
+Ces trois études permettent de conclure que la télémédecine synchrone est réalisable et peut avoir un impact sur la qualité des soins intensifs et de réadaptation pédiatrique. On peut déduire de cette thèse qu'il est important de prendre en compte le contexte dans lequel la technologie sera mise en œuvre. Traiter le contexte de l’USIP et celui de réadaptation de la même manière n'aboutit pas aux mêmes résultats et une innovation technologique pourrait réussir dans un contexte et échouer dans un autre.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Delivering critical and speech-language pathology care in pediatric settings requires much hard work to reach the desired level of care for children. Several factors contribute to this problem, including resources shortage, pressing needs, and the growing number of ill children. Among the proposed solutions, many believe that synchronous telemedicine can play a role by providing virtual and immediate access to remote skills, with expertise could be made instantly available through a platform that allows efficient communication and is able to support pediatric care. Telemedicine has developed significantly in the provision of critical care and pediatric rehabilitation in terms of diagnosis and therapy. Yet, few studies have examined the feasibility and evaluated the impact of telemedicine on the quality of pediatric critical care and rehabilitation.
+The main objective of this dissertation was to assess the feasibility of synchronous telemedicine in two pediatric settings—critical care and rehabilitation—and to evaluate its influence on the process of providing pediatric care.
+The first article presented the results of a systematic review that synthesized studies evaluating the impacts of synchronous telemedicine models on clinical outcomes in pediatric acute care settings. The findings revealed that the use of synchronous telemedicine improved quality of care and resulted in a lower transfer rate, a shorter length of stay, a change in or reinforcement of the medical care plan, a reduction in complications and illness severity, and a low hospital standardized mortality rate. However, the review of the state of knowledge revealed that the quality of the included studies was weak, so more high-quality evidences is needed.
+The second article, which used a pre/post design, assesses the feasibility assessed the feasibility of home-based telepractice in speech-language pathology (TSLP) and its impact on satisfaction among the children and speech-language pathologists, economic cost, and voice performance. This study showed that TSLP is feasible and that both the children and the speech-language pathologists were satisfied with the service. In addition, the use of TSLP demonstrated more voice improvement at less cost to the parents.
+The third article evaluated the feasibility of implementing a synchronous telemedicine platform in a pediatric intensive care unit (STEP-PICU). For a STEP-PICU to be feasible and truly helpful, it needs good preparation for the implementation of the telemedicine solution. With competent and autonomous fellows (a fellow is a physician who has completed their residency and elects to complete further training in a subspecialty), the usefulness of an synchronous telemedicine (STM) platform linking off-site pediatric intensivists and on-site fellows in a PICU is limited. This study added that such a service could be more beneficial than the traditional model of care (face to face) for communications with other remote healthcare facilities, where there is a greater need for the expertise of a pediatric critical care intensivist.
+These three studies allow us to conclude that STM is feasible and can have an impact on the quality of pediatric intensive care and rehabilitation. This thesis underscores the importance of taking into consideration the context in which the technology will be implemented. Treating the PICU and the rehabilitation contexts in the same way does not lead to the same results, and a technological innovation that succeeds in one setting may fail in another.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">UdeM.ORCIDAuteurThese</td><td class="word-break">0000-0002-5517-9509</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F23553&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sant%C3%A9+publique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/23553/Nadar_Mahmoud_2019_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/23553/Nadar_Mahmoud_2019_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Nadar_Mahmoud_2019_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/23553/Nadar_Mahmoud_2019_these.pdf?sequence=2&amp;isAllowed=y">Nadar_Mahmoud_2019_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">23.89Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10094/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a> [603]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/23553">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

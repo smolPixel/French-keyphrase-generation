@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Recensement cartographique des anciens cours d’eau de l’île de Montréal et tracé des creux et des crêtes</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Mahaut, Valérie" name="DC.creator">
+<meta content="2016-11-25T21:06:39Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="2016-11-25T21:06:39Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2016-11-29" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="http://hdl.handle.net/1866/16311" name="DC.identifier" scheme="DCTERMS.URI">
+<meta content="Institut de Recherche en Histoire de l’Architecture (IRHA)
+Fonds de recherche du Québec - Société et culture (FQRSC)
+Mobilisation des connaissances de l’Université de Montréal - Conseil de recherche en sciences humaines (UdeM-CRSH)" name="DC.description" xml:lang="fr">
+<meta content="Montréal" name="DC.subject" xml:lang="fr"/>
+<meta content="cartographie" name="DC.subject" xml:lang="fr"/>
+<meta content="cours d’eau" name="DC.subject" xml:lang="fr"/>
+<meta content="ruisseaux" name="DC.subject" xml:lang="fr"/>
+<meta content="creux" name="DC.subject" xml:lang="fr"/>
+<meta content="carte historique" name="DC.subject" xml:lang="fr"/>
+<meta content="topographie" name="DC.subject" xml:lang="fr"/>
+<meta content="relief" name="DC.subject" xml:lang="fr"/>
+<meta content="hydrographie" name="DC.subject" xml:lang="fr"/>
+<meta content="altimétrie" name="DC.subject" xml:lang="fr"/>
+<meta content="cartography" name="DC.subject" xml:lang="fr"/>
+<meta content="mapping" name="DC.subject" xml:lang="fr"/>
+<meta content="stream" name="DC.subject" xml:lang="fr"/>
+<meta content="crest line" name="DC.subject" xml:lang="fr"/>
+<meta content="ridge line" name="DC.subject" xml:lang="fr"/>
+<meta content="thalweg" name="DC.subject" xml:lang="fr"/>
+<meta content="historical map" name="DC.subject" xml:lang="fr"/>
+<meta content="topography" name="DC.subject" xml:lang="fr"/>
+<meta content="hydrography" name="DC.subject" xml:lang="fr"/>
+<meta content="altimetry" name="DC.subject" xml:lang="fr"/>
+<meta content="talweg" name="DC.subject" xml:lang="fr"/>
+<meta content="crêtes" name="DC.subject" xml:lang="fr"/>
+<meta content="bassins versants" name="DC.subject" xml:lang="fr"/>
+<meta content="watercourses" name="DC.subject" xml:lang="fr"/>
+<meta content="watersheds" name="DC.subject" xml:lang="fr"/>
+<meta content="Montreal" name="DC.subject" xml:lang="fr"/>
+<meta content="Recensement cartographique des anciens cours d’eau de l’île de Montréal et tracé des creux et des crêtes" name="DC.title" xml:lang="fr"/>
+<meta content="Carte géographique / Map" name="DC.type" xml:lang="fr"/>
+<meta content="Université de Montréal. Faculté de l'aménagement. École d'architecture" name="DC.contributor" xml:lang="fr"/>
+<meta content="Ensemble de 13 cartes détaillées couvrant l’île de Montréal au complet. Cet ensemble de cartes présente les tracés des anciens cours d’eau selon les cartes historiques sélectionnées pour ce travail, le creux actuel le plus proche de leur lit, les limites de leur bassin versant, le réseau actuel des voiries, les courbes de niveau tous les 5m simplifiées et la grille de référence du  SCoPQ. Chacune de ces 13 cartes est établie avec un cartouche mentionnant la légende des couleurs et symboles utilisés. La carte index représente l’île de Montréal au complet, le découpage des 13 tuiles, le creux actuel le plus proche du lit des anciens cours d’eau, les limites de leur bassin versant, les courbes de niveau tous les 5 m simplifiées, le nom le plus courant des cours d’eau, le nom des bassins versants et leur caractéristiques." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Ensemble of 13 detailed maps covering the island of Montreal in its entirety. This group of maps presents the trajectories of former watercourses using selected historical maps, the current thalwegs the closest to their trajectories, the boundaries of their watersheds, the current road network, contour lines every 5 m simplified, and the QPCS's reference grid. Each of these 13 maps offers a cartouche containing the legend showing the colours and symbols used. Their index map shows all of the island of Montreal, divided into 13 tiles, the current thalwegs closest to the trajectories of former watercourses, the boundaries of their watersheds, contour lines every 5 m simplified, the most frequently used names of watercourses, the names of watersheds, and their features." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="Pdf en couleur au format 119 x 84 cm, échelle 1:10.000 et 1:50.000" name="DCTERMS.description" xml:lang="fr"/>
+<meta content="Colour pdf in format 119 x 84 cm, scale 1:10.000 and 1:50.000" name="DCTERMS.description" xml:lang="en"/>
+<meta content="Ce document fait partie de l'étude &quot;Cartographie des anciens cours d’eau, lignes de creux et des bassins versants de l'île de Montréal - Cartography of the island of Montreal's former watercourses, thalwegs, and watersheds&quot;. La documentation du projet (Guide d'utilisation et autres documents connexes) est disponible ici: http://hdl.handle.net/1866/16314" name="DCTERMS.description" xml:lang="fr"/>
+<meta content="This document is produced as a part of the study &quot;Cartographie des anciens cours d’eau, lignes de creux et des bassins versants de l'île de Montréal - Cartography of the island of Montreal's former watercourses, thalwegs, and watersheds&quot;. Detailed project documentation (User's guide along with other relevant material) is available here: http://hdl.handle.net/1866/16314" name="DCTERMS.description" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language"/>
+<meta content="Montréal; cartographie; cours d’eau; ruisseaux; creux; carte historique; topographie; relief; hydrographie; altimétrie; cartography; mapping; stream; crest line; ridge line; thalweg; historical map; topography; hydrography; altimetry; talweg; crêtes; bassins versants; watercourses; watersheds; Montreal; Carte géographique / Map" name="citation_keywords"/>
+<meta content="Recensement cartographique des anciens cours d’eau de l’île de Montréal et tracé des creux et des crêtes" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Mahaut, Valérie" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/16311/1/Carte-index-map.pdf" name="citation_pdf_url"/>
+<meta content="2016-11-29" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/16311" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/16311?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/16311?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/16311?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/16311?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/16311?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/16311?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2592" role="menuitem">Faculté de l'aménagement</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/12629" role="menuitem">Faculté de l'aménagement – Travaux et publications</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2592">Faculté de l'aménagement</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/12629">Faculté de l'aménagement – Travaux et publications</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/12629"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/12629/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/12629/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/12629/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/12629/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/12629/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/12629/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/12629/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/12629/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/16311/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/16311">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/16311/mets.xml-->
+<h2 class="">Recensement cartographique des anciens cours d’eau de l’île de Montréal et tracé des creux et des crêtes</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Mahaut, Valérie</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2016-11-25T21:06:39Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2016-11-25T21:06:39Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2016-11-29</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/16311</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.description.sponsorship</td><td class="word-break">Institut de Recherche en Histoire de l’Architecture (IRHA)
+Fonds de recherche du Québec - Société et culture (FQRSC)
+Mobilisation des connaissances de l’Université de Montréal - Conseil de recherche en sciences humaines (UdeM-CRSH)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">cartographie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">cours d’eau</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">ruisseaux</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">creux</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">carte historique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">topographie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">relief</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">hydrographie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">altimétrie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">cartography</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">mapping</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">stream</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">crest line</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">ridge line</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">thalweg</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">historical map</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">topography</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">hydrography</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">altimetry</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">talweg</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">crêtes</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">bassins versants</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">watercourses</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">watersheds</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Montreal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Recensement cartographique des anciens cours d’eau de l’île de Montréal et tracé des creux et des crêtes</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Carte géographique / Map</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.affiliation</td><td class="word-break">Université de Montréal. Faculté de l'aménagement. École d'architecture</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Ensemble de 13 cartes détaillées couvrant l’île de Montréal au complet. Cet ensemble de cartes présente les tracés des anciens cours d’eau selon les cartes historiques sélectionnées pour ce travail, le creux actuel le plus proche de leur lit, les limites de leur bassin versant, le réseau actuel des voiries, les courbes de niveau tous les 5m simplifiées et la grille de référence du  SCoPQ. Chacune de ces 13 cartes est établie avec un cartouche mentionnant la légende des couleurs et symboles utilisés. La carte index représente l’île de Montréal au complet, le découpage des 13 tuiles, le creux actuel le plus proche du lit des anciens cours d’eau, les limites de leur bassin versant, les courbes de niveau tous les 5 m simplifiées, le nom le plus courant des cours d’eau, le nom des bassins versants et leur caractéristiques.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Ensemble of 13 detailed maps covering the island of Montreal in its entirety. This group of maps presents the trajectories of former watercourses using selected historical maps, the current thalwegs the closest to their trajectories, the boundaries of their watersheds, the current road network, contour lines every 5 m simplified, and the QPCS's reference grid. Each of these 13 maps offers a cartouche containing the legend showing the colours and symbols used. Their index map shows all of the island of Montreal, divided into 13 tiles, the current thalwegs closest to the trajectories of former watercourses, the boundaries of their watersheds, contour lines every 5 m simplified, the most frequently used names of watercourses, the names of watersheds, and their features.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.alternative</td><td class="word-break">Cartographic survey of the island of Montreal's former watercourses showing thalwegs and crest lines</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.description</td><td class="word-break">Pdf en couleur au format 119 x 84 cm, échelle 1:10.000 et 1:50.000</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.description</td><td class="word-break">Colour pdf in format 119 x 84 cm, scale 1:10.000 and 1:50.000</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.description</td><td class="word-break">Ce document fait partie de l'étude "Cartographie des anciens cours d’eau, lignes de creux et des bassins versants de l'île de Montréal - Cartography of the island of Montreal's former watercourses, thalwegs, and watersheds". La documentation du projet (Guide d'utilisation et autres documents connexes) est disponible ici: http://hdl.handle.net/1866/16314</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.description</td><td class="word-break">This document is produced as a part of the study "Cartographie des anciens cours d’eau, lignes de creux et des bassins versants de l'île de Montréal - Cartography of the island of Montreal's former watercourses, thalwegs, and watersheds". Detailed project documentation (User's guide along with other relevant material) is available here: http://hdl.handle.net/1866/16314</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td></td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F16311&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;"> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16311/Carte-index-map.pdf?sequence=1&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16311/Carte-index-map.pdf.jpg?sequence=18&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Carte-index-map.pdf">
+<a href="/xmlui/bitstream/handle/1866/16311/Carte-index-map.pdf?sequence=1&amp;isAllowed=y">Carte-index-map.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">4.692Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="La carte index représente l’île de Montréal au complet et le découpage des 13 tuiles - The index map shows all of the island of Montreal and the division into 13 tiles.">La carte index représente l’île de Montréal au complet et le découpage des 13 tuiles - The index map shows all of the island of Montreal and the division into 13 tiles.</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16311/A4.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16311/A4.pdf.jpg?sequence=20&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="A4.pdf">
+<a href="/xmlui/bitstream/handle/1866/16311/A4.pdf?sequence=2&amp;isAllowed=y">A4.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1.766Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Tuile mentionnant les arrondissements suivants : Rivière-des-Prairies-Pointe-aux-Trembles">Tuile mentionnant les arrondissements suivants : Rivière-des-Prairies-Pointe-aux-Trembles</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16311/B3.pdf?sequence=3&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16311/B3.pdf.jpg?sequence=22&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="B3.pdf">
+<a href="/xmlui/bitstream/handle/1866/16311/B3.pdf?sequence=3&amp;isAllowed=y">B3.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1.862Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Tuile mentionnant les arrondissements suivants : Rivière-des-Prairies-Pointe-aux-Trembles, Anjou, Montréal-Nord, Saint-Léonard">Tuile mentionnant les arrondissements suivants : Rivière-des-Prairies-Pointe-aux-Trembles, Anjou, Montréal-Nord, Saint-Léonard</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16311/B4.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16311/B4.pdf.jpg?sequence=24&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="B4.pdf">
+<a href="/xmlui/bitstream/handle/1866/16311/B4.pdf?sequence=4&amp;isAllowed=y">B4.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">7.215Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Tuile mentionnant les arrondissements suivants : Rivière-des-Prairies-Pointe-aux-Trembles, Montréal-Est, Anjou, Saint-Léonard, Mercier-Hochelaga-Maisonneuve">Tuile mentionnant les arrondissements suivants : Rivière-des-Prairies-Pointe-aux-Trembles, Montréal-Est, Anjou, Saint-Léonard, Mercier-Hochelaga-Maisonneuve</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16311/C3.pdf?sequence=5&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16311/C3.pdf.jpg?sequence=26&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="C3.pdf">
+<a href="/xmlui/bitstream/handle/1866/16311/C3.pdf?sequence=5&amp;isAllowed=y">C3.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">5.002Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Tuile mentionnant les arrondissements suivants : Montréal-Nord, Saint-Léonard, Rosemont-La-Petite-Patrie, Villeray-Saint-Michel-Parc-Extension, Ahuntsic-Cartierville, Saint-Laurent">Tuile mentionnant les arrondissements suivants : Montréal-Nord, Saint-Léonard, Rosemont-La-Petite-Patrie, Villeray-Saint-Michel-Parc-Extension, Ahuntsic-Cartierville, Saint-Laurent</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16311/C4.pdf?sequence=6&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16311/C4.pdf.jpg?sequence=28&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="C4.pdf">
+<a href="/xmlui/bitstream/handle/1866/16311/C4.pdf?sequence=6&amp;isAllowed=y">C4.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">6.380Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Tuile mentionnant les arrondissements suivants : Anjou, Saint-Léonard, Mercier-Hochelaga-Maisonneuve, Rosemont-La-Petite-Patrie, Villeray-Saint-Michel-Parc-Extension, Ville-Marie, Plateau-Mont-Royal">Tuile mentionnant les arrondissements suivants : Anjou, Saint-Léonard, Mercier-Hochelaga-Maisonneuve, Rosemont-La-Petite-Patrie, Villeray-Saint-Michel-Parc-Extension, Ville-Marie, Plateau-Mont-Royal</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16311/D1.pdf?sequence=7&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16311/D1.pdf.jpg?sequence=30&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="D1.pdf">
+<a href="/xmlui/bitstream/handle/1866/16311/D1.pdf?sequence=7&amp;isAllowed=y">D1.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1.545Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Tuile mentionnant les arrondissements suivants : Pierrefonds-Roxboro, Ile-Bizard-Sainte-Geneviève, Kirkland">Tuile mentionnant les arrondissements suivants : Pierrefonds-Roxboro, Ile-Bizard-Sainte-Geneviève, Kirkland</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16311/D2.pdf?sequence=8&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16311/D2.pdf.jpg?sequence=32&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="D2.pdf">
+<a href="/xmlui/bitstream/handle/1866/16311/D2.pdf?sequence=8&amp;isAllowed=y">D2.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">5.090Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Tuile mentionnant les arrondissements suivants : Ahuntsic-Cartierville, Saint-Laurent, Dorval, Pointe-Claire, Dollard-des-Ormeaux, Pierrefonds-Roxboro, Ile-Bizard-Sainte-Geneviève, Kirkland">Tuile mentionnant les arrondissements suivants : Ahuntsic-Cartierville, Saint-Laurent, Dorval, Pointe-Claire, Dollard-des-Ormeaux, Pierrefonds-Roxboro, Ile-Bizard-Sainte-Geneviève, Kirkland</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16311/D3.pdf?sequence=9&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16311/D3.pdf.jpg?sequence=34&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="D3.pdf">
+<a href="/xmlui/bitstream/handle/1866/16311/D3.pdf?sequence=9&amp;isAllowed=y">D3.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">18.03Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Tuile mentionnant les arrondissements suivants : Rosemont-La-Petite-Patrie, Villeray-Saint-Michel-Parc-Extension, Ahuntsic-Cartierville, Ville-Marie, Plateau-Mont-Royal, Outremont, Westmount, Le Sud-Ouest, Côte-des-Neiges-Notre-Dame-de-Grâce, Mont-Royal, Hamstead, Côte-Saint-Luc, Saint-Laurent, Lachine, Dorval">Tuile mentionnant les arrondissements suivants : Rosemont-La-Petite-Patrie, Villeray-Saint-Michel-Parc-Extension, Ahuntsic-Cartierville, Ville-Marie, Plateau-Mont-Royal, Outremont, Westmount, Le Sud-Ouest, Côte-des-Neiges-Notre-Dame-de-Grâce, Mont-Royal, Hamstead, Côte-Saint-Luc, Saint-Laurent, Lachine, Dorval</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16311/D4.pdf?sequence=10&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16311/D4.pdf.jpg?sequence=36&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="D4.pdf">
+<a href="/xmlui/bitstream/handle/1866/16311/D4.pdf?sequence=10&amp;isAllowed=y">D4.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">9.420Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Tuile mentionnant les arrondissements suivants : Rosemont-La-Petite-Patrie, Ville-Marie, Plateau-Mont-Royal, Outremont, Westmount, Le Sud-Ouest, Côte-des-Neiges-Notre-Dame-de-Grâce, Verdun">Tuile mentionnant les arrondissements suivants : Rosemont-La-Petite-Patrie, Ville-Marie, Plateau-Mont-Royal, Outremont, Westmount, Le Sud-Ouest, Côte-des-Neiges-Notre-Dame-de-Grâce, Verdun</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16311/E1.pdf?sequence=11&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16311/E1.pdf.jpg?sequence=38&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="E1.pdf">
+<a href="/xmlui/bitstream/handle/1866/16311/E1.pdf?sequence=11&amp;isAllowed=y">E1.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">4.859Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Tuile mentionnant les arrondissements suivants : Pierrefonds-Roxboro, Kirkland, Beaconsfield, Baie-D'Urfé, Sainte-Anne-de-Bellevue, Senneville">Tuile mentionnant les arrondissements suivants : Pierrefonds-Roxboro, Kirkland, Beaconsfield, Baie-D'Urfé, Sainte-Anne-de-Bellevue, Senneville</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16311/E2.pdf?sequence=12&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16311/E2.pdf.jpg?sequence=40&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="E2.pdf">
+<a href="/xmlui/bitstream/handle/1866/16311/E2.pdf?sequence=12&amp;isAllowed=y">E2.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">3.802Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Tuile mentionnant les arrondissements suivants : Dorval, Pointe-Claire, Kirkland, Beaconsfield">Tuile mentionnant les arrondissements suivants : Dorval, Pointe-Claire, Kirkland, Beaconsfield</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16311/E3.pdf?sequence=13&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16311/E3.pdf.jpg?sequence=42&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="E3.pdf">
+<a href="/xmlui/bitstream/handle/1866/16311/E3.pdf?sequence=13&amp;isAllowed=y">E3.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">9.479Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Tuile mentionnant les arrondissements suivants : Le Sud-Ouest, Côte-des-Neiges-Notre-Dame-de-Grâce, Côte-Saint-Luc, Lasalle, Montréal-Ouest, Lachine, Dorval">Tuile mentionnant les arrondissements suivants : Le Sud-Ouest, Côte-des-Neiges-Notre-Dame-de-Grâce, Côte-Saint-Luc, Lasalle, Montréal-Ouest, Lachine, Dorval</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16311/E4.pdf?sequence=14&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16311/E4.pdf.jpg?sequence=44&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="E4.pdf">
+<a href="/xmlui/bitstream/handle/1866/16311/E4.pdf?sequence=14&amp;isAllowed=y">E4.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1.626Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Tuile mentionnant les arrondissements suivants : Le Sud-Ouest, Verdun, Lasalle">Tuile mentionnant les arrondissements suivants : Le Sud-Ouest, Verdun, Lasalle</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16311/Cartouche.pdf?sequence=15&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16311/Cartouche.pdf.jpg?sequence=46&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Cartouche.pdf">
+<a href="/xmlui/bitstream/handle/1866/16311/Cartouche.pdf?sequence=15&amp;isAllowed=y">Cartouche.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">481.0Kb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Cartouche des cartes 1:10.000 réalisé indépendamment pour faciliter la lecture entre contenu des cartes et les légendes. ATTENTION: pour une consultation optimale, veillez à afficher les documents au même taux d'agrandissement (zoom)">Cartouche des cartes 1:10.000 réalisé indépendamment pour faciliter la lecture entre contenu des cartes et les légendes. ATTENTION: pour une consultation optimale, veillez à afficher les documents au même taux d'agrandissement (zoom)</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/12629/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/12629">Faculté de l'aménagement – Travaux et publications</a> [125]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/16311">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

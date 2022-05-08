@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Anarchéologie du glitche : de l’erreur ludique aux possibles ludo-politiques</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Perron, Bernard" name="DC.contributor">
+<meta content="Montembeault, Hugo" name="DC.creator">
+<meta content="2021-02-11T19:32:07Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2021-02-11T19:32:07Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2020-12-16" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2019-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/24797" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Jeu vidéo" name="DC.subject" xml:lang="fr"/>
+<meta content="Glitche" name="DC.subject" xml:lang="fr"/>
+<meta content="Contre-jouabilité" name="DC.subject" xml:lang="fr"/>
+<meta content="Innovation" name="DC.subject" xml:lang="fr"/>
+<meta content="Paralogie" name="DC.subject" xml:lang="fr"/>
+<meta content="Économie" name="DC.subject" xml:lang="fr"/>
+<meta content="Politique" name="DC.subject" xml:lang="fr"/>
+<meta content="Empire" name="DC.subject" xml:lang="fr"/>
+<meta content="Multitude" name="DC.subject" xml:lang="fr"/>
+<meta content="Videogame" name="DC.subject" xml:lang="fr"/>
+<meta content="Glitch" name="DC.subject" xml:lang="fr"/>
+<meta content="Counterplay" name="DC.subject" xml:lang="fr"/>
+<meta content="Innovation" name="DC.subject" xml:lang="fr"/>
+<meta content="Paralogy" name="DC.subject" xml:lang="fr"/>
+<meta content="Culture" name="DC.subject" xml:lang="fr"/>
+<meta content="Economy" name="DC.subject" xml:lang="fr"/>
+<meta content="Politic" name="DC.subject" xml:lang="fr"/>
+<meta content="Neoliberalism" name="DC.subject" xml:lang="fr"/>
+<meta content="Néolibéralisme" name="DC.subject" xml:lang="fr"/>
+<meta content="Anarchism" name="DC.subject" xml:lang="fr"/>
+<meta content="Anarchisme" name="DC.subject" xml:lang="fr"/>
+<meta content="Communications and the Arts - Art History / Communications et les arts - Histoire de l’art (UMI : 0377)" name="DC.subject" xml:lang="fr"/>
+<meta content="Anarchéologie du glitche : de l’erreur ludique aux possibles ludo-politiques" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Cette thèse réalise une étude ludo-politique du glitche vidéoludique (bogue, erreur logicielle, faille de design, échec du système, etc.). Elle problématise l’expérience du glitche comme un point d’inflexion entre deux postures d’engagement. Premièrement, une contrejouabilité paralogique désignant une attitude anarcho-communiste qui s’approprie le glitche comme artefact pour explorer, rediriger et (re)façonner la matérialité vidéoludique dans une optique subversive, critique et commune. Deuxièmement, une contre-jouabilité innovante consolidant un programme néolibéral qui exploite le glitche comme une marchandise pour renégocier, dominer et recoder le jeu dans le but de sécuriser un gain en capital. La méthodologie de l’archéologie des médias est mobilisée pour décortiquer les tenants et aboutissants de ces deux modes de contre-jouabilité. Une chasse aux glitches effectuée à travers les discours, l’imaginaire collectif, les arts d’avant-garde et différentes sphères techniques retrace les rapports de continuité entre l’objet d’étude et une matrice de concepts, de formes esthétiques, de méthodes créatives et d’articulations rhétoriques. Un cadre théorique pluridisciplinaire focalisé sur les sciences du jeu, l’étude des médias, les sciences de la communication, la théorie de l'art et les études de fans est employé pour discerner la place singulière qu’occupe la poésie bruyante du glitche vidéoludique à l’intérieur de son vaste réseau d’héritages transhistoriques et transmédiatiques. 
+
+L’aménagement d’un espace théorique de réflexion nommé la Carte ludo-politique du glitche structure l’analyse des implications idéologiques d’un corpus de glitches issu de la culture du jeu de tir à la première personne comprise comme champ culturel frontalement tiraillée entre la paralogie anarcho-communiste et l’innovation néolibérale. Ce tiraillement est exploré à l’aide d’un second modèle nommé le Circuit de l'économie socio-technique du glitche. Cet outil assiste l’exposition d’un tissu économique de pertes et de profits croisés entre les glitcheurs et l’industrie. Deux tendances prédominantes sont étudiées. D’une part, une culture de la marchandise basée sur des logiques compétitives de détournement et d’hameçonnage où la valeur d’échange du glitche est exploitée pour optimiser un rendement économique. D’autre part, une économie du don découlant d’un esprit de coopération et de partage où la valeur d’usage du glitche est cultivée et abritée au service du bien commun et de la diversité des pratiques. La démystification de ces dynamiques révèle des rapports d’exploitation économique ii et d’assujettissement politique reliant le glitche 1) à la transformation matérielle des jeux vidéo, 2) à la force de travail des développeurs de jeux, 3) à la force de jouavail des glitcheurs et 4) à la philosophie socio-économique du néolibéralisme qui règne dans la culture et l’industrie vidéoludique. 
+
+Les dimensions matérielles, laborieuses et économiques du glitche sont discutées en fonction de leurs effets de politisation ambivalents. Sur le plan de la contre-jouabilité innovante, la notion de glitches de l’Empire est théorisée comme vecteur d’une subjectivité politique conformée aux préceptes du néolibéralisme. Cette attitude s’harmonise avec la privatisation des moyens de production, la propriété privée et intellectuelle, le libre marché, la recherche du profit, la liberté entrepreneuriale de soi, la compétition marchande et la quantification du vivant. Sur le plan de la contre-jouabilité paralogique, le concept de glitches de la multitude est présenté comme cristallisant une sensibilité anarcho-communiste. Cette dernière encourage un éthos de désobéissance qui défend la liberté d’expression et d’association, l’autonomisation des individus et des communautés, la socialisation des moyens de production, la collectivisation des ressources, l’autogestion et de la démocratie/action directe au sein de groupes affinitaires ainsi que la préservation du commun." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="This thesis conduct a ludo-political study of videogame glitches (bugs, software errors, design flaws, system failures, etc.). The glitch experience is analyzed as an inflection point between two modes of engagement. First, a paralogical counterplay related to an anarchocommunist ethos that appropriates glitches as artifacts to explore, redirect and (re)shape videogame materiality in a subversive, critical, and communal manner. Second, an innovative counterplay consolidating a neoliberal agenda that exploits glitches as commodities to renegotiate, dominate and recode the game to secure capital gains. Media archeology is mobilized as a methodology to dissect the ins and outs of these two modes of counterplay. An academic form of glitch hunting through discourse, collective imaginary, avant-garde arts and various technical fields has been carried out to retrace the continuity between the object of study and a shared matrix of concepts, aesthetic forms, creative techniques and rhetorical articulations. A multidisciplinary theoretical framework built from game studies, media studies, communication studies, art theory and fan studies is used to determine the unique place of videogame glitches’ noisy poetry within its vast network of transhistoric and transmedia heritages. 
+
+The development of a theoretical model named the Glitch Ludo-Political Map frames the analysis of the ideological implications of a body of glitches from the first-person shooter gaming culture understood as a cultural field in tension between the anarcho-communist paralogy and neoliberal innovation. This polarization is explored using a second model called the Circuit of the Glitch Socio-Technical Economy. This tool is used to expose a complex interplay of economic losses and gains between glitchers and the industry. Two predominant trends are studied. On the one hand, a culture of commodity based on a hijacking and harnessing competitive logic where the exchange value of glitches is exploited to optimize economic incomes. On the other hand, a gift economy resulting from a spirit of cooperation, sharing, and gratuitousness in which the use value of glitches is harvested and harboured in the service of the common good and the diversity of practices. The investigation of these dynamics reveals relationships of economic exploitation and political subjugation that link glitches to 1) the material transformation of videogames, 2) the labour force of game developers, 3) the playbour iv force of glitchers, and 4) the neoliberal socio-economic philosophy that shapes gaming culture and industry. 
+
+The material, labour, and economic dimensions of glitches are discussed according to their ambivalent political effects. In terms of innovative counterplay, the notion of glitches of Empire is theorized as a vector of a political subjectivity consistent with the precepts of neoliberalism. This attitude is aligned with the privatization of the means of production, private and intellectual property, free market, search for profit, entrepreneurial freedom of the self, aggressive competition and quantification of life itself. In terms of paralogical counterplay, the concept of glitches of multitude is presented as crystallizing an anarcho-communist political sensibility. This political stance catalyzes an ethos of disobedience fostering freedom of speech and association, empowerment of individuals and communities, socialization of the means of production, collectivization of wealth, self-management and direct democracy/action within affinity groups, and the protection of the common good." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Jeu vidéo; Glitche; Contre-jouabilité; Innovation; Paralogie; Économie; Politique; Empire; Multitude; Videogame; Glitch; Counterplay; Innovation; Paralogy; Culture; Economy; Politic; Neoliberalism; Néolibéralisme; Anarchism; Anarchisme; Communications and the Arts - Art History / Communications et les arts - Histoire de l’art (UMI : 0377); Thèse ou mémoire / Thesis or Dissertation; Études cinématographiques" name="citation_keywords"/>
+<meta content="Anarchéologie du glitche : de l’erreur ludique aux possibles ludo-politiques" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Montembeault, Hugo" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/24797/4/Montembeault_Hugo_2019_these.pdf" name="citation_pdf_url"/>
+<meta content="2020-12-16" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/24797" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24797?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24797?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24797?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24797?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24797?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24797?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2957" role="menuitem">Faculté des arts et des sciences – Département d'histoire de l'art et d'études cinématographiques</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3000" role="menuitem">Faculté des arts et des sciences – Département d'histoire de l'art et d'études cinématographiques - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2957">Faculté des arts et des sciences – Département d'histoire de l'art et d'études cinématographiques</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3000">Faculté des arts et des sciences – Département d'histoire de l'art et d'études cinématographiques - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/3000"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3000/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3000/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3000/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3000/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3000/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3000/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3000/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3000/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/24797/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/24797">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/24797/mets.xml-->
+<h2 class="page-header first-page-header">Anarchéologie du glitche : de l’erreur ludique aux possibles ludo-politiques</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Perron, Bernard</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Montembeault, Hugo</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2021-02-11T19:32:07Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2021-02-11T19:32:07Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2020-12-16</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2019-12</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/24797</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Jeu vidéo</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Glitche</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Contre-jouabilité</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Innovation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Paralogie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Économie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Politique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Empire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Multitude</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Videogame</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Glitch</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Counterplay</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Innovation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Paralogy</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Culture</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Economy</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Politic</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Neoliberalism</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Néolibéralisme</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Anarchism</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Anarchisme</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Communications and the Arts - Art History / Communications et les arts - Histoire de l’art (UMI : 0377)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Anarchéologie du glitche : de l’erreur ludique aux possibles ludo-politiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Études cinématographiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Cette thèse réalise une étude ludo-politique du glitche vidéoludique (bogue, erreur logicielle, faille de design, échec du système, etc.). Elle problématise l’expérience du glitche comme un point d’inflexion entre deux postures d’engagement. Premièrement, une contrejouabilité paralogique désignant une attitude anarcho-communiste qui s’approprie le glitche comme artefact pour explorer, rediriger et (re)façonner la matérialité vidéoludique dans une optique subversive, critique et commune. Deuxièmement, une contre-jouabilité innovante consolidant un programme néolibéral qui exploite le glitche comme une marchandise pour renégocier, dominer et recoder le jeu dans le but de sécuriser un gain en capital. La méthodologie de l’archéologie des médias est mobilisée pour décortiquer les tenants et aboutissants de ces deux modes de contre-jouabilité. Une chasse aux glitches effectuée à travers les discours, l’imaginaire collectif, les arts d’avant-garde et différentes sphères techniques retrace les rapports de continuité entre l’objet d’étude et une matrice de concepts, de formes esthétiques, de méthodes créatives et d’articulations rhétoriques. Un cadre théorique pluridisciplinaire focalisé sur les sciences du jeu, l’étude des médias, les sciences de la communication, la théorie de l'art et les études de fans est employé pour discerner la place singulière qu’occupe la poésie bruyante du glitche vidéoludique à l’intérieur de son vaste réseau d’héritages transhistoriques et transmédiatiques. 
+
+L’aménagement d’un espace théorique de réflexion nommé la Carte ludo-politique du glitche structure l’analyse des implications idéologiques d’un corpus de glitches issu de la culture du jeu de tir à la première personne comprise comme champ culturel frontalement tiraillée entre la paralogie anarcho-communiste et l’innovation néolibérale. Ce tiraillement est exploré à l’aide d’un second modèle nommé le Circuit de l'économie socio-technique du glitche. Cet outil assiste l’exposition d’un tissu économique de pertes et de profits croisés entre les glitcheurs et l’industrie. Deux tendances prédominantes sont étudiées. D’une part, une culture de la marchandise basée sur des logiques compétitives de détournement et d’hameçonnage où la valeur d’échange du glitche est exploitée pour optimiser un rendement économique. D’autre part, une économie du don découlant d’un esprit de coopération et de partage où la valeur d’usage du glitche est cultivée et abritée au service du bien commun et de la diversité des pratiques. La démystification de ces dynamiques révèle des rapports d’exploitation économique ii et d’assujettissement politique reliant le glitche 1) à la transformation matérielle des jeux vidéo, 2) à la force de travail des développeurs de jeux, 3) à la force de jouavail des glitcheurs et 4) à la philosophie socio-économique du néolibéralisme qui règne dans la culture et l’industrie vidéoludique. 
+
+Les dimensions matérielles, laborieuses et économiques du glitche sont discutées en fonction de leurs effets de politisation ambivalents. Sur le plan de la contre-jouabilité innovante, la notion de glitches de l’Empire est théorisée comme vecteur d’une subjectivité politique conformée aux préceptes du néolibéralisme. Cette attitude s’harmonise avec la privatisation des moyens de production, la propriété privée et intellectuelle, le libre marché, la recherche du profit, la liberté entrepreneuriale de soi, la compétition marchande et la quantification du vivant. Sur le plan de la contre-jouabilité paralogique, le concept de glitches de la multitude est présenté comme cristallisant une sensibilité anarcho-communiste. Cette dernière encourage un éthos de désobéissance qui défend la liberté d’expression et d’association, l’autonomisation des individus et des communautés, la socialisation des moyens de production, la collectivisation des ressources, l’autogestion et de la démocratie/action directe au sein de groupes affinitaires ainsi que la préservation du commun.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">This thesis conduct a ludo-political study of videogame glitches (bugs, software errors, design flaws, system failures, etc.). The glitch experience is analyzed as an inflection point between two modes of engagement. First, a paralogical counterplay related to an anarchocommunist ethos that appropriates glitches as artifacts to explore, redirect and (re)shape videogame materiality in a subversive, critical, and communal manner. Second, an innovative counterplay consolidating a neoliberal agenda that exploits glitches as commodities to renegotiate, dominate and recode the game to secure capital gains. Media archeology is mobilized as a methodology to dissect the ins and outs of these two modes of counterplay. An academic form of glitch hunting through discourse, collective imaginary, avant-garde arts and various technical fields has been carried out to retrace the continuity between the object of study and a shared matrix of concepts, aesthetic forms, creative techniques and rhetorical articulations. A multidisciplinary theoretical framework built from game studies, media studies, communication studies, art theory and fan studies is used to determine the unique place of videogame glitches’ noisy poetry within its vast network of transhistoric and transmedia heritages. 
+
+The development of a theoretical model named the Glitch Ludo-Political Map frames the analysis of the ideological implications of a body of glitches from the first-person shooter gaming culture understood as a cultural field in tension between the anarcho-communist paralogy and neoliberal innovation. This polarization is explored using a second model called the Circuit of the Glitch Socio-Technical Economy. This tool is used to expose a complex interplay of economic losses and gains between glitchers and the industry. Two predominant trends are studied. On the one hand, a culture of commodity based on a hijacking and harnessing competitive logic where the exchange value of glitches is exploited to optimize economic incomes. On the other hand, a gift economy resulting from a spirit of cooperation, sharing, and gratuitousness in which the use value of glitches is harvested and harboured in the service of the common good and the diversity of practices. The investigation of these dynamics reveals relationships of economic exploitation and political subjugation that link glitches to 1) the material transformation of videogames, 2) the labour force of game developers, 3) the playbour iv force of glitchers, and 4) the neoliberal socio-economic philosophy that shapes gaming culture and industry. 
+
+The material, labour, and economic dimensions of glitches are discussed according to their ambivalent political effects. In terms of innovative counterplay, the notion of glitches of Empire is theorized as a vector of a political subjectivity consistent with the precepts of neoliberalism. This attitude is aligned with the privatization of the means of production, private and intellectual property, free market, search for profit, entrepreneurial freedom of the self, aggressive competition and quantification of life itself. In terms of paralogical counterplay, the concept of glitches of multitude is presented as crystallizing an anarcho-communist political sensibility. This political stance catalyzes an ethos of disobedience fostering freedom of speech and association, empowerment of individuals and communities, socialization of the means of production, collectivization of wealth, self-management and direct democracy/action within affinity groups, and the protection of the common good.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F24797&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=%C3%89tudes+cin%C3%A9matographiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/24797/Montembeault_Hugo_2019_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/24797/Montembeault_Hugo_2019_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Montembeault_Hugo_2019_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/24797/Montembeault_Hugo_2019_these.pdf?sequence=4&amp;isAllowed=y">Montembeault_Hugo_2019_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">163.0Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3000/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/3000">Faculté des arts et des sciences – Département d'histoire de l'art et d'études cinématographiques - Thèses et mémoires</a> [456]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/24797">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

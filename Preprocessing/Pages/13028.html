@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Homéostasie des histones en réponse au dommage à l’ADN et étude d’inhibiteurs de désacétylases d’importance clinique</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Verreault, Alain" name="DC.contributor">
+<meta content="Villeneuve, Valérie" name="DC.creator">
+<meta content="2016-02-12T14:50:25Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="MONTHS_WITHHELD:12" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2016-02-12T14:50:25Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2015-10-15" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2015-01" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/13028" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Histones" name="DC.subject" xml:lang="fr"/>
+<meta content="Complexe HIR" name="DC.subject" xml:lang="fr"/>
+<meta content="Rad53" name="DC.subject" xml:lang="fr"/>
+<meta content="Dommage à l'ADN" name="DC.subject" xml:lang="fr"/>
+<meta content="Acétylation de H3" name="DC.subject" xml:lang="fr"/>
+<meta content="Inhibiteur d'histone désacétylase" name="DC.subject" xml:lang="fr"/>
+<meta content="H3K56Ac" name="DC.subject" xml:lang="fr"/>
+<meta content="Agent génotoxique" name="DC.subject" xml:lang="fr"/>
+<meta content="SAHA" name="DC.subject" xml:lang="fr"/>
+<meta content="Spectrométrie de masse" name="DC.subject" xml:lang="fr"/>
+<meta content="Histones" name="DC.subject" xml:lang="fr"/>
+<meta content="HIR complex" name="DC.subject" xml:lang="fr"/>
+<meta content="Rad53" name="DC.subject" xml:lang="fr"/>
+<meta content="DNA damage" name="DC.subject" xml:lang="fr"/>
+<meta content="H3 acetylation" name="DC.subject" xml:lang="fr"/>
+<meta content="Histone deacetylase inhibitor" name="DC.subject" xml:lang="fr"/>
+<meta content="H3K56Ac" name="DC.subject" xml:lang="fr"/>
+<meta content="Genotoxic agent" name="DC.subject" xml:lang="fr"/>
+<meta content="SAHA" name="DC.subject" xml:lang="fr"/>
+<meta content="Mass spectrometry" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307)" name="DC.subject" xml:lang="fr"/>
+<meta content="Homéostasie des histones en réponse au dommage à l’ADN et étude d’inhibiteurs de désacétylases d’importance clinique" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La chromatine possède une plasticité complexe et essentielle pour répondre à différents mécanismes cellulaires fondamentaux tels la réplication, la transcription et la réparation de l’ADN. Les histones sont les constituants essentiels de la formation des nucléosomes qui assurent le bon fonctionnement cellulaire d’où l’intérêt de cette thèse d’y porter une attention particulière. Un dysfonctionnement de la chromatine est souvent associé à l’émergence du cancer.
+
+
+
+Le chapitre II de cette thèse focalise sur la répression transcriptionnelle des gènes d’histones par le complexe HIR (HIstone gene Repressor) en réponse au dommage à l'ADN chez Saccharomyces cerevisiae. Lors de dommage à l’ADN en début de phase S, les kinases du point de contrôle Mec1, Tel1 et Rad53 s’assurent de bloquer les origines tardives de réplication pour limiter le nombre de collisions potentiellement mutagéniques ou cytotoxiques entre les ADN polymérases et les lésions persistantes dans l'ADN. Lorsque la synthèse totale d’ADN est soudainement ralentie par le point de contrôle, l’accumulation d'un excès d'histones nouvellement synthétisées est néfaste pour les cellules car les histones libres se lient de manière non-spécifique aux acides nucléiques. L'un des mécanismes mis en place afin de minimiser la quantité d’histones libres consiste à réprimer la transcription des gènes d'histones lors d'une chute rapide de la synthèse d'ADN, mais les bases moléculaires de ce mécanisme étaient très mal connues. Notre étude sur la répression des gènes d’histones en réponse aux agents génotoxiques nous a permis d’identifier que les kinases du point de contrôle jouent un rôle dans la répression des gènes d’histones. Avant le début de mon projet, il était déjà connu que le complexe HIR est requis pour la répression des gènes d’histones en phase G1, G2/M et lors de dommage à l’ADN en phase S. Par contre, la régulation du complexe HIR en réponse au dommage à l'ADN n'était pas connue. Nous avons démontré par des essais de spectrométrie de
+ 
+
+masse (SM) que Rad53 régule le complexe HIR en phosphorylant directement une de ses sous-unités, Hpc2, à de multiples résidus in vivo et in vitro. La phosphorylation d’Hpc2 est essentielle pour le recrutement aux promoteurs de gènes d’histones du complexe RSC (Remodels the Structure of Chromatin) dont la présence sur les promoteurs des gènes d'histones corrèle avec leur répression. De plus, nous avons mis à jour un nouveau mécanisme de régulation du complexe HIR durant la progression normale à travers le cycle cellulaire ainsi qu'en réponse aux agents génotoxiques. En effet, durant le cycle cellulaire normal, la protéine Hpc2 est très instable durant la transition G1/S afin de permettre la transcription des gènes d’histones et la production d'un pool d'histones néo-synthétisées juste avant l'initiation de la réplication de l’ADN. Toutefois, Hpc2 n'est instable que pour une brève période de temps durant la phase S. Ces résultats suggèrent qu'Hpc2 est une protéine clef pour la régulation de l'activité du complexe HIR et la répression des gènes d’histones lors du cycle cellulaire normal ainsi qu'en réponse au dommage à l’ADN.
+
+
+
+Dans le but de poursuivre notre étude sur la régulation des histones,  le chapitre III de ma thèse concerne l’analyse globale de l’acétylation des histones induite par les inhibiteurs d’histone désacétylases (HDACi) dans les  cellules normales et cancéreuses. Les histones désacétylases (HDACs) sont les enzymes qui enlèvent l’acétylation sur les lysines des histones. Dans plusieurs types de cancers, les HDACs contribuent à l’oncogenèse par leur fusion aberrante avec des complexes protéiques oncogéniques. Les perturbations causées mènent souvent à un état silencieux anormal des suppresseurs de tumeurs. Les HDACs sont donc une cible de choix dans le traitement des cancers engendrés par ces protéines de fusion.
+
+
+
+Notre étude de l’effet sur l’acétylation des histones de deux inhibiteurs d'HDACs de relevance clinique, le vorinostat (SAHA) et l’entinostat (MS-275), a permis de démontrer une augmentation élevée de l’acétylation globale des histones
+ 
+
+H3 et H4, contrairement à H2A et H2B, et ce, autant chez les cellules normales que cancéreuses. Notre quantification en SM de l'acétylation des histones a révélé de façon inattendue que la stœchiométrie d'acétylation sur la lysine 56 de l’histone H3 (H3K56Ac) est de seulement 0,03% et, de manière surprenante, cette stœchiométrie n'augmente pas dans des cellules traitées avec différents HDACi. Plusieurs études de H3K56Ac chez l’humain présentes dans la littérature ont rapporté des résultats irréconciliables. Qui plus est, H3K56Ac était considéré comme un biomarqueur potentiel dans le diagnostic et pronostic de plusieurs types de cancers. C’est pourquoi nous avons porté notre attention sur la spécificité des anticorps utilisés et avons déterminé qu’une grande majorité d’anticorps utilisés dans la littérature reconnaissent d’autres sites d'acétylation de l’histone H3, notamment H3K9Ac dont la stœchiométrie d'acétylation in vivo est beaucoup plus élevée que celle d'H3K56Ac. De plus, le chapitre IV fait suite à notre étude sur l’acétylation des  histones et consiste en un rapport spécial de recherche décrivant la fonction de H3K56Ac chez la levure et l’homme et comporte également une évaluation d’un anticorps supposément spécifique d'H3K56Ac en tant qu'outil diagnostic du cancer chez l’humain." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="The chromatin is a complex structure and its plasticity is essential to complete different fundamental cellular processes such as DNA replication, transcription and repair. Furthermore, chromatin malfunction is often associated with cancer emergence. The focus of this thesis will be on the function and regulation of histones, as they are essential components of nucleosomes and they ensure proper chromatin formation.
+
+Chapter II of this thesis focuses on the transcriptional repression of histone genes by the HIR (HIstone gene Repressor) complex in response to DNA damage in Saccharomyces cerevisiae. When DNA damage occurs in early S phase, the DNA damage checkpoint kinases Mec1, Tel1 and Rad53 block late origins of replication to limit potentially mutagenic or cytotoxic collisions between DNA polymerases and remaining DNA lesions. When the total DNA synthesis rate drops suddenly in S- phase, following the checkpoint control activation, accumulation of newly synthesized histones becomes detrimental for the cells because free histones bind non-specifically to nucleic acids. One mechanism that contributes to a reduction in free histones at this time is the repression of histone gene transcription; however, the molecular basis of this repression was not known. Our study on histone gene repression in response to genotoxic agents allowed us to identify the checkpoint kinases as major players in the repression of histone genes. Before initiating this project, it was known that the HIR complex is required to repress histone genes in G1 and G2/M phases and during DNA damage. Nonetheless, HIR complex regulation was not well characterized. We demonstrated by mass spectrometry (MS) analyses that Rad53 regulates the HIR complex by directly phosphorylating one of  its subunits, Hpc2, at many residues in vivo and in vitro. Hpc2 phosphorylation is essential to recruit the RSC complex (Remodels the Structure of Chromatin) to histone gene promoters where its presence correlates with histone gene repression. Moreover, we uncovered a novel mechanism for the HIR complex regulation during a normal cell cycle progression and in response to genotoxic agents. Indeed, during a
+ 
+
+normal cell cycle, the Hpc2 protein is very unstable at the G1/S transition to allow histone gene transcription and production of a pool of newly synthesized histones just before DNA replication initiation. These results suggest that Hpc2 is a key player in the regulation of HIR complex activity and can repress histone gene expression both during a normal cell cycle and in response to DNA damage.
+
+In order to pursue our study on histone regulation, chapter III of this thesis covers histone acetylation induced by histone deacetylase inhibitors (HDACi) in normal and cancer cells. Histone deacetylases (HDACs) are enzymes that remove acetyl groups from lysine residues on histones, condensing the chromatin and effectively repressing local transcription. Several types of cancers are characterized by epigenetic abnormalities and HDACs contribute to oncogenesis by aberrant fusion with oncogenic protein complexes. The disruptions often lead to an abnormal silent state of tumour suppressors. HDACs are then targets of interest in cancer treatment caused by those fusion proteins.
+
+Our study of the effects of two clinically relevant HDAC inhibitors, vorinostat (SAHA) and entinostat (MS-275) on acetylation of histones demonstrated an obvious increase of histones H3 and H4 acetylation, unlike histones H2A and H2B in both normal and cancer cells. Unexpectedly, our MS quantification of histone acetylation revealed that the stoichiometry of histone H3 lysine 56 acetylation (H3K56Ac) was only 0.03% and, surprisingly, this stoichiometry did not increase upon HDACi treatments. Several reported studies in the literature of H3K56Ac in humans are irreconcilable. Furthermore, H3K56Ac was considered as a potential biomarker in diagnosis and prognosis in many cancer types. Therefore we focussed on antibody specificity and determined that the majority of antibodies used in the literature recognize other acetylation sites in histone H3, especially H3K9Ac whose stoichiometry of acetylation in vivo is much higher than H3K56Ac. Additionally, chapter IV is a follow-up of our study on histone acetylation and consists of a special report describing the function of H3K56Ac in yeast and human and also contains   an evaluation of a supposedly specific H3K56Ac antibody as a diagnostic tool in human cancers." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Histones; Complexe HIR; Rad53; Dommage à l'ADN; Acétylation de H3; Inhibiteur d'histone désacétylase; H3K56Ac; Agent génotoxique; SAHA; Spectrométrie de masse; Histones; HIR complex; Rad53; DNA damage; H3 acetylation; Histone deacetylase inhibitor; H3K56Ac; Genotoxic agent; SAHA; Mass spectrometry; Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307); Thèse ou mémoire / Thesis or Dissertation; Biologie moléculaire" name="citation_keywords"/>
+<meta content="Homéostasie des histones en réponse au dommage à l’ADN et étude d’inhibiteurs de désacétylases d’importance clinique" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Villeneuve, Valérie" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/13028/2/Villeneuve_Valerie_2015_these.pdf" name="citation_pdf_url"/>
+<meta content="2015-10-15" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/13028" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13028?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13028?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13028?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13028?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13028?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13028?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/13028/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/13028">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/13028/mets.xml-->
+<h2 class="page-header first-page-header">Homéostasie des histones en réponse au dommage à l’ADN et étude d’inhibiteurs de désacétylases d’importance clinique</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Verreault, Alain</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Villeneuve, Valérie</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2016-02-12T14:50:25Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">MONTHS_WITHHELD:12</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2016-02-12T14:50:25Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2015-10-15</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2015-01</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/13028</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Histones</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Complexe HIR</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Rad53</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Dommage à l'ADN</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Acétylation de H3</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Inhibiteur d'histone désacétylase</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">H3K56Ac</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Agent génotoxique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">SAHA</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Spectrométrie de masse</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Histones</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">HIR complex</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Rad53</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">DNA damage</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">H3 acetylation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Histone deacetylase inhibitor</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">H3K56Ac</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Genotoxic agent</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">SAHA</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Mass spectrometry</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Homéostasie des histones en réponse au dommage à l’ADN et étude d’inhibiteurs de désacétylases d’importance clinique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Biologie moléculaire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La chromatine possède une plasticité complexe et essentielle pour répondre à différents mécanismes cellulaires fondamentaux tels la réplication, la transcription et la réparation de l’ADN. Les histones sont les constituants essentiels de la formation des nucléosomes qui assurent le bon fonctionnement cellulaire d’où l’intérêt de cette thèse d’y porter une attention particulière. Un dysfonctionnement de la chromatine est souvent associé à l’émergence du cancer.
+
+
+
+Le chapitre II de cette thèse focalise sur la répression transcriptionnelle des gènes d’histones par le complexe HIR (HIstone gene Repressor) en réponse au dommage à l'ADN chez Saccharomyces cerevisiae. Lors de dommage à l’ADN en début de phase S, les kinases du point de contrôle Mec1, Tel1 et Rad53 s’assurent de bloquer les origines tardives de réplication pour limiter le nombre de collisions potentiellement mutagéniques ou cytotoxiques entre les ADN polymérases et les lésions persistantes dans l'ADN. Lorsque la synthèse totale d’ADN est soudainement ralentie par le point de contrôle, l’accumulation d'un excès d'histones nouvellement synthétisées est néfaste pour les cellules car les histones libres se lient de manière non-spécifique aux acides nucléiques. L'un des mécanismes mis en place afin de minimiser la quantité d’histones libres consiste à réprimer la transcription des gènes d'histones lors d'une chute rapide de la synthèse d'ADN, mais les bases moléculaires de ce mécanisme étaient très mal connues. Notre étude sur la répression des gènes d’histones en réponse aux agents génotoxiques nous a permis d’identifier que les kinases du point de contrôle jouent un rôle dans la répression des gènes d’histones. Avant le début de mon projet, il était déjà connu que le complexe HIR est requis pour la répression des gènes d’histones en phase G1, G2/M et lors de dommage à l’ADN en phase S. Par contre, la régulation du complexe HIR en réponse au dommage à l'ADN n'était pas connue. Nous avons démontré par des essais de spectrométrie de
+ 
+
+masse (SM) que Rad53 régule le complexe HIR en phosphorylant directement une de ses sous-unités, Hpc2, à de multiples résidus in vivo et in vitro. La phosphorylation d’Hpc2 est essentielle pour le recrutement aux promoteurs de gènes d’histones du complexe RSC (Remodels the Structure of Chromatin) dont la présence sur les promoteurs des gènes d'histones corrèle avec leur répression. De plus, nous avons mis à jour un nouveau mécanisme de régulation du complexe HIR durant la progression normale à travers le cycle cellulaire ainsi qu'en réponse aux agents génotoxiques. En effet, durant le cycle cellulaire normal, la protéine Hpc2 est très instable durant la transition G1/S afin de permettre la transcription des gènes d’histones et la production d'un pool d'histones néo-synthétisées juste avant l'initiation de la réplication de l’ADN. Toutefois, Hpc2 n'est instable que pour une brève période de temps durant la phase S. Ces résultats suggèrent qu'Hpc2 est une protéine clef pour la régulation de l'activité du complexe HIR et la répression des gènes d’histones lors du cycle cellulaire normal ainsi qu'en réponse au dommage à l’ADN.
+
+
+
+Dans le but de poursuivre notre étude sur la régulation des histones,  le chapitre III de ma thèse concerne l’analyse globale de l’acétylation des histones induite par les inhibiteurs d’histone désacétylases (HDACi) dans les  cellules normales et cancéreuses. Les histones désacétylases (HDACs) sont les enzymes qui enlèvent l’acétylation sur les lysines des histones. Dans plusieurs types de cancers, les HDACs contribuent à l’oncogenèse par leur fusion aberrante avec des complexes protéiques oncogéniques. Les perturbations causées mènent souvent à un état silencieux anormal des suppresseurs de tumeurs. Les HDACs sont donc une cible de choix dans le traitement des cancers engendrés par ces protéines de fusion.
+
+
+
+Notre étude de l’effet sur l’acétylation des histones de deux inhibiteurs d'HDACs de relevance clinique, le vorinostat (SAHA) et l’entinostat (MS-275), a permis de démontrer une augmentation élevée de l’acétylation globale des histones
+ 
+
+H3 et H4, contrairement à H2A et H2B, et ce, autant chez les cellules normales que cancéreuses. Notre quantification en SM de l'acétylation des histones a révélé de façon inattendue que la stœchiométrie d'acétylation sur la lysine 56 de l’histone H3 (H3K56Ac) est de seulement 0,03% et, de manière surprenante, cette stœchiométrie n'augmente pas dans des cellules traitées avec différents HDACi. Plusieurs études de H3K56Ac chez l’humain présentes dans la littérature ont rapporté des résultats irréconciliables. Qui plus est, H3K56Ac était considéré comme un biomarqueur potentiel dans le diagnostic et pronostic de plusieurs types de cancers. C’est pourquoi nous avons porté notre attention sur la spécificité des anticorps utilisés et avons déterminé qu’une grande majorité d’anticorps utilisés dans la littérature reconnaissent d’autres sites d'acétylation de l’histone H3, notamment H3K9Ac dont la stœchiométrie d'acétylation in vivo est beaucoup plus élevée que celle d'H3K56Ac. De plus, le chapitre IV fait suite à notre étude sur l’acétylation des  histones et consiste en un rapport spécial de recherche décrivant la fonction de H3K56Ac chez la levure et l’homme et comporte également une évaluation d’un anticorps supposément spécifique d'H3K56Ac en tant qu'outil diagnostic du cancer chez l’humain.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The chromatin is a complex structure and its plasticity is essential to complete different fundamental cellular processes such as DNA replication, transcription and repair. Furthermore, chromatin malfunction is often associated with cancer emergence. The focus of this thesis will be on the function and regulation of histones, as they are essential components of nucleosomes and they ensure proper chromatin formation.
+
+Chapter II of this thesis focuses on the transcriptional repression of histone genes by the HIR (HIstone gene Repressor) complex in response to DNA damage in Saccharomyces cerevisiae. When DNA damage occurs in early S phase, the DNA damage checkpoint kinases Mec1, Tel1 and Rad53 block late origins of replication to limit potentially mutagenic or cytotoxic collisions between DNA polymerases and remaining DNA lesions. When the total DNA synthesis rate drops suddenly in S- phase, following the checkpoint control activation, accumulation of newly synthesized histones becomes detrimental for the cells because free histones bind non-specifically to nucleic acids. One mechanism that contributes to a reduction in free histones at this time is the repression of histone gene transcription; however, the molecular basis of this repression was not known. Our study on histone gene repression in response to genotoxic agents allowed us to identify the checkpoint kinases as major players in the repression of histone genes. Before initiating this project, it was known that the HIR complex is required to repress histone genes in G1 and G2/M phases and during DNA damage. Nonetheless, HIR complex regulation was not well characterized. We demonstrated by mass spectrometry (MS) analyses that Rad53 regulates the HIR complex by directly phosphorylating one of  its subunits, Hpc2, at many residues in vivo and in vitro. Hpc2 phosphorylation is essential to recruit the RSC complex (Remodels the Structure of Chromatin) to histone gene promoters where its presence correlates with histone gene repression. Moreover, we uncovered a novel mechanism for the HIR complex regulation during a normal cell cycle progression and in response to genotoxic agents. Indeed, during a
+ 
+
+normal cell cycle, the Hpc2 protein is very unstable at the G1/S transition to allow histone gene transcription and production of a pool of newly synthesized histones just before DNA replication initiation. These results suggest that Hpc2 is a key player in the regulation of HIR complex activity and can repress histone gene expression both during a normal cell cycle and in response to DNA damage.
+
+In order to pursue our study on histone regulation, chapter III of this thesis covers histone acetylation induced by histone deacetylase inhibitors (HDACi) in normal and cancer cells. Histone deacetylases (HDACs) are enzymes that remove acetyl groups from lysine residues on histones, condensing the chromatin and effectively repressing local transcription. Several types of cancers are characterized by epigenetic abnormalities and HDACs contribute to oncogenesis by aberrant fusion with oncogenic protein complexes. The disruptions often lead to an abnormal silent state of tumour suppressors. HDACs are then targets of interest in cancer treatment caused by those fusion proteins.
+
+Our study of the effects of two clinically relevant HDAC inhibitors, vorinostat (SAHA) and entinostat (MS-275) on acetylation of histones demonstrated an obvious increase of histones H3 and H4 acetylation, unlike histones H2A and H2B in both normal and cancer cells. Unexpectedly, our MS quantification of histone acetylation revealed that the stoichiometry of histone H3 lysine 56 acetylation (H3K56Ac) was only 0.03% and, surprisingly, this stoichiometry did not increase upon HDACi treatments. Several reported studies in the literature of H3K56Ac in humans are irreconcilable. Furthermore, H3K56Ac was considered as a potential biomarker in diagnosis and prognosis in many cancer types. Therefore we focussed on antibody specificity and determined that the majority of antibodies used in the literature recognize other acetylation sites in histone H3, especially H3K9Ac whose stoichiometry of acetylation in vivo is much higher than H3K56Ac. Additionally, chapter IV is a follow-up of our study on histone acetylation and consists of a special report describing the function of H3K56Ac in yeast and human and also contains   an evaluation of a supposedly specific H3K56Ac antibody as a diagnostic tool in human cancers.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F13028&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Biologie+mol%C3%A9culaire&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/13028/Villeneuve_Valerie_2015_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/13028/Villeneuve_Valerie_2015_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Villeneuve_Valerie_2015_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/13028/Villeneuve_Valerie_2015_these.pdf?sequence=2&amp;isAllowed=y">Villeneuve_Valerie_2015_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">5.808Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="thèse">thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/13028">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

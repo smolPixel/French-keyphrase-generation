@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Una secuencia didáctica para un concepto unificador en un curso de álgebra lineal de un programa de formación a la ingeniería</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Caron, France" name="DC.contributor">
+<meta content="Pascual, Sara" name="DC.creator">
+<meta content="2013-06-27T14:35:43Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2013-06-27T14:35:43Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2013-04-05" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2012-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/9726" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="séquence didactique" name="DC.subject" xml:lang="en"/>
+<meta content="concept unificateur" name="DC.subject" xml:lang="en"/>
+<meta content="transformation linéaire" name="DC.subject" xml:lang="en"/>
+<meta content="procédural" name="DC.subject" xml:lang="en"/>
+<meta content="structural" name="DC.subject" xml:lang="en"/>
+<meta content="modélisation" name="DC.subject" xml:lang="en"/>
+<meta content="application" name="DC.subject" xml:lang="en"/>
+<meta content="changement de cadre" name="DC.subject" xml:lang="en"/>
+<meta content="didactical sequence" name="DC.subject" xml:lang="en"/>
+<meta content="unifying concept" name="DC.subject" xml:lang="en"/>
+<meta content="linear transformation" name="DC.subject" xml:lang="en"/>
+<meta content="procedural" name="DC.subject" xml:lang="en"/>
+<meta content="modelling" name="DC.subject" xml:lang="en"/>
+<meta content="change of a system of representations" name="DC.subject" xml:lang="en"/>
+<meta content="secuencia didáctica" name="DC.subject" xml:lang="en"/>
+<meta content="concepto unificador" name="DC.subject" xml:lang="en"/>
+<meta content="transformación lineal" name="DC.subject" xml:lang="en"/>
+<meta content="estructural" name="DC.subject" xml:lang="en"/>
+<meta content="modelización" name="DC.subject" xml:lang="en"/>
+<meta content="aplicación" name="DC.subject" xml:lang="en"/>
+<meta content="cambio de marco" name="DC.subject" xml:lang="en"/>
+<meta content="Education - Higher / Éducation - Enseignement supérieur (UMI : 0745)" name="DC.subject" xml:lang="en"/>
+<meta content="Una secuencia didáctica para un concepto unificador en un curso de álgebra lineal de un programa de formación a la ingeniería" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="L’introduction aux concepts unificateurs dans l’enseignement des mathématiques privilégie typiquement l’approche axiomatique. Il n’est pas surprenant de constater qu’une telle approche tend à une algorithmisation des tâches pour augmenter l’efficacité de leur résolution et favoriser la transparence du nouveau concept enseigné (Chevallard, 1991). Cette réponse classique fait néanmoins oublier le rôle unificateur du concept et n’encourage pas à l’utilisation de sa puissance. Afin d’améliorer l’apprentissage d’un concept unificateur, ce travail de thèse étudie la pertinence d’une séquence didactique dans la formation d’ingénieurs centrée sur un concept unificateur de l’algèbre linéaire: la transformation linéaire (TL).
+
+La notion d’unification et la question du sens de la linéarité sont abordées à travers l’acquisition de compétences en résolution de problèmes.  La séquence des problèmes à résoudre a pour objet le processus de construction d’un concept abstrait (la TL) sur un domaine déjà mathématisé, avec l’intention de dégager l’aspect unificateur de la notion formelle (Astolfi y Drouin, 1992). 
+
+À partir de résultats de travaux en didactique des sciences et des mathématiques (Dupin 1995; Sfard 1991), nous élaborons des situations didactiques sur la base d’éléments de modélisation, en cherchant à articuler deux façons de concevoir l’objet  (« procédurale » et « structurale ») de façon à trouver une stratégie de résolution plus sûre, plus économique et réutilisable. En particulier, nous avons cherché à situer la notion dans différents domaines mathématiques où elle est applicable : arithmétique, géométrique, algébrique et analytique.  La séquence vise à développer des liens entre différents cadres mathématiques, et entre différentes représentations de la TL dans les différents registres mathématiques, en s’inspirant notamment dans cette démarche du développement historique de la notion.  De plus, la séquence didactique vise à maintenir un équilibre entre le côté applicable des tâches à la pratique professionnelle visée, et le côté théorique propice à la structuration des concepts.  
+
+L’étude a été conduite avec des étudiants chiliens en formation au génie, dans le premier cours d’algèbre linéaire. Nous avons mené une analyse a priori détaillée afin de renforcer la robustesse de la séquence et de préparer à l’analyse des données. Par l’analyse des réponses au questionnaire d’entrée, des productions des équipes et des commentaires reçus en entrevus, nous avons pu identifier les compétences mathématiques et les niveaux d’explicitation (Caron, 2004) mis à contribution dans l’utilisation de la TL. Les résultats obtenus montrent l’émergence du rôle unificateur de la TL, même chez ceux dont les habitudes en résolution de problèmes mathématiques sont marquées par une orientation procédurale, tant dans l’apprentissage que dans l’enseignement. 
+
+La séquence didactique a montré son efficacité pour la construction progressive chez les étudiants de la notion de transformation linéaire (TL), avec le sens et les propriétés qui lui sont propres : la TL apparaît ainsi comme un moyen économique de résoudre des problèmes extérieurs à l’algèbre linéaire, ce qui permet aux étudiants d’en abstraire les propriétés sous-jacentes.  Par ailleurs, nous avons pu observer que certains concepts enseignés auparavant peuvent agir comme obstacles à l’unification visée.  Cela peut ramener les étudiants à leur point de départ, et le rôle de la TL se résume dans ces conditions à révéler des connaissances partielles, plutôt qu’à guider la résolution." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="Introduction to unifying concepts in the teaching of mathematics typically adopts the axiomatic approach.  It is not surprising that under these conditions, tasks tend to become more algorithmic in order to help students’ performance and favor apparent transparency of the new concept (Chevallard, 1991). This classical response makes forget the unifying role of the concept and does not encourage its powerful use.  In order to improve the learning of a unifying concept, this thesis aimed at studying the relevance of a didactical sequence in the formal training of future engineers, centered on a unifying concept of linear algebra: the linear transformation (LT).   
+
+The idea of unification and the question of meaning are addressed through the development of problem solving competencies. The sequence of problems to solve is aimed at constructing an abstract concept (the LT) on a domain which is already mathematized, with the intent of abstracting the unifying aspect of the formal notion (Astolfi y Drouin, 1992). 
+
+Building on the work of Dupin (1995) and Sfard (1991), in mathematics and science education, we have designed didactical situations with elements of modelling, by articulating two ways of conceiving the notion (« procedural » and « structural ») in order to find a safest, more economical and reusable solving strategy. In particular, we have situated the notion in various mathematical domains where it is applicable: arithmetics, geometry, algebra and analysis. The sequence aims at developing connections between different mathematical frameworks, and between various representations of the LT in the different mathematical registers, with the historical development of the notion as a source of inspiration.  Moreover, the didactical sequence aims at achieving a balance between the practical aspect of the tasks in the foreseen professional practice and the theoretical aspect required to structure the concepts.  
+
+The study was conducted in Chile, with engineering students in the first linear algebra course of the program. We had completed a detailed a priori analysis of the sequence in order to reinforce its robustness and prepare for data analysis. With the analysis of answers to the entry questionnaire, team productions to the tasks, and comments received in students interview, we were able to identify the mathematical competencies and the levels of communication (Caron, 2004) put at work in their use of the LT. Results show emergence of the unifying role of the LT, even with students whose problem solving habits in mathematics have been marked by a procedural influence in the teaching and the learning.  
+
+The didactical sequence showed its effectiveness in the progressive construction by students of the linear transformation concept (LT), with its specific meaning and properties: the TL has appeared as an economical means of solving problems outside of linear algebra, which helped students in abstracting its underlying properties.  In contrast, we have also observed that some previously taught concepts could act as obstacles to the desired unification.  In these cases, students could revert to their old habits, and their use of the LT would rather reveal their partial understanding than help guide the resolution." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="La introducción de conceptos unificadores en la enseñanza de las matemáticas privilegia comúnmente el enfoque axiomático. No es sorprendente que la utilización de este concepto así definido, opera a menudo sobre la algoritmización de tareas para aumentar la eficacia de las resoluciones y promover la transparencia del nuevo objeto enseñado (Chevallard, 1991). Esta respuesta clásica hace sin embargo olvidar el rol unificador y no favorece la utilización de su poder. A fin de mejorar el aprendizaje de un concepto unificador, este trabajo de tesis estudia la pertinencia de una secuencia didáctica en la formación de ingenieros sobre un concepto unificador del álgebra lineal: la transformación lineal (TL). 
+
+La noción de unificación y la pregunta del sentido lineal son tratadas bajo el ángulo de la adquisición de competencias en situación de resolución de problemas. La secuencia de los problemas a resolver está centrada en el proceso de construir un concepto abstracto (la TL) sobre un dominio ya matematizado, con el fin de retener el aspecto unificador de la noción formal (Astolfi y Drouin, 1992). 
+
+A partir de resultados de trabajos de didácticas de las ciencias y de las matemáticas (Dupin 1995; Sfard 1991), elaboramos situaciones didácticas en base a elementos de modelización articulando las dos formas de concebir el objeto: “procedural” y “estructural” que permitan encontrar un medio de resolución más seguro, más económico y reutilizable. En particular, tratamos de hacer interactuar las aplicaciones de la noción situándonos en diversos dominios matemáticos; aritmético, geométrico, algebraico y analítico. La secuencia pone atención al desarrollo de conexiones entre diferentes marcos, y entre las representaciones de la TL en los distintos registros, inspirándose en particular del desarrollo histórico de la noción. Por sí misma, la secuencia didáctica, se encarga de mantener un equilibrio entre el lado aplicable de las tareas a su dominio práctico profesional y el lado teórico para ayudar a la estructuración de los conceptos.
+
+ 
+El estudio concierne a estudiantes chilenos en un primer curso de álgebra lineal. Valoramos un análisis a priori bien detallado para reforzar la secuencia y al mismo tiempo preparar el análisis de los datos. Con el análisis de las respuestas al cuestionario de entrada, de las producciones de los equipos y de los comentarios recibidos en entrevista, pudimos identificar las competencias matemáticas y los niveles de explicitación (Caron, 2004) en la utilización de la TL. Los resultados obtenidos muestran la emergencia del papel unificador de la TL, incluso en aquellos cuyas costumbres en resolución de problemas matemáticos están marcadas por los enfoques procedurales de aprendizaje y de enseñanza.
+
+La secuencia didáctica ha mostrado ser eficaz para el desarrollo progresivo de la herramienta lineal (TL) con sentido y propiedades propias: la TL aparece como un medio económico para resolver problemas fuera del álgebra lineal, lo que parece otorgar a los estudiantes una abstracción de las propiedades subyacentes. Por otra parte, observamos que los procesos atados por la enseñanza a ciertos conceptos pueden actuar como obstáculos a la unificación. Eso puede hacer volver a los estudiantes al punto de entrada, y el papel de la TL resulta más bien “revelar” un conocimiento parcial que conducir el proceso de la solución." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="spa" name="DCTERMS.language" xml:lang="en"/>
+<meta content="séquence didactique; concept unificateur; transformation linéaire; procédural; structural; modélisation; application; changement de cadre; didactical sequence; unifying concept; linear transformation; procedural; modelling; change of a system of representations; secuencia didáctica; concepto unificador; transformación lineal; estructural; modelización; aplicación; cambio de marco; Education - Higher / Éducation - Enseignement supérieur (UMI : 0745); Thèse ou mémoire / Thesis or Dissertation; Sciences de l'éducation - Didactique" name="citation_keywords"/>
+<meta content="Una secuencia didáctica para un concepto unificador en un curso de álgebra lineal de un programa de formación a la ingeniería" name="citation_title"/>
+<meta content="spa" name="citation_language"/>
+<meta content="Pascual, Sara" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/9726/2/Pascual_Sara_2013_these.pdf" name="citation_pdf_url"/>
+<meta content="2013-04-05" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/9726" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9726?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9726?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9726?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9726?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9726?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9726?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2926" role="menuitem">Faculté des sciences de l'éducation</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2971" role="menuitem">Faculté des sciences de l'éducation – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2926">Faculté des sciences de l'éducation</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2971">Faculté des sciences de l'éducation – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2971"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/9726/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/9726">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/9726/mets.xml-->
+<h2 class="page-header first-page-header">Una secuencia didáctica para un concepto unificador en un curso de álgebra lineal de un programa de formación a la ingeniería</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Caron, France</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Pascual, Sara</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2013-06-27T14:35:43Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2013-06-27T14:35:43Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2013-04-05</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2012-12</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/9726</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">séquence didactique</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">concept unificateur</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">transformation linéaire</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">procédural</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">structural</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">modélisation</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">application</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">changement de cadre</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">didactical sequence</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">unifying concept</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">linear transformation</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">procedural</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">modelling</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">change of a system of representations</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">secuencia didáctica</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">concepto unificador</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">transformación lineal</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">estructural</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">modelización</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">aplicación</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">cambio de marco</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Education - Higher / Éducation - Enseignement supérieur (UMI : 0745)</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Una secuencia didáctica para un concepto unificador en un curso de álgebra lineal de un programa de formación a la ingeniería</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences de l'éducation - Didactique</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">L’introduction aux concepts unificateurs dans l’enseignement des mathématiques privilégie typiquement l’approche axiomatique. Il n’est pas surprenant de constater qu’une telle approche tend à une algorithmisation des tâches pour augmenter l’efficacité de leur résolution et favoriser la transparence du nouveau concept enseigné (Chevallard, 1991). Cette réponse classique fait néanmoins oublier le rôle unificateur du concept et n’encourage pas à l’utilisation de sa puissance. Afin d’améliorer l’apprentissage d’un concept unificateur, ce travail de thèse étudie la pertinence d’une séquence didactique dans la formation d’ingénieurs centrée sur un concept unificateur de l’algèbre linéaire: la transformation linéaire (TL).
+
+La notion d’unification et la question du sens de la linéarité sont abordées à travers l’acquisition de compétences en résolution de problèmes.  La séquence des problèmes à résoudre a pour objet le processus de construction d’un concept abstrait (la TL) sur un domaine déjà mathématisé, avec l’intention de dégager l’aspect unificateur de la notion formelle (Astolfi y Drouin, 1992). 
+
+À partir de résultats de travaux en didactique des sciences et des mathématiques (Dupin 1995; Sfard 1991), nous élaborons des situations didactiques sur la base d’éléments de modélisation, en cherchant à articuler deux façons de concevoir l’objet  (« procédurale » et « structurale ») de façon à trouver une stratégie de résolution plus sûre, plus économique et réutilisable. En particulier, nous avons cherché à situer la notion dans différents domaines mathématiques où elle est applicable : arithmétique, géométrique, algébrique et analytique.  La séquence vise à développer des liens entre différents cadres mathématiques, et entre différentes représentations de la TL dans les différents registres mathématiques, en s’inspirant notamment dans cette démarche du développement historique de la notion.  De plus, la séquence didactique vise à maintenir un équilibre entre le côté applicable des tâches à la pratique professionnelle visée, et le côté théorique propice à la structuration des concepts.  
+
+L’étude a été conduite avec des étudiants chiliens en formation au génie, dans le premier cours d’algèbre linéaire. Nous avons mené une analyse a priori détaillée afin de renforcer la robustesse de la séquence et de préparer à l’analyse des données. Par l’analyse des réponses au questionnaire d’entrée, des productions des équipes et des commentaires reçus en entrevus, nous avons pu identifier les compétences mathématiques et les niveaux d’explicitation (Caron, 2004) mis à contribution dans l’utilisation de la TL. Les résultats obtenus montrent l’émergence du rôle unificateur de la TL, même chez ceux dont les habitudes en résolution de problèmes mathématiques sont marquées par une orientation procédurale, tant dans l’apprentissage que dans l’enseignement. 
+
+La séquence didactique a montré son efficacité pour la construction progressive chez les étudiants de la notion de transformation linéaire (TL), avec le sens et les propriétés qui lui sont propres : la TL apparaît ainsi comme un moyen économique de résoudre des problèmes extérieurs à l’algèbre linéaire, ce qui permet aux étudiants d’en abstraire les propriétés sous-jacentes.  Par ailleurs, nous avons pu observer que certains concepts enseignés auparavant peuvent agir comme obstacles à l’unification visée.  Cela peut ramener les étudiants à leur point de départ, et le rôle de la TL se résume dans ces conditions à révéler des connaissances partielles, plutôt qu’à guider la résolution.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Introduction to unifying concepts in the teaching of mathematics typically adopts the axiomatic approach.  It is not surprising that under these conditions, tasks tend to become more algorithmic in order to help students’ performance and favor apparent transparency of the new concept (Chevallard, 1991). This classical response makes forget the unifying role of the concept and does not encourage its powerful use.  In order to improve the learning of a unifying concept, this thesis aimed at studying the relevance of a didactical sequence in the formal training of future engineers, centered on a unifying concept of linear algebra: the linear transformation (LT).   
+
+The idea of unification and the question of meaning are addressed through the development of problem solving competencies. The sequence of problems to solve is aimed at constructing an abstract concept (the LT) on a domain which is already mathematized, with the intent of abstracting the unifying aspect of the formal notion (Astolfi y Drouin, 1992). 
+
+Building on the work of Dupin (1995) and Sfard (1991), in mathematics and science education, we have designed didactical situations with elements of modelling, by articulating two ways of conceiving the notion (« procedural » and « structural ») in order to find a safest, more economical and reusable solving strategy. In particular, we have situated the notion in various mathematical domains where it is applicable: arithmetics, geometry, algebra and analysis. The sequence aims at developing connections between different mathematical frameworks, and between various representations of the LT in the different mathematical registers, with the historical development of the notion as a source of inspiration.  Moreover, the didactical sequence aims at achieving a balance between the practical aspect of the tasks in the foreseen professional practice and the theoretical aspect required to structure the concepts.  
+
+The study was conducted in Chile, with engineering students in the first linear algebra course of the program. We had completed a detailed a priori analysis of the sequence in order to reinforce its robustness and prepare for data analysis. With the analysis of answers to the entry questionnaire, team productions to the tasks, and comments received in students interview, we were able to identify the mathematical competencies and the levels of communication (Caron, 2004) put at work in their use of the LT. Results show emergence of the unifying role of the LT, even with students whose problem solving habits in mathematics have been marked by a procedural influence in the teaching and the learning.  
+
+The didactical sequence showed its effectiveness in the progressive construction by students of the linear transformation concept (LT), with its specific meaning and properties: the TL has appeared as an economical means of solving problems outside of linear algebra, which helped students in abstracting its underlying properties.  In contrast, we have also observed that some previously taught concepts could act as obstacles to the desired unification.  In these cases, students could revert to their old habits, and their use of the LT would rather reveal their partial understanding than help guide the resolution.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La introducción de conceptos unificadores en la enseñanza de las matemáticas privilegia comúnmente el enfoque axiomático. No es sorprendente que la utilización de este concepto así definido, opera a menudo sobre la algoritmización de tareas para aumentar la eficacia de las resoluciones y promover la transparencia del nuevo objeto enseñado (Chevallard, 1991). Esta respuesta clásica hace sin embargo olvidar el rol unificador y no favorece la utilización de su poder. A fin de mejorar el aprendizaje de un concepto unificador, este trabajo de tesis estudia la pertinencia de una secuencia didáctica en la formación de ingenieros sobre un concepto unificador del álgebra lineal: la transformación lineal (TL). 
+
+La noción de unificación y la pregunta del sentido lineal son tratadas bajo el ángulo de la adquisición de competencias en situación de resolución de problemas. La secuencia de los problemas a resolver está centrada en el proceso de construir un concepto abstracto (la TL) sobre un dominio ya matematizado, con el fin de retener el aspecto unificador de la noción formal (Astolfi y Drouin, 1992). 
+
+A partir de resultados de trabajos de didácticas de las ciencias y de las matemáticas (Dupin 1995; Sfard 1991), elaboramos situaciones didácticas en base a elementos de modelización articulando las dos formas de concebir el objeto: “procedural” y “estructural” que permitan encontrar un medio de resolución más seguro, más económico y reutilizable. En particular, tratamos de hacer interactuar las aplicaciones de la noción situándonos en diversos dominios matemáticos; aritmético, geométrico, algebraico y analítico. La secuencia pone atención al desarrollo de conexiones entre diferentes marcos, y entre las representaciones de la TL en los distintos registros, inspirándose en particular del desarrollo histórico de la noción. Por sí misma, la secuencia didáctica, se encarga de mantener un equilibrio entre el lado aplicable de las tareas a su dominio práctico profesional y el lado teórico para ayudar a la estructuración de los conceptos.
+
+ 
+El estudio concierne a estudiantes chilenos en un primer curso de álgebra lineal. Valoramos un análisis a priori bien detallado para reforzar la secuencia y al mismo tiempo preparar el análisis de los datos. Con el análisis de las respuestas al cuestionario de entrada, de las producciones de los equipos y de los comentarios recibidos en entrevista, pudimos identificar las competencias matemáticas y los niveles de explicitación (Caron, 2004) en la utilización de la TL. Los resultados obtenidos muestran la emergencia del papel unificador de la TL, incluso en aquellos cuyas costumbres en resolución de problemas matemáticos están marcadas por los enfoques procedurales de aprendizaje y de enseñanza.
+
+La secuencia didáctica ha mostrado ser eficaz para el desarrollo progresivo de la herramienta lineal (TL) con sentido y propiedades propias: la TL aparece como un medio económico para resolver problemas fuera del álgebra lineal, lo que parece otorgar a los estudiantes una abstracción de las propiedades subyacentes. Por otra parte, observamos que los procesos atados por la enseñanza a ciertos conceptos pueden actuar como obstáculos a la unificación. Eso puede hacer volver a los estudiantes al punto de entrada, y el papel de la TL resulta más bien “revelar” un conocimiento parcial que conducir el proceso de la solución.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">spa</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F9726&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+de+l%27%C3%A9ducation+-+Didactique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/9726/Pascual_Sara_2013_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/9726/Pascual_Sara_2013_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Pascual_Sara_2013_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/9726/Pascual_Sara_2013_these.pdf?sequence=2&amp;isAllowed=y">Pascual_Sara_2013_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">7.807Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2971/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2971">Faculté des sciences de l'éducation – Thèses et mémoires</a> [646]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/9726">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

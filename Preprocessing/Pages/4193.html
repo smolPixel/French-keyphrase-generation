@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Applicabilité de la texture couleur à la différentiation des classes d’occupation du territoire sur des images satellitales multispectrales</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Cavayas, François" name="DC.contributor">
+<meta content="Boyer, André" name="DC.creator">
+<meta content="2010-10-15T16:21:36Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2010-10-15T16:21:36Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2010-09-02" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2010-08" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/4193" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Texture couleur" name="DC.subject" xml:lang="en"/>
+<meta content="Color texture" name="DC.subject" xml:lang="en"/>
+<meta content="Matrices de co-occurrences" name="DC.subject" xml:lang="en"/>
+<meta content="Co-occurrences matrix" name="DC.subject" xml:lang="en"/>
+<meta content="Classification de l’occupation du sol" name="DC.subject" xml:lang="en"/>
+<meta content="Landcover classification" name="DC.subject" xml:lang="en"/>
+<meta content="Imagerie multispectrale" name="DC.subject" xml:lang="en"/>
+<meta content="Multispectral imaging" name="DC.subject" xml:lang="en"/>
+<meta content="Signature texturale" name="DC.subject" xml:lang="en"/>
+<meta content="Textural signature" name="DC.subject" xml:lang="en"/>
+<meta content="Earth Sciences - Remote Sensing / Sciences de la Terre - Télédétection (UMI : 0799)" name="DC.subject" xml:lang="en"/>
+<meta content="Applicabilité de la texture couleur à la différentiation des classes d’occupation du territoire sur des images satellitales multispectrales" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La texture est un élément clé pour l’interprétation des images de télédétection à fine résolution spatiale. L’intégration de l’information texturale dans un processus de classification automatisée des images se fait habituellement via des images de texture, souvent créées par le calcul de matrices de co-occurrences (MCO) des niveaux de gris. Une MCO est un histogramme des fréquences d’occurrence des paires de valeurs de pixels présentes dans les fenêtres locales, associées à tous les pixels de l’image utilisée; une paire de pixels étant définie selon un pas et une orientation donnés.  Les MCO permettent le calcul de plus d’une dizaine de paramètres décrivant, de diverses manières, la distribution des fréquences, créant ainsi autant d’images texturales distinctes. L’approche de mesure des textures par MCO a été appliquée principalement sur des images de télédétection monochromes (ex. images panchromatiques, images radar monofréquence et monopolarisation). En imagerie multispectrale, une unique bande spectrale, parmi celles disponibles, est habituellement choisie pour générer des images de texture. La question que nous avons posée dans cette recherche concerne justement cette utilisation restreinte de l’information texturale dans le cas des images multispectrales. En fait, l’effet visuel d’une texture est créé, non seulement par l’agencement particulier d’objets/pixels de brillance différente, mais aussi de couleur différente. 
+
+Plusieurs façons sont proposées dans la littérature pour introduire cette idée de la texture à plusieurs dimensions. Parmi celles-ci, deux en particulier nous ont intéressés dans cette recherche. La première façon fait appel aux MCO calculées bande par bande spectrale et la seconde utilise les MCO généralisées impliquant deux bandes spectrales à la fois. Dans ce dernier cas, le procédé consiste en le calcul des fréquences d’occurrence des paires de valeurs dans deux bandes spectrales différentes. Cela permet, en un seul traitement, la prise en compte dans une large mesure de la « couleur » des éléments de texture. Ces deux approches font partie des techniques dites intégratives. Pour les distinguer, nous les avons appelées dans cet ouvrage respectivement « textures grises » et « textures couleurs ». Notre recherche se présente donc comme une analyse comparative des possibilités offertes par l’application de ces deux types de signatures texturales dans le cas spécifique d’une cartographie automatisée des occupations de sol à partir d’une image multispectrale. Une signature texturale d’un objet ou d’une classe d’objets, par analogie aux signatures spectrales, est constituée d’une série de paramètres de texture mesurés sur une bande spectrale à la fois (textures grises) ou une paire de bandes spectrales à la fois (textures couleurs). Cette recherche visait non seulement à comparer les deux approches intégratives, mais aussi à identifier la composition des signatures texturales des classes d’occupation du sol favorisant leur différentiation : type de paramètres de texture / taille de la fenêtre de calcul / bandes spectrales ou combinaisons de bandes spectrales.
+
+Pour ce faire, nous avons choisi un site à l’intérieur du territoire de la Communauté Métropolitaine de Montréal (Longueuil) composé d’une mosaïque d’occupations du sol, caractéristique d’une zone semi urbaine (résidentiel, industriel/commercial, boisés, agriculture, plans d’eau…). Une image du satellite SPOT-5 (4 bandes spectrales) de 10 m de résolution spatiale a été utilisée dans cette recherche. Puisqu’une infinité d’images de texture peuvent être créées en faisant varier les paramètres de calcul des MCO et afin de mieux circonscrire notre problème nous avons décidé, en tenant compte des études publiées dans ce domaine : a) de faire varier la fenêtre de calcul de 3*3 pixels à 21*21 pixels tout en fixant le pas et l’orientation pour former les paires de pixels à (1,1), c'est-à-dire à un pas d’un pixel et une orientation de 135°; b) de limiter les analyses des MCO à huit paramètres de texture (contraste, corrélation, écart-type, énergie, entropie, homogénéité, moyenne, probabilité maximale), qui sont tous calculables par la méthode rapide de Unser, une approximation des matrices de co-occurrences, c) de former les deux signatures texturales par le même nombre d’éléments choisis d’après une analyse de la séparabilité (distance de Bhattacharya) des classes d’occupation du sol; et d) d’analyser les résultats de classification (matrices de confusion, exactitudes, coefficients Kappa) par maximum de vraisemblance pour conclure sur le potentiel des deux approches intégratives; les classes d’occupation du sol à reconnaître étaient : résidentielle basse et haute densité, commerciale/industrielle, agricole, boisés, surfaces gazonnées (incluant les golfs) et plans d’eau.
+
+Nos principales conclusions sont les suivantes a) à l’exception de la probabilité maximale, tous les autres paramètres de texture sont utiles dans la formation des signatures texturales; moyenne et écart type sont les plus utiles dans la formation des textures grises tandis que contraste et corrélation, dans le cas des textures couleurs, b) l’exactitude globale de la classification atteint un score acceptable (85%) seulement dans le cas des signatures texturales couleurs; c’est une amélioration importante par rapport aux classifications basées uniquement sur les signatures spectrales des classes d’occupation du sol dont le score est souvent situé aux alentours de 75%; ce score est atteint avec des fenêtres de calcul aux alentours de11*11 à 15*15 pixels; c) Les signatures texturales couleurs offrant des scores supérieurs à ceux obtenus avec les signatures grises de 5% à 10%; et ce avec des petites fenêtres de calcul (5*5, 7*7 et occasionnellement 9*9) d) Pour plusieurs classes d’occupation du sol prises individuellement, l’exactitude dépasse les 90% pour les deux types de signatures texturales; e) une seule classe est mieux séparable du reste par les textures grises, celle de l’agricole; f) les classes créant beaucoup de confusions, ce qui explique en grande partie le score global de la classification de 85%, sont les deux classes du résidentiel (haute et basse densité).
+
+En conclusion, nous pouvons dire que l’approche intégrative par textures couleurs d’une image multispectrale de 10 m de résolution spatiale offre un plus grand potentiel pour la cartographie des occupations du sol que l’approche intégrative par textures grises. Pour plusieurs classes d’occupations du sol un gain appréciable en temps de calcul des paramètres de texture peut être obtenu par l’utilisation des petites fenêtres de traitement. Des améliorations importantes sont escomptées pour atteindre des exactitudes de classification de 90% et plus par l’utilisation des fenêtres de calcul de taille variable adaptées à chaque type d’occupation du sol. Une méthode de classification hiérarchique pourrait être alors utilisée afin de séparer les classes recherchées une à la fois par rapport au reste au lieu d’une classification globale où l’intégration des paramètres calculés avec des fenêtres de taille variable conduirait inévitablement à des confusions entre classes." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content='Texture is a key element in interpreting remotely sensed images of fine spatial resolution. The integration of textural information in an automatic image-classification process is usually done via textural images, which are often created by calculating gray levels co-occurrences matrices (COM). A COM is a histogram of frequencies of pairs of pixel values present in local windows associated with all pixels in the used image; each pixel pair being formed using a given orientation and spacing. COM allows calculation for more than a dozen of parameters describing in various ways the frequency distribution, creating thus as many different textural images. Texture measurements approach based on COMs had been mainly applied on monochrome images (e.g. panchromatic, single polarisation and frequency radar images). In the case of multispectral images, a single spectral band, among those available, is usually chosen to generate texture images. The question we asked in this research concerns precisely this limited use of textural information in the case of multispectral images. In fact, the visual effect of a texture is created, not only by the spatial arrangement of variable objects/pixels brightness, but also of different colors. 
+
+Several ways are suggested in the literature to introduce this concept of multi-dimensional texture. In this research, two of them were of particularly interested us. In the first way COMs are calculated spectral band by band and in the second one, generalized COMs are applied involving the joint use of two spectral bands. In the latter case, the pairs of pixel values are defined in two different spectral bands. This allows, in a single treatment, for a broad accounting of the "color" element composing a texture. These two approaches are called integrative techniques. To distinguish them, we call them respectively “gray textures” and “color textures”. Our research concerns the comparative analysis of the opportunities offered by applying these two types of textural signatures in the specific case of an automated land cover mapping using multispectral images. A textural signature of an object or class of objects, by analogy to spectral signatures, consists in a set of texture parameters measured; band by band (grey textures), or by pairs of bands (color textures).This research was designed not only to compare the two integrative approaches, but also to identify the components of textural signatures favouring the differentiation of land cover classes: texture parameters, window sizes and bands selection.
+
+	 To do this, a site within the territory of the Montreal Metropolitan Community (Longueuil) was chosen with a diversity of land covers representative of a semi-urban area. (residential, industrial / commercial, woodlots , agriculture, water bodies…). A SPOT-5 (4 spectral bands) image of 10m spatial resolution was used in this research. Since an infinite number of texture images can be created by varying the design parameters of COM, and to better define our problem, we have decided, taking into account studies published in this field: a) to vary the computation window from 3*3 to 21*21 pixels while setting the pixel spacing and direction to (1,1); that is to say, an spacing of 1 and an  orientation of 135 ° between pairs of pixels. b) limit the COM analysis to eight texture parameters (contrast, correlation, standard deviation, energy, entropy, homogeneity, average, maximum probability), all of which are computable by the Unser’s fast-COM-approximation method, c) form the two textural signatures by the same number of elements chosen from a separability analysis (Bhattacharya distance) between land cover classes, and d) analyse the results (confusion matrices, accuracies, kappa) obtained using a maximum likelihood classification algorithm to conclude on the potential of both integrative approaches; classes to be recognized included: low and high density residential, commercial / industrial, agricultural, woodlots, turf (including golf) water bodies, clouds and their shadows.
+
+	Our main conclusions are as follows a) except maximum probability, all other textural parameters are useful in the formation of textural signatures; mean and standard deviation are most useful in the formation of gray textures while contrast and correlation, are the best in the case of color textures b) the overall classification accuracy achieved an acceptable score (85%), only in the case of color textural signatures. This is a significant improvement compared to classifications based solely on spectral signatures, whose accuracies are often situated around 75%. This score is reached with windows size from about 11*11 to 15 * 15 pixels, c) Textural colors signatures offer higher scores, ranging  from 5% to 10%, than those obtained by gray signatures. This is true while using the smaller process windows (5*5, 7*7, and occasionally 9*9) d) For several land cover classes examined individually, the accuracy is above 90% regardless of the used textural signatures  e) Only one class is better separated from the rest by gray textures, the agricultural one; f) Classes creating a lot of confusion, which largely explains the overall classification score of 85 %, are the two residential classes (high and low density).
+
+	As a final conclusion, we can say that the integrative approach by color textures provides a greater potential for mapping land covers using multispectral images than the integrative approach by gray textures. For several land cover classes an appreciable gain computing time of textural parameters may be obtained using smaller size windows. Significant improvements of the classification results (even better than 90%) are expected using calculation windows with sizes better adapted to each classes particular texture characteristics, A hierarchical classification method could then be used to separate each class at a time from all others, instead of a broad classification where the integration of parameters calculated with varying size windows, would inevitably lead to confusion between classes.' name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Texture couleur; Color texture; Matrices de co-occurrences; Co-occurrences matrix; Classification de l’occupation du sol; Landcover classification; Imagerie multispectrale; Multispectral imaging; Signature texturale; Textural signature; Earth Sciences - Remote Sensing / Sciences de la Terre - Télédétection (UMI : 0799); Thèse ou mémoire / Thesis or Dissertation; Géographie" name="citation_keywords"/>
+<meta content="Applicabilité de la texture couleur à la différentiation des classes d’occupation du territoire sur des images satellitales multispectrales" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Boyer, André" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/4193/6/Boyer_Andr%c3%a9_2010_M%c3%a9moire.pdf" name="citation_pdf_url"/>
+<meta content="2010-09-02" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/4193" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4193?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4193?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4193?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4193?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4193?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4193?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2945" role="menuitem">Faculté des arts et des sciences – Département de géographie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2984" role="menuitem">Faculté des arts et des sciences – Département de géographie - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2945">Faculté des arts et des sciences – Département de géographie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2984">Faculté des arts et des sciences – Département de géographie - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2984"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/4193/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/4193">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/4193/mets.xml-->
+<h2 class="page-header first-page-header">Applicabilité de la texture couleur à la différentiation des classes d’occupation du territoire sur des images satellitales multispectrales</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Cavayas, François</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Boyer, André</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2010-10-15T16:21:36Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2010-10-15T16:21:36Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2010-09-02</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2010-08</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/4193</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Texture couleur</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Color texture</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Matrices de co-occurrences</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Co-occurrences matrix</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Classification de l’occupation du sol</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Landcover classification</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Imagerie multispectrale</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Multispectral imaging</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Signature texturale</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Textural signature</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Earth Sciences - Remote Sensing / Sciences de la Terre - Télédétection (UMI : 0799)</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Applicabilité de la texture couleur à la différentiation des classes d’occupation du territoire sur des images satellitales multispectrales</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Géographie</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Maîtrise / Master's</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">M. Sc.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La texture est un élément clé pour l’interprétation des images de télédétection à fine résolution spatiale. L’intégration de l’information texturale dans un processus de classification automatisée des images se fait habituellement via des images de texture, souvent créées par le calcul de matrices de co-occurrences (MCO) des niveaux de gris. Une MCO est un histogramme des fréquences d’occurrence des paires de valeurs de pixels présentes dans les fenêtres locales, associées à tous les pixels de l’image utilisée; une paire de pixels étant définie selon un pas et une orientation donnés.  Les MCO permettent le calcul de plus d’une dizaine de paramètres décrivant, de diverses manières, la distribution des fréquences, créant ainsi autant d’images texturales distinctes. L’approche de mesure des textures par MCO a été appliquée principalement sur des images de télédétection monochromes (ex. images panchromatiques, images radar monofréquence et monopolarisation). En imagerie multispectrale, une unique bande spectrale, parmi celles disponibles, est habituellement choisie pour générer des images de texture. La question que nous avons posée dans cette recherche concerne justement cette utilisation restreinte de l’information texturale dans le cas des images multispectrales. En fait, l’effet visuel d’une texture est créé, non seulement par l’agencement particulier d’objets/pixels de brillance différente, mais aussi de couleur différente. 
+
+Plusieurs façons sont proposées dans la littérature pour introduire cette idée de la texture à plusieurs dimensions. Parmi celles-ci, deux en particulier nous ont intéressés dans cette recherche. La première façon fait appel aux MCO calculées bande par bande spectrale et la seconde utilise les MCO généralisées impliquant deux bandes spectrales à la fois. Dans ce dernier cas, le procédé consiste en le calcul des fréquences d’occurrence des paires de valeurs dans deux bandes spectrales différentes. Cela permet, en un seul traitement, la prise en compte dans une large mesure de la « couleur » des éléments de texture. Ces deux approches font partie des techniques dites intégratives. Pour les distinguer, nous les avons appelées dans cet ouvrage respectivement « textures grises » et « textures couleurs ». Notre recherche se présente donc comme une analyse comparative des possibilités offertes par l’application de ces deux types de signatures texturales dans le cas spécifique d’une cartographie automatisée des occupations de sol à partir d’une image multispectrale. Une signature texturale d’un objet ou d’une classe d’objets, par analogie aux signatures spectrales, est constituée d’une série de paramètres de texture mesurés sur une bande spectrale à la fois (textures grises) ou une paire de bandes spectrales à la fois (textures couleurs). Cette recherche visait non seulement à comparer les deux approches intégratives, mais aussi à identifier la composition des signatures texturales des classes d’occupation du sol favorisant leur différentiation : type de paramètres de texture / taille de la fenêtre de calcul / bandes spectrales ou combinaisons de bandes spectrales.
+
+Pour ce faire, nous avons choisi un site à l’intérieur du territoire de la Communauté Métropolitaine de Montréal (Longueuil) composé d’une mosaïque d’occupations du sol, caractéristique d’une zone semi urbaine (résidentiel, industriel/commercial, boisés, agriculture, plans d’eau…). Une image du satellite SPOT-5 (4 bandes spectrales) de 10 m de résolution spatiale a été utilisée dans cette recherche. Puisqu’une infinité d’images de texture peuvent être créées en faisant varier les paramètres de calcul des MCO et afin de mieux circonscrire notre problème nous avons décidé, en tenant compte des études publiées dans ce domaine : a) de faire varier la fenêtre de calcul de 3*3 pixels à 21*21 pixels tout en fixant le pas et l’orientation pour former les paires de pixels à (1,1), c'est-à-dire à un pas d’un pixel et une orientation de 135°; b) de limiter les analyses des MCO à huit paramètres de texture (contraste, corrélation, écart-type, énergie, entropie, homogénéité, moyenne, probabilité maximale), qui sont tous calculables par la méthode rapide de Unser, une approximation des matrices de co-occurrences, c) de former les deux signatures texturales par le même nombre d’éléments choisis d’après une analyse de la séparabilité (distance de Bhattacharya) des classes d’occupation du sol; et d) d’analyser les résultats de classification (matrices de confusion, exactitudes, coefficients Kappa) par maximum de vraisemblance pour conclure sur le potentiel des deux approches intégratives; les classes d’occupation du sol à reconnaître étaient : résidentielle basse et haute densité, commerciale/industrielle, agricole, boisés, surfaces gazonnées (incluant les golfs) et plans d’eau.
+
+Nos principales conclusions sont les suivantes a) à l’exception de la probabilité maximale, tous les autres paramètres de texture sont utiles dans la formation des signatures texturales; moyenne et écart type sont les plus utiles dans la formation des textures grises tandis que contraste et corrélation, dans le cas des textures couleurs, b) l’exactitude globale de la classification atteint un score acceptable (85%) seulement dans le cas des signatures texturales couleurs; c’est une amélioration importante par rapport aux classifications basées uniquement sur les signatures spectrales des classes d’occupation du sol dont le score est souvent situé aux alentours de 75%; ce score est atteint avec des fenêtres de calcul aux alentours de11*11 à 15*15 pixels; c) Les signatures texturales couleurs offrant des scores supérieurs à ceux obtenus avec les signatures grises de 5% à 10%; et ce avec des petites fenêtres de calcul (5*5, 7*7 et occasionnellement 9*9) d) Pour plusieurs classes d’occupation du sol prises individuellement, l’exactitude dépasse les 90% pour les deux types de signatures texturales; e) une seule classe est mieux séparable du reste par les textures grises, celle de l’agricole; f) les classes créant beaucoup de confusions, ce qui explique en grande partie le score global de la classification de 85%, sont les deux classes du résidentiel (haute et basse densité).
+
+En conclusion, nous pouvons dire que l’approche intégrative par textures couleurs d’une image multispectrale de 10 m de résolution spatiale offre un plus grand potentiel pour la cartographie des occupations du sol que l’approche intégrative par textures grises. Pour plusieurs classes d’occupations du sol un gain appréciable en temps de calcul des paramètres de texture peut être obtenu par l’utilisation des petites fenêtres de traitement. Des améliorations importantes sont escomptées pour atteindre des exactitudes de classification de 90% et plus par l’utilisation des fenêtres de calcul de taille variable adaptées à chaque type d’occupation du sol. Une méthode de classification hiérarchique pourrait être alors utilisée afin de séparer les classes recherchées une à la fois par rapport au reste au lieu d’une classification globale où l’intégration des paramètres calculés avec des fenêtres de taille variable conduirait inévitablement à des confusions entre classes.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Texture is a key element in interpreting remotely sensed images of fine spatial resolution. The integration of textural information in an automatic image-classification process is usually done via textural images, which are often created by calculating gray levels co-occurrences matrices (COM). A COM is a histogram of frequencies of pairs of pixel values present in local windows associated with all pixels in the used image; each pixel pair being formed using a given orientation and spacing. COM allows calculation for more than a dozen of parameters describing in various ways the frequency distribution, creating thus as many different textural images. Texture measurements approach based on COMs had been mainly applied on monochrome images (e.g. panchromatic, single polarisation and frequency radar images). In the case of multispectral images, a single spectral band, among those available, is usually chosen to generate texture images. The question we asked in this research concerns precisely this limited use of textural information in the case of multispectral images. In fact, the visual effect of a texture is created, not only by the spatial arrangement of variable objects/pixels brightness, but also of different colors. 
+
+Several ways are suggested in the literature to introduce this concept of multi-dimensional texture. In this research, two of them were of particularly interested us. In the first way COMs are calculated spectral band by band and in the second one, generalized COMs are applied involving the joint use of two spectral bands. In the latter case, the pairs of pixel values are defined in two different spectral bands. This allows, in a single treatment, for a broad accounting of the "color" element composing a texture. These two approaches are called integrative techniques. To distinguish them, we call them respectively “gray textures” and “color textures”. Our research concerns the comparative analysis of the opportunities offered by applying these two types of textural signatures in the specific case of an automated land cover mapping using multispectral images. A textural signature of an object or class of objects, by analogy to spectral signatures, consists in a set of texture parameters measured; band by band (grey textures), or by pairs of bands (color textures).This research was designed not only to compare the two integrative approaches, but also to identify the components of textural signatures favouring the differentiation of land cover classes: texture parameters, window sizes and bands selection.
+
+	 To do this, a site within the territory of the Montreal Metropolitan Community (Longueuil) was chosen with a diversity of land covers representative of a semi-urban area. (residential, industrial / commercial, woodlots , agriculture, water bodies…). A SPOT-5 (4 spectral bands) image of 10m spatial resolution was used in this research. Since an infinite number of texture images can be created by varying the design parameters of COM, and to better define our problem, we have decided, taking into account studies published in this field: a) to vary the computation window from 3*3 to 21*21 pixels while setting the pixel spacing and direction to (1,1); that is to say, an spacing of 1 and an  orientation of 135 ° between pairs of pixels. b) limit the COM analysis to eight texture parameters (contrast, correlation, standard deviation, energy, entropy, homogeneity, average, maximum probability), all of which are computable by the Unser’s fast-COM-approximation method, c) form the two textural signatures by the same number of elements chosen from a separability analysis (Bhattacharya distance) between land cover classes, and d) analyse the results (confusion matrices, accuracies, kappa) obtained using a maximum likelihood classification algorithm to conclude on the potential of both integrative approaches; classes to be recognized included: low and high density residential, commercial / industrial, agricultural, woodlots, turf (including golf) water bodies, clouds and their shadows.
+
+	Our main conclusions are as follows a) except maximum probability, all other textural parameters are useful in the formation of textural signatures; mean and standard deviation are most useful in the formation of gray textures while contrast and correlation, are the best in the case of color textures b) the overall classification accuracy achieved an acceptable score (85%), only in the case of color textural signatures. This is a significant improvement compared to classifications based solely on spectral signatures, whose accuracies are often situated around 75%. This score is reached with windows size from about 11*11 to 15 * 15 pixels, c) Textural colors signatures offer higher scores, ranging  from 5% to 10%, than those obtained by gray signatures. This is true while using the smaller process windows (5*5, 7*7, and occasionally 9*9) d) For several land cover classes examined individually, the accuracy is above 90% regardless of the used textural signatures  e) Only one class is better separated from the rest by gray textures, the agricultural one; f) Classes creating a lot of confusion, which largely explains the overall classification score of 85 %, are the two residential classes (high and low density).
+
+	As a final conclusion, we can say that the integrative approach by color textures provides a greater potential for mapping land covers using multispectral images than the integrative approach by gray textures. For several land cover classes an appreciable gain computing time of textural parameters may be obtained using smaller size windows. Significant improvements of the classification results (even better than 90%) are expected using calculation windows with sizes better adapted to each classes particular texture characteristics, A hierarchical classification method could then be used to separate each class at a time from all others, instead of a broad classification where the integration of parameters calculated with varying size windows, would inevitably lead to confusion between classes.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F4193&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=G%C3%A9ographie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Ma%C3%AEtrise+%2F+Master%27s&amp;rft.degree=M.+Sc."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/4193/Boyer_Andr%c3%a9_2010_M%c3%a9moire.pdf?sequence=6&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/4193/Boyer_Andr%c3%a9_2010_M%c3%a9moire.pdf.jpg?sequence=8&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Boyer_André_2010_Mémoire.pdf">
+<a href="/xmlui/bitstream/handle/1866/4193/Boyer_Andr%c3%a9_2010_M%c3%a9moire.pdf?sequence=6&amp;isAllowed=y">Boyer_André_2010_Mémoire.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">4.667Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Mémoire">Mémoire</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2984/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2984">Faculté des arts et des sciences – Département de géographie - Thèses et mémoires</a> [241]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/4193">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

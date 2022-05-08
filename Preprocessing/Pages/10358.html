@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Modélisation des émotions de l’apprenant et interventions implicites pour les systèmes tutoriels intelligents</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Frasson, Claude" name="DC.contributor">
+<meta content="Jraidi, Imène" name="DC.creator">
+<meta content="2014-03-24T17:35:34Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2014-03-24T17:35:34Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2014-03-03" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2013-08" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/10358" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Systèmes Tutoriels Intelligents" name="DC.subject" xml:lang="fr"/>
+<meta content="détection des émotions" name="DC.subject" xml:lang="fr"/>
+<meta content="senseurs physiologiques" name="DC.subject" xml:lang="fr"/>
+<meta content="électroencéphalographie" name="DC.subject" xml:lang="fr"/>
+<meta content="modélisation de l’expérience de l’apprenant" name="DC.subject" xml:lang="fr"/>
+<meta content="réseaux Bayésiens dynamiques" name="DC.subject" xml:lang="fr"/>
+<meta content="stratégies émotionnelles implicites" name="DC.subject" xml:lang="fr"/>
+<meta content="perception subliminale" name="DC.subject" xml:lang="fr"/>
+<meta content="amorçage affectif" name="DC.subject" xml:lang="fr"/>
+<meta content="Intelligent Tutoring Systems" name="DC.subject" xml:lang="fr"/>
+<meta content="emotion detection" name="DC.subject" xml:lang="fr"/>
+<meta content="physiological sensors" name="DC.subject" xml:lang="fr"/>
+<meta content="electroencephalography" name="DC.subject" xml:lang="fr"/>
+<meta content="learner‘s experience modeling" name="DC.subject" xml:lang="fr"/>
+<meta content="dynamic Bayesian networks" name="DC.subject" xml:lang="fr"/>
+<meta content="implicit emotional strategies" name="DC.subject" xml:lang="fr"/>
+<meta content="subliminal perception" name="DC.subject" xml:lang="fr"/>
+<meta content="affective priming" name="DC.subject" xml:lang="fr"/>
+<meta content="Applied Sciences - Computer Science / Sciences appliqués et technologie - Informatique (UMI : 0984)" name="DC.subject" xml:lang="fr"/>
+<meta content="Modélisation des émotions de l’apprenant et interventions implicites pour les systèmes tutoriels intelligents" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La modélisation de l’expérience de l’utilisateur dans les Interactions Homme-Machine est un enjeu important pour la conception et le développement des systèmes adaptatifs intelligents. Dans ce contexte, une attention particulière est portée sur les réactions émotionnelles de l’utilisateur, car elles ont une influence capitale sur ses aptitudes cognitives, comme la perception et la prise de décision. La modélisation des émotions est particulièrement pertinente pour les Systèmes Tutoriels Émotionnellement Intelligents (STEI). Ces systèmes cherchent à identifier les émotions de l’apprenant lors des sessions d’apprentissage, et à optimiser son expérience d’interaction en recourant à diverses stratégies d’interventions.
+
+Cette thèse vise à améliorer les méthodes de modélisation des émotions et les stratégies émotionnelles utilisées actuellement par les STEI pour agir sur les émotions de l’apprenant. Plus précisément, notre premier objectif a été de proposer une nouvelle méthode pour détecter l’état émotionnel de l’apprenant, en utilisant différentes sources d’informations qui permettent de mesurer les émotions de façon précise, tout en tenant compte des variables individuelles qui peuvent avoir un impact sur la manifestation des émotions. Pour ce faire, nous avons développé une approche multimodale combinant plusieurs mesures physiologiques (activité cérébrale, réactions galvaniques et rythme cardiaque) avec des variables individuelles, pour détecter une émotion très fréquemment observée lors des sessions d’apprentissage, à savoir l’incertitude. Dans un premier lieu, nous avons identifié les indicateurs physiologiques clés qui sont associés à cet état, ainsi que les caractéristiques individuelles qui contribuent à sa manifestation. Puis, nous avons développé des modèles prédictifs permettant de détecter automatiquement cet état à partir des différentes variables analysées, à travers l’entrainement d’algorithmes d’apprentissage machine. 
+
+Notre deuxième objectif a été de proposer une approche unifiée pour reconnaître simultanément une combinaison de plusieurs émotions, et évaluer explicitement l’impact de ces émotions sur l’expérience d’interaction de l’apprenant. Pour cela, nous avons développé une plateforme hiérarchique, probabiliste et dynamique permettant de suivre les changements émotionnels de l'apprenant au fil du temps, et d’inférer automatiquement la tendance générale qui caractérise son expérience d’interaction à savoir : l’immersion, le blocage ou le décrochage. L’immersion correspond à une expérience optimale : un état dans lequel l'apprenant est complètement concentré et impliqué dans l’activité d’apprentissage. L’état de blocage correspond à une tendance d’interaction non optimale où l'apprenant a de la difficulté à se concentrer. Finalement, le décrochage correspond à un état extrêmement défavorable où l’apprenant n’est plus du tout impliqué dans l’activité d’apprentissage. La plateforme proposée intègre trois modalités de variables diagnostiques permettant d’évaluer l’expérience de l’apprenant à savoir : des variables physiologiques, des variables comportementales, et des mesures de performance, en combinaison avec des variables prédictives qui représentent le contexte courant de l’interaction et les caractéristiques personnelles de l'apprenant. Une étude a été réalisée pour valider notre approche à travers un protocole expérimental permettant de provoquer délibérément les trois tendances ciblées durant l’interaction des apprenants avec différents environnements d’apprentissage.
+
+Enfin, notre troisième objectif a été de proposer de nouvelles stratégies pour influencer positivement l’état émotionnel de l’apprenant, sans interrompre la dynamique de la session d’apprentissage. Nous avons à cette fin introduit le concept de stratégies émotionnelles implicites : une nouvelle approche pour agir subtilement sur les émotions de l’apprenant, dans le but d’améliorer son expérience d’apprentissage. Ces stratégies utilisent la perception subliminale, et plus précisément une technique connue sous le nom d’amorçage affectif. Cette technique permet de solliciter inconsciemment les émotions de l’apprenant, à travers la projection d’amorces comportant certaines connotations affectives. Nous avons mis en œuvre une stratégie émotionnelle implicite utilisant une forme particulière d’amorçage affectif à savoir : le conditionnement évaluatif, qui est destiné à améliorer de façon inconsciente l’estime de soi. Une étude expérimentale a été réalisée afin d’évaluer l’impact de cette stratégie sur les réactions émotionnelles et les performances des apprenants." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Modeling the user’s experience within Human-Computer Interaction is an important challenge for the design and development of intelligent adaptive systems. In this context, a particular attention is given to the user’s emotional reactions, as they decisively influence his cognitive abilities, such as perception and decision-making. Emotion modeling is particularly relevant for Emotionally Intelligent Tutoring Systems (EITS). These systems seek to identify the learner’s emotions during tutoring sessions, and to optimize his interaction experience using a variety of intervention strategies.
+This thesis aims to improve current methods on emotion modeling, as well as the emotional strategies that are presently used within EITS to influence the learner’s emotions. More precisely, our first objective was to propose a new method to recognize the learner’s emotional state, using different sources of information that allow to measure emotions accurately, whilst taking account of individual characteristics that can have an impact on the manifestation of emotions. To that end, we have developed a multimodal approach combining several physiological measures (brain activity, galvanic responses and heart rate) with individual variables, to detect a specific emotion, which is frequently observed within computer tutoring, namely : uncertainty. First, we have identified the key physiological indicators that are associated to this state, and the individual characteristics that contribute to its manifestation. Then, we have developed predictive models to automatically detect this state from the analyzed variables, trough machine learning algorithm training.
+Our second objective was to propose a unified approach to simultaneously recognize a combination of several emotions, and to explicitly evaluate the impact of these emotions on the learner’s interaction experience. For this purpose, we have developed a hierarchical, probabilistic and dynamic framework, which allows one to track the learner’s emotional changes over time, and to automatically infer the trend that characterizes his interaction experience namely : flow, stuck or off-task. Flow is an optimal experience : a state in which the learner is completely focused and involved within the learning activity. The state of stuck is a non-optimal trend of the interaction where the learner has difficulty to maintain focused attention. Finally, the off-task behavior is an extremely unfavorable state where the learner is not involved anymore within the learning session. The proposed framework integrates three-modality diagnostic variables that sense the learner’s experience including : physiology, behavior and performance, in conjunction with predictive variables that represent the current context of the interaction and the learner’s personal characteristics. A human-subject study was conducted to validate our approach through an experimental protocol designed to deliberately elicit the three targeted trends during the learners’ interaction with different learning environments.
+Finally, our third objective was to propose new strategies to positively influence the learner’s emotional state, without interrupting the dynamics of the learning session. To this end, we have introduced the concept of implicit emotional strategies : a novel approach to subtly impact the learner’s emotions, in order to improve his learning experience. These strategies use the subliminal perception, and more precisely a technique known as affective priming. This technique aims to unconsciously solicit the learner’s emotions, through the projection of primes charged with specific affective connotations. We have implemented an implicit emotional strategy using a particular form of affective priming namely : the evaluative conditioning, which is designed to unconsciously enhance self-esteem. An experimental study was conducted in order to evaluate the impact of this strategy on the learners’ emotional reactions and performance." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Systèmes Tutoriels Intelligents; détection des émotions; senseurs physiologiques; électroencéphalographie; modélisation de l’expérience de l’apprenant; réseaux Bayésiens dynamiques; stratégies émotionnelles implicites; perception subliminale; amorçage affectif; Intelligent Tutoring Systems; emotion detection; physiological sensors; electroencephalography; learner‘s experience modeling; dynamic Bayesian networks; implicit emotional strategies; subliminal perception; affective priming; Applied Sciences - Computer Science / Sciences appliqués et technologie - Informatique (UMI : 0984); Thèse ou mémoire / Thesis or Dissertation; Informatique" name="citation_keywords"/>
+<meta content="Modélisation des émotions de l’apprenant et interventions implicites pour les systèmes tutoriels intelligents" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Jraidi, Imène" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/10358/2/Jraidi_Imene_2013_These.pdf" name="citation_pdf_url"/>
+<meta content="2014-03-03" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/10358" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10358?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10358?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10358?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10358?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10358?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10358?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2958" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3001" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2958">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/3001"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/10358/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/10358">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10358/mets.xml-->
+<h2 class="page-header first-page-header">Modélisation des émotions de l’apprenant et interventions implicites pour les systèmes tutoriels intelligents</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Frasson, Claude</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Jraidi, Imène</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2014-03-24T17:35:34Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2014-03-24T17:35:34Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2014-03-03</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2013-08</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/10358</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Systèmes Tutoriels Intelligents</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">détection des émotions</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">senseurs physiologiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">électroencéphalographie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">modélisation de l’expérience de l’apprenant</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">réseaux Bayésiens dynamiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">stratégies émotionnelles implicites</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">perception subliminale</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">amorçage affectif</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Intelligent Tutoring Systems</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">emotion detection</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">physiological sensors</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">electroencephalography</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">learner‘s experience modeling</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">dynamic Bayesian networks</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">implicit emotional strategies</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">subliminal perception</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">affective priming</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Applied Sciences - Computer Science / Sciences appliqués et technologie - Informatique (UMI : 0984)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Modélisation des émotions de l’apprenant et interventions implicites pour les systèmes tutoriels intelligents</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Informatique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La modélisation de l’expérience de l’utilisateur dans les Interactions Homme-Machine est un enjeu important pour la conception et le développement des systèmes adaptatifs intelligents. Dans ce contexte, une attention particulière est portée sur les réactions émotionnelles de l’utilisateur, car elles ont une influence capitale sur ses aptitudes cognitives, comme la perception et la prise de décision. La modélisation des émotions est particulièrement pertinente pour les Systèmes Tutoriels Émotionnellement Intelligents (STEI). Ces systèmes cherchent à identifier les émotions de l’apprenant lors des sessions d’apprentissage, et à optimiser son expérience d’interaction en recourant à diverses stratégies d’interventions.
+
+Cette thèse vise à améliorer les méthodes de modélisation des émotions et les stratégies émotionnelles utilisées actuellement par les STEI pour agir sur les émotions de l’apprenant. Plus précisément, notre premier objectif a été de proposer une nouvelle méthode pour détecter l’état émotionnel de l’apprenant, en utilisant différentes sources d’informations qui permettent de mesurer les émotions de façon précise, tout en tenant compte des variables individuelles qui peuvent avoir un impact sur la manifestation des émotions. Pour ce faire, nous avons développé une approche multimodale combinant plusieurs mesures physiologiques (activité cérébrale, réactions galvaniques et rythme cardiaque) avec des variables individuelles, pour détecter une émotion très fréquemment observée lors des sessions d’apprentissage, à savoir l’incertitude. Dans un premier lieu, nous avons identifié les indicateurs physiologiques clés qui sont associés à cet état, ainsi que les caractéristiques individuelles qui contribuent à sa manifestation. Puis, nous avons développé des modèles prédictifs permettant de détecter automatiquement cet état à partir des différentes variables analysées, à travers l’entrainement d’algorithmes d’apprentissage machine. 
+
+Notre deuxième objectif a été de proposer une approche unifiée pour reconnaître simultanément une combinaison de plusieurs émotions, et évaluer explicitement l’impact de ces émotions sur l’expérience d’interaction de l’apprenant. Pour cela, nous avons développé une plateforme hiérarchique, probabiliste et dynamique permettant de suivre les changements émotionnels de l'apprenant au fil du temps, et d’inférer automatiquement la tendance générale qui caractérise son expérience d’interaction à savoir : l’immersion, le blocage ou le décrochage. L’immersion correspond à une expérience optimale : un état dans lequel l'apprenant est complètement concentré et impliqué dans l’activité d’apprentissage. L’état de blocage correspond à une tendance d’interaction non optimale où l'apprenant a de la difficulté à se concentrer. Finalement, le décrochage correspond à un état extrêmement défavorable où l’apprenant n’est plus du tout impliqué dans l’activité d’apprentissage. La plateforme proposée intègre trois modalités de variables diagnostiques permettant d’évaluer l’expérience de l’apprenant à savoir : des variables physiologiques, des variables comportementales, et des mesures de performance, en combinaison avec des variables prédictives qui représentent le contexte courant de l’interaction et les caractéristiques personnelles de l'apprenant. Une étude a été réalisée pour valider notre approche à travers un protocole expérimental permettant de provoquer délibérément les trois tendances ciblées durant l’interaction des apprenants avec différents environnements d’apprentissage.
+
+Enfin, notre troisième objectif a été de proposer de nouvelles stratégies pour influencer positivement l’état émotionnel de l’apprenant, sans interrompre la dynamique de la session d’apprentissage. Nous avons à cette fin introduit le concept de stratégies émotionnelles implicites : une nouvelle approche pour agir subtilement sur les émotions de l’apprenant, dans le but d’améliorer son expérience d’apprentissage. Ces stratégies utilisent la perception subliminale, et plus précisément une technique connue sous le nom d’amorçage affectif. Cette technique permet de solliciter inconsciemment les émotions de l’apprenant, à travers la projection d’amorces comportant certaines connotations affectives. Nous avons mis en œuvre une stratégie émotionnelle implicite utilisant une forme particulière d’amorçage affectif à savoir : le conditionnement évaluatif, qui est destiné à améliorer de façon inconsciente l’estime de soi. Une étude expérimentale a été réalisée afin d’évaluer l’impact de cette stratégie sur les réactions émotionnelles et les performances des apprenants.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Modeling the user’s experience within Human-Computer Interaction is an important challenge for the design and development of intelligent adaptive systems. In this context, a particular attention is given to the user’s emotional reactions, as they decisively influence his cognitive abilities, such as perception and decision-making. Emotion modeling is particularly relevant for Emotionally Intelligent Tutoring Systems (EITS). These systems seek to identify the learner’s emotions during tutoring sessions, and to optimize his interaction experience using a variety of intervention strategies.
+This thesis aims to improve current methods on emotion modeling, as well as the emotional strategies that are presently used within EITS to influence the learner’s emotions. More precisely, our first objective was to propose a new method to recognize the learner’s emotional state, using different sources of information that allow to measure emotions accurately, whilst taking account of individual characteristics that can have an impact on the manifestation of emotions. To that end, we have developed a multimodal approach combining several physiological measures (brain activity, galvanic responses and heart rate) with individual variables, to detect a specific emotion, which is frequently observed within computer tutoring, namely : uncertainty. First, we have identified the key physiological indicators that are associated to this state, and the individual characteristics that contribute to its manifestation. Then, we have developed predictive models to automatically detect this state from the analyzed variables, trough machine learning algorithm training.
+Our second objective was to propose a unified approach to simultaneously recognize a combination of several emotions, and to explicitly evaluate the impact of these emotions on the learner’s interaction experience. For this purpose, we have developed a hierarchical, probabilistic and dynamic framework, which allows one to track the learner’s emotional changes over time, and to automatically infer the trend that characterizes his interaction experience namely : flow, stuck or off-task. Flow is an optimal experience : a state in which the learner is completely focused and involved within the learning activity. The state of stuck is a non-optimal trend of the interaction where the learner has difficulty to maintain focused attention. Finally, the off-task behavior is an extremely unfavorable state where the learner is not involved anymore within the learning session. The proposed framework integrates three-modality diagnostic variables that sense the learner’s experience including : physiology, behavior and performance, in conjunction with predictive variables that represent the current context of the interaction and the learner’s personal characteristics. A human-subject study was conducted to validate our approach through an experimental protocol designed to deliberately elicit the three targeted trends during the learners’ interaction with different learning environments.
+Finally, our third objective was to propose new strategies to positively influence the learner’s emotional state, without interrupting the dynamics of the learning session. To this end, we have introduced the concept of implicit emotional strategies : a novel approach to subtly impact the learner’s emotions, in order to improve his learning experience. These strategies use the subliminal perception, and more precisely a technique known as affective priming. This technique aims to unconsciously solicit the learner’s emotions, through the projection of primes charged with specific affective connotations. We have implemented an implicit emotional strategy using a particular form of affective priming namely : the evaluative conditioning, which is designed to unconsciously enhance self-esteem. An experimental study was conducted in order to evaluate the impact of this strategy on the learners’ emotional reactions and performance.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F10358&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Informatique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/10358/Jraidi_Imene_2013_These.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/10358/Jraidi_Imene_2013_These.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Jraidi_Imene_2013_These.pdf">
+<a href="/xmlui/bitstream/handle/1866/10358/Jraidi_Imene_2013_These.pdf?sequence=2&amp;isAllowed=y">Jraidi_Imene_2013_These.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">4.984Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3001/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a> [795]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/10358">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

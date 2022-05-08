@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Synthèse et étude d’architectures complexes à base de poly(lactide) et de poly(2-isopropyl-2-oxazoline) pour des applications biomédicales</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Winnik, Françoise" name="DC.contributor">
+<meta content="Bullet, Jean-Richard" name="DC.creator">
+<meta content="2018-12-17T19:51:28Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2018-12-17T19:51:28Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2018-10-18" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2016-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/21124" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Acide poly(lactique)" name="DC.subject" xml:lang="fr"/>
+<meta content="Poly(ester-co-ether)" name="DC.subject" xml:lang="fr"/>
+<meta content="Poly(2-isopropyl-2-oxazoline)" name="DC.subject" xml:lang="fr"/>
+<meta content="Polymère en étoile" name="DC.subject" xml:lang="fr"/>
+<meta content="Polymère thermosensible" name="DC.subject" xml:lang="fr"/>
+<meta content="Cycloaddition alcyne-azoture catalysée par le cuivre (CuAAC)" name="DC.subject" xml:lang="fr"/>
+<meta content="Fonctionnalisation post-polymérisation" name="DC.subject" xml:lang="fr"/>
+<meta content="Délivrance de médicament" name="DC.subject" xml:lang="fr"/>
+<meta content="Poly(lactic acid)" name="DC.subject" xml:lang="fr"/>
+<meta content="Poly(ester-co-ether)" name="DC.subject" xml:lang="fr"/>
+<meta content="Star-polymer" name="DC.subject" xml:lang="fr"/>
+<meta content="Thermosensitive polymer" name="DC.subject" xml:lang="fr"/>
+<meta content="Copper catalyzed alkyne-azide cycloaddition (CuAAC)" name="DC.subject" xml:lang="fr"/>
+<meta content="Post-polymerisation functionalization" name="DC.subject" xml:lang="fr"/>
+<meta content="Drug delivery" name="DC.subject" xml:lang="fr"/>
+<meta content="Chemistry - Polymer / Chimie - Polymères (UMI : 0495)" name="DC.subject" xml:lang="fr"/>
+<meta content="Synthèse et étude d’architectures complexes à base de poly(lactide) et de poly(2-isopropyl-2-oxazoline) pour des applications biomédicales" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Le traitement du cancer est l’un des plus grands défis en chimie médicinale moderne. La majorité des traitements utilisés repose sur la chimiothérapie, impliquant l’emploi de molécules bioactives cytotoxiques. Bien qu’efficaces, ces molécules présentent, pour la plupart, des désavantages notoires tels que le manque de spécificité cellulaire et une solubilité limitée en phase aqueuse. Une façon de remédier aux problèmes exposés est de solubiliser ces molécules au sein de matrices polymères. Il existe différents types de matrices qui sont : les liposomes, les micelles, les nanosphères, les nanocapsules, les dendrimères (et les polymères en étoile), et les polymères conjugués et linéaires. Dans cette thèse, nous faisons l’étude de deux matrices polymères potentielles composées de matériaux biocompatibles : le polylactide et la poly(2-isopropyl-2-oxazoline).
+La première partie de la thèse, est consacrée à l’étude des polyester-co-éthers portant des groupements pendants fonctionnalisables. Nous avons développé ces copolymères par polymérisation aléatoire en masse de lactones (le lactide ou la caprolactone) et différents taux d’éthers de propargyle et de glycidyle (GPE), à 120°C, en utilisant l’octanoate d’étain comme catalyseur. L’efficacité de la copolymérisation a été mise en évidence par des analyses FTIR, RMN 1H et COSY. Toutefois, L’analyse GPC a montré une diminution de la masse molaire des polymères et un élargissement de la dispersité en rapport avec l’augmentation du taux de glycidyle initial. De plus, les analyses RMN 1H ont montré que le taux de propargyl (provenant de l’éther de glycidyle) au sein du copolymère ne dépassait pas 50%. La faisabilité des modifications post-polymérisation a été évaluée en couplant le (9-azidomethyl) anthracène au chaîne de poly(ester-co-éther)s via la chimie clic CuAAC. Cette méthode s’est révélée inoffensive pour la chaîne de polyesters. Des études de cytotoxicité ont prouvé l’innocuité des poly(ester-co-éther)s. Des nanoparticules sphériques ont été préparées à partir de ces polymères et peuvent être utilisées comme nanosphères pour le transport de molécules bioactives hydrophobes. 
+La copolymérisation des lactones avec des éthers de glycidyles s’avère être une stratégie intéressante de fonctionnalisation des chaînes des polyesters permettant la synthèse d’une large gamme de copolymères pour des applications biomédicales. Afin d’améliorer la synthèse des poly(ester-co-ether)s, nous avons proposé une approche mécanistique tenant compte des réactions de transfert de chaînes.
+Dans la deuxième partie de la thèse, nous avons étudié un polymère en étoile composé d’un polymère thermosensible : la poly(2-isopropyl-2-oxazoline) PIPOZ. Nous avons premièrement exploré deux approches synthétiques afin d’obtenir une série d’étoiles de PIPOZ (S-PIPOZ) de structure bien définié à savoir l’approche « coupling-onto » et l’approche « core-first ». Une première série de S-PIPOZ a été réalisée directement à partir d’un coeur pentaérythrityl tétratosylés par polymérisation cationique par ouverture de cycle (CROP) de 2-isopropyl-2-oxazoline pour l’approche « core-first ». Pour l’approche « coupling-onto », une deuxième série de S-PIPOZ a été réalisée par couplage via la CuAAC entre des PIPOZ-N3 linéaire (L-PIPOZ N3) et un cœur à 4 bras portant des alcynes terminaux. Tous les S-PIPOZs obtenus ont été analysés par RMN 1H, IR, MALLS-LS, des analyses UV et par microcalorimétrie différentielle à balayage (HS-DSC). Les polymères obtenus par l’approche « core-first » ont montré une microstructure mal-définie comparé à ceux obtenus par l’approche « coupling-onto ». Suite à ces résultats, nous avons défini l’approche « coupling-onto » comme voie d’obtention des S-PIPOZ. Une explication sur la structure mal-défini des polymères obtenus par l’approche « core-first » sera développée dans cette section. Nous exposerons aussi une méthode de purification permettant l’élimination rapide et efficace des L-PIPOZ N3 qui contaminent les échantillons de S-PIPOZ faits par l’approche « coupling-onto ». Cette méthode peut être applicable à d’autres polymères thermosensibles dans une certaine gamme de température.
+Dans la troisième partie, nous avons étudié l’effet de l’architecture et de la composition des bras-polymères sur la température de transition de phase et les propriétés des S-PIPOZs. Afin d’étoffer notre étude nous avons synthétisé un polymère en étoile à bloc composé de PIPOZ et de poly(éthylène glycol) PEG. Cette étude a été réalisée en examinant des solutions chauffées de polymères (S-PIPOZ, S-PIPOZ-b-PEG et tous les précurseurs linéaires) par des analyses de spectrométrie d’absorption UV, HS-DSC, diffusion de la lumière LS. Nous avons évalué la présence ou l’absence de cristaux au sein d’échantillons de S-PIPOZs provenant de solutions chauffées. Cette évaluation a été réalisée par diffusion des rayons-X aux grands angles (WAXS) et par microscopie électronique à transmission (TEM) et à balayage (SEM). La présence de cristaux est néfaste pour la conception de nanomatériaux destinés à des applications biomédicales. Nous exposons aussi dans cette section une méthode basée sur l’amination réductrice permettant de fonctionnaliser les S-PIPOZ avec différents types de macromolécules.
+Cette thèse expose les avantages et les inconvénients (synthèses, fonctionnalisation, structures…) des PLA-co-GPE et des S-PIPOZs et constitue dans son ensemble à une première ébauche vers une conception améliorée de futurs nanomatériaux." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Treatment of cancer is one of the biggest challenges in modern medicinal chemistry. The vast majority of treatments are based on chemotherapy, involving the use of cytotoxic bioactive molecules. Although effective, most of these bioactive molecules have notorious drawbacks, such as the lack of cellular specificity and limited solubility in aqueous media. A way to address these problems is to dissolve these bioactive compounds into polymer matrices. There are different types of matrices, including liposomes, micelles, nanospheres, nanocapsules, dendrimers (and star-polymers), and conjugate and linear polymers. In this thesis, we explored two different prospective polymers that can be used as matrices. Both are composed of biocompatible materials: polylactide and poly(2-isopropyl-2-oxazoline).
+The first part of the thesis is dedicated to the investigation of polyester-co-ether with functionalizable pendant groups. First, we developed the polyester-co-ether by copolymerization of lactones (lactide or caprolactone) with different ratios of glycidyl propargyl ether (GPE) in the bulk at 120°C in the presence of Sn(Oct)2. The efficiency of the copolymerization was evidenced by FTIR, 1H and COSY NMR analyses. However, GPC analyses displayed a decrease of molecular weights and a broadening of the molecular weight dispersity with increasing of the epoxide molar ratio in the feed. 1H NMR analyses showed that the propargyl content from the epoxide does not exceed 50%. The feasibility of post-polymerization functionalization was evaluated by coupling anthracene to the poly(ester-co-ether)s through copper-catalyzed alkyne-azide cycloaddition (CuAAC). The polyester chain was found to support this reaction. Toxicity studies showed that the poly(ester-co-ether) was non-toxic. Spherical nanoparticles were prepared from these polymers. They can be suitable nanospheres for drug delivery.
+The copolymerization of lactone with glycidyl ether is an interesting approach to functionalize the PLA (or poly(ester)) main chain. It is also a powerful and straightforward strategy to synthesize a large array of functionalized polymers for biomedical applications. In order to improve the synthesis of the polyester-co-ether, we investigated the copolymerization mechanism of the chain transfer reactions leading to the chain reductions and we suggested a mechanistic explanation. 
+In the second part of this thesis, we focused on developing star-polymers from the thermosensitive (2-isopropyl-2-oxazoline) polymer. In order to prepare a well-defined set of star-poly(2-isopropyl-2oxazoline) S-PIPOZs, we explored two different synthetic approaches: the “coupling-onto” and the “core-first” approach. Two sets of S-PIPOZs were prepared by these approaches. For the “core-first” approach, a set of S-PIPOZ was prepared by direct cationic ring opening polymerization (CROP) from a tetra tosylate-functionnalized pentaerythrityl core. For the “coupling-onto approach”, the S-PIPOZs were prepared by ligation between L-PIPOZ-N3 and a 4-arm core with an alkyne group via CuAAC. The prepared polymers were analysed by 1H NMR, IR, Multi Angles Laser Light Scattering - Gel Permeation Chromatography (MALLS-GPC), UV absorption spectroscopy and High Sensitive Differential Scanning Microcalorimetry (HS-DSC). Polymers obtained by the “core-first” approach shows ill-defined microstructure compared to those obtained by the “coupling-onto” approach. In light of these encouraging results, the “coupling-onto” method was pursued for preparing S-PIPOZ. An explanation on the ill-defined structure will be provided within this thesis. Moreover, we developed a purification method for the fast and efficient removal of free PIPOZs, which otherwise contaminate the star-PIPOZ samples that are prepared by the coupling-onto approach. This method is applicable to other thermosensitive polymers within a certain range of temperature.
+In the third part, we focused on the effect of the architecture and composition of the S-PIPOZs on the phase transition temperature of the polymer. For this, we synthesized a hetero-star block copolymer composed of PIPOZ and poly(ethylene glycol) PEG. This study was carried out by examining the aqueous polymer solution (the linear precursors, S-PIPOZs, S-PIPOZ-b-PEG) upon heating via UV spectroscopy, HS-DSC and light scattering. We also assessed the temperature-induced crystallinity of the Star-PIPOZs by Transmission (TEM) and Scanning (SEM) Electron Microscopy, WAXS. This is important for biomedical nanodevices. We also provided a straightforward method, based on aminative reduction, to functionalize the S-PIPOZ with different macromolecules.
+This thesis discusses the advantages and the drawbacks related to the synthesis, functionalization, structures of PLA-co-GPE and the star-PIPOZs. Overall, this represents a pioneering study for improving the design of prospective nanodevices." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Acide poly(lactique); Poly(ester-co-ether); Poly(2-isopropyl-2-oxazoline); Polymère en étoile; Polymère thermosensible; Cycloaddition alcyne-azoture catalysée par le cuivre (CuAAC); Fonctionnalisation post-polymérisation; Délivrance de médicament; Poly(lactic acid); Poly(ester-co-ether); Star-polymer; Thermosensitive polymer; Copper catalyzed alkyne-azide cycloaddition (CuAAC); Post-polymerisation functionalization; Drug delivery; Chemistry - Polymer / Chimie - Polymères (UMI : 0495); Thèse ou mémoire / Thesis or Dissertation; Chimie" name="citation_keywords"/>
+<meta content="Synthèse et étude d’architectures complexes à base de poly(lactide) et de poly(2-isopropyl-2-oxazoline) pour des applications biomédicales" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Bullet, Jean-Richard" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/21124/4/Bullet_Jean-Richard_2016_these.pdf" name="citation_pdf_url"/>
+<meta content="2018-10-18" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/21124" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21124?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21124?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21124?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21124?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21124?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21124?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2942" role="menuitem">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2977" role="menuitem">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2942">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2977"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/21124/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/21124">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/21124/mets.xml-->
+<h2 class="page-header first-page-header">Synthèse et étude d’architectures complexes à base de poly(lactide) et de poly(2-isopropyl-2-oxazoline) pour des applications biomédicales</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Winnik, Françoise</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Bullet, Jean-Richard</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2018-12-17T19:51:28Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2018-12-17T19:51:28Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2018-10-18</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2016-12</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/21124</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Acide poly(lactique)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Poly(ester-co-ether)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Poly(2-isopropyl-2-oxazoline)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Polymère en étoile</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Polymère thermosensible</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Cycloaddition alcyne-azoture catalysée par le cuivre (CuAAC)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Fonctionnalisation post-polymérisation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Délivrance de médicament</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Poly(lactic acid)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Poly(ester-co-ether)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Star-polymer</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Thermosensitive polymer</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Copper catalyzed alkyne-azide cycloaddition (CuAAC)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Post-polymerisation functionalization</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Drug delivery</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Chemistry - Polymer / Chimie - Polymères (UMI : 0495)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Synthèse et étude d’architectures complexes à base de poly(lactide) et de poly(2-isopropyl-2-oxazoline) pour des applications biomédicales</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Chimie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Le traitement du cancer est l’un des plus grands défis en chimie médicinale moderne. La majorité des traitements utilisés repose sur la chimiothérapie, impliquant l’emploi de molécules bioactives cytotoxiques. Bien qu’efficaces, ces molécules présentent, pour la plupart, des désavantages notoires tels que le manque de spécificité cellulaire et une solubilité limitée en phase aqueuse. Une façon de remédier aux problèmes exposés est de solubiliser ces molécules au sein de matrices polymères. Il existe différents types de matrices qui sont : les liposomes, les micelles, les nanosphères, les nanocapsules, les dendrimères (et les polymères en étoile), et les polymères conjugués et linéaires. Dans cette thèse, nous faisons l’étude de deux matrices polymères potentielles composées de matériaux biocompatibles : le polylactide et la poly(2-isopropyl-2-oxazoline).
+La première partie de la thèse, est consacrée à l’étude des polyester-co-éthers portant des groupements pendants fonctionnalisables. Nous avons développé ces copolymères par polymérisation aléatoire en masse de lactones (le lactide ou la caprolactone) et différents taux d’éthers de propargyle et de glycidyle (GPE), à 120°C, en utilisant l’octanoate d’étain comme catalyseur. L’efficacité de la copolymérisation a été mise en évidence par des analyses FTIR, RMN 1H et COSY. Toutefois, L’analyse GPC a montré une diminution de la masse molaire des polymères et un élargissement de la dispersité en rapport avec l’augmentation du taux de glycidyle initial. De plus, les analyses RMN 1H ont montré que le taux de propargyl (provenant de l’éther de glycidyle) au sein du copolymère ne dépassait pas 50%. La faisabilité des modifications post-polymérisation a été évaluée en couplant le (9-azidomethyl) anthracène au chaîne de poly(ester-co-éther)s via la chimie clic CuAAC. Cette méthode s’est révélée inoffensive pour la chaîne de polyesters. Des études de cytotoxicité ont prouvé l’innocuité des poly(ester-co-éther)s. Des nanoparticules sphériques ont été préparées à partir de ces polymères et peuvent être utilisées comme nanosphères pour le transport de molécules bioactives hydrophobes. 
+La copolymérisation des lactones avec des éthers de glycidyles s’avère être une stratégie intéressante de fonctionnalisation des chaînes des polyesters permettant la synthèse d’une large gamme de copolymères pour des applications biomédicales. Afin d’améliorer la synthèse des poly(ester-co-ether)s, nous avons proposé une approche mécanistique tenant compte des réactions de transfert de chaînes.
+Dans la deuxième partie de la thèse, nous avons étudié un polymère en étoile composé d’un polymère thermosensible : la poly(2-isopropyl-2-oxazoline) PIPOZ. Nous avons premièrement exploré deux approches synthétiques afin d’obtenir une série d’étoiles de PIPOZ (S-PIPOZ) de structure bien définié à savoir l’approche « coupling-onto » et l’approche « core-first ». Une première série de S-PIPOZ a été réalisée directement à partir d’un coeur pentaérythrityl tétratosylés par polymérisation cationique par ouverture de cycle (CROP) de 2-isopropyl-2-oxazoline pour l’approche « core-first ». Pour l’approche « coupling-onto », une deuxième série de S-PIPOZ a été réalisée par couplage via la CuAAC entre des PIPOZ-N3 linéaire (L-PIPOZ N3) et un cœur à 4 bras portant des alcynes terminaux. Tous les S-PIPOZs obtenus ont été analysés par RMN 1H, IR, MALLS-LS, des analyses UV et par microcalorimétrie différentielle à balayage (HS-DSC). Les polymères obtenus par l’approche « core-first » ont montré une microstructure mal-définie comparé à ceux obtenus par l’approche « coupling-onto ». Suite à ces résultats, nous avons défini l’approche « coupling-onto » comme voie d’obtention des S-PIPOZ. Une explication sur la structure mal-défini des polymères obtenus par l’approche « core-first » sera développée dans cette section. Nous exposerons aussi une méthode de purification permettant l’élimination rapide et efficace des L-PIPOZ N3 qui contaminent les échantillons de S-PIPOZ faits par l’approche « coupling-onto ». Cette méthode peut être applicable à d’autres polymères thermosensibles dans une certaine gamme de température.
+Dans la troisième partie, nous avons étudié l’effet de l’architecture et de la composition des bras-polymères sur la température de transition de phase et les propriétés des S-PIPOZs. Afin d’étoffer notre étude nous avons synthétisé un polymère en étoile à bloc composé de PIPOZ et de poly(éthylène glycol) PEG. Cette étude a été réalisée en examinant des solutions chauffées de polymères (S-PIPOZ, S-PIPOZ-b-PEG et tous les précurseurs linéaires) par des analyses de spectrométrie d’absorption UV, HS-DSC, diffusion de la lumière LS. Nous avons évalué la présence ou l’absence de cristaux au sein d’échantillons de S-PIPOZs provenant de solutions chauffées. Cette évaluation a été réalisée par diffusion des rayons-X aux grands angles (WAXS) et par microscopie électronique à transmission (TEM) et à balayage (SEM). La présence de cristaux est néfaste pour la conception de nanomatériaux destinés à des applications biomédicales. Nous exposons aussi dans cette section une méthode basée sur l’amination réductrice permettant de fonctionnaliser les S-PIPOZ avec différents types de macromolécules.
+Cette thèse expose les avantages et les inconvénients (synthèses, fonctionnalisation, structures…) des PLA-co-GPE et des S-PIPOZs et constitue dans son ensemble à une première ébauche vers une conception améliorée de futurs nanomatériaux.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Treatment of cancer is one of the biggest challenges in modern medicinal chemistry. The vast majority of treatments are based on chemotherapy, involving the use of cytotoxic bioactive molecules. Although effective, most of these bioactive molecules have notorious drawbacks, such as the lack of cellular specificity and limited solubility in aqueous media. A way to address these problems is to dissolve these bioactive compounds into polymer matrices. There are different types of matrices, including liposomes, micelles, nanospheres, nanocapsules, dendrimers (and star-polymers), and conjugate and linear polymers. In this thesis, we explored two different prospective polymers that can be used as matrices. Both are composed of biocompatible materials: polylactide and poly(2-isopropyl-2-oxazoline).
+The first part of the thesis is dedicated to the investigation of polyester-co-ether with functionalizable pendant groups. First, we developed the polyester-co-ether by copolymerization of lactones (lactide or caprolactone) with different ratios of glycidyl propargyl ether (GPE) in the bulk at 120°C in the presence of Sn(Oct)2. The efficiency of the copolymerization was evidenced by FTIR, 1H and COSY NMR analyses. However, GPC analyses displayed a decrease of molecular weights and a broadening of the molecular weight dispersity with increasing of the epoxide molar ratio in the feed. 1H NMR analyses showed that the propargyl content from the epoxide does not exceed 50%. The feasibility of post-polymerization functionalization was evaluated by coupling anthracene to the poly(ester-co-ether)s through copper-catalyzed alkyne-azide cycloaddition (CuAAC). The polyester chain was found to support this reaction. Toxicity studies showed that the poly(ester-co-ether) was non-toxic. Spherical nanoparticles were prepared from these polymers. They can be suitable nanospheres for drug delivery.
+The copolymerization of lactone with glycidyl ether is an interesting approach to functionalize the PLA (or poly(ester)) main chain. It is also a powerful and straightforward strategy to synthesize a large array of functionalized polymers for biomedical applications. In order to improve the synthesis of the polyester-co-ether, we investigated the copolymerization mechanism of the chain transfer reactions leading to the chain reductions and we suggested a mechanistic explanation. 
+In the second part of this thesis, we focused on developing star-polymers from the thermosensitive (2-isopropyl-2-oxazoline) polymer. In order to prepare a well-defined set of star-poly(2-isopropyl-2oxazoline) S-PIPOZs, we explored two different synthetic approaches: the “coupling-onto” and the “core-first” approach. Two sets of S-PIPOZs were prepared by these approaches. For the “core-first” approach, a set of S-PIPOZ was prepared by direct cationic ring opening polymerization (CROP) from a tetra tosylate-functionnalized pentaerythrityl core. For the “coupling-onto approach”, the S-PIPOZs were prepared by ligation between L-PIPOZ-N3 and a 4-arm core with an alkyne group via CuAAC. The prepared polymers were analysed by 1H NMR, IR, Multi Angles Laser Light Scattering - Gel Permeation Chromatography (MALLS-GPC), UV absorption spectroscopy and High Sensitive Differential Scanning Microcalorimetry (HS-DSC). Polymers obtained by the “core-first” approach shows ill-defined microstructure compared to those obtained by the “coupling-onto” approach. In light of these encouraging results, the “coupling-onto” method was pursued for preparing S-PIPOZ. An explanation on the ill-defined structure will be provided within this thesis. Moreover, we developed a purification method for the fast and efficient removal of free PIPOZs, which otherwise contaminate the star-PIPOZ samples that are prepared by the coupling-onto approach. This method is applicable to other thermosensitive polymers within a certain range of temperature.
+In the third part, we focused on the effect of the architecture and composition of the S-PIPOZs on the phase transition temperature of the polymer. For this, we synthesized a hetero-star block copolymer composed of PIPOZ and poly(ethylene glycol) PEG. This study was carried out by examining the aqueous polymer solution (the linear precursors, S-PIPOZs, S-PIPOZ-b-PEG) upon heating via UV spectroscopy, HS-DSC and light scattering. We also assessed the temperature-induced crystallinity of the Star-PIPOZs by Transmission (TEM) and Scanning (SEM) Electron Microscopy, WAXS. This is important for biomedical nanodevices. We also provided a straightforward method, based on aminative reduction, to functionalize the S-PIPOZ with different macromolecules.
+This thesis discusses the advantages and the drawbacks related to the synthesis, functionalization, structures of PLA-co-GPE and the star-PIPOZs. Overall, this represents a pioneering study for improving the design of prospective nanodevices.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F21124&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Chimie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/21124/Bullet_Jean-Richard_2016_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/21124/Bullet_Jean-Richard_2016_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Bullet_Jean-Richard_2016_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/21124/Bullet_Jean-Richard_2016_these.pdf?sequence=4&amp;isAllowed=y">Bullet_Jean-Richard_2016_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">6.040Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2977/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a> [594]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/21124">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

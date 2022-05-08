@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Suivi par élastographie ultrasonore après réparation endovasculaire d’anévrisme aorto-iliaque : étude de faisabilité in vivo</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Soulez, Gilles" name="DC.contributor">
+<meta content="Cloutier, Guy" name="DC.contributor">
+<meta content="Bertrand-Grenier, Antony" name="DC.creator">
+<meta content="2016-10-28T13:48:55Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2016-10-28T13:48:55Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2016-09-28" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2015-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/16033" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Élastographie dynamique" name="DC.subject" xml:lang="fr"/>
+<meta content="Anévrisme de l’aorte abdominale" name="DC.subject" xml:lang="fr"/>
+<meta content="Réparation endovasculaire" name="DC.subject" xml:lang="fr"/>
+<meta content="Endofuite" name="DC.subject" xml:lang="fr"/>
+<meta content="Thrombus" name="DC.subject" xml:lang="fr"/>
+<meta content="Tomodensitométrie" name="DC.subject" xml:lang="fr"/>
+<meta content="Imagerie ultrasonore" name="DC.subject" xml:lang="fr"/>
+<meta content="Agent embolisant" name="DC.subject" xml:lang="fr"/>
+<meta content="Histologie" name="DC.subject" xml:lang="fr"/>
+<meta content="Angiographie" name="DC.subject" xml:lang="fr"/>
+<meta content="Dynamic elastography" name="DC.subject" xml:lang="fr"/>
+<meta content="Abdominal aortic aneurysm" name="DC.subject" xml:lang="fr"/>
+<meta content="Endovascular repair" name="DC.subject" xml:lang="fr"/>
+<meta content="Endoleak" name="DC.subject" xml:lang="fr"/>
+<meta content="Computed tomography" name="DC.subject" xml:lang="fr"/>
+<meta content="Ultrasound imaging" name="DC.subject" xml:lang="fr"/>
+<meta content="Embolization agent" name="DC.subject" xml:lang="fr"/>
+<meta content="Histology" name="DC.subject" xml:lang="fr"/>
+<meta content="Angiography" name="DC.subject" xml:lang="fr"/>
+<meta content="Engineering - Biomedical / Ingénierie - Biomédicale (UMI : 0541)" name="DC.subject" xml:lang="fr"/>
+<meta content="Suivi par élastographie ultrasonore après réparation endovasculaire d’anévrisme aorto-iliaque : étude de faisabilité in vivo" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Les maladies cardiovasculaires sont la première cause de mortalité dans le monde et les anévrismes de l’aorte abdominale (AAAs) font partie de ce lot déplorable. Un anévrisme est la dilatation d’une artère pouvant conduire à la mort. Une rupture d’AAA s’avère fatale près de 80% du temps. Un moyen de traiter les AAAs est l’insertion d’une endoprothèse (SG) dans l’aorte, communément appelée la réparation endovasculaire (EVAR), afin de réduire la pression exercée par le flux sanguin sur la paroi. L’efficacité de ce traitement est compromise par la survenue d’endofuites (flux sanguins entre la prothèse et le sac anévrismal) pouvant conduire à la rupture de l’anévrisme. Ces flux sanguins peuvent survenir à n’importe quel moment après le traitement EVAR. Une surveillance par tomodensitométrie (CT-scan) annuelle est donc requise, augmentant ainsi le coût du suivi post-EVAR et exposant le patient à la radiation ionisante et aux complications des contrastes iodés. 
+L’endotension est le concept de dilatation de l’anévrisme sans la présence d’une endofuite apparente au CT-scan. Après le traitement EVAR, le sang dans le sac anévrismal coagule pour former un thrombus frais, qui deviendra progressivement un thrombus plus fibreux et plus organisé, donnant lieu à un rétrécissement de l’anévrisme. Il y a très peu de données dans la littérature pour étudier ce processus temporel et la relation entre le thrombus frais et l’endotension. L’étalon d’or du suivi post-EVAR, le CT-scan, ne peut pas détecter la présence de thrombus frais.
+Il y a donc un besoin d’investir dans une technique sécuritaire et moins coûteuse pour le suivi d’AAAs après EVAR. Une méthode récente, l’élastographie dynamique, mesure l’élasticité des tissus en temps réel. Le principe de cette technique repose sur la génération d’ondes de cisaillement et l’étude de leur propagation afin de remonter aux propriétés mécaniques du milieu étudié. Cette thèse vise l’application de l’élastographie dynamique pour la détection des endofuites ainsi que de la caractérisation mécanique des tissus du sac anévrismal après le traitement EVAR. Ce projet dévoile le potentiel de l’élastographie afin de réduire les dangers de la radiation, de l’utilisation d’agent de contraste ainsi que des coûts du post-EVAR des AAAs.
+L’élastographie dynamique utilisant le « Shear Wave Imaging » (SWI) est prometteuse. Cette modalité pourrait complémenter l’échographie-Doppler (DUS) déjà utilisée pour le suivi d’examen post-EVAR. Le SWI a le potentiel de fournir des informations sur l’organisation fibreuse du thrombus ainsi que sur la détection d’endofuites.
+Tout d’abord, le premier objectif de cette thèse consistait à tester le SWI sur  des AAAs dans des modèles canins pour la détection d’endofuites et la caractérisation du thrombus. Des SGs furent implantées dans un groupe de 18 chiens avec un anévrisme créé au moyen de la veine jugulaire. 4 anévrismes avaient une endofuite de type I, 13 avaient une endofuite de type II et un anévrisme n’avait pas d’endofuite. Des examens échographiques, DUS et SWI ont été réalisés à l’implantation, puis 1 semaine, 1 mois, 3 mois et 6 mois après le traitement EVAR. Une angiographie, un CT-scan et des coupes macroscopiques ont été produits au sacrifice. Les régions d’endofuites, de thrombus frais et de thrombus organisé furent identifiées et segmentées. Les valeurs de rigidité données par le SWI des différentes régions furent comparées. Celles-ci furent différentes de façon significative (P &lt; 0.001). Également, le SWI a pu détecter la présence d’endofuites où le CT-scan (1) et le DUS (3) ont échoué.
+Dans la continuité de ces travaux, le deuxième objectif de ce projet fut de caractériser l’évolution du thrombus dans le temps, de même que l’évolution des endofuites après embolisation dans des modèles canins. Dix-huit anévrismes furent créés dans les artères iliaques de neuf modèles canins, suivis d’une endofuite de type I après EVAR. Deux gels embolisants (Chitosan (Chi) ou Chitosan-Sodium-Tetradecyl-Sulfate (Chi-STS)) furent injectés dans le sac anévrismal pour promouvoir la guérison. Des examens échographiques, DUS et SWI ont été effectués à l’implantation et après 1 semaine, 1 mois, 3 mois et 6 mois. Une angiographie, un CT-scan et un examen histologique ont été réalisés au sacrifice afin d’évaluer la présence, le type et la grosseur de l’endofuite. Les valeurs du module d’élasticité des régions d’intérêts ont été identifiées et segmentées sur les données pathologiques. Les régions d’endofuites et de thrombus frais furent différentes de façon significative comparativement aux autres régions (P &lt; 0.001). Les valeurs d’élasticité du thrombus frais à 1 semaine et à 3 mois indiquent que le SWI peut évaluer la maturation du thrombus, de même que caractériser l’évolution et la dégradation des gels embolisants dans le temps. Le SWI a pu détecter des endofuites où le DUS a échoué (2) et, contrairement au CT-scan, détecter la présence de thrombus frais.
+Finalement, la dernière étape du projet doctoral consistait à appliquer le SWI dans une phase clinique, avec des patients humains ayant déjà un AAA, pour la détection d’endofuite et la caractérisation de l’élasticité des tissus. 25 patients furent sélectionnés pour participer à l’étude. Une comparaison d’imagerie a été produite entre le SWI, le CT-scan et le DUS. Les valeurs de rigidité données par le SWI des différentes régions (endofuite, thrombus) furent identifiées et segmentées. Celles-ci étaient distinctes de façon significative (P &lt; 0.001). Le SWI a détecté 5 endofuites sur 6 (sensibilité de 83.3%) et a eu 6 faux positifs (spécificité de 76%). Le SWI a pu détecter la présence d’endofuites où le CT-scan (2) ainsi que le DUS (2) ont échoué. Il n’y avait pas de différence statistique notable entre la rigidité du thrombus pour un AAA avec endofuite et un AAA sans endofuite. Aucune corrélation n’a pu être établie de façon significative entre les diamètres des AAAs ainsi que leurs variations et l’élasticité du thrombus.
+Le SWI a le potentiel de détecter les endofuites et caractériser le thrombus selon leurs propriétés mécaniques. Cette technique pourrait être combinée au suivi des AAAs post-EVAR, complémentant ainsi l’imagerie DUS et réduisant le coût et l’exposition à la radiation ionisante et aux agents de contrastes néphrotoxiques." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Cardiovascular diseases are the leading cause of death worldwide. Abdominal aortic aneurysms (AAAs) are part of these horrible diseases. An aneurysm is a dilatation of an artery that can lead to death. A rupture of an AAA can lead to death nearly 80% of the time. One way to treat AAAs is the insertion of a stent-graft (SG) in the aorta in order to reduce the pressure on the wall, commonly known as endovascular repair (EVAR). Endoleak, defined as persistent blood flow within the aneurysm sac and outside the SG, is the main complication of EVAR. This phenomenon increases the risk of rupture and can develop at any time after EVAR. A life-long surveillance follow-up with computed tomography (CT-scan) is required to detect endoleak, increasing the cost of EVAR, exposing patient to ionizing radiation and nephrotoxic contrast agent. 
+Aneurysm growth without evidence of endoleak on CT-scan is called endotension. After SG delivery, the blood is trapped between the SG and aneurysm wall. If there is no residual flow (endoleak), the blood will coagulate to form fresh thrombus that will progressively organize to become a fibrous thrombus leading to aneurysm shrinkage. There is little data in the literature to study the timing of this process and the relationship between thrombus organization and aneurysm shrinkage. The gold-standard of post-EVAR surveillance, the CT-scan, cannot detect the presence of fresh thrombus.
+There is a clear need to invest in a safe and cost effective technique for post-EVAR surveillance. A recent method, dynamic elastography, measures the elasticity of tissues in real time. The principle of this technique is based on the generation of shear waves and studies their propagations for the determination of elastic properties (stiffness) of tissues. This thesis aims the application of dynamic elastography for the detection of endoleak and to characterize mechanical properties of AAAs tissues after EVAR. This project reveals the potential of elastography to reduce costs, exposure to ionizing radiation and nephrotoxic contrast agents in CT-scan follow-up of AAAs post-EVAR.
+Dynamic elastography using the shear wave imaging (SWI) is promising and can complement the Doppler ultrasound (DUS), which is already used in post-EVAR follow-up. SWI has the potential to get information from thrombus organization and to detect endoleak.
+The first objective of this thesis was to test the SWI on AAAs in canines models for the detection of endoleak and the characterization of thrombus. SGs were implanted in 18 dogs after surgical creation of type I endoleaks (4 AAAs), type II endoleaks (13 AAAs) and no endoleaks (1 AAA). DUS and SWI were engaged before (baseline) and 7, 30, 90 and 180 days (sacrifice) after SG implantation. Digital subtraction angiography, CT-scan and macroscopic tissue sections were analyzed at sacrifice. Endoleak and thrombus areas were identified and segmented. Elasticity (Young's) moduli were measured in different regions of interest (endoleaks, fresh and organized thrombi) after registration of pathological findings. Rigidity values of the regions of interest were significantly different (P &lt; 0.001). SWI was able to detect endoleaks where CT-scan (1) and DUS (3) failed.
+The second objective of this project was to characterize the evolution of the thrombus in time, also as the endotension after endoleak embolization in canines models. EVAR was done with creation of type I endoleak in 18 aneurysms created in nine dogs (common iliacs arteries). Two embolization gels (Chitosan (Chi) or Chitosan-Sodium-Tetradecyl-Sulfate (Chi-STS)) were injected in the sac to seal the endoleak and promote healing. SWI and DUS were performed at baseline (implantation, 1 week, 1 month, 3 months) whereas angiography and CT-scan were performed at sacrifice to evaluate the presence and type of the endoleak. Macroscopic and histopathological analyses were processed to identify and segment five different regions of interest (ROIs) (endoleak, fresh or organized thrombus, Chi or Chi-STS). Elasticity values of endoleak and fresh thrombus areas were significantly lower than organized thrombus, Chi and Chi-STS areas (P &lt; 0.001). Elasticity values of fresh thrombus at 1 week and at 3 months indicated that SWI can evaluate thrombus maturation. It can also characterize embolization agents degradation. SWI was able to detect endoleak where DUS failed (2) and distinguish fresh thrombi which cannot be detected on CT-scan. 
+Finally, the last step of the doctoral project was to apply the SWI in a clinical phase with humans with an AAA for the detection of endoleak and characterizing elasticity of tissues. 25 patients were selected to participate in the study. Comparison of SWI, CT-scan and DUS images was conducted. Rigidity values by SWI of regions of interest (endoleak, thrombus) were identified and segmented. These were significantly different (P &lt; 0.001). SWI detected 5 endoleaks on 6 (sensitivity of 83.3%) and had 6 false positives (specificity of 76%). SWI detected endoleaks where CT-scan (2) and DUS (2) failed. No statistical difference was found in elasticity between thrombus with an AAA with endoleak and thrombus with an AAA without endoleak. Also, no correlation was found between AAA diameter or its variation over time and thrombus elasticity.
+SWI has the potential to detect endoleaks and characterize thrombus. The approach could be combined with DUS surveillance of AAAs after EVAR, which is currently widely practiced to reduce the cost of AAA follow-up and exposure to ionizing radiation and contrast agents." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Élastographie dynamique; Anévrisme de l’aorte abdominale; Réparation endovasculaire; Endofuite; Thrombus; Tomodensitométrie; Imagerie ultrasonore; Agent embolisant; Histologie; Angiographie; Dynamic elastography; Abdominal aortic aneurysm; Endovascular repair; Endoleak; Computed tomography; Ultrasound imaging; Embolization agent; Histology; Angiography; Engineering - Biomedical / Ingénierie - Biomédicale (UMI : 0541); Thèse ou mémoire / Thesis or Dissertation; Physique" name="citation_keywords"/>
+<meta content="Suivi par élastographie ultrasonore après réparation endovasculaire d’anévrisme aorto-iliaque : étude de faisabilité in vivo" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Bertrand-Grenier, Antony" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/16033/6/Bertrand-Grenier_Antony_2015_these.pdf" name="citation_pdf_url"/>
+<meta content="2016-09-28" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/16033" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/16033?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/16033?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/16033?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/16033?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/16033?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/16033?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2329" role="menuitem">Faculté des arts et des sciences – Département de physique</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2990" role="menuitem">Faculté des arts et des sciences – Département de physique - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2329">Faculté des arts et des sciences – Département de physique</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2990">Faculté des arts et des sciences – Département de physique - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2990"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2990/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/16033/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/16033">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/16033/mets.xml-->
+<h2 class="page-header first-page-header">Suivi par élastographie ultrasonore après réparation endovasculaire d’anévrisme aorto-iliaque : étude de faisabilité in vivo</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Soulez, Gilles</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Cloutier, Guy</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Bertrand-Grenier, Antony</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2016-10-28T13:48:55Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2016-10-28T13:48:55Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2016-09-28</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2015-12</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/16033</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Élastographie dynamique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Anévrisme de l’aorte abdominale</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Réparation endovasculaire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Endofuite</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Thrombus</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Tomodensitométrie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Imagerie ultrasonore</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Agent embolisant</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Histologie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Angiographie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Dynamic elastography</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Abdominal aortic aneurysm</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Endovascular repair</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Endoleak</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Computed tomography</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Ultrasound imaging</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Embolization agent</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Histology</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Angiography</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Engineering - Biomedical / Ingénierie - Biomédicale (UMI : 0541)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Suivi par élastographie ultrasonore après réparation endovasculaire d’anévrisme aorto-iliaque : étude de faisabilité in vivo</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Physique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les maladies cardiovasculaires sont la première cause de mortalité dans le monde et les anévrismes de l’aorte abdominale (AAAs) font partie de ce lot déplorable. Un anévrisme est la dilatation d’une artère pouvant conduire à la mort. Une rupture d’AAA s’avère fatale près de 80% du temps. Un moyen de traiter les AAAs est l’insertion d’une endoprothèse (SG) dans l’aorte, communément appelée la réparation endovasculaire (EVAR), afin de réduire la pression exercée par le flux sanguin sur la paroi. L’efficacité de ce traitement est compromise par la survenue d’endofuites (flux sanguins entre la prothèse et le sac anévrismal) pouvant conduire à la rupture de l’anévrisme. Ces flux sanguins peuvent survenir à n’importe quel moment après le traitement EVAR. Une surveillance par tomodensitométrie (CT-scan) annuelle est donc requise, augmentant ainsi le coût du suivi post-EVAR et exposant le patient à la radiation ionisante et aux complications des contrastes iodés. 
+L’endotension est le concept de dilatation de l’anévrisme sans la présence d’une endofuite apparente au CT-scan. Après le traitement EVAR, le sang dans le sac anévrismal coagule pour former un thrombus frais, qui deviendra progressivement un thrombus plus fibreux et plus organisé, donnant lieu à un rétrécissement de l’anévrisme. Il y a très peu de données dans la littérature pour étudier ce processus temporel et la relation entre le thrombus frais et l’endotension. L’étalon d’or du suivi post-EVAR, le CT-scan, ne peut pas détecter la présence de thrombus frais.
+Il y a donc un besoin d’investir dans une technique sécuritaire et moins coûteuse pour le suivi d’AAAs après EVAR. Une méthode récente, l’élastographie dynamique, mesure l’élasticité des tissus en temps réel. Le principe de cette technique repose sur la génération d’ondes de cisaillement et l’étude de leur propagation afin de remonter aux propriétés mécaniques du milieu étudié. Cette thèse vise l’application de l’élastographie dynamique pour la détection des endofuites ainsi que de la caractérisation mécanique des tissus du sac anévrismal après le traitement EVAR. Ce projet dévoile le potentiel de l’élastographie afin de réduire les dangers de la radiation, de l’utilisation d’agent de contraste ainsi que des coûts du post-EVAR des AAAs.
+L’élastographie dynamique utilisant le « Shear Wave Imaging » (SWI) est prometteuse. Cette modalité pourrait complémenter l’échographie-Doppler (DUS) déjà utilisée pour le suivi d’examen post-EVAR. Le SWI a le potentiel de fournir des informations sur l’organisation fibreuse du thrombus ainsi que sur la détection d’endofuites.
+Tout d’abord, le premier objectif de cette thèse consistait à tester le SWI sur  des AAAs dans des modèles canins pour la détection d’endofuites et la caractérisation du thrombus. Des SGs furent implantées dans un groupe de 18 chiens avec un anévrisme créé au moyen de la veine jugulaire. 4 anévrismes avaient une endofuite de type I, 13 avaient une endofuite de type II et un anévrisme n’avait pas d’endofuite. Des examens échographiques, DUS et SWI ont été réalisés à l’implantation, puis 1 semaine, 1 mois, 3 mois et 6 mois après le traitement EVAR. Une angiographie, un CT-scan et des coupes macroscopiques ont été produits au sacrifice. Les régions d’endofuites, de thrombus frais et de thrombus organisé furent identifiées et segmentées. Les valeurs de rigidité données par le SWI des différentes régions furent comparées. Celles-ci furent différentes de façon significative (P &lt; 0.001). Également, le SWI a pu détecter la présence d’endofuites où le CT-scan (1) et le DUS (3) ont échoué.
+Dans la continuité de ces travaux, le deuxième objectif de ce projet fut de caractériser l’évolution du thrombus dans le temps, de même que l’évolution des endofuites après embolisation dans des modèles canins. Dix-huit anévrismes furent créés dans les artères iliaques de neuf modèles canins, suivis d’une endofuite de type I après EVAR. Deux gels embolisants (Chitosan (Chi) ou Chitosan-Sodium-Tetradecyl-Sulfate (Chi-STS)) furent injectés dans le sac anévrismal pour promouvoir la guérison. Des examens échographiques, DUS et SWI ont été effectués à l’implantation et après 1 semaine, 1 mois, 3 mois et 6 mois. Une angiographie, un CT-scan et un examen histologique ont été réalisés au sacrifice afin d’évaluer la présence, le type et la grosseur de l’endofuite. Les valeurs du module d’élasticité des régions d’intérêts ont été identifiées et segmentées sur les données pathologiques. Les régions d’endofuites et de thrombus frais furent différentes de façon significative comparativement aux autres régions (P &lt; 0.001). Les valeurs d’élasticité du thrombus frais à 1 semaine et à 3 mois indiquent que le SWI peut évaluer la maturation du thrombus, de même que caractériser l’évolution et la dégradation des gels embolisants dans le temps. Le SWI a pu détecter des endofuites où le DUS a échoué (2) et, contrairement au CT-scan, détecter la présence de thrombus frais.
+Finalement, la dernière étape du projet doctoral consistait à appliquer le SWI dans une phase clinique, avec des patients humains ayant déjà un AAA, pour la détection d’endofuite et la caractérisation de l’élasticité des tissus. 25 patients furent sélectionnés pour participer à l’étude. Une comparaison d’imagerie a été produite entre le SWI, le CT-scan et le DUS. Les valeurs de rigidité données par le SWI des différentes régions (endofuite, thrombus) furent identifiées et segmentées. Celles-ci étaient distinctes de façon significative (P &lt; 0.001). Le SWI a détecté 5 endofuites sur 6 (sensibilité de 83.3%) et a eu 6 faux positifs (spécificité de 76%). Le SWI a pu détecter la présence d’endofuites où le CT-scan (2) ainsi que le DUS (2) ont échoué. Il n’y avait pas de différence statistique notable entre la rigidité du thrombus pour un AAA avec endofuite et un AAA sans endofuite. Aucune corrélation n’a pu être établie de façon significative entre les diamètres des AAAs ainsi que leurs variations et l’élasticité du thrombus.
+Le SWI a le potentiel de détecter les endofuites et caractériser le thrombus selon leurs propriétés mécaniques. Cette technique pourrait être combinée au suivi des AAAs post-EVAR, complémentant ainsi l’imagerie DUS et réduisant le coût et l’exposition à la radiation ionisante et aux agents de contrastes néphrotoxiques.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Cardiovascular diseases are the leading cause of death worldwide. Abdominal aortic aneurysms (AAAs) are part of these horrible diseases. An aneurysm is a dilatation of an artery that can lead to death. A rupture of an AAA can lead to death nearly 80% of the time. One way to treat AAAs is the insertion of a stent-graft (SG) in the aorta in order to reduce the pressure on the wall, commonly known as endovascular repair (EVAR). Endoleak, defined as persistent blood flow within the aneurysm sac and outside the SG, is the main complication of EVAR. This phenomenon increases the risk of rupture and can develop at any time after EVAR. A life-long surveillance follow-up with computed tomography (CT-scan) is required to detect endoleak, increasing the cost of EVAR, exposing patient to ionizing radiation and nephrotoxic contrast agent. 
+Aneurysm growth without evidence of endoleak on CT-scan is called endotension. After SG delivery, the blood is trapped between the SG and aneurysm wall. If there is no residual flow (endoleak), the blood will coagulate to form fresh thrombus that will progressively organize to become a fibrous thrombus leading to aneurysm shrinkage. There is little data in the literature to study the timing of this process and the relationship between thrombus organization and aneurysm shrinkage. The gold-standard of post-EVAR surveillance, the CT-scan, cannot detect the presence of fresh thrombus.
+There is a clear need to invest in a safe and cost effective technique for post-EVAR surveillance. A recent method, dynamic elastography, measures the elasticity of tissues in real time. The principle of this technique is based on the generation of shear waves and studies their propagations for the determination of elastic properties (stiffness) of tissues. This thesis aims the application of dynamic elastography for the detection of endoleak and to characterize mechanical properties of AAAs tissues after EVAR. This project reveals the potential of elastography to reduce costs, exposure to ionizing radiation and nephrotoxic contrast agents in CT-scan follow-up of AAAs post-EVAR.
+Dynamic elastography using the shear wave imaging (SWI) is promising and can complement the Doppler ultrasound (DUS), which is already used in post-EVAR follow-up. SWI has the potential to get information from thrombus organization and to detect endoleak.
+The first objective of this thesis was to test the SWI on AAAs in canines models for the detection of endoleak and the characterization of thrombus. SGs were implanted in 18 dogs after surgical creation of type I endoleaks (4 AAAs), type II endoleaks (13 AAAs) and no endoleaks (1 AAA). DUS and SWI were engaged before (baseline) and 7, 30, 90 and 180 days (sacrifice) after SG implantation. Digital subtraction angiography, CT-scan and macroscopic tissue sections were analyzed at sacrifice. Endoleak and thrombus areas were identified and segmented. Elasticity (Young's) moduli were measured in different regions of interest (endoleaks, fresh and organized thrombi) after registration of pathological findings. Rigidity values of the regions of interest were significantly different (P &lt; 0.001). SWI was able to detect endoleaks where CT-scan (1) and DUS (3) failed.
+The second objective of this project was to characterize the evolution of the thrombus in time, also as the endotension after endoleak embolization in canines models. EVAR was done with creation of type I endoleak in 18 aneurysms created in nine dogs (common iliacs arteries). Two embolization gels (Chitosan (Chi) or Chitosan-Sodium-Tetradecyl-Sulfate (Chi-STS)) were injected in the sac to seal the endoleak and promote healing. SWI and DUS were performed at baseline (implantation, 1 week, 1 month, 3 months) whereas angiography and CT-scan were performed at sacrifice to evaluate the presence and type of the endoleak. Macroscopic and histopathological analyses were processed to identify and segment five different regions of interest (ROIs) (endoleak, fresh or organized thrombus, Chi or Chi-STS). Elasticity values of endoleak and fresh thrombus areas were significantly lower than organized thrombus, Chi and Chi-STS areas (P &lt; 0.001). Elasticity values of fresh thrombus at 1 week and at 3 months indicated that SWI can evaluate thrombus maturation. It can also characterize embolization agents degradation. SWI was able to detect endoleak where DUS failed (2) and distinguish fresh thrombi which cannot be detected on CT-scan. 
+Finally, the last step of the doctoral project was to apply the SWI in a clinical phase with humans with an AAA for the detection of endoleak and characterizing elasticity of tissues. 25 patients were selected to participate in the study. Comparison of SWI, CT-scan and DUS images was conducted. Rigidity values by SWI of regions of interest (endoleak, thrombus) were identified and segmented. These were significantly different (P &lt; 0.001). SWI detected 5 endoleaks on 6 (sensitivity of 83.3%) and had 6 false positives (specificity of 76%). SWI detected endoleaks where CT-scan (2) and DUS (2) failed. No statistical difference was found in elasticity between thrombus with an AAA with endoleak and thrombus with an AAA without endoleak. Also, no correlation was found between AAA diameter or its variation over time and thrombus elasticity.
+SWI has the potential to detect endoleaks and characterize thrombus. The approach could be combined with DUS surveillance of AAAs after EVAR, which is currently widely practiced to reduce the cost of AAA follow-up and exposure to ionizing radiation and contrast agents.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F16033&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Physique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/16033/Bertrand-Grenier_Antony_2015_these.pdf?sequence=6&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/16033/Bertrand-Grenier_Antony_2015_these.pdf.jpg?sequence=8&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Bertrand-Grenier_Antony_2015_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/16033/Bertrand-Grenier_Antony_2015_these.pdf?sequence=6&amp;isAllowed=y">Bertrand-Grenier_Antony_2015_t ...</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">7.867Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2990/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2990">Faculté des arts et des sciences – Département de physique - Thèses et mémoires</a> [501]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/16033">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

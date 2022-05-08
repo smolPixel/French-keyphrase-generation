@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Étude de la relation entre les conformations et la signalisation des 7TMRs</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Heveker, Nikolaus" name="DC.contributor">
+<meta content="Berchiche, Yamina A." name="DC.creator">
+<meta content="2011-05-20T16:09:09Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2011-05-20T16:09:09Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2011-05-05" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2010-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/5071" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="7TMR" name="DC.subject" xml:lang="en"/>
+<meta content="7TM receptors" name="DC.subject" xml:lang="en"/>
+<meta content="Récepteur de chimiokine" name="DC.subject" xml:lang="en"/>
+<meta content="Chemokine receptor" name="DC.subject" xml:lang="en"/>
+<meta content="CXCR4" name="DC.subject" xml:lang="en"/>
+<meta content="CXCR4" name="DC.subject" xml:lang="en"/>
+<meta content="CCR2" name="DC.subject" xml:lang="en"/>
+<meta content="CCR2" name="DC.subject" xml:lang="en"/>
+<meta content="CXCR7" name="DC.subject" xml:lang="en"/>
+<meta content="CXCR7" name="DC.subject" xml:lang="en"/>
+<meta content="BRET" name="DC.subject" xml:lang="en"/>
+<meta content="BRET" name="DC.subject" xml:lang="en"/>
+<meta content="Beta-arrestine" name="DC.subject" xml:lang="en"/>
+<meta content="Beta-arrestin" name="DC.subject" xml:lang="en"/>
+<meta content="Protéine G" name="DC.subject" xml:lang="en"/>
+<meta content="G protein" name="DC.subject" xml:lang="en"/>
+<meta content="AMD3100" name="DC.subject" xml:lang="en"/>
+<meta content="AMD3100" name="DC.subject" xml:lang="en"/>
+<meta content="TC14012" name="DC.subject" xml:lang="en"/>
+<meta content="TC14012" name="DC.subject" xml:lang="en"/>
+<meta content="Chemistry - Biochemistry / Chimie - Biochimie (UMI : 0487)" name="DC.subject" xml:lang="en"/>
+<meta content="Étude de la relation entre les conformations et la signalisation des 7TMRs" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="L’interaction d’un ligand avec un récepteur à sept domaines transmembranaires (7TMR) couplé aux protéines G, mène à l’adoption de différentes conformations par le récepteur. Ces diverses conformations pourraient expliquer l’activation différentielle des voies de signalisation. Or, le lien entre la conformation et l’activité du récepteur n’est pas tout à fait claire. Selon les modèles classiques pharmacologiques, comme le modèle du complexe ternaire, il n’existe qu’un nombre limité de conformations qu’un récepteur peut adopter. 
+
+Afin d’établir un lien entre la structure et la fonction des récepteurs, nous avons choisi dans un premier temps, le récepteur de chimiokine CXCR4 comme récepteur modèle. Ce dernier, est une cible thérapeutique prometteuse, impliqué dans l’entrée du VIH-1 dans les cellules cibles et dans la dissémination de métastases cancéreuses. Grâce au transfert d’énergie par résonance de bioluminescence (BRET) nous pouvons détecter les changements conformationnels des homodimères constitutifs de CXCR4 dans les cellules vivantes. En conséquence, nous avons mesuré les conformations de mutants de CXCR4 dont les mutations affecteraient sa fonction. Nous montrons que la capacité des mutants à activer la protéine Galphai est altérée suite au traitement avec l’agoniste SDF-1. Notamment, ces mutations altèrent la conformation du récepteur à l’état basal ainsi que la réponse conformationnelle induite suite au traitement avec l’agoniste SDF-1, l’agoniste partiel AMD3100 ou l’agoniste inverse TC14012. Ainsi, différentes conformations de CXCR4 peuvent donner lieu à une activation similaire de la protéine G, ce qui implique une flexibilité des récepteurs actifs qui ne peut pas être expliquée par le modèle du complexe ternaire (Berchiche et al. 2007). 
+
+Également, nous nous sommes intéressés au récepteur de chimiokine CCR2, exprimé à la surface des cellules immunitaires. Il joue un rôle important dans l’inflammation et dans des pathologies inflammatoires telles que l’asthme. CCR2 forme des homodimères constitutifs et possède différents ligands naturels dont la redondance fonctionnelle a été suggérée. Nous avons étudié le lien entre les conformations et les activations d’effecteurs (fonctions) de CCR2. Notre hypothèse est que les différents ligands naturels induisent différentes conformations du récepteur menant à différentes fonctions. Nous montrons que les réponses de CCR2 aux différents ligands ne sont pas redondantes au niveau pharmacologique et que les chimiokines CCL8, CCL7 et CCL13 (MCP-2 à MCP-4) sont des agonistes partiels de CCR2, du moins dans les systèmes que nous avons étudiés. Ainsi, l’absence de redondance fonctionnelle parmi les chimiokines liant le même récepteur, ne résulterait pas de mécanismes complexes de régulation in vivo, mais ferait partie de leurs propriétés pharmacologiques intrinsèques (Berchiche et al. 2011). 
+
+Enfin, nous nous sommes intéressés au récepteur de chimiokine CXCR7. Récemment identifié, CXCR7 est le deuxième récepteur cible de la chimiokine SDF-1. Cette chimiokine a été considérée comme étant capable d’interagir uniquement avec le récepteur CXCR4. Notamment, CXCR4 et CXCR7 possèdent un patron d’expression semblable dans les tissus. Nous avons évalué l’effet de l’AMD3100, ligand synthétique de CXCR4, sur la conformation et la signalisation de CXCR7. Nos résultats montrent qu’AMD3100, tout comme SDF-1, lie CXCR7 et augmente la liaison de SDF-1 à CXCR7. Grâce au BRET, nous montrons aussi qu’AMD3100 seul est un agoniste de CXCR7 et qu’il est un modulateur allostérique positif de la liaison de SDF-1 à CXCR7. Aussi, nous montrons pour la première fois le recrutement de la beta-arrestine 2 à CXCR7 en réponse à un agoniste. L’AMD3100 est un ligand de CXCR4 et de CXCR7 avec des effets opposés, ce qui appelle à la prudence lors de l’utilisation de cette molécule pour l’étude des voies de signalisation impliquant SDF-1 (Kalatskaya et al. 2009). 
+
+	En conclusion, nos travaux amènent des évidences qu’il existe plusieurs conformations actives des récepteurs et appuient les modèles de structure-activité des récepteurs qui prennent en considération leur flexibilité conformationnelle." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="Ligand binding to 7TMRs is thought to induce conformational changes within the receptor that translate into activation of downstream effectors. The link between receptor conformation and activity is still poorly understood, as current models of receptor activation fail to take an increasing amount of experimental data into account. Classical pharmacological models such as the ternary complex model are based on the concept that receptors can only adopt a limited number of conformations. 
+
+To clarify structure-function relationships in 7TMRs, first we studied chemokine receptor CXCR4. This receptor is an important drug target, involved in HIV-1 entry and cancer metastasis. Bioluminescence Resonance Energy Transfer (BRET) allows us to directly probe conformational changes within pre-formed CXCR4 homodimers in live cells. Using BRET, we measured the conformation of CXCR4 mutants and we also monitored their function by measuring their ability to induce Galphai activation. The analyzed mutants had substitutions in locations which are pivotal molecular switches for receptor conformation and activation. We show that agonist induced Gi activation is altered for most mutants. These mutations also alter CXCR4’s conformation at basal conditions (in absence of ligand) and in the presence of the agonist, SDF-1, the partial agonist, AMD3100 and the inverse agonist, TC14012. Moreover, different conformations of active receptors were detected in the presence of SDF-1, suggesting that different receptor conformations are able to trigger Galphai activity. These data provide biophysical evidence for different active receptor conformations, that cannot be explained by classical models of receptor function (Berchiche et al. 2007). 
+
+Furthermore, the second part of our work focused on chemokine receptor CCR2. Mainly expressed on immune cells, CCR2 is involved in many inflammatory and vascular diseases. This receptor binds seven natural ligands that have been referred to as redundant. We set out to explore whether the different chemokine ligands of CCR2 receptor induce different conformational changes leading to different functional consequences. Our results show that the different natural ligands of CCR2 are not pharmacologically redundant. Moreover, chemokines CCL8, CCL7 and CCL13 (MCP-2 to MCP-4) are partial agonists of CCR2, at least in the systems we used. Our results support the validity of models for receptor-ligand interactions in which different ligands stabilize different receptor conformations also for endogenous receptor ligands, demonstrating that these natural ligands are not pharmacologically and functionally redundant (Berchiche et al. 2011).
+
+As the third part of this work, we studied chemokine receptor CXCR7, the alternative receptor for SDF-1. Until recently, CXCR4 was the only receptor known to bind SDF-1. Moreover, the expression patterns are similar for receptors CXCR4 and CXCR7. Therefore, we investigated the conformational and functional consequences of the synthetic inhibitor of CXCR4, AMD3100, on CXCR7. We show that AMD3100 also binds the alternative SDF-1 receptor, CXCR7. SDF-1 or AMD3100 alone trigger beta-arrestin recruitment to CXCR7, which we identify as a previously unreported signalling pathway of CXCR7. In addition, AMD3100 has positive allosteric effects on SDF-1 binding to CXCR7, on SDF-1-induced conformational rearrangements in the receptor dimer as measured by BRET, and on SDF-1-induced beta-arrestin recruitment to CXCR7. The finding that AMD3100 not only binds CXCR4, but also to CXCR7, with opposite effects on the two receptors, call for caution in the use of this compound as a tool to dissect SDF-1 effects on the respective receptors in vitro and in vivo.
+
+Finally, these data provide biophysical evidence for different active receptor conformations, and support models of 7TMR structure-activity relationships that take conformational heterogeneity into account." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="7TMR; 7TM receptors; Récepteur de chimiokine; Chemokine receptor; CXCR4; CXCR4; CCR2; CCR2; CXCR7; CXCR7; BRET; BRET; Beta-arrestine; Beta-arrestin; Protéine G; G protein; AMD3100; AMD3100; TC14012; TC14012; Chemistry - Biochemistry / Chimie - Biochimie (UMI : 0487); Thèse ou mémoire / Thesis or Dissertation; Biochimie" name="citation_keywords"/>
+<meta content="Étude de la relation entre les conformations et la signalisation des 7TMRs" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Berchiche, Yamina A." name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/5071/2/Berchiche_Yamina_Agnes_2010_these.pdf" name="citation_pdf_url"/>
+<meta content="2011-05-05" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/5071" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5071?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5071?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5071?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5071?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5071?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5071?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/5071/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/5071">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/5071/mets.xml-->
+<h2 class="page-header first-page-header">Étude de la relation entre les conformations et la signalisation des 7TMRs</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Heveker, Nikolaus</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Berchiche, Yamina A.</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2011-05-20T16:09:09Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2011-05-20T16:09:09Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2011-05-05</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2010-12</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/5071</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">7TMR</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">7TM receptors</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Récepteur de chimiokine</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Chemokine receptor</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">CXCR4</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">CXCR4</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">CCR2</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">CCR2</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">CXCR7</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">CXCR7</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">BRET</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">BRET</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Beta-arrestine</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Beta-arrestin</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Protéine G</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">G protein</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">AMD3100</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">AMD3100</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">TC14012</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">TC14012</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Chemistry - Biochemistry / Chimie - Biochimie (UMI : 0487)</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Étude de la relation entre les conformations et la signalisation des 7TMRs</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Biochimie</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">L’interaction d’un ligand avec un récepteur à sept domaines transmembranaires (7TMR) couplé aux protéines G, mène à l’adoption de différentes conformations par le récepteur. Ces diverses conformations pourraient expliquer l’activation différentielle des voies de signalisation. Or, le lien entre la conformation et l’activité du récepteur n’est pas tout à fait claire. Selon les modèles classiques pharmacologiques, comme le modèle du complexe ternaire, il n’existe qu’un nombre limité de conformations qu’un récepteur peut adopter. 
+
+Afin d’établir un lien entre la structure et la fonction des récepteurs, nous avons choisi dans un premier temps, le récepteur de chimiokine CXCR4 comme récepteur modèle. Ce dernier, est une cible thérapeutique prometteuse, impliqué dans l’entrée du VIH-1 dans les cellules cibles et dans la dissémination de métastases cancéreuses. Grâce au transfert d’énergie par résonance de bioluminescence (BRET) nous pouvons détecter les changements conformationnels des homodimères constitutifs de CXCR4 dans les cellules vivantes. En conséquence, nous avons mesuré les conformations de mutants de CXCR4 dont les mutations affecteraient sa fonction. Nous montrons que la capacité des mutants à activer la protéine Galphai est altérée suite au traitement avec l’agoniste SDF-1. Notamment, ces mutations altèrent la conformation du récepteur à l’état basal ainsi que la réponse conformationnelle induite suite au traitement avec l’agoniste SDF-1, l’agoniste partiel AMD3100 ou l’agoniste inverse TC14012. Ainsi, différentes conformations de CXCR4 peuvent donner lieu à une activation similaire de la protéine G, ce qui implique une flexibilité des récepteurs actifs qui ne peut pas être expliquée par le modèle du complexe ternaire (Berchiche et al. 2007). 
+
+Également, nous nous sommes intéressés au récepteur de chimiokine CCR2, exprimé à la surface des cellules immunitaires. Il joue un rôle important dans l’inflammation et dans des pathologies inflammatoires telles que l’asthme. CCR2 forme des homodimères constitutifs et possède différents ligands naturels dont la redondance fonctionnelle a été suggérée. Nous avons étudié le lien entre les conformations et les activations d’effecteurs (fonctions) de CCR2. Notre hypothèse est que les différents ligands naturels induisent différentes conformations du récepteur menant à différentes fonctions. Nous montrons que les réponses de CCR2 aux différents ligands ne sont pas redondantes au niveau pharmacologique et que les chimiokines CCL8, CCL7 et CCL13 (MCP-2 à MCP-4) sont des agonistes partiels de CCR2, du moins dans les systèmes que nous avons étudiés. Ainsi, l’absence de redondance fonctionnelle parmi les chimiokines liant le même récepteur, ne résulterait pas de mécanismes complexes de régulation in vivo, mais ferait partie de leurs propriétés pharmacologiques intrinsèques (Berchiche et al. 2011). 
+
+Enfin, nous nous sommes intéressés au récepteur de chimiokine CXCR7. Récemment identifié, CXCR7 est le deuxième récepteur cible de la chimiokine SDF-1. Cette chimiokine a été considérée comme étant capable d’interagir uniquement avec le récepteur CXCR4. Notamment, CXCR4 et CXCR7 possèdent un patron d’expression semblable dans les tissus. Nous avons évalué l’effet de l’AMD3100, ligand synthétique de CXCR4, sur la conformation et la signalisation de CXCR7. Nos résultats montrent qu’AMD3100, tout comme SDF-1, lie CXCR7 et augmente la liaison de SDF-1 à CXCR7. Grâce au BRET, nous montrons aussi qu’AMD3100 seul est un agoniste de CXCR7 et qu’il est un modulateur allostérique positif de la liaison de SDF-1 à CXCR7. Aussi, nous montrons pour la première fois le recrutement de la beta-arrestine 2 à CXCR7 en réponse à un agoniste. L’AMD3100 est un ligand de CXCR4 et de CXCR7 avec des effets opposés, ce qui appelle à la prudence lors de l’utilisation de cette molécule pour l’étude des voies de signalisation impliquant SDF-1 (Kalatskaya et al. 2009). 
+
+	En conclusion, nos travaux amènent des évidences qu’il existe plusieurs conformations actives des récepteurs et appuient les modèles de structure-activité des récepteurs qui prennent en considération leur flexibilité conformationnelle.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Ligand binding to 7TMRs is thought to induce conformational changes within the receptor that translate into activation of downstream effectors. The link between receptor conformation and activity is still poorly understood, as current models of receptor activation fail to take an increasing amount of experimental data into account. Classical pharmacological models such as the ternary complex model are based on the concept that receptors can only adopt a limited number of conformations. 
+
+To clarify structure-function relationships in 7TMRs, first we studied chemokine receptor CXCR4. This receptor is an important drug target, involved in HIV-1 entry and cancer metastasis. Bioluminescence Resonance Energy Transfer (BRET) allows us to directly probe conformational changes within pre-formed CXCR4 homodimers in live cells. Using BRET, we measured the conformation of CXCR4 mutants and we also monitored their function by measuring their ability to induce Galphai activation. The analyzed mutants had substitutions in locations which are pivotal molecular switches for receptor conformation and activation. We show that agonist induced Gi activation is altered for most mutants. These mutations also alter CXCR4’s conformation at basal conditions (in absence of ligand) and in the presence of the agonist, SDF-1, the partial agonist, AMD3100 and the inverse agonist, TC14012. Moreover, different conformations of active receptors were detected in the presence of SDF-1, suggesting that different receptor conformations are able to trigger Galphai activity. These data provide biophysical evidence for different active receptor conformations, that cannot be explained by classical models of receptor function (Berchiche et al. 2007). 
+
+Furthermore, the second part of our work focused on chemokine receptor CCR2. Mainly expressed on immune cells, CCR2 is involved in many inflammatory and vascular diseases. This receptor binds seven natural ligands that have been referred to as redundant. We set out to explore whether the different chemokine ligands of CCR2 receptor induce different conformational changes leading to different functional consequences. Our results show that the different natural ligands of CCR2 are not pharmacologically redundant. Moreover, chemokines CCL8, CCL7 and CCL13 (MCP-2 to MCP-4) are partial agonists of CCR2, at least in the systems we used. Our results support the validity of models for receptor-ligand interactions in which different ligands stabilize different receptor conformations also for endogenous receptor ligands, demonstrating that these natural ligands are not pharmacologically and functionally redundant (Berchiche et al. 2011).
+
+As the third part of this work, we studied chemokine receptor CXCR7, the alternative receptor for SDF-1. Until recently, CXCR4 was the only receptor known to bind SDF-1. Moreover, the expression patterns are similar for receptors CXCR4 and CXCR7. Therefore, we investigated the conformational and functional consequences of the synthetic inhibitor of CXCR4, AMD3100, on CXCR7. We show that AMD3100 also binds the alternative SDF-1 receptor, CXCR7. SDF-1 or AMD3100 alone trigger beta-arrestin recruitment to CXCR7, which we identify as a previously unreported signalling pathway of CXCR7. In addition, AMD3100 has positive allosteric effects on SDF-1 binding to CXCR7, on SDF-1-induced conformational rearrangements in the receptor dimer as measured by BRET, and on SDF-1-induced beta-arrestin recruitment to CXCR7. The finding that AMD3100 not only binds CXCR4, but also to CXCR7, with opposite effects on the two receptors, call for caution in the use of this compound as a tool to dissect SDF-1 effects on the respective receptors in vitro and in vivo.
+
+Finally, these data provide biophysical evidence for different active receptor conformations, and support models of 7TMR structure-activity relationships that take conformational heterogeneity into account.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F5071&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Biochimie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/5071/Berchiche_Yamina_Agnes_2010_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/5071/Berchiche_Yamina_Agnes_2010_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Berchiche_Yamina_Agnes_2010_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/5071/Berchiche_Yamina_Agnes_2010_these.pdf?sequence=2&amp;isAllowed=y">Berchiche_Yamina_Agnes_2010_th ...</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">6.117Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/5071">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Biodisponibilité et effets transcriptomiques du cérium chez Chlamydomonas reinhardtii</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Wilkinson, Kevin James" name="DC.contributor">
+<meta content="Zerges, William" name="DC.contributor">
+<meta content="Morel, Elise" name="DC.creator">
+<meta content="2021-01-29T14:55:26Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="MONTHS_WITHHELD:12" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2021-01-29T14:55:26Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2020-06-04" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2020-01" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/24660" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Cérium" name="DC.subject" xml:lang="fr"/>
+<meta content="nanoparticules manufacturées" name="DC.subject" xml:lang="fr"/>
+<meta content="Éléments de terres rares" name="DC.subject" xml:lang="fr"/>
+<meta content="Transcriptome" name="DC.subject" xml:lang="fr"/>
+<meta content="Chlamydomonas reinhardtii" name="DC.subject" xml:lang="fr"/>
+<meta content="Biomarqueurs d'exposition" name="DC.subject" xml:lang="fr"/>
+<meta content="Biodisponibilité" name="DC.subject" xml:lang="fr"/>
+<meta content="Rare earth elements" name="DC.subject" xml:lang="fr"/>
+<meta content="Engineered nanoparticles" name="DC.subject" xml:lang="fr"/>
+<meta content="Phytoplankton" name="DC.subject" xml:lang="fr"/>
+<meta content="RNA-Seq" name="DC.subject" xml:lang="fr"/>
+<meta content="Bioavailability" name="DC.subject" xml:lang="fr"/>
+<meta content="Exposure biomarkers" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - General / Biologie - Généralités (UMI : 0306)" name="DC.subject" xml:lang="fr"/>
+<meta content="Biodisponibilité et effets transcriptomiques du cérium chez Chlamydomonas reinhardtii" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Du fait de leurs propriétés spécifiques, les éléments de terres rares (ETRs) sont des métaux devenus indispensables au développement de notre société moderne. Avec leurs utilisations croissantes, des modifications importantes du cycle biogéochimique des ETRs sont attendues alors que peu est encore connu sur leur devenir et leurs effets une fois rejetés dans l’environnement. 
+Le cérium (Ce) a la particularité d’être utilisé sous forme de sels ou de nanoparticules dans différents produits d’utilisation courante (e.g. additifs de diesel, peintures). En raison de sa réactivité redox particulière, le Ce est naturellement peu soluble dans les eaux de surface et va donc principalement se retrouver dans les sédiments de ces écosystèmes aquatiques. Cependant les propriétés physicochimiques du Ce anthropique peuvent modifier le transport et le comportement de ce dernier. Par exemple, les nanoparticules manufacturées d’oxydes de cérium (Ce NMs) pourvues d’un enrobage peuvent présenter une stabilité colloïdale différente de celles naturellement formées. Les organismes pélagiques des milieux aquatiques, dont les micro-organismes photosynthétiques, d’intérêt dans ce projet, pourraient ainsi être exposés à de nouvelles formes de Ce et à différentes concentrations. 
+Comme il est difficile d'observer des réponses biologiques significatives pour des concentrations d'exposition représentatives de celles susceptibles d’être retrouvées dans l'environnement (&lt; 1 µM), les impacts potentiels du Ce sur le phytoplancton dans des scénarios d'exposition réalistes sont encore mal élucidés. Des résultats contradictoires ont notamment été observés dans la littérature en ce qui concerne la biodisponibilité des Ce NMs pour les microalgues unicellulaires et la relation entre leurs propriétés de surface (i.e. rapport Ce (III)/Ce (IV), enrobage) et les réponses cellulaires. Des données quantitatives sont ainsi toujours nécessaires pour l'évaluation des risques potentiels du Ce pour l’Environnement. 
+Dans ce projet, Chlamydomonas reinhardtii a été sélectionnée comme organisme modèle pour représenter les microalgues présentent dans les eaux douces. Des sels solubles de Ce, Tm, Y et trois types de petites Ce NMs (&lt;10 nm) avec différents enrobages (i.e. non enrobées, fonctionnalisées par du citrate ou enrobées de poly(acide acrylique) (PAA)) ont été injectés dans des milieux aqueux simplifiés (i.e. sans phosphates) à des concentrations représentatives de celles attendues dans des environnements anthropisés. La spectrométrie de masse à plasma à couplage inductif en mode simple particule (SP-ICP-MS) a constitué l’une des techniques analytiques de pointe déployées dans ce projet. Elle a permis de quantifier les formes dissoutes et nanoparticulaires du Ce présentent dans les milieux d’exposition des microalgues et de caractériser les petites Ce NMs à des concentrations similaires à celles utilisées pour exposer les microalgues. L’analyse de profilage du transcriptome entier (ARN-Seq) a constitué une autre technique émergente en nano(éco)toxicologie. Elle a permis d’identifier des gènes et voies métaboliques mobilisés chez les populations algales de C. reinhardtii pour s’adapter à leurs expositions soit à des Ce NMs soit à des sels d’ETRs pour des concentrations d’exposition de 0,5 µM Ce, Tm ou Y en milieux contrôlés à pH 7.0.  
+Les microalgues C. reinhardtii ont d’abord été exposées au sel de Ce soluble et aux Ce NMs afin d’en comparer la biodisponibilité et les réponses biologiques sous-létales associées. Les résultats ont révélé que les Ce NMs sont biodisponibles pour C. reinhardtii mais et produisent un stress modéré auquel ces dernières semblent s’acclimater à court terme à des concentrations pertinentes pour l'environnement. Des effets transcriptomiques distincts entre Ce ionique et Ce NMs ont également été observés. L’hypothèse selon laquelle seuls les produits de dissolution des Ce NMs sont biodisponibles pour C. reinhardtii a donc pu être infirmée. En effet, les microalgues exposées aux Ce NMs testées ont spécifiquement modulé l’expression des gènes impliqués dans le système ubiquitine-protéasome et la structure des flagelles. Malgré ces effets communs entres les Ce NMs, leur biodisponibilité est principalement influencée par leurs enrobages, et non par le rapport de Ce(III)/Ce(IV) des atomes de surface des NMs. L’enrobage de citrate a d’ailleurs particulièrement atténué les effets transcriptomiques des Ce NMs sur les microalgues, probablement en raison des effets bénéfiques de la désorption du citrate à leur surface. 
+Les profils de temps-réponses (0 à 360 min.) et concentrations-réponses (0 à 3 µM) de gènes spécifiques des Ce NMs ou du Ce ionique ont par la suite été analysés pour vérifier leur potentielle utilisation en tant que biomarqueurs d’exposition des micoalgues au Ce ionique. En raison de leur spécificité élevée et de la linéarité relative de l'expression des biomarqueurs en fonction du temps sur une plage de concentrations pertinentes pour l'environnement (0,03 à 3 µM), quatre biomarqueurs (Cre17.g737300, GTR12, MMP6 et HSP22E) ont été identifiés comme étant spécifiques au Ce ionique pour C. reinhardtii. Une variabilité beaucoup plus grande des niveaux d'ARNm a été observée lorsque le pH du milieu variait (5,0 à 8,0). Ce résultat reflète probablement la complexité de la spéciation du Ce résultant de la formation d'espèces métastables même dans des milieux aqueux simples.
+Les effets transcriptomiques de sels de Ce, Tm, Y solubles appliqués individuellement ou sous forme de mixture équimolaire ont été caractérisés par ARN-Seq chez C. reinhardtii afin de comparer la biodisponibilité du Ce à celle des autres ETRs pour les microalgues, sachant le comportement atypique du Ce en solution. Les microalgues exposées au Ce ont spécifiquement modulé l’expression de gènes impliqués dans le métabolisme du glutamate et au repliement des protéines. Cependant des interactions compétitives ont été identifiées entre les ETRs lorsqu’appliqués en tant que mixture. Ces résultats suggèrent que l'approche des agences gouvernementales pour dériver des données de toxicité à partir d’un seul métal simple serait largement conservatrice pour les métaux de terres rares.  
+Par ce projet, l’analyse des réponses transcriptomiques par ARN-Seq chez C. reinhardtii a permis de caractériser la biodisponibilité du Ce et d’identifier des biomarqueurs transcriptomiques d’exposition chez les microalgues dans différents contextes ; en présence de Ce NMs ou d’autres ETRs. L’intégration de tels biomarqueurs pour le développement d’un bio-essai in situ nécessite cependant de plus amples investigations." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Due to their specific properties, rare earth elements (REEs) are metals that have become essential to the development of our modern society. With their increasing uses, significant modifications to the biogeochemical cycle of REEs are expected while little is known about their fate and their effects once released into the environment. 
+Cerium (Ce) has the particularity of being used in the form of salts or nanoparticles in various commonly used products (e.g. diesel additives, paints). Due to its particular redox reactivity, Ce is naturally poorly soluble in surface water and will therefore mainly be found in the sediments of these aquatic ecosystems. However, the physicochemical properties of the anthropogenic Ce can modify its transport and behavior. For example, engineered cerium oxide nanoparticles (Ce ENPs) are generally coated and thus may exhibit different colloidal stability from those naturally formed. Pelagic organisms in aquatic environments, including photosynthetic microorganisms, of interest in this project, could thus be exposed to new forms of Ce and at different concentrations. 
+As it is difficult to observe significant biological responses for environmentally relevant exposure concentrations (&lt;1 µM Ce), the potential impacts of Ce on phytoplankton in realistic exposure scenarios are still poorly understood. Contradictory results have notably been reported with regard to the bioavailability of Ce ENPs for unicellular microalgae and the relationship between their surface properties (i.e. Ce(III)/Ce(IV) ratio, coating) and cellular responses. Quantitative data are thus always necessary for the evaluation of the potential risks of Ce for the Environment. 
+In this project, Chlamydomonas reinhardtii was selected as a model organism to represent microalgae in freshwater. Soluble salts of Ce, Tm, Y and three types of small Ce ENPs (&lt;10 nm) with different coatings (i.e. uncoated, functionalized with citrate or coated with poly (acrylic acid) (PAA)) were injected into simplified aqueous media (i.e. without phosphates) at concentrations representative of those expected in contaminated environments. One of the advanced analytical techniques deployed in this project was inductively coupled plasma mass spectrometry in single particle mode (SP-ICP-MS). It has made it possible to quantify the dissolved and nanoparticulate forms of Ce present in microalgae exposure media and to haracterize small Ce NMs at concentrations similar to those used to expose microalgae. Another emerging nano(eco)toxicology analysis used in this project is the whole transcriptome sequencing (RNA-Seq). RNA-Seq has permitted to identify genes and metabolic pathways that were regulated by C. reinhardtii cells when exposed to either Ce ENPs or to salts of REEs for exposure concentrations of 0.5 μM Ce, Tm or Y in controlled environments at pH 7.0. 
+C. reinhardtii cells were first exposed to soluble Ce salt and Ce ENPs in order to compare relative bioavailabilities of these anthropogenic Ce forms and their associated sub-lethal biological responses. The results revealed that Ce ENPs are bioavailable to C. reinhardtii but produce a manageable toward microalgae cells who seem to acclimatize for short-term exposures at environmentally relevant concentrations. Separate transcriptomic effects of Ce ionic and Ce ENPs have also been observed. The hypothesis that only the dissolution products of Ce ENPs are bioavailable for C. reinhardtii could therefore be rejected. Indeed, the microalgae exposed to the tested ENPs specifically modulated the expression of the genes involved in the ubiquitin-proteasome system and the structure of flagella. Despite these common effects between Ce ENPs, their bioavailability was mainly influenced by their coatings, and not by the Ce(III)/Ce(IV) ratio of surface atoms of ENPs. The coating of citrate has attenuated the transcriptomic effects of Ce ENPs on microalgae, probably due to the beneficial effects of the desorption of citrate on their surface. 
+The time-response (0 to 360 min.) and concentration-response (0 to 3 µM) profiles of specific Ce ENPs or ionic Ce genes were then analyzed to verify their potential use as biomarkers of exposure to ionic Ce. Due to their high specificity and the relative linearity of the expression of biomarkers as a function of both time and concentration, over a range of concentrations relevant to the environment (0,03 à 3 µM), four biomarkers (Cre17.g737300, GTR12, MMP6 and HSP22E) have been identified as being specific to the ionic Ce for C. reinhardtii. Much greater variability in mRNA levels was observed when the pH of the medium varied (5.0 to 8.0). This result probably reflects the complexity of the speciation of Ce resulting from the formation of metastable species even in simple aqueous media. 
+The transcriptomic effects of soluble Ce, Tm, Y salts applied individually or in the form of an equimolar mixture were characterized by RNA-Seq in order to determine the relative bioavailability of Ce compare to the one of other REEs for microalgae, due to Ce atypical behavior in solution. The microalgae exposed to Ce specifically modulated the expression of genes involved in glutamate metabolism and protein folding. However, competitive interactions have been identified between the REEs when applied as a mixture. These results suggest that the approach of government agencies to derive toxicity data from a single metal would be largely conservative for rare earth metals. 
+Throughout this project, the analysis of transcriptomic responses by RNA-Seq in C. reinhardtii made it possible to characterize the bioavailability of Ce and to identify transcriptomic biomarkers of exposure in microalgae in different contexts; in the presence of ENPs or other REEs. However, the integration of such biomarkers in the development of in situ bioassays seems limited." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="https://doi.org/10.5683/SP2/TIGPFS" name="DCTERMS.relation" xml:lang="fr"/>
+<meta content="Cérium; nanoparticules manufacturées; Éléments de terres rares; Transcriptome; Chlamydomonas reinhardtii; Biomarqueurs d'exposition; Biodisponibilité; Rare earth elements; Engineered nanoparticles; Phytoplankton; RNA-Seq; Bioavailability; Exposure biomarkers; Biology - General / Biologie - Généralités (UMI : 0306); Thèse ou mémoire / Thesis or Dissertation; Sciences biologiques" name="citation_keywords"/>
+<meta content="Biodisponibilité et effets transcriptomiques du cérium chez Chlamydomonas reinhardtii" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Morel, Elise" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/24660/2/Morel_Elise_2020_These.pdf" name="citation_pdf_url"/>
+<meta content="2020-06-04" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/24660" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24660?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24660?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24660?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24660?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24660?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24660?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2953" role="menuitem">Faculté des arts et des sciences – Département de sciences biologiques</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2994" role="menuitem">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2953">Faculté des arts et des sciences – Département de sciences biologiques</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2994">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2994"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/24660/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/24660">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/24660/mets.xml-->
+<h2 class="page-header first-page-header">Biodisponibilité et effets transcriptomiques du cérium chez Chlamydomonas reinhardtii</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Wilkinson, Kevin James</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Zerges, William</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Morel, Elise</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2021-01-29T14:55:26Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">MONTHS_WITHHELD:12</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2021-01-29T14:55:26Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2020-06-04</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2020-01</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/24660</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Cérium</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">nanoparticules manufacturées</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Éléments de terres rares</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Transcriptome</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Chlamydomonas reinhardtii</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Biomarqueurs d'exposition</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Biodisponibilité</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Rare earth elements</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Engineered nanoparticles</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Phytoplankton</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">RNA-Seq</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Bioavailability</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Exposure biomarkers</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - General / Biologie - Généralités (UMI : 0306)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Biodisponibilité et effets transcriptomiques du cérium chez Chlamydomonas reinhardtii</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences biologiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Du fait de leurs propriétés spécifiques, les éléments de terres rares (ETRs) sont des métaux devenus indispensables au développement de notre société moderne. Avec leurs utilisations croissantes, des modifications importantes du cycle biogéochimique des ETRs sont attendues alors que peu est encore connu sur leur devenir et leurs effets une fois rejetés dans l’environnement. 
+Le cérium (Ce) a la particularité d’être utilisé sous forme de sels ou de nanoparticules dans différents produits d’utilisation courante (e.g. additifs de diesel, peintures). En raison de sa réactivité redox particulière, le Ce est naturellement peu soluble dans les eaux de surface et va donc principalement se retrouver dans les sédiments de ces écosystèmes aquatiques. Cependant les propriétés physicochimiques du Ce anthropique peuvent modifier le transport et le comportement de ce dernier. Par exemple, les nanoparticules manufacturées d’oxydes de cérium (Ce NMs) pourvues d’un enrobage peuvent présenter une stabilité colloïdale différente de celles naturellement formées. Les organismes pélagiques des milieux aquatiques, dont les micro-organismes photosynthétiques, d’intérêt dans ce projet, pourraient ainsi être exposés à de nouvelles formes de Ce et à différentes concentrations. 
+Comme il est difficile d'observer des réponses biologiques significatives pour des concentrations d'exposition représentatives de celles susceptibles d’être retrouvées dans l'environnement (&lt; 1 µM), les impacts potentiels du Ce sur le phytoplancton dans des scénarios d'exposition réalistes sont encore mal élucidés. Des résultats contradictoires ont notamment été observés dans la littérature en ce qui concerne la biodisponibilité des Ce NMs pour les microalgues unicellulaires et la relation entre leurs propriétés de surface (i.e. rapport Ce (III)/Ce (IV), enrobage) et les réponses cellulaires. Des données quantitatives sont ainsi toujours nécessaires pour l'évaluation des risques potentiels du Ce pour l’Environnement. 
+Dans ce projet, Chlamydomonas reinhardtii a été sélectionnée comme organisme modèle pour représenter les microalgues présentent dans les eaux douces. Des sels solubles de Ce, Tm, Y et trois types de petites Ce NMs (&lt;10 nm) avec différents enrobages (i.e. non enrobées, fonctionnalisées par du citrate ou enrobées de poly(acide acrylique) (PAA)) ont été injectés dans des milieux aqueux simplifiés (i.e. sans phosphates) à des concentrations représentatives de celles attendues dans des environnements anthropisés. La spectrométrie de masse à plasma à couplage inductif en mode simple particule (SP-ICP-MS) a constitué l’une des techniques analytiques de pointe déployées dans ce projet. Elle a permis de quantifier les formes dissoutes et nanoparticulaires du Ce présentent dans les milieux d’exposition des microalgues et de caractériser les petites Ce NMs à des concentrations similaires à celles utilisées pour exposer les microalgues. L’analyse de profilage du transcriptome entier (ARN-Seq) a constitué une autre technique émergente en nano(éco)toxicologie. Elle a permis d’identifier des gènes et voies métaboliques mobilisés chez les populations algales de C. reinhardtii pour s’adapter à leurs expositions soit à des Ce NMs soit à des sels d’ETRs pour des concentrations d’exposition de 0,5 µM Ce, Tm ou Y en milieux contrôlés à pH 7.0.  
+Les microalgues C. reinhardtii ont d’abord été exposées au sel de Ce soluble et aux Ce NMs afin d’en comparer la biodisponibilité et les réponses biologiques sous-létales associées. Les résultats ont révélé que les Ce NMs sont biodisponibles pour C. reinhardtii mais et produisent un stress modéré auquel ces dernières semblent s’acclimater à court terme à des concentrations pertinentes pour l'environnement. Des effets transcriptomiques distincts entre Ce ionique et Ce NMs ont également été observés. L’hypothèse selon laquelle seuls les produits de dissolution des Ce NMs sont biodisponibles pour C. reinhardtii a donc pu être infirmée. En effet, les microalgues exposées aux Ce NMs testées ont spécifiquement modulé l’expression des gènes impliqués dans le système ubiquitine-protéasome et la structure des flagelles. Malgré ces effets communs entres les Ce NMs, leur biodisponibilité est principalement influencée par leurs enrobages, et non par le rapport de Ce(III)/Ce(IV) des atomes de surface des NMs. L’enrobage de citrate a d’ailleurs particulièrement atténué les effets transcriptomiques des Ce NMs sur les microalgues, probablement en raison des effets bénéfiques de la désorption du citrate à leur surface. 
+Les profils de temps-réponses (0 à 360 min.) et concentrations-réponses (0 à 3 µM) de gènes spécifiques des Ce NMs ou du Ce ionique ont par la suite été analysés pour vérifier leur potentielle utilisation en tant que biomarqueurs d’exposition des micoalgues au Ce ionique. En raison de leur spécificité élevée et de la linéarité relative de l'expression des biomarqueurs en fonction du temps sur une plage de concentrations pertinentes pour l'environnement (0,03 à 3 µM), quatre biomarqueurs (Cre17.g737300, GTR12, MMP6 et HSP22E) ont été identifiés comme étant spécifiques au Ce ionique pour C. reinhardtii. Une variabilité beaucoup plus grande des niveaux d'ARNm a été observée lorsque le pH du milieu variait (5,0 à 8,0). Ce résultat reflète probablement la complexité de la spéciation du Ce résultant de la formation d'espèces métastables même dans des milieux aqueux simples.
+Les effets transcriptomiques de sels de Ce, Tm, Y solubles appliqués individuellement ou sous forme de mixture équimolaire ont été caractérisés par ARN-Seq chez C. reinhardtii afin de comparer la biodisponibilité du Ce à celle des autres ETRs pour les microalgues, sachant le comportement atypique du Ce en solution. Les microalgues exposées au Ce ont spécifiquement modulé l’expression de gènes impliqués dans le métabolisme du glutamate et au repliement des protéines. Cependant des interactions compétitives ont été identifiées entre les ETRs lorsqu’appliqués en tant que mixture. Ces résultats suggèrent que l'approche des agences gouvernementales pour dériver des données de toxicité à partir d’un seul métal simple serait largement conservatrice pour les métaux de terres rares.  
+Par ce projet, l’analyse des réponses transcriptomiques par ARN-Seq chez C. reinhardtii a permis de caractériser la biodisponibilité du Ce et d’identifier des biomarqueurs transcriptomiques d’exposition chez les microalgues dans différents contextes ; en présence de Ce NMs ou d’autres ETRs. L’intégration de tels biomarqueurs pour le développement d’un bio-essai in situ nécessite cependant de plus amples investigations.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Due to their specific properties, rare earth elements (REEs) are metals that have become essential to the development of our modern society. With their increasing uses, significant modifications to the biogeochemical cycle of REEs are expected while little is known about their fate and their effects once released into the environment. 
+Cerium (Ce) has the particularity of being used in the form of salts or nanoparticles in various commonly used products (e.g. diesel additives, paints). Due to its particular redox reactivity, Ce is naturally poorly soluble in surface water and will therefore mainly be found in the sediments of these aquatic ecosystems. However, the physicochemical properties of the anthropogenic Ce can modify its transport and behavior. For example, engineered cerium oxide nanoparticles (Ce ENPs) are generally coated and thus may exhibit different colloidal stability from those naturally formed. Pelagic organisms in aquatic environments, including photosynthetic microorganisms, of interest in this project, could thus be exposed to new forms of Ce and at different concentrations. 
+As it is difficult to observe significant biological responses for environmentally relevant exposure concentrations (&lt;1 µM Ce), the potential impacts of Ce on phytoplankton in realistic exposure scenarios are still poorly understood. Contradictory results have notably been reported with regard to the bioavailability of Ce ENPs for unicellular microalgae and the relationship between their surface properties (i.e. Ce(III)/Ce(IV) ratio, coating) and cellular responses. Quantitative data are thus always necessary for the evaluation of the potential risks of Ce for the Environment. 
+In this project, Chlamydomonas reinhardtii was selected as a model organism to represent microalgae in freshwater. Soluble salts of Ce, Tm, Y and three types of small Ce ENPs (&lt;10 nm) with different coatings (i.e. uncoated, functionalized with citrate or coated with poly (acrylic acid) (PAA)) were injected into simplified aqueous media (i.e. without phosphates) at concentrations representative of those expected in contaminated environments. One of the advanced analytical techniques deployed in this project was inductively coupled plasma mass spectrometry in single particle mode (SP-ICP-MS). It has made it possible to quantify the dissolved and nanoparticulate forms of Ce present in microalgae exposure media and to haracterize small Ce NMs at concentrations similar to those used to expose microalgae. Another emerging nano(eco)toxicology analysis used in this project is the whole transcriptome sequencing (RNA-Seq). RNA-Seq has permitted to identify genes and metabolic pathways that were regulated by C. reinhardtii cells when exposed to either Ce ENPs or to salts of REEs for exposure concentrations of 0.5 μM Ce, Tm or Y in controlled environments at pH 7.0. 
+C. reinhardtii cells were first exposed to soluble Ce salt and Ce ENPs in order to compare relative bioavailabilities of these anthropogenic Ce forms and their associated sub-lethal biological responses. The results revealed that Ce ENPs are bioavailable to C. reinhardtii but produce a manageable toward microalgae cells who seem to acclimatize for short-term exposures at environmentally relevant concentrations. Separate transcriptomic effects of Ce ionic and Ce ENPs have also been observed. The hypothesis that only the dissolution products of Ce ENPs are bioavailable for C. reinhardtii could therefore be rejected. Indeed, the microalgae exposed to the tested ENPs specifically modulated the expression of the genes involved in the ubiquitin-proteasome system and the structure of flagella. Despite these common effects between Ce ENPs, their bioavailability was mainly influenced by their coatings, and not by the Ce(III)/Ce(IV) ratio of surface atoms of ENPs. The coating of citrate has attenuated the transcriptomic effects of Ce ENPs on microalgae, probably due to the beneficial effects of the desorption of citrate on their surface. 
+The time-response (0 to 360 min.) and concentration-response (0 to 3 µM) profiles of specific Ce ENPs or ionic Ce genes were then analyzed to verify their potential use as biomarkers of exposure to ionic Ce. Due to their high specificity and the relative linearity of the expression of biomarkers as a function of both time and concentration, over a range of concentrations relevant to the environment (0,03 à 3 µM), four biomarkers (Cre17.g737300, GTR12, MMP6 and HSP22E) have been identified as being specific to the ionic Ce for C. reinhardtii. Much greater variability in mRNA levels was observed when the pH of the medium varied (5.0 to 8.0). This result probably reflects the complexity of the speciation of Ce resulting from the formation of metastable species even in simple aqueous media. 
+The transcriptomic effects of soluble Ce, Tm, Y salts applied individually or in the form of an equimolar mixture were characterized by RNA-Seq in order to determine the relative bioavailability of Ce compare to the one of other REEs for microalgae, due to Ce atypical behavior in solution. The microalgae exposed to Ce specifically modulated the expression of genes involved in glutamate metabolism and protein folding. However, competitive interactions have been identified between the REEs when applied as a mixture. These results suggest that the approach of government agencies to derive toxicity data from a single metal would be largely conservative for rare earth metals. 
+Throughout this project, the analysis of transcriptomic responses by RNA-Seq in C. reinhardtii made it possible to characterize the bioavailability of Ce and to identify transcriptomic biomarkers of exposure in microalgae in different contexts; in the presence of ENPs or other REEs. However, the integration of such biomarkers in the development of in situ bioassays seems limited.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.relation</td><td class="word-break">https://doi.org/10.5683/SP2/TIGPFS</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">UdeM.ORCIDAuteurThese</td><td class="word-break">0000-0001-5660-9083</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F24660&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+biologiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/24660/Morel_Elise_2020_These.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/24660/Morel_Elise_2020_These.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Morel_Elise_2020_These.pdf">
+<a href="/xmlui/bitstream/handle/1866/24660/Morel_Elise_2020_These.pdf?sequence=2&amp;isAllowed=y">Morel_Elise_2020_These.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">5.381Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2994/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2994">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a> [388]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/24660">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

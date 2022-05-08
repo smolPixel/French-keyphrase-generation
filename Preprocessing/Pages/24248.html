@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>L’apprentissage du raisonnement clinique infirmier par une stratégie éducative numérique basée sur la concordance de scripts</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Goudreau, Johanne" name="DC.contributor">
+<meta content="Deschênes, Marie-France" name="DC.creator">
+<meta content="2021-01-15T14:48:42Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="MONTHS_WITHHELD:12" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2021-01-15T14:48:42Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2020-12-11" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2020-06" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/24248" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Raisonnement clinique infirmier" name="DC.subject" xml:lang="fr"/>
+<meta content="Stratégie éducative" name="DC.subject" xml:lang="fr"/>
+<meta content="e-Learning" name="DC.subject" xml:lang="fr"/>
+<meta content="Théorie des scripts" name="DC.subject" xml:lang="fr"/>
+<meta content="Test de concordance de scripts" name="DC.subject" xml:lang="fr"/>
+<meta content="Environnement numérique" name="DC.subject" xml:lang="fr"/>
+<meta content="Stratégies d’apprentissage" name="DC.subject" xml:lang="fr"/>
+<meta content="Pensée à voix haute" name="DC.subject" xml:lang="fr"/>
+<meta content="Compagnonnage cognitif" name="DC.subject" xml:lang="fr"/>
+<meta content="Formation infirmière" name="DC.subject" xml:lang="fr"/>
+<meta content="Clinical reasoning in nursing" name="DC.subject" xml:lang="fr"/>
+<meta content="Educational strategy" name="DC.subject" xml:lang="fr"/>
+<meta content="Script theory" name="DC.subject" xml:lang="fr"/>
+<meta content="Script concordance test" name="DC.subject" xml:lang="fr"/>
+<meta content="Digital environment" name="DC.subject" xml:lang="fr"/>
+<meta content="Think aloud" name="DC.subject" xml:lang="fr"/>
+<meta content="Learning strategies" name="DC.subject" xml:lang="fr"/>
+<meta content="Cognitive companionship" name="DC.subject" xml:lang="fr"/>
+<meta content="Nursing education" name="DC.subject" xml:lang="fr"/>
+<meta content="Health Sciences - Nursing / Sciences de la santé - Soins infirmiers (UMI : 0569)" name="DC.subject" xml:lang="fr"/>
+<meta content="L’apprentissage du raisonnement clinique infirmier par une stratégie éducative numérique basée sur la concordance de scripts" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Cette thèse doctorale porte sur l’apprentissage du raisonnement clinique infirmier (RCI) par une stratégie éducative numérique qui s’appuie sur la notion de la concordance de scripts. Elle repose sur un devis de recherche multiméthode visant le développement, la mise à l’essai et l’évaluation de la stratégie éducative auprès d’étudiants au premier cycle de formation universitaire en sciences infirmières à l’Université de Montréal.  La thèse, qui comporte cinq chapitres, est rédigée selon le mode de présentation par articles.
+L’étude a été orientée par un cadre de référence incluant la théorie des scripts relevant des sciences cognitives de l’apprentissage et l’approche pédagogique de compagnonnage cognitif. Un devis de recherche multiméthode intégrant un devis de recherche-développement, une étude descriptive qualitative et une étude de cas multiples a été privilégié. Des experts collaborateurs (n = 5), des experts-panélistes (n = 12) et des étudiants (n = 45) ont participé à l’étude. 
+Les résultats montrent que l’approche de recherche-développement a contribué à bonifier l’élaboration de la stratégie éducative numérique basée sur la concordance de scripts (SENBCS) et à assurer sa validation. Globalement, les étudiants ont apprécié la SENBCS, notamment la rétroaction variée et formative d’experts et l’opportunité d’apprendre la priorisation des hypothèses infirmières. L’intégration d’un devis descriptif a soutenu l’identification des stratégies d’apprentissage chez les étudiants lors de l’utilisation de la SENBCS. Les résultats montrent que les étudiants ont sollicité certaines stratégies d’apprentissage cognitives de traitement et d’exécution des données ainsi que des stratégies métacognitives d’autorégulation.  Les résultats de l’étude de cas multiples montrent que les étudiants mettent en évidence certains processus cognitifs du RCI, à l’aide des vignettes du test de concordance de scripts (TCS) et de la pensée à voix haute, notamment : la représentation précoce d’une situation clinique, la transformation sémantique des données et la confrontation d’hypothèses. 
+La SENBCS améliore la visibilité des savoirs d’experts, lesquels sont absents dans une classe traditionnelle ou même en stage clinique. Cela constitue une avancée certaine que de considérer l’apport des stratégies éducatives numériques dans les programmes de formation universitaire en sciences infirmières ou dans d’autres programmes pour soutenir le développement du raisonnement clinique. L’étude a permis de mettre à profit une riche documentation scientifique entourant l’élaboration de la SENBCS. Les résultats informent au regard de son utilisation efficiente afin qu’elle soit complémentaire à d’autres stratégies éducatives pour soutenir plus globalement la complexité de l’apprentissage du RCI. 
+Des retombées pour les cinq domaines de la pratique infirmière sont générées par cette étude, elles offrent certaines pistes qui pourraient favoriser l’apprentissage du RCI. L’une d’elles vise à favoriser l’articulation des connaissances et de solliciter fréquemment des microjugements pour confronter et différencier des hypothèses relevant de l’incertitude de la pratique clinique, sous-entendant des apprentissages par couches successives." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="This doctoral thesis focuses on learning clinical reasoning in nursing using a digital educational strategy based on the notion of script concordance. The thesis is based on a multi-method research design aimed at developing, testing and evaluating an educational strategy for undergraduate students in nursing at the University of Montreal. The thesis, which has five chapters, is written according to the mode of presentation by journal articles.
+This study was guided by a framework based on script theory, from cognitive science, and the pedagogical approach of cognitive companionship. A multi-method research design integrating a research-development approach, a descriptive qualitative study and a multiple case study was used. Collaborative experts (n=5), expert panellists (n=12) and students (n=45) participated in the study.
+The results show that the research-development approach enriched the development of a digital education strategy based on script concordance (DESBCS) while ensuring its validation. Overall, students appreciated the DESBCS, especially the varied and formative feedback received from experts while learning how to prioritize nursing hypotheses. A descriptive qualitative study design facilitated the identification of student learning strategies. Results demonstrate that when using a DESBCS, students used certain cognitive apprenticeship strategies for data processing and execution as well as for metacognitive self-monitoring. The results from the multiple case study show that students practised certain cognitive processes of clinical reasoning in nursing, using the vignettes from the script concordance test (SCT) and a think aloud approach, in particular: the early representation of a clinical situation, the semantic transformation of data and the confrontation of hypotheses.
+The DESBCS improves the visibility of expert knowledge usually absent in a traditional class or even in clinical training. It is a definite advancement to consider the contribution of digital educational strategies in university nursing education programs, or in other programs, to support the development of clinical reasoning. This study highlights the use of a wealth of scientific documentation surrounding the development of DESBCS. Study results inform instructors about effective DESBSC use to make it complementary to other educational strategies by supporting the complexities of learning clinical reasoning in nursing.
+Implications for the five domains of nursing practice emerge from this study and offer avenues to promote learning and development of clinical reasoning in nursing. One of these aims to promote knowledge articulation and the frequent solicitation of microjudgments to confront and differentiate hypotheses that arise from the uncertainty of clinical practice, implying learning in successive layers." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Raisonnement clinique infirmier; Stratégie éducative; e-Learning; Théorie des scripts; Test de concordance de scripts; Environnement numérique; Stratégies d’apprentissage; Pensée à voix haute; Compagnonnage cognitif; Formation infirmière; Clinical reasoning in nursing; Educational strategy; Script theory; Script concordance test; Digital environment; Think aloud; Learning strategies; Cognitive companionship; Nursing education; Health Sciences - Nursing / Sciences de la santé - Soins infirmiers (UMI : 0569); Thèse ou mémoire / Thesis or Dissertation; Sciences infirmières" name="citation_keywords"/>
+<meta content="L’apprentissage du raisonnement clinique infirmier par une stratégie éducative numérique basée sur la concordance de scripts" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Deschênes, Marie-France" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/24248/2/Deschenes_Marie-France_2020_these.pdf" name="citation_pdf_url"/>
+<meta content="2020-12-11" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/24248" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24248?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24248?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24248?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24248?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24248?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24248?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/576" role="menuitem">Faculté des sciences infirmières</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2972" role="menuitem">Faculté des sciences infirmières – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/576">Faculté des sciences infirmières</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2972">Faculté des sciences infirmières – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2972"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2972/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2972/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2972/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2972/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2972/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2972/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2972/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2972/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/24248/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/24248">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/24248/mets.xml-->
+<h2 class="page-header first-page-header">L’apprentissage du raisonnement clinique infirmier par une stratégie éducative numérique basée sur la concordance de scripts</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Goudreau, Johanne</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Deschênes, Marie-France</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2021-01-15T14:48:42Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">MONTHS_WITHHELD:12</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2021-01-15T14:48:42Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2020-12-11</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2020-06</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/24248</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Raisonnement clinique infirmier</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Stratégie éducative</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">e-Learning</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Théorie des scripts</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Test de concordance de scripts</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Environnement numérique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Stratégies d’apprentissage</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pensée à voix haute</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Compagnonnage cognitif</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Formation infirmière</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Clinical reasoning in nursing</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Educational strategy</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Script theory</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Script concordance test</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Digital environment</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Think aloud</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Learning strategies</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Cognitive companionship</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Nursing education</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Health Sciences - Nursing / Sciences de la santé - Soins infirmiers (UMI : 0569)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">L’apprentissage du raisonnement clinique infirmier par une stratégie éducative numérique basée sur la concordance de scripts</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences infirmières</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Cette thèse doctorale porte sur l’apprentissage du raisonnement clinique infirmier (RCI) par une stratégie éducative numérique qui s’appuie sur la notion de la concordance de scripts. Elle repose sur un devis de recherche multiméthode visant le développement, la mise à l’essai et l’évaluation de la stratégie éducative auprès d’étudiants au premier cycle de formation universitaire en sciences infirmières à l’Université de Montréal.  La thèse, qui comporte cinq chapitres, est rédigée selon le mode de présentation par articles.
+L’étude a été orientée par un cadre de référence incluant la théorie des scripts relevant des sciences cognitives de l’apprentissage et l’approche pédagogique de compagnonnage cognitif. Un devis de recherche multiméthode intégrant un devis de recherche-développement, une étude descriptive qualitative et une étude de cas multiples a été privilégié. Des experts collaborateurs (n = 5), des experts-panélistes (n = 12) et des étudiants (n = 45) ont participé à l’étude. 
+Les résultats montrent que l’approche de recherche-développement a contribué à bonifier l’élaboration de la stratégie éducative numérique basée sur la concordance de scripts (SENBCS) et à assurer sa validation. Globalement, les étudiants ont apprécié la SENBCS, notamment la rétroaction variée et formative d’experts et l’opportunité d’apprendre la priorisation des hypothèses infirmières. L’intégration d’un devis descriptif a soutenu l’identification des stratégies d’apprentissage chez les étudiants lors de l’utilisation de la SENBCS. Les résultats montrent que les étudiants ont sollicité certaines stratégies d’apprentissage cognitives de traitement et d’exécution des données ainsi que des stratégies métacognitives d’autorégulation.  Les résultats de l’étude de cas multiples montrent que les étudiants mettent en évidence certains processus cognitifs du RCI, à l’aide des vignettes du test de concordance de scripts (TCS) et de la pensée à voix haute, notamment : la représentation précoce d’une situation clinique, la transformation sémantique des données et la confrontation d’hypothèses. 
+La SENBCS améliore la visibilité des savoirs d’experts, lesquels sont absents dans une classe traditionnelle ou même en stage clinique. Cela constitue une avancée certaine que de considérer l’apport des stratégies éducatives numériques dans les programmes de formation universitaire en sciences infirmières ou dans d’autres programmes pour soutenir le développement du raisonnement clinique. L’étude a permis de mettre à profit une riche documentation scientifique entourant l’élaboration de la SENBCS. Les résultats informent au regard de son utilisation efficiente afin qu’elle soit complémentaire à d’autres stratégies éducatives pour soutenir plus globalement la complexité de l’apprentissage du RCI. 
+Des retombées pour les cinq domaines de la pratique infirmière sont générées par cette étude, elles offrent certaines pistes qui pourraient favoriser l’apprentissage du RCI. L’une d’elles vise à favoriser l’articulation des connaissances et de solliciter fréquemment des microjugements pour confronter et différencier des hypothèses relevant de l’incertitude de la pratique clinique, sous-entendant des apprentissages par couches successives.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">This doctoral thesis focuses on learning clinical reasoning in nursing using a digital educational strategy based on the notion of script concordance. The thesis is based on a multi-method research design aimed at developing, testing and evaluating an educational strategy for undergraduate students in nursing at the University of Montreal. The thesis, which has five chapters, is written according to the mode of presentation by journal articles.
+This study was guided by a framework based on script theory, from cognitive science, and the pedagogical approach of cognitive companionship. A multi-method research design integrating a research-development approach, a descriptive qualitative study and a multiple case study was used. Collaborative experts (n=5), expert panellists (n=12) and students (n=45) participated in the study.
+The results show that the research-development approach enriched the development of a digital education strategy based on script concordance (DESBCS) while ensuring its validation. Overall, students appreciated the DESBCS, especially the varied and formative feedback received from experts while learning how to prioritize nursing hypotheses. A descriptive qualitative study design facilitated the identification of student learning strategies. Results demonstrate that when using a DESBCS, students used certain cognitive apprenticeship strategies for data processing and execution as well as for metacognitive self-monitoring. The results from the multiple case study show that students practised certain cognitive processes of clinical reasoning in nursing, using the vignettes from the script concordance test (SCT) and a think aloud approach, in particular: the early representation of a clinical situation, the semantic transformation of data and the confrontation of hypotheses.
+The DESBCS improves the visibility of expert knowledge usually absent in a traditional class or even in clinical training. It is a definite advancement to consider the contribution of digital educational strategies in university nursing education programs, or in other programs, to support the development of clinical reasoning. This study highlights the use of a wealth of scientific documentation surrounding the development of DESBCS. Study results inform instructors about effective DESBSC use to make it complementary to other educational strategies by supporting the complexities of learning clinical reasoning in nursing.
+Implications for the five domains of nursing practice emerge from this study and offer avenues to promote learning and development of clinical reasoning in nursing. One of these aims to promote knowledge articulation and the frequent solicitation of microjudgments to confront and differentiate hypotheses that arise from the uncertainty of clinical practice, implying learning in successive layers.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">UdeM.ORCIDAuteurThese</td><td class="word-break">0000-0002-7949-4466</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F24248&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+infirmi%C3%A8res&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/24248/Deschenes_Marie-France_2020_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/24248/Deschenes_Marie-France_2020_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Deschenes_Marie-France_2020_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/24248/Deschenes_Marie-France_2020_these.pdf?sequence=2&amp;isAllowed=y">Deschenes_Marie-France_2020_th ...</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">4.972Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2972/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2972">Faculté des sciences infirmières – Thèses et mémoires</a> [277]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/24248">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

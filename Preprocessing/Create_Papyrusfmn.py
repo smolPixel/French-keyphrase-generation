@@ -10,6 +10,10 @@ for split in splits:
 
 	new_index=0
 	for i, row in df_og.iterrows():
+		if row['index']==12533:
+			print(row['title'])
+			print(row['sentences'])
+			print(row['label'])
 		if row['language']=='fr':
 			fr_df.loc[new_index]=row
 			new_index+=1

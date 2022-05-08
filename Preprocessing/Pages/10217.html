@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Bootstrapping high frequency data</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Gonçalves, Sílvia" name="DC.contributor">
+<meta content="Hounyo, Koomla Ulrich" name="DC.creator">
+<meta content="2014-01-16T17:41:34Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2014-01-16T17:41:34Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2013-11-07" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2013-07" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/10217" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Données haute fréquence" name="DC.subject" xml:lang="fr"/>
+<meta content="Volatilité réalisée" name="DC.subject" xml:lang="fr"/>
+<meta content="Bruit de microstructure" name="DC.subject" xml:lang="fr"/>
+<meta content="Pré-moyennement" name="DC.subject" xml:lang="fr"/>
+<meta content="Betas réalisé" name="DC.subject" xml:lang="fr"/>
+<meta content="Bootstrap" name="DC.subject" xml:lang="fr"/>
+<meta content="Expansions d’Edgeworth" name="DC.subject" xml:lang="fr"/>
+<meta content="Realized betas" name="DC.subject" xml:lang="fr"/>
+<meta content="High frequency data" name="DC.subject" xml:lang="fr"/>
+<meta content="Realized volatility" name="DC.subject" xml:lang="fr"/>
+<meta content="Market microstructure noise" name="DC.subject" xml:lang="fr"/>
+<meta content="Pre-averaging" name="DC.subject" xml:lang="fr"/>
+<meta content="Edgeworth expansions" name="DC.subject" xml:lang="fr"/>
+<meta content="Economics - Finance / Économie - Finances (UMI : 0508)" name="DC.subject" xml:lang="fr"/>
+<meta content="Bootstrapping high frequency data" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content='Nous développons dans cette thèse, des méthodes de bootstrap pour les données financières de hautes fréquences. Les deux premiers essais focalisent sur les méthodes de bootstrap appliquées à l’approche de "pré-moyennement" et robustes à la présence d’erreurs de microstructure. Le "pré-moyennement" permet de réduire l’influence de l’effet de microstructure avant d’appliquer la volatilité réalisée. En se basant sur cette ap- proche d’estimation de la volatilité intégrée en présence d’erreurs de microstructure, nous développons plusieurs méthodes de bootstrap qui préservent la structure de dépendance et l’hétérogénéité dans la moyenne des données originelles. Le troisième essai développe une méthode de bootstrap sous l’hypothèse de Gaussianité locale des données financières de hautes fréquences.
+Le premier chapitre est intitulé: "Bootstrap inference for pre-averaged realized volatility based on non-overlapping returns". Nous proposons dans ce chapitre, des méthodes de bootstrap robustes à la présence d’erreurs de microstructure. Particulièrement nous nous sommes focalisés sur la volatilité réalisée utilisant des rendements "pré-moyennés" proposés par Podolskij et Vetter (2009), où les rendements "pré-moyennés" sont construits sur des blocs de rendements à hautes fréquences consécutifs qui ne se chevauchent pas. Le "pré-moyennement" permet de réduire l’influence de l’effet de microstructure avant d’appliquer la volatilité réalisée. Le non-chevauchement des blocs fait que les rendements "pré-moyennés" sont asymptotiquement indépendants, mais possiblement hétéroscédastiques. Ce qui motive l’application du wild bootstrap dans ce contexte. Nous montrons la validité théorique du bootstrap pour construire des intervalles de type percentile et percentile-t. Les simulations Monte Carlo montrent que le bootstrap peut améliorer les propriétés en échantillon fini de l’estimateur de la volatilité intégrée par rapport aux résultats asymptotiques, pourvu que le choix de la variable externe soit fait de façon appropriée. Nous illustrons ces méthodes en utilisant des données financières réelles.
+Le deuxième chapitre est intitulé : "Bootstrapping pre-averaged realized volatility under market microstructure noise". Nous développons dans ce chapitre une méthode de bootstrap par bloc basée sur l’approche "pré-moyennement" de Jacod et al. (2009), où les rendements "pré-moyennés" sont construits sur des blocs de rendements à haute fréquences consécutifs qui se chevauchent. Le chevauchement des blocs induit une forte dépendance dans la structure des rendements "pré-moyennés". En effet les rendements "pré-moyennés" sont m-dépendant avec m qui croît à une vitesse plus faible que la taille d’échantillon n. Ceci motive l’application d’un bootstrap par bloc spécifique. Nous montrons que le bloc bootstrap suggéré par Bühlmann et Künsch (1995) n’est valide que lorsque la volatilité est constante. Ceci est dû à l’hétérogénéité dans la moyenne des rendements "pré-moyennés" au carré lorsque la volatilité est stochastique. Nous proposons donc une nouvelle procédure de bootstrap qui combine le wild bootstrap et le bootstrap par bloc, de telle sorte que la dépendance sérielle des rendements "pré-moyennés" est préservée à l’intérieur des blocs et la condition d’homogénéité nécessaire pour la validité du bootstrap est respectée. Sous des conditions de taille de bloc, nous montrons que cette méthode est convergente. Les simulations Monte Carlo montrent que le bootstrap améliore les propriétés en échantillon fini de l’estimateur de la volatilité intégrée par rapport aux résultats asymptotiques. Nous illustrons cette méthode en utilisant des données financières réelles.
+Le troisième chapitre est intitulé: "Bootstrapping realized covolatility measures under local Gaussianity assumption". Dans ce chapitre nous montrons, comment et dans quelle mesure on peut approximer les distributions des estimateurs de mesures de co-volatilité sous l’hypothèse de Gaussianité locale des rendements. En particulier nous proposons une nouvelle méthode de bootstrap sous ces hypothèses. Nous nous sommes focalisés sur la volatilité réalisée et sur le beta réalisé. Nous montrons que la nouvelle méthode de bootstrap appliquée au beta réalisé était capable de répliquer les cummulants au deuxième ordre, tandis qu’il procurait une amélioration au troisième degré lorsqu’elle est appliquée à la volatilité réalisée. Ces résultats améliorent donc les résultats existants dans cette littérature, notamment ceux de Gonçalves et Meddahi (2009) et de Dovonon, Gonçalves et Meddahi (2013). Les simulations Monte Carlo montrent que le bootstrap améliore les propriétés en échantillon fini de l’estimateur de la volatilité intégrée par rapport aux résultats asymptotiques et les résultats de bootstrap existants. Nous illustrons cette méthode en utilisant des données financières réelles.' name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content='We develop in this thesis bootstrap methods for high frequency financial data. The first two chapters focalise on bootstrap methods for the "pre-averaging" approach, which is robust to the presence of market microstructure effects. The main idea underlying this approach is that we can reduce the impact of the noise by pre-averaging high frequency returns that are possibly contaminated with market microstructure noise before applying a realized volatility-like statistic. Based on this approach, we develop several bootstrap methods, which preserve the dependence structure and the heterogeneity in the mean of the original data. The third chapter shows how and to what extent the local Gaussian- ity assumption can be explored to generate a bootstrap approximation for covolatility measures.
+The first chapter is entitled "Bootstrap inference for pre-averaged realized volatility based on non-overlapping returns". The main contribution of this chapter is to propose bootstrap methods for realized volatility-like estimators defined on pre-averaged returns. In particular, we focus on the pre-averaged realized volatility estimator proposed by Podolskij and Vetter (2009). This statistic can be written (up to a bias correction term) as the (scaled) sum of squared pre-averaged returns, where the pre-averaging is done over all possible non-overlapping blocks of consecutive observations. Pre-averaging reduces the influence of the noise and allows for realized volatility estimation on the pre-averaged returns. The non-overlapping nature of the pre-averaged returns implies that these are asymptotically independent, but possibly heteroskedastic. This motivates the application of the wild bootstrap in this context. We provide a proof of the first order asymptotic validity of this method for percentile and percentile-t intervals. Our Monte Carlo simulations show that the wild bootstrap can improve the finite sample properties of the existing first order asymptotic theory provided we choose the external random variable appropriately.
+The second chapter is entitled "Bootstrapping pre-averaged realized volatility under market microstructure noise ". In this chapter we propose a bootstrap method for inference on integrated volatility based on the pre-averaging approach of Jacod et al. (2009), where the pre-averaging is done over all possible overlapping blocks of consecutive observations. The overlapping nature of the pre-averaged returns implies that these are m-dependent with m growing slowly with the sample size n. This motivates the application of a blockwise bootstrap method. We show that the “blocks of blocks” bootstrap method suggested by Politis and Romano (1992) (and further studied by Bühlmann and Künsch (1995)) is valid only when volatility is constant. The failure of the blocks of blocks bootstrap is due to the heterogeneity of the squared pre-averaged returns when volatility is stochastic. To preserve both the dependence and the heterogeneity of squared pre-averaged returns, we propose a novel procedure that combines the wild bootstrap with the blocks of blocks bootstrap. We provide a proof of the first order asymptotic validity of this method for percentile intervals. Our Monte Carlo simulations show that the wild blocks of blocks bootstrap improves the finite sample properties of the existing first order asymptotic theory.
+The third chapter is entitled "Bootstrapping realized volatility and realized beta under a local Gaussianity assumption". The financial econometric of high frequency data litera- ture often assumed a local constancy of volatility and the Gaussianity properties of high frequency returns in order to carry out inference. In this chapter, we show how and to what extent the local Gaussianity assumption can be explored to generate a bootstrap approximation. We show the first-order asymptotic validity of the new wild bootstrap method, which uses the conditional local normality properties of financial high frequency returns. In addition to that we use Edgeworth expansions and Monte Carlo simulations to compare the accuracy of the bootstrap with other existing approaches. It is shown that at second order, the new wild bootstrap matches the cumulants of realized betas-based t-statistics, whereas it provides a third-order asymptotic refinement for realized volatility. Monte Carlo simulations suggest that our new wild bootstrap methods improve upon the first-order asymptotic theory in finite samples and outperform the existing bootstrap methods for realized covolatility measures. We use empirical work to illustrate its uses in practice.' name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Données haute fréquence; Volatilité réalisée; Bruit de microstructure; Pré-moyennement; Betas réalisé; Bootstrap; Expansions d’Edgeworth; Realized betas; High frequency data; Realized volatility; Market microstructure noise; Pre-averaging; Edgeworth expansions; Economics - Finance / Économie - Finances (UMI : 0508); Thèse ou mémoire / Thesis or Dissertation; Sciences économiques" name="citation_keywords"/>
+<meta content="Bootstrapping high frequency data" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Hounyo, Koomla Ulrich" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/10217/4/Hounyo_Koomla_Ulrich_2013_these.pdf" name="citation_pdf_url"/>
+<meta content="2013-11-07" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/10217" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10217?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10217?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10217?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10217?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10217?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10217?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/149" role="menuitem">Faculté des arts et des sciences – Département de sciences économiques</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2995" role="menuitem">Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/149">Faculté des arts et des sciences – Département de sciences économiques</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2995">Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2995"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/10217/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/10217">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10217/mets.xml-->
+<h2 class="page-header first-page-header">Bootstrapping high frequency data</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Gonçalves, Sílvia</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Hounyo, Koomla Ulrich</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2014-01-16T17:41:34Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2014-01-16T17:41:34Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2013-11-07</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2013-07</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/10217</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Données haute fréquence</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Volatilité réalisée</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Bruit de microstructure</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pré-moyennement</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Betas réalisé</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Bootstrap</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Expansions d’Edgeworth</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Realized betas</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">High frequency data</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Realized volatility</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Market microstructure noise</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pre-averaging</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Edgeworth expansions</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Economics - Finance / Économie - Finances (UMI : 0508)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Bootstrapping high frequency data</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences économiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Nous développons dans cette thèse, des méthodes de bootstrap pour les données financières de hautes fréquences. Les deux premiers essais focalisent sur les méthodes de bootstrap appliquées à l’approche de "pré-moyennement" et robustes à la présence d’erreurs de microstructure. Le "pré-moyennement" permet de réduire l’influence de l’effet de microstructure avant d’appliquer la volatilité réalisée. En se basant sur cette ap- proche d’estimation de la volatilité intégrée en présence d’erreurs de microstructure, nous développons plusieurs méthodes de bootstrap qui préservent la structure de dépendance et l’hétérogénéité dans la moyenne des données originelles. Le troisième essai développe une méthode de bootstrap sous l’hypothèse de Gaussianité locale des données financières de hautes fréquences.
+Le premier chapitre est intitulé: "Bootstrap inference for pre-averaged realized volatility based on non-overlapping returns". Nous proposons dans ce chapitre, des méthodes de bootstrap robustes à la présence d’erreurs de microstructure. Particulièrement nous nous sommes focalisés sur la volatilité réalisée utilisant des rendements "pré-moyennés" proposés par Podolskij et Vetter (2009), où les rendements "pré-moyennés" sont construits sur des blocs de rendements à hautes fréquences consécutifs qui ne se chevauchent pas. Le "pré-moyennement" permet de réduire l’influence de l’effet de microstructure avant d’appliquer la volatilité réalisée. Le non-chevauchement des blocs fait que les rendements "pré-moyennés" sont asymptotiquement indépendants, mais possiblement hétéroscédastiques. Ce qui motive l’application du wild bootstrap dans ce contexte. Nous montrons la validité théorique du bootstrap pour construire des intervalles de type percentile et percentile-t. Les simulations Monte Carlo montrent que le bootstrap peut améliorer les propriétés en échantillon fini de l’estimateur de la volatilité intégrée par rapport aux résultats asymptotiques, pourvu que le choix de la variable externe soit fait de façon appropriée. Nous illustrons ces méthodes en utilisant des données financières réelles.
+Le deuxième chapitre est intitulé : "Bootstrapping pre-averaged realized volatility under market microstructure noise". Nous développons dans ce chapitre une méthode de bootstrap par bloc basée sur l’approche "pré-moyennement" de Jacod et al. (2009), où les rendements "pré-moyennés" sont construits sur des blocs de rendements à haute fréquences consécutifs qui se chevauchent. Le chevauchement des blocs induit une forte dépendance dans la structure des rendements "pré-moyennés". En effet les rendements "pré-moyennés" sont m-dépendant avec m qui croît à une vitesse plus faible que la taille d’échantillon n. Ceci motive l’application d’un bootstrap par bloc spécifique. Nous montrons que le bloc bootstrap suggéré par Bühlmann et Künsch (1995) n’est valide que lorsque la volatilité est constante. Ceci est dû à l’hétérogénéité dans la moyenne des rendements "pré-moyennés" au carré lorsque la volatilité est stochastique. Nous proposons donc une nouvelle procédure de bootstrap qui combine le wild bootstrap et le bootstrap par bloc, de telle sorte que la dépendance sérielle des rendements "pré-moyennés" est préservée à l’intérieur des blocs et la condition d’homogénéité nécessaire pour la validité du bootstrap est respectée. Sous des conditions de taille de bloc, nous montrons que cette méthode est convergente. Les simulations Monte Carlo montrent que le bootstrap améliore les propriétés en échantillon fini de l’estimateur de la volatilité intégrée par rapport aux résultats asymptotiques. Nous illustrons cette méthode en utilisant des données financières réelles.
+Le troisième chapitre est intitulé: "Bootstrapping realized covolatility measures under local Gaussianity assumption". Dans ce chapitre nous montrons, comment et dans quelle mesure on peut approximer les distributions des estimateurs de mesures de co-volatilité sous l’hypothèse de Gaussianité locale des rendements. En particulier nous proposons une nouvelle méthode de bootstrap sous ces hypothèses. Nous nous sommes focalisés sur la volatilité réalisée et sur le beta réalisé. Nous montrons que la nouvelle méthode de bootstrap appliquée au beta réalisé était capable de répliquer les cummulants au deuxième ordre, tandis qu’il procurait une amélioration au troisième degré lorsqu’elle est appliquée à la volatilité réalisée. Ces résultats améliorent donc les résultats existants dans cette littérature, notamment ceux de Gonçalves et Meddahi (2009) et de Dovonon, Gonçalves et Meddahi (2013). Les simulations Monte Carlo montrent que le bootstrap améliore les propriétés en échantillon fini de l’estimateur de la volatilité intégrée par rapport aux résultats asymptotiques et les résultats de bootstrap existants. Nous illustrons cette méthode en utilisant des données financières réelles.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">We develop in this thesis bootstrap methods for high frequency financial data. The first two chapters focalise on bootstrap methods for the "pre-averaging" approach, which is robust to the presence of market microstructure effects. The main idea underlying this approach is that we can reduce the impact of the noise by pre-averaging high frequency returns that are possibly contaminated with market microstructure noise before applying a realized volatility-like statistic. Based on this approach, we develop several bootstrap methods, which preserve the dependence structure and the heterogeneity in the mean of the original data. The third chapter shows how and to what extent the local Gaussian- ity assumption can be explored to generate a bootstrap approximation for covolatility measures.
+The first chapter is entitled "Bootstrap inference for pre-averaged realized volatility based on non-overlapping returns". The main contribution of this chapter is to propose bootstrap methods for realized volatility-like estimators defined on pre-averaged returns. In particular, we focus on the pre-averaged realized volatility estimator proposed by Podolskij and Vetter (2009). This statistic can be written (up to a bias correction term) as the (scaled) sum of squared pre-averaged returns, where the pre-averaging is done over all possible non-overlapping blocks of consecutive observations. Pre-averaging reduces the influence of the noise and allows for realized volatility estimation on the pre-averaged returns. The non-overlapping nature of the pre-averaged returns implies that these are asymptotically independent, but possibly heteroskedastic. This motivates the application of the wild bootstrap in this context. We provide a proof of the first order asymptotic validity of this method for percentile and percentile-t intervals. Our Monte Carlo simulations show that the wild bootstrap can improve the finite sample properties of the existing first order asymptotic theory provided we choose the external random variable appropriately.
+The second chapter is entitled "Bootstrapping pre-averaged realized volatility under market microstructure noise ". In this chapter we propose a bootstrap method for inference on integrated volatility based on the pre-averaging approach of Jacod et al. (2009), where the pre-averaging is done over all possible overlapping blocks of consecutive observations. The overlapping nature of the pre-averaged returns implies that these are m-dependent with m growing slowly with the sample size n. This motivates the application of a blockwise bootstrap method. We show that the “blocks of blocks” bootstrap method suggested by Politis and Romano (1992) (and further studied by Bühlmann and Künsch (1995)) is valid only when volatility is constant. The failure of the blocks of blocks bootstrap is due to the heterogeneity of the squared pre-averaged returns when volatility is stochastic. To preserve both the dependence and the heterogeneity of squared pre-averaged returns, we propose a novel procedure that combines the wild bootstrap with the blocks of blocks bootstrap. We provide a proof of the first order asymptotic validity of this method for percentile intervals. Our Monte Carlo simulations show that the wild blocks of blocks bootstrap improves the finite sample properties of the existing first order asymptotic theory.
+The third chapter is entitled "Bootstrapping realized volatility and realized beta under a local Gaussianity assumption". The financial econometric of high frequency data litera- ture often assumed a local constancy of volatility and the Gaussianity properties of high frequency returns in order to carry out inference. In this chapter, we show how and to what extent the local Gaussianity assumption can be explored to generate a bootstrap approximation. We show the first-order asymptotic validity of the new wild bootstrap method, which uses the conditional local normality properties of financial high frequency returns. In addition to that we use Edgeworth expansions and Monte Carlo simulations to compare the accuracy of the bootstrap with other existing approaches. It is shown that at second order, the new wild bootstrap matches the cumulants of realized betas-based t-statistics, whereas it provides a third-order asymptotic refinement for realized volatility. Monte Carlo simulations suggest that our new wild bootstrap methods improve upon the first-order asymptotic theory in finite samples and outperform the existing bootstrap methods for realized covolatility measures. We use empirical work to illustrate its uses in practice.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F10217&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+%C3%A9conomiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/10217/Hounyo_Koomla_Ulrich_2013_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/10217/Hounyo_Koomla_Ulrich_2013_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Hounyo_Koomla_Ulrich_2013_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/10217/Hounyo_Koomla_Ulrich_2013_these.pdf?sequence=4&amp;isAllowed=y">Hounyo_Koomla_Ulrich_2013_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1003.Kb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2995/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2995">Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires</a> [317]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/10217">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.jsrage2/scripts/theme.jsscriptscripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

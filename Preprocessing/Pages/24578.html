@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Caractérisation systématique des motifs de régulation en cis à l’échelle transcriptomique et liens avec la localisation des ARN</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Lécuyer, Éric" name="DC.contributor">
+<meta content="Major, François" name="DC.contributor">
+<meta content="Benoit Bouvrette, Louis Philip" name="DC.creator">
+<meta content="2021-01-28T14:59:16Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2021-01-28T14:59:16Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2020-12-03" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2020-04" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/24578" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Localisation de l’ARN" name="DC.subject" xml:lang="fr"/>
+<meta content="Régulation post-transcriptionnelle" name="DC.subject" xml:lang="fr"/>
+<meta content="Transcriptomique" name="DC.subject" xml:lang="fr"/>
+<meta content="ARN messagers" name="DC.subject" xml:lang="fr"/>
+<meta content="ARN non codants" name="DC.subject" xml:lang="fr"/>
+<meta content="Protéine liant l’ARN" name="DC.subject" xml:lang="fr"/>
+<meta content="Motifs de régulation en cis" name="DC.subject" xml:lang="fr"/>
+<meta content="Fractionnement subcellulaire" name="DC.subject" xml:lang="fr"/>
+<meta content="Séquençage en profondeur de l’ARN" name="DC.subject" xml:lang="fr"/>
+<meta content="Conservation évolutive" name="DC.subject" xml:lang="fr"/>
+<meta content="RNA localization" name="DC.subject" xml:lang="fr"/>
+<meta content="Post-transcriptional regulation" name="DC.subject" xml:lang="fr"/>
+<meta content="Transcriptomics" name="DC.subject" xml:lang="fr"/>
+<meta content="Messenger RNA" name="DC.subject" xml:lang="fr"/>
+<meta content="Noncoding RNA" name="DC.subject" xml:lang="fr"/>
+<meta content="RNA binding protein" name="DC.subject" xml:lang="fr"/>
+<meta content="Cis-regulatory motifs" name="DC.subject" xml:lang="fr"/>
+<meta content="Subcellular fractionation" name="DC.subject" xml:lang="fr"/>
+<meta content="RNA-sequencing" name="DC.subject" xml:lang="fr"/>
+<meta content="Evolutionary conservation" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Bioinformatics / Biologie - Bio-informatique (UMI : 0715)" name="DC.subject" xml:lang="fr"/>
+<meta content="Caractérisation systématique des motifs de régulation en cis à l’échelle transcriptomique et liens avec la localisation des ARN" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La localisation subcellulaire de l’ARN permet un déploiement prompt et spatialement restreint autant des activités protéiques que des ARN noncodant. Le trafic d’ARN est dirigé par des éléments de séquences (sous-séquences primaires, structures secondaires), aussi appelés motifs de régulation, présents en cis à même la molécule d’ARN. Ces motifs sont reconnus par des protéines de liaisons aux ARN qui médient l’acheminement des transcrits vers des sites précis dans la cellule. Des études récentes, chez l’embryon de Drosophile, indiquent que la majorité des ARN ont une localisation subcellulaire asymétrique, suggérant l’existence d’un « code de localisation » complexe. Cependant, ceci peut représenter un exemple exceptionnel et la question demeurait, jusqu’ici, si une prévalence comparable de localisation d’ARN est observable chez des cellules standards développées en culture. De plus, des informations facilement disponibles à propos des caractéristiques de distribution topologique d’instances de motifs à travers des transcriptomes complets étaient jusqu’à présent manquantes.
+Afin d’avoir un aperçu de l’étendue et des propriétés impliquées dans la localisation des ARN, nous avons soumis des cellules de Drosophile (D17) et de l’humain (HepG2) à un fractionnement biochimique afin d’isoler les fractions nucléaire, cytosolique, membranaire et insoluble. Nous avons ensuite séquencé en profondeur l’ARN extrait et analysé par spectrométrie de masse les protéines extraites de ces fractions. Nous avons nommé cette méthode CeFra-Seq. Par des analyses bio-informatiques, j’ai ensuite cartographié l’enrichissement de divers biotypes d’ARN (p. ex. ARN messager, ARN long non codant, ARN circulaire) et protéines au sein des fractions subcellulaires. Ceci a révélé que la distribution d’un large éventail d’espèces d’ARN codants et non codants est asymétrique. Une analyse des gènes orthologues entre mouche et humain a aussi démontré de fortes similitudes, suggérant que le processus de localisation est évolutivement conservé. De plus, j’ai observé des attributs (p. ex. la taille des transcrits) distincts parmi les populations d’ARN messagers spécifiques à une fraction. Finalement, j’ai observé des corrélations et anti-corrélations spécifiques entre certains groupes d’ARN messagers et leurs protéines.
+Pour permettre l’étude de la topologie de motifs et de leurs conservations, j’ai créé oRNAment, une base de données d’instances présumée de sites de liaison de protéines chez des ARN codants et non codants. À partir de données de motifs de liaison protéique par RNAcompete et par RNA Bind-n-Seq, j’ai développé un algorithme permettant l’identification rapide d’instances potentielles de ces motifs dans un transcriptome complet. J’ai pu ainsi cataloguer les instances de 453 motifs provenant de 223 protéines liant l’ARN pour 525 718 transcrits chez cinq espèces. Les résultats obtenus ont été validés en les comparant à des données publiques de eCLIP.
+J’ai, par la suite, utilisé oRNAment pour analyser en détail les aspects topologiques des instances présumées de ces motifs et leurs conservations évolutives relatives. Ceci a permis de démontrer que la plupart des motifs sont distribués de façon similaire entre espèces. De plus, j’ai discerné des points communs entre les sous-groupes de protéines liant des biotypes distincts ou des régions d’ARN spécifiques. La présence de tels patrons, similaires ou non, entre espèces est susceptible de refléter l’importance de leurs fonctions. D’ailleurs, l’analyse plus détaillée du positionnement d’un motif entre régions transcriptomiques comparables chez les vertébrés suggère une conservation synténique de ceux-ci, à divers degrés, pour tous les biotypes d’ARN. La topologie régionale de certaines instances de motifs répétées apparaît aussi comme évolutivement conservée et peut être importante afin de permettre une liaison adéquate de la protéine. Finalement, les résultats compilés avec oRNAment ont permis de postuler sur un nouveau rôle potentiel pour l’ARN long non codant HELLPAR comme éponge de protéines liant l’ARN.
+La caractérisation systématique d’ARN localisés et de motifs de régulation en cis présentée dans cette thèse démontre comment l’intégration d’information à l’échelle transcriptomique permet d’évaluer la prévalence de l’asymétrie, les caractéristiques distinctes et la conservation évolutive de collections d’ARN." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content='The subcellular localization of RNA allows a rapid and spatially restricted deployment of protein and noncoding RNA activities. The trafficking of RNA is directed by sequence elements (primary subsequences, secondary structures), also called regulatory motifs, present in cis within the RNA molecule. These motifs are recognized by RNA-binding proteins that mediate the transport of transcripts to specific sites in the cell. Recent studies in the Drosophila embryo indicate that the majority of RNAs display an asymmetric subcellular localization, suggesting the existence of a complex "localization code". However, this may represent an exceptional example and the question remained, until now, whether a comparable prevalence of RNA localization is observable in standard cells grown in culture. In addition, readily available information about the topological distribution of pattern instances across full transcriptomes has been hitherto lacking.
+ In order to have a broad overview of the extent and properties involved in RNA localization, we subjected Drosophila (D17) and human (HepG2) cells to biochemical fractionation to isolate the nuclear, cytosolic, membrane and insoluble fractions. We then performed deep sequencing on the extracted RNA and analyzed through mass spectrometry the proteins extracted from these fractions. We named this method CeFra-Seq. Through bioinformatics analyses, I then profiled the enrichment of various RNA biotypes (e.g. messenger RNA, long noncoding RNA, circular RNA) and proteins within the subcellular fractions. This revealed the high prevalence of asymmetric distribution of both coding and noncoding RNA species. An analysis of orthologous genes between fly and human has also shown strong similarities, suggesting that the localization process is evolutionarily conserved. In addition, I have observed distinct attributes (e.g. transcript size) among fraction-specific messenger RNA populations. Finally, I observed specific correlations and anti-correlations between defined groups of messenger RNAs and the proteins they encode. To study motifs topology and their conservation, I created oRNAment, a database of putative RNA-binding protein binding sites instances in coding and noncoding RNAs. Using data from protein binding motifs assessed by RNAcompete and by RNA Bind-n-Seq experiments, I have developed an algorithm allowing their rapid identification in a complete transcriptome. I was able to catalog the instances of 453 motifs from 223 RNA-binding proteins for 525,718 transcripts in five species. The results obtained were validated by comparing them with public data from eCLIP.
+ I then used oRNAment to further analyze the topological aspects of these motifs’ instances and their relative evolutionary conservation. This showed that most motifs are distributed in a similar fashion between species. In addition, I have detected commonalities between the subgroups of proteins linking preferentially distinct biotypes or specific RNA regions. The presence or absence of such pattern between species is likely a reflection of the importance of their functions. Moreover, a more precise analysis of the position of a motif among comparable transcriptomic regions in vertebrates suggests a syntenic conservation, to varying degrees, in all RNA biotypes. The regional topology of certain motifs as repeated instances also appears to be evolutionarily conserved and may be important in order to allow adequate binding of the protein. Finally, the results compiled with oRNAment allowed to postulate on a potential new role for the long noncoding RNA HELLPAR as an RNA-binding protein sponge.
+ The systematic characterization of RNA localization and cis regulatory motifs presented in this thesis demonstrates how the integration of information at a transcriptomic scale enables the assessment of the prevalence of asymmetry, the distinct characteristics and the evolutionary conservation of RNA clusters.' name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Localisation de l’ARN; Régulation post-transcriptionnelle; Transcriptomique; ARN messagers; ARN non codants; Protéine liant l’ARN; Motifs de régulation en cis; Fractionnement subcellulaire; Séquençage en profondeur de l’ARN; Conservation évolutive; RNA localization; Post-transcriptional regulation; Transcriptomics; Messenger RNA; Noncoding RNA; RNA binding protein; Cis-regulatory motifs; Subcellular fractionation; RNA-sequencing; Evolutionary conservation; Biology - Bioinformatics / Biologie - Bio-informatique (UMI : 0715); Thèse ou mémoire / Thesis or Dissertation; Bio-informatique" name="citation_keywords"/>
+<meta content="Caractérisation systématique des motifs de régulation en cis à l’échelle transcriptomique et liens avec la localisation des ARN" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Benoit Bouvrette, Louis Philip" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/24578/2/Benoit_Bouvrette_Louis_Philip_2020_these.pdf" name="citation_pdf_url"/>
+<meta content="2020-12-03" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/24578" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24578?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24578?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24578?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24578?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24578?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/24578?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/24578/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/24578">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/24578/mets.xml-->
+<h2 class="page-header first-page-header">Caractérisation systématique des motifs de régulation en cis à l’échelle transcriptomique et liens avec la localisation des ARN</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Lécuyer, Éric</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Major, François</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Benoit Bouvrette, Louis Philip</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2021-01-28T14:59:16Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2021-01-28T14:59:16Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2020-12-03</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2020-04</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/24578</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Localisation de l’ARN</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Régulation post-transcriptionnelle</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Transcriptomique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">ARN messagers</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">ARN non codants</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Protéine liant l’ARN</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Motifs de régulation en cis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Fractionnement subcellulaire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Séquençage en profondeur de l’ARN</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Conservation évolutive</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">RNA localization</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Post-transcriptional regulation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Transcriptomics</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Messenger RNA</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Noncoding RNA</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">RNA binding protein</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Cis-regulatory motifs</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Subcellular fractionation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">RNA-sequencing</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Evolutionary conservation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Bioinformatics / Biologie - Bio-informatique (UMI : 0715)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Caractérisation systématique des motifs de régulation en cis à l’échelle transcriptomique et liens avec la localisation des ARN</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Bio-informatique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La localisation subcellulaire de l’ARN permet un déploiement prompt et spatialement restreint autant des activités protéiques que des ARN noncodant. Le trafic d’ARN est dirigé par des éléments de séquences (sous-séquences primaires, structures secondaires), aussi appelés motifs de régulation, présents en cis à même la molécule d’ARN. Ces motifs sont reconnus par des protéines de liaisons aux ARN qui médient l’acheminement des transcrits vers des sites précis dans la cellule. Des études récentes, chez l’embryon de Drosophile, indiquent que la majorité des ARN ont une localisation subcellulaire asymétrique, suggérant l’existence d’un « code de localisation » complexe. Cependant, ceci peut représenter un exemple exceptionnel et la question demeurait, jusqu’ici, si une prévalence comparable de localisation d’ARN est observable chez des cellules standards développées en culture. De plus, des informations facilement disponibles à propos des caractéristiques de distribution topologique d’instances de motifs à travers des transcriptomes complets étaient jusqu’à présent manquantes.
+Afin d’avoir un aperçu de l’étendue et des propriétés impliquées dans la localisation des ARN, nous avons soumis des cellules de Drosophile (D17) et de l’humain (HepG2) à un fractionnement biochimique afin d’isoler les fractions nucléaire, cytosolique, membranaire et insoluble. Nous avons ensuite séquencé en profondeur l’ARN extrait et analysé par spectrométrie de masse les protéines extraites de ces fractions. Nous avons nommé cette méthode CeFra-Seq. Par des analyses bio-informatiques, j’ai ensuite cartographié l’enrichissement de divers biotypes d’ARN (p. ex. ARN messager, ARN long non codant, ARN circulaire) et protéines au sein des fractions subcellulaires. Ceci a révélé que la distribution d’un large éventail d’espèces d’ARN codants et non codants est asymétrique. Une analyse des gènes orthologues entre mouche et humain a aussi démontré de fortes similitudes, suggérant que le processus de localisation est évolutivement conservé. De plus, j’ai observé des attributs (p. ex. la taille des transcrits) distincts parmi les populations d’ARN messagers spécifiques à une fraction. Finalement, j’ai observé des corrélations et anti-corrélations spécifiques entre certains groupes d’ARN messagers et leurs protéines.
+Pour permettre l’étude de la topologie de motifs et de leurs conservations, j’ai créé oRNAment, une base de données d’instances présumée de sites de liaison de protéines chez des ARN codants et non codants. À partir de données de motifs de liaison protéique par RNAcompete et par RNA Bind-n-Seq, j’ai développé un algorithme permettant l’identification rapide d’instances potentielles de ces motifs dans un transcriptome complet. J’ai pu ainsi cataloguer les instances de 453 motifs provenant de 223 protéines liant l’ARN pour 525 718 transcrits chez cinq espèces. Les résultats obtenus ont été validés en les comparant à des données publiques de eCLIP.
+J’ai, par la suite, utilisé oRNAment pour analyser en détail les aspects topologiques des instances présumées de ces motifs et leurs conservations évolutives relatives. Ceci a permis de démontrer que la plupart des motifs sont distribués de façon similaire entre espèces. De plus, j’ai discerné des points communs entre les sous-groupes de protéines liant des biotypes distincts ou des régions d’ARN spécifiques. La présence de tels patrons, similaires ou non, entre espèces est susceptible de refléter l’importance de leurs fonctions. D’ailleurs, l’analyse plus détaillée du positionnement d’un motif entre régions transcriptomiques comparables chez les vertébrés suggère une conservation synténique de ceux-ci, à divers degrés, pour tous les biotypes d’ARN. La topologie régionale de certaines instances de motifs répétées apparaît aussi comme évolutivement conservée et peut être importante afin de permettre une liaison adéquate de la protéine. Finalement, les résultats compilés avec oRNAment ont permis de postuler sur un nouveau rôle potentiel pour l’ARN long non codant HELLPAR comme éponge de protéines liant l’ARN.
+La caractérisation systématique d’ARN localisés et de motifs de régulation en cis présentée dans cette thèse démontre comment l’intégration d’information à l’échelle transcriptomique permet d’évaluer la prévalence de l’asymétrie, les caractéristiques distinctes et la conservation évolutive de collections d’ARN.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The subcellular localization of RNA allows a rapid and spatially restricted deployment of protein and noncoding RNA activities. The trafficking of RNA is directed by sequence elements (primary subsequences, secondary structures), also called regulatory motifs, present in cis within the RNA molecule. These motifs are recognized by RNA-binding proteins that mediate the transport of transcripts to specific sites in the cell. Recent studies in the Drosophila embryo indicate that the majority of RNAs display an asymmetric subcellular localization, suggesting the existence of a complex "localization code". However, this may represent an exceptional example and the question remained, until now, whether a comparable prevalence of RNA localization is observable in standard cells grown in culture. In addition, readily available information about the topological distribution of pattern instances across full transcriptomes has been hitherto lacking.
+ In order to have a broad overview of the extent and properties involved in RNA localization, we subjected Drosophila (D17) and human (HepG2) cells to biochemical fractionation to isolate the nuclear, cytosolic, membrane and insoluble fractions. We then performed deep sequencing on the extracted RNA and analyzed through mass spectrometry the proteins extracted from these fractions. We named this method CeFra-Seq. Through bioinformatics analyses, I then profiled the enrichment of various RNA biotypes (e.g. messenger RNA, long noncoding RNA, circular RNA) and proteins within the subcellular fractions. This revealed the high prevalence of asymmetric distribution of both coding and noncoding RNA species. An analysis of orthologous genes between fly and human has also shown strong similarities, suggesting that the localization process is evolutionarily conserved. In addition, I have observed distinct attributes (e.g. transcript size) among fraction-specific messenger RNA populations. Finally, I observed specific correlations and anti-correlations between defined groups of messenger RNAs and the proteins they encode. To study motifs topology and their conservation, I created oRNAment, a database of putative RNA-binding protein binding sites instances in coding and noncoding RNAs. Using data from protein binding motifs assessed by RNAcompete and by RNA Bind-n-Seq experiments, I have developed an algorithm allowing their rapid identification in a complete transcriptome. I was able to catalog the instances of 453 motifs from 223 RNA-binding proteins for 525,718 transcripts in five species. The results obtained were validated by comparing them with public data from eCLIP.
+ I then used oRNAment to further analyze the topological aspects of these motifs’ instances and their relative evolutionary conservation. This showed that most motifs are distributed in a similar fashion between species. In addition, I have detected commonalities between the subgroups of proteins linking preferentially distinct biotypes or specific RNA regions. The presence or absence of such pattern between species is likely a reflection of the importance of their functions. Moreover, a more precise analysis of the position of a motif among comparable transcriptomic regions in vertebrates suggests a syntenic conservation, to varying degrees, in all RNA biotypes. The regional topology of certain motifs as repeated instances also appears to be evolutionarily conserved and may be important in order to allow adequate binding of the protein. Finally, the results compiled with oRNAment allowed to postulate on a potential new role for the long noncoding RNA HELLPAR as an RNA-binding protein sponge.
+ The systematic characterization of RNA localization and cis regulatory motifs presented in this thesis demonstrates how the integration of information at a transcriptomic scale enables the assessment of the prevalence of asymmetry, the distinct characteristics and the evolutionary conservation of RNA clusters.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">UdeM.ORCIDAuteurThese</td><td class="word-break">0000-0003-2726-5669</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F24578&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Bio-informatique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/24578/Benoit_Bouvrette_Louis_Philip_2020_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/24578/Benoit_Bouvrette_Louis_Philip_2020_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Benoit_Bouvrette_Louis_Philip_2020_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/24578/Benoit_Bouvrette_Louis_Philip_2020_these.pdf?sequence=2&amp;isAllowed=y">Benoit_Bouvrette_Louis_Philip_ ...</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">53.50Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/24578">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

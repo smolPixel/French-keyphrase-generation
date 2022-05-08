@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Développement et validation de modèles in silico pour évaluer la variation de clairance hépatique des médicaments fortement liés aux protéines plasmatiques</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Haddad, Sami" name="DC.contributor">
+<meta content="Bteich, Michel" name="DC.creator">
+<meta content="2021-08-30T18:58:25Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2021-08-30T18:58:25Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-07-20" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2020-11" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/25525" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Clairance hépatique" name="DC.subject" xml:lang="fr"/>
+<meta content="Fortes liaisons aux protéines plasmatiques" name="DC.subject" xml:lang="fr"/>
+<meta content="Interactions pharmacocinétiques" name="DC.subject" xml:lang="fr"/>
+<meta content="Albumine" name="DC.subject" xml:lang="fr"/>
+<meta content="Alpha-1-glycoprotéine acide" name="DC.subject" xml:lang="fr"/>
+<meta content="Captation facilitée par la protéine" name="DC.subject" xml:lang="fr"/>
+<meta content="Transporteurs membranaires" name="DC.subject" xml:lang="fr"/>
+<meta content="Extrapolation in vitro-in vivo" name="DC.subject" xml:lang="fr"/>
+<meta content="Foie isolé et perfusé du rat" name="DC.subject" xml:lang="fr"/>
+<meta content="Hepatic clearance" name="DC.subject" xml:lang="fr"/>
+<meta content="Extensive plasma protein binding" name="DC.subject" xml:lang="fr"/>
+<meta content="Pharmacokinetic interactions" name="DC.subject" xml:lang="fr"/>
+<meta content="Albumin" name="DC.subject" xml:lang="fr"/>
+<meta content="Alpha-1-acid glycoprotein" name="DC.subject" xml:lang="fr"/>
+<meta content="Plasma protein-mediated uptake" name="DC.subject" xml:lang="fr"/>
+<meta content="Membrane transporters" name="DC.subject" xml:lang="fr"/>
+<meta content="In vitro-in vivo extrapolation" name="DC.subject" xml:lang="fr"/>
+<meta content="Isolated and perfused rat liver" name="DC.subject" xml:lang="fr"/>
+<meta content="Health Sciences - Toxicology / Sciences de la santé - Toxicologie (UMI : 0383)" name="DC.subject" xml:lang="fr"/>
+<meta content="Développement et validation de modèles in silico pour évaluer la variation de clairance hépatique des médicaments fortement liés aux protéines plasmatiques" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type" xml:lang="fr"/>
+<meta content="La prédiction des paramètres pharmacocinétiques/toxicocinétiques (PK/TK), tels que la clairance intrinsèque (CLint) et la clairance hépatique (CLh) des médicaments, demeure un défi majeur en modélisation quantitative. Selon « l’hypothèse du médicament libre », seul le médicament libre peut traverser la membrane plasmique et la CLh de ce médicament est calculée en fonction de sa fraction libre (fup). Néanmoins, la captation hépatique facilitée par l’albumine (ALB) représente clairement une violation de « l’hypothèse du médicament libre ». Cette captation hépatique se base sur la possibilité que le complexe ALB-médicament puisse assurer un apport supplémentaire en médicament aux hépatocytes. Ainsi, cela pourrait expliquer en grande partie les sous-prédictions observées de CLh. Par ailleurs, certains médicaments peuvent se lier fortement à plusieurs protéines plasmatiques telles que l’ALB et l’alpha-1-glycoprotéine acide (AGP). Ainsi, la forte liaison d’un même médicament à l’ALB, à l’AGP, ou aux deux, pourrait avoir des répercussions bien distinctes sur la prédiction de ces paramètres PK/TK. Cependant, aucune étude n’a été faite pour simuler la différence entre leurs effets.
+
+L’objectif principal de cette thèse est donc d’évaluer (avec plus d’exactitude et de précision), pour une série de médicaments, en condition in vivo (ou in situ), ces répercussions en présence des deux protéines plasmatiques, conjointement ou séparément. En outre, il est indispensable de vérifier si une approche générique en modélisation peut être appliquée. Cette thèse est répartie en trois objectifs spécifiques. Le premier est de proposer un arbre décisionnel pour faciliter la sélection des approches prédictives appropriées de CLhin vivo pour des médicaments ayant des caractéristiques différentes. Le second est d’évaluer les répercussions de fortes liaisons aux deux protéines plasmatiques ALB et AGP sur la CLh de deux xénobiotiques choisis (perampanel (PER) et fluoxétine (FLU)) ; ces médicaments ont de fortes affinités pour les deux protéines et un métabolisme exclusif (ou prédominant) dans le foie. Et, le dernier est de développer et valider un nouveau modèle prédictif de CLh pour les xénobiotiques ayant le potentiel de se lier fortement dans le plasma, à l’ALB ainsi qu’à l’AGP.
+
+Dans un premier temps, des données in vitro rapportées chez l’humain ont été colligées pour 19 médicaments (substrats des transporteurs OAT2 et OATP1B1), et ont été ensuite utilisées dans six modèles d’extrapolation in vitro-in vivo (IVIVE) pour prédire lesdits paramètres. Après une comparaison statistique, les résultats ont montré que l’approche 2 (c’est-à-dire « fup-adjusted model ») qui se base sur la captation hépatique facilitée par l’ALB, avait la meilleure performance prédictive. Cependant, l’approche 5 (c’est-à-dire « Extended Clearance Model ») qui se base sur le transport facilité, en était une très pertinente à appliquer pour les substrats de transporteurs membranaires. Lesdits substrats seraient potentiellement moins affectés par l’ALB. Ainsi, un arbre décisionnel a été proposé pour choisir rapidement et judicieusement la meilleure approche IVIVE servant à prédire la CLhin vivo pour chaque xénobiotique en présence de l’ALB.
+
+Dans un deuxième temps, les médicaments PER et FLU ont été sélectionnés à partir d’une collecte de données (N= 1907 médicaments) en fonction de certains critères (avoir un métabolisme exclusif ou prédominant dans le foie, pas de transport facilité par les transporteurs membranaires, une haute affinité pour les deux protéines ALB et AGP, et un ratio de liaison à l’AGP sur celle à l’ALB proche de l’unité). Cette sélection a été réalisée pour faire des expériences sur des foies isolés et perfusés de rats (IPRL), en présence et en absence des protéines ALB et AGP (c’est-à-dire quatre scénarios IPRL). Les résultats IPRL ont démontré que PER est faiblement à moyennement métabolisé (extraction hépatique= 0,2-0,7), tandis que FLU est fortement métabolisé (extraction hépatique= 0,8-0,99). Le modèle Michaelis-Menten a été ajusté aux cinétiques métaboliques, et différents paramètres Vmax, Km et Km, u ont été obtenus de ce modèle. À de faibles concentrations libres pour les deux médicaments (c’est-à-dire à des concentrations thérapeutiques) et en présence des protéines plasmatiques, les valeurs de CLint non liée ont augmenté pour PER (avec l’ALB et le mélange des deux protéines (MIX)) et FLU (avec l’ALB, l’AGP et le MIX) par rapport à celles obtenues du scénario sans protéine (sauf pour PER avec AGP, lesdites valeurs ont diminué). Par ailleurs, les calculs des ratios CLint (SANS versus AVEC protéine) ont permis d’indiquer l’occurrence d’une facilitation de la captation hépatique de médicaments par l’ALB ou l’AGP. Ces ratios ont aussi permis de vérifier si la cinétique métabolique pour PER et FLU suivait soit « l’hypothèse du médicament libre » soit celle de « la captation hépatique facilitée par les protéines plasmatiques ».
+
+Dans un dernier temps, une nouvelle approche prédictive de CLh (approche WO-to-MIX) est développée en se basant sur une nouvelle notion de liaison fractionnelle et en intégrant dans le « fup-adjusted model » de nouveaux paramètres tels que la fraction liée à l’ALB (fB-ALB) et celle liée à l’AGP (fB-AGP) à partir du scénario MIX. Ce modèle est basé sur la captation facilitée par l’ALB. Contrairement à l’approche WO-to-MIX, le « well-stirred model » (ou modèle conventionnel) est basé sur l’hypothèse du médicament libre. Ensuite, les paramètres Vmax et Km obtenus in situ pour PER et FLU lors des expériences IPRL sans protéines, ont été utilisés en combinaison avec le paramètre intrant de la fraction libre ajustée (fup-adjusted) pour le « fup-adjusted model » ou avec la fraction libre (fup) pour le « well-stirred model ». Une comparaison des performances prédictives globales des deux modèles a été faite. Les performances prédictives du nouveau modèle étaient prometteuses, en particulier pour FLU qui montrait le plus haut degré de captation hépatique médiée par l’ALB, par rapport au modèle conventionnel. L’approche WO-to-MIX est une première validation d’un nouveau modèle d’extrapolation proposé pour les médicaments comme FLU qui se lient à l’ALB et à l’AGP. Néanmoins, le modèle conventionnel reste utile à utiliser pour les médicaments comme PER. L’exactitude de prédiction était inférieure pour ce dernier médicament probablement parce que la captation hépatique par l’ALB ne semble pas être maximale, et, par conséquent, l’utilisation de fup-adjusted a surestimé la CLhin vivo. Par conséquent, plus de travail est nécessaire en particulier pour PER.
+
+Cette thèse démontre qu’une seule approche générique pour prédire la CLh n’existe pas. Néanmoins, le choix d’une approche IVIVE ayant une performance prédictive satisfaisante est maintenant possible. Les résultats de cette thèse contribuent à : 1) mieux comprendre les répercussions sur les paramètres PK/TK de la forte liaison des médicaments à l’ALB et à l’AGP ; 2) choisir la meilleure approche prédictive de CLh sur la base de l’affinité du xénobiotique (médicament ou contaminant) pour chacune des protéines plasmatiques et des mécanismes impliqués dans le foie ; et 3) prédire la CLh avec précision et exactitude des xénobiotiques qui se lient aux deux protéines plasmatiques. Ces approches IVIVE pour la CLh pourront assurément être intégrées dans des modèles PK/TK à base physiologique pour les xénobiotiques afin d’améliorer la prédiction de leur pharmacocinétique et d’accélérer le processus de développement de médicaments." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="The prediction of pharmacokinetic/toxicokinetic (PK/TK) parameters such as intrinsic clearance (CLint) and hepatic clearance (CLh) for highly bound drugs is a major challenge in quantitative modeling. According to the ‘free drug hypothesis’, only the free drug can pass through the plasma membrane and the CLh of this drug is calculated according to its free fraction (fup). Nevertheless, the hepatic uptake facilitated by albumin (ALB) is a violation of the ‘free drug hypothesis’. This facilitated hepatic uptake is based on the possibility that the ALB-drug complex may provide additional drug intake to the hepatocytes. Thus, this could largely explain the underpredictions of CLh. In addition, some drugs can bind extensively in plasma, and to several plasma proteins such as ALB and alpha-1-glycoprotein acid (AGP). Thus, the high binding of the same drug to either ALB or AGP, or to both, could have distinct impacts on the prediction of these PK/TK parameters. However, no study has yet explored how to simulate the difference between these impacts.
+
+The main objective of this thesis is therefore to evaluate (with accuracy and precision) for a series of drugs, in the in vivo (or in situ) condition, these impacts in the presence of the two plasma proteins, jointly or separately. Also, it is important to verify if a generic model can be applied. This thesis is divided into three specific objectives. The first is to propose a decision tree to facilitate the selection of appropriate predictive approaches of CLhin vivo for drugs with different characteristics. The second is to assess the impacts of extensive binding to the two plasma proteins ALB and AGP on the CLh of two selected xenobiotics (perampanel (PER) and fluoxetine (FLU)); these drugs have strong affinities to both proteins and an exclusive (or predominant) metabolism in the liver. And the last objective is to develop and validate a new predictive model of CLh for xenobiotics with the potential to bind extensively to ALB as well as to AGP.
+
+Firstly, in vitro data obtained in humans were collected for 19 drugs (i.e. substrates of OAT2 and OATP1B1 transporters) and were then used in six in vitro-to-in vivo (IVIVE) extrapolation models to predict these PK/TK parameters. After a statistical comparison, the results showed that the approach 2 (i.e. ‘fup-adjusted model’) that is based on the ALB-facilitated hepatic uptake, had the best predictive performance. However, the approach 5 (i.e. ‘Extended Clearance Model’) that is based on the membrane transporter-mediated uptake, was very relevant to apply for the substrates of membrane transporters. These substrates would potentially be less affected by ALB. Thus, a decision tree has been proposed to quickly and judiciously select the best IVIVE approach to predict CLhin vivo for each xenobiotic in the presence of ALB.
+
+Secondly, the PER and FLU drugs were selected from a data collection of 1907 drugs depending on certain criteria (exclusive or predominant metabolism in the liver, no transport facilitated by membrane transporters, high affinity for the two proteins ALB and AGP, and having a binding ratio between AGP and ALB close to the unity). This selection was made to conduct experiments using the isolated and perfused rat liver (IPRL) apparatus, in the presence, and in the absence of the ALB and AGP proteins (i.e. four IPRL scenarios). The IPRL results showed that PER is low to moderately metabolized (hepatic extraction= 0.2-0.7), while FLU is highly metabolized (hepatic extraction= 0.8-0.99). The Michaelis-Menten model was fitted to the obtained metabolic kinetics, and different parameters Vmax, Km and Km, u were obtained from the model. At low free concentrations for both drugs (i.e. therapeutic concentrations) and in the presence of plasma proteins, the values of unbound CLint increased for PER (with ALB and the mixture of the two proteins (MIX)) and FLU (with ALB, AGP and MIX); when compared to those obtained from the protein-free scenario (except for PER with AGP, the unbound CLint values decreased). In addition, the calculations of CLint ratios (WITHOUT versus WITH protein) indicated the occurrence of a hepatic uptake facilitated by ALB or AGP. These ratios also helped in verifying whether the metabolic kinetics for PER and FLU followed either ‘the free drug hypothesis’ or that of ‘plasma protein-facilitated hepatic uptake’.
+
+Finally, a new predictive approach of CLh (WO-to-MIX approach) was developed based on a new notion of fractional binding and incorporating new parameters such as the ALB bound fraction (fB-ALB) and the AGP bound fraction (fB-AGP) from the MIX scenario into the ‘fup-adjusted model’. This model is based on the ‘ALB-facilitated hepatic uptake’. Unlike the WO-to-MIX approach, the ‘well-stirred model’ is based on ‘the free drug hypothesis’. Then, the Vmax and Km parameters that were obtained in situ for PER and FLU from the protein-free IPRL experiments, were used in combination with the fup-adjusted input parameter for the ‘fup-adjusted model’ or with the free fraction (fup) for the ‘well-stirred model’. A comparison of the two models’ overall predictive performances was made. The predictive performances of the new model were promising for FLU, which showed the highest degree of ‘ALB-mediated hepatic uptake’, compared to the conventional model. This WO-to-MIX approach is a first validation of a novel extrapolation model suggested for drugs such as FLU that bind to both ALB and AGP. The well-stirred model remains however a useful tool to predict the clearance for drugs such as PER. The prediction accuracy was lower for the latter drug probably because the ALB-mediated hepatic uptake does not seem to be maximal, and, hence, the use of fup-adjusted has overestimated its CLhin vivo. Therefore, more work is needed particularly for PER.
+
+This thesis shows that a generic approach to predict the CLh in vivo does not exist. Nevertheless, the choice of an IVIVE approach with satisfactory predictive performances is now possible. The results of this thesis contribute to: 1) better understand the impacts on the PK/TK parameters of extensive drug binding to ALB and AGP; 2) choose the best predictive approach to CLh based on the affinity of xenobiotic (drug or contaminant) to each of the plasma proteins and the mechanisms involved in the liver; and 3) predict accurately and with precision the output CLh of xenobiotics that bind to the two plasma proteins. These IVIVE approaches for CLh can certainly be integrated into physiologically based PK/TK models for xenobiotics to improve the prediction of their pharmacokinetics and to accelerate the drug development process." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Clairance hépatique; Fortes liaisons aux protéines plasmatiques; Interactions pharmacocinétiques; Albumine; Alpha-1-glycoprotéine acide; Captation facilitée par la protéine; Transporteurs membranaires; Extrapolation in vitro-in vivo; Foie isolé et perfusé du rat; Hepatic clearance; Extensive plasma protein binding; Pharmacokinetic interactions; Albumin; Alpha-1-acid glycoprotein; Plasma protein-mediated uptake; Membrane transporters; In vitro-in vivo extrapolation; Isolated and perfused rat liver; Health Sciences - Toxicology / Sciences de la santé - Toxicologie (UMI : 0383); Thèse ou mémoire / Thesis or Dissertation; Santé publique" name="citation_keywords"/>
+<meta content="Développement et validation de modèles in silico pour évaluer la variation de clairance hépatique des médicaments fortement liés aux protéines plasmatiques" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Bteich, Michel" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/25525/2/Bteich_Michel_2020_These.pdf" name="citation_pdf_url"/>
+<meta content="2021-07-20" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/25525" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25525?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25525?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25525?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25525?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25525?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25525?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/10070" role="menuitem">École de santé publique</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/10094" role="menuitem">École de santé publique – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/10070">École de santé publique</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/10094"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/25525/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25525">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/25525/mets.xml-->
+<h2 class="page-header first-page-header">Développement et validation de modèles in silico pour évaluer la variation de clairance hépatique des médicaments fortement liés aux protéines plasmatiques</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Haddad, Sami</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Bteich, Michel</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2021-08-30T18:58:25Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2021-08-30T18:58:25Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-07-20</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2020-11</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/25525</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Clairance hépatique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Fortes liaisons aux protéines plasmatiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Interactions pharmacocinétiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Albumine</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Alpha-1-glycoprotéine acide</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Captation facilitée par la protéine</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Transporteurs membranaires</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Extrapolation in vitro-in vivo</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Foie isolé et perfusé du rat</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Hepatic clearance</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Extensive plasma protein binding</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pharmacokinetic interactions</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Albumin</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Alpha-1-acid glycoprotein</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Plasma protein-mediated uptake</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Membrane transporters</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">In vitro-in vivo extrapolation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Isolated and perfused rat liver</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Health Sciences - Toxicology / Sciences de la santé - Toxicologie (UMI : 0383)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Développement et validation de modèles in silico pour évaluer la variation de clairance hépatique des médicaments fortement liés aux protéines plasmatiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Santé publique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La prédiction des paramètres pharmacocinétiques/toxicocinétiques (PK/TK), tels que la clairance intrinsèque (CLint) et la clairance hépatique (CLh) des médicaments, demeure un défi majeur en modélisation quantitative. Selon « l’hypothèse du médicament libre », seul le médicament libre peut traverser la membrane plasmique et la CLh de ce médicament est calculée en fonction de sa fraction libre (fup). Néanmoins, la captation hépatique facilitée par l’albumine (ALB) représente clairement une violation de « l’hypothèse du médicament libre ». Cette captation hépatique se base sur la possibilité que le complexe ALB-médicament puisse assurer un apport supplémentaire en médicament aux hépatocytes. Ainsi, cela pourrait expliquer en grande partie les sous-prédictions observées de CLh. Par ailleurs, certains médicaments peuvent se lier fortement à plusieurs protéines plasmatiques telles que l’ALB et l’alpha-1-glycoprotéine acide (AGP). Ainsi, la forte liaison d’un même médicament à l’ALB, à l’AGP, ou aux deux, pourrait avoir des répercussions bien distinctes sur la prédiction de ces paramètres PK/TK. Cependant, aucune étude n’a été faite pour simuler la différence entre leurs effets.
+
+L’objectif principal de cette thèse est donc d’évaluer (avec plus d’exactitude et de précision), pour une série de médicaments, en condition in vivo (ou in situ), ces répercussions en présence des deux protéines plasmatiques, conjointement ou séparément. En outre, il est indispensable de vérifier si une approche générique en modélisation peut être appliquée. Cette thèse est répartie en trois objectifs spécifiques. Le premier est de proposer un arbre décisionnel pour faciliter la sélection des approches prédictives appropriées de CLhin vivo pour des médicaments ayant des caractéristiques différentes. Le second est d’évaluer les répercussions de fortes liaisons aux deux protéines plasmatiques ALB et AGP sur la CLh de deux xénobiotiques choisis (perampanel (PER) et fluoxétine (FLU)) ; ces médicaments ont de fortes affinités pour les deux protéines et un métabolisme exclusif (ou prédominant) dans le foie. Et, le dernier est de développer et valider un nouveau modèle prédictif de CLh pour les xénobiotiques ayant le potentiel de se lier fortement dans le plasma, à l’ALB ainsi qu’à l’AGP.
+
+Dans un premier temps, des données in vitro rapportées chez l’humain ont été colligées pour 19 médicaments (substrats des transporteurs OAT2 et OATP1B1), et ont été ensuite utilisées dans six modèles d’extrapolation in vitro-in vivo (IVIVE) pour prédire lesdits paramètres. Après une comparaison statistique, les résultats ont montré que l’approche 2 (c’est-à-dire « fup-adjusted model ») qui se base sur la captation hépatique facilitée par l’ALB, avait la meilleure performance prédictive. Cependant, l’approche 5 (c’est-à-dire « Extended Clearance Model ») qui se base sur le transport facilité, en était une très pertinente à appliquer pour les substrats de transporteurs membranaires. Lesdits substrats seraient potentiellement moins affectés par l’ALB. Ainsi, un arbre décisionnel a été proposé pour choisir rapidement et judicieusement la meilleure approche IVIVE servant à prédire la CLhin vivo pour chaque xénobiotique en présence de l’ALB.
+
+Dans un deuxième temps, les médicaments PER et FLU ont été sélectionnés à partir d’une collecte de données (N= 1907 médicaments) en fonction de certains critères (avoir un métabolisme exclusif ou prédominant dans le foie, pas de transport facilité par les transporteurs membranaires, une haute affinité pour les deux protéines ALB et AGP, et un ratio de liaison à l’AGP sur celle à l’ALB proche de l’unité). Cette sélection a été réalisée pour faire des expériences sur des foies isolés et perfusés de rats (IPRL), en présence et en absence des protéines ALB et AGP (c’est-à-dire quatre scénarios IPRL). Les résultats IPRL ont démontré que PER est faiblement à moyennement métabolisé (extraction hépatique= 0,2-0,7), tandis que FLU est fortement métabolisé (extraction hépatique= 0,8-0,99). Le modèle Michaelis-Menten a été ajusté aux cinétiques métaboliques, et différents paramètres Vmax, Km et Km, u ont été obtenus de ce modèle. À de faibles concentrations libres pour les deux médicaments (c’est-à-dire à des concentrations thérapeutiques) et en présence des protéines plasmatiques, les valeurs de CLint non liée ont augmenté pour PER (avec l’ALB et le mélange des deux protéines (MIX)) et FLU (avec l’ALB, l’AGP et le MIX) par rapport à celles obtenues du scénario sans protéine (sauf pour PER avec AGP, lesdites valeurs ont diminué). Par ailleurs, les calculs des ratios CLint (SANS versus AVEC protéine) ont permis d’indiquer l’occurrence d’une facilitation de la captation hépatique de médicaments par l’ALB ou l’AGP. Ces ratios ont aussi permis de vérifier si la cinétique métabolique pour PER et FLU suivait soit « l’hypothèse du médicament libre » soit celle de « la captation hépatique facilitée par les protéines plasmatiques ».
+
+Dans un dernier temps, une nouvelle approche prédictive de CLh (approche WO-to-MIX) est développée en se basant sur une nouvelle notion de liaison fractionnelle et en intégrant dans le « fup-adjusted model » de nouveaux paramètres tels que la fraction liée à l’ALB (fB-ALB) et celle liée à l’AGP (fB-AGP) à partir du scénario MIX. Ce modèle est basé sur la captation facilitée par l’ALB. Contrairement à l’approche WO-to-MIX, le « well-stirred model » (ou modèle conventionnel) est basé sur l’hypothèse du médicament libre. Ensuite, les paramètres Vmax et Km obtenus in situ pour PER et FLU lors des expériences IPRL sans protéines, ont été utilisés en combinaison avec le paramètre intrant de la fraction libre ajustée (fup-adjusted) pour le « fup-adjusted model » ou avec la fraction libre (fup) pour le « well-stirred model ». Une comparaison des performances prédictives globales des deux modèles a été faite. Les performances prédictives du nouveau modèle étaient prometteuses, en particulier pour FLU qui montrait le plus haut degré de captation hépatique médiée par l’ALB, par rapport au modèle conventionnel. L’approche WO-to-MIX est une première validation d’un nouveau modèle d’extrapolation proposé pour les médicaments comme FLU qui se lient à l’ALB et à l’AGP. Néanmoins, le modèle conventionnel reste utile à utiliser pour les médicaments comme PER. L’exactitude de prédiction était inférieure pour ce dernier médicament probablement parce que la captation hépatique par l’ALB ne semble pas être maximale, et, par conséquent, l’utilisation de fup-adjusted a surestimé la CLhin vivo. Par conséquent, plus de travail est nécessaire en particulier pour PER.
+
+Cette thèse démontre qu’une seule approche générique pour prédire la CLh n’existe pas. Néanmoins, le choix d’une approche IVIVE ayant une performance prédictive satisfaisante est maintenant possible. Les résultats de cette thèse contribuent à : 1) mieux comprendre les répercussions sur les paramètres PK/TK de la forte liaison des médicaments à l’ALB et à l’AGP ; 2) choisir la meilleure approche prédictive de CLh sur la base de l’affinité du xénobiotique (médicament ou contaminant) pour chacune des protéines plasmatiques et des mécanismes impliqués dans le foie ; et 3) prédire la CLh avec précision et exactitude des xénobiotiques qui se lient aux deux protéines plasmatiques. Ces approches IVIVE pour la CLh pourront assurément être intégrées dans des modèles PK/TK à base physiologique pour les xénobiotiques afin d’améliorer la prédiction de leur pharmacocinétique et d’accélérer le processus de développement de médicaments.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The prediction of pharmacokinetic/toxicokinetic (PK/TK) parameters such as intrinsic clearance (CLint) and hepatic clearance (CLh) for highly bound drugs is a major challenge in quantitative modeling. According to the ‘free drug hypothesis’, only the free drug can pass through the plasma membrane and the CLh of this drug is calculated according to its free fraction (fup). Nevertheless, the hepatic uptake facilitated by albumin (ALB) is a violation of the ‘free drug hypothesis’. This facilitated hepatic uptake is based on the possibility that the ALB-drug complex may provide additional drug intake to the hepatocytes. Thus, this could largely explain the underpredictions of CLh. In addition, some drugs can bind extensively in plasma, and to several plasma proteins such as ALB and alpha-1-glycoprotein acid (AGP). Thus, the high binding of the same drug to either ALB or AGP, or to both, could have distinct impacts on the prediction of these PK/TK parameters. However, no study has yet explored how to simulate the difference between these impacts.
+
+The main objective of this thesis is therefore to evaluate (with accuracy and precision) for a series of drugs, in the in vivo (or in situ) condition, these impacts in the presence of the two plasma proteins, jointly or separately. Also, it is important to verify if a generic model can be applied. This thesis is divided into three specific objectives. The first is to propose a decision tree to facilitate the selection of appropriate predictive approaches of CLhin vivo for drugs with different characteristics. The second is to assess the impacts of extensive binding to the two plasma proteins ALB and AGP on the CLh of two selected xenobiotics (perampanel (PER) and fluoxetine (FLU)); these drugs have strong affinities to both proteins and an exclusive (or predominant) metabolism in the liver. And the last objective is to develop and validate a new predictive model of CLh for xenobiotics with the potential to bind extensively to ALB as well as to AGP.
+
+Firstly, in vitro data obtained in humans were collected for 19 drugs (i.e. substrates of OAT2 and OATP1B1 transporters) and were then used in six in vitro-to-in vivo (IVIVE) extrapolation models to predict these PK/TK parameters. After a statistical comparison, the results showed that the approach 2 (i.e. ‘fup-adjusted model’) that is based on the ALB-facilitated hepatic uptake, had the best predictive performance. However, the approach 5 (i.e. ‘Extended Clearance Model’) that is based on the membrane transporter-mediated uptake, was very relevant to apply for the substrates of membrane transporters. These substrates would potentially be less affected by ALB. Thus, a decision tree has been proposed to quickly and judiciously select the best IVIVE approach to predict CLhin vivo for each xenobiotic in the presence of ALB.
+
+Secondly, the PER and FLU drugs were selected from a data collection of 1907 drugs depending on certain criteria (exclusive or predominant metabolism in the liver, no transport facilitated by membrane transporters, high affinity for the two proteins ALB and AGP, and having a binding ratio between AGP and ALB close to the unity). This selection was made to conduct experiments using the isolated and perfused rat liver (IPRL) apparatus, in the presence, and in the absence of the ALB and AGP proteins (i.e. four IPRL scenarios). The IPRL results showed that PER is low to moderately metabolized (hepatic extraction= 0.2-0.7), while FLU is highly metabolized (hepatic extraction= 0.8-0.99). The Michaelis-Menten model was fitted to the obtained metabolic kinetics, and different parameters Vmax, Km and Km, u were obtained from the model. At low free concentrations for both drugs (i.e. therapeutic concentrations) and in the presence of plasma proteins, the values of unbound CLint increased for PER (with ALB and the mixture of the two proteins (MIX)) and FLU (with ALB, AGP and MIX); when compared to those obtained from the protein-free scenario (except for PER with AGP, the unbound CLint values decreased). In addition, the calculations of CLint ratios (WITHOUT versus WITH protein) indicated the occurrence of a hepatic uptake facilitated by ALB or AGP. These ratios also helped in verifying whether the metabolic kinetics for PER and FLU followed either ‘the free drug hypothesis’ or that of ‘plasma protein-facilitated hepatic uptake’.
+
+Finally, a new predictive approach of CLh (WO-to-MIX approach) was developed based on a new notion of fractional binding and incorporating new parameters such as the ALB bound fraction (fB-ALB) and the AGP bound fraction (fB-AGP) from the MIX scenario into the ‘fup-adjusted model’. This model is based on the ‘ALB-facilitated hepatic uptake’. Unlike the WO-to-MIX approach, the ‘well-stirred model’ is based on ‘the free drug hypothesis’. Then, the Vmax and Km parameters that were obtained in situ for PER and FLU from the protein-free IPRL experiments, were used in combination with the fup-adjusted input parameter for the ‘fup-adjusted model’ or with the free fraction (fup) for the ‘well-stirred model’. A comparison of the two models’ overall predictive performances was made. The predictive performances of the new model were promising for FLU, which showed the highest degree of ‘ALB-mediated hepatic uptake’, compared to the conventional model. This WO-to-MIX approach is a first validation of a novel extrapolation model suggested for drugs such as FLU that bind to both ALB and AGP. The well-stirred model remains however a useful tool to predict the clearance for drugs such as PER. The prediction accuracy was lower for the latter drug probably because the ALB-mediated hepatic uptake does not seem to be maximal, and, hence, the use of fup-adjusted has overestimated its CLhin vivo. Therefore, more work is needed particularly for PER.
+
+This thesis shows that a generic approach to predict the CLh in vivo does not exist. Nevertheless, the choice of an IVIVE approach with satisfactory predictive performances is now possible. The results of this thesis contribute to: 1) better understand the impacts on the PK/TK parameters of extensive drug binding to ALB and AGP; 2) choose the best predictive approach to CLh based on the affinity of xenobiotic (drug or contaminant) to each of the plasma proteins and the mechanisms involved in the liver; and 3) predict accurately and with precision the output CLh of xenobiotics that bind to the two plasma proteins. These IVIVE approaches for CLh can certainly be integrated into physiologically based PK/TK models for xenobiotics to improve the prediction of their pharmacokinetics and to accelerate the drug development process.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F25525&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sant%C3%A9+publique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/25525/Bteich_Michel_2020_These.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25525/Bteich_Michel_2020_These.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Bteich_Michel_2020_These.pdf">
+<a href="/xmlui/bitstream/handle/1866/25525/Bteich_Michel_2020_These.pdf?sequence=2&amp;isAllowed=y">Bteich_Michel_2020_These.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">7.294Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10094/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a> [603]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25525">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

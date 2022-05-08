@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Rôles non-canoniques des arrestines dans la signalisation et l’endocytose des récepteurs couplés aux protéines G</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Bouvier, Michel" name="DC.contributor">
+<meta content="Roux, Philippe P." name="DC.contributor">
+<meta content="Paradis, Justine" name="DC.creator">
+<meta content="2018-05-31T14:37:42Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2018-05-31T14:37:42Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2018-03-12" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2017-04" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/20229" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="arrestine" name="DC.subject" xml:lang="fr"/>
+<meta content="récepteurs couplés aux protéines G" name="DC.subject" xml:lang="fr"/>
+<meta content="voie ERK/MAPK" name="DC.subject" xml:lang="fr"/>
+<meta content="internalisation" name="DC.subject" xml:lang="fr"/>
+<meta content="protéine adaptatrice AP-2" name="DC.subject" xml:lang="fr"/>
+<meta content="inhibiteur pharmacologique" name="DC.subject" xml:lang="fr"/>
+<meta content="phosphatase et tensine homologue (PTEN)" name="DC.subject" xml:lang="fr"/>
+<meta content="biosenseur" name="DC.subject" xml:lang="fr"/>
+<meta content="transfert d'énergie de bioluminescence par résonance (BRET)" name="DC.subject" xml:lang="fr"/>
+<meta content="Arrestin" name="DC.subject" xml:lang="fr"/>
+<meta content="G protein-coupled receptor (GPCR)" name="DC.subject" xml:lang="fr"/>
+<meta content="ERK/MAPK pathway" name="DC.subject" xml:lang="fr"/>
+<meta content="Internalization" name="DC.subject" xml:lang="fr"/>
+<meta content="Adaptor protein AP-2" name="DC.subject" xml:lang="fr"/>
+<meta content="Pharmacological inhibitor" name="DC.subject" xml:lang="fr"/>
+<meta content="Phosphatase and tensin homolog (PTEN)" name="DC.subject" xml:lang="fr"/>
+<meta content="Biosensor" name="DC.subject" xml:lang="fr"/>
+<meta content="Bioluminescence resonance energy transfer (BRET)" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307)" name="DC.subject" xml:lang="fr"/>
+<meta content="Rôles non-canoniques des arrestines dans la signalisation et l’endocytose des récepteurs couplés aux protéines G" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="G protein-coupled receptors (GPCRs) form the biggest family of membrane receptors and are involved in numerous physiological processes. Collectively, these receptors are also prominently targeted by the pharmaceutical industry due to their implications in multiple diseases and disorders. GPCR signaling is tightly regulated. Several kinases, activated downstream of the receptor, initiate negative feedback loops; and arrestins play a crucial role in these regulatory processes by desensitizing the ligand–activated receptor and promoting its endocytosis. By doing so, arrestins control the duration and the amplitude of signal transduction at the cell surface. In the last few years, several non-canonical roles have also been attributed to arrestins, such as the post-endocytic activation of several signalling pathways, or the regulation of crosstalks between GPCRs and various other signalling events. My thesis project was aimed at providing a better understanding of the non-canonical functions of arrestins. 
+The first objective of my research work was to investigate a possible reciprocal effect of the activation of the extracellular signal-regulated kinases 1 and 2 (ERK1/2) on GPCR signaling. We demonstrated that stimulation of ERK1/2, either by a cell surface receptor or a constitutively active mutant, leads to a reduction in steady-state expression levels of many GPCRs at the cell surface. This receptor redistribution mechanism is dependent on beta-arrestins phosphorylation. In vitro kinase assays combined with complementation experiments in mouse embryonic fibroblasts (MEFs) lacking beta-arrestins, revealed that beta-arrestin-2 phosphorylation on Ser14 and Thr276 is essential for the ERK1/2-promoted GPCR sequestration. This ERK1/2- and arrestins mediated regulatory process was found to result in a global dampening of cell responsiveness.
+The second objective of my research work was to identify and develop a small organic compound that inhibits the interaction between arrestins and the adaptor protein AP-2, without interfering with the recruitment of arrestin to the receptor. This inhibitor, named Barbadin, was found to specifically block endocytic processes that are dependent on the interaction between arrestins and the appendage domain of the b-subunit of AP-2. We demonstrated its value as an analytical tool in studying the role of the arrestins in GPCR signaling, such as cAMP production and ERK1/2 activation. These results support the concept that beta-arrestin/AP-2-dependent signaling is important to both G protein-dependent and -independent pathways.
+The third objective of my research work was to develop a BRET-based biosensor able to detect signal-dependent PTEN conformational changes. This biosensor was validated by monitoring PTEN activation induced by targeted mutations affecting key intramolecular interactions or by modulating signalling pathways that impact PTEN function. We also demonstrated the value of this biosensor in studying PTEN/protein interactions using two known interactors that activate PTEN, beta-arrestin-2 and RhoA. Finally, we uncovered PTEN activation by several GPCRs, previously unknown as PTEN regulators. Given the central role of the tumor suppressor PTEN in oncogenesis, this biosensor could also provide a precious tool for anti-cancer drug research.
+To conclude, my research work highlighted non-canonical mechanisms for arrestins to activate GPCR-dependent signaling pathways, such as cAMP, ERK1/2 and PTEN, as well as negatively regulate GPCR signaling upon phosphorylation by ERK1/2. This work was made possible by the development of new tools: a beta-arrestin inhibitor named Barbadin and a PTEN BRET-based biosensor that have both shown their usefulness in studying beta-arrestin noncanonical signaling." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Les récepteurs couplés aux protéines G (RCPG) représentent la plus grande famille de récepteurs membranaires et sont impliqués dans un grand nombre de processus physiologiques. Cette famille de récepteurs constitue aussi une cible majeure dans la recherche pharmaceutique
+au vu de son importance dans de nombreuses pathologies. La signalisation des RCPG est étroitement régulée. Plusieurs kinases activées en aval du récepteur initient des boucles de régulation négative. Les arrestines jouent un rôle clé dans ces processus de régulation en favorisant la désensibilisation du récepteur activé par le ligand, suivie de son endocytose. Ainsi, les arrestines contrôlent la durée et l’amplitude de la transmission du signal à la surface de la cellule. Ces dernières années, plusieurs rôles non-canoniques ont été attribués aux arrestines comme l’activation de voies de signalisation post-endocytiques, ou la modulation de la régulation croisée entre les RCPG et d’autres acteurs de la signalisation cellulaire.
+Le premier objectif de mon travail de recherche est d’examiner l’effet réciproque de l’activation des kinases ERK1/2 (extracellular signal-regulated kinases 1/2) sur la signalisation des RCPG. Nous avons démontré que la stimulation de ERK1/2, soit par un récepteur de surface soit par l’utilisation d’un mutant constitutivement actif, conduit à la baisse de l’expression de surface basale de nombreux RCPG. Des essais kinases in vitro, combinés à des expériences de complémentation dans des fibroblastes embryonnaires de souris (MEF), où les gènes beta-arrestine-1/2 ont été supprimés, démontrent l’importance de la phosphorylation par ERK1/2 des résidus Ser14 et Thr276 dans ce mécanisme de séquestration des RCPG. Cette régulation, contrôlée par ERK1/2 et arrestine, conduit à une baisse globale de la capacité de réponse de la cellule aux stimuli extracellulaires.
+Le deuxième objectif de mon travail de recherche est d’identifier et de développer une petite molécule organique qui inhibe l’interaction entre l’arrestine et la protéine adaptatrice du complexe d’endocytose AP-2, sans toutefois empêcher la formation du complexe arrestine/récepteur. Cet inhibiteur, nommé Barbadin, bloque sélectivement les processus d’internalisation dépendants de l’interaction entre arrestine- et la sous-unité beta2 de la protéine adaptatrice AP-2. Barbadin représente le premier inhibiteur des fonctions d’arrestine, et nous avons démontré son utilité comme outil analytique pour déterminer la contribution des arrestines dans l’activation de plusieurs voies de signalisation en aval des RCPG, telles que la production d’AMP cyclique (AMPc) ou l’activation des kinases ERK1/2. Nos résultats démontrent l’importance du complexe arrestine/AP-2 dans la signalisation dépendante et indépendante des protéines G.
+Le troisième objectif de mon travail de recherche est de développer un biosenseur BRET capable de mesurer les changements de conformation du suppresseur de tumeur PTEN. Nous avons validé ce biosenseur en mesurant l’activation de PTEN suite à des mutations ciblées déstabilisant les interactions intramoléculaires au sein de cette protéine ou en modulant différentes voies de signalisation qui affectent sa fonction. Nous avons démontré l’intérêt de ce nouvel outil dans l’étude des interactions entre PTEN et des partenaires protéiques, en utilisant deux interacteurs connus pour activer PTEN : b-arrestine-2 et RhoA. Finalement, en utilisant ce biosenseur, nous avons démontré pour la première fois la capacité de plusieurs RCPG à induire l’activation de PTEN. Étant donné le rôle central de PTEN dans le développement tumoral, ce biosenseur constitue aussi un outil précieux pour la recherche de nouveaux médicaments anticancer.
+Ainsi, au travers de ces trois lignes directrices, nous avons pu mettre en lumière de nouveaux rôles non-canoniques des arrestines, soit dans l’activation de voies de signalisation, (comme la production d’AMPc, l’activation de ERK1/2 ou de PTEN), soit comme régulateur
+négatif de la signalisation des RCPG après phosphorylation par ERK1/2. Ce travail a été rendu possible par le développement de nouveaux outils pour l’étude des RCPG : un inhibiteur de beta-arrestine, Barbadin, et un biosenseur BRET de PTEN ; tous deux ayant démontré leur utilité dans l’étude des voies de signalisation non-canoniques des arrestines." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="arrestine; récepteurs couplés aux protéines G; voie ERK/MAPK; internalisation; protéine adaptatrice AP-2; inhibiteur pharmacologique; phosphatase et tensine homologue (PTEN); biosenseur; transfert d'énergie de bioluminescence par résonance (BRET); Arrestin; G protein-coupled receptor (GPCR); ERK/MAPK pathway; Internalization; Adaptor protein AP-2; Pharmacological inhibitor; Phosphatase and tensin homolog (PTEN); Biosensor; Bioluminescence resonance energy transfer (BRET); Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307); Thèse ou mémoire / Thesis or Dissertation; Biologie moléculaire" name="citation_keywords"/>
+<meta content="Rôles non-canoniques des arrestines dans la signalisation et l’endocytose des récepteurs couplés aux protéines G" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Paradis, Justine" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/20229/2/Paradis_Justine_2017_these.pdf" name="citation_pdf_url"/>
+<meta content="2018-03-12" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/20229" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20229?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20229?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20229?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20229?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20229?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20229?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/20229/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/20229">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/20229/mets.xml-->
+<h2 class="page-header first-page-header">Rôles non-canoniques des arrestines dans la signalisation et l’endocytose des récepteurs couplés aux protéines G</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Bouvier, Michel</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Roux, Philippe P.</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Paradis, Justine</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2018-05-31T14:37:42Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2018-05-31T14:37:42Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2018-03-12</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2017-04</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/20229</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">arrestine</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">récepteurs couplés aux protéines G</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">voie ERK/MAPK</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">internalisation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">protéine adaptatrice AP-2</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">inhibiteur pharmacologique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">phosphatase et tensine homologue (PTEN)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">biosenseur</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">transfert d'énergie de bioluminescence par résonance (BRET)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Arrestin</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">G protein-coupled receptor (GPCR)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">ERK/MAPK pathway</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Internalization</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Adaptor protein AP-2</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pharmacological inhibitor</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Phosphatase and tensin homolog (PTEN)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Biosensor</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Bioluminescence resonance energy transfer (BRET)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Rôles non-canoniques des arrestines dans la signalisation et l’endocytose des récepteurs couplés aux protéines G</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Biologie moléculaire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">G protein-coupled receptors (GPCRs) form the biggest family of membrane receptors and are involved in numerous physiological processes. Collectively, these receptors are also prominently targeted by the pharmaceutical industry due to their implications in multiple diseases and disorders. GPCR signaling is tightly regulated. Several kinases, activated downstream of the receptor, initiate negative feedback loops; and arrestins play a crucial role in these regulatory processes by desensitizing the ligand–activated receptor and promoting its endocytosis. By doing so, arrestins control the duration and the amplitude of signal transduction at the cell surface. In the last few years, several non-canonical roles have also been attributed to arrestins, such as the post-endocytic activation of several signalling pathways, or the regulation of crosstalks between GPCRs and various other signalling events. My thesis project was aimed at providing a better understanding of the non-canonical functions of arrestins. 
+The first objective of my research work was to investigate a possible reciprocal effect of the activation of the extracellular signal-regulated kinases 1 and 2 (ERK1/2) on GPCR signaling. We demonstrated that stimulation of ERK1/2, either by a cell surface receptor or a constitutively active mutant, leads to a reduction in steady-state expression levels of many GPCRs at the cell surface. This receptor redistribution mechanism is dependent on beta-arrestins phosphorylation. In vitro kinase assays combined with complementation experiments in mouse embryonic fibroblasts (MEFs) lacking beta-arrestins, revealed that beta-arrestin-2 phosphorylation on Ser14 and Thr276 is essential for the ERK1/2-promoted GPCR sequestration. This ERK1/2- and arrestins mediated regulatory process was found to result in a global dampening of cell responsiveness.
+The second objective of my research work was to identify and develop a small organic compound that inhibits the interaction between arrestins and the adaptor protein AP-2, without interfering with the recruitment of arrestin to the receptor. This inhibitor, named Barbadin, was found to specifically block endocytic processes that are dependent on the interaction between arrestins and the appendage domain of the b-subunit of AP-2. We demonstrated its value as an analytical tool in studying the role of the arrestins in GPCR signaling, such as cAMP production and ERK1/2 activation. These results support the concept that beta-arrestin/AP-2-dependent signaling is important to both G protein-dependent and -independent pathways.
+The third objective of my research work was to develop a BRET-based biosensor able to detect signal-dependent PTEN conformational changes. This biosensor was validated by monitoring PTEN activation induced by targeted mutations affecting key intramolecular interactions or by modulating signalling pathways that impact PTEN function. We also demonstrated the value of this biosensor in studying PTEN/protein interactions using two known interactors that activate PTEN, beta-arrestin-2 and RhoA. Finally, we uncovered PTEN activation by several GPCRs, previously unknown as PTEN regulators. Given the central role of the tumor suppressor PTEN in oncogenesis, this biosensor could also provide a precious tool for anti-cancer drug research.
+To conclude, my research work highlighted non-canonical mechanisms for arrestins to activate GPCR-dependent signaling pathways, such as cAMP, ERK1/2 and PTEN, as well as negatively regulate GPCR signaling upon phosphorylation by ERK1/2. This work was made possible by the development of new tools: a beta-arrestin inhibitor named Barbadin and a PTEN BRET-based biosensor that have both shown their usefulness in studying beta-arrestin noncanonical signaling.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les récepteurs couplés aux protéines G (RCPG) représentent la plus grande famille de récepteurs membranaires et sont impliqués dans un grand nombre de processus physiologiques. Cette famille de récepteurs constitue aussi une cible majeure dans la recherche pharmaceutique
+au vu de son importance dans de nombreuses pathologies. La signalisation des RCPG est étroitement régulée. Plusieurs kinases activées en aval du récepteur initient des boucles de régulation négative. Les arrestines jouent un rôle clé dans ces processus de régulation en favorisant la désensibilisation du récepteur activé par le ligand, suivie de son endocytose. Ainsi, les arrestines contrôlent la durée et l’amplitude de la transmission du signal à la surface de la cellule. Ces dernières années, plusieurs rôles non-canoniques ont été attribués aux arrestines comme l’activation de voies de signalisation post-endocytiques, ou la modulation de la régulation croisée entre les RCPG et d’autres acteurs de la signalisation cellulaire.
+Le premier objectif de mon travail de recherche est d’examiner l’effet réciproque de l’activation des kinases ERK1/2 (extracellular signal-regulated kinases 1/2) sur la signalisation des RCPG. Nous avons démontré que la stimulation de ERK1/2, soit par un récepteur de surface soit par l’utilisation d’un mutant constitutivement actif, conduit à la baisse de l’expression de surface basale de nombreux RCPG. Des essais kinases in vitro, combinés à des expériences de complémentation dans des fibroblastes embryonnaires de souris (MEF), où les gènes beta-arrestine-1/2 ont été supprimés, démontrent l’importance de la phosphorylation par ERK1/2 des résidus Ser14 et Thr276 dans ce mécanisme de séquestration des RCPG. Cette régulation, contrôlée par ERK1/2 et arrestine, conduit à une baisse globale de la capacité de réponse de la cellule aux stimuli extracellulaires.
+Le deuxième objectif de mon travail de recherche est d’identifier et de développer une petite molécule organique qui inhibe l’interaction entre l’arrestine et la protéine adaptatrice du complexe d’endocytose AP-2, sans toutefois empêcher la formation du complexe arrestine/récepteur. Cet inhibiteur, nommé Barbadin, bloque sélectivement les processus d’internalisation dépendants de l’interaction entre arrestine- et la sous-unité beta2 de la protéine adaptatrice AP-2. Barbadin représente le premier inhibiteur des fonctions d’arrestine, et nous avons démontré son utilité comme outil analytique pour déterminer la contribution des arrestines dans l’activation de plusieurs voies de signalisation en aval des RCPG, telles que la production d’AMP cyclique (AMPc) ou l’activation des kinases ERK1/2. Nos résultats démontrent l’importance du complexe arrestine/AP-2 dans la signalisation dépendante et indépendante des protéines G.
+Le troisième objectif de mon travail de recherche est de développer un biosenseur BRET capable de mesurer les changements de conformation du suppresseur de tumeur PTEN. Nous avons validé ce biosenseur en mesurant l’activation de PTEN suite à des mutations ciblées déstabilisant les interactions intramoléculaires au sein de cette protéine ou en modulant différentes voies de signalisation qui affectent sa fonction. Nous avons démontré l’intérêt de ce nouvel outil dans l’étude des interactions entre PTEN et des partenaires protéiques, en utilisant deux interacteurs connus pour activer PTEN : b-arrestine-2 et RhoA. Finalement, en utilisant ce biosenseur, nous avons démontré pour la première fois la capacité de plusieurs RCPG à induire l’activation de PTEN. Étant donné le rôle central de PTEN dans le développement tumoral, ce biosenseur constitue aussi un outil précieux pour la recherche de nouveaux médicaments anticancer.
+Ainsi, au travers de ces trois lignes directrices, nous avons pu mettre en lumière de nouveaux rôles non-canoniques des arrestines, soit dans l’activation de voies de signalisation, (comme la production d’AMPc, l’activation de ERK1/2 ou de PTEN), soit comme régulateur
+négatif de la signalisation des RCPG après phosphorylation par ERK1/2. Ce travail a été rendu possible par le développement de nouveaux outils pour l’étude des RCPG : un inhibiteur de beta-arrestine, Barbadin, et un biosenseur BRET de PTEN ; tous deux ayant démontré leur utilité dans l’étude des voies de signalisation non-canoniques des arrestines.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F20229&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Biologie+mol%C3%A9culaire&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/20229/Paradis_Justine_2017_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/20229/Paradis_Justine_2017_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Paradis_Justine_2017_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/20229/Paradis_Justine_2017_these.pdf?sequence=2&amp;isAllowed=y">Paradis_Justine_2017_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">6.559Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/20229">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

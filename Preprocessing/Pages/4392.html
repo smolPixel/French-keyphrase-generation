@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Efficient estimation using the characteristic function : theory and applications with high frequency data</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Carrasco, Marine" name="DC.contributor">
+<meta content="Kotchoni, Rachidi" name="DC.creator">
+<meta content="2010-12-17T16:37:17Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2010-12-17T16:37:17Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2010-07-08" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2010-05" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/4392" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Integrated volatility" name="DC.subject" xml:lang="en"/>
+<meta content="Volatilité intégré" name="DC.subject" xml:lang="en"/>
+<meta content="Method of moment" name="DC.subject" xml:lang="en"/>
+<meta content="Méthode des moments" name="DC.subject" xml:lang="en"/>
+<meta content="Microstructure noise" name="DC.subject" xml:lang="en"/>
+<meta content="Bruit de microstructure" name="DC.subject" xml:lang="en"/>
+<meta content="Realized Kernel" name="DC.subject" xml:lang="en"/>
+<meta content="Volatilité réalisée à Noyaux" name="DC.subject" xml:lang="en"/>
+<meta content="Shrinkage estimator" name="DC.subject" xml:lang="en"/>
+<meta content="Combinaison linéaire optimale d'estimateur" name="DC.subject" xml:lang="en"/>
+<meta content="Continuum of moment conditions" name="DC.subject" xml:lang="en"/>
+<meta content="Continuum de conditions de moments" name="DC.subject" xml:lang="en"/>
+<meta content="Characteristic function" name="DC.subject" xml:lang="en"/>
+<meta content="Fonction caracteristique" name="DC.subject" xml:lang="en"/>
+<meta content="Curse of dimensionality" name="DC.subject" xml:lang="en"/>
+<meta content="Malédiction de la dimensionalité" name="DC.subject" xml:lang="en"/>
+<meta content="Stochastic expansion" name="DC.subject" xml:lang="en"/>
+<meta content="Expansion stochastique" name="DC.subject" xml:lang="en"/>
+<meta content="Bootstrap" name="DC.subject" xml:lang="en"/>
+<meta content="Bootstrap" name="DC.subject" xml:lang="en"/>
+<meta content="Economics - Finance / Économie - Finances (UMI : 0508)" name="DC.subject" xml:lang="en"/>
+<meta content="Efficient estimation using the characteristic function : theory and applications with high frequency data" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Nous abordons deux sujets distincts dans cette thèse: l'estimation de la volatilité des prix d'actifs financiers à partir des données à haute fréquence, et l'estimation des paramétres d'un processus aléatoire à partir de sa fonction caractéristique.
+    Le chapitre 1 s'intéresse à l'estimation de la volatilité des prix d'actifs. Nous supposons que les données à haute fréquence disponibles sont entachées de bruit de microstructure. Les propriétés que l'on prête au bruit sont déterminantes dans le choix de l'estimateur de la volatilité. Dans ce chapitre, nous spécifions un nouveau modèle dynamique pour le bruit de microstructure qui intègre trois propriétés importantes: (i) le bruit peut être autocorrélé, (ii) le retard maximal au delà duquel l'autocorrélation est nulle peut être une fonction croissante de la fréquence journalière d'observations; (iii) le bruit peut avoir une composante correlée avec le rendement efficient. Cette dernière composante est alors dite endogène. Ce modèle se différencie de ceux existant en ceci qu'il implique que l'autocorrélation d'ordre 1 du bruit converge vers 1 lorsque la fréquence journalière d'observation tend vers l'infini.
+    Nous utilisons le cadre semi-paramétrique ainsi défini pour dériver un nouvel estimateur de la volatilité intégrée baptisée &quot;estimateur shrinkage&quot;. Cet estimateur se présente sous la forme d'une combinaison linéaire optimale de deux estimateurs aux propriétés différentes, l'optimalité étant défini en termes de minimisation de la variance. Les simulations indiquent que l'estimateur shrinkage a une variance plus petite que le meilleur des deux estimateurs initiaux. Des estimateurs sont également proposés pour les paramètres du modèle de microstructure. Nous clôturons ce chapitre par une application empirique basée sur des actifs du Dow Jones Industrials. Les résultats indiquent qu'il est pertinent de tenir compte de la dépendance temporelle du bruit de microstructure dans le processus d'estimation de la volatilité.
+    Les chapitres 2, 3 et 4 s'inscrivent dans la littérature économétrique qui traite de la méthode des moments généralisés. En effet, on rencontre en finance des modèles dont la fonction de vraisemblance n'est pas connue. On peut citer en guise d'exemple la loi stable ainsi que les modèles de diffusion observés en temps discrets. Les méthodes d'inférence basées sur la fonction caractéristique peuvent être envisagées dans ces cas. Typiquement, on spécifie une condition de moment basée sur la différence entre la fonction caractéristique (conditionnelle) théorique et sa contrepartie empirique. Le défit ici est d'exploiter au mieux le continuum de conditions de moment ainsi spécifié pour atteindre la même efficacité que le maximum de vraisemblance dans les inférences.
+    Ce défit a été relevé par Carrasco et Florens (2000) qui ont proposé la procédure CGMM (continuum GMM). La fonction objectif que ces auteurs proposent est une forme quadratique hilbertienne qui fait intervenir l'opérateur inverse de covariance associé au continuum de condition de moments. Cet opérateur inverse est régularisé à la Tikhonov pour en assurer l'existence globale et la continuité. Carrasco et Florens (2000) ont montré que l'estimateur obtenu en minimisant cette forme quadratique est asymptotiquement aussi efficace que l'estimateur du maximum de vraisemblance si le paramètre de régularisation (α) tend vers zéro lorsque la taille de l'échatillon tend vers l'infini. La nature de la fonction objectif du CGMM soulève deux questions importantes. La première est celle de la calibration de α en pratique, et la seconde est liée à la présence d'intégrales multiples dans l'expression de la fonction objectif. C'est à ces deux problématiques qu'essayent de répondent les trois derniers chapitres de la présente thèse.
+    Dans le chapitre 2, nous proposons une méthode de calibration de α basée sur la minimisation de l'erreur quadratique moyenne (EQM) de l'estimateur. Nous suivons une approche similaire à celle de Newey et Smith (2004) pour calculer un développement d'ordre supérieur de l'EQM de l'estimateur CGMM de sorte à pouvoir examiner sa dépendance en α en échantillon fini. Nous proposons ensuite deux méthodes pour choisir α en pratique. La première se base sur le développement de l'EQM, et la seconde se base sur des simulations Monte Carlo. Nous montrons que la méthode Monte Carlo délivre un estimateur convergent de α optimal. Nos simulations confirment la pertinence de la calibration de α en pratique.
+    Le chapitre 3 essaye de vulgariser la théorie du chapitre 2 pour les modèles univariés ou bivariés. Nous commençons par passer en revue les propriétés de convergence et de normalité asymptotique de l'estimateur CGMM. Nous proposons ensuite des recettes numériques pour l'implémentation. Enfin, nous conduisons des simulations Monte Carlo basée sur la loi stable. Ces simulations démontrent que le CGMM est une méthode fiable d'inférence. En guise d'application empirique, nous estimons par CGMM un modèle de variance autorégressif Gamma. Les résultats d'estimation confirment un résultat bien connu en finance: le rendement est positivement corrélé au risque espéré et négativement corrélé au choc sur la volatilité.
+    Lorsqu'on implémente le CGMM, une difficulté majeure réside dans l'évaluation numérique itérative des intégrales multiples présentes dans la fonction objectif. Les méthodes de quadrature sont en principe parmi les plus précises que l'on puisse utiliser dans le présent contexte. Malheureusement, le nombre de points de quadrature augmente exponentiellement en fonction de la dimensionalité (d) des intégrales. L'utilisation du CGMM devient pratiquement impossible dans les modèles multivariés et non markoviens où d≥3. Dans le chapitre 4, nous proposons une procédure alternative baptisée &quot;reéchantillonnage dans le domaine fréquentielle&quot; qui consiste à fabriquer des échantillons univariés en prenant une combinaison linéaire des éléments du vecteur initial, les poids de la combinaison linéaire étant tirés aléatoirement dans un sous-espace normalisé de ℝ^{d}. Chaque échantillon ainsi généré est utilisé pour produire un estimateur du paramètre d'intérêt. L'estimateur final que nous proposons est une combinaison linéaire optimale de tous les estimateurs ainsi obtenus. Finalement, nous proposons une étude par simulation et une application empirique basées sur des modèles autorégressifs Gamma.
+    Dans l'ensemble, nous faisons une utilisation intensive du bootstrap, une technique selon laquelle les propriétés statistiques d'une distribution inconnue peuvent être estimées à partir d'un estimé de cette distribution. Nos résultats empiriques peuvent donc en principe être améliorés en faisant appel aux connaissances les plus récentes dans le domaine du bootstrap." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="In estimating the integrated volatility of financial assets using noisy high frequency data, the time series properties assumed for the microstructure noise determines the proper choice of the volatility estimator. In the first chapter of the current thesis, we propose a new model for the microstructure noise with three important features. First of all, our model assumes that the noise is L-dependent. Secondly, the memory lag L is allowed to increase with the sampling frequency. And thirdly, the noise may include an endogenous part, that is, a piece that is correlated with the latent returns. The main difference between this microstructure model and existing ones is that it implies a first order autocorrelation that converges to 1 as the sampling frequency goes to infinity.
+    We use this semi-parametric model to derive a new shrinkage estimator for the integrated volatility. The proposed estimator makes an optimal signal-to-noise trade-off by combining a consistent estimators with an inconsistent one. Simulation results show that the shrinkage estimator behaves better than the best of the two combined ones. We also propose some estimators for the parameters of the noise model. An empirical study based on stocks listed in the Dow Jones Industrials shows the relevance of accounting for possible time dependence in the noise process.
+    Chapters 2, 3 and 4 pertain to the generalized method of moments based on the characteristic function. In fact, the likelihood functions of many financial econometrics models are not known in close form. For example, this is the case for the stable distribution and a discretely observed continuous time model. In these cases, one may estimate the parameter of interest by specifying a moment condition based on the difference between the theoretical (conditional) characteristic function and its empirical counterpart. The challenge is then to exploit the whole continuum of moment conditions hence defined to achieve the maximum likelihood efficiency.
+    This problem has been solved in Carrasco and Florens (2000) who propose the CGMM procedure. The objective function of the CGMM is a quadrqtic form on the Hilbert space defined by the moment function. That objective function depends on a Tikhonov-type regularized inverse of the covariance operator associated with the moment function. Carrasco and Florens (2000) have shown that the estimator obtained by minimizing the proposed objective function is asymptotically as efficient as the maximum likelihood estimator provided that the regularization parameter (α) converges to zero as the sample size goes to infinity. However, the nature of this objective function raises two important questions. First of all, how do we select α in practice? And secondly, how do we implement the CGMM when the multiplicity (d) of the integrals embedded in the objective-function d is large. These questions are tackled in the last three chapters of the thesis.
+    In Chapter 2, we propose to choose α by minimizing the approximate mean square error (MSE) of the estimator. Following an approach similar to Newey and Smith (2004), we derive a higher-order expansion of the estimator from which we characterize the finite sample dependence of the MSE on α. We provide two data-driven methods for selecting the regularization parameter in practice. The first one relies on the higher-order expansion of the MSE whereas the second one uses only simulations. We show that our simulation technique delivers a consistent estimator of α. Our Monte Carlo simulations confirm the importance of the optimal selection of α.
+    The goal of Chapter 3 is to illustrate how to efficiently implement the CGMM for d≤2. To start with, we review the consistency and asymptotic normality properties of the CGMM estimator. Next we suggest some numerical recipes for its implementation. Finally, we carry out a simulation study with the stable distribution that confirms the accuracy of the CGMM as an inference method. An empirical application based on the autoregressive variance Gamma model led to a well-known conclusion: investors require a positive premium for bearing the expected risk while a negative premium is attached to the unexpected risk.
+    In implementing the characteristic function based CGMM, a major difficulty lies in the evaluation of the multiple integrals embedded in the objective function. Numerical quadratures are among the most accurate methods that can be used in the present context. Unfortunately, the number of quadrature points grows exponentially with d. When the data generating process is Markov or dependent, the accurate implementation of the CGMM becomes roughly unfeasible when d≥3. In Chapter 4, we propose a strategy that consists in creating univariate samples by taking a linear combination of the elements of the original vector process. The weights of the linear combinations are drawn from a normalized set of ℝ^{d}. Each univariate index generated in this way is called a frequency domain bootstrap sample that can be used to compute an estimator of the parameter of interest. Finally, all the possible estimators obtained in this fashion can be aggregated to obtain the final estimator. The optimal aggregation rule is discussed in the paper. The overall method is illustrated by a simulation study and an empirical application based on autoregressive Gamma models.
+    This thesis makes an extensive use of the bootstrap, a technique according to which the statistical properties of an unknown distribution can be estimated from an estimate of that distribution. It is thus possible to improve our simulations and empirical results by using the state-of-the-art refinements of the bootstrap methodology." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="The attached file is created with Scientific Workplace Latex" name="DCTERMS.description" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Integrated volatility; Volatilité intégré; Method of moment; Méthode des moments; Microstructure noise; Bruit de microstructure; Realized Kernel; Volatilité réalisée à Noyaux; Shrinkage estimator; Combinaison linéaire optimale d'estimateur; Continuum of moment conditions; Continuum de conditions de moments; Characteristic function; Fonction caracteristique; Curse of dimensionality; Malédiction de la dimensionalité; Stochastic expansion; Expansion stochastique; Bootstrap; Bootstrap; Economics - Finance / Économie - Finances (UMI : 0508); Thèse ou mémoire / Thesis or Dissertation; Sciences économiques" name="citation_keywords"/>
+<meta content="Efficient estimation using the characteristic function : theory and applications with high frequency data" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Kotchoni, Rachidi" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/4392/8/Kotchoni_Rachidi_2010_these.pdf" name="citation_pdf_url"/>
+<meta content="2010-07-08" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/4392" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4392?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4392?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4392?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4392?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4392?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/4392?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/149" role="menuitem">Faculté des arts et des sciences – Département de sciences économiques</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2995" role="menuitem">Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/149">Faculté des arts et des sciences – Département de sciences économiques</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2995">Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2995"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2995/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/4392/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/4392">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/4392/mets.xml-->
+<h2 class="page-header first-page-header">Efficient estimation using the characteristic function : theory and applications with high frequency data</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Carrasco, Marine</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Kotchoni, Rachidi</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2010-12-17T16:37:17Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2010-12-17T16:37:17Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2010-07-08</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2010-05</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/4392</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Integrated volatility</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Volatilité intégré</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Method of moment</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Méthode des moments</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Microstructure noise</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Bruit de microstructure</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Realized Kernel</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Volatilité réalisée à Noyaux</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Shrinkage estimator</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Combinaison linéaire optimale d'estimateur</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Continuum of moment conditions</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Continuum de conditions de moments</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Characteristic function</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Fonction caracteristique</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Curse of dimensionality</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Malédiction de la dimensionalité</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Stochastic expansion</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Expansion stochastique</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Bootstrap</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Bootstrap</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Economics - Finance / Économie - Finances (UMI : 0508)</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Efficient estimation using the characteristic function : theory and applications with high frequency data</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences économiques</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Nous abordons deux sujets distincts dans cette thèse: l'estimation de la volatilité des prix d'actifs financiers à partir des données à haute fréquence, et l'estimation des paramétres d'un processus aléatoire à partir de sa fonction caractéristique.
+    Le chapitre 1 s'intéresse à l'estimation de la volatilité des prix d'actifs. Nous supposons que les données à haute fréquence disponibles sont entachées de bruit de microstructure. Les propriétés que l'on prête au bruit sont déterminantes dans le choix de l'estimateur de la volatilité. Dans ce chapitre, nous spécifions un nouveau modèle dynamique pour le bruit de microstructure qui intègre trois propriétés importantes: (i) le bruit peut être autocorrélé, (ii) le retard maximal au delà duquel l'autocorrélation est nulle peut être une fonction croissante de la fréquence journalière d'observations; (iii) le bruit peut avoir une composante correlée avec le rendement efficient. Cette dernière composante est alors dite endogène. Ce modèle se différencie de ceux existant en ceci qu'il implique que l'autocorrélation d'ordre 1 du bruit converge vers 1 lorsque la fréquence journalière d'observation tend vers l'infini.
+    Nous utilisons le cadre semi-paramétrique ainsi défini pour dériver un nouvel estimateur de la volatilité intégrée baptisée "estimateur shrinkage". Cet estimateur se présente sous la forme d'une combinaison linéaire optimale de deux estimateurs aux propriétés différentes, l'optimalité étant défini en termes de minimisation de la variance. Les simulations indiquent que l'estimateur shrinkage a une variance plus petite que le meilleur des deux estimateurs initiaux. Des estimateurs sont également proposés pour les paramètres du modèle de microstructure. Nous clôturons ce chapitre par une application empirique basée sur des actifs du Dow Jones Industrials. Les résultats indiquent qu'il est pertinent de tenir compte de la dépendance temporelle du bruit de microstructure dans le processus d'estimation de la volatilité.
+    Les chapitres 2, 3 et 4 s'inscrivent dans la littérature économétrique qui traite de la méthode des moments généralisés. En effet, on rencontre en finance des modèles dont la fonction de vraisemblance n'est pas connue. On peut citer en guise d'exemple la loi stable ainsi que les modèles de diffusion observés en temps discrets. Les méthodes d'inférence basées sur la fonction caractéristique peuvent être envisagées dans ces cas. Typiquement, on spécifie une condition de moment basée sur la différence entre la fonction caractéristique (conditionnelle) théorique et sa contrepartie empirique. Le défit ici est d'exploiter au mieux le continuum de conditions de moment ainsi spécifié pour atteindre la même efficacité que le maximum de vraisemblance dans les inférences.
+    Ce défit a été relevé par Carrasco et Florens (2000) qui ont proposé la procédure CGMM (continuum GMM). La fonction objectif que ces auteurs proposent est une forme quadratique hilbertienne qui fait intervenir l'opérateur inverse de covariance associé au continuum de condition de moments. Cet opérateur inverse est régularisé à la Tikhonov pour en assurer l'existence globale et la continuité. Carrasco et Florens (2000) ont montré que l'estimateur obtenu en minimisant cette forme quadratique est asymptotiquement aussi efficace que l'estimateur du maximum de vraisemblance si le paramètre de régularisation (α) tend vers zéro lorsque la taille de l'échatillon tend vers l'infini. La nature de la fonction objectif du CGMM soulève deux questions importantes. La première est celle de la calibration de α en pratique, et la seconde est liée à la présence d'intégrales multiples dans l'expression de la fonction objectif. C'est à ces deux problématiques qu'essayent de répondent les trois derniers chapitres de la présente thèse.
+    Dans le chapitre 2, nous proposons une méthode de calibration de α basée sur la minimisation de l'erreur quadratique moyenne (EQM) de l'estimateur. Nous suivons une approche similaire à celle de Newey et Smith (2004) pour calculer un développement d'ordre supérieur de l'EQM de l'estimateur CGMM de sorte à pouvoir examiner sa dépendance en α en échantillon fini. Nous proposons ensuite deux méthodes pour choisir α en pratique. La première se base sur le développement de l'EQM, et la seconde se base sur des simulations Monte Carlo. Nous montrons que la méthode Monte Carlo délivre un estimateur convergent de α optimal. Nos simulations confirment la pertinence de la calibration de α en pratique.
+    Le chapitre 3 essaye de vulgariser la théorie du chapitre 2 pour les modèles univariés ou bivariés. Nous commençons par passer en revue les propriétés de convergence et de normalité asymptotique de l'estimateur CGMM. Nous proposons ensuite des recettes numériques pour l'implémentation. Enfin, nous conduisons des simulations Monte Carlo basée sur la loi stable. Ces simulations démontrent que le CGMM est une méthode fiable d'inférence. En guise d'application empirique, nous estimons par CGMM un modèle de variance autorégressif Gamma. Les résultats d'estimation confirment un résultat bien connu en finance: le rendement est positivement corrélé au risque espéré et négativement corrélé au choc sur la volatilité.
+    Lorsqu'on implémente le CGMM, une difficulté majeure réside dans l'évaluation numérique itérative des intégrales multiples présentes dans la fonction objectif. Les méthodes de quadrature sont en principe parmi les plus précises que l'on puisse utiliser dans le présent contexte. Malheureusement, le nombre de points de quadrature augmente exponentiellement en fonction de la dimensionalité (d) des intégrales. L'utilisation du CGMM devient pratiquement impossible dans les modèles multivariés et non markoviens où d≥3. Dans le chapitre 4, nous proposons une procédure alternative baptisée "reéchantillonnage dans le domaine fréquentielle" qui consiste à fabriquer des échantillons univariés en prenant une combinaison linéaire des éléments du vecteur initial, les poids de la combinaison linéaire étant tirés aléatoirement dans un sous-espace normalisé de ℝ^{d}. Chaque échantillon ainsi généré est utilisé pour produire un estimateur du paramètre d'intérêt. L'estimateur final que nous proposons est une combinaison linéaire optimale de tous les estimateurs ainsi obtenus. Finalement, nous proposons une étude par simulation et une application empirique basées sur des modèles autorégressifs Gamma.
+    Dans l'ensemble, nous faisons une utilisation intensive du bootstrap, une technique selon laquelle les propriétés statistiques d'une distribution inconnue peuvent être estimées à partir d'un estimé de cette distribution. Nos résultats empiriques peuvent donc en principe être améliorés en faisant appel aux connaissances les plus récentes dans le domaine du bootstrap.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">In estimating the integrated volatility of financial assets using noisy high frequency data, the time series properties assumed for the microstructure noise determines the proper choice of the volatility estimator. In the first chapter of the current thesis, we propose a new model for the microstructure noise with three important features. First of all, our model assumes that the noise is L-dependent. Secondly, the memory lag L is allowed to increase with the sampling frequency. And thirdly, the noise may include an endogenous part, that is, a piece that is correlated with the latent returns. The main difference between this microstructure model and existing ones is that it implies a first order autocorrelation that converges to 1 as the sampling frequency goes to infinity.
+    We use this semi-parametric model to derive a new shrinkage estimator for the integrated volatility. The proposed estimator makes an optimal signal-to-noise trade-off by combining a consistent estimators with an inconsistent one. Simulation results show that the shrinkage estimator behaves better than the best of the two combined ones. We also propose some estimators for the parameters of the noise model. An empirical study based on stocks listed in the Dow Jones Industrials shows the relevance of accounting for possible time dependence in the noise process.
+    Chapters 2, 3 and 4 pertain to the generalized method of moments based on the characteristic function. In fact, the likelihood functions of many financial econometrics models are not known in close form. For example, this is the case for the stable distribution and a discretely observed continuous time model. In these cases, one may estimate the parameter of interest by specifying a moment condition based on the difference between the theoretical (conditional) characteristic function and its empirical counterpart. The challenge is then to exploit the whole continuum of moment conditions hence defined to achieve the maximum likelihood efficiency.
+    This problem has been solved in Carrasco and Florens (2000) who propose the CGMM procedure. The objective function of the CGMM is a quadrqtic form on the Hilbert space defined by the moment function. That objective function depends on a Tikhonov-type regularized inverse of the covariance operator associated with the moment function. Carrasco and Florens (2000) have shown that the estimator obtained by minimizing the proposed objective function is asymptotically as efficient as the maximum likelihood estimator provided that the regularization parameter (α) converges to zero as the sample size goes to infinity. However, the nature of this objective function raises two important questions. First of all, how do we select α in practice? And secondly, how do we implement the CGMM when the multiplicity (d) of the integrals embedded in the objective-function d is large. These questions are tackled in the last three chapters of the thesis.
+    In Chapter 2, we propose to choose α by minimizing the approximate mean square error (MSE) of the estimator. Following an approach similar to Newey and Smith (2004), we derive a higher-order expansion of the estimator from which we characterize the finite sample dependence of the MSE on α. We provide two data-driven methods for selecting the regularization parameter in practice. The first one relies on the higher-order expansion of the MSE whereas the second one uses only simulations. We show that our simulation technique delivers a consistent estimator of α. Our Monte Carlo simulations confirm the importance of the optimal selection of α.
+    The goal of Chapter 3 is to illustrate how to efficiently implement the CGMM for d≤2. To start with, we review the consistency and asymptotic normality properties of the CGMM estimator. Next we suggest some numerical recipes for its implementation. Finally, we carry out a simulation study with the stable distribution that confirms the accuracy of the CGMM as an inference method. An empirical application based on the autoregressive variance Gamma model led to a well-known conclusion: investors require a positive premium for bearing the expected risk while a negative premium is attached to the unexpected risk.
+    In implementing the characteristic function based CGMM, a major difficulty lies in the evaluation of the multiple integrals embedded in the objective function. Numerical quadratures are among the most accurate methods that can be used in the present context. Unfortunately, the number of quadrature points grows exponentially with d. When the data generating process is Markov or dependent, the accurate implementation of the CGMM becomes roughly unfeasible when d≥3. In Chapter 4, we propose a strategy that consists in creating univariate samples by taking a linear combination of the elements of the original vector process. The weights of the linear combinations are drawn from a normalized set of ℝ^{d}. Each univariate index generated in this way is called a frequency domain bootstrap sample that can be used to compute an estimator of the parameter of interest. Finally, all the possible estimators obtained in this fashion can be aggregated to obtain the final estimator. The optimal aggregation rule is discussed in the paper. The overall method is illustrated by a simulation study and an empirical application based on autoregressive Gamma models.
+    This thesis makes an extensive use of the bootstrap, a technique according to which the statistical properties of an unknown distribution can be estimated from an estimate of that distribution. It is thus possible to improve our simulations and empirical results by using the state-of-the-art refinements of the bootstrap methodology.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.description</td><td class="word-break">The attached file is created with Scientific Workplace Latex</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F4392&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+%C3%A9conomiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/4392/Kotchoni_Rachidi_2010_these.pdf?sequence=8&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/4392/Kotchoni_Rachidi_2010_these.pdf.jpg?sequence=10&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Kotchoni_Rachidi_2010_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/4392/Kotchoni_Rachidi_2010_these.pdf?sequence=8&amp;isAllowed=y">Kotchoni_Rachidi_2010_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1.088Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2995/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2995">Faculté des arts et des sciences – Département de sciences économiques - Thèses et mémoires</a> [317]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/4392">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Design, synthesis, pericyclic chemistry and biomedical applications of azopeptides</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Lubell, William" name="DC.contributor">
+<meta content="Chingle, Ramesh" name="DC.creator">
+<meta content="2018-07-23T18:23:46Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2018-07-23T18:23:46Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2018-06-19" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2018-02" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/20753" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Azapeptides" name="DC.subject" xml:lang="fr"/>
+<meta content="Peptidomimétique" name="DC.subject" xml:lang="fr"/>
+<meta content="Tour β" name="DC.subject" xml:lang="fr"/>
+<meta content="Semicarbazone" name="DC.subject" xml:lang="fr"/>
+<meta content="Aza-valine" name="DC.subject" xml:lang="fr"/>
+<meta content="Semicarbazide" name="DC.subject" xml:lang="fr"/>
+<meta content="Azopeptide" name="DC.subject" xml:lang="fr"/>
+<meta content="Aza-Diels Alder" name="DC.subject" xml:lang="fr"/>
+<meta content="Alder-ene" name="DC.subject" xml:lang="fr"/>
+<meta content="Péricyclique" name="DC.subject" xml:lang="fr"/>
+<meta content="GHRP-6" name="DC.subject" xml:lang="fr"/>
+<meta content="Récepteur GHS-R1a" name="DC.subject" xml:lang="fr"/>
+<meta content="Récepteur CD36" name="DC.subject" xml:lang="fr"/>
+<meta content="Peptide mimicry" name="DC.subject" xml:lang="fr"/>
+<meta content="β-turn" name="DC.subject" xml:lang="fr"/>
+<meta content="Pericyclic" name="DC.subject" xml:lang="fr"/>
+<meta content="Chemistry - Organic / Chimie organique (UMI : 0490)" name="DC.subject" xml:lang="fr"/>
+<meta content="Design, synthesis, pericyclic chemistry and biomedical applications of azopeptides" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Les azapeptides sont des peptidomimétiques dans lesquels le carbone alpha d'un ou
+plusieurs acides aminés a été remplacé par un atome d'azote. L'objectif principal de cette
+étude doctorale a été de développer une nouvelle méthodologie de synthèse d'azapeptides,
+par l’utilisation d'azopeptides, qui sont des analogues azodicarbonylés possédant une
+fonction imino-urée. L'oxydation des résidus d'aza-glycine s'est avérée efficace pour
+l’obtention d’azopeptides, qui ont ensuite été utilisés pour effectuer des réaction
+péricycliques et examinés par cristallographie aux rayons X. Les réactions de Diels-Alder et
+d'Alder-ene sur les azopeptides ont respectivement permis d'accéder aux résidus azapipécolyle
+et aza-allylglycinyle contraints. L'analyse aux rayons X d'un azopeptide à l'état
+solide a fourni un aperçu de la configuration de l'imino-urée (Chapitre 2). En employant les
+produits, issues de la chimie des azopeptides, comme analogues contraints de la valine, des
+mimes de la séquence Ala-Val-Pro-Ile de la seconde protéine activatrice de caspases des
+mitochondries (Smac) ont été synthétisés et leur capacité à induire l'apoptose dans les cellules
+mammaires cancéreuses a été démontré (Chapitre 3).
+Dans le but de poursuivre le développement des méthodes pour synthétiser des
+azopeptides une approche en phase solide a été conçue sur résine Rink Amide et pourrais être
+utiliser pour générer des chimiothèques de composés en utilisant la chimie combinatoire.
+Cette étude a été ciblée sur la synthèse d'analogues azapeptides des opioïdes morphiceptine
+et endomorphine ainsi que le peptide de libération de l'hormone de croissance (GHRP-6, HHis-
+D-Trp-Ala-Trp-D-Phe-Lys-NH2) se liant aux récepteur du cluster de différenciation 36
+(CD36). Les premiers peptides ont été examinés en raison de leur importance en tant
+qu'agonistes sélectifs des sous-types de récepteurs opioïdes ayant le potentiel de développer
+de nouveaux analgésiques. Le dernier exemple d’analogue avait pour but de poursuivre le
+développement de modulateurs sélectifs de CD36 ayant un potentiel thérapeutique pour le
+traitement de maladies comprenant une inflammation entraînée par les macrophages, y
+compris la dégénérescence maculaire liée à l'âge et l'athérosclérose. Douze aza-opioïdes ont
+été synthétisés en remplaçant la proline à la position deux des ligands peptidiques respectifs
+par différents résidus d'aza-pipécolate. De même, cinq analogues d'aza-pipécolyle GHRP6
+ii
+ont été synthétisés en utilisant la méthode en phase solide pour remplacer respectivement les
+résidus Ala3 et Trp4 (chapitre 4). Les aza-opioïdes ont été examiné comme inhibiteur des
+contractions induites électriquement sur l'iléon de cobaye et du canal déférent de souris, et
+les analogues aza-GHRP-6 pour leurs capacités à diminuer la surproduction d'oxyde nitrique
+induite par CD36 après traitement avec l’agoniste lipopeptide fibroblastes des récepteurs,
+tous deux ont démontré l'utilité de la méthodologie de l'aza-pipécolate pour étudier l'influence
+de la conformation sur l'activité et la sélectivité des peptides.
+Les nouvelles méthodologies de synthèse des azopeptides en solution et sur support
+solide décrites dans cette thèse sont conçues pour permettre leur utilisation dans des études
+de relations structure-activité avec différents peptides biologiquement actifs. A cet égard, des
+azopeptides ont été utilisés dans ces recherches pour fabriquer des ligands des facteurs
+inhibiteurs du mélanocyte-1 (MIF-1), Smac, opioïde et du récepteur CD36. Considérant
+l'efficacité des méthodes de synthèse et les applications potentielles des azopeptides, les
+résultats de cette thèse offrent un fort potentiel pour l'avancement de la science des peptides
+dans le contexte de la chimie médicinale et de la biologie chimique." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="The azapeptides are peptide mimics in which the alpha carbon of one or more amino
+acids has been replaced with a nitrogen atom. The primary goal of this doctorate study was to
+develop a new method for the synthesis of azapeptides by the application of azopeptides, which
+are azodicarbonyl analogs that possess an imino urea component. Oxidation of aza-glycine
+residues proved effective for making azopeptides, which were employed in pericyclic
+chemistry and examined by X-ray crystallography. Diels−Alder cyclization and Alder−ene
+reactions on azopeptides enabled respectively access to constrained aza-pipecolyl and azaallylglycinyl
+residues. X-ray analysis of an azopeptide in the solid state provided insight into
+imino urea configuration (Chapter 2). Employing the products from azopeptide chemistry as
+constrained valine analogs, mimics of the Ala-Val-Pro-Ile sequence from the second
+mitochondria derived activator of caspases (Smac) protein were synthesized and
+demonstrated ability to induce apoptosis in breast cancer cells (Chapter 3).
+Following the development of a method to synthesize azopeptides in solution, a solidphase
+approach was conceived to prepare azopeptides on Rink amide resin and may be
+amenable to combinatorial chemistry for library generation. This study was targeted on the
+synthesis of aza-analogs of the opioid peptides morphiceptin and endomorphins as well as
+the Cluster of Differentiation 36 receptor (CD36) ligand Growth Hormone Releasing
+Peptide-6 (GHRP-6, His-D-Trp-Ala-Trp-D-Phe-Lys-NH2). The former were examined due
+to their importance as opioid receptor subtype selective agonists with potential for developing
+novel analgesics. The latter was targeted in pursuit of selective CD36 modulators with
+therapeutic potential for treating diseases featuring macrophage-driven inflammation
+including age-related macular degeneration and atherosclerosis. Twelve aza-opioids were
+synthesized by replacing proline at the two position of the respective peptide ligands with
+different aza-pipecolate residues. Similarly, five aza-pipecolyl GHRP-6 analogs were
+synthesized using the solid-phase method to replace respectively the Ala3 and Trp4 residues
+(Chapter 4). Examination of the aza-opioids for inhibitory potency on electrically induced
+contractions of the guinea pig ileum and mouse vas deferens, and the aza-GHRP-6 analogs
+for capacity to diminish CD36-mediated overproduction of nitric oxide in macrophage cells
+iv
+after treatment with the Toll-like receptor-2-agonist fibroblast-stimulating lipopeptide, both
+demonstrated the utility of the aza-pipecolate methodology for studying the influence of
+conformation on peptide activity and selectivity.
+The novel methods for the synthesis of azopeptides in solution and on solid support
+described in this thesis are designed to enable their use in studies of structure-activity
+relationships with different biologically active peptides. In this respect, azopeptides have
+been applied in this research to make ligands of the melanocyte-inhibiting factor-1 (MIF-1),
+Smac, opioid and CD36 receptors. Considering the effectiveness of the synthetic methods
+and the potential applications of azopeptides, the findings of this thesis offer strong potential
+for the advancement of peptide science in the context of medicinal chemistry and chemical
+biology." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Azapeptides; Peptidomimétique; Tour β; Semicarbazone; Aza-valine; Semicarbazide; Azopeptide; Aza-Diels Alder; Alder-ene; Péricyclique; GHRP-6; Récepteur GHS-R1a; Récepteur CD36; Peptide mimicry; β-turn; Pericyclic; Chemistry - Organic / Chimie organique (UMI : 0490); Thèse ou mémoire / Thesis or Dissertation; Chimie" name="citation_keywords"/>
+<meta content="Design, synthesis, pericyclic chemistry and biomedical applications of azopeptides" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Chingle, Ramesh" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/20753/2/Chingle_Ramesh_2018_these.pdf" name="citation_pdf_url"/>
+<meta content="2018-06-19" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/20753" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20753?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20753?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20753?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20753?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20753?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20753?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2942" role="menuitem">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2977" role="menuitem">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2942">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2977"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/20753/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/20753">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/20753/mets.xml-->
+<h2 class="page-header first-page-header">Design, synthesis, pericyclic chemistry and biomedical applications of azopeptides</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Lubell, William</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Chingle, Ramesh</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2018-07-23T18:23:46Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2018-07-23T18:23:46Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2018-06-19</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2018-02</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/20753</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Azapeptides</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Peptidomimétique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Tour β</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Semicarbazone</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Aza-valine</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Semicarbazide</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Azopeptide</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Aza-Diels Alder</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Alder-ene</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Péricyclique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">GHRP-6</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Récepteur GHS-R1a</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Récepteur CD36</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Peptide mimicry</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">β-turn</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pericyclic</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Chemistry - Organic / Chimie organique (UMI : 0490)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Design, synthesis, pericyclic chemistry and biomedical applications of azopeptides</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Chimie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les azapeptides sont des peptidomimétiques dans lesquels le carbone alpha d'un ou
+plusieurs acides aminés a été remplacé par un atome d'azote. L'objectif principal de cette
+étude doctorale a été de développer une nouvelle méthodologie de synthèse d'azapeptides,
+par l’utilisation d'azopeptides, qui sont des analogues azodicarbonylés possédant une
+fonction imino-urée. L'oxydation des résidus d'aza-glycine s'est avérée efficace pour
+l’obtention d’azopeptides, qui ont ensuite été utilisés pour effectuer des réaction
+péricycliques et examinés par cristallographie aux rayons X. Les réactions de Diels-Alder et
+d'Alder-ene sur les azopeptides ont respectivement permis d'accéder aux résidus azapipécolyle
+et aza-allylglycinyle contraints. L'analyse aux rayons X d'un azopeptide à l'état
+solide a fourni un aperçu de la configuration de l'imino-urée (Chapitre 2). En employant les
+produits, issues de la chimie des azopeptides, comme analogues contraints de la valine, des
+mimes de la séquence Ala-Val-Pro-Ile de la seconde protéine activatrice de caspases des
+mitochondries (Smac) ont été synthétisés et leur capacité à induire l'apoptose dans les cellules
+mammaires cancéreuses a été démontré (Chapitre 3).
+Dans le but de poursuivre le développement des méthodes pour synthétiser des
+azopeptides une approche en phase solide a été conçue sur résine Rink Amide et pourrais être
+utiliser pour générer des chimiothèques de composés en utilisant la chimie combinatoire.
+Cette étude a été ciblée sur la synthèse d'analogues azapeptides des opioïdes morphiceptine
+et endomorphine ainsi que le peptide de libération de l'hormone de croissance (GHRP-6, HHis-
+D-Trp-Ala-Trp-D-Phe-Lys-NH2) se liant aux récepteur du cluster de différenciation 36
+(CD36). Les premiers peptides ont été examinés en raison de leur importance en tant
+qu'agonistes sélectifs des sous-types de récepteurs opioïdes ayant le potentiel de développer
+de nouveaux analgésiques. Le dernier exemple d’analogue avait pour but de poursuivre le
+développement de modulateurs sélectifs de CD36 ayant un potentiel thérapeutique pour le
+traitement de maladies comprenant une inflammation entraînée par les macrophages, y
+compris la dégénérescence maculaire liée à l'âge et l'athérosclérose. Douze aza-opioïdes ont
+été synthétisés en remplaçant la proline à la position deux des ligands peptidiques respectifs
+par différents résidus d'aza-pipécolate. De même, cinq analogues d'aza-pipécolyle GHRP6
+ii
+ont été synthétisés en utilisant la méthode en phase solide pour remplacer respectivement les
+résidus Ala3 et Trp4 (chapitre 4). Les aza-opioïdes ont été examiné comme inhibiteur des
+contractions induites électriquement sur l'iléon de cobaye et du canal déférent de souris, et
+les analogues aza-GHRP-6 pour leurs capacités à diminuer la surproduction d'oxyde nitrique
+induite par CD36 après traitement avec l’agoniste lipopeptide fibroblastes des récepteurs,
+tous deux ont démontré l'utilité de la méthodologie de l'aza-pipécolate pour étudier l'influence
+de la conformation sur l'activité et la sélectivité des peptides.
+Les nouvelles méthodologies de synthèse des azopeptides en solution et sur support
+solide décrites dans cette thèse sont conçues pour permettre leur utilisation dans des études
+de relations structure-activité avec différents peptides biologiquement actifs. A cet égard, des
+azopeptides ont été utilisés dans ces recherches pour fabriquer des ligands des facteurs
+inhibiteurs du mélanocyte-1 (MIF-1), Smac, opioïde et du récepteur CD36. Considérant
+l'efficacité des méthodes de synthèse et les applications potentielles des azopeptides, les
+résultats de cette thèse offrent un fort potentiel pour l'avancement de la science des peptides
+dans le contexte de la chimie médicinale et de la biologie chimique.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The azapeptides are peptide mimics in which the alpha carbon of one or more amino
+acids has been replaced with a nitrogen atom. The primary goal of this doctorate study was to
+develop a new method for the synthesis of azapeptides by the application of azopeptides, which
+are azodicarbonyl analogs that possess an imino urea component. Oxidation of aza-glycine
+residues proved effective for making azopeptides, which were employed in pericyclic
+chemistry and examined by X-ray crystallography. Diels−Alder cyclization and Alder−ene
+reactions on azopeptides enabled respectively access to constrained aza-pipecolyl and azaallylglycinyl
+residues. X-ray analysis of an azopeptide in the solid state provided insight into
+imino urea configuration (Chapter 2). Employing the products from azopeptide chemistry as
+constrained valine analogs, mimics of the Ala-Val-Pro-Ile sequence from the second
+mitochondria derived activator of caspases (Smac) protein were synthesized and
+demonstrated ability to induce apoptosis in breast cancer cells (Chapter 3).
+Following the development of a method to synthesize azopeptides in solution, a solidphase
+approach was conceived to prepare azopeptides on Rink amide resin and may be
+amenable to combinatorial chemistry for library generation. This study was targeted on the
+synthesis of aza-analogs of the opioid peptides morphiceptin and endomorphins as well as
+the Cluster of Differentiation 36 receptor (CD36) ligand Growth Hormone Releasing
+Peptide-6 (GHRP-6, His-D-Trp-Ala-Trp-D-Phe-Lys-NH2). The former were examined due
+to their importance as opioid receptor subtype selective agonists with potential for developing
+novel analgesics. The latter was targeted in pursuit of selective CD36 modulators with
+therapeutic potential for treating diseases featuring macrophage-driven inflammation
+including age-related macular degeneration and atherosclerosis. Twelve aza-opioids were
+synthesized by replacing proline at the two position of the respective peptide ligands with
+different aza-pipecolate residues. Similarly, five aza-pipecolyl GHRP-6 analogs were
+synthesized using the solid-phase method to replace respectively the Ala3 and Trp4 residues
+(Chapter 4). Examination of the aza-opioids for inhibitory potency on electrically induced
+contractions of the guinea pig ileum and mouse vas deferens, and the aza-GHRP-6 analogs
+for capacity to diminish CD36-mediated overproduction of nitric oxide in macrophage cells
+iv
+after treatment with the Toll-like receptor-2-agonist fibroblast-stimulating lipopeptide, both
+demonstrated the utility of the aza-pipecolate methodology for studying the influence of
+conformation on peptide activity and selectivity.
+The novel methods for the synthesis of azopeptides in solution and on solid support
+described in this thesis are designed to enable their use in studies of structure-activity
+relationships with different biologically active peptides. In this respect, azopeptides have
+been applied in this research to make ligands of the melanocyte-inhibiting factor-1 (MIF-1),
+Smac, opioid and CD36 receptors. Considering the effectiveness of the synthetic methods
+and the potential applications of azopeptides, the findings of this thesis offer strong potential
+for the advancement of peptide science in the context of medicinal chemistry and chemical
+biology.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">UdeM.ORCIDAuteurThese</td><td class="word-break">0000-0003-1175-2454</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F20753&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Chimie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/20753/Chingle_Ramesh_2018_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/20753/Chingle_Ramesh_2018_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Chingle_Ramesh_2018_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/20753/Chingle_Ramesh_2018_these.pdf?sequence=2&amp;isAllowed=y">Chingle_Ramesh_2018_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">7.820Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2977/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a> [594]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/20753">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

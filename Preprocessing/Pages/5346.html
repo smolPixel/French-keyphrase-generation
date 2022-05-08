@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Groupage et protection du trafic dynamique dans les réseaux WDM</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Jaumard, Brigitte" name="DC.contributor">
+<meta content="Metnani, Ammar" name="DC.creator">
+<meta content="2011-09-16T18:38:30Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2011-09-16T18:38:30Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2011-08-04" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2011-03" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/5346" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Réseaux optiques" name="DC.subject" xml:lang="en"/>
+<meta content="Optical Networks" name="DC.subject" xml:lang="en"/>
+<meta content="Groupage de trafic" name="DC.subject" xml:lang="en"/>
+<meta content="Traffic grooming" name="DC.subject" xml:lang="en"/>
+<meta content="Protection par p-cycles" name="DC.subject" xml:lang="en"/>
+<meta content="Protection by p-cycles" name="DC.subject" xml:lang="en"/>
+<meta content="Trafic Dynamique" name="DC.subject" xml:lang="en"/>
+<meta content="Dynamic Traffic" name="DC.subject" xml:lang="en"/>
+<meta content="Applied Sciences - Computer Science / Sciences appliqués et technologie - Informatique (UMI : 0984)" name="DC.subject" xml:lang="en"/>
+<meta content="Groupage et protection du trafic dynamique dans les réseaux WDM" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Avec les nouvelles technologies des réseaux optiques, une quantité de données de plus en plus grande peut être transportée par une seule longueur d'onde. Cette quantité peut atteindre jusqu’à 40 gigabits par seconde (Gbps). Les flots de données individuels quant à eux demandent beaucoup moins de bande passante. Le groupage de trafic est une technique qui permet l'utilisation efficace de la bande passante offerte par une longueur
+d'onde. Elle consiste à assembler plusieurs flots de données de bas débit en une seule
+entité de données qui peut être transporté sur une longueur d'onde.
+La technique demultiplexage en longueurs d'onde (Wavelength Division Multiplexing WDM) permet de transporter plusieurs longueurs d'onde sur une même fibre. L'utilisation des deux techniques : WDM et groupage de trafic, permet de transporter une quantité de données de l'ordre de terabits par seconde (Tbps) sur une même fibre optique. La protection du trafic dans les réseaux optiques devient alors une opération très vitale pour ces
+réseaux, puisqu'une seule panne peut perturber des milliers d'utilisateurs et engendre des pertes importantes jusqu'à plusieurs millions de dollars à l'opérateur et aux utilisateurs du réseau. La technique de protection consiste à réserver une capacité supplémentaire pour acheminer le trafic en cas de panne dans le réseau.
+Cette thèse porte sur l'étude des techniques de groupage et de protection du trafic en
+utilisant les p-cycles dans les réseaux optiques dans un contexte de trafic dynamique. La majorité des travaux existants considère un trafic statique où l'état du réseau ainsi que le trafic sont donnés au début et ne changent pas. En plus, la majorité de ces travaux utilise des heuristiques ou des méthodes ayant de la difficulté à résoudre des instances de grande taille.
+Dans le contexte de trafic dynamique, deux difficultés majeures s'ajoutent aux problèmes
+étudiés, à cause du changement continuel du trafic dans le réseau. La première est due au fait que la solution proposée à la période précédente, même si elle est optimisée, n'est plus nécessairement optimisée ou optimale pour la période courante, une nouvelle
+optimisation de la solution au problème est alors nécessaire. La deuxième difficulté est
+due au fait que la résolution du problème pour une période donnée est différente de sa
+résolution pour la période initiale à cause des connexions en cours dans le réseau qui ne
+doivent pas être trop dérangées à chaque période de temps.
+L'étude faite sur la technique de groupage de trafic dans un contexte de trafic dynamique
+consiste à proposer différents scénarios pour composer avec ce type de trafic, avec comme objectif la maximisation de la bande passante des connexions acceptées à chaque période de temps. Des formulations mathématiques des différents scénarios considérés pour le problème de groupage sont proposées.
+Les travaux que nous avons réalisés sur le problème de la protection considèrent deux types de p-cycles, ceux protégeant les liens (p-cycles de base) et les FIPP p-cycles (p-cycles protégeant les chemins). Ces travaux ont consisté d’abord en la proposition de différents scénarios pour gérer les p-cycles de protection dans un contexte de trafic
+dynamique. Ensuite, une étude sur la stabilité des p-cycles dans un contexte de trafic dynamique a été faite. Des formulations de différents scénarios ont été proposées et les méthodes de résolution utilisées permettent d’aborder des problèmes de plus grande taille que ceux présentés dans la littérature. Nous nous appuyons sur la méthode de génération de colonnes pour énumérer implicitement les cycles les plus prometteurs.
+Dans l'étude des p-cycles protégeant les chemins ou FIPP p-cycles, nous avons proposé
+des formulations pour le problème maître et le problème auxiliaire. Nous avons utilisé une méthode de décomposition hiérarchique du problème qui nous permet d'obtenir de meilleurs résultats dans un temps raisonnable. Comme pour les p-cycles de base,
+nous avons étudié la stabilité des FIPP p-cycles dans un contexte de trafic dynamique.
+Les travaux montrent que dépendamment du critère d'optimisation, les p-cycles de base
+(protégeant les liens) et les FIPP p-cycles (protégeant les chemins) peuvent être très
+stables." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="With new technologies in optical networking, an increasing quantity of data can be carried
+by a single wavelength. This amount of data can reach up to 40 gigabits per second (Gbps). Meanwhile, the individual data flows require much less bandwidth. The traffic grooming is a technique that allows the efficient use of the bandwidth offered by a wavelength.
+It consists of assembling several low-speed data streams into a single data entity that can be carried on a wavelength.
+The wavelength division multiplexing (WDM) technique allows carrying multiple wavelengths on a single fiber. The use of the two techniques,WDMand traffic grooming, allows carrying a quantity of data in the order of terabits per second (Tbps) over a single optical fiber. Thus, the traffic protection in optical networks becomes an operation very vital for these networks, since a single failure can disrupt thousands of users and may result in several millions of dollars of lost revenue to the operator and the network users.
+The survivability techniques involve reserving additional capacity to carry traffic in case of a failure in the network.
+This thesis concerns the study of the techniques of grooming and protection of traffic using p-cycles in optical networks in a context of dynamic traffic. Most existing work considers a static traffic where the network status and the traffic are given at the beginning and do not change. In addition, most of these works concerns heuristic algorithms or methods suffering from critical lack of scalability.
+In the context of dynamic traffic, two major difficulties are added to the studied problems, because of the continuous change in network traffic. The first is due to the fact
+that the solution proposed in the previous period, even if optimal, does not necessarily
+remain optimal in the current period. Thus, a re-optimization of the solution to the problem is required. The second difficulty is due to the fact that the solution of the
+problem for a given period is different from its solution for the initial period because of the ongoing connections in the network that should not be too disturbed at each time
+period.
+The study done on the traffic grooming technique in the context of dynamic traffic consists of proposing different scenarios for dealing with this type of traffic, with the
+objective of maximizing the bandwidth of the new granted connections at each time period.
+Mathematical formulations of the different considered scenarios for the grooming problem are proposed.
+The work we have done on the problem of protection considers two types of p-cycles,
+those protecting links and FIPP p-cycles (p-cycle protecting paths). This work consisted
+primarily on the proposition of different scenarios for managing protection p-cycles in
+a context of dynamic traffic. Then, a study on the stability of cycles in the context of dynamic traffic was done. Formulations of different scenarios have been proposed and the proposed solution methods allow the approach of larger problem instances than those reported in the literature. We rely on the method of column generation to implicitly
+enumerate promising cycles.
+In the study of path protecting p-cycles or FIPP p-cycles, we proposed mathematical formulations for the master and the pricing problems. We used a hierarchical decomposition of the problem which allows us to obtain better results in a reasonable time. As for the basic p-cycles, we studied the stability of FIPP p-cycles in the context of dynamic traffic. The work shows that depending on the optimization criterion, the basic p-cycles (protecting the links) and FIPP p-cycles (protecting paths) can be very stable." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Réseaux optiques; Optical Networks; Groupage de trafic; Traffic grooming; Protection par p-cycles; Protection by p-cycles; Trafic Dynamique; Dynamic Traffic; Applied Sciences - Computer Science / Sciences appliqués et technologie - Informatique (UMI : 0984); Thèse ou mémoire / Thesis or Dissertation; Informatique" name="citation_keywords"/>
+<meta content="Groupage et protection du trafic dynamique dans les réseaux WDM" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Metnani, Ammar" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/5346/4/Ammar_Metnani_2011_these.pdf" name="citation_pdf_url"/>
+<meta content="2011-08-04" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/5346" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5346?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5346?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5346?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5346?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5346?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/5346?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2958" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3001" role="menuitem">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2958">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/3001"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3001/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/5346/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/5346">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/5346/mets.xml-->
+<h2 class="page-header first-page-header">Groupage et protection du trafic dynamique dans les réseaux WDM</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Jaumard, Brigitte</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Metnani, Ammar</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2011-09-16T18:38:30Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2011-09-16T18:38:30Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2011-08-04</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2011-03</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/5346</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Réseaux optiques</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Optical Networks</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Groupage de trafic</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Traffic grooming</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Protection par p-cycles</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Protection by p-cycles</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Trafic Dynamique</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Dynamic Traffic</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Applied Sciences - Computer Science / Sciences appliqués et technologie - Informatique (UMI : 0984)</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Groupage et protection du trafic dynamique dans les réseaux WDM</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Informatique</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Avec les nouvelles technologies des réseaux optiques, une quantité de données de plus en plus grande peut être transportée par une seule longueur d'onde. Cette quantité peut atteindre jusqu’à 40 gigabits par seconde (Gbps). Les flots de données individuels quant à eux demandent beaucoup moins de bande passante. Le groupage de trafic est une technique qui permet l'utilisation efficace de la bande passante offerte par une longueur
+d'onde. Elle consiste à assembler plusieurs flots de données de bas débit en une seule
+entité de données qui peut être transporté sur une longueur d'onde.
+La technique demultiplexage en longueurs d'onde (Wavelength Division Multiplexing WDM) permet de transporter plusieurs longueurs d'onde sur une même fibre. L'utilisation des deux techniques : WDM et groupage de trafic, permet de transporter une quantité de données de l'ordre de terabits par seconde (Tbps) sur une même fibre optique. La protection du trafic dans les réseaux optiques devient alors une opération très vitale pour ces
+réseaux, puisqu'une seule panne peut perturber des milliers d'utilisateurs et engendre des pertes importantes jusqu'à plusieurs millions de dollars à l'opérateur et aux utilisateurs du réseau. La technique de protection consiste à réserver une capacité supplémentaire pour acheminer le trafic en cas de panne dans le réseau.
+Cette thèse porte sur l'étude des techniques de groupage et de protection du trafic en
+utilisant les p-cycles dans les réseaux optiques dans un contexte de trafic dynamique. La majorité des travaux existants considère un trafic statique où l'état du réseau ainsi que le trafic sont donnés au début et ne changent pas. En plus, la majorité de ces travaux utilise des heuristiques ou des méthodes ayant de la difficulté à résoudre des instances de grande taille.
+Dans le contexte de trafic dynamique, deux difficultés majeures s'ajoutent aux problèmes
+étudiés, à cause du changement continuel du trafic dans le réseau. La première est due au fait que la solution proposée à la période précédente, même si elle est optimisée, n'est plus nécessairement optimisée ou optimale pour la période courante, une nouvelle
+optimisation de la solution au problème est alors nécessaire. La deuxième difficulté est
+due au fait que la résolution du problème pour une période donnée est différente de sa
+résolution pour la période initiale à cause des connexions en cours dans le réseau qui ne
+doivent pas être trop dérangées à chaque période de temps.
+L'étude faite sur la technique de groupage de trafic dans un contexte de trafic dynamique
+consiste à proposer différents scénarios pour composer avec ce type de trafic, avec comme objectif la maximisation de la bande passante des connexions acceptées à chaque période de temps. Des formulations mathématiques des différents scénarios considérés pour le problème de groupage sont proposées.
+Les travaux que nous avons réalisés sur le problème de la protection considèrent deux types de p-cycles, ceux protégeant les liens (p-cycles de base) et les FIPP p-cycles (p-cycles protégeant les chemins). Ces travaux ont consisté d’abord en la proposition de différents scénarios pour gérer les p-cycles de protection dans un contexte de trafic
+dynamique. Ensuite, une étude sur la stabilité des p-cycles dans un contexte de trafic dynamique a été faite. Des formulations de différents scénarios ont été proposées et les méthodes de résolution utilisées permettent d’aborder des problèmes de plus grande taille que ceux présentés dans la littérature. Nous nous appuyons sur la méthode de génération de colonnes pour énumérer implicitement les cycles les plus prometteurs.
+Dans l'étude des p-cycles protégeant les chemins ou FIPP p-cycles, nous avons proposé
+des formulations pour le problème maître et le problème auxiliaire. Nous avons utilisé une méthode de décomposition hiérarchique du problème qui nous permet d'obtenir de meilleurs résultats dans un temps raisonnable. Comme pour les p-cycles de base,
+nous avons étudié la stabilité des FIPP p-cycles dans un contexte de trafic dynamique.
+Les travaux montrent que dépendamment du critère d'optimisation, les p-cycles de base
+(protégeant les liens) et les FIPP p-cycles (protégeant les chemins) peuvent être très
+stables.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">With new technologies in optical networking, an increasing quantity of data can be carried
+by a single wavelength. This amount of data can reach up to 40 gigabits per second (Gbps). Meanwhile, the individual data flows require much less bandwidth. The traffic grooming is a technique that allows the efficient use of the bandwidth offered by a wavelength.
+It consists of assembling several low-speed data streams into a single data entity that can be carried on a wavelength.
+The wavelength division multiplexing (WDM) technique allows carrying multiple wavelengths on a single fiber. The use of the two techniques,WDMand traffic grooming, allows carrying a quantity of data in the order of terabits per second (Tbps) over a single optical fiber. Thus, the traffic protection in optical networks becomes an operation very vital for these networks, since a single failure can disrupt thousands of users and may result in several millions of dollars of lost revenue to the operator and the network users.
+The survivability techniques involve reserving additional capacity to carry traffic in case of a failure in the network.
+This thesis concerns the study of the techniques of grooming and protection of traffic using p-cycles in optical networks in a context of dynamic traffic. Most existing work considers a static traffic where the network status and the traffic are given at the beginning and do not change. In addition, most of these works concerns heuristic algorithms or methods suffering from critical lack of scalability.
+In the context of dynamic traffic, two major difficulties are added to the studied problems, because of the continuous change in network traffic. The first is due to the fact
+that the solution proposed in the previous period, even if optimal, does not necessarily
+remain optimal in the current period. Thus, a re-optimization of the solution to the problem is required. The second difficulty is due to the fact that the solution of the
+problem for a given period is different from its solution for the initial period because of the ongoing connections in the network that should not be too disturbed at each time
+period.
+The study done on the traffic grooming technique in the context of dynamic traffic consists of proposing different scenarios for dealing with this type of traffic, with the
+objective of maximizing the bandwidth of the new granted connections at each time period.
+Mathematical formulations of the different considered scenarios for the grooming problem are proposed.
+The work we have done on the problem of protection considers two types of p-cycles,
+those protecting links and FIPP p-cycles (p-cycle protecting paths). This work consisted
+primarily on the proposition of different scenarios for managing protection p-cycles in
+a context of dynamic traffic. Then, a study on the stability of cycles in the context of dynamic traffic was done. Formulations of different scenarios have been proposed and the proposed solution methods allow the approach of larger problem instances than those reported in the literature. We rely on the method of column generation to implicitly
+enumerate promising cycles.
+In the study of path protecting p-cycles or FIPP p-cycles, we proposed mathematical formulations for the master and the pricing problems. We used a hierarchical decomposition of the problem which allows us to obtain better results in a reasonable time. As for the basic p-cycles, we studied the stability of FIPP p-cycles in the context of dynamic traffic. The work shows that depending on the optimization criterion, the basic p-cycles (protecting the links) and FIPP p-cycles (protecting paths) can be very stable.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F5346&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Informatique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/5346/Ammar_Metnani_2011_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/5346/Ammar_Metnani_2011_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Ammar_Metnani_2011_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/5346/Ammar_Metnani_2011_these.pdf?sequence=4&amp;isAllowed=y">Ammar_Metnani_2011_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">2.706Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3001/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/3001">Faculté des arts et des sciences – Département d'informatique et de recherche opérationnelle - Thèses et mémoires</a> [795]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/5346">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

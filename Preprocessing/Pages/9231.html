@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Développement de modèles prédictifs de la toxicocinétique de substances organiques</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Krishnan, Kannan" name="DC.contributor">
+<meta content="Peyret, Thomas" name="DC.creator">
+<meta content="2013-03-27T16:01:21Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2013-03-27T16:01:21Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2013-03-01" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2013-02" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/9231" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Toxicocinétique" name="DC.subject" xml:lang="en"/>
+<meta content="Modélisation pharmacocinétique à base physiologique" name="DC.subject" xml:lang="en"/>
+<meta content="Relation quantitative structure-propriété" name="DC.subject" xml:lang="en"/>
+<meta content="Relation quantitative propriété-propriété" name="DC.subject" xml:lang="en"/>
+<meta content="Simulation Monte Carlo" name="DC.subject" xml:lang="en"/>
+<meta content="Monte Carlo par chaîne de Markov" name="DC.subject" xml:lang="en"/>
+<meta content="Coefficient de partage" name="DC.subject" xml:lang="en"/>
+<meta content="Métabolisme" name="DC.subject" xml:lang="en"/>
+<meta content="Analyse d’incertitude" name="DC.subject" xml:lang="en"/>
+<meta content="Dosimétrie cellulaire" name="DC.subject" xml:lang="en"/>
+<meta content="Toxicokinetics" name="DC.subject" xml:lang="en"/>
+<meta content="Physiologically based pharmacokinetic modeling" name="DC.subject" xml:lang="en"/>
+<meta content="Quantitative structure-property relationship" name="DC.subject" xml:lang="en"/>
+<meta content="Quantitative property-property relationship" name="DC.subject" xml:lang="en"/>
+<meta content="Monte Carlo simulation" name="DC.subject" xml:lang="en"/>
+<meta content="Markov chain Monte Carlo" name="DC.subject" xml:lang="en"/>
+<meta content="Partition coefficient" name="DC.subject" xml:lang="en"/>
+<meta content="Metabolism" name="DC.subject" xml:lang="en"/>
+<meta content="Uncertainty analysis" name="DC.subject" xml:lang="en"/>
+<meta content="Cellular dosimetry" name="DC.subject" xml:lang="en"/>
+<meta content="Health Sciences - Toxicology / Sciences de la santé - Toxicologie (UMI : 0383)" name="DC.subject" xml:lang="en"/>
+<meta content="Développement de modèles prédictifs de la toxicocinétique de substances organiques" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Les modèles pharmacocinétiques à base physiologique (PBPK) permettent de simuler la dose interne de substances chimiques sur la base de paramètres spécifiques à l’espèce et à la substance. Les modèles de relation quantitative structure-propriété (QSPR) existants permettent d’estimer les paramètres spécifiques au produit (coefficients de partage (PC) et constantes de métabolisme) mais leur domaine d’application est limité par leur manque de considération de la variabilité de leurs paramètres d’entrée ainsi que par leur domaine d’application restreint (c. à d., substances contenant CH3, CH2, CH, C, C=C, H, Cl, F, Br, cycle benzénique et H sur le cycle benzénique). L’objectif de cette étude est de développer de nouvelles connaissances et des outils afin d’élargir le domaine d’application des modèles QSPR-PBPK pour prédire la toxicocinétique de substances organiques inhalées chez l’humain. D’abord, un algorithme mécaniste unifié a été développé à partir de modèles existants pour prédire les PC de 142 médicaments et polluants environnementaux aux niveaux macro (tissu et sang) et micro (cellule et fluides biologiques) à partir de la composition du tissu et du sang et de propriétés physicochimiques. L’algorithme résultant a été appliqué pour prédire les PC tissu:sang, tissu:plasma et tissu:air du muscle (n = 174), du foie (n = 139) et du tissu adipeux (n = 141) du rat pour des médicaments acides, basiques et neutres ainsi que pour des cétones, esters d’acétate, éthers, alcools, hydrocarbures aliphatiques et aromatiques. Un modèle de relation quantitative propriété-propriété (QPPR) a été développé pour la clairance intrinsèque (CLint) in vivo (calculée comme le ratio du Vmax (μmol/h/kg poids de rat) sur le Km (μM)), de substrats du CYP2E1 (n = 26) en fonction du PC n octanol:eau, du PC sang:eau et du potentiel d’ionisation). Les prédictions du QPPR, représentées par les limites inférieures et supérieures de l’intervalle de confiance à 95% à la moyenne, furent ensuite intégrées dans un modèle PBPK humain.  Subséquemment, l’algorithme de PC et le QPPR pour la CLint furent intégrés avec des modèles QSPR pour les PC hémoglobine:eau et huile:air pour simuler la pharmacocinétique et la dosimétrie cellulaire d’inhalation de composés organiques volatiles (COV) (benzène, 1,2-dichloroéthane, dichlorométhane, m-xylène, toluène, styrène, 1,1,1 trichloroéthane et 1,2,4 trimethylbenzène) avec un modèle PBPK chez le rat.   Finalement, la variabilité de paramètres de composition des tissus et du sang de l’algorithme pour les PC tissu:air chez le rat et sang:air chez l’humain a été caractérisée par des simulations Monte Carlo par chaîne de Markov (MCMC). Les distributions résultantes ont été utilisées pour conduire des simulations Monte Carlo pour prédire des PC tissu:sang et sang:air. Les distributions de PC, avec celles des paramètres physiologiques et du contenu en cytochrome P450 CYP2E1, ont été incorporées dans un modèle PBPK pour caractériser la variabilité de la toxicocinétique sanguine de quatre COV (benzène, chloroforme, styrène et trichloroéthylène)  par simulation Monte Carlo. Globalement, les approches quantitatives mises en œuvre pour les  PC et la CLint dans cette étude ont permis l’utilisation de descripteurs moléculaires génériques plutôt que de fragments moléculaires spécifiques pour prédire  la pharmacocinétique de substances organiques chez l’humain.  La présente étude a, pour la première fois, caractérisé  la variabilité des paramètres biologiques des algorithmes de PC pour étendre l’aptitude des modèles PBPK à prédire les distributions, pour la population, de doses internes de substances organiques avant de faire des tests chez l’animal ou l’humain." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="Physiologically-based pharmacokinetic (PBPK) models simulate the internal dose metrics of chemicals based on species-specific and chemical-specific parameters. The existing quantitative structure-property relationships (QSPRs) allow to estimate the chemical-specific parameters (partition coefficients (PCs) and metabolic constants) but their applicability is limited by their lack of consideration of variability in input parameters and their restricted application domain (i.e., substances containing CH3, CH2, CH, C, C=C, H, Cl, F, Br, benzene ring and H in benzene ring). The objective of this study was to develop new knowledge and tools to increase the applicability domain of QSPR-PBPK models for predicting the inhalation toxicokinetics of organic compounds in humans.  First, a unified mechanistic algorithm was developed from existing models to predict macro (tissue and blood) and micro (cell and biological fluid) level PCs of 142 drugs and environmental pollutants on the basis of tissue and blood composition along with physicochemical properties. The resulting algorithm was applied to compute the tissue:blood, tissue:plasma and tissue:air PCs in rat muscle (n = 174), liver (n = 139) and adipose tissue (n = 141) for acidic, neutral, zwitterionic and basic drugs as well as ketones, acetate esters, alcohols, ethers, aliphatic and aromatic hydrocarbons.  Then, a quantitative property-property relationship (QPPR) model was developed for the in vivo rat intrinsic clearance (CLint) (calculated as the ratio of the in vivo Vmax (μmol/h/kg bw rat) to the Km (μM)) of CYP2E1 substrates (n = 26) as a function of n-octanol:water PC, blood:water PC, and ionization potential). The predictions of the QPPR as lower and upper bounds of the 95% mean confidence intervals were then integrated within a human PBPK model.  Subsequently, the PC algorithm and QPPR for CLint were integrated along with a QSPR model for the hemoglobin:water and oil:air PCs to simulate the inhalation pharmacokinetics and cellular dosimetry of volatile organic compounds (VOCs) (benzene, 1,2-dichloroethane, dichloromethane, m-xylene, toluene, styrene, 1,1,1-trichloroethane and 1,2,4 trimethylbenzene) using a PBPK model for rats.  Finally, the variability in the tissue and blood composition parameters of the PC algorithm for rat tissue:air and human blood:air PCs was characterized by performing Markov chain Monte Carlo (MCMC) simulations. The resulting distributions were used for conducting Monte Carlo simulations to predict tissue:blood and blood:air PCs for VOCs. The distributions of PCs, along with distributions of physiological parameters and CYP2E1 content, were then incorporated within a PBPK model, to characterize the human variability of the blood toxicokinetics of four VOCs (benzene, chloroform, styrene and trichloroethylene) using Monte Carlo simulations. Overall, the quantitative approaches for PCs and CLint implemented in this study allow the use of generic molecular descriptors rather than specific molecular fragments to predict the pharmacokinetics of organic substances in humans.  In this process, the current study has, for the first time, characterized the variability of the biological input parameters of the PC algorithms to expand the ability of PBPK models to predict the population distributions of the internal dose metrics of organic substances prior to testing in animals or humans." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Toxicocinétique; Modélisation pharmacocinétique à base physiologique; Relation quantitative structure-propriété; Relation quantitative propriété-propriété; Simulation Monte Carlo; Monte Carlo par chaîne de Markov; Coefficient de partage; Métabolisme; Analyse d’incertitude; Dosimétrie cellulaire; Toxicokinetics; Physiologically based pharmacokinetic modeling; Quantitative structure-property relationship; Quantitative property-property relationship; Monte Carlo simulation; Markov chain Monte Carlo; Partition coefficient; Metabolism; Uncertainty analysis; Cellular dosimetry; Health Sciences - Toxicology / Sciences de la santé - Toxicologie (UMI : 0383); Thèse ou mémoire / Thesis or Dissertation; Santé publique" name="citation_keywords"/>
+<meta content="Développement de modèles prédictifs de la toxicocinétique de substances organiques" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Peyret, Thomas" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/9231/4/Peyret_Thomas_2013_these.pdf" name="citation_pdf_url"/>
+<meta content="2013-03-01" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/9231" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9231?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9231?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9231?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9231?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9231?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9231?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/9231/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/9231">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/9231/mets.xml-->
+<h2 class="page-header first-page-header">Développement de modèles prédictifs de la toxicocinétique de substances organiques</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Krishnan, Kannan</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Peyret, Thomas</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2013-03-27T16:01:21Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2013-03-27T16:01:21Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2013-03-01</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2013-02</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/9231</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Toxicocinétique</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Modélisation pharmacocinétique à base physiologique</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Relation quantitative structure-propriété</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Relation quantitative propriété-propriété</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Simulation Monte Carlo</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Monte Carlo par chaîne de Markov</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Coefficient de partage</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Métabolisme</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Analyse d’incertitude</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Dosimétrie cellulaire</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Toxicokinetics</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Physiologically based pharmacokinetic modeling</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Quantitative structure-property relationship</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Quantitative property-property relationship</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Monte Carlo simulation</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Markov chain Monte Carlo</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Partition coefficient</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Metabolism</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Uncertainty analysis</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Cellular dosimetry</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Health Sciences - Toxicology / Sciences de la santé - Toxicologie (UMI : 0383)</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Développement de modèles prédictifs de la toxicocinétique de substances organiques</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Santé publique</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">D. Th. &amp; Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les modèles pharmacocinétiques à base physiologique (PBPK) permettent de simuler la dose interne de substances chimiques sur la base de paramètres spécifiques à l’espèce et à la substance. Les modèles de relation quantitative structure-propriété (QSPR) existants permettent d’estimer les paramètres spécifiques au produit (coefficients de partage (PC) et constantes de métabolisme) mais leur domaine d’application est limité par leur manque de considération de la variabilité de leurs paramètres d’entrée ainsi que par leur domaine d’application restreint (c. à d., substances contenant CH3, CH2, CH, C, C=C, H, Cl, F, Br, cycle benzénique et H sur le cycle benzénique). L’objectif de cette étude est de développer de nouvelles connaissances et des outils afin d’élargir le domaine d’application des modèles QSPR-PBPK pour prédire la toxicocinétique de substances organiques inhalées chez l’humain. D’abord, un algorithme mécaniste unifié a été développé à partir de modèles existants pour prédire les PC de 142 médicaments et polluants environnementaux aux niveaux macro (tissu et sang) et micro (cellule et fluides biologiques) à partir de la composition du tissu et du sang et de propriétés physicochimiques. L’algorithme résultant a été appliqué pour prédire les PC tissu:sang, tissu:plasma et tissu:air du muscle (n = 174), du foie (n = 139) et du tissu adipeux (n = 141) du rat pour des médicaments acides, basiques et neutres ainsi que pour des cétones, esters d’acétate, éthers, alcools, hydrocarbures aliphatiques et aromatiques. Un modèle de relation quantitative propriété-propriété (QPPR) a été développé pour la clairance intrinsèque (CLint) in vivo (calculée comme le ratio du Vmax (μmol/h/kg poids de rat) sur le Km (μM)), de substrats du CYP2E1 (n = 26) en fonction du PC n octanol:eau, du PC sang:eau et du potentiel d’ionisation). Les prédictions du QPPR, représentées par les limites inférieures et supérieures de l’intervalle de confiance à 95% à la moyenne, furent ensuite intégrées dans un modèle PBPK humain.  Subséquemment, l’algorithme de PC et le QPPR pour la CLint furent intégrés avec des modèles QSPR pour les PC hémoglobine:eau et huile:air pour simuler la pharmacocinétique et la dosimétrie cellulaire d’inhalation de composés organiques volatiles (COV) (benzène, 1,2-dichloroéthane, dichlorométhane, m-xylène, toluène, styrène, 1,1,1 trichloroéthane et 1,2,4 trimethylbenzène) avec un modèle PBPK chez le rat.   Finalement, la variabilité de paramètres de composition des tissus et du sang de l’algorithme pour les PC tissu:air chez le rat et sang:air chez l’humain a été caractérisée par des simulations Monte Carlo par chaîne de Markov (MCMC). Les distributions résultantes ont été utilisées pour conduire des simulations Monte Carlo pour prédire des PC tissu:sang et sang:air. Les distributions de PC, avec celles des paramètres physiologiques et du contenu en cytochrome P450 CYP2E1, ont été incorporées dans un modèle PBPK pour caractériser la variabilité de la toxicocinétique sanguine de quatre COV (benzène, chloroforme, styrène et trichloroéthylène)  par simulation Monte Carlo. Globalement, les approches quantitatives mises en œuvre pour les  PC et la CLint dans cette étude ont permis l’utilisation de descripteurs moléculaires génériques plutôt que de fragments moléculaires spécifiques pour prédire  la pharmacocinétique de substances organiques chez l’humain.  La présente étude a, pour la première fois, caractérisé  la variabilité des paramètres biologiques des algorithmes de PC pour étendre l’aptitude des modèles PBPK à prédire les distributions, pour la population, de doses internes de substances organiques avant de faire des tests chez l’animal ou l’humain.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Physiologically-based pharmacokinetic (PBPK) models simulate the internal dose metrics of chemicals based on species-specific and chemical-specific parameters. The existing quantitative structure-property relationships (QSPRs) allow to estimate the chemical-specific parameters (partition coefficients (PCs) and metabolic constants) but their applicability is limited by their lack of consideration of variability in input parameters and their restricted application domain (i.e., substances containing CH3, CH2, CH, C, C=C, H, Cl, F, Br, benzene ring and H in benzene ring). The objective of this study was to develop new knowledge and tools to increase the applicability domain of QSPR-PBPK models for predicting the inhalation toxicokinetics of organic compounds in humans.  First, a unified mechanistic algorithm was developed from existing models to predict macro (tissue and blood) and micro (cell and biological fluid) level PCs of 142 drugs and environmental pollutants on the basis of tissue and blood composition along with physicochemical properties. The resulting algorithm was applied to compute the tissue:blood, tissue:plasma and tissue:air PCs in rat muscle (n = 174), liver (n = 139) and adipose tissue (n = 141) for acidic, neutral, zwitterionic and basic drugs as well as ketones, acetate esters, alcohols, ethers, aliphatic and aromatic hydrocarbons.  Then, a quantitative property-property relationship (QPPR) model was developed for the in vivo rat intrinsic clearance (CLint) (calculated as the ratio of the in vivo Vmax (μmol/h/kg bw rat) to the Km (μM)) of CYP2E1 substrates (n = 26) as a function of n-octanol:water PC, blood:water PC, and ionization potential). The predictions of the QPPR as lower and upper bounds of the 95% mean confidence intervals were then integrated within a human PBPK model.  Subsequently, the PC algorithm and QPPR for CLint were integrated along with a QSPR model for the hemoglobin:water and oil:air PCs to simulate the inhalation pharmacokinetics and cellular dosimetry of volatile organic compounds (VOCs) (benzene, 1,2-dichloroethane, dichloromethane, m-xylene, toluene, styrene, 1,1,1-trichloroethane and 1,2,4 trimethylbenzene) using a PBPK model for rats.  Finally, the variability in the tissue and blood composition parameters of the PC algorithm for rat tissue:air and human blood:air PCs was characterized by performing Markov chain Monte Carlo (MCMC) simulations. The resulting distributions were used for conducting Monte Carlo simulations to predict tissue:blood and blood:air PCs for VOCs. The distributions of PCs, along with distributions of physiological parameters and CYP2E1 content, were then incorporated within a PBPK model, to characterize the human variability of the blood toxicokinetics of four VOCs (benzene, chloroform, styrene and trichloroethylene) using Monte Carlo simulations. Overall, the quantitative approaches for PCs and CLint implemented in this study allow the use of generic molecular descriptors rather than specific molecular fragments to predict the pharmacokinetics of organic substances in humans.  In this process, the current study has, for the first time, characterized the variability of the biological input parameters of the PC algorithms to expand the ability of PBPK models to predict the population distributions of the internal dose metrics of organic substances prior to testing in animals or humans.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F9231&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sant%C3%A9+publique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=D.+Th.+%26+Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/9231/Peyret_Thomas_2013_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/9231/Peyret_Thomas_2013_these.pdf.jpg?sequence=8&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Peyret_Thomas_2013_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/9231/Peyret_Thomas_2013_these.pdf?sequence=4&amp;isAllowed=y">Peyret_Thomas_2013_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">2.535Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse ">Thèse </dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10094/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a> [603]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/9231">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

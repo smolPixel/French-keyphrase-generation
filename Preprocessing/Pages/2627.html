@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Évaluation neurobiologique des souris spontanément hypertendues :
+Du vieillissement à la génomique comparative</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Hamet, Pavel" name="DC.contributor">
+<meta content="Lalonde, Robert" name="DC.contributor">
+<meta content="Thifault, Stéphane" name="DC.creator">
+<meta content="2009-02-02T20:52:30Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2009-02-02T20:52:30Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2008-12-04" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2007-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/2627" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Anxiété" name="DC.subject" xml:lang="en"/>
+<meta content="Anxiety" name="DC.subject" xml:lang="en"/>
+<meta content="Exploration" name="DC.subject" xml:lang="en"/>
+<meta content="Exploration" name="DC.subject" xml:lang="en"/>
+<meta content="Coordination motrice" name="DC.subject" xml:lang="en"/>
+<meta content="Motor coordination" name="DC.subject" xml:lang="en"/>
+<meta content="Apprentissage spatial" name="DC.subject" xml:lang="en"/>
+<meta content="Spatial learning" name="DC.subject" xml:lang="en"/>
+<meta content="Vieillissement" name="DC.subject" xml:lang="en"/>
+<meta content="Aging" name="DC.subject" xml:lang="en"/>
+<meta content="Souches recombinantes congéniques" name="DC.subject" xml:lang="en"/>
+<meta content="Recombinant congenic strains" name="DC.subject" xml:lang="en"/>
+<meta content="Locus de trait quantitatif (QTL)" name="DC.subject" xml:lang="en"/>
+<meta content="Quantitative Trait Loci" name="DC.subject" xml:lang="en"/>
+<meta content="Hypertension" name="DC.subject" xml:lang="en"/>
+<meta content="Hypertension" name="DC.subject" xml:lang="en"/>
+<meta content="Gènes candidats" name="DC.subject" xml:lang="en"/>
+<meta content="Candidate genes" name="DC.subject" xml:lang="en"/>
+<meta content="Polymorphismes sur un nucléotide" name="DC.subject" xml:lang="en"/>
+<meta content="Single nucleotide polymorphisms" name="DC.subject" xml:lang="en"/>
+<meta content="Biology - Genetics / Biologie - Génétique (UMI : 0369)" name="DC.subject" xml:lang="en"/>
+<meta content="Évaluation neurobiologique des souris spontanément hypertendues :
+Du vieillissement à la génomique comparative" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Le but de cette thèse est premièrement d’évaluer l’effet du vieillissement sur les fonctions psychomotrices des souches de souris sélectionnées génétiquement en fonction de leur tension artérielle (TA); deuxièmement, de localiser les déterminants génétiques des phénotypes psychophysiologiques à partir de souches recombinantes congéniques (RCS). Ces travaux ont mené à la publication de 4 articles. Le premier article décrit l’évaluation des fonctions psychomotrices des souches avec une tension artérielle élevée (HBP), basse (LBP) et normale (NBP). La performance aux épreuves d’exploration, d’habiletés motrices et d’apprentissage spatial, a été mesurée sur deux cohortes âgées respectivement de 12 mois et de trois mois. Indépendamment de l’âge, les HBPs sont hyperactives dans l’open-field (OF), mais pas dans le test d’exploration de trous. Inversement, les LBP explorent moins d’espaces que les NBP et, à trois mois seulement, sont hypoactives dans l’OF. Par ailleurs, les HBPs et les LBP présentent des déficits précoces de coordination motrice et des fonctions visuo-motrices. Le second article concerne l’évaluation longitudinale de la coordination motrice, de l’anxiété et de l’apprentissage spatial des souches HBP, LBP et NBP, à l’âge de deux mois et de 12 mois. Le vieillissement accentue l’hyperactivité des HBPs dans l’OF. Par contre, l’hypoactivité des souris LBP est détectable seulement à l’âge de deux mois. Indépendamment de l’âge, les souris HBP et LBP montrent une perception réduite du danger dans l’épreuve d’anxiété et des dysfonctions visuo-motrices au labyrinthe aquatique. Enfin, des déficits précoces de coordination motrice se manifestent seulement chez les HBPs. Il reste à déterminer si les déficits observés sont liés à des déterminants génétiques indépendants ou secondaires aux altérations de la tension artérielle. Le troisième article présente la comparaison entre les souches consanguines A/J et C57Bl/6J (B6) aux épreuves de l’OF, de la planche à trous, du labyrinthe aquatique et du cintre (coordination motrice). Les B6 explore d’avantage l’OF et la planche à trous. Les B6 sont moins rapides sur le cintre, mais supérieurs aux A/J dans le labyrinthe aquatique, avec une plate-forme invisible ou visible. Ces résultats démontrent l’implication de déterminants génétiques. 
+Cette thèse se termine par un quatrième article sur la localisation des déterminants génétiques de la susceptibilité au stress dans les RCS, dérivées de A/J et B6, et présentant un agencement spécifique  de 12.5% du génome. La réactivité émotionnelle est évaluée dans l’OF et le plus-maze; la réponse de stress est mesurée par radio télémétrie de la température interne pendant le stress d’immobilisation (SI) sous diète régulière et riche en sel; l’excrétion des électrolytes urinaires est dosée après 24 heures de diète salée. Les loci les plus significatifs sont situés dans les régions suivantes: de l’émotionalité dans l’OF (Emo1) sur le chr. 1 (LOD=4.6) correspondant à la région homologue impliquée dans la cohorte d’hypertension familiale du Saguenay; de la dopa décarboxylase (ddc) sur le chr. 11 pour l’émergence du plus-maze (LOD=4.7); de la protéine liant l’endotoxine (lbp) sur le chr. 2 pour l’hypothermie initiale en réponse au SI (LOD=4); et de HSP90 sur le chr. 12 pour l’excrétion de Ca++ (LOD=4.6). Des banques de données sont ensuite interrogées pour recenser les polymorphismes des régions régulatrices ou codantes des gènes candidats chez les souches ancestrales A/J et B6, dont les séquences sont disponibles pour le génome entier. Des utilitaires web permettent de dévoiler les changements dans la structure secondaire de l’ARNm, l’interférence avec des microARN ou avec d’autres motifs de liaison. Plusieurs SNPs fonctionnels ont été identifiés pour le QTL du chr. 1, particulièrement dans les éléments de régulation; ceux-ci impliquant des gènes reliés avec les réponses inflammatoire/immunitaire ou avec le système cardiovasculaire. La quantification par la PCR confirme une régulation à la baisse d’atp1a2 dans le cœur et le cerveau des souches susceptibles à l’anxiété. Ces résultats confirment l’intrication des altérations de la susceptibilité au stress et de la régulation de la TA." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="Our studies in this thesis, which led to 4 publications, are divided in two parts. The first part describes the neuropsychological effects of aging in strains of mice genetically selected for high (HBP), low (LBP) or normal blood pressure (NBP). The second part focuses on the genetic determinants of these neuropsychological phenotypes in recombinant congenic strains (RCS) of mice. The first manuscript compares HBP or LBP mice to normotensive controls in tests of exploration, motor coordination, and spatial learning at two age levels: 3 and 12 months. At either age, HBPs were hyperactive in an open field (OF) but not in terms of hole-poking responses. On the contrary, LBPs were hypoactive in the OF and in the hole-board, with the effect on the former measure being limited to the younger cohort. In either cohort, HBP and LBP mice were deficient in subtle aspects of motor coordination, and visuomotor function. These strains may serve as experimental models for the evaluation of beneficial early antihypertensive or antihypotensive treatments on brain function. The second study uses a longitudinal design to compare either HBP or LBP mice to normotensive controls at 2 and 12 months of age for motor coordination, anxiety, and spatial learning.  Hyperactivity of HBPs in the OF increased with aging; whereas LBP mice were hypoactive only at 2 months of age. At both age, HBP and LBP mice displayed reduced levels of anxiety in the elevated plus-maze (EPM), abnormal coordination and visuomotor guidance. It remains to determine if these strain-, age-, and test-specific abnormalities are genetically related or secondary to uncontrolled hypertension or hypotension. The following article compares the C57BL/6J (B6) to the A/J inbred mouse strain in exploration of the OF and the hole-board, in the coat-hanger coordination test, and in spatial learning of a water maze. B6 mice displayed a higher number of segment crossings in the open-field and of hole-poking responses than A/J mice. By contrast to their hypo activity, A/J strain were faster in the coat-hanger motor test, but deficient in the submerged but also in the visible platform version of the water maze. These results indicate the considerable potential of genetic models derived from B6 and A/J mice for discerning the determinants of several behavioural phenotypes.
+In the last manuscript, the genomic loci bearing stress-related phenotypes were dissected by genome wide analysis of linkage in the recombinant congenic strains (RCS), resulting from a cross of B6 and A/J progenitors, each  strain bearing 12.5% of specific parts of one progenitor on the background of the other. Adult male mice from 14 A/J and 22 B6 background lines were evaluated for emotional reactivity in the OF and the EPM. Core temperature was monitored by radio-telemetry during immobilization (IM), under standard and salt-enriched diets. In addition, urinary electrolytes were measured. The highest LOD scores strengthen the evidence for a previously reported locus for emotionality in the open-field on Chr 1 (LOD=4.6), in the Ddc region encoding dopa decarboxylase, on Chr 11 in the EPM (LOD=4.7), near Lbp (lipopolysaccharide binding protein), on Chr 2 for initial hypothermia during IM (LOD=4), as well as in the region of Hspca, encoding heat shock protein 1 alpha (48.0 cM) on Chr 12 for Ca++ excretion after a 24 hr-salt load (LOD=4.6). RCS stress QTL overlapped with several candidate loci for cardiovascular disease. In silico evidence of functional polymorphisms by comparative sequence analysis of progenitor strains assisted to ascertain this convergence, then further tested using quantitative PCR for releant genes mRNA. The anxious BcA70 strain showed down regulation of the Atp1a2 gene expression in the heart (P &lt; 0.001) and brain (P &lt; 0.05) compared to its parental B6 strain, compatible with the  enhanced emotionality described in knock out animals for this gene, also involved in the salt-sensitive component of hypertension. Functional polymorphisms in regulatory elements of candidate genes of the cardiovascular / inflammatory / immune systems support the hypothesis of genetically-altered environmental susceptibility in cardiovascular disease development." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Anxiété; Anxiety; Exploration; Exploration; Coordination motrice; Motor coordination; Apprentissage spatial; Spatial learning; Vieillissement; Aging; Souches recombinantes congéniques; Recombinant congenic strains; Locus de trait quantitatif (QTL); Quantitative Trait Loci; Hypertension; Hypertension; Gènes candidats; Candidate genes; Polymorphismes sur un nucléotide; Single nucleotide polymorphisms; Biology - Genetics / Biologie - Génétique (UMI : 0369); Thèse ou mémoire / Thesis or Dissertation; Sciences neurologiques" name="citation_keywords"/>
+<meta content="Évaluation neurobiologique des souris spontanément hypertendues :
+Du vieillissement à la génomique comparative" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Thifault, Stéphane" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/2627/4/Thifault_Stephane_2008_these.pdf" name="citation_pdf_url"/>
+<meta content="2008-12-04" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/2627" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2627?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2627?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2627?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2627?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2627?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/2627?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/2627/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/2627">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2627/mets.xml-->
+<h2 class="page-header first-page-header">Évaluation neurobiologique des souris spontanément hypertendues :
+Du vieillissement à la génomique comparative</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Hamet, Pavel</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Lalonde, Robert</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Thifault, Stéphane</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2009-02-02T20:52:30Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2009-02-02T20:52:30Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2008-12-04</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2007-12</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/2627</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Anxiété</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Anxiety</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Exploration</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Exploration</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Coordination motrice</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Motor coordination</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Apprentissage spatial</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Spatial learning</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Vieillissement</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Aging</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Souches recombinantes congéniques</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Recombinant congenic strains</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Locus de trait quantitatif (QTL)</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Quantitative Trait Loci</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Hypertension</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Hypertension</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Gènes candidats</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Candidate genes</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Polymorphismes sur un nucléotide</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Single nucleotide polymorphisms</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Genetics / Biologie - Génétique (UMI : 0369)</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Évaluation neurobiologique des souris spontanément hypertendues :
+Du vieillissement à la génomique comparative</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences neurologiques</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Le but de cette thèse est premièrement d’évaluer l’effet du vieillissement sur les fonctions psychomotrices des souches de souris sélectionnées génétiquement en fonction de leur tension artérielle (TA); deuxièmement, de localiser les déterminants génétiques des phénotypes psychophysiologiques à partir de souches recombinantes congéniques (RCS). Ces travaux ont mené à la publication de 4 articles. Le premier article décrit l’évaluation des fonctions psychomotrices des souches avec une tension artérielle élevée (HBP), basse (LBP) et normale (NBP). La performance aux épreuves d’exploration, d’habiletés motrices et d’apprentissage spatial, a été mesurée sur deux cohortes âgées respectivement de 12 mois et de trois mois. Indépendamment de l’âge, les HBPs sont hyperactives dans l’open-field (OF), mais pas dans le test d’exploration de trous. Inversement, les LBP explorent moins d’espaces que les NBP et, à trois mois seulement, sont hypoactives dans l’OF. Par ailleurs, les HBPs et les LBP présentent des déficits précoces de coordination motrice et des fonctions visuo-motrices. Le second article concerne l’évaluation longitudinale de la coordination motrice, de l’anxiété et de l’apprentissage spatial des souches HBP, LBP et NBP, à l’âge de deux mois et de 12 mois. Le vieillissement accentue l’hyperactivité des HBPs dans l’OF. Par contre, l’hypoactivité des souris LBP est détectable seulement à l’âge de deux mois. Indépendamment de l’âge, les souris HBP et LBP montrent une perception réduite du danger dans l’épreuve d’anxiété et des dysfonctions visuo-motrices au labyrinthe aquatique. Enfin, des déficits précoces de coordination motrice se manifestent seulement chez les HBPs. Il reste à déterminer si les déficits observés sont liés à des déterminants génétiques indépendants ou secondaires aux altérations de la tension artérielle. Le troisième article présente la comparaison entre les souches consanguines A/J et C57Bl/6J (B6) aux épreuves de l’OF, de la planche à trous, du labyrinthe aquatique et du cintre (coordination motrice). Les B6 explore d’avantage l’OF et la planche à trous. Les B6 sont moins rapides sur le cintre, mais supérieurs aux A/J dans le labyrinthe aquatique, avec une plate-forme invisible ou visible. Ces résultats démontrent l’implication de déterminants génétiques. 
+Cette thèse se termine par un quatrième article sur la localisation des déterminants génétiques de la susceptibilité au stress dans les RCS, dérivées de A/J et B6, et présentant un agencement spécifique  de 12.5% du génome. La réactivité émotionnelle est évaluée dans l’OF et le plus-maze; la réponse de stress est mesurée par radio télémétrie de la température interne pendant le stress d’immobilisation (SI) sous diète régulière et riche en sel; l’excrétion des électrolytes urinaires est dosée après 24 heures de diète salée. Les loci les plus significatifs sont situés dans les régions suivantes: de l’émotionalité dans l’OF (Emo1) sur le chr. 1 (LOD=4.6) correspondant à la région homologue impliquée dans la cohorte d’hypertension familiale du Saguenay; de la dopa décarboxylase (ddc) sur le chr. 11 pour l’émergence du plus-maze (LOD=4.7); de la protéine liant l’endotoxine (lbp) sur le chr. 2 pour l’hypothermie initiale en réponse au SI (LOD=4); et de HSP90 sur le chr. 12 pour l’excrétion de Ca++ (LOD=4.6). Des banques de données sont ensuite interrogées pour recenser les polymorphismes des régions régulatrices ou codantes des gènes candidats chez les souches ancestrales A/J et B6, dont les séquences sont disponibles pour le génome entier. Des utilitaires web permettent de dévoiler les changements dans la structure secondaire de l’ARNm, l’interférence avec des microARN ou avec d’autres motifs de liaison. Plusieurs SNPs fonctionnels ont été identifiés pour le QTL du chr. 1, particulièrement dans les éléments de régulation; ceux-ci impliquant des gènes reliés avec les réponses inflammatoire/immunitaire ou avec le système cardiovasculaire. La quantification par la PCR confirme une régulation à la baisse d’atp1a2 dans le cœur et le cerveau des souches susceptibles à l’anxiété. Ces résultats confirment l’intrication des altérations de la susceptibilité au stress et de la régulation de la TA.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Our studies in this thesis, which led to 4 publications, are divided in two parts. The first part describes the neuropsychological effects of aging in strains of mice genetically selected for high (HBP), low (LBP) or normal blood pressure (NBP). The second part focuses on the genetic determinants of these neuropsychological phenotypes in recombinant congenic strains (RCS) of mice. The first manuscript compares HBP or LBP mice to normotensive controls in tests of exploration, motor coordination, and spatial learning at two age levels: 3 and 12 months. At either age, HBPs were hyperactive in an open field (OF) but not in terms of hole-poking responses. On the contrary, LBPs were hypoactive in the OF and in the hole-board, with the effect on the former measure being limited to the younger cohort. In either cohort, HBP and LBP mice were deficient in subtle aspects of motor coordination, and visuomotor function. These strains may serve as experimental models for the evaluation of beneficial early antihypertensive or antihypotensive treatments on brain function. The second study uses a longitudinal design to compare either HBP or LBP mice to normotensive controls at 2 and 12 months of age for motor coordination, anxiety, and spatial learning.  Hyperactivity of HBPs in the OF increased with aging; whereas LBP mice were hypoactive only at 2 months of age. At both age, HBP and LBP mice displayed reduced levels of anxiety in the elevated plus-maze (EPM), abnormal coordination and visuomotor guidance. It remains to determine if these strain-, age-, and test-specific abnormalities are genetically related or secondary to uncontrolled hypertension or hypotension. The following article compares the C57BL/6J (B6) to the A/J inbred mouse strain in exploration of the OF and the hole-board, in the coat-hanger coordination test, and in spatial learning of a water maze. B6 mice displayed a higher number of segment crossings in the open-field and of hole-poking responses than A/J mice. By contrast to their hypo activity, A/J strain were faster in the coat-hanger motor test, but deficient in the submerged but also in the visible platform version of the water maze. These results indicate the considerable potential of genetic models derived from B6 and A/J mice for discerning the determinants of several behavioural phenotypes.
+In the last manuscript, the genomic loci bearing stress-related phenotypes were dissected by genome wide analysis of linkage in the recombinant congenic strains (RCS), resulting from a cross of B6 and A/J progenitors, each  strain bearing 12.5% of specific parts of one progenitor on the background of the other. Adult male mice from 14 A/J and 22 B6 background lines were evaluated for emotional reactivity in the OF and the EPM. Core temperature was monitored by radio-telemetry during immobilization (IM), under standard and salt-enriched diets. In addition, urinary electrolytes were measured. The highest LOD scores strengthen the evidence for a previously reported locus for emotionality in the open-field on Chr 1 (LOD=4.6), in the Ddc region encoding dopa decarboxylase, on Chr 11 in the EPM (LOD=4.7), near Lbp (lipopolysaccharide binding protein), on Chr 2 for initial hypothermia during IM (LOD=4), as well as in the region of Hspca, encoding heat shock protein 1 alpha (48.0 cM) on Chr 12 for Ca++ excretion after a 24 hr-salt load (LOD=4.6). RCS stress QTL overlapped with several candidate loci for cardiovascular disease. In silico evidence of functional polymorphisms by comparative sequence analysis of progenitor strains assisted to ascertain this convergence, then further tested using quantitative PCR for releant genes mRNA. The anxious BcA70 strain showed down regulation of the Atp1a2 gene expression in the heart (P &lt; 0.001) and brain (P &lt; 0.05) compared to its parental B6 strain, compatible with the  enhanced emotionality described in knock out animals for this gene, also involved in the salt-sensitive component of hypertension. Functional polymorphisms in regulatory elements of candidate genes of the cardiovascular / inflammatory / immune systems support the hypothesis of genetically-altered environmental susceptibility in cardiovascular disease development.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F2627&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+neurologiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/2627/Thifault_Stephane_2008_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/2627/Thifault_Stephane_2008_these.pdf.jpg?sequence=8&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Thifault_Stephane_2008_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/2627/Thifault_Stephane_2008_these.pdf?sequence=4&amp;isAllowed=y">Thifault_Stephane_2008_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">2.796Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/2627">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

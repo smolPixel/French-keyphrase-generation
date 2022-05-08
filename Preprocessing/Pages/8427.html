@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Développement d'un indice de vulnérabilité à l'érosion éolienne à partir d'images satellitales, dans le Bassin arachidier du Sénégal : cas de la région de Thiès</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Cavayas, François" name="DC.contributor">
+<meta content="Cissokho, Robert" name="DC.creator">
+<meta content="2012-09-06T18:37:48Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2012-09-06T18:37:48Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2012-07-05" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2011-07" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/8427" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Érosion éolienne" name="DC.subject" xml:lang="en"/>
+<meta content="Images satellitales" name="DC.subject" xml:lang="en"/>
+<meta content="Modélisation" name="DC.subject" xml:lang="en"/>
+<meta content="Indice de vulnérabilité des sols" name="DC.subject" xml:lang="en"/>
+<meta content="Wind erosion" name="DC.subject" xml:lang="en"/>
+<meta content="Satellite imagery" name="DC.subject" xml:lang="en"/>
+<meta content="Multicriteria modeling" name="DC.subject" xml:lang="en"/>
+<meta content="Soils vulnerability index" name="DC.subject" xml:lang="en"/>
+<meta content="Earth Sciences - Remote Sensing / Sciences de la Terre - Télédétection (UMI : 0799)" name="DC.subject" xml:lang="en"/>
+<meta content="Développement d'un indice de vulnérabilité à l'érosion éolienne à partir d'images satellitales, dans le Bassin arachidier du Sénégal : cas de la région de Thiès" name="DC.title"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="L’érosion éolienne est un problème environnemental parmi les plus sévères dans les régions arides, semi-arides et les régions sèches sub-humides de la planète. L’érosion des sols accélérée par le vent provoque des dommages à la fois localement et régionalement. Sur le plan local, elle cause la baisse des nutriments par la mobilisation des particules les plus fines et de la matière organique. Cette mobilisation est une des causes de perte de fertilité des sols avec comme conséquence, une chute de la productivité agricole et une réduction de la profondeur de la partie arable. Sur le plan régional, les tempêtes de poussières soulevées par le vent ont un impact non négligeable sur la santé des populations, et la déposition des particules affecte les équipements hydrauliques tels que les canaux à ciel ouvert ainsi que les infrastructures notamment de transport.
+
+Dans les régions où les sols sont fréquemment soumis à l’érosion éolienne, les besoins pour des études qui visent à caractériser spatialement les sols selon leur degré de vulnérabilité sont grands. On n’a qu’à penser aux autorités administratives qui doivent décider des mesures à prendre pour préserver et conserver les potentialités agropédologiques des sols, souvent avec des ressources financières modestes mises à leur disposition. Or, dans certaines de ces régions, comme notre territoire d’étude, la région de Thiès au Sénégal, ces études font défaut. En effet, les quelques études effectuées dans cette région ou dans des contextes géographiques similaires ont un caractère plutôt local et les approches suivies (modèles de pertes des sols) nécessitent un nombre substantiel de données pour saisir la variabilité spatiale de la dynamique des facteurs qui interviennent dans le processus de l’érosion éolienne. La disponibilité de ces données est particulièrement problématique dans les pays en voie de développement, à cause de la pauvreté en infrastructures et des problèmes de ressources pour le monitoring continu des variables environnementales. 
+
+
+
+L’approche mise de l’avant dans cette recherche vise à combler cette lacune en recourant principalement à l’imagerie satellitale, et plus particulièrement celle provenant des satellites Landsat-5 et Landsat-7. Les images Landsat couvrent la presque totalité de la zone optique du spectre exploitable par télédétection (visible, proche infrarouge, infrarouge moyen et thermique) à des résolutions relativement fines (quelques dizaines de mètres). Elles permettant ainsi d’étudier la distribution spatiale des niveaux de vulnérabilité des sols avec un niveau de détails beaucoup plus fin que celui obtenu avec des images souvent utilisées dans des études environnementales telles que AVHRR de la série de satellites NOAA (résolution kilométrique). De plus, l’archive complet des images Landsat-5 et Landsat-7 couvrant une période de plus de 20 ans est aujourd’hui facilement accessible.
+
+Parmi les paramètres utilisés dans les modèles d’érosion éolienne, nous avons identifiés ceux qui sont estimables par l’imagerie satellitale soit directement (exemple, fraction du couvert végétal) soit indirectement (exemple, caractérisation des sols par leur niveau d’érodabilité). En exploitant aussi le peu de données disponibles dans la région (données climatiques, carte morphopédologique) nous avons élaboré une base de données décrivant l’état des lieux dans la période de 1988 à 2002 et ce, selon les deux saisons caractéristiques de la région : la saison des pluies et la saison sèche. Ces données par date d’acquisition des images Landsat utilisées ont été considérées comme des intrants (critères) dans un modèle empirique que nous avons élaboré en modulant l’impact de chacun des critères (poids et scores). À l’aide de ce modèle, nous avons créé des cartes montrant les degrés de vulnérabilité dans la région à l’étude, et ce par date d’acquisition des images Landsat. Suite à une série de tests pour valider la cohérence interne du modèle, nous avons analysé nos cartes afin de conclure sur la dynamique du processus pendant la période d’étude. 
+
+Nos principales conclusions sont les suivantes : 1) le modèle élaboré montre une bonne cohérence interne et est sensible aux variations spatiotemporelles des facteurs pris en considération 2); tel qu’attendu, parmi les facteurs utilisés pour expliquer la vulnérabilité des sols, la végétation vivante et l’érodabilité sont les plus importants ; 3) ces deux facteurs présentent une variation importante intra  et inter-saisonnière de sorte qu’il est difficile de dégager des tendances à long terme bien que certaines parties du territoire (Nord et Est) aient des indices de vulnérabilité forts, peu importe la saison ; 4) l’analyse diachronique des cartes des indices de vulnérabilité confirme le caractère saisonnier des niveaux de vulnérabilité dans la mesure où les superficies occupées par les faibles niveaux de vulnérabilité augmentent en saison des pluies, donc lorsque l’humidité surfacique et la végétation active notamment sont importantes, et décroissent en saison sèche ; 5) la susceptibilité, c’est-à-dire l’impact du vent sur la vulnérabilité est d’autant plus forte que la vitesse du vent est élevée et que la vulnérabilité est forte. Sur les zones où la vulnérabilité est faible, les vitesses de vent élevées ont moins d’impact. 
+
+Dans notre étude, nous avons aussi inclus une analyse comparative entre les facteurs extraits des images Landsat et celles des images hyperspectrales du satellite expérimental HYPERION. Bien que la résolution spatiale de ces images soit similaire à celle de Landsat, les résultats obtenus à partir des images HYPERION révèlent un niveau de détail supérieur grâce à la résolution spectrale de ce capteur permettant de mieux choisir les bandes spectrales qui réagissent le plus avec le facteur étudié. Cette étude comparative démontre que dans un futur rapproché, l’amélioration de l’accessibilité à ce type d’images permettra de raffiner davantage le calcul de l’indice de vulnérabilité par notre modèle. En attendant cette possibilité, on peut de contenter de l’imagerie Landsat qui offre un support d’informations permettant tout de même d’évaluer le niveau de fragilisation des sols par l’action du vent et par la dynamique des caractéristiques des facteurs telles que la couverture végétale aussi bien vivante que sénescente." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content='Wind erosion is an environmental issue among the most critical one in arid, semi-arid and dry sub-humid regions of the planet. Soil erosion accelerated by the wind action causes damages both locally and regionally. Locally, wind erosion decreases the soil nutrients by the mobilization of finer particles and organic matter. This mobilization is one of the causes of lost of soil fertility with lead to the drop in agricultural productivity and to the reduction of the topsoil depth. Regionally, dust storms raised by the wind have a significant impact on population health and infrastructure because of particles deposition.
+
+In areas where soils are frequently submitted to wind aggressions, studies are urgently required in order to spatially characterize the soils according to their degree of vulnerability. Such characterization is important for many reasons, especially for administrative authorities who must decide what action to undertake in order to preserve and conserve the agricultural potentialities of soils, often with limited financial resources available. However, in some regions, as in our study area, the region of Thiès in Senegal, such studies are lacking. In fact, in regions where soil erosion is active, the studies undertaken are much localized because of their approaches (soil erosion models) which require a substantial amount of data for short intervals of time to "capture" the spatial variability of the dynamics of the factors involved in the process of wind erosion. The availability of these data at a regional level is particularly problematic in developing countries because infrastructures and resources to support continuous monitoring of environmental variables are not always available.
+
+The approach in this research aims to fill this gap, mainly through satellite imagery and more particularly those provided by Landsat-5 and Landsat-7. Landsat images cover almost the entire optical spectrum (visible, near/mid/thermal infrared) at resolutions which allow to characterize spatially the soils, according to their vulnerability at a finer level (decametric resolution) than what is possible with satellite imagery often used in environmental studies (AVHRR images from the NOAA satellite series) with a kilometric resolution. In addition, the full archive of Landsat-5 and -7 covering more than 20 years is now easily accessible. This is an undeniable asset in order to study the dynamics of the process affecting soils vulnerability to wind erosion. 
+
+Taking into account the parameters used in wind erosion models (climate, soil, vegetation), we have identified those we can estimate from satellite imagery either directly (e.g. fractional vegetation cover) or indirectly (e.g. characterization of soils by their degree of degradation). Using Landsat images acquired during to the two seasons of the region (rainy and dry season) as well as climatic data and the existing low scale soil map of the region, we developed a database describing the environmental conditions from 1988 to 2002. These data were then considered as inputs (criteria) in an empirical model we made, by modulating the impact of each criterion (weight and score). By this model, we created maps showing the degree of vulnerability (vulnerability index) of the region by date according to Landsat image acquisition date. Several tests are done to validate the internal consistency of the model. To evaluate the dynamic of the erosion process for the period we studied, we have compared our maps.
+
+Our principal conclusions are as follows: 1) the proposed model has a good internal consistency and is sensitive to spatial and temporal variation of the factors taken into consideration; 2) as expected, among the factors used to explain soil vulnerability, erodibility and fractional green vegetation cover are the most important; 3) these two factors present a high intra and inter-season variation so that it is difficult to bring out long term trends even if some parts of the territory (North and East) have high vulnerability indices regardless of season; 4) the diachronic analysis of vulnerability index maps shows seasonal trend because areas with low vulnerability indices are increasing in rainy season, when the surface moisture is higher and vegetation is particularly active, and significantly decrease in dry season; 5) as expected, susceptibility, or the impact of wind on vulnerability, is stronger when the wind speed is high and vulnerability is high. In areas where vulnerability is low, an increase in wind speed has less impact.
+
+In our study we have also included a comparative analysis of some factors derived from Landsat images and from the hyperspectral sensor of the experimental satellite HYPERION. Even if spatial resolution of the images provided by both sensors is similar, the accuracy of factors extracted from the hyperspectral images is definitely higher. This is due to the spectral resolution of the sensor which permits the selection of appropriate bands with the highest level of interaction with the factor of interest. This comparative study shows that in the near future, the accessibility to this type of images will improve the calculation of the index of vulnerability by our model. For now, Landsat imagery provides very interesting information to monitor the process of soil erosion by wind.' name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Érosion éolienne; Images satellitales; Modélisation; Indice de vulnérabilité des sols; Wind erosion; Satellite imagery; Multicriteria modeling; Soils vulnerability index; Earth Sciences - Remote Sensing / Sciences de la Terre - Télédétection (UMI : 0799); Thèse ou mémoire / Thesis or Dissertation; Géographie" name="citation_keywords"/>
+<meta content="Développement d'un indice de vulnérabilité à l'érosion éolienne à partir d'images satellitales, dans le Bassin arachidier du Sénégal : cas de la région de Thiès" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Cissokho, Robert" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/8427/2/Cissokho_Robert_2011_these.pdf" name="citation_pdf_url"/>
+<meta content="2012-07-05" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/8427" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8427?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8427?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8427?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8427?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8427?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8427?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2945" role="menuitem">Faculté des arts et des sciences – Département de géographie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2984" role="menuitem">Faculté des arts et des sciences – Département de géographie - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2945">Faculté des arts et des sciences – Département de géographie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2984">Faculté des arts et des sciences – Département de géographie - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2984"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/8427/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/8427">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/8427/mets.xml-->
+<h2 class="page-header first-page-header">Développement d'un indice de vulnérabilité à l'érosion éolienne à partir d'images satellitales, dans le Bassin arachidier du Sénégal : cas de la région de Thiès</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Cavayas, François</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Cissokho, Robert</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2012-09-06T18:37:48Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2012-09-06T18:37:48Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2012-07-05</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2011-07</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/8427</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Érosion éolienne</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Images satellitales</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Modélisation</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Indice de vulnérabilité des sols</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Wind erosion</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Satellite imagery</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Multicriteria modeling</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Soils vulnerability index</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Earth Sciences - Remote Sensing / Sciences de la Terre - Télédétection (UMI : 0799)</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Développement d'un indice de vulnérabilité à l'érosion éolienne à partir d'images satellitales, dans le Bassin arachidier du Sénégal : cas de la région de Thiès</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Géographie</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">L’érosion éolienne est un problème environnemental parmi les plus sévères dans les régions arides, semi-arides et les régions sèches sub-humides de la planète. L’érosion des sols accélérée par le vent provoque des dommages à la fois localement et régionalement. Sur le plan local, elle cause la baisse des nutriments par la mobilisation des particules les plus fines et de la matière organique. Cette mobilisation est une des causes de perte de fertilité des sols avec comme conséquence, une chute de la productivité agricole et une réduction de la profondeur de la partie arable. Sur le plan régional, les tempêtes de poussières soulevées par le vent ont un impact non négligeable sur la santé des populations, et la déposition des particules affecte les équipements hydrauliques tels que les canaux à ciel ouvert ainsi que les infrastructures notamment de transport.
+
+Dans les régions où les sols sont fréquemment soumis à l’érosion éolienne, les besoins pour des études qui visent à caractériser spatialement les sols selon leur degré de vulnérabilité sont grands. On n’a qu’à penser aux autorités administratives qui doivent décider des mesures à prendre pour préserver et conserver les potentialités agropédologiques des sols, souvent avec des ressources financières modestes mises à leur disposition. Or, dans certaines de ces régions, comme notre territoire d’étude, la région de Thiès au Sénégal, ces études font défaut. En effet, les quelques études effectuées dans cette région ou dans des contextes géographiques similaires ont un caractère plutôt local et les approches suivies (modèles de pertes des sols) nécessitent un nombre substantiel de données pour saisir la variabilité spatiale de la dynamique des facteurs qui interviennent dans le processus de l’érosion éolienne. La disponibilité de ces données est particulièrement problématique dans les pays en voie de développement, à cause de la pauvreté en infrastructures et des problèmes de ressources pour le monitoring continu des variables environnementales. 
+
+
+
+L’approche mise de l’avant dans cette recherche vise à combler cette lacune en recourant principalement à l’imagerie satellitale, et plus particulièrement celle provenant des satellites Landsat-5 et Landsat-7. Les images Landsat couvrent la presque totalité de la zone optique du spectre exploitable par télédétection (visible, proche infrarouge, infrarouge moyen et thermique) à des résolutions relativement fines (quelques dizaines de mètres). Elles permettant ainsi d’étudier la distribution spatiale des niveaux de vulnérabilité des sols avec un niveau de détails beaucoup plus fin que celui obtenu avec des images souvent utilisées dans des études environnementales telles que AVHRR de la série de satellites NOAA (résolution kilométrique). De plus, l’archive complet des images Landsat-5 et Landsat-7 couvrant une période de plus de 20 ans est aujourd’hui facilement accessible.
+
+Parmi les paramètres utilisés dans les modèles d’érosion éolienne, nous avons identifiés ceux qui sont estimables par l’imagerie satellitale soit directement (exemple, fraction du couvert végétal) soit indirectement (exemple, caractérisation des sols par leur niveau d’érodabilité). En exploitant aussi le peu de données disponibles dans la région (données climatiques, carte morphopédologique) nous avons élaboré une base de données décrivant l’état des lieux dans la période de 1988 à 2002 et ce, selon les deux saisons caractéristiques de la région : la saison des pluies et la saison sèche. Ces données par date d’acquisition des images Landsat utilisées ont été considérées comme des intrants (critères) dans un modèle empirique que nous avons élaboré en modulant l’impact de chacun des critères (poids et scores). À l’aide de ce modèle, nous avons créé des cartes montrant les degrés de vulnérabilité dans la région à l’étude, et ce par date d’acquisition des images Landsat. Suite à une série de tests pour valider la cohérence interne du modèle, nous avons analysé nos cartes afin de conclure sur la dynamique du processus pendant la période d’étude. 
+
+Nos principales conclusions sont les suivantes : 1) le modèle élaboré montre une bonne cohérence interne et est sensible aux variations spatiotemporelles des facteurs pris en considération 2); tel qu’attendu, parmi les facteurs utilisés pour expliquer la vulnérabilité des sols, la végétation vivante et l’érodabilité sont les plus importants ; 3) ces deux facteurs présentent une variation importante intra  et inter-saisonnière de sorte qu’il est difficile de dégager des tendances à long terme bien que certaines parties du territoire (Nord et Est) aient des indices de vulnérabilité forts, peu importe la saison ; 4) l’analyse diachronique des cartes des indices de vulnérabilité confirme le caractère saisonnier des niveaux de vulnérabilité dans la mesure où les superficies occupées par les faibles niveaux de vulnérabilité augmentent en saison des pluies, donc lorsque l’humidité surfacique et la végétation active notamment sont importantes, et décroissent en saison sèche ; 5) la susceptibilité, c’est-à-dire l’impact du vent sur la vulnérabilité est d’autant plus forte que la vitesse du vent est élevée et que la vulnérabilité est forte. Sur les zones où la vulnérabilité est faible, les vitesses de vent élevées ont moins d’impact. 
+
+Dans notre étude, nous avons aussi inclus une analyse comparative entre les facteurs extraits des images Landsat et celles des images hyperspectrales du satellite expérimental HYPERION. Bien que la résolution spatiale de ces images soit similaire à celle de Landsat, les résultats obtenus à partir des images HYPERION révèlent un niveau de détail supérieur grâce à la résolution spectrale de ce capteur permettant de mieux choisir les bandes spectrales qui réagissent le plus avec le facteur étudié. Cette étude comparative démontre que dans un futur rapproché, l’amélioration de l’accessibilité à ce type d’images permettra de raffiner davantage le calcul de l’indice de vulnérabilité par notre modèle. En attendant cette possibilité, on peut de contenter de l’imagerie Landsat qui offre un support d’informations permettant tout de même d’évaluer le niveau de fragilisation des sols par l’action du vent et par la dynamique des caractéristiques des facteurs telles que la couverture végétale aussi bien vivante que sénescente.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Wind erosion is an environmental issue among the most critical one in arid, semi-arid and dry sub-humid regions of the planet. Soil erosion accelerated by the wind action causes damages both locally and regionally. Locally, wind erosion decreases the soil nutrients by the mobilization of finer particles and organic matter. This mobilization is one of the causes of lost of soil fertility with lead to the drop in agricultural productivity and to the reduction of the topsoil depth. Regionally, dust storms raised by the wind have a significant impact on population health and infrastructure because of particles deposition.
+
+In areas where soils are frequently submitted to wind aggressions, studies are urgently required in order to spatially characterize the soils according to their degree of vulnerability. Such characterization is important for many reasons, especially for administrative authorities who must decide what action to undertake in order to preserve and conserve the agricultural potentialities of soils, often with limited financial resources available. However, in some regions, as in our study area, the region of Thiès in Senegal, such studies are lacking. In fact, in regions where soil erosion is active, the studies undertaken are much localized because of their approaches (soil erosion models) which require a substantial amount of data for short intervals of time to "capture" the spatial variability of the dynamics of the factors involved in the process of wind erosion. The availability of these data at a regional level is particularly problematic in developing countries because infrastructures and resources to support continuous monitoring of environmental variables are not always available.
+
+The approach in this research aims to fill this gap, mainly through satellite imagery and more particularly those provided by Landsat-5 and Landsat-7. Landsat images cover almost the entire optical spectrum (visible, near/mid/thermal infrared) at resolutions which allow to characterize spatially the soils, according to their vulnerability at a finer level (decametric resolution) than what is possible with satellite imagery often used in environmental studies (AVHRR images from the NOAA satellite series) with a kilometric resolution. In addition, the full archive of Landsat-5 and -7 covering more than 20 years is now easily accessible. This is an undeniable asset in order to study the dynamics of the process affecting soils vulnerability to wind erosion. 
+
+Taking into account the parameters used in wind erosion models (climate, soil, vegetation), we have identified those we can estimate from satellite imagery either directly (e.g. fractional vegetation cover) or indirectly (e.g. characterization of soils by their degree of degradation). Using Landsat images acquired during to the two seasons of the region (rainy and dry season) as well as climatic data and the existing low scale soil map of the region, we developed a database describing the environmental conditions from 1988 to 2002. These data were then considered as inputs (criteria) in an empirical model we made, by modulating the impact of each criterion (weight and score). By this model, we created maps showing the degree of vulnerability (vulnerability index) of the region by date according to Landsat image acquisition date. Several tests are done to validate the internal consistency of the model. To evaluate the dynamic of the erosion process for the period we studied, we have compared our maps.
+
+Our principal conclusions are as follows: 1) the proposed model has a good internal consistency and is sensitive to spatial and temporal variation of the factors taken into consideration; 2) as expected, among the factors used to explain soil vulnerability, erodibility and fractional green vegetation cover are the most important; 3) these two factors present a high intra and inter-season variation so that it is difficult to bring out long term trends even if some parts of the territory (North and East) have high vulnerability indices regardless of season; 4) the diachronic analysis of vulnerability index maps shows seasonal trend because areas with low vulnerability indices are increasing in rainy season, when the surface moisture is higher and vegetation is particularly active, and significantly decrease in dry season; 5) as expected, susceptibility, or the impact of wind on vulnerability, is stronger when the wind speed is high and vulnerability is high. In areas where vulnerability is low, an increase in wind speed has less impact.
+
+In our study we have also included a comparative analysis of some factors derived from Landsat images and from the hyperspectral sensor of the experimental satellite HYPERION. Even if spatial resolution of the images provided by both sensors is similar, the accuracy of factors extracted from the hyperspectral images is definitely higher. This is due to the spectral resolution of the sensor which permits the selection of appropriate bands with the highest level of interaction with the factor of interest. This comparative study shows that in the near future, the accessibility to this type of images will improve the calculation of the index of vulnerability by our model. For now, Landsat imagery provides very interesting information to monitor the process of soil erosion by wind.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F8427&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=G%C3%A9ographie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/8427/Cissokho_Robert_2011_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/8427/Cissokho_Robert_2011_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Cissokho_Robert_2011_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/8427/Cissokho_Robert_2011_these.pdf?sequence=2&amp;isAllowed=y">Cissokho_Robert_2011_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">14.86Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2984/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2984">Faculté des arts et des sciences – Département de géographie - Thèses et mémoires</a> [241]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/8427">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

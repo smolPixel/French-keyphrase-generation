@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Archivage du Web organisationnel dans une perspective archivistique</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Gagnon-Arguin, Louise" name="DC.contributor">
+<meta content="Dufour, Christine" name="DC.contributor">
+<meta content="Chebbi, Aïda" name="DC.creator">
+<meta content="2013-03-26T18:45:07Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2013-03-26T18:45:07Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2013-03-01" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2012-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/9203" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Analyse des risques" name="DC.subject" xml:lang="en"/>
+<meta content="Archives Web" name="DC.subject" xml:lang="en"/>
+<meta content="Gestion des archives" name="DC.subject" xml:lang="en"/>
+<meta content="Méthodes d’archivage du Web" name="DC.subject" xml:lang="en"/>
+<meta content="Politique d’archivage" name="DC.subject" xml:lang="en"/>
+<meta content="Pratiques archivistiques" name="DC.subject" xml:lang="en"/>
+<meta content="Approche d’archivage du Web" name="DC.subject" xml:lang="en"/>
+<meta content="Techniques d’archivage du Web" name="DC.subject" xml:lang="en"/>
+<meta content="Types des archives" name="DC.subject" xml:lang="en"/>
+<meta content="Web organisationnel" name="DC.subject" xml:lang="en"/>
+<meta content="Archival practices" name="DC.subject" xml:lang="en"/>
+<meta content="Archives management" name="DC.subject" xml:lang="en"/>
+<meta content="Archives typology" name="DC.subject" xml:lang="en"/>
+<meta content="Risks analysis" name="DC.subject" xml:lang="en"/>
+<meta content="Web archiving" name="DC.subject" xml:lang="en"/>
+<meta content="Web archiving methods" name="DC.subject" xml:lang="en"/>
+<meta content="Web records" name="DC.subject" xml:lang="en"/>
+<meta content="Web archiving policy" name="DC.subject" xml:lang="en"/>
+<meta content="Web archiving approaches" name="DC.subject" xml:lang="en"/>
+<meta content="Web archiving techniques" name="DC.subject" xml:lang="en"/>
+<meta content="Communications and the Arts - Information Science / Communications et les arts - Sciences de l’information (UMI : 0723)" name="DC.subject" xml:lang="en"/>
+<meta content="Archivage du Web organisationnel dans une perspective archivistique" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Le Web représente actuellement un espace privilégié d’expression et d’activité pour plusieurs communautés, où pratiques communicationnelles et pratiques documentaires s’enrichissent mutuellement. Dans sa dimension visible ou invisible, le Web constitue aussi un réservoir documentaire planétaire caractérisé non seulement par l’abondance de l’information qui y circule, mais aussi par sa diversité, sa complexité et son caractère éphémère. 
+Les projets d’archivage du Web en cours abordent pour beaucoup cette question du point de vue de la préservation des publications en ligne sans la considérer dans une perspective archivistique. Seuls quelques projets d’archivage du Web visent la préservation du Web organisationnel ou gouvernemental. La valeur archivistique du Web, notamment du Web organisationnel, ne semble pas être reconnue malgré un effort soutenu de certaines archives nationales à diffuser des politiques d’archivage du Web organisationnel. 
+La présente thèse a pour but de développer une meilleure compréhension de la nature des archives Web et de documenter les pratiques actuelles d’archivage du Web organisationnel. Plus précisément, cette recherche vise à répondre aux trois questions suivantes : 
+(1) Que recommandent en général les politiques d’archivage du Web organisationnel? 
+(2) Quelles sont les principales caractéristiques des archives Web?
+(3) Quelles pratiques d’archivage du Web organisationnel sont mises en place dans des organisations au Québec? 
+Pour répondre à ces questions, cette recherche exploratoire et descriptive a adopté une approche qualitative basée sur trois modes de collecte des données, à savoir : l’analyse d’un corpus de 55 politiques et documents complémentaires relatifs à l’archivage du Web organisationnel; l’observation de 11 sites Web publics d’organismes au Québec de même que l’observation d’un échantillon de 737 documents produits par ces systèmes Web; et, enfin, des entrevues avec 21 participants impliqués dans la gestion et l’archivage de ces sites Web. 
+Les résultats de recherche démontrent que les sites Web étudiés sont le produit de la conduite des activités en ligne d’une organisation et documentent, en même temps, les objectifs et les manifestations de sa présence sur le Web. De nouveaux types de documents propres au Web organisationnel ont pu être identifiés. Les documents qui ont migré sur le Web ont acquis un autre contexte d’usage et de nouvelles caractéristiques. Les méthodes de gestion actuelles doivent prendre en considération les propriétés des documents dans un environnement Web. 
+Alors que certains sites d’étude n’archivent pas leur site Web public, d’autres s’y investissent. Toutefois les choix établis ne correspondent pas toujours aux recommandations proposées dans les politiques d’archivage du Web analysées et ne garantissent pas la pérennité des archives Web ni leur exploitabilité à long terme.
+Ce constat nous a amenée à proposer une politique type adaptée aux caractéristiques des archives Web. Ce modèle décrit les composantes essentielles d’une politique pour l’archivage des sites Web ainsi qu’un éventail des mesures que pourrait mettre en place l’organisation en fonction des résultats d’une analyse des risques associés à l’usage de son site Web public dans la conduite de ses affaires." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="Several communities have adopted the web as a privileged space for expression and activity, where communication and documentary practices complement and enrich each other. Both in its visible and invisible dimensions, the web is a documentation vault of planetary scope, characterized not only by the sheer amount of information it contains, but by its diversity, complexity and ephemeral nature. 
+Most current web archiving projects focus on preserving online publications without considering their value from an archival point of view. Only a few web archiving projects target the preservation of organisational or governmental web records. The archival value of the web, especially that of organisational web, does not seem to be justly recognized, despite the continuous effort deployed by certain National Archives bodies to disseminate best practices and policies for organisational web archiving. 
+This thesis aims to develop a better understanding of the nature of web records and to document current archiving practices intended for organisational web. In particular, this research will look at the following three questions:
+(1) What general recommendations can be found in archiving policies for organisational web?
+(2) What are the main characteristics of web records? 
+(3) Which web record-keeping practices have been deployed in Quebec organisations?
+To address these questions, this exploratory and descriptive research uses a qualitative approach based on three data collection methods, namely: the analysis of a body of 55 policies and supporting documents related to organisational web archiving; the scrutiny of 11 public websites of various Quebec organisations and of a sample of 737 documents generated by those web systems; and interviews with 21 individuals that are involved in the management and archiving of those websites.
+The results of this research show that the observed sites are the product of an organisation’s online activity and that they simultaneously document the objectives and the occurrences of an organisation’s web presence. New types of documents that are specific to organisational web have been identified. Documents that have migrated online have acquired a different context of use and new characteristics. Hence, current document management methods must consider the unique properties of documents in a web environment.
+Only a portion of the observed organisations are involved in the process of archiving their public website. Additionally, the chosen archiving strategies are not always coherent with the recommendations found in web archiving policies, and do not guarantee the sustainability of web records.
+Those results led us to design a standard policy model adapted to the particular properties of web archives. This model describes the essential components of a web archiving policy and proposes a range of measures that an organisation could implement based on the results of a risks analysis of their public website’s uses in a business context." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Analyse des risques; Archives Web; Gestion des archives; Méthodes d’archivage du Web; Politique d’archivage; Pratiques archivistiques; Approche d’archivage du Web; Techniques d’archivage du Web; Types des archives; Web organisationnel; Archival practices; Archives management; Archives typology; Risks analysis; Web archiving; Web archiving methods; Web records; Web archiving policy; Web archiving approaches; Web archiving techniques; Communications and the Arts - Information Science / Communications et les arts - Sciences de l’information (UMI : 0723); Thèse ou mémoire / Thesis or Dissertation; Sciences de l'information" name="citation_keywords"/>
+<meta content="Archivage du Web organisationnel dans une perspective archivistique" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Chebbi, Aïda" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/9203/4/Chebbi_Aida_2013_these.pdf" name="citation_pdf_url"/>
+<meta content="2013-03-01" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/9203" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9203?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9203?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9203?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9203?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9203?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/9203?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/559" role="menuitem">Faculté des arts et des sciences – École de bibliothéconomie et des sciences de l'information</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3006" role="menuitem">Faculté des arts et des sciences – École de bibliothéconomie et des sciences de l'information - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/559">Faculté des arts et des sciences – École de bibliothéconomie et des sciences de l'information</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3006">Faculté des arts et des sciences – École de bibliothéconomie et des sciences de l'information - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/3006"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3006/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3006/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3006/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3006/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3006/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3006/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3006/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3006/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/9203/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/9203">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/9203/mets.xml-->
+<h2 class="page-header first-page-header">Archivage du Web organisationnel dans une perspective archivistique</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Gagnon-Arguin, Louise</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Dufour, Christine</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Chebbi, Aïda</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2013-03-26T18:45:07Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2013-03-26T18:45:07Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2013-03-01</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2012-12</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/9203</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Analyse des risques</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Archives Web</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Gestion des archives</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Méthodes d’archivage du Web</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Politique d’archivage</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Pratiques archivistiques</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Approche d’archivage du Web</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Techniques d’archivage du Web</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Types des archives</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Web organisationnel</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Archival practices</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Archives management</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Archives typology</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Risks analysis</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Web archiving</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Web archiving methods</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Web records</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Web archiving policy</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Web archiving approaches</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Web archiving techniques</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Communications and the Arts - Information Science / Communications et les arts - Sciences de l’information (UMI : 0723)</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Archivage du Web organisationnel dans une perspective archivistique</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences de l'information</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Le Web représente actuellement un espace privilégié d’expression et d’activité pour plusieurs communautés, où pratiques communicationnelles et pratiques documentaires s’enrichissent mutuellement. Dans sa dimension visible ou invisible, le Web constitue aussi un réservoir documentaire planétaire caractérisé non seulement par l’abondance de l’information qui y circule, mais aussi par sa diversité, sa complexité et son caractère éphémère. 
+Les projets d’archivage du Web en cours abordent pour beaucoup cette question du point de vue de la préservation des publications en ligne sans la considérer dans une perspective archivistique. Seuls quelques projets d’archivage du Web visent la préservation du Web organisationnel ou gouvernemental. La valeur archivistique du Web, notamment du Web organisationnel, ne semble pas être reconnue malgré un effort soutenu de certaines archives nationales à diffuser des politiques d’archivage du Web organisationnel. 
+La présente thèse a pour but de développer une meilleure compréhension de la nature des archives Web et de documenter les pratiques actuelles d’archivage du Web organisationnel. Plus précisément, cette recherche vise à répondre aux trois questions suivantes : 
+(1) Que recommandent en général les politiques d’archivage du Web organisationnel? 
+(2) Quelles sont les principales caractéristiques des archives Web?
+(3) Quelles pratiques d’archivage du Web organisationnel sont mises en place dans des organisations au Québec? 
+Pour répondre à ces questions, cette recherche exploratoire et descriptive a adopté une approche qualitative basée sur trois modes de collecte des données, à savoir : l’analyse d’un corpus de 55 politiques et documents complémentaires relatifs à l’archivage du Web organisationnel; l’observation de 11 sites Web publics d’organismes au Québec de même que l’observation d’un échantillon de 737 documents produits par ces systèmes Web; et, enfin, des entrevues avec 21 participants impliqués dans la gestion et l’archivage de ces sites Web. 
+Les résultats de recherche démontrent que les sites Web étudiés sont le produit de la conduite des activités en ligne d’une organisation et documentent, en même temps, les objectifs et les manifestations de sa présence sur le Web. De nouveaux types de documents propres au Web organisationnel ont pu être identifiés. Les documents qui ont migré sur le Web ont acquis un autre contexte d’usage et de nouvelles caractéristiques. Les méthodes de gestion actuelles doivent prendre en considération les propriétés des documents dans un environnement Web. 
+Alors que certains sites d’étude n’archivent pas leur site Web public, d’autres s’y investissent. Toutefois les choix établis ne correspondent pas toujours aux recommandations proposées dans les politiques d’archivage du Web analysées et ne garantissent pas la pérennité des archives Web ni leur exploitabilité à long terme.
+Ce constat nous a amenée à proposer une politique type adaptée aux caractéristiques des archives Web. Ce modèle décrit les composantes essentielles d’une politique pour l’archivage des sites Web ainsi qu’un éventail des mesures que pourrait mettre en place l’organisation en fonction des résultats d’une analyse des risques associés à l’usage de son site Web public dans la conduite de ses affaires.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Several communities have adopted the web as a privileged space for expression and activity, where communication and documentary practices complement and enrich each other. Both in its visible and invisible dimensions, the web is a documentation vault of planetary scope, characterized not only by the sheer amount of information it contains, but by its diversity, complexity and ephemeral nature. 
+Most current web archiving projects focus on preserving online publications without considering their value from an archival point of view. Only a few web archiving projects target the preservation of organisational or governmental web records. The archival value of the web, especially that of organisational web, does not seem to be justly recognized, despite the continuous effort deployed by certain National Archives bodies to disseminate best practices and policies for organisational web archiving. 
+This thesis aims to develop a better understanding of the nature of web records and to document current archiving practices intended for organisational web. In particular, this research will look at the following three questions:
+(1) What general recommendations can be found in archiving policies for organisational web?
+(2) What are the main characteristics of web records? 
+(3) Which web record-keeping practices have been deployed in Quebec organisations?
+To address these questions, this exploratory and descriptive research uses a qualitative approach based on three data collection methods, namely: the analysis of a body of 55 policies and supporting documents related to organisational web archiving; the scrutiny of 11 public websites of various Quebec organisations and of a sample of 737 documents generated by those web systems; and interviews with 21 individuals that are involved in the management and archiving of those websites.
+The results of this research show that the observed sites are the product of an organisation’s online activity and that they simultaneously document the objectives and the occurrences of an organisation’s web presence. New types of documents that are specific to organisational web have been identified. Documents that have migrated online have acquired a different context of use and new characteristics. Hence, current document management methods must consider the unique properties of documents in a web environment.
+Only a portion of the observed organisations are involved in the process of archiving their public website. Additionally, the chosen archiving strategies are not always coherent with the recommendations found in web archiving policies, and do not guarantee the sustainability of web records.
+Those results led us to design a standard policy model adapted to the particular properties of web archives. This model describes the essential components of a web archiving policy and proposes a range of measures that an organisation could implement based on the results of a risks analysis of their public website’s uses in a business context.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F9203&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+de+l%27information&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/9203/Chebbi_Aida_2013_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/9203/Chebbi_Aida_2013_these.pdf.jpg?sequence=8&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Chebbi_Aida_2013_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/9203/Chebbi_Aida_2013_these.pdf?sequence=4&amp;isAllowed=y">Chebbi_Aida_2013_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">1.977Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3006/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/3006">Faculté des arts et des sciences – École de bibliothéconomie et des sciences de l'information - Thèses et mémoires</a> [55]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/9203">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

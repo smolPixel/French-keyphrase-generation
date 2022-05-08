@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Mechanics of cell growth and tissue architecture in plants</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Geitmann, Anja" name="DC.contributor">
+<meta content="Gosselin, Frédérick" name="DC.contributor">
+<meta content="Jafari Bidhendi, Amirhossein" name="DC.creator">
+<meta content="2022-03-16" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2022-03-16" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2019-03-13" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2018-04" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/25037" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Géométrie des cellules végétales" name="DC.subject" xml:lang="fr"/>
+<meta content="Morphogenèse" name="DC.subject" xml:lang="fr"/>
+<meta content="Mécanique cellulaire" name="DC.subject" xml:lang="fr"/>
+<meta content="Analyse par éléments finis" name="DC.subject" xml:lang="fr"/>
+<meta content="Cellulose" name="DC.subject" xml:lang="fr"/>
+<meta content="Pectine" name="DC.subject" xml:lang="fr"/>
+<meta content="Développement" name="DC.subject" xml:lang="fr"/>
+<meta content="Ténacité à la rupture" name="DC.subject" xml:lang="fr"/>
+<meta content="Résistance à la déchirure" name="DC.subject" xml:lang="fr"/>
+<meta content="Biomimétique" name="DC.subject" xml:lang="fr"/>
+<meta content="Plant cell shape" name="DC.subject" xml:lang="fr"/>
+<meta content="Morphogenesis" name="DC.subject" xml:lang="fr"/>
+<meta content="Cell mechanics" name="DC.subject" xml:lang="fr"/>
+<meta content="Finite element analysis" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Cell / Biologie - Cellule (UMI : 0379)" name="DC.subject" xml:lang="fr"/>
+<meta content="Mechanics of cell growth and tissue architecture in plants" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Le développement des plantes nécessite la coordination des mécanismes de différenciation des
+cellules méristématiques en cellules hautement spécialisées: la division, la croissance et la
+formation de la géométrie cellulaire. La différenciation et la morphogenèse cellulaires sont
+étroitement liées et régulées par les propriétés mécaniques de la paroi cellulaire. Les mécanismes
+conduisant à l’émergence de diverses formes et fonctions des tissus végétaux sont complexes et
+encore peu compris. Ma thèse de doctorat approfondie les principes mécaniques à la base de la
+formation des cellules épidermiques ondulées. Je me suis également penché sur l’étude des
+avantages mécaniques que confèrent les motifs imbriqués.
+Les cellules épidermiques sont constituées de deux parois cellulaires périclines parallèles
+reliées par des parois anticlines. Aux jonctions, les cellules épidermiques forment des cavités et
+des saillies imbriquées les unes aux autres. Des images en 3D, prises en microscopie confocale,
+de cotylédons marqués par des fluorophores spécifiques à la cellulose montrent une déposition
+accrue de cellulose au niveau des cavités des parois périclines s’étendant le long des parois
+anticlines. Le marquage des cotylédons par COS488 démontre également une plus grande
+abondance de pectines dé-estérifiées aux mêmes sites. J'ai développé des modèles par éléments
+finis de la déformation de la paroi cellulaire et simulé les disparités biochimiques en alternant
+les régions plus rigides à travers et au long des parois périclines des deux côtés d'une paroi
+anticline. Le modèle montre que les parois rigidifiées non déformables se développent en cavités
+lorsque la pression interne étire la paroi cellulaire. Le modèle suggère également la présence de
+contraintes mécaniques plus élevées au niveau des saillies. Les résultats du modèle indiquent
+qu'une boucle de rétroaction positive entre la contrainte et la rigidité de la paroi cellulaire
+générerait les formes ondulées à partir de différences infinitésimales de rigidité ou de contrainte
+de la paroi cellulaire. En outre, le modèle suggère que des événements de flambage stochastiques
+peuvent initier la morphogenèse des cellules.
+On a longtemps émis l'hypothèse que le motif imbriqué de cellules épidermiques
+améliore l'adhérence cellule-cellule et donc la résistance de traction de l'épiderme. L'étirage des
+feuilles d'Arabidopsis de type sauvage ou du mutant any1 (caractérisé par une réduction de
+l'ondulation cellulaire) n'a montré aucun détachement cellulaire en cas de rupture du tissu. J'ai émis l'hypothèse que les jonctions des cellules ondulantes renforcent la résistance de l'épiderme
+contre la propagation de fissures. J'ai observé une grande anisotropie dans la réponse mécanique
+à la rupture de l'épiderme d'oignon selon l’orientation des cellules. Les fissures qui suivent
+l’alignement des cellules se propagent sans trop de résistance, entraînant une rupture fragile du
+tissu. Ceci découlerait de la propagation de la ligne de rupture par suite du détachement des
+cellules. Les fissures se propagent difficilement lorsqu’elles sont perpendiculaires à l'axe
+principal des cellules. En fracturant des feuilles dont les cellules épidermiques sont ondulées,
+j'ai remarqué que les fissures se propageaient, par intermittence, à la fois au niveau des jonctions
+de la cellule et de la paroi cellulaire. J'ai émis l'hypothèse que ce motif de fracture d'épiderme à
+cellules ondulées se caractérisait par une augmentation de la résistance à la fracture. Pour
+n’étudier que les effets de la géométrie des cellules sur cette résistance, j’ai éliminé le rôle que
+jouerait l’anisotropie des matériaux en concevant des modèles physiques macroscopiques de
+l'épiderme. J’ai gravé au laser des motifs cellulaires sur du poly-méthacrylate de méthyle. De
+cette façon, le matériau isotrope permettait d'étudier uniquement l'effet de la géométrie
+cellulaire. Alors que la fracturation des spécimens de contrôle sans gravure et des spécimens
+avec des cellules gravées longitudinalement ont démontré une rupture fragile, une fracturation
+transversale aux rangées cellulaires, dans les modèles mimant des cellules d’oignon ou des
+cellules ondulées de cotylédons d’Arabidopsis, a montré une résistance accrue à la fracture.
+En conclusion, je démontre que la forme ondulée des cellules épidermiques est le résultat
+d’une distribution alternée de la rigidité dans la paroi cellulaire, un processus qui pourrait être
+initié par une anisotropie de stress stochastique due au flambement. De plus, ces formes
+cellulaires augmentent la résistance à la rupture de l'épiderme végétal en le protégeant contre la
+propagation des fissures; un mécanisme de défense ingénieux pour les surfaces les plus
+exposées." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Plant development entails cell division, cell growth and shaping, and the differentiation of
+meristematic cells into highly specialized cell types. Differentiation and cell shape are closely
+linked and involve the regulation of the mechanical properties of the cell wall. The mechanisms
+leading to the generation of the diverse array of shapes and functionalities found in plant tissues
+are perplexing and poorly understood. In my Ph.D. research, I investigated the mechanical
+principles underlying the formation of wavy leaf pavement cells. Further, I studied the putative
+mechanical advantage that emerges from the interlocking patterns.
+Epidermal pavement cells consist of two parallel periclinal walls connected by vertical
+anticlinal walls. At the borders, wavy pavement cells make interlocking indentations and
+protrusions. 3D confocal micrographs of cotyledons stained with cellulose-specific fluorophores
+revealed a significant accumulation of cellulose at the sites of indentation on the periclinal walls
+extending down the anticlinal walls. Staining the cotyledon samples with COS488 also suggested
+a higher abundance of de-esterified pectin at these sites. I developed finite element models of
+the cell wall deformation and simulated the biochemical inhomogeneities by assigning
+alternately stiffened regions across and along the periclinal walls on two sides of an anticlinal
+wall. It was observed that the non-deforming stiffened regions develop into sites of indentations
+when the internal pressure stretches the cell wall. The model also suggested higher stresses to
+associate with the neck regions. The model results indicate that a positive feedback loop between
+stress and cell wall stiffness could generate wavy shapes starting from infinitesimally small
+differences in cell wall stiffness or stress. Further, the model suggests that stochastic buckling
+events can initiate the cell shaping process.
+It has been long hypothesized that the interlocking pattern of pavement cells improves
+cell-cell adhesion and thus the tensile strength of the epidermis. Stretching to rupture the leaf
+samples of wild-type Arabidopsis or any1 mutant with reduced cell waviness did not show any
+cell detachment upon failure. However, I hypothesized the undulating cell borders could
+enhance the resistance of the epidermis against the propagation of damage. I observed a
+considerable anisotropy in the tear behavior of onion epidermis parallel and perpendicular to the
+cells’ main axis. Tears along the cell lines propagated without much resistance resulting in brittle failure of the tissue. This was observed to originate from tears propagating by cell detachment.
+Perpendicular to the cells’ main axis, tears had considerable difficulty in propagating. Fracturing
+the leaf samples with wavy epidermal cells, I noticed the cracks propagated in both the cell
+borders and the cell wall intermittently. I hypothesized that this pattern of fracture in the
+epidermis with wavy cells indicates an increase in the fracture toughness. To untangle the
+influence of material anisotropy from the cell geometry on fracture toughness, I designed
+macroscopic physical models of the epidermis by laser engraving the cell patterns on
+polymethylmethacrylate. This way, the isotropic material would allow studying only the effect
+of cell geometry. While fracturing the control specimens with no engraving and the specimens
+with longitudinally placed cells demonstrated a brittle fracture, fractures transverse to cell lines
+in the onion cell patterns or across the Arabidopsis cotyledon wavy cell pattern showed an
+increased fracture toughness.
+I suggest the wavy shape of pavement cells in the epidermis results from the alternate
+placement of stiffer regions in the cell wall, a process that can initiate from a stochastic stress
+anisotropy due to buckling. Further, these shapes increase the fracture toughness of the plant
+epidermis protecting it against the spread of damage; an ingenious defense mechanism at the
+most exposed surfaces." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Géométrie des cellules végétales; Morphogenèse; Mécanique cellulaire; Analyse par éléments finis; Cellulose; Pectine; Développement; Ténacité à la rupture; Résistance à la déchirure; Biomimétique; Plant cell shape; Morphogenesis; Cell mechanics; Finite element analysis; Biology - Cell / Biologie - Cellule (UMI : 0379); Thèse ou mémoire / Thesis or Dissertation; Sciences biologiques" name="citation_keywords"/>
+<meta content="Mechanics of cell growth and tissue architecture in plants" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Jafari Bidhendi, Amirhossein" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/25037/2/Bidhendi_AmirJ_2018_these.pdf" name="citation_pdf_url"/>
+<meta content="2019-03-13" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/25037" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25037?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25037?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25037?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25037?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25037?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25037?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2953" role="menuitem">Faculté des arts et des sciences – Département de sciences biologiques</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2994" role="menuitem">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2953">Faculté des arts et des sciences – Département de sciences biologiques</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2994">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2994"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/25037/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25037">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/25037/mets.xml-->
+<h2 class="page-header first-page-header">Mechanics of cell growth and tissue architecture in plants</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Geitmann, Anja</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Gosselin, Frédérick</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Jafari Bidhendi, Amirhossein</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2022-03-16</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2022-03-16</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2019-03-13</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2018-04</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/25037</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Géométrie des cellules végétales</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Morphogenèse</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Mécanique cellulaire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Analyse par éléments finis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Cellulose</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Pectine</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Développement</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Ténacité à la rupture</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Résistance à la déchirure</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Biomimétique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Plant cell shape</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Morphogenesis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Cell mechanics</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Finite element analysis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Cell / Biologie - Cellule (UMI : 0379)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Mechanics of cell growth and tissue architecture in plants</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences biologiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Le développement des plantes nécessite la coordination des mécanismes de différenciation des
+cellules méristématiques en cellules hautement spécialisées: la division, la croissance et la
+formation de la géométrie cellulaire. La différenciation et la morphogenèse cellulaires sont
+étroitement liées et régulées par les propriétés mécaniques de la paroi cellulaire. Les mécanismes
+conduisant à l’émergence de diverses formes et fonctions des tissus végétaux sont complexes et
+encore peu compris. Ma thèse de doctorat approfondie les principes mécaniques à la base de la
+formation des cellules épidermiques ondulées. Je me suis également penché sur l’étude des
+avantages mécaniques que confèrent les motifs imbriqués.
+Les cellules épidermiques sont constituées de deux parois cellulaires périclines parallèles
+reliées par des parois anticlines. Aux jonctions, les cellules épidermiques forment des cavités et
+des saillies imbriquées les unes aux autres. Des images en 3D, prises en microscopie confocale,
+de cotylédons marqués par des fluorophores spécifiques à la cellulose montrent une déposition
+accrue de cellulose au niveau des cavités des parois périclines s’étendant le long des parois
+anticlines. Le marquage des cotylédons par COS488 démontre également une plus grande
+abondance de pectines dé-estérifiées aux mêmes sites. J'ai développé des modèles par éléments
+finis de la déformation de la paroi cellulaire et simulé les disparités biochimiques en alternant
+les régions plus rigides à travers et au long des parois périclines des deux côtés d'une paroi
+anticline. Le modèle montre que les parois rigidifiées non déformables se développent en cavités
+lorsque la pression interne étire la paroi cellulaire. Le modèle suggère également la présence de
+contraintes mécaniques plus élevées au niveau des saillies. Les résultats du modèle indiquent
+qu'une boucle de rétroaction positive entre la contrainte et la rigidité de la paroi cellulaire
+générerait les formes ondulées à partir de différences infinitésimales de rigidité ou de contrainte
+de la paroi cellulaire. En outre, le modèle suggère que des événements de flambage stochastiques
+peuvent initier la morphogenèse des cellules.
+On a longtemps émis l'hypothèse que le motif imbriqué de cellules épidermiques
+améliore l'adhérence cellule-cellule et donc la résistance de traction de l'épiderme. L'étirage des
+feuilles d'Arabidopsis de type sauvage ou du mutant any1 (caractérisé par une réduction de
+l'ondulation cellulaire) n'a montré aucun détachement cellulaire en cas de rupture du tissu. J'ai émis l'hypothèse que les jonctions des cellules ondulantes renforcent la résistance de l'épiderme
+contre la propagation de fissures. J'ai observé une grande anisotropie dans la réponse mécanique
+à la rupture de l'épiderme d'oignon selon l’orientation des cellules. Les fissures qui suivent
+l’alignement des cellules se propagent sans trop de résistance, entraînant une rupture fragile du
+tissu. Ceci découlerait de la propagation de la ligne de rupture par suite du détachement des
+cellules. Les fissures se propagent difficilement lorsqu’elles sont perpendiculaires à l'axe
+principal des cellules. En fracturant des feuilles dont les cellules épidermiques sont ondulées,
+j'ai remarqué que les fissures se propageaient, par intermittence, à la fois au niveau des jonctions
+de la cellule et de la paroi cellulaire. J'ai émis l'hypothèse que ce motif de fracture d'épiderme à
+cellules ondulées se caractérisait par une augmentation de la résistance à la fracture. Pour
+n’étudier que les effets de la géométrie des cellules sur cette résistance, j’ai éliminé le rôle que
+jouerait l’anisotropie des matériaux en concevant des modèles physiques macroscopiques de
+l'épiderme. J’ai gravé au laser des motifs cellulaires sur du poly-méthacrylate de méthyle. De
+cette façon, le matériau isotrope permettait d'étudier uniquement l'effet de la géométrie
+cellulaire. Alors que la fracturation des spécimens de contrôle sans gravure et des spécimens
+avec des cellules gravées longitudinalement ont démontré une rupture fragile, une fracturation
+transversale aux rangées cellulaires, dans les modèles mimant des cellules d’oignon ou des
+cellules ondulées de cotylédons d’Arabidopsis, a montré une résistance accrue à la fracture.
+En conclusion, je démontre que la forme ondulée des cellules épidermiques est le résultat
+d’une distribution alternée de la rigidité dans la paroi cellulaire, un processus qui pourrait être
+initié par une anisotropie de stress stochastique due au flambement. De plus, ces formes
+cellulaires augmentent la résistance à la rupture de l'épiderme végétal en le protégeant contre la
+propagation des fissures; un mécanisme de défense ingénieux pour les surfaces les plus
+exposées.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Plant development entails cell division, cell growth and shaping, and the differentiation of
+meristematic cells into highly specialized cell types. Differentiation and cell shape are closely
+linked and involve the regulation of the mechanical properties of the cell wall. The mechanisms
+leading to the generation of the diverse array of shapes and functionalities found in plant tissues
+are perplexing and poorly understood. In my Ph.D. research, I investigated the mechanical
+principles underlying the formation of wavy leaf pavement cells. Further, I studied the putative
+mechanical advantage that emerges from the interlocking patterns.
+Epidermal pavement cells consist of two parallel periclinal walls connected by vertical
+anticlinal walls. At the borders, wavy pavement cells make interlocking indentations and
+protrusions. 3D confocal micrographs of cotyledons stained with cellulose-specific fluorophores
+revealed a significant accumulation of cellulose at the sites of indentation on the periclinal walls
+extending down the anticlinal walls. Staining the cotyledon samples with COS488 also suggested
+a higher abundance of de-esterified pectin at these sites. I developed finite element models of
+the cell wall deformation and simulated the biochemical inhomogeneities by assigning
+alternately stiffened regions across and along the periclinal walls on two sides of an anticlinal
+wall. It was observed that the non-deforming stiffened regions develop into sites of indentations
+when the internal pressure stretches the cell wall. The model also suggested higher stresses to
+associate with the neck regions. The model results indicate that a positive feedback loop between
+stress and cell wall stiffness could generate wavy shapes starting from infinitesimally small
+differences in cell wall stiffness or stress. Further, the model suggests that stochastic buckling
+events can initiate the cell shaping process.
+It has been long hypothesized that the interlocking pattern of pavement cells improves
+cell-cell adhesion and thus the tensile strength of the epidermis. Stretching to rupture the leaf
+samples of wild-type Arabidopsis or any1 mutant with reduced cell waviness did not show any
+cell detachment upon failure. However, I hypothesized the undulating cell borders could
+enhance the resistance of the epidermis against the propagation of damage. I observed a
+considerable anisotropy in the tear behavior of onion epidermis parallel and perpendicular to the
+cells’ main axis. Tears along the cell lines propagated without much resistance resulting in brittle failure of the tissue. This was observed to originate from tears propagating by cell detachment.
+Perpendicular to the cells’ main axis, tears had considerable difficulty in propagating. Fracturing
+the leaf samples with wavy epidermal cells, I noticed the cracks propagated in both the cell
+borders and the cell wall intermittently. I hypothesized that this pattern of fracture in the
+epidermis with wavy cells indicates an increase in the fracture toughness. To untangle the
+influence of material anisotropy from the cell geometry on fracture toughness, I designed
+macroscopic physical models of the epidermis by laser engraving the cell patterns on
+polymethylmethacrylate. This way, the isotropic material would allow studying only the effect
+of cell geometry. While fracturing the control specimens with no engraving and the specimens
+with longitudinally placed cells demonstrated a brittle fracture, fractures transverse to cell lines
+in the onion cell patterns or across the Arabidopsis cotyledon wavy cell pattern showed an
+increased fracture toughness.
+I suggest the wavy shape of pavement cells in the epidermis results from the alternate
+placement of stiffer regions in the cell wall, a process that can initiate from a stochastic stress
+anisotropy due to buckling. Further, these shapes increase the fracture toughness of the plant
+epidermis protecting it against the spread of damage; an ingenious defense mechanism at the
+most exposed surfaces.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F25037&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+biologiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/25037/Bidhendi_AmirJ_2018_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25037/Bidhendi_AmirJ_2018_these.pdf.jpg?sequence=9&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Bidhendi_AmirJ_2018_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/25037/Bidhendi_AmirJ_2018_these.pdf?sequence=2&amp;isAllowed=y">Bidhendi_AmirJ_2018_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">36.34Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a href="/xmlui/bitstream/handle/1866/25037/Bidhendi_AmirJ_2018_Mov1.avi?sequence=3&amp;isAllowed=y"><img alt="File" class="thumbnail-papyrus thumbnail_icone" height="122" src="/xmlui/themes/Mirage2/images/mimes/mime.png" style="height: 122px;" width="92"/></a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Bidhendi_AmirJ_2018_Mov1.avi">
+<a href="/xmlui/bitstream/handle/1866/25037/Bidhendi_AmirJ_2018_Mov1.avi?sequence=3&amp;isAllowed=y">Bidhendi_AmirJ_2018_Mov1.avi</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">256.8Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">Unknown</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Fichier complémentaire 1">Fichier complémentaire 1</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a href="/xmlui/bitstream/handle/1866/25037/Bidhendi_AmirJ_2018_Mov2.mp4?sequence=4&amp;isAllowed=y"><img alt="Video" class="thumbnail-papyrus thumbnail_icone" height="122" src="/xmlui/themes/Mirage2/images/mimes/mime_video.png" style="height: 122px;" title="Video" width="92"/></a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Bidhendi_AmirJ_2018_Mov2.mp4">
+<a href="/xmlui/bitstream/handle/1866/25037/Bidhendi_AmirJ_2018_Mov2.mp4?sequence=4&amp;isAllowed=y">Bidhendi_AmirJ_2018_Mov2.mp4</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">70.26Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">MPEG video</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Fichier complémentaire 2">Fichier complémentaire 2</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a href="/xmlui/bitstream/handle/1866/25037/Bidhendi_AmirJ_2018_Mov3.mp4?sequence=5&amp;isAllowed=y"><img alt="Video" class="thumbnail-papyrus thumbnail_icone" height="122" src="/xmlui/themes/Mirage2/images/mimes/mime_video.png" style="height: 122px;" title="Video" width="92"/></a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Bidhendi_AmirJ_2018_Mov3.mp4">
+<a href="/xmlui/bitstream/handle/1866/25037/Bidhendi_AmirJ_2018_Mov3.mp4?sequence=5&amp;isAllowed=y">Bidhendi_AmirJ_2018_Mov3.mp4</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">77.63Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">MPEG video</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Fichier complémentaire 3">Fichier complémentaire 3</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a href="/xmlui/bitstream/handle/1866/25037/Bidhendi_AmirJ_2018_Mov4.mp4?sequence=6&amp;isAllowed=y"><img alt="Video" class="thumbnail-papyrus thumbnail_icone" height="122" src="/xmlui/themes/Mirage2/images/mimes/mime_video.png" style="height: 122px;" title="Video" width="92"/></a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Bidhendi_AmirJ_2018_Mov4.mp4">
+<a href="/xmlui/bitstream/handle/1866/25037/Bidhendi_AmirJ_2018_Mov4.mp4?sequence=6&amp;isAllowed=y">Bidhendi_AmirJ_2018_Mov4.mp4</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">2.015Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">MPEG video</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Fichier complémentaire 4">Fichier complémentaire 4</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a href="/xmlui/bitstream/handle/1866/25037/Bidhendi_AmirJ_2018_Mov5.mp4?sequence=7&amp;isAllowed=y"><img alt="Video" class="thumbnail-papyrus thumbnail_icone" height="122" src="/xmlui/themes/Mirage2/images/mimes/mime_video.png" style="height: 122px;" title="Video" width="92"/></a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Bidhendi_AmirJ_2018_Mov5.mp4">
+<a href="/xmlui/bitstream/handle/1866/25037/Bidhendi_AmirJ_2018_Mov5.mp4?sequence=7&amp;isAllowed=y">Bidhendi_AmirJ_2018_Mov5.mp4</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">54.83Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">MPEG video</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Fichier complémentaire 5">Fichier complémentaire 5</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2994/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2994">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a> [388]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25037">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

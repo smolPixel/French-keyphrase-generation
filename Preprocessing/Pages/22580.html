@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>La gratuité des soins associée à l’amélioration de la qualité des soins est-elle efficace pour maintenir l’utilisation des services à long terme et améliorer la santé infantile au Burkina Faso ?</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Ridde, Valery" name="DC.contributor">
+<meta content="Zinszer, Kate" name="DC.contributor">
+<meta content="De Allegri, Manuela" name="DC.contributor">
+<meta content="Zombré, David" name="DC.creator">
+<meta content="2019-11-25T15:26:31Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2019-11-25T15:26:31Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF"/>
+<meta content="2019-05-10" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2019-02" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/22580" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Gratuité des Soins." name="DC.subject" xml:lang="fr"/>
+<meta content="Exemption des paiements" name="DC.subject" xml:lang="fr"/>
+<meta content="Effets à long terme" name="DC.subject" xml:lang="fr"/>
+<meta content="Accès aux soins de santé" name="DC.subject" xml:lang="fr"/>
+<meta content="Santé infantile" name="DC.subject" xml:lang="fr"/>
+<meta content="Inégalités de santé" name="DC.subject" xml:lang="fr"/>
+<meta content="Morbidité" name="DC.subject" xml:lang="fr"/>
+<meta content="Statut nutritionnel" name="DC.subject" xml:lang="fr"/>
+<meta content="Retard de croissance" name="DC.subject" xml:lang="fr"/>
+<meta content="Effets contextuels" name="DC.subject" xml:lang="fr"/>
+<meta content="Intervention populationnelle" name="DC.subject" xml:lang="fr"/>
+<meta content="Pays à Faible revenu" name="DC.subject" xml:lang="fr"/>
+<meta content="Analyses multiniveaux" name="DC.subject" xml:lang="fr"/>
+<meta content="Pondération par la probabilité inverse de sélection" name="DC.subject" xml:lang="fr"/>
+<meta content="Séries temporelles interrompues contrôlées" name="DC.subject" xml:lang="fr"/>
+<meta content="Régression boostée généralisée" name="DC.subject" xml:lang="fr"/>
+<meta content="Proportion de la variance expliquée." name="DC.subject" xml:lang="fr"/>
+<meta content="User fee removal" name="DC.subject" xml:lang="fr"/>
+<meta content="Free care policies" name="DC.subject" xml:lang="fr"/>
+<meta content="Population intervention" name="DC.subject" xml:lang="fr"/>
+<meta content="Maintained effects" name="DC.subject" xml:lang="fr"/>
+<meta content="Access to health care" name="DC.subject" xml:lang="fr"/>
+<meta content="Child health" name="DC.subject" xml:lang="fr"/>
+<meta content="Health inequalities" name="DC.subject" xml:lang="fr"/>
+<meta content="Morbidity" name="DC.subject" xml:lang="fr"/>
+<meta content="Nutritional status" name="DC.subject" xml:lang="fr"/>
+<meta content="Stunting" name="DC.subject" xml:lang="fr"/>
+<meta content="Contextual effects" name="DC.subject" xml:lang="fr"/>
+<meta content="Low-income countries" name="DC.subject" xml:lang="fr"/>
+<meta content="Multilevel analysis" name="DC.subject" xml:lang="fr"/>
+<meta content="Controlled-interrupted time series" name="DC.subject" xml:lang="fr"/>
+<meta content="Generalized boosted regression" name="DC.subject" xml:lang="fr"/>
+<meta content="Proportion of variance explained." name="DC.subject" xml:lang="fr"/>
+<meta content="Health Sciences - Epidemiology / Sciences de la santé - Épidémiologie (UMI : 0766)" name="DC.subject" xml:lang="fr"/>
+<meta content="La gratuité des soins associée à l’amélioration de la qualité des soins est-elle efficace pour maintenir l’utilisation des services à long terme et améliorer la santé infantile au Burkina Faso ?" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type" xml:lang="fr"/>
+<meta content="Problématique :  L’amélioration de l’accessibilité financière aux soins de santé est essentielle pour réduire la morbidité et de la  mortalité infantile dans les pays à ressources limitées. Cependant, les preuves disponibles sur la relation entre un accès accru aux soins et l’amélioration la santé infantile, dans le long terme, demeurent insuffisantes et parfois inconnues. Dans le contexte spécifique de la région du Sahel au Burkina Faso où les niveaux élevés de morbidité et de malnutrition coïncident avec un faible recours aux soins, une intervention de santé publique associant la gratuité des soins à l’amélioration de la qualité des soins et à la prise en charge de la malnutrition dans la communauté a été mise en œuvre en septembre 2008. 
+Objectifs :  En utilisant des approches statistiques et épidémiologiques appliquées aux données transversales et de séries chronologiques, cette thèse vise à apporter une meilleure compréhension de la façon dont la présence de l’intervention dans les communautés peut augmenter et maintenir l’utilisation des services de santé à long terme et améliorer la santé des enfants de moins de cinq ans.  Les objectifs spécifiques sont : 1) évaluer le maintien à long terme des effets de l’intervention sur l’utilisation des services de santé chez les enfants de moins de cinq ans, 2) évaluer l’effet contextuel de l’intervention, quatre ans après le début de sa mise en œuvre, sur la probabilité de survenue d’une maladie et sur la probabilité d’utilisation des services de santé chez les enfants de moins de cinq ans, et 3) évaluer l’effet contextuel de l’intervention, quatre ans après le début de sa mise en œuvre, sur le retard de croissance chez les enfants de moins de cinq ans. 
+Méthodes : Les données proviennent du système national d’information sanitaire, d’une enquête rétrospective sur les services de santé ainsi que d’une enquête de ménages réalisée quatre ans après le début de l’intervention dans 41 villages du district d’intervention et 51 villages du district de comparaison. Nous avons utilisé un plan quasi expérimental à séries temporelles interrompues avec groupe de comparaison pour évaluer les effets immédiats et à long terme de l’intervention sur les taux d’utilisation des services de santé. Ensuite, un plan d’étude transversale post-intervention avec un groupe de comparaison nous a permis d’évaluer l’effet contextuel de l’intervention sur la probabilité de survenue d’une maladie, sur la probabilité d’utilisation des services de santé et sur le retard de croissance chez les enfants de moins de cinq ans. La stratégie analytique a combiné la méthode de pondération par les scores de propension pour équilibrer les covariables entre les deux groupes, la modélisation binomiale négative à effets mixtes, les régressions linéaire et logistique multiniveaux.
+Résultats : L’intervention de gratuité des soins associée à l’amélioration de la qualité des soins et à la prise en charge de la malnutrition dans la communauté était associée à l’augmentation et au maintien de l’utilisation des services de santé au-delà de quatre ans (ratio des taux d’incidence = 2,33 ; IC 95 % = 1,98 – 2,67). En outre, comparativement aux enfants vivant dans le district de contrôle, la probabilité d’utiliser les services de santé était de 17,2 % plus élevée chez les enfants vivant dans le district d’intervention (IC 95 % = 15,01–26,6) ; et de 20,7 % plus élevée lorsque l’épisode de maladie était sévère (IC 95 % = 9,9–31,5). Ces associations étaient significatives, quels que soient la distance par rapport aux centres de santé et le statut socio-économique du ménage. Par ailleurs, alors que le contexte de résidence expliquait 9,36 % de la variance du retard de croissance (corrélation intraclasse = 9,36 % ; IC 95 % = 6,45–13,38), la présence de l’intervention dans les villages n’explique que 2 % de la variance du retard de croissance. Cependant, nous n’avons pas pu démontrer que la présence de l’intervention dans les communautés était associée à une réduction de la probabilité de survenue d’un épisode de maladie (Différentiel des probabilités = 4.4 ; IC 95% = -1.0 – 9.8), ni à une amélioration significative de l’état nutritionnel des enfants de moins de cinq ans (RC = 1,13 ; IC 95 % = 0,83–1,54).
+Conclusion : Cette thèse souligne que la gratuité des soins associée à l’amélioration de la qualité des soins et à la prise en charge de la malnutrition dans la communauté est efficace pour augmenter et maintenir l’utilisation des services de santé et réduire les inégalités géographiques de recours aux soins. Cependant, cette intervention n’était pas associée à une amélioration des résultats de santé infantile. Bien que des études longitudinales rigoureuses soient nécessaires pour comprendre pleinement l’influence potentielle de cette intervention sur la morbidité, cette thèse plaide pour la nécessité d’agir simultanément sur les autres déterminants sociaux de la santé et d’intégrer, de manière synergique, des interventions spécifiques à la nutrition pour plus d’impact sur la santé infantile." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Introduction: Improving financial access to health care is believed to be essential for reducing the burden of child morbidity and mortality in resource-limited settings, but the available evidence on the relationship between increased access and health remains scarce and the long-term issues are still unknown. In the specific context of the Sahel region in Burkina Faso where high levels of morbidity and malnutrition coincide with low health care use, a pilot intervention for free health care including quality of care improvement and management of malnutrition at the community level was implemented in September 2008.
+Objectives: 
+Using statistical and epidemiological approaches applied to cross-sectional and time series data, this thesis aims to provide a better understanding of how the presence of intervention in communities can increase and maintain long-term use of health services and improve the health of children under five years. The specific objectives are: 1) to evaluate the long-term effects of the intervention on the use of health services in children under the age of five, 2) to estimate the contextual effect of intervention on the probability of occurrence of and the likelihood of health services being used by children under five, four years after the start of its implementation, and 3) to evaluate the contextual effect of the intervention on stunting in children under five, four years after the start of its implementation.
+Methods: The data for the analyses were provided from a variety of sources including the national health information system, a retrospective health services survey, and a household survey conducted four years after the intervention onset in 41 villages in the intervention district and 51 villages in the comparison district.  We used a quasi-experimental controlled interrupted time-series design group to analyze the immediate and long-term effects of the intervention on the rate of health services utilization in children under five. Then, a quasi-experimental post-test-only design that included a control group allowed us to evaluate the contextual effect of the intervention on the probability of occurrence of a disease, on the probability of use of health services, and stunting in children under five. The analytic strategy combined the propensity score weighting method to balance the covariates between the two groups, two-level mixed-effects negative binomial, and linear and logistic regression models to account for the hierarchical structure of data.  
+Results: The intervention for free health care including quality of care improvement and management of malnutrition at the community level was associated with an increased and maintained use of health services beyond four years after the onset of intervention (incidence rate ratio = 2.33; 95% CI = 1.98–2.67).  In addition, compared to children living in the comparison district, the probability of using health services was 17.2% higher among those living in the intervention district (95% CI = 15.0–26.6); and 20.7% higher when the illness episode was severe (95% CI = 9.9–31.5). These associations were significant regardless of the distance to health centers and the socio-economic status of households. In addition, inequalities in the use of care were less pronounced in the intervention villages compared to those in the control village. Finally, the results also showed that the residence context accounted for 9.36% of the variance in stunting (intra-class correlation = 9.36% ; 95% CI = 6.45–13.38), and only 2% of the variance in stunting was explained by the intervention. However, we could not demonstrate that the intervention in these communities was associated with a reduced probability of an illness occurring (AME=4.4 (95% CI: -1.0 – 9.8), nor with a significant improvement in the nutritional status among children under five (OR = 1.13; 95% CI = 0.83–1.54).
+Conclusion: This thesis underlines the importance that affordable health care, including quality of care, as well as improving the management of malnutrition at the community level, are effective in increasing and maintaining the use of health services and reduce geographical inequalities in the use of care. However, this intervention was not associated with improved child health outcomes. Although rigorous longitudinal studies are necessary to fully understand the potential influence of this intervention on morbidity, this thesis highlights the need to simultaneously act on other social determinants of health and to synergistically integrate nutrition-specific interventions for greater impact on child health." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Gratuité des Soins.; Exemption des paiements; Effets à long terme; Accès aux soins de santé; Santé infantile; Inégalités de santé; Morbidité; Statut nutritionnel; Retard de croissance; Effets contextuels; Intervention populationnelle; Pays à Faible revenu; Analyses multiniveaux; Pondération par la probabilité inverse de sélection; Séries temporelles interrompues contrôlées; Régression boostée généralisée; Proportion de la variance expliquée.; User fee removal; Free care policies; Population intervention; Maintained effects; Access to health care; Child health; Health inequalities; Morbidity; Nutritional status; Stunting; Contextual effects; Low-income countries; Multilevel analysis; Controlled-interrupted time series; Generalized boosted regression; Proportion of variance explained.; Health Sciences - Epidemiology / Sciences de la santé - Épidémiologie (UMI : 0766); Thèse ou mémoire / Thesis or Dissertation; Santé publique" name="citation_keywords"/>
+<meta content="La gratuité des soins associée à l’amélioration de la qualité des soins est-elle efficace pour maintenir l’utilisation des services à long terme et améliorer la santé infantile au Burkina Faso ?" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Zombré, David" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/22580/6/Zombre_David_2018_these.pdf" name="citation_pdf_url"/>
+<meta content="2019-05-10" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/22580" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/22580?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/22580?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/22580?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/22580?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/22580?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/22580?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/10070" role="menuitem">École de santé publique</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/10094" role="menuitem">École de santé publique – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/10070">École de santé publique</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/10094"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/10094/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/22580/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/22580">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/22580/mets.xml-->
+<h2 class="page-header first-page-header">La gratuité des soins associée à l’amélioration de la qualité des soins est-elle efficace pour maintenir l’utilisation des services à long terme et améliorer la santé infantile au Burkina Faso ?</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Ridde, Valery</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Zinszer, Kate</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">De Allegri, Manuela</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Zombré, David</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2019-11-25T15:26:31Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2019-11-25T15:26:31Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2019-05-10</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2019-02</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/22580</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Gratuité des Soins.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Exemption des paiements</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Effets à long terme</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Accès aux soins de santé</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Santé infantile</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Inégalités de santé</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Morbidité</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Statut nutritionnel</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Retard de croissance</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Effets contextuels</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Intervention populationnelle</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pays à Faible revenu</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Analyses multiniveaux</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pondération par la probabilité inverse de sélection</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Séries temporelles interrompues contrôlées</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Régression boostée généralisée</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Proportion de la variance expliquée.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">User fee removal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Free care policies</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Population intervention</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Maintained effects</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Access to health care</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Child health</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Health inequalities</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Morbidity</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Nutritional status</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Stunting</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Contextual effects</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Low-income countries</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Multilevel analysis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Controlled-interrupted time series</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Generalized boosted regression</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Proportion of variance explained.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Health Sciences - Epidemiology / Sciences de la santé - Épidémiologie (UMI : 0766)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">La gratuité des soins associée à l’amélioration de la qualité des soins est-elle efficace pour maintenir l’utilisation des services à long terme et améliorer la santé infantile au Burkina Faso ?</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Santé publique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Problématique :  L’amélioration de l’accessibilité financière aux soins de santé est essentielle pour réduire la morbidité et de la  mortalité infantile dans les pays à ressources limitées. Cependant, les preuves disponibles sur la relation entre un accès accru aux soins et l’amélioration la santé infantile, dans le long terme, demeurent insuffisantes et parfois inconnues. Dans le contexte spécifique de la région du Sahel au Burkina Faso où les niveaux élevés de morbidité et de malnutrition coïncident avec un faible recours aux soins, une intervention de santé publique associant la gratuité des soins à l’amélioration de la qualité des soins et à la prise en charge de la malnutrition dans la communauté a été mise en œuvre en septembre 2008. 
+Objectifs :  En utilisant des approches statistiques et épidémiologiques appliquées aux données transversales et de séries chronologiques, cette thèse vise à apporter une meilleure compréhension de la façon dont la présence de l’intervention dans les communautés peut augmenter et maintenir l’utilisation des services de santé à long terme et améliorer la santé des enfants de moins de cinq ans.  Les objectifs spécifiques sont : 1) évaluer le maintien à long terme des effets de l’intervention sur l’utilisation des services de santé chez les enfants de moins de cinq ans, 2) évaluer l’effet contextuel de l’intervention, quatre ans après le début de sa mise en œuvre, sur la probabilité de survenue d’une maladie et sur la probabilité d’utilisation des services de santé chez les enfants de moins de cinq ans, et 3) évaluer l’effet contextuel de l’intervention, quatre ans après le début de sa mise en œuvre, sur le retard de croissance chez les enfants de moins de cinq ans. 
+Méthodes : Les données proviennent du système national d’information sanitaire, d’une enquête rétrospective sur les services de santé ainsi que d’une enquête de ménages réalisée quatre ans après le début de l’intervention dans 41 villages du district d’intervention et 51 villages du district de comparaison. Nous avons utilisé un plan quasi expérimental à séries temporelles interrompues avec groupe de comparaison pour évaluer les effets immédiats et à long terme de l’intervention sur les taux d’utilisation des services de santé. Ensuite, un plan d’étude transversale post-intervention avec un groupe de comparaison nous a permis d’évaluer l’effet contextuel de l’intervention sur la probabilité de survenue d’une maladie, sur la probabilité d’utilisation des services de santé et sur le retard de croissance chez les enfants de moins de cinq ans. La stratégie analytique a combiné la méthode de pondération par les scores de propension pour équilibrer les covariables entre les deux groupes, la modélisation binomiale négative à effets mixtes, les régressions linéaire et logistique multiniveaux.
+Résultats : L’intervention de gratuité des soins associée à l’amélioration de la qualité des soins et à la prise en charge de la malnutrition dans la communauté était associée à l’augmentation et au maintien de l’utilisation des services de santé au-delà de quatre ans (ratio des taux d’incidence = 2,33 ; IC 95 % = 1,98 – 2,67). En outre, comparativement aux enfants vivant dans le district de contrôle, la probabilité d’utiliser les services de santé était de 17,2 % plus élevée chez les enfants vivant dans le district d’intervention (IC 95 % = 15,01–26,6) ; et de 20,7 % plus élevée lorsque l’épisode de maladie était sévère (IC 95 % = 9,9–31,5). Ces associations étaient significatives, quels que soient la distance par rapport aux centres de santé et le statut socio-économique du ménage. Par ailleurs, alors que le contexte de résidence expliquait 9,36 % de la variance du retard de croissance (corrélation intraclasse = 9,36 % ; IC 95 % = 6,45–13,38), la présence de l’intervention dans les villages n’explique que 2 % de la variance du retard de croissance. Cependant, nous n’avons pas pu démontrer que la présence de l’intervention dans les communautés était associée à une réduction de la probabilité de survenue d’un épisode de maladie (Différentiel des probabilités = 4.4 ; IC 95% = -1.0 – 9.8), ni à une amélioration significative de l’état nutritionnel des enfants de moins de cinq ans (RC = 1,13 ; IC 95 % = 0,83–1,54).
+Conclusion : Cette thèse souligne que la gratuité des soins associée à l’amélioration de la qualité des soins et à la prise en charge de la malnutrition dans la communauté est efficace pour augmenter et maintenir l’utilisation des services de santé et réduire les inégalités géographiques de recours aux soins. Cependant, cette intervention n’était pas associée à une amélioration des résultats de santé infantile. Bien que des études longitudinales rigoureuses soient nécessaires pour comprendre pleinement l’influence potentielle de cette intervention sur la morbidité, cette thèse plaide pour la nécessité d’agir simultanément sur les autres déterminants sociaux de la santé et d’intégrer, de manière synergique, des interventions spécifiques à la nutrition pour plus d’impact sur la santé infantile.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Introduction: Improving financial access to health care is believed to be essential for reducing the burden of child morbidity and mortality in resource-limited settings, but the available evidence on the relationship between increased access and health remains scarce and the long-term issues are still unknown. In the specific context of the Sahel region in Burkina Faso where high levels of morbidity and malnutrition coincide with low health care use, a pilot intervention for free health care including quality of care improvement and management of malnutrition at the community level was implemented in September 2008.
+Objectives: 
+Using statistical and epidemiological approaches applied to cross-sectional and time series data, this thesis aims to provide a better understanding of how the presence of intervention in communities can increase and maintain long-term use of health services and improve the health of children under five years. The specific objectives are: 1) to evaluate the long-term effects of the intervention on the use of health services in children under the age of five, 2) to estimate the contextual effect of intervention on the probability of occurrence of and the likelihood of health services being used by children under five, four years after the start of its implementation, and 3) to evaluate the contextual effect of the intervention on stunting in children under five, four years after the start of its implementation.
+Methods: The data for the analyses were provided from a variety of sources including the national health information system, a retrospective health services survey, and a household survey conducted four years after the intervention onset in 41 villages in the intervention district and 51 villages in the comparison district.  We used a quasi-experimental controlled interrupted time-series design group to analyze the immediate and long-term effects of the intervention on the rate of health services utilization in children under five. Then, a quasi-experimental post-test-only design that included a control group allowed us to evaluate the contextual effect of the intervention on the probability of occurrence of a disease, on the probability of use of health services, and stunting in children under five. The analytic strategy combined the propensity score weighting method to balance the covariates between the two groups, two-level mixed-effects negative binomial, and linear and logistic regression models to account for the hierarchical structure of data.  
+Results: The intervention for free health care including quality of care improvement and management of malnutrition at the community level was associated with an increased and maintained use of health services beyond four years after the onset of intervention (incidence rate ratio = 2.33; 95% CI = 1.98–2.67).  In addition, compared to children living in the comparison district, the probability of using health services was 17.2% higher among those living in the intervention district (95% CI = 15.0–26.6); and 20.7% higher when the illness episode was severe (95% CI = 9.9–31.5). These associations were significant regardless of the distance to health centers and the socio-economic status of households. In addition, inequalities in the use of care were less pronounced in the intervention villages compared to those in the control village. Finally, the results also showed that the residence context accounted for 9.36% of the variance in stunting (intra-class correlation = 9.36% ; 95% CI = 6.45–13.38), and only 2% of the variance in stunting was explained by the intervention. However, we could not demonstrate that the intervention in these communities was associated with a reduced probability of an illness occurring (AME=4.4 (95% CI: -1.0 – 9.8), nor with a significant improvement in the nutritional status among children under five (OR = 1.13; 95% CI = 0.83–1.54).
+Conclusion: This thesis underlines the importance that affordable health care, including quality of care, as well as improving the management of malnutrition at the community level, are effective in increasing and maintaining the use of health services and reduce geographical inequalities in the use of care. However, this intervention was not associated with improved child health outcomes. Although rigorous longitudinal studies are necessary to fully understand the potential influence of this intervention on morbidity, this thesis highlights the need to simultaneously act on other social determinants of health and to synergistically integrate nutrition-specific interventions for greater impact on child health.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">UdeM.ORCIDAuteurThese</td><td class="word-break">0000-0002-7038-4738</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F22580&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sant%C3%A9+publique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/22580/Zombre_David_2018_these.pdf?sequence=6&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/22580/Zombre_David_2018_these.pdf.jpg?sequence=8&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Zombre_David_2018_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/22580/Zombre_David_2018_these.pdf?sequence=6&amp;isAllowed=y">Zombre_David_2018_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">5.033Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10094/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/10094">École de santé publique – Thèses et mémoires</a> [603]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/22580">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

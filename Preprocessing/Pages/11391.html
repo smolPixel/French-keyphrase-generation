@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Étude des tachykinines et de leurs dérivés peptidiques associés à la douleur neuropathique grâce à l’utilisation de modèles animaux et de la chromatographie en phase liquide couplée à la spectrométrie de masse</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Beaudry, Francis" name="DC.contributor">
+<meta content="Lemoine, Jérôme" name="DC.contributor">
+<meta content="Pailleux, Floriane" name="DC.creator">
+<meta content="2015-02-23T17:48:52Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2015-02-23T17:48:52Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2014-05-01" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2013-10" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/11391" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Allodynie" name="DC.subject" xml:lang="fr"/>
+<meta content="Chromatographie haute performance en phase liquide" name="DC.subject" xml:lang="fr"/>
+<meta content="Douleur chronique" name="DC.subject" xml:lang="fr"/>
+<meta content="Douleur neuropathique" name="DC.subject" xml:lang="fr"/>
+<meta content="Hyperalgésie" name="DC.subject" xml:lang="fr"/>
+<meta content="Neuropeptides" name="DC.subject" xml:lang="fr"/>
+<meta content="Peptidomique" name="DC.subject" xml:lang="fr"/>
+<meta content="Pharmacologie" name="DC.subject" xml:lang="fr"/>
+<meta content="Spectrométrie de masse" name="DC.subject" xml:lang="fr"/>
+<meta content="Allodynia" name="DC.subject" xml:lang="fr"/>
+<meta content="High performance liquid chromatography" name="DC.subject" xml:lang="fr"/>
+<meta content="Chronic pain" name="DC.subject" xml:lang="fr"/>
+<meta content="Neuropathic pain" name="DC.subject" xml:lang="fr"/>
+<meta content="Hyperalgesia" name="DC.subject" xml:lang="fr"/>
+<meta content="Neuropeptides" name="DC.subject" xml:lang="fr"/>
+<meta content="Peptidomic" name="DC.subject" xml:lang="fr"/>
+<meta content="Pharmacology" name="DC.subject" xml:lang="fr"/>
+<meta content="Mass spectrometry" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Veterinary Science / Biologie - Science vétérinaire (UMI : 0778)" name="DC.subject" xml:lang="fr"/>
+<meta content="Étude des tachykinines et de leurs dérivés peptidiques associés à la douleur neuropathique grâce à l’utilisation de modèles animaux et de la chromatographie en phase liquide couplée à la spectrométrie de masse" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La gestion de la douleur neuropathique reste un challenge en médecine, malgré le
+nombre de traitements actuellement disponible. L’expérimentation animale a généré beaucoup d’informations concernant la douleur, mais ces connaissances demeurent insuffisantes pour développer de nouveaux analgésiques plus efficaces tout en restant sécuritaires. La douleur est un symptôme clinique complexe avec de multiples origines, et les mécanismes de douleur centraux et périphériques dépendent de l’évolution de la pathologie. Il est donc essentiel d’investiguer plus profondément les mécanismes moléculaires responsables de l’initiation et du maintien de la douleur, afin de cibler de nouvelles voies de transmission de la nociception plus prometteuses pour soulager la neuropathie et développer de meilleures stratégies thérapeutiques. Ce projet s’est donc intéressé plus particulièrement à la famille des tachykinines issues du gène TAC1 (substance P, ses précurseurs et métabolites, et neurokinine A sont les peptides ciblés pour ce projet de recherche), une famille de neuropeptides qui joue un rôle critique dans la transmission nociceptive.
+Pour réaliser cette étude, nous avons d’abord développé une stratégie de quantification
+afin de quantifier les expressions des différents neuropeptides bioactifs cibles, par HPLC-MS/MS. Puisqu’il existe différentes stratégies de quantification des peptides par HPLC-MS/MS, une méthode analytique fiable et robuste était nécessaire pour répondre aux objectifs de recherche. Nous avons développé une méthode utilisant la quantification relative avec un étalon interne stable marqué isotopiquement. En effet, pour quantifier les neuropeptides d’intérêt de l’étude, c’est la stratégie qui s’est avérée la plus reproductible et précise.
+Suite à la mise au point de la stratégie de quantification, nous avons utilisé des
+modèles animaux, souvent nécessaires pour faire progresser la recherche scientifique sur la compréhension de la douleur.
+Le modèle de constriction chronique du nerf sciatique (CCI) est un modèle validé,
+largement utilisé pour induire et étudier la douleur neuropathique. Afin de s’assurer du
+développement de la neuropathie, deux tests comportementaux, les filaments de von Frey et le test de Hargreaves, ont été employés avant et après la CCI. Les cerveaux, les élargissements lombaires et les plasmas des animaux ont été prélevés afin d’effectuer les analyses pour quantifier la modulation d’expression des différents neuropeptides bioactifs cibles entre le groupe animal contrôle et le groupe pathologique. Ceci a révélé une augmentation significative des concentrations spinales de β-tachykinine58-71, SP et SP3-11 chez les rats neuropathiques, signifiant donc que l’expression de ces trois peptides est étroitement liée. Au contraire, la concentration spinale de SP5-11 est diminuée de façon significative chez les animaux neuropathiques. De plus, les concentrations cérébrales de β-tachykinine58-71 et SP sont significativement plus élevées chez les rats neuropathiques. Tandis qu’aucune différence significative n’est notée au niveau des concentrations spinales ou cérébrales de NKA, β-
+tachykinine58-70, SP6-11 et SP1-7. Ceci suggère que la β-tachykinine58-71, SP, SP3-11 et SP5-11 pourraient potentiellement servir de biomarqueurs de la douleur neuropathique.
+Nous avons aussi utilisé un modèle de souris knock-out, déficientes au niveau du gène
+du récepteur TRPV1 (TRPV1-/-), afin d’étudier les modulations d’expression de différentes tachykinines en fonction de la présence ou non du récepteur TRPV1, connu pour être étroitement lié aux tachykinines. Le récepteur vanilloïde TRPV1 est impliqué dans la transmission du signal douloureux en étant surexprimé, contribuant à la ensibilisation. Nos
+résultats ont montré que les concentrations spinales et cérébrales de SP et NKA sont
+significativement diminuées dans les tissus des souris TRPV1-/-. Ceci démontre la
+contribution des tachykinines dans la modulation du seuil douloureux, ainsi qu’un lien entre l’expression de SP et NKA et celle du récepteur TRPV1 dans les systèmes nerveux central et périphérique. En effet, les récepteurs vanilloïdes, et plus particulièrement le récepteur TRPV1, jouent un rôle central dans le processus de stimuli nociceptifs. Il est aussi connu que plusieurs ligands du TRPV1, tels que l’eugénol, la vanilline, le [6]-gingérol, ou des agonistes endogènes comme certains endovanilloïdes atténuent la douleur neuropathique en agissant sur le récepteur TRPV1.
+Suite à ces résultats, nous nous sommes intéressés aux métabolites de SP. En effet,
+différents mécanismes permettent la libération de SP suite à une lésion et à l’établissement de la douleur neuropathique. Il est bien documenté que le foie est l’organe principal du métabolisme. Par conséquent, au niveau sanguin, ce seront des métabolites de SP qui pourront être exprimés. Nous avons donc choisi d’étudier la stabilité métabolique de SP dans des microsomes de foie de rat, de souris et d’humain. Nos résultats ont montré que SP est rapidement dégradée et que le profil métabolique est différent selon l’espèce étudiée. Par conséquent, plusieurs métabolites de SP semblent intéressants et possèdent des activités pharmacologiques qui leur sont propres, dont SP1-7, SP3-11 et SP5-11.
+SP, ses métabolites et ses précurseurs, ainsi que NKA s’avérant intéressants en tant
+que biomarqueurs potentiels de la douleur neuropathique, il semblait aussi important de développer une méthode pour les quantifier dans le plasma. En effet, il est plus aisé de collecter du plasma pour éviter de sacrifier l’animal dans le but de réaliser des études cinétiques à long terme ou de développer des méthodes de dosages applicables à l’humain. Nous avons donc développé une méthode HPLC-MS/MRM afin de pouvoir estimer le niveau endogène des neuropeptides cibles dans le plasma. En revanche, nous n’avons pas eu la chance de pouvoir quantifier ces peptides dans le plasma collecté lors de l’étude animale.
+Il reste encore de nombreuses études à réaliser avant de pouvoir répondre à toutes les
+questions concernant la douleur neuropathique, sa transmission et les traitements possibles. Ce projet de doctorat a permis de commencer à éclairer la recherche sur la voie des tachykinines." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="The management of neuropathic pain remains a challenge in medicine, despite the
+availability of numerous drugs. Animal experimentation has generated a tremendous amount of information about pain, but this knowledge is still insufficient for new more efficient and safe analgesics. Pain is a complex clinical symptom with multiple origins, and peripheral and central pain mechanisms depend on the pathology evolution. Thus, it is essential to further investigate the mechanisms responsible for the initiation and maintenance of pain in order to develop better effective therapies. This project is particularly focused on the tachykinin family encoded by TAC1 gene (substance P, its precursors and metabolites, neurokinin A), a family of neuropeptides that plays a critical role in nociceptive transmission.                                                                                                 We initially developed a quantification strategy in order to study the targeted bioactive neuropeptide expression modulation by HPLC-MS and HPLC-MS/MS. And it is critical to develop reliable and robust analytical methods to reach the objectives. So, we developed a method using relative quantification with stable isotopic labeled internal standards. In fact, in order to quantify target neuropeptides, this strategy was the most reproducible and accurate.                                                                                                                        Following the development of the relative quantification strategy, we used validated
+animal models, fundamental to better knowledges of painful molecular mechanisms.        The model of chronic constriction injury of the sciatic nerve (CCI) is a validated model, widely used to induce and study neuropathic pain. To perform complete data, two
+behavioral tests, von Frey filaments and Hargreaves test, were used before and after the CCI to ensure the neuropathy establishment. The animal brains, lumbar enlargements and plasmas were collected to quantify the expression modulation of different targeted bioactive neuropeptides between the CCI group versus the control group. HPLC-MS/MS analyses revealed that the spinal β-tachykinin58-71, SP and SP3-11 concentrations were significantly up-regulated in neuropathic animals, meaning these peptide expressions are closely related to pain behavior. In contrast, the spinal SP5-11 concentration in neuropathic animals revealed a significant down-regulation compared with normal animals. Moreover, the brain β-tachykinin58-71 and SP concentrations were significantly up-regulated in neuropathic animals. Interestingly, no significant concentration differences were observed in the spinal cord and brain for NKA, β-tachykinine58-70, SP6-11 and SP1-7. This suggests that β-tachykinin58-71, SP, SP3-11 and SP5-11 could potentially serve as drug efficacy markers in early drug discovery.
+We also used a knock-out mice model, deficient in the TRPV1 receptor gene (TRPV1-
+/-) to study the expression modulation of different tachykinins according to the presence or absence the TRPV1 receptor. The TRPV1 receptor is known to be closely related to
+tachykinins. The over-expressed TRPV1 vanilloid receptor is involved in the transmission of painful signal, leading to the sensitization. Our results revealed that SP and NKA spinal and brain concentrations were significantly decreased in TRPV1-/- mice. These results suggest an important tachykinin contribution in the pain threshold modulation, and a close link between SP, NKA and TRPV1 expressions in the central and peripheral nervous systems. Vanilloid receptors, particularly the TRPV1 receptor, play a central role in the nociceptive stimuli transmission. It is also known that several TRPV1 agonists, such as eugenol, vanillin, [6]-gingerol, or endogenous agonists like endovanilloids alleviate pain in neuropathic and osteoarthritis models via their action on the TRPV1 receptor.
+There are several mechanisms leading to the SP release following an injury and the
+neuropathy development. Nowadays, it is well documented the liver is the main organ of the metabolism. Thus, SP metabolites could be expressed in the blood level. So we are interested to SP metabolic stability in rat, mouse and human liver microsomes. Our results showed that SP is rapidly degraded and the metabolic profile is different depending on the species studied. Several SP metabolites seem interesting and have pharmacological activities, including SP1-7, SP3-11 and SP5-11.
+As all these neuropeptides seemed interested targets like potential biomarkers of
+neuropathic pain, we developed a method to quantify them in the plasma. Additionally, it is easier to collect plasma to avoid sacrificing the animal in order to achieve long-term kinetic studies or develop assay methods applicable to humans. So we have developed a HPLC-MS/MRM analytical method to estimate the targeted neuropeptide endogenous levels in plasmas. However, we did not have the chance to quantify these peptides in collected plasmas during the animal study.
+A lot of studies are still required to clarify different pathways involved in neuropathic
+pain in order to develop better and safer therapeutic strategies. This project allowed to better understanding of mecanisms related to tachykinin activities." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Thèse réalisée en co-tutelle avec l'Université Claude Bernard de Lyon 1, en France." name="DCTERMS.description" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Allodynie; Chromatographie haute performance en phase liquide; Douleur chronique; Douleur neuropathique; Hyperalgésie; Neuropeptides; Peptidomique; Pharmacologie; Spectrométrie de masse; Allodynia; High performance liquid chromatography; Chronic pain; Neuropathic pain; Hyperalgesia; Neuropeptides; Peptidomic; Pharmacology; Mass spectrometry; Biology - Veterinary Science / Biologie - Science vétérinaire (UMI : 0778); Thèse ou mémoire / Thesis or Dissertation; Sciences vétérinaires" name="citation_keywords"/>
+<meta content="Étude des tachykinines et de leurs dérivés peptidiques associés à la douleur neuropathique grâce à l’utilisation de modèles animaux et de la chromatographie en phase liquide couplée à la spectrométrie de masse" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Pailleux, Floriane" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/11391/2/These_Floriane_Pailleux_2013.pdf" name="citation_pdf_url"/>
+<meta content="2014-05-01" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/11391" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11391?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11391?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11391?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11391?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11391?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11391?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2919" role="menuitem">Faculté de médecine vétérinaire</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2966" role="menuitem">Faculté de médecine vétérinaire – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2919">Faculté de médecine vétérinaire</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2966">Faculté de médecine vétérinaire – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2966"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2966/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/11391/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/11391">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/11391/mets.xml-->
+<h2 class="page-header first-page-header">Étude des tachykinines et de leurs dérivés peptidiques associés à la douleur neuropathique grâce à l’utilisation de modèles animaux et de la chromatographie en phase liquide couplée à la spectrométrie de masse</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Beaudry, Francis</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Lemoine, Jérôme</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Pailleux, Floriane</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2015-02-23T17:48:52Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2015-02-23T17:48:52Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2014-05-01</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2013-10</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/11391</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Allodynie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Chromatographie haute performance en phase liquide</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Douleur chronique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Douleur neuropathique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Hyperalgésie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Neuropeptides</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Peptidomique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Pharmacologie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Spectrométrie de masse</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Allodynia</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">High performance liquid chromatography</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Chronic pain</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Neuropathic pain</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Hyperalgesia</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Neuropeptides</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Peptidomic</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pharmacology</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Mass spectrometry</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Veterinary Science / Biologie - Science vétérinaire (UMI : 0778)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Étude des tachykinines et de leurs dérivés peptidiques associés à la douleur neuropathique grâce à l’utilisation de modèles animaux et de la chromatographie en phase liquide couplée à la spectrométrie de masse</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences vétérinaires</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La gestion de la douleur neuropathique reste un challenge en médecine, malgré le
+nombre de traitements actuellement disponible. L’expérimentation animale a généré beaucoup d’informations concernant la douleur, mais ces connaissances demeurent insuffisantes pour développer de nouveaux analgésiques plus efficaces tout en restant sécuritaires. La douleur est un symptôme clinique complexe avec de multiples origines, et les mécanismes de douleur centraux et périphériques dépendent de l’évolution de la pathologie. Il est donc essentiel d’investiguer plus profondément les mécanismes moléculaires responsables de l’initiation et du maintien de la douleur, afin de cibler de nouvelles voies de transmission de la nociception plus prometteuses pour soulager la neuropathie et développer de meilleures stratégies thérapeutiques. Ce projet s’est donc intéressé plus particulièrement à la famille des tachykinines issues du gène TAC1 (substance P, ses précurseurs et métabolites, et neurokinine A sont les peptides ciblés pour ce projet de recherche), une famille de neuropeptides qui joue un rôle critique dans la transmission nociceptive.
+Pour réaliser cette étude, nous avons d’abord développé une stratégie de quantification
+afin de quantifier les expressions des différents neuropeptides bioactifs cibles, par HPLC-MS/MS. Puisqu’il existe différentes stratégies de quantification des peptides par HPLC-MS/MS, une méthode analytique fiable et robuste était nécessaire pour répondre aux objectifs de recherche. Nous avons développé une méthode utilisant la quantification relative avec un étalon interne stable marqué isotopiquement. En effet, pour quantifier les neuropeptides d’intérêt de l’étude, c’est la stratégie qui s’est avérée la plus reproductible et précise.
+Suite à la mise au point de la stratégie de quantification, nous avons utilisé des
+modèles animaux, souvent nécessaires pour faire progresser la recherche scientifique sur la compréhension de la douleur.
+Le modèle de constriction chronique du nerf sciatique (CCI) est un modèle validé,
+largement utilisé pour induire et étudier la douleur neuropathique. Afin de s’assurer du
+développement de la neuropathie, deux tests comportementaux, les filaments de von Frey et le test de Hargreaves, ont été employés avant et après la CCI. Les cerveaux, les élargissements lombaires et les plasmas des animaux ont été prélevés afin d’effectuer les analyses pour quantifier la modulation d’expression des différents neuropeptides bioactifs cibles entre le groupe animal contrôle et le groupe pathologique. Ceci a révélé une augmentation significative des concentrations spinales de β-tachykinine58-71, SP et SP3-11 chez les rats neuropathiques, signifiant donc que l’expression de ces trois peptides est étroitement liée. Au contraire, la concentration spinale de SP5-11 est diminuée de façon significative chez les animaux neuropathiques. De plus, les concentrations cérébrales de β-tachykinine58-71 et SP sont significativement plus élevées chez les rats neuropathiques. Tandis qu’aucune différence significative n’est notée au niveau des concentrations spinales ou cérébrales de NKA, β-
+tachykinine58-70, SP6-11 et SP1-7. Ceci suggère que la β-tachykinine58-71, SP, SP3-11 et SP5-11 pourraient potentiellement servir de biomarqueurs de la douleur neuropathique.
+Nous avons aussi utilisé un modèle de souris knock-out, déficientes au niveau du gène
+du récepteur TRPV1 (TRPV1-/-), afin d’étudier les modulations d’expression de différentes tachykinines en fonction de la présence ou non du récepteur TRPV1, connu pour être étroitement lié aux tachykinines. Le récepteur vanilloïde TRPV1 est impliqué dans la transmission du signal douloureux en étant surexprimé, contribuant à la ensibilisation. Nos
+résultats ont montré que les concentrations spinales et cérébrales de SP et NKA sont
+significativement diminuées dans les tissus des souris TRPV1-/-. Ceci démontre la
+contribution des tachykinines dans la modulation du seuil douloureux, ainsi qu’un lien entre l’expression de SP et NKA et celle du récepteur TRPV1 dans les systèmes nerveux central et périphérique. En effet, les récepteurs vanilloïdes, et plus particulièrement le récepteur TRPV1, jouent un rôle central dans le processus de stimuli nociceptifs. Il est aussi connu que plusieurs ligands du TRPV1, tels que l’eugénol, la vanilline, le [6]-gingérol, ou des agonistes endogènes comme certains endovanilloïdes atténuent la douleur neuropathique en agissant sur le récepteur TRPV1.
+Suite à ces résultats, nous nous sommes intéressés aux métabolites de SP. En effet,
+différents mécanismes permettent la libération de SP suite à une lésion et à l’établissement de la douleur neuropathique. Il est bien documenté que le foie est l’organe principal du métabolisme. Par conséquent, au niveau sanguin, ce seront des métabolites de SP qui pourront être exprimés. Nous avons donc choisi d’étudier la stabilité métabolique de SP dans des microsomes de foie de rat, de souris et d’humain. Nos résultats ont montré que SP est rapidement dégradée et que le profil métabolique est différent selon l’espèce étudiée. Par conséquent, plusieurs métabolites de SP semblent intéressants et possèdent des activités pharmacologiques qui leur sont propres, dont SP1-7, SP3-11 et SP5-11.
+SP, ses métabolites et ses précurseurs, ainsi que NKA s’avérant intéressants en tant
+que biomarqueurs potentiels de la douleur neuropathique, il semblait aussi important de développer une méthode pour les quantifier dans le plasma. En effet, il est plus aisé de collecter du plasma pour éviter de sacrifier l’animal dans le but de réaliser des études cinétiques à long terme ou de développer des méthodes de dosages applicables à l’humain. Nous avons donc développé une méthode HPLC-MS/MRM afin de pouvoir estimer le niveau endogène des neuropeptides cibles dans le plasma. En revanche, nous n’avons pas eu la chance de pouvoir quantifier ces peptides dans le plasma collecté lors de l’étude animale.
+Il reste encore de nombreuses études à réaliser avant de pouvoir répondre à toutes les
+questions concernant la douleur neuropathique, sa transmission et les traitements possibles. Ce projet de doctorat a permis de commencer à éclairer la recherche sur la voie des tachykinines.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The management of neuropathic pain remains a challenge in medicine, despite the
+availability of numerous drugs. Animal experimentation has generated a tremendous amount of information about pain, but this knowledge is still insufficient for new more efficient and safe analgesics. Pain is a complex clinical symptom with multiple origins, and peripheral and central pain mechanisms depend on the pathology evolution. Thus, it is essential to further investigate the mechanisms responsible for the initiation and maintenance of pain in order to develop better effective therapies. This project is particularly focused on the tachykinin family encoded by TAC1 gene (substance P, its precursors and metabolites, neurokinin A), a family of neuropeptides that plays a critical role in nociceptive transmission.                                                                                                 We initially developed a quantification strategy in order to study the targeted bioactive neuropeptide expression modulation by HPLC-MS and HPLC-MS/MS. And it is critical to develop reliable and robust analytical methods to reach the objectives. So, we developed a method using relative quantification with stable isotopic labeled internal standards. In fact, in order to quantify target neuropeptides, this strategy was the most reproducible and accurate.                                                                                                                        Following the development of the relative quantification strategy, we used validated
+animal models, fundamental to better knowledges of painful molecular mechanisms.        The model of chronic constriction injury of the sciatic nerve (CCI) is a validated model, widely used to induce and study neuropathic pain. To perform complete data, two
+behavioral tests, von Frey filaments and Hargreaves test, were used before and after the CCI to ensure the neuropathy establishment. The animal brains, lumbar enlargements and plasmas were collected to quantify the expression modulation of different targeted bioactive neuropeptides between the CCI group versus the control group. HPLC-MS/MS analyses revealed that the spinal β-tachykinin58-71, SP and SP3-11 concentrations were significantly up-regulated in neuropathic animals, meaning these peptide expressions are closely related to pain behavior. In contrast, the spinal SP5-11 concentration in neuropathic animals revealed a significant down-regulation compared with normal animals. Moreover, the brain β-tachykinin58-71 and SP concentrations were significantly up-regulated in neuropathic animals. Interestingly, no significant concentration differences were observed in the spinal cord and brain for NKA, β-tachykinine58-70, SP6-11 and SP1-7. This suggests that β-tachykinin58-71, SP, SP3-11 and SP5-11 could potentially serve as drug efficacy markers in early drug discovery.
+We also used a knock-out mice model, deficient in the TRPV1 receptor gene (TRPV1-
+/-) to study the expression modulation of different tachykinins according to the presence or absence the TRPV1 receptor. The TRPV1 receptor is known to be closely related to
+tachykinins. The over-expressed TRPV1 vanilloid receptor is involved in the transmission of painful signal, leading to the sensitization. Our results revealed that SP and NKA spinal and brain concentrations were significantly decreased in TRPV1-/- mice. These results suggest an important tachykinin contribution in the pain threshold modulation, and a close link between SP, NKA and TRPV1 expressions in the central and peripheral nervous systems. Vanilloid receptors, particularly the TRPV1 receptor, play a central role in the nociceptive stimuli transmission. It is also known that several TRPV1 agonists, such as eugenol, vanillin, [6]-gingerol, or endogenous agonists like endovanilloids alleviate pain in neuropathic and osteoarthritis models via their action on the TRPV1 receptor.
+There are several mechanisms leading to the SP release following an injury and the
+neuropathy development. Nowadays, it is well documented the liver is the main organ of the metabolism. Thus, SP metabolites could be expressed in the blood level. So we are interested to SP metabolic stability in rat, mouse and human liver microsomes. Our results showed that SP is rapidly degraded and the metabolic profile is different depending on the species studied. Several SP metabolites seem interesting and have pharmacological activities, including SP1-7, SP3-11 and SP5-11.
+As all these neuropeptides seemed interested targets like potential biomarkers of
+neuropathic pain, we developed a method to quantify them in the plasma. Additionally, it is easier to collect plasma to avoid sacrificing the animal in order to achieve long-term kinetic studies or develop assay methods applicable to humans. So we have developed a HPLC-MS/MRM analytical method to estimate the targeted neuropeptide endogenous levels in plasmas. However, we did not have the chance to quantify these peptides in collected plasmas during the animal study.
+A lot of studies are still required to clarify different pathways involved in neuropathic
+pain in order to develop better and safer therapeutic strategies. This project allowed to better understanding of mecanisms related to tachykinin activities.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.description</td><td class="word-break">Thèse réalisée en co-tutelle avec l'Université Claude Bernard de Lyon 1, en France.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F11391&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+v%C3%A9t%C3%A9rinaires&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/11391/These_Floriane_Pailleux_2013.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/11391/These_Floriane_Pailleux_2013.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="These_Floriane_Pailleux_2013.pdf">
+<a href="/xmlui/bitstream/handle/1866/11391/These_Floriane_Pailleux_2013.pdf?sequence=2&amp;isAllowed=y">These_Floriane_Pailleux_2013.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">9.640Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2966/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2966">Faculté de médecine vétérinaire – Thèses et mémoires</a> [509]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/11391">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Structural and biochemical characterization of the irganomercurial Lyase MerB</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Omichinski, James G." name="DC.contributor">
+<meta content="Abdelgawwad, Haytham Mohamed Gamaleldin Wahba" name="DC.creator">
+<meta content="2017-05-15T18:49:29Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="MONTHS_WITHHELD:24" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2017-05-15T18:49:29Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2017-03-30" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2016-06" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/18547" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Organomercuriallyase" name="DC.subject" xml:lang="fr"/>
+<meta content="MerB" name="DC.subject" xml:lang="fr"/>
+<meta content="Organolead" name="DC.subject" xml:lang="fr"/>
+<meta content="Organotin" name="DC.subject" xml:lang="fr"/>
+<meta content="Copper binding protein" name="DC.subject" xml:lang="fr"/>
+<meta content="Carbon metal bond cleavage" name="DC.subject" xml:lang="fr"/>
+<meta content="Méthylmercure" name="DC.subject" xml:lang="fr"/>
+<meta content="Organomercuriels" name="DC.subject" xml:lang="fr"/>
+<meta content="Bioremédiation" name="DC.subject" xml:lang="fr"/>
+<meta content="Résonance magnétique nucléaire" name="DC.subject" xml:lang="fr"/>
+<meta content="Cristallographie aux rayons X" name="DC.subject" xml:lang="fr"/>
+<meta content="Chemistry - Biochemistry / Chimie - Biochimie (UMI : 0487)" name="DC.subject" xml:lang="fr"/>
+<meta content="Structural and biochemical characterization of the irganomercurial Lyase MerB" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Le mercure est présent dans l'environnement à cause de phénomènes naturels (volcans) ou des activités humaines (combustion de combustibles fossiles). Le mercure existe sous forme de mercure élémentaire (Hg0), ionique (HgII) ou organique tel le méthylmercure (MeHg). Ces diverses formes sont en flux constant les uns avec les autres dans le cycle biogéochimique naturel. De par leur grande hydrophobicité et leur capacité à pénétrer les membranes biologiques, les composés organomercuriels contituent la forme la plus toxique de mercure retrouvée dans l’environnement Des niveaux élevés de MeHg ont d’ailleurs été détectés dans la chaire de poissons de nombreuses régions du monde. Conséquemment, une consommation de produits de la mer contaminés représente un grave danger pour la santé humaine. 
+Certaines bactéries isolées à partir d'environnements contaminés par le mercure ont évolué vers un système qui leur permet de convertir efficacement les composés mercuriels présents autant sous forme ionique qu’organique en un mercure élémentaire moins toxique. Cette résistance au mercure s’explique par l'acquisition d'un élément génétique connu sous le nom d’opéron mer. L’opéron mer code entre autre pour deux enzymes importants : la lyase organomercurielle MerB et la réductase mercurielle MerA. MerA catalyse la réduction du HgII conduisant à la formation du mercure élémentaire Hg0 qui est un composé volatile et moins toxique. MerB, quant à elle, catalyse la protonolyse de la liaison carbone-mercure de composés organomercuriels pour produire un composé réduit de carbone et du mercure ionique (HgII). Au vu des effets des  organomercuriels et de la réduction de HgII, MerA et MerB sont considérés comme des enzymes clés pouvant servir à la biorestauration des cours d'eau contaminés par les organomercuriels. Une compréhension claire des détails mécanistiques de la façon dont MerA et MerB fonctionnent ensemble au niveau atomique est donc cruciale dans la mise en œuvre de biotechnologies implicant l’opéron mer dans les efforts de bioremédiation. 
+Dans cette étude, nous avons utilisé la résonance magnétique nucléaire (RMN)et la cristallographie aux rayons X pour caractériser la structure et le mécanisme enzymatique de MerB de E. coli. Sur la base d’études structurales précédentes de MerB de E. coli, trois résidus (Cys96, Asp99 et Cys159) ont été identifiés comme constituant la triade catalytique nécessaire au clivage de la liaison carbone-Hg. En guise de suivi aux études antérieures, mon projet consiste d’abord à utiliser la cristallographie aux rayons X afin de définir les rôles de Cys96, Asp99 et Cys159 dans la liaison du substrat et dans le clivage.
+Deux approches ont été mises en œuvre pour atteindre cet objectif. Tout d'abord, les mutants MerB ont été testés pour définir le rôle des résidus catalytiques. Deuxièmement, les inhibiteurs de MerB et d'autres substrats non organicomercuriels potentiels ont été utilisés pour explorer le site actif de MerB. 
+Une sérine se retrouve à la position de Asp99 dans quatre variants de MerB répertoriés chez les bactéries. Pour mieux comprendre le rôle de Asp99, nous avons comparé la sérine présente dans le variants MerB de Bacillus megaterium (MerB2) et introduit un variant D99S à la protéine MerB du type sauvage d’E. coli (MerB D99S). Nous avons pu constater que la forme purifiée de MerB D99S se caractérisait par une couleur rose après avoir visualisé sa structure cristalline aux rayons X, révélant la présence d'un métal lié au niveau de son site actif. Les analyses par spectrométrie de masse à plasma à couplage inductif (ICP-MS) et par fluorescence des rayons X indiquèrent que MerB D99S se liait au cuivre au niveau du site actif. En outre, les analyses par résonance paramagnétique électronique (EPR) et des études de RMN ont identifié la forme CuII du cuivre. L'addition de substrats organomercuriels a pu déplacer le CuII entrainant ainsi une diminution de l’activité catalytique de MerB D99S. En revanche, MerB2 n'a pu être co-purifié avec le cuivre, bien que la structure aux rayons X du complexe MerB2-Hg soit pratiquement identique à la structure du complexe MerB D99S-Hg. Ceci suggère que le résidu Asp99 est essentiel au clivage des liaisons carbone-Hg de composés organiques du mercure et dirige la spécificité de la liaison au métal. De plus, la liaison cuivre-MerB D99S propose un lien possible entre l'évolution de MerB et son homologue structural, la protéine NosL. 
+Dans la seconde approche, nous nous sommes intéressés au site actif de MerB en testant sa liaison à des composés organostanniques et à des composés organoplombiques avec un inhibiteur de MerB connu sous le nom de triéthylétain (TET) qui se lie au résidu Asp99 sans s’associer aux cystéines du site actif. Une liaison similaire a été observée avec un autre inhibiteur à savoir le triméthylplomb (TML). Quant au diméthylétain (DMT), il inhibe MerB à l'aide d'un mécanisme alternatif en se liant d'abord à Asp99 puis à Cys96 conduisant à un changement critique dans le site actif perturbant ainsi l’interaction π-cation entre Trp95 et Arg155. D’autres inhibiteurs comme le diéthylétain (DET) et le diéthylplomb (DEL) ont été caractérisés comme étant un substrat de MerB où les deux groupes éthyle ont été clivés pour donner les produits ioniques SnIV PbIV qui se lient au site actif de manière similaire à HgII. DMT, DET et DEL présentent une affinité pour la liaison à MerB supérieure à celle de son substrat initial MeHg. Ces résultats suggèrent que les composés organomercuriels ne sont pas les seuls substrats pour MerB et Asp99 est le premier résidu à se lier aux composés organométalliques suivis de la liaison à Cys96 et Cys159. 
+Ces observations suggèrent un agrandissement de l’éventail d'applications possibles pour MerB dans la bioremédiation de certains sites contaminés par des composés organométalliques tels les organoplombiques et organostanniques.
+Mot-clé: Organomercuriallyase, Merb, organoplombiques. Organostanniques, protéine de liaison cuivre, carbone liaison métallique clivage, méthylmercure, Organomercuriels, biorestauration, résonance magnétique nucléaire, la cristallographie aux rayons X." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Mercury is introduced into the environment from either natural occurrences (volcanoes) or from human activities (combustion of fossil fuels). Mercury exists as elemental mercury (Hg0), ionic mercury (HgII) or organic mercury like methylmercury (MeHg) and these forms are in constant flux with each other as part of the natural biogeochemical cycle. Organomercurial compounds like MeHg are the most toxic form because of their hydrophobicity and their ability to efficiently permeate membranes and bioaccumulate in organisms. High levels of MeHg have been found in fish in many areas around the world, and therefore human consumption of contaminated seafood represents a serious danger for human health. Bacteria isolated from mercury-contaminated environments have evolved a system that allows them to efficiently convert both ionic and organic mercury compounds to the less toxic elemental mercury. The mercury resistance is due to the acquisition of a transferable genetic element known as the mer operon. The mer operon encodes for several proteins including two enzymes, the organomercurial lyase MerB and the mercuric ion reductase MerA. MerB catalyzes the protonolysis of the carbon-mercury bond of organomercurial compounds to produce a reduced-carbon compound and inorganic ionic mercury HgII. MerA catalyzes the reduction of HgII to elemental mercury Hg0, which is volatile and less toxic. Due to their ability to cleave MeHg and reduce the resulting HgII product, MerB and MerA are considered crucial to bioremediation efforts to clean up MeHg from contaminated waterways. A clear understanding of the mechanistic details of how MerB and MerA function together at the atomic level is crucial for appropriate utilization of the mer system in bioremediation efforts. We have been using nuclear magnetic resonance (NMR) spectroscopy and X-ray crystallography to structurally and mechanistically characterize E. coli MerB. Based on previous structural studies of E. coli MerB, three residues (Cys96, Asp99 and Cys159) have been identified as a catalytic triad which is required for carbon-Hg bond cleavage. As a follow up to the earlier studies, my project involves using X-ray crystallography to define the roles of Cys96, Asp99 and Cys159 in substrate binding and cleavage. 
+Two different approaches were implemented to fulfill this goal. Firstly, MerB mutants were tested to define the role for the catalytic residues. Secondly, MerB inhibitors and other potential non-organomercurial substrates were used to probe MerB active site. The Cys,-Asp-Cys catalytic triad found in E.coli MerB is conserved in all MerB variants except four variants where aspartic acid is replaced by a serine. To understand the role of Asp99, we compared a serine-containing MerB variant (Bacillus megaterium MerB2) and an E. coli MerB mutant (MerB D99S) to wild type E. coli MerB. Interestingly, the purified MerB D99S protein was found to contain a pink color. X-ray crystal structure indicated the presence of a bound metal in the active site of MerB D99S. Analysis by inductively coupled plasma mass spectrometry (ICP-MS) and X-ray fluorescence indicated that MerB D99S binds copper in the active site. Further, electron paramagnetic resonance (EPR) and NMR studies identified the copper as CuII. Addition of organomercurial substrate displaces bound CuII but MerB D99S shows diminished catalytic activity. In contrast, MerB2 did not co-purify with copper although the X-ray structure of MerB2-Hg complex is virtually identical to the structure of the MerB D99S-Hg. This suggests that the aspartic acid residue is crucial for the cleavage of carbon-Hg bonds of organomercurials as well as metal-binding specificity. Furthermore, the binding of copper to the MerB D99S protein suggests a possible evolutionary link between MerB and its structural homolog, the copper-binding protein NosL. In the second approach, we probed the active site of MerB through testing its binding to organotin and organolead compounds. The known MerB inhibitor triethyltin (TET) binds to Asp99 without binding to any of the active site cysteines. A similar binding has been observed with trimethylead (TML). Dimethyltin (DMT) inhibits MerB using an alternative mechanism. It first binds to Asp99 then Cys96, which induces a dramatic change in the active site by disrupting a cation-π interaction between Try95 and Arg155. In contrast, diethyltin (DET) and diethylead (DEL) were found to be substrates for MerB, where both ethyl groups were cleaved and the SnIV and PbIV products bound to the active site in a similar manner to HgII. DMT, DET and DEL show higher binding affinity to MerB than its initial substrate MeHg. These results suggest that organomercurials may not be the only substrates for MerB and Asp99 is the first residue to bind to organometals followed by subsequent binding to Cys96 and Cys159. In addition, these observations suggest that there are other possible applications for employing MerB in bioremediation of organolead and organotin contaminated sites while other organometals may have implications when using MerB in bioremediation systems. 
+Keyword: Organomercuriallyase, MerB, Organolead. Organotin, Copper binding protein, Carbon metal bond cleavage, Methylmercury, Organomercuriels, Bioremédiation, Nuclear magnetic resonance, X ray crystallography." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Organomercuriallyase; MerB; Organolead; Organotin; Copper binding protein; Carbon metal bond cleavage; Méthylmercure; Organomercuriels; Bioremédiation; Résonance magnétique nucléaire; Cristallographie aux rayons X; Chemistry - Biochemistry / Chimie - Biochimie (UMI : 0487); Thèse ou mémoire / Thesis or Dissertation; Biochimie" name="citation_keywords"/>
+<meta content="Structural and biochemical characterization of the irganomercurial Lyase MerB" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Abdelgawwad, Haytham Mohamed Gamaleldin Wahba" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/18547/6/Abdelgawwad_Haytham-Mohamed-Gamaleldin-Wahba_2016_these.pdf" name="citation_pdf_url"/>
+<meta content="2017-03-30" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/18547" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/18547?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/18547?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/18547?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/18547?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/18547?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/18547?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/18547/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/18547">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/18547/mets.xml-->
+<h2 class="page-header first-page-header">Structural and biochemical characterization of the irganomercurial Lyase MerB</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Omichinski, James G.</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Abdelgawwad, Haytham Mohamed Gamaleldin Wahba</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2017-05-15T18:49:29Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">MONTHS_WITHHELD:24</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2017-05-15T18:49:29Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2017-03-30</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2016-06</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/18547</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Organomercuriallyase</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">MerB</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Organolead</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Organotin</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Copper binding protein</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Carbon metal bond cleavage</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Méthylmercure</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Organomercuriels</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Bioremédiation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Résonance magnétique nucléaire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Cristallographie aux rayons X</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Chemistry - Biochemistry / Chimie - Biochimie (UMI : 0487)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Structural and biochemical characterization of the irganomercurial Lyase MerB</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Biochimie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Le mercure est présent dans l'environnement à cause de phénomènes naturels (volcans) ou des activités humaines (combustion de combustibles fossiles). Le mercure existe sous forme de mercure élémentaire (Hg0), ionique (HgII) ou organique tel le méthylmercure (MeHg). Ces diverses formes sont en flux constant les uns avec les autres dans le cycle biogéochimique naturel. De par leur grande hydrophobicité et leur capacité à pénétrer les membranes biologiques, les composés organomercuriels contituent la forme la plus toxique de mercure retrouvée dans l’environnement Des niveaux élevés de MeHg ont d’ailleurs été détectés dans la chaire de poissons de nombreuses régions du monde. Conséquemment, une consommation de produits de la mer contaminés représente un grave danger pour la santé humaine. 
+Certaines bactéries isolées à partir d'environnements contaminés par le mercure ont évolué vers un système qui leur permet de convertir efficacement les composés mercuriels présents autant sous forme ionique qu’organique en un mercure élémentaire moins toxique. Cette résistance au mercure s’explique par l'acquisition d'un élément génétique connu sous le nom d’opéron mer. L’opéron mer code entre autre pour deux enzymes importants : la lyase organomercurielle MerB et la réductase mercurielle MerA. MerA catalyse la réduction du HgII conduisant à la formation du mercure élémentaire Hg0 qui est un composé volatile et moins toxique. MerB, quant à elle, catalyse la protonolyse de la liaison carbone-mercure de composés organomercuriels pour produire un composé réduit de carbone et du mercure ionique (HgII). Au vu des effets des  organomercuriels et de la réduction de HgII, MerA et MerB sont considérés comme des enzymes clés pouvant servir à la biorestauration des cours d'eau contaminés par les organomercuriels. Une compréhension claire des détails mécanistiques de la façon dont MerA et MerB fonctionnent ensemble au niveau atomique est donc cruciale dans la mise en œuvre de biotechnologies implicant l’opéron mer dans les efforts de bioremédiation. 
+Dans cette étude, nous avons utilisé la résonance magnétique nucléaire (RMN)et la cristallographie aux rayons X pour caractériser la structure et le mécanisme enzymatique de MerB de E. coli. Sur la base d’études structurales précédentes de MerB de E. coli, trois résidus (Cys96, Asp99 et Cys159) ont été identifiés comme constituant la triade catalytique nécessaire au clivage de la liaison carbone-Hg. En guise de suivi aux études antérieures, mon projet consiste d’abord à utiliser la cristallographie aux rayons X afin de définir les rôles de Cys96, Asp99 et Cys159 dans la liaison du substrat et dans le clivage.
+Deux approches ont été mises en œuvre pour atteindre cet objectif. Tout d'abord, les mutants MerB ont été testés pour définir le rôle des résidus catalytiques. Deuxièmement, les inhibiteurs de MerB et d'autres substrats non organicomercuriels potentiels ont été utilisés pour explorer le site actif de MerB. 
+Une sérine se retrouve à la position de Asp99 dans quatre variants de MerB répertoriés chez les bactéries. Pour mieux comprendre le rôle de Asp99, nous avons comparé la sérine présente dans le variants MerB de Bacillus megaterium (MerB2) et introduit un variant D99S à la protéine MerB du type sauvage d’E. coli (MerB D99S). Nous avons pu constater que la forme purifiée de MerB D99S se caractérisait par une couleur rose après avoir visualisé sa structure cristalline aux rayons X, révélant la présence d'un métal lié au niveau de son site actif. Les analyses par spectrométrie de masse à plasma à couplage inductif (ICP-MS) et par fluorescence des rayons X indiquèrent que MerB D99S se liait au cuivre au niveau du site actif. En outre, les analyses par résonance paramagnétique électronique (EPR) et des études de RMN ont identifié la forme CuII du cuivre. L'addition de substrats organomercuriels a pu déplacer le CuII entrainant ainsi une diminution de l’activité catalytique de MerB D99S. En revanche, MerB2 n'a pu être co-purifié avec le cuivre, bien que la structure aux rayons X du complexe MerB2-Hg soit pratiquement identique à la structure du complexe MerB D99S-Hg. Ceci suggère que le résidu Asp99 est essentiel au clivage des liaisons carbone-Hg de composés organiques du mercure et dirige la spécificité de la liaison au métal. De plus, la liaison cuivre-MerB D99S propose un lien possible entre l'évolution de MerB et son homologue structural, la protéine NosL. 
+Dans la seconde approche, nous nous sommes intéressés au site actif de MerB en testant sa liaison à des composés organostanniques et à des composés organoplombiques avec un inhibiteur de MerB connu sous le nom de triéthylétain (TET) qui se lie au résidu Asp99 sans s’associer aux cystéines du site actif. Une liaison similaire a été observée avec un autre inhibiteur à savoir le triméthylplomb (TML). Quant au diméthylétain (DMT), il inhibe MerB à l'aide d'un mécanisme alternatif en se liant d'abord à Asp99 puis à Cys96 conduisant à un changement critique dans le site actif perturbant ainsi l’interaction π-cation entre Trp95 et Arg155. D’autres inhibiteurs comme le diéthylétain (DET) et le diéthylplomb (DEL) ont été caractérisés comme étant un substrat de MerB où les deux groupes éthyle ont été clivés pour donner les produits ioniques SnIV PbIV qui se lient au site actif de manière similaire à HgII. DMT, DET et DEL présentent une affinité pour la liaison à MerB supérieure à celle de son substrat initial MeHg. Ces résultats suggèrent que les composés organomercuriels ne sont pas les seuls substrats pour MerB et Asp99 est le premier résidu à se lier aux composés organométalliques suivis de la liaison à Cys96 et Cys159. 
+Ces observations suggèrent un agrandissement de l’éventail d'applications possibles pour MerB dans la bioremédiation de certains sites contaminés par des composés organométalliques tels les organoplombiques et organostanniques.
+Mot-clé: Organomercuriallyase, Merb, organoplombiques. Organostanniques, protéine de liaison cuivre, carbone liaison métallique clivage, méthylmercure, Organomercuriels, biorestauration, résonance magnétique nucléaire, la cristallographie aux rayons X.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Mercury is introduced into the environment from either natural occurrences (volcanoes) or from human activities (combustion of fossil fuels). Mercury exists as elemental mercury (Hg0), ionic mercury (HgII) or organic mercury like methylmercury (MeHg) and these forms are in constant flux with each other as part of the natural biogeochemical cycle. Organomercurial compounds like MeHg are the most toxic form because of their hydrophobicity and their ability to efficiently permeate membranes and bioaccumulate in organisms. High levels of MeHg have been found in fish in many areas around the world, and therefore human consumption of contaminated seafood represents a serious danger for human health. Bacteria isolated from mercury-contaminated environments have evolved a system that allows them to efficiently convert both ionic and organic mercury compounds to the less toxic elemental mercury. The mercury resistance is due to the acquisition of a transferable genetic element known as the mer operon. The mer operon encodes for several proteins including two enzymes, the organomercurial lyase MerB and the mercuric ion reductase MerA. MerB catalyzes the protonolysis of the carbon-mercury bond of organomercurial compounds to produce a reduced-carbon compound and inorganic ionic mercury HgII. MerA catalyzes the reduction of HgII to elemental mercury Hg0, which is volatile and less toxic. Due to their ability to cleave MeHg and reduce the resulting HgII product, MerB and MerA are considered crucial to bioremediation efforts to clean up MeHg from contaminated waterways. A clear understanding of the mechanistic details of how MerB and MerA function together at the atomic level is crucial for appropriate utilization of the mer system in bioremediation efforts. We have been using nuclear magnetic resonance (NMR) spectroscopy and X-ray crystallography to structurally and mechanistically characterize E. coli MerB. Based on previous structural studies of E. coli MerB, three residues (Cys96, Asp99 and Cys159) have been identified as a catalytic triad which is required for carbon-Hg bond cleavage. As a follow up to the earlier studies, my project involves using X-ray crystallography to define the roles of Cys96, Asp99 and Cys159 in substrate binding and cleavage. 
+Two different approaches were implemented to fulfill this goal. Firstly, MerB mutants were tested to define the role for the catalytic residues. Secondly, MerB inhibitors and other potential non-organomercurial substrates were used to probe MerB active site. The Cys,-Asp-Cys catalytic triad found in E.coli MerB is conserved in all MerB variants except four variants where aspartic acid is replaced by a serine. To understand the role of Asp99, we compared a serine-containing MerB variant (Bacillus megaterium MerB2) and an E. coli MerB mutant (MerB D99S) to wild type E. coli MerB. Interestingly, the purified MerB D99S protein was found to contain a pink color. X-ray crystal structure indicated the presence of a bound metal in the active site of MerB D99S. Analysis by inductively coupled plasma mass spectrometry (ICP-MS) and X-ray fluorescence indicated that MerB D99S binds copper in the active site. Further, electron paramagnetic resonance (EPR) and NMR studies identified the copper as CuII. Addition of organomercurial substrate displaces bound CuII but MerB D99S shows diminished catalytic activity. In contrast, MerB2 did not co-purify with copper although the X-ray structure of MerB2-Hg complex is virtually identical to the structure of the MerB D99S-Hg. This suggests that the aspartic acid residue is crucial for the cleavage of carbon-Hg bonds of organomercurials as well as metal-binding specificity. Furthermore, the binding of copper to the MerB D99S protein suggests a possible evolutionary link between MerB and its structural homolog, the copper-binding protein NosL. In the second approach, we probed the active site of MerB through testing its binding to organotin and organolead compounds. The known MerB inhibitor triethyltin (TET) binds to Asp99 without binding to any of the active site cysteines. A similar binding has been observed with trimethylead (TML). Dimethyltin (DMT) inhibits MerB using an alternative mechanism. It first binds to Asp99 then Cys96, which induces a dramatic change in the active site by disrupting a cation-π interaction between Try95 and Arg155. In contrast, diethyltin (DET) and diethylead (DEL) were found to be substrates for MerB, where both ethyl groups were cleaved and the SnIV and PbIV products bound to the active site in a similar manner to HgII. DMT, DET and DEL show higher binding affinity to MerB than its initial substrate MeHg. These results suggest that organomercurials may not be the only substrates for MerB and Asp99 is the first residue to bind to organometals followed by subsequent binding to Cys96 and Cys159. In addition, these observations suggest that there are other possible applications for employing MerB in bioremediation of organolead and organotin contaminated sites while other organometals may have implications when using MerB in bioremediation systems. 
+Keyword: Organomercuriallyase, MerB, Organolead. Organotin, Copper binding protein, Carbon metal bond cleavage, Methylmercury, Organomercuriels, Bioremédiation, Nuclear magnetic resonance, X ray crystallography.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F18547&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Biochimie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/18547/Abdelgawwad_Haytham-Mohamed-Gamaleldin-Wahba_2016_these.pdf?sequence=6&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/18547/Abdelgawwad_Haytham-Mohamed-Gamaleldin-Wahba_2016_these.pdf.jpg?sequence=8&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Abdelgawwad_Haytham-Mohamed-Gamaleldin-Wahba_2016_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/18547/Abdelgawwad_Haytham-Mohamed-Gamaleldin-Wahba_2016_these.pdf?sequence=6&amp;isAllowed=y">Abdelgawwad_Haytham-Mohamed-Ga ...</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">6.334Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/18547">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

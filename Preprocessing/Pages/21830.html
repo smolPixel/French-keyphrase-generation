@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Expérimentation de la cartographie conceptuelle comme dispositif de collecte de données en vue de l’évaluation des apprentissages</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Blais, Jean-Guy" name="DC.contributor">
+<meta content="Morin, Maxim" name="DC.creator">
+<meta content="2019-05-15T14:19:53Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2019-05-15T14:19:53Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2019-04-10" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2018-08" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/21830" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Carte conceptuelle" name="DC.subject" xml:lang="fr"/>
+<meta content="Évaluation des apprentissages" name="DC.subject" xml:lang="fr"/>
+<meta content="Verbalisation de la pensée" name="DC.subject" xml:lang="fr"/>
+<meta content="Stratégies des élèves" name="DC.subject" xml:lang="fr"/>
+<meta content="Génération automatique de cartes conceptuelles" name="DC.subject" xml:lang="fr"/>
+<meta content="Analyse automatique de textes" name="DC.subject" xml:lang="fr"/>
+<meta content="Traitement automatique du langage naturel" name="DC.subject" xml:lang="fr"/>
+<meta content="Notation de cartes conceptuelles" name="DC.subject" xml:lang="fr"/>
+<meta content="Modèles de mesure" name="DC.subject" xml:lang="fr"/>
+<meta content="Modèles de Rasch" name="DC.subject" xml:lang="fr"/>
+<meta content="Concept map" name="DC.subject" xml:lang="fr"/>
+<meta content="Educational assessment" name="DC.subject" xml:lang="fr"/>
+<meta content="Think-aloud" name="DC.subject" xml:lang="fr"/>
+<meta content="Students' strategies" name="DC.subject" xml:lang="fr"/>
+<meta content="Automatic generation of concept map" name="DC.subject" xml:lang="fr"/>
+<meta content="Text analysis" name="DC.subject" xml:lang="fr"/>
+<meta content="Natural language processing" name="DC.subject" xml:lang="fr"/>
+<meta content="Concept map scoring" name="DC.subject" xml:lang="fr"/>
+<meta content="Measurement models" name="DC.subject" xml:lang="fr"/>
+<meta content="Rasch models" name="DC.subject" xml:lang="fr"/>
+<meta content="Education - Tests and Measurements / Éducation - Évaluation (UMI : 0288)" name="DC.subject" xml:lang="fr"/>
+<meta content="Expérimentation de la cartographie conceptuelle comme dispositif de collecte de données en vue de l’évaluation des apprentissages" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La carte conceptuelle est un outil de représentation graphique des connaissances très polyvalent et aux usages multiples en éducation (Cañas et coll., 2003; Cañas et Novak, 2008; Marchand et d'Ivernois, 2004). Dans le domaine de l’évaluation des apprentissages, plusieurs ont reconnu son potentiel pour évaluer des dimensions de l’apprentissage qui ne sont pas captées à l’aide d’instruments traditionnels (Edmondson, 2005; Novak et Canas, 2008; Ruiz-Primo, Schultz, Li et Shavelson, 2001). Malgré tout, les savoirs scientifiques à son sujet sont encore épars et incomplets, et ce malgré la longue tradition de cet outil en éducation, étalée sur quelques décennies. À travers trois articles, cette thèse vise à approfondir les connaissances au sujet des modalités de production, de correction et de notation de cartes conceptuelles. 
+Le premier article se consacre aux différences entre les processus de réponses lorsque la carte est produite de façon traditionnelle avec un crayon sur un support papier ou à l’ordinateur avec un logiciel dédié. Pour ce faire, huit élèves de quatrième secondaire en science et technologie ont effectué une tâche de cartographie conceptuelle tout en verbalisant leur pensée à haute voix. En plus de mettre en évidence quelques séquences d’actions et stratégies inhérentes à chaque modalité, les analyses de cette étude font ressortir des difficultés rencontrées par les participants au cours de la réalisation de la tâche. Ces observations rappellent notamment l’importance de la formation préalable à la cartographie conceptuelle.
+Le deuxième article décrit la démarche de conception d’un logiciel pour assister l’humain lors de la production d’une carte conceptuelle à partir de textes, cette carte pouvant idéalement servir de carte de référence en vue de la correction des cartes produites par des élèves. Le logiciel a été mis à l’essai en considérant les thématiques des deux tâches soumises aux élèves lors des deux autres volets de cette recherche et son rendement a été apprécié en comparant les cartes extraites à l’aide du logiciel et les cartes extraites manuellement à partir des mêmes textes. Même si, globalement, les résultats de cette mise à l’essai sont assez encourageants, il semble néanmoins encore prématuré de se servir de ces cartes pour l’usage du logiciel ciblé au départ. L’article suggère toutefois d’autres usages potentiels et moins contraignants du logiciel et énumère quelques pistes d’améliorations.
+Le troisième et dernier article explore la modélisation des scores issus de cartes conceptuelles de 84 élèves de quatrième secondaire en science et technologie à l’aide du modèle de Rasch pour données dichotomiques (Rasch, 1960) et du modèle à crédit partiel (Masters, 1982). En appréciant les propriétés psychométriques d’une tâche de cartographie conceptuelle en science et technologie, et notamment en examinant la condition d’indépendance locale et la condition d’unidimensionnalité qui caractérisent les modèles de mesure de la famille des modèles de Rasch, cette étude met en lumière certaines particularités de la structure interne des scores et remet en question certaines des approches conventionnelles de notation de cartes conceptuelles. Chacun de ces trois articles fournit ainsi un regard supplémentaire à l’égard de l’utilisation de la carte conceptuelle comme outil de collecte de données et contribue ainsi au processus de validation de cet outil en vue de l’évaluation des apprentissages." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Concept map is a very versatile and multipurpose knowledge representation tool in education (Cañas et al., 2003, Cañas and Novak, 2008; Marchand and d'Ivernois, 2004). In the domain of assessment, many have recognized its potential to assess dimensions of learning that are not captured using traditional instruments (Edmondson, 2005; Novak and Cañas, 2008, Ruiz-Primo, Schultz, Li and Shavelson, 2001). Nevertheless, scientific knowledge about it is still scattered and incomplete, despite the long tradition of this tool in education, spread over a few decades. Through three articles, this dissertation aims to deepen knowledge about the modalities of production, grading and scoring of concept maps.
+The first article focuses on the differences between response processes when the map is produced in a traditional way on paper with a pencil or using a computer with a dedicated software. To do this, eight Secondary IV students in science and technology completed a concept mapping task while verbalizing their thoughts aloud. In addition to underscore some sequences of actions and strategies inherent to each modality, the analyses of this study highlight difficulties encountered by the participants during the performance of the task. These observations are a reminder of the importance of prior training in concept mapping.
+The second article describes the development of a software to assist humans during the generation of a concept map using texts, this map can ideally serve as a reference map for grading maps produced by students. The software was tested by considering the themes of the two tasks submitted to students in the other two parts of this research and its performance was evaluated by comparing the maps extracted with the software and the maps extracted manually from the same texts. Although, overall, the results of this test are quite encouraging, it still seems premature to use these maps for the use initially targeted by the software. The article, however, identifies other potential and less restrictive uses of the software and lists some areas for improvement.
+The third and final article explores the modelling of scores from concept maps of 84 Secondary IV students in science and technology using the partial credit model (Masters, 1982). By evaluating the psychometric properties of a concept mapping task in science and technology, especially by examining the assumption of local independence and the assumption of unidimensionality that characterizes the measurement models from the family of Rasch models, this study highlights some peculiarities in the internal structure of scores and challenges some of the conventional approaches to note concept maps. Each of these three articles provides additional insights into the use of concept map as a data collection tool and contributes to the validation process of this tool for the assessment of learning." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Carte conceptuelle; Évaluation des apprentissages; Verbalisation de la pensée; Stratégies des élèves; Génération automatique de cartes conceptuelles; Analyse automatique de textes; Traitement automatique du langage naturel; Notation de cartes conceptuelles; Modèles de mesure; Modèles de Rasch; Concept map; Educational assessment; Think-aloud; Students' strategies; Automatic generation of concept map; Text analysis; Natural language processing; Concept map scoring; Measurement models; Rasch models; Education - Tests and Measurements / Éducation - Évaluation (UMI : 0288); Thèse ou mémoire / Thesis or Dissertation; Sciences de l'éducation - Mesure et évaluation en éducation" name="citation_keywords"/>
+<meta content="Expérimentation de la cartographie conceptuelle comme dispositif de collecte de données en vue de l’évaluation des apprentissages" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Morin, Maxim" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/21830/2/Morin_Maxim_2018_these.pdf" name="citation_pdf_url"/>
+<meta content="2019-04-10" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/21830" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21830?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21830?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21830?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21830?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21830?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/21830?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2926" role="menuitem">Faculté des sciences de l'éducation</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2971" role="menuitem">Faculté des sciences de l'éducation – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2926">Faculté des sciences de l'éducation</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2971">Faculté des sciences de l'éducation – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2971"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2971/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/21830/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/21830">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/21830/mets.xml-->
+<h2 class="page-header first-page-header">Expérimentation de la cartographie conceptuelle comme dispositif de collecte de données en vue de l’évaluation des apprentissages</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Blais, Jean-Guy</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Morin, Maxim</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2019-05-15T14:19:53Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2019-05-15T14:19:53Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2019-04-10</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2018-08</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/21830</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Carte conceptuelle</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Évaluation des apprentissages</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Verbalisation de la pensée</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Stratégies des élèves</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Génération automatique de cartes conceptuelles</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Analyse automatique de textes</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Traitement automatique du langage naturel</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Notation de cartes conceptuelles</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Modèles de mesure</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Modèles de Rasch</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Concept map</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Educational assessment</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Think-aloud</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Students' strategies</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Automatic generation of concept map</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Text analysis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Natural language processing</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Concept map scoring</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Measurement models</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Rasch models</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Education - Tests and Measurements / Éducation - Évaluation (UMI : 0288)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Expérimentation de la cartographie conceptuelle comme dispositif de collecte de données en vue de l’évaluation des apprentissages</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences de l'éducation - Mesure et évaluation en éducation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La carte conceptuelle est un outil de représentation graphique des connaissances très polyvalent et aux usages multiples en éducation (Cañas et coll., 2003; Cañas et Novak, 2008; Marchand et d'Ivernois, 2004). Dans le domaine de l’évaluation des apprentissages, plusieurs ont reconnu son potentiel pour évaluer des dimensions de l’apprentissage qui ne sont pas captées à l’aide d’instruments traditionnels (Edmondson, 2005; Novak et Canas, 2008; Ruiz-Primo, Schultz, Li et Shavelson, 2001). Malgré tout, les savoirs scientifiques à son sujet sont encore épars et incomplets, et ce malgré la longue tradition de cet outil en éducation, étalée sur quelques décennies. À travers trois articles, cette thèse vise à approfondir les connaissances au sujet des modalités de production, de correction et de notation de cartes conceptuelles. 
+Le premier article se consacre aux différences entre les processus de réponses lorsque la carte est produite de façon traditionnelle avec un crayon sur un support papier ou à l’ordinateur avec un logiciel dédié. Pour ce faire, huit élèves de quatrième secondaire en science et technologie ont effectué une tâche de cartographie conceptuelle tout en verbalisant leur pensée à haute voix. En plus de mettre en évidence quelques séquences d’actions et stratégies inhérentes à chaque modalité, les analyses de cette étude font ressortir des difficultés rencontrées par les participants au cours de la réalisation de la tâche. Ces observations rappellent notamment l’importance de la formation préalable à la cartographie conceptuelle.
+Le deuxième article décrit la démarche de conception d’un logiciel pour assister l’humain lors de la production d’une carte conceptuelle à partir de textes, cette carte pouvant idéalement servir de carte de référence en vue de la correction des cartes produites par des élèves. Le logiciel a été mis à l’essai en considérant les thématiques des deux tâches soumises aux élèves lors des deux autres volets de cette recherche et son rendement a été apprécié en comparant les cartes extraites à l’aide du logiciel et les cartes extraites manuellement à partir des mêmes textes. Même si, globalement, les résultats de cette mise à l’essai sont assez encourageants, il semble néanmoins encore prématuré de se servir de ces cartes pour l’usage du logiciel ciblé au départ. L’article suggère toutefois d’autres usages potentiels et moins contraignants du logiciel et énumère quelques pistes d’améliorations.
+Le troisième et dernier article explore la modélisation des scores issus de cartes conceptuelles de 84 élèves de quatrième secondaire en science et technologie à l’aide du modèle de Rasch pour données dichotomiques (Rasch, 1960) et du modèle à crédit partiel (Masters, 1982). En appréciant les propriétés psychométriques d’une tâche de cartographie conceptuelle en science et technologie, et notamment en examinant la condition d’indépendance locale et la condition d’unidimensionnalité qui caractérisent les modèles de mesure de la famille des modèles de Rasch, cette étude met en lumière certaines particularités de la structure interne des scores et remet en question certaines des approches conventionnelles de notation de cartes conceptuelles. Chacun de ces trois articles fournit ainsi un regard supplémentaire à l’égard de l’utilisation de la carte conceptuelle comme outil de collecte de données et contribue ainsi au processus de validation de cet outil en vue de l’évaluation des apprentissages.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Concept map is a very versatile and multipurpose knowledge representation tool in education (Cañas et al., 2003, Cañas and Novak, 2008; Marchand and d'Ivernois, 2004). In the domain of assessment, many have recognized its potential to assess dimensions of learning that are not captured using traditional instruments (Edmondson, 2005; Novak and Cañas, 2008, Ruiz-Primo, Schultz, Li and Shavelson, 2001). Nevertheless, scientific knowledge about it is still scattered and incomplete, despite the long tradition of this tool in education, spread over a few decades. Through three articles, this dissertation aims to deepen knowledge about the modalities of production, grading and scoring of concept maps.
+The first article focuses on the differences between response processes when the map is produced in a traditional way on paper with a pencil or using a computer with a dedicated software. To do this, eight Secondary IV students in science and technology completed a concept mapping task while verbalizing their thoughts aloud. In addition to underscore some sequences of actions and strategies inherent to each modality, the analyses of this study highlight difficulties encountered by the participants during the performance of the task. These observations are a reminder of the importance of prior training in concept mapping.
+The second article describes the development of a software to assist humans during the generation of a concept map using texts, this map can ideally serve as a reference map for grading maps produced by students. The software was tested by considering the themes of the two tasks submitted to students in the other two parts of this research and its performance was evaluated by comparing the maps extracted with the software and the maps extracted manually from the same texts. Although, overall, the results of this test are quite encouraging, it still seems premature to use these maps for the use initially targeted by the software. The article, however, identifies other potential and less restrictive uses of the software and lists some areas for improvement.
+The third and final article explores the modelling of scores from concept maps of 84 Secondary IV students in science and technology using the partial credit model (Masters, 1982). By evaluating the psychometric properties of a concept mapping task in science and technology, especially by examining the assumption of local independence and the assumption of unidimensionality that characterizes the measurement models from the family of Rasch models, this study highlights some peculiarities in the internal structure of scores and challenges some of the conventional approaches to note concept maps. Each of these three articles provides additional insights into the use of concept map as a data collection tool and contributes to the validation process of this tool for the assessment of learning.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F21830&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+de+l%27%C3%A9ducation+-+Mesure+et+%C3%A9valuation+en+%C3%A9ducation&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/21830/Morin_Maxim_2018_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/21830/Morin_Maxim_2018_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Morin_Maxim_2018_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/21830/Morin_Maxim_2018_these.pdf?sequence=2&amp;isAllowed=y">Morin_Maxim_2018_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">9.712Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2971/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2971">Faculté des sciences de l'éducation – Thèses et mémoires</a> [646]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/21830">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

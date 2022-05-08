@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Verbing and nouning in French : toward an ecologically valid approach to sentence processing</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Royle, Phaedra" name="DC.contributor">
+<meta content="Steinhauer, Karsten" name="DC.contributor">
+<meta content="Fromont, Lauren A." name="DC.creator">
+<meta content="2020-06-16T13:44:48Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2020-06-16T13:44:48Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2020-03-18" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2019-05" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/23521" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Sentence processing" name="DC.subject" xml:lang="fr"/>
+<meta content="Event-related potentials" name="DC.subject" xml:lang="fr"/>
+<meta content="Syntactic categories" name="DC.subject" xml:lang="fr"/>
+<meta content="Lexical- semantics" name="DC.subject" xml:lang="fr"/>
+<meta content="Second language acquisition" name="DC.subject" xml:lang="fr"/>
+<meta content="Random forests" name="DC.subject" xml:lang="fr"/>
+<meta content="ELAN" name="DC.subject" xml:lang="fr"/>
+<meta content="N400" name="DC.subject" xml:lang="fr"/>
+<meta content="P600" name="DC.subject" xml:lang="fr"/>
+<meta content="Traitement de la phrase" name="DC.subject" xml:lang="fr"/>
+<meta content="Potentiels évoqués cognitifs" name="DC.subject" xml:lang="fr"/>
+<meta content="Catégories syntaxiques" name="DC.subject" xml:lang="fr"/>
+<meta content="Sémantique lexicale" name="DC.subject" xml:lang="fr"/>
+<meta content="Acquisition d'une langue seconde" name="DC.subject" xml:lang="fr"/>
+<meta content="Forêts aléatoires" name="DC.subject" xml:lang="fr"/>
+<meta content="Psychology - Experimental / Psychologie expérimentale (UMI : 0623)" name="DC.subject" xml:lang="fr"/>
+<meta content="Verbing and nouning in French : toward an ecologically valid approach to sentence processing" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La présente thèse utilise la technique des potentiels évoqués afin d’étudier les méchanismes neurocognitifs qui sous-tendent la compréhension de la phrase. Plus particulièrement, cette recherche vise à clarifier l’interaction entre les processus syntaxiques et sémantiques chez les locuteurs natifs et les apprenants d’une deuxième langue (L2). Le modèle “syntaxe en premier” (Friederici, 2002, 2011) prédit que les catégories syntaxiques sont analysées de façon précoce: ce stade est reflété par la composante ELAN (Early anterior negativity, Négativité antérieure gauche), qui est induite par les erreurs de catégorie syntaxique. De plus, ces erreurs semblent empêcher l’apparition de la composante N400 qui reflète les processus lexico-sémantiques. Ce phénomène est défini comme le bloquage sémantique (Friederici et al., 1999). Cependant, la plupart des études qui observent la ELAN utilisent des protocoles expérimentaux problématiques dans lesquels les différences entre les contextes qui précèdent la cible pourraient être à l’origine de résultats fallacieux expliquant à la fois l’apparente “ELAN” et l’absence de N400 (Steinhauer &amp; Drury, 2012).
+La première étude rééevalue l’approche de la “syntaxe en premier” en adoptant un paradigme expériemental novateur en français qui introduit des erreurs de catégorie syntaxique et les anomalies de sémantique lexicale. Ce dessin expérimental équilibré contrôle à la fois le mot-cible (nom vs. verbe) et le contexte qui le précède. Les résultats récoltés auprès de locuteurs natifs du français québécois ont révélé un complexe N400-P600 en réponse à toutes les anomalies, en contradiction avec les prédictions du modèle de Friederici. Les effets additifs des manipulations syntaxique et sémantique sur la N400 suggèrent la détection d’une incohérence entre la racine du mot qui avait été prédite et la cible, d’une part, et l’activation lexico-sémantique, d’autre part. Les réponses individuelles se sont pas caractérisées par une dominance vers la N400 ou la P600: au contraire, une onde biphasique est présente chez la majorité des participants. Cette activation peut donc être considérée comme un index fiable des mécanismes qui sous-tendent le traitement des structures syntagmatiques.
+La deuxième étude se concentre sur les même processus chez les apprenants tardifs du français L2. L’hypothèse de la convergence (Green, 2003 ; Steinhauer, 2014) prédit que les apprenants d’une L2, s’ils atteignent un niveau avancé, mettent en place des processus de traitement en ligne similaires aux locuteurs natifs. Cependant, il est difficile de considérer en même temps un grand nombre de facteurs qui se rapportent à leurs compétences linguistiques, à l’exposition à la L2 et à l’âge d’acquisition. Cette étude continue d’explorer les différences inter-individuelles en modélisant les données de potentiels-évoqués avec les Forêts aléatoires, qui ont révélé que le pourcentage d’explosition au français ansi que le niveau de langue sont les prédicteurs les plus fiables pour expliquer les réponses électrophysiologiques des participants. Plus ceux-ci sont élevés, plus l’amplitude des composantes N400 et P600 augmente, ce qui confirme en partie les prédictions faites par l’hypothèse de la convergence.
+En conclusion, le modèle de la “syntaxe en premier” n’est pas viable et doit être remplacé. Nous suggérons un nouveau paradigme basé sur une approche prédictive, où les informations sémantiques et syntaxiques sont activées en parallèle dans un premier temps, puis intégrées via un recrutement de mécanismes contrôlés. Ces derniers sont modérés par les capacités inter-individuelles reflétées par l’exposition et la performance." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="The present thesis uses event-related potentials (ERPs) to investigate neurocognitve mechanisms underlying sentence comprehension. In particular, these two experiments seek to clarify the interplay between syntactic and semantic processes in native speakers and second language learners. Friederici’s (2002, 2011) “syntax-first” model predicts that syntactic categories are analyzed at the earliest stages of speech perception reflected by the ELAN (Early left anterior negativity), reported for syntactic category violations. Further, syntactic category violations seem to prevent the appearance of N400s (linked to lexical-semantic processing), a phenomenon known as “semantic blocking” (Friederici et al., 1999). However, a review article by Steinhauer and Drury (2012) argued that most ELAN studies used flawed designs, where pre-target context differences may have caused ELAN-like artifacts as well as the absence of N400s.
+The first study reevaluates syntax-first approaches to sentence processing by implementing a novel paradigm in French that included correct sentences, pure syntactic category violations, lexical-semantic anomalies, and combined anomalies. This balanced design systematically controlled for target word (noun vs. verb) and the context immediately preceding it. Group results from native speakers of Quebec French revealed an N400-P600 complex in response to all anomalous conditions, providing strong evidence against the syntax-first and semantic blocking hypotheses. Additive effects of syntactic category and lexical-semantic anomalies on the N400 may reflect a mismatch detection between a predicted word-stem and the actual target, in parallel with lexical-semantic retrieval. An interactive rather than additive effect on the P600 reveals that the same neurocognitive resources are recruited for syntactic and semantic integration. Analyses of individual data showed that participants did not rely on one single cognitive mechanism reflected by either the N400 or the P600 effect but on both, suggesting that the biphasic N400-P600 ERP wave can indeed be considered to be an index of phrase-structure violation processing in most individuals.
+The second study investigates the underlying mechanisms of phrase-structure building in late second language learners of French. The convergence hypothesis (Green, 2003; Steinhauer, 2014) predicts that second language learners can achieve native-like online- processing with sufficient proficiency. However, considering together different factors that relate to proficiency, exposure, and age of acquisition has proven challenging. This study further explores individual data modeling using a Random Forests approach. It revealed that daily usage and proficiency are the most reliable predictors in explaining the ERP responses, with N400 and P600 effects getting larger as these variables increased, partly confirming and extending the convergence hypothesis.
+This thesis demonstrates that the “syntax-first” model is not viable and should be replaced. A new account is suggested, based on predictive approaches, where semantic and syntactic information are first used in parallel to facilitate retrieval, and then controlled mechanisms are recruited to analyze sentences at the interface of syntax and semantics. Those mechanisms are mediated by inter-individual abilities reflected by language exposure and performance." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="https://osf.io/k7vxp/" name="DCTERMS.relation" xml:lang="fr"/>
+<meta content="Sentence processing; Event-related potentials; Syntactic categories; Lexical- semantics; Second language acquisition; Random forests; ELAN; N400; P600; Traitement de la phrase; Potentiels évoqués cognitifs; Catégories syntaxiques; Sémantique lexicale; Acquisition d'une langue seconde; Forêts aléatoires; Psychology - Experimental / Psychologie expérimentale (UMI : 0623); Thèse ou mémoire / Thesis or Dissertation; Sciences biomédicales" name="citation_keywords"/>
+<meta content="Verbing and nouning in French : toward an ecologically valid approach to sentence processing" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Fromont, Lauren A." name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/23521/2/Fromont_Lauren_2019_these.pdf" name="citation_pdf_url"/>
+<meta content="2020-03-18" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/23521" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23521?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23521?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23521?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23521?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23521?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23521?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/23521/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/23521">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/23521/mets.xml-->
+<h2 class="page-header first-page-header">Verbing and nouning in French : toward an ecologically valid approach to sentence processing</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Royle, Phaedra</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Steinhauer, Karsten</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Fromont, Lauren A.</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2020-06-16T13:44:48Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2020-06-16T13:44:48Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2020-03-18</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2019-05</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/23521</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Sentence processing</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Event-related potentials</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Syntactic categories</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Lexical- semantics</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Second language acquisition</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Random forests</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">ELAN</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">N400</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">P600</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Traitement de la phrase</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Potentiels évoqués cognitifs</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Catégories syntaxiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Sémantique lexicale</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Acquisition d'une langue seconde</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Forêts aléatoires</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Psychology - Experimental / Psychologie expérimentale (UMI : 0623)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Verbing and nouning in French : toward an ecologically valid approach to sentence processing</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences biomédicales</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La présente thèse utilise la technique des potentiels évoqués afin d’étudier les méchanismes neurocognitifs qui sous-tendent la compréhension de la phrase. Plus particulièrement, cette recherche vise à clarifier l’interaction entre les processus syntaxiques et sémantiques chez les locuteurs natifs et les apprenants d’une deuxième langue (L2). Le modèle “syntaxe en premier” (Friederici, 2002, 2011) prédit que les catégories syntaxiques sont analysées de façon précoce: ce stade est reflété par la composante ELAN (Early anterior negativity, Négativité antérieure gauche), qui est induite par les erreurs de catégorie syntaxique. De plus, ces erreurs semblent empêcher l’apparition de la composante N400 qui reflète les processus lexico-sémantiques. Ce phénomène est défini comme le bloquage sémantique (Friederici et al., 1999). Cependant, la plupart des études qui observent la ELAN utilisent des protocoles expérimentaux problématiques dans lesquels les différences entre les contextes qui précèdent la cible pourraient être à l’origine de résultats fallacieux expliquant à la fois l’apparente “ELAN” et l’absence de N400 (Steinhauer &amp; Drury, 2012).
+La première étude rééevalue l’approche de la “syntaxe en premier” en adoptant un paradigme expériemental novateur en français qui introduit des erreurs de catégorie syntaxique et les anomalies de sémantique lexicale. Ce dessin expérimental équilibré contrôle à la fois le mot-cible (nom vs. verbe) et le contexte qui le précède. Les résultats récoltés auprès de locuteurs natifs du français québécois ont révélé un complexe N400-P600 en réponse à toutes les anomalies, en contradiction avec les prédictions du modèle de Friederici. Les effets additifs des manipulations syntaxique et sémantique sur la N400 suggèrent la détection d’une incohérence entre la racine du mot qui avait été prédite et la cible, d’une part, et l’activation lexico-sémantique, d’autre part. Les réponses individuelles se sont pas caractérisées par une dominance vers la N400 ou la P600: au contraire, une onde biphasique est présente chez la majorité des participants. Cette activation peut donc être considérée comme un index fiable des mécanismes qui sous-tendent le traitement des structures syntagmatiques.
+La deuxième étude se concentre sur les même processus chez les apprenants tardifs du français L2. L’hypothèse de la convergence (Green, 2003 ; Steinhauer, 2014) prédit que les apprenants d’une L2, s’ils atteignent un niveau avancé, mettent en place des processus de traitement en ligne similaires aux locuteurs natifs. Cependant, il est difficile de considérer en même temps un grand nombre de facteurs qui se rapportent à leurs compétences linguistiques, à l’exposition à la L2 et à l’âge d’acquisition. Cette étude continue d’explorer les différences inter-individuelles en modélisant les données de potentiels-évoqués avec les Forêts aléatoires, qui ont révélé que le pourcentage d’explosition au français ansi que le niveau de langue sont les prédicteurs les plus fiables pour expliquer les réponses électrophysiologiques des participants. Plus ceux-ci sont élevés, plus l’amplitude des composantes N400 et P600 augmente, ce qui confirme en partie les prédictions faites par l’hypothèse de la convergence.
+En conclusion, le modèle de la “syntaxe en premier” n’est pas viable et doit être remplacé. Nous suggérons un nouveau paradigme basé sur une approche prédictive, où les informations sémantiques et syntaxiques sont activées en parallèle dans un premier temps, puis intégrées via un recrutement de mécanismes contrôlés. Ces derniers sont modérés par les capacités inter-individuelles reflétées par l’exposition et la performance.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The present thesis uses event-related potentials (ERPs) to investigate neurocognitve mechanisms underlying sentence comprehension. In particular, these two experiments seek to clarify the interplay between syntactic and semantic processes in native speakers and second language learners. Friederici’s (2002, 2011) “syntax-first” model predicts that syntactic categories are analyzed at the earliest stages of speech perception reflected by the ELAN (Early left anterior negativity), reported for syntactic category violations. Further, syntactic category violations seem to prevent the appearance of N400s (linked to lexical-semantic processing), a phenomenon known as “semantic blocking” (Friederici et al., 1999). However, a review article by Steinhauer and Drury (2012) argued that most ELAN studies used flawed designs, where pre-target context differences may have caused ELAN-like artifacts as well as the absence of N400s.
+The first study reevaluates syntax-first approaches to sentence processing by implementing a novel paradigm in French that included correct sentences, pure syntactic category violations, lexical-semantic anomalies, and combined anomalies. This balanced design systematically controlled for target word (noun vs. verb) and the context immediately preceding it. Group results from native speakers of Quebec French revealed an N400-P600 complex in response to all anomalous conditions, providing strong evidence against the syntax-first and semantic blocking hypotheses. Additive effects of syntactic category and lexical-semantic anomalies on the N400 may reflect a mismatch detection between a predicted word-stem and the actual target, in parallel with lexical-semantic retrieval. An interactive rather than additive effect on the P600 reveals that the same neurocognitive resources are recruited for syntactic and semantic integration. Analyses of individual data showed that participants did not rely on one single cognitive mechanism reflected by either the N400 or the P600 effect but on both, suggesting that the biphasic N400-P600 ERP wave can indeed be considered to be an index of phrase-structure violation processing in most individuals.
+The second study investigates the underlying mechanisms of phrase-structure building in late second language learners of French. The convergence hypothesis (Green, 2003; Steinhauer, 2014) predicts that second language learners can achieve native-like online- processing with sufficient proficiency. However, considering together different factors that relate to proficiency, exposure, and age of acquisition has proven challenging. This study further explores individual data modeling using a Random Forests approach. It revealed that daily usage and proficiency are the most reliable predictors in explaining the ERP responses, with N400 and P600 effects getting larger as these variables increased, partly confirming and extending the convergence hypothesis.
+This thesis demonstrates that the “syntax-first” model is not viable and should be replaced. A new account is suggested, based on predictive approaches, where semantic and syntactic information are first used in parallel to facilitate retrieval, and then controlled mechanisms are recruited to analyze sentences at the interface of syntax and semantics. Those mechanisms are mediated by inter-individual abilities reflected by language exposure and performance.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.relation</td><td class="word-break">https://osf.io/k7vxp/</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F23521&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+biom%C3%A9dicales&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/23521/Fromont_Lauren_2019_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/23521/Fromont_Lauren_2019_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Fromont_Lauren_2019_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/23521/Fromont_Lauren_2019_these.pdf?sequence=2&amp;isAllowed=y">Fromont_Lauren_2019_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">16.93Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/23521">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

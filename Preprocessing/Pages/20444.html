@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Nouveaux regards sur la longévité : analyse de l'âge modal au décès et de la dispersion des durées de vie selon les principales causes de décès au Canada (1974-2011)</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Bourbeau, Robert" name="DC.contributor">
+<meta content="Ouellette, Nadine" name="DC.contributor">
+<meta content="Diaconu, Viorela" name="DC.creator">
+<meta content="2018-06-08T18:53:02Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2018-06-08T18:53:02Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2018-05-10" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2017-08" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/20444" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Longévité" name="DC.subject" xml:lang="fr"/>
+<meta content="Âge modal au décès" name="DC.subject" xml:lang="fr"/>
+<meta content="Compression de la mortalité aux grands âges" name="DC.subject" xml:lang="fr"/>
+<meta content="Dispersion des durées de vie" name="DC.subject" xml:lang="fr"/>
+<meta content="Causes de décès" name="DC.subject" xml:lang="fr"/>
+<meta content="Cancers" name="DC.subject" xml:lang="fr"/>
+<meta content="Maladies cardiovasculaires" name="DC.subject" xml:lang="fr"/>
+<meta content="Lissage par P-splines" name="DC.subject" xml:lang="fr"/>
+<meta content="Canada" name="DC.subject" xml:lang="fr"/>
+<meta content="États-Unis" name="DC.subject" xml:lang="fr"/>
+<meta content="Longevity" name="DC.subject" xml:lang="fr"/>
+<meta content="Modal age at death" name="DC.subject" xml:lang="fr"/>
+<meta content="Old-age mortality compression" name="DC.subject" xml:lang="fr"/>
+<meta content="Variability in ages at death" name="DC.subject" xml:lang="fr"/>
+<meta content="Causes of death" name="DC.subject" xml:lang="fr"/>
+<meta content="Cancers" name="DC.subject" xml:lang="fr"/>
+<meta content="Cardiovascular diseases" name="DC.subject" xml:lang="fr"/>
+<meta content="P-spline smoothing" name="DC.subject" xml:lang="fr"/>
+<meta content="Canada" name="DC.subject" xml:lang="fr"/>
+<meta content="U.S." name="DC.subject" xml:lang="fr"/>
+<meta content="Sociology - Demography / Sociologie - Démographie (UMI : 0938)" name="DC.subject" xml:lang="fr"/>
+<meta content="Nouveaux regards sur la longévité : analyse de l'âge modal au décès et de la dispersion des durées de vie selon les principales causes de décès au Canada (1974-2011)" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La baisse de la mortalité aux âges avancés en cours depuis le milieu du XXe siècle dans la plupart des pays développés a amené un déplacement de la distribution des décès vers des âges plus avancés et une concentration de celle-ci dans un intervalle d'âge progressivement plus court. Ces modifications quant à la répartition des décès selon l'âge sont le fruit de changements sous-jacents qui se sont produits dans le profil par âge de la mortalité par cause de décès, un aspect qui a reçu peu d'attention dans les publications récentes. Dès lors, l'objectif  premier de cette thèse vise à évaluer les changements survenus dans la distribution des décès selon l'âge dans les pays à faible mortalité, principalement au Canada, en y ajoutant une analyse par cause de décès. Le second objectif est de déterminer si l'expérience canadienne quant à la répartition des décès selon l'âge et la cause de décès est également observée dans d'autres pays développés, notamment aux États-Unis.
+Ces changements évolutifs sont quantifiés sous le prisme des nouveaux indicateurs de mortalité, soit l'âge modal (le plus fréquent) au décès, M, et l'écart-type au-delà du mode, SD(M+). Leur estimation repose sur la méthode de lissage par P-splines, une approche non paramétrique permettant d'obtenir une expression précise de la mortalité telle que décrite par les données observées, que nous avons adaptée au contexte par causes de décès. Les résultats de nos analyses, présentés sous forme d'articles scientifiques, s'appuient sur les données sur la mortalité par cause de décès au Canada et aux États-Unis provenant respectivement de la Base de données sur les décès de la Statistique de l'état civil de Statistique Canada et du National Vital Statistics System du National Center for Health Statistics ainsi que sur les effectifs de la population exposée au risque de décéder tirés de la Human Mortality Database. Pour fin d'analyse, nous avons sélectionné six principales causes de décès au Canada et aux États-Unis, soit les maladies du cœur, les maladies cérébrovasculaires, le cancer colorectal, le cancer du poumon, le cancer de la prostate (hommes) et le cancer du sein (femmes).
+Les résultats du premier article révèlent que l'âge modal au décès pour les principales causes de décès chez les hommes et chez les femmes canadiens suit une tendance à la hausse depuis 1974 et jusqu'en 2011. Cette augmentation de l'âge le plus fréquent est survenue à un rythme assez semblable selon les différentes causes, sauf pour les maladies du cœur (hommes) et le cancer du sein (femmes). Les principales causes de décès étudiées se différencient toutefois considérablement en termes de niveau atteint par l'âge modal au décès. De manière générale, ces dernières peuvent être classées en fonction de leur valeur modale (de la plus petite à la plus élevée) comme suit : cancer du poumon, cancer colorectal, maladies cérébrovasculaires et maladies du cœur. Chez les hommes, le cancer de la prostate se situe entre les deux sous-catégories des maladies cardiovasculaires jusqu'à la fin des années 1990 et entre le cancer colorectal et les maladies cérébrovasculaires au cours des années suivantes. Chez les femmes, l'âge le plus fréquent au décès pour le cancer du sein oscille entre celui du cancer du poumon et celui du cancer colorectal.
+Les conclusions du second article suggèrent, d'une part, que les décès des hommes et des femmes diagnostiqués avec chacune des principales causes ont eu tendance à se concentrer dans un intervalle d'âge progressivement plus court au fil du temps. En effet, au cours de la période 1974-2011, l'écart type au-delà du mode, SD(M+), pour chacune des causes sous étude suit, de manière générale, une tendance à la baisse. D'autre part, les différentes valeurs obtenues pour SD(M+) pour chacune des principales causes, indiquent que le niveau d'hétérogénéité des durées de vie individuelles varie selon la cause de décès. Depuis les années 1990, l'écart type au-delà du mode pour les maladies du cœur et les maladies cérébrovasculaires chez les hommes et chez les femmes enregistrent des niveaux plus faibles comparativement à ceux observés pour les divers types de cancer à l'étude, sauf pour le cancer de la prostate. En effet, le niveau de SD(M+) pour ce type de cancer est similaire à celui observé pour les maladies cérébrovasculaires. Des différences marquées ont été également observées dans la variabilité des âges au décès pour les quatre types de tumeurs malignes sélectionnées. Chez les hommes et chez les femmes, les décès par cancer du poumon sont plus dispersés sur le domaine des âges que ceux par cancer colorectal, tel que reflété par leurs SD(M+) respectifs. Quant au SD(M+) pour le cancer du sein, tumeur maligne spécifique aux femmes, il est borné par les valeurs du cancer du poumon et du cancer colorectal.
+L'analyse comparative entre le Canada et les États-Unis, présentée dans le troisième article, dévoile des trajectoires temporelles de M et de SD(M+) selon la cause de décès similaires à celles observées dans le contexte canadien. Plus précisément, aux États-Unis comme au Canada l'âge modal au décès a augmenté pour chacune des principales causes de décès au cours de la période 1974-2011 et cette hausse s'est accompagnée d'une diminution de l'écart type au-delà du mode. De plus, un classement similaire est observé dans ces deux pays pour les diverses causes étudiées, sur la base de leurs valeurs respectives de M et SD(M+). Cette analyse a également témoigné que les différentiels de mortalité aux grands âges entre ces deux pays nord-américains sont négligeables pour la plupart des causes de décès étudiées, sauf pour le cancer du poumon (hommes) et le cancer du sein (femmes). Ces différences sont, d'une part, expliquées par les comportements liés à la santé, étant donné que  le cancer du poumon et, dans une certaine mesure, le cancer du sein sont des maladies associées à des facteurs de risque comportementaux, et d'autre part, par des inégalités socioéconomiques dans l'accès aux soins de santé.
+L'évolution temporelle de M et de SD(M+) selon le sexe et la cause de décès suggèrent qu'au Canada le régime de compression de la mortalité aux grands âges se produit depuis le milieu des années 1970 pour chacune des principales causes de décès chez les hommes et chez les femmes. De plus, au cours des dernières années les femmes semblent avoir amorcé leur transition vers un nouveau régime de mortalité, appelé le shifting mortality regime. Les résultats obtenus pour les États-Unis au cours de la même période indiquent que cette situation n'est pas spécifique au contexte canadien uniquement." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="The mortality decline among the elderly witnessed in most developed countries since the mid-twentieth century has brought upon important changes in the age distribution of deaths, as mirrored by its gradual shift to older ages and its concentration into a progressively shorter age interval. These transformations are the result of underlying changes in the mortality profile by age and cause of death, a subject which has received very limited attention in the current literature. The main objective of this thesis is to examine changes underwent in the age-at-death distribution in low-mortality countries, particularly in Canada, along a cause-of-death dimension. The second objective is to conduct a Canada-U.S. comparative analysis to determine whether Canadian trends in M and SD(M+) are country-specific or if a similar pattern is observed in other low mortality countries, more particularly in the U.S.  These evolutionary changes are monitored through the lens of new mortality indicators, the modal age at death, M, and the standard deviation beyond the mode, SD(M+). Their estimation relies on the use of the P-spline nonparametric smoothing approach that we specifically adapted to the context of cause-of-death analysis. The results, presented in three scientific papers, are obtained using data from the Canadian Vital Statistics Death Database of Statistics Canada, the National Vital Statistics System of the  National Center for Health Statistics, and the Human Mortality Database. We focus on six leading causes of death in Canada and the U.S., that is heart diseases, cerebrovascular diseases, colorectal cancer, lung cancer, prostate cancer (males), and breast cancer (females). 
+Findings from the first paper reveal a steady upward trend in M values for all leading causes of death since the mid-1970s in Canada. Moreover, the increase in cause-specific modal age estimates occurred at a strikingly similar pace for most causes, except for heart diseases (males) and breast cancer (females). However, the various causes studied differ greatly in terms of levels. In general, the following ranking (from lowest to highest modal age values) is observed: lung cancer, colorectal cancer, heart diseases, and cerebrovascular diseases. For males, prostate cancer ranked in between the two sub-categories of cardiovascular diseases until the end of the 1990s and in between colorectal cancer and heart diseases after that. For females, estimates for lung and colorectal cancer bound those for breast cancer.
+The main results from the second paper suggest a decline in old-age lifespan variation for leading causes of death among Canadian males and females, as reflected by downward trends in cause-specific SD(M+) values over the period 1974-2011. However, the five leading causes of death differ greatly in terms of variability at older ages. Since the early 1990s, the two main sub-categories of cardiovascular diseases exhibited lower variability in ages at death compared to the four types of cancers studied, except for prostate cancer. Indeed, throughout the study period, the level of SD(M+) for this type of cancer was similar to that observed for cerebrovascular diseases. Notable differences in variability of ages at death have also been observed among the four types of malignant neoplasms selected. For both sexes, deaths attributable to lung cancer spread over a wider age interval than those for colorectal cancer, whose dispersion of deaths is higher than prostate cancer (males) and lower than breast cancer (females).
+The Canada-U.S. comparative analysis, presented in the third paper, revealed small differences between Canada and the U.S. in M and SD(M+) trajectories by leading causes of death. Indeed, in the U.S. as in Canada, modal age at death values for each leading cause increased throughout the 1974-2011 period while variability of deaths occurring at ages above the mode decreased. Moreover, the various causes studied ranked similarly in the two countries based on their respective M and SD(M+) values. This analysis also showed negligible age-specific mortality differentials between the two North American countries' elderly for most causes studied, except for lung cancer (males) and breast cancer (females). These differences are explained in part by health-related behaviors - since lung cancer and, to some extent, breast cancer too are behavior-driven diseases - as well as socioeconomic differences in access to health care.
+Trends in cause-specific M and SD(M+) values suggest that the old-age compression of mortality regime is at work since the mid-1970s for each leading cause of death among Canadian males and females. Moreover, it appears that women have recently entered the era of the shifting mortality regime. The analysis for the U.S. over the same period shows comparable outcomes therefore indicating that this situation is not specific to the Canadian context." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Longévité; Âge modal au décès; Compression de la mortalité aux grands âges; Dispersion des durées de vie; Causes de décès; Cancers; Maladies cardiovasculaires; Lissage par P-splines; Canada; États-Unis; Longevity; Modal age at death; Old-age mortality compression; Variability in ages at death; Causes of death; Cancers; Cardiovascular diseases; P-spline smoothing; Canada; U.S.; Sociology - Demography / Sociologie - Démographie (UMI : 0938); Thèse ou mémoire / Thesis or Dissertation; Démographie" name="citation_keywords"/>
+<meta content="Nouveaux regards sur la longévité : analyse de l'âge modal au décès et de la dispersion des durées de vie selon les principales causes de décès au Canada (1974-2011)" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Diaconu, Viorela" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/20444/4/Diaconu_Viorela_2017_these.pdf" name="citation_pdf_url"/>
+<meta content="2018-05-10" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/20444" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20444?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20444?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20444?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20444?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20444?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20444?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2944" role="menuitem">Faculté des arts et des sciences – Département de démographie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2982" role="menuitem">Faculté des arts et des sciences – Département de démographie – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2944">Faculté des arts et des sciences – Département de démographie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2982">Faculté des arts et des sciences – Département de démographie – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2982"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/20444/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/20444">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/20444/mets.xml-->
+<h2 class="page-header first-page-header">Nouveaux regards sur la longévité : analyse de l'âge modal au décès et de la dispersion des durées de vie selon les principales causes de décès au Canada (1974-2011)</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Bourbeau, Robert</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Ouellette, Nadine</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Diaconu, Viorela</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2018-06-08T18:53:02Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2018-06-08T18:53:02Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2018-05-10</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2017-08</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/20444</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Longévité</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Âge modal au décès</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Compression de la mortalité aux grands âges</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Dispersion des durées de vie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Causes de décès</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Cancers</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Maladies cardiovasculaires</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Lissage par P-splines</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Canada</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">États-Unis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Longevity</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Modal age at death</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Old-age mortality compression</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Variability in ages at death</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Causes of death</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Cancers</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Cardiovascular diseases</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">P-spline smoothing</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Canada</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">U.S.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Sociology - Demography / Sociologie - Démographie (UMI : 0938)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Nouveaux regards sur la longévité : analyse de l'âge modal au décès et de la dispersion des durées de vie selon les principales causes de décès au Canada (1974-2011)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Démographie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La baisse de la mortalité aux âges avancés en cours depuis le milieu du XXe siècle dans la plupart des pays développés a amené un déplacement de la distribution des décès vers des âges plus avancés et une concentration de celle-ci dans un intervalle d'âge progressivement plus court. Ces modifications quant à la répartition des décès selon l'âge sont le fruit de changements sous-jacents qui se sont produits dans le profil par âge de la mortalité par cause de décès, un aspect qui a reçu peu d'attention dans les publications récentes. Dès lors, l'objectif  premier de cette thèse vise à évaluer les changements survenus dans la distribution des décès selon l'âge dans les pays à faible mortalité, principalement au Canada, en y ajoutant une analyse par cause de décès. Le second objectif est de déterminer si l'expérience canadienne quant à la répartition des décès selon l'âge et la cause de décès est également observée dans d'autres pays développés, notamment aux États-Unis.
+Ces changements évolutifs sont quantifiés sous le prisme des nouveaux indicateurs de mortalité, soit l'âge modal (le plus fréquent) au décès, M, et l'écart-type au-delà du mode, SD(M+). Leur estimation repose sur la méthode de lissage par P-splines, une approche non paramétrique permettant d'obtenir une expression précise de la mortalité telle que décrite par les données observées, que nous avons adaptée au contexte par causes de décès. Les résultats de nos analyses, présentés sous forme d'articles scientifiques, s'appuient sur les données sur la mortalité par cause de décès au Canada et aux États-Unis provenant respectivement de la Base de données sur les décès de la Statistique de l'état civil de Statistique Canada et du National Vital Statistics System du National Center for Health Statistics ainsi que sur les effectifs de la population exposée au risque de décéder tirés de la Human Mortality Database. Pour fin d'analyse, nous avons sélectionné six principales causes de décès au Canada et aux États-Unis, soit les maladies du cœur, les maladies cérébrovasculaires, le cancer colorectal, le cancer du poumon, le cancer de la prostate (hommes) et le cancer du sein (femmes).
+Les résultats du premier article révèlent que l'âge modal au décès pour les principales causes de décès chez les hommes et chez les femmes canadiens suit une tendance à la hausse depuis 1974 et jusqu'en 2011. Cette augmentation de l'âge le plus fréquent est survenue à un rythme assez semblable selon les différentes causes, sauf pour les maladies du cœur (hommes) et le cancer du sein (femmes). Les principales causes de décès étudiées se différencient toutefois considérablement en termes de niveau atteint par l'âge modal au décès. De manière générale, ces dernières peuvent être classées en fonction de leur valeur modale (de la plus petite à la plus élevée) comme suit : cancer du poumon, cancer colorectal, maladies cérébrovasculaires et maladies du cœur. Chez les hommes, le cancer de la prostate se situe entre les deux sous-catégories des maladies cardiovasculaires jusqu'à la fin des années 1990 et entre le cancer colorectal et les maladies cérébrovasculaires au cours des années suivantes. Chez les femmes, l'âge le plus fréquent au décès pour le cancer du sein oscille entre celui du cancer du poumon et celui du cancer colorectal.
+Les conclusions du second article suggèrent, d'une part, que les décès des hommes et des femmes diagnostiqués avec chacune des principales causes ont eu tendance à se concentrer dans un intervalle d'âge progressivement plus court au fil du temps. En effet, au cours de la période 1974-2011, l'écart type au-delà du mode, SD(M+), pour chacune des causes sous étude suit, de manière générale, une tendance à la baisse. D'autre part, les différentes valeurs obtenues pour SD(M+) pour chacune des principales causes, indiquent que le niveau d'hétérogénéité des durées de vie individuelles varie selon la cause de décès. Depuis les années 1990, l'écart type au-delà du mode pour les maladies du cœur et les maladies cérébrovasculaires chez les hommes et chez les femmes enregistrent des niveaux plus faibles comparativement à ceux observés pour les divers types de cancer à l'étude, sauf pour le cancer de la prostate. En effet, le niveau de SD(M+) pour ce type de cancer est similaire à celui observé pour les maladies cérébrovasculaires. Des différences marquées ont été également observées dans la variabilité des âges au décès pour les quatre types de tumeurs malignes sélectionnées. Chez les hommes et chez les femmes, les décès par cancer du poumon sont plus dispersés sur le domaine des âges que ceux par cancer colorectal, tel que reflété par leurs SD(M+) respectifs. Quant au SD(M+) pour le cancer du sein, tumeur maligne spécifique aux femmes, il est borné par les valeurs du cancer du poumon et du cancer colorectal.
+L'analyse comparative entre le Canada et les États-Unis, présentée dans le troisième article, dévoile des trajectoires temporelles de M et de SD(M+) selon la cause de décès similaires à celles observées dans le contexte canadien. Plus précisément, aux États-Unis comme au Canada l'âge modal au décès a augmenté pour chacune des principales causes de décès au cours de la période 1974-2011 et cette hausse s'est accompagnée d'une diminution de l'écart type au-delà du mode. De plus, un classement similaire est observé dans ces deux pays pour les diverses causes étudiées, sur la base de leurs valeurs respectives de M et SD(M+). Cette analyse a également témoigné que les différentiels de mortalité aux grands âges entre ces deux pays nord-américains sont négligeables pour la plupart des causes de décès étudiées, sauf pour le cancer du poumon (hommes) et le cancer du sein (femmes). Ces différences sont, d'une part, expliquées par les comportements liés à la santé, étant donné que  le cancer du poumon et, dans une certaine mesure, le cancer du sein sont des maladies associées à des facteurs de risque comportementaux, et d'autre part, par des inégalités socioéconomiques dans l'accès aux soins de santé.
+L'évolution temporelle de M et de SD(M+) selon le sexe et la cause de décès suggèrent qu'au Canada le régime de compression de la mortalité aux grands âges se produit depuis le milieu des années 1970 pour chacune des principales causes de décès chez les hommes et chez les femmes. De plus, au cours des dernières années les femmes semblent avoir amorcé leur transition vers un nouveau régime de mortalité, appelé le shifting mortality regime. Les résultats obtenus pour les États-Unis au cours de la même période indiquent que cette situation n'est pas spécifique au contexte canadien uniquement.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The mortality decline among the elderly witnessed in most developed countries since the mid-twentieth century has brought upon important changes in the age distribution of deaths, as mirrored by its gradual shift to older ages and its concentration into a progressively shorter age interval. These transformations are the result of underlying changes in the mortality profile by age and cause of death, a subject which has received very limited attention in the current literature. The main objective of this thesis is to examine changes underwent in the age-at-death distribution in low-mortality countries, particularly in Canada, along a cause-of-death dimension. The second objective is to conduct a Canada-U.S. comparative analysis to determine whether Canadian trends in M and SD(M+) are country-specific or if a similar pattern is observed in other low mortality countries, more particularly in the U.S.  These evolutionary changes are monitored through the lens of new mortality indicators, the modal age at death, M, and the standard deviation beyond the mode, SD(M+). Their estimation relies on the use of the P-spline nonparametric smoothing approach that we specifically adapted to the context of cause-of-death analysis. The results, presented in three scientific papers, are obtained using data from the Canadian Vital Statistics Death Database of Statistics Canada, the National Vital Statistics System of the  National Center for Health Statistics, and the Human Mortality Database. We focus on six leading causes of death in Canada and the U.S., that is heart diseases, cerebrovascular diseases, colorectal cancer, lung cancer, prostate cancer (males), and breast cancer (females). 
+Findings from the first paper reveal a steady upward trend in M values for all leading causes of death since the mid-1970s in Canada. Moreover, the increase in cause-specific modal age estimates occurred at a strikingly similar pace for most causes, except for heart diseases (males) and breast cancer (females). However, the various causes studied differ greatly in terms of levels. In general, the following ranking (from lowest to highest modal age values) is observed: lung cancer, colorectal cancer, heart diseases, and cerebrovascular diseases. For males, prostate cancer ranked in between the two sub-categories of cardiovascular diseases until the end of the 1990s and in between colorectal cancer and heart diseases after that. For females, estimates for lung and colorectal cancer bound those for breast cancer.
+The main results from the second paper suggest a decline in old-age lifespan variation for leading causes of death among Canadian males and females, as reflected by downward trends in cause-specific SD(M+) values over the period 1974-2011. However, the five leading causes of death differ greatly in terms of variability at older ages. Since the early 1990s, the two main sub-categories of cardiovascular diseases exhibited lower variability in ages at death compared to the four types of cancers studied, except for prostate cancer. Indeed, throughout the study period, the level of SD(M+) for this type of cancer was similar to that observed for cerebrovascular diseases. Notable differences in variability of ages at death have also been observed among the four types of malignant neoplasms selected. For both sexes, deaths attributable to lung cancer spread over a wider age interval than those for colorectal cancer, whose dispersion of deaths is higher than prostate cancer (males) and lower than breast cancer (females).
+The Canada-U.S. comparative analysis, presented in the third paper, revealed small differences between Canada and the U.S. in M and SD(M+) trajectories by leading causes of death. Indeed, in the U.S. as in Canada, modal age at death values for each leading cause increased throughout the 1974-2011 period while variability of deaths occurring at ages above the mode decreased. Moreover, the various causes studied ranked similarly in the two countries based on their respective M and SD(M+) values. This analysis also showed negligible age-specific mortality differentials between the two North American countries' elderly for most causes studied, except for lung cancer (males) and breast cancer (females). These differences are explained in part by health-related behaviors - since lung cancer and, to some extent, breast cancer too are behavior-driven diseases - as well as socioeconomic differences in access to health care.
+Trends in cause-specific M and SD(M+) values suggest that the old-age compression of mortality regime is at work since the mid-1970s for each leading cause of death among Canadian males and females. Moreover, it appears that women have recently entered the era of the shifting mortality regime. The analysis for the U.S. over the same period shows comparable outcomes therefore indicating that this situation is not specific to the Canadian context.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F20444&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=D%C3%A9mographie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/20444/Diaconu_Viorela_2017_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/20444/Diaconu_Viorela_2017_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Diaconu_Viorela_2017_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/20444/Diaconu_Viorela_2017_these.pdf?sequence=4&amp;isAllowed=y">Diaconu_Viorela_2017_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">2.649Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2982/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2982">Faculté des arts et des sciences – Département de démographie – Thèses et mémoires</a> [145]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/20444">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

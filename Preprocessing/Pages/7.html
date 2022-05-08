@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="/xmlui/feed/rss_1.0/1866/7" rel="alternate" type="application/rss+xml"/>
+<link href="/xmlui/feed/rss_2.0/1866/7" rel="alternate" type="application/rss+xml"/>
+<link href="/xmlui/feed/atom_1.0/1866/7" rel="alternate" type="application/atom+xml"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Direction des bibliothèques</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="/xmlui/handle/1866/7/discover?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="/xmlui/handle/1866/7/discover?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="/xmlui/handle/1866/7/discover?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="/xmlui/handle/1866/7/discover?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="/xmlui/handle/1866/7/discover?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="/xmlui/handle/1866/7/discover?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">Direction des bibliothèques <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">Direction des bibliothèques</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li class="active">Direction des bibliothèques</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/7"/>Search this Community</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Community</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<h2 class="ds-option-set-head h6">Discover</h2>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">Author</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Clar%2C+Monique">Clar, Monique (28)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Universit%C3%A9+de+Montr%C3%A9al.+Direction+des+biblioth%C3%A8ques">Université de Montréal. Direction des bibliothèques (26)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Clairoux%2C+Natalie">Clairoux, Natalie (16)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Trudel%2C+Normand">Trudel, Normand (15)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Martinolli%2C+Pascal">Martinolli, Pascal (13)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/search-filter?field=author">... View More</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">Subject</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Biblioth%C3%A8ques">Bibliothèques (36)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Rapport+annuel">Rapport annuel (20)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Universit%C3%A9+de+Montr%C3%A9al">Université de Montréal (19)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Patrimoine+documentaire">Patrimoine documentaire (16)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Biblioth%C3%A8que+des+livres+rares+et+collections+sp%C3%A9ciales">Bibliothèque des livres rares et collections spéciales (15)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/search-filter?field=subject">... View More</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">Date</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=dateIssued&amp;filter_relational_operator=equals&amp;filter=%5B2020+TO+2021%5D">2020 - 2021 (16)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=dateIssued&amp;filter_relational_operator=equals&amp;filter=%5B2010+TO+2019%5D">2010 - 2019 (90)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=dateIssued&amp;filter_relational_operator=equals&amp;filter=%5B2001+TO+2009%5D">2001 - 2009 (78)</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">Affiliation</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=affiliation&amp;filter_relational_operator=equals&amp;filter=Universit%C3%A9+de+Montr%C3%A9al.+Direction+des+biblioth%C3%A8ques">Université de Montréal. Direction des bibliothèques (184)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=affiliation&amp;filter_relational_operator=equals&amp;filter=Universit%C3%A9+de+Montr%C3%A9al.+Facult%C3%A9+de+m%C3%A9decine.+D%C3%A9partement+de+m%C3%A9decine">Université de Montréal. Faculté de médecine. Département de médecine (7)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=affiliation&amp;filter_relational_operator=equals&amp;filter=Universit%C3%A9+de+Montr%C3%A9al.+Facult%C3%A9+des+arts+et+des+sciences.+%C3%89cole+de+biblioth%C3%A9conomie+et+des+sciences+de+l%27information">Université de Montréal. Faculté des arts et des sciences. École de bibliothéconomie et des sciences de l'information (2)</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">Type</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=type&amp;filter_relational_operator=equals&amp;filter=Contribution+%C3%A0+un+congr%C3%A8s+%2F+Conference+object">Conference object (62)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=type&amp;filter_relational_operator=equals&amp;filter=Article">Article (50)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=type&amp;filter_relational_operator=equals&amp;filter=Pr%C3%A9sentation+hors+congr%C3%A8s+%2F+Non-conference+presentation">Non-conference presentation (37)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=type&amp;filter_relational_operator=equals&amp;filter=Rapport+%2F+Report">Report (25)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=type&amp;filter_relational_operator=equals&amp;filter=Livre+%2F+Book">Book (5)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/search-filter?field=type">... View More</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">Language</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=language&amp;filter_relational_operator=equals&amp;filter=fra">French  (158)</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/7/discover?filtertype=language&amp;filter_relational_operator=equals&amp;filter=eng">English  (27)</a>
+</div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/7/statistics">View Usage Statistics</a>
+</div>
+<div>
+<h2 class="ds-option-set-head h6">RSS Feeds</h2>
+<div class="ds-option-set list-group" id="ds-feed-option">
+<a class="list-group-item" href="/xmlui/feed/rss_1.0/1866/7"><img alt="feed" class="btn-xs" src="/xmlui/static/icons/feed.png"/>RSS 1.0</a><a class="list-group-item" href="/xmlui/feed/rss_2.0/1866/7"><img alt="feed" class="btn-xs" src="/xmlui/static/icons/feed.png"/>RSS 2.0</a><a class="list-group-item" href="/xmlui/feed/atom_1.0/1866/7"><img alt="feed" class="btn-xs" src="/xmlui/static/icons/feed.png"/>Atom</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<h2 class="ds-div-head page-header first-page-header">Direction des bibliothèques</h2>
+<div class="ds-static-div primary repository community" id="aspect_artifactbrowser_CommunityViewer_div_community-home">
+<div class="ds-static-div secondary search-browse" id="aspect_artifactbrowser_CommunityViewer_div_community-search-browse">
+<div class="ds-static-div secondary browse" id="aspect_browseArtifacts_CommunityBrowse_div_community-browse">
+<h3 class="ds-div-head">Browse by</h3>
+<div class="ds-static-div community-browse" id="aspect_browseArtifacts_CommunityBrowse_list_community-browse">
+<p class="ds-paragraph btn-group">
+<a class="btn btn-default" href="/xmlui/handle/1866/7/browse?type=title">Titles</a><a class="btn btn-default" href="/xmlui/handle/1866/7/browse?type=dateissued">Issue Dates</a><a class="btn btn-default" href="/xmlui/handle/1866/7/browse?type=author">Authors</a><a class="btn btn-default" href="/xmlui/handle/1866/7/browse?type=advisor">Advisors</a><a class="btn btn-default" href="/xmlui/handle/1866/7/browse?type=subject">Subjects</a><a class="btn btn-default" href="/xmlui/handle/1866/7/browse?type=discipline">Disciplines</a><a class="btn btn-default" href="/xmlui/handle/1866/7/browse?type=affiliation">Affiliation</a><a class="btn btn-default" href="/xmlui/handle/1866/7/browse?type=titleindex">Titles index</a>
+</p>
+</div>
+</div>
+<form action="/xmlui/handle/1866/7/discover" class="ds-interactive-div secondary search" id="aspect_discovery_CommunitySearch_div_community-search" method="post" onsubmit="javascript:tSubmit(this);">
+<p>Search within this community and its collections:</p>
+<div class="row">
+<div class="col-sm-6" id="aspect_discovery_CommunitySearch_p_search-query">
+<p class="input-group">
+<input class="ds-text-field form-control" id="aspect_discovery_CommunitySearch_field_query" name="query" type="text" value=""/><span class="input-group-btn"><button class="ds-button-field btn btn-default" id="aspect_discovery_CommunitySearch_field_submit" name="submit" type="submit">Go</button></span>
+</p>
+</div>
+</div>
+</form>
+</div>
+<div class="ds-static-div secondary" id="aspect_artifactbrowser_CommunityViewer_div_community-view">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/7/mets.xml-->
+<div class="detail-view"> 
+            
+            <div class="ds-logo-wrapper">
+<img alt="The collection's logo" class="logo img-responsive" src="/xmlui/bitstream/id/162975/?sequence=-1"/></div>
+<p class="intro-text">
+<p>Le réseau des bibliothèques de l’Université de Montréal regroupe toutes les bibliothèques/UdeM ainsi que leurs services communs, tels que les acquisitions, le traitement documentaire, le soutien à la recherche et à l’enseignement.</p>
+<p>
+<a href="http://www.bib.umontreal.ca" target="_blank">Site Web des bibliothèques de l’Université de Montréal</a>
+</p>
+</p>
+</div>
+<h3 class="ds-list-head">Collections in this community</h3>
+<ul class="ds-artifact-list list-unstyled">
+<!--Mode summaryList -  External Metadata URL: cocoon://metadata/handle/1866/10/mets.xml?sections=dmdSec,fileSec-->
+<li class="ds-artifact-item odd">
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/xmlui/handle/1866/10"><span class="Z3988">Direction des bibliothèques – Production du personnel</span></a> [160]</h4>
+</div>
+</li>
+<!--Mode summaryList -  External Metadata URL: cocoon://metadata/handle/1866/8/mets.xml?sections=dmdSec,fileSec-->
+<li class="ds-artifact-item even">
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/xmlui/handle/1866/8"><span class="Z3988">Direction des bibliothèques – Publications</span></a> [24]</h4>
+</div>
+</li>
+</ul>
+</div>
+<h3 class="ds-div-head">Recent Submissions</h3>
+<div class="ds-static-div secondary recent-submission" id="aspect_discovery_CommunityRecentSubmissions_div_community-recent-submission">
+<ul class="ds-artifact-list list-unstyled">
+<!--Mode summaryList -  External Metadata URL: cocoon://metadata/handle/1866/26252/mets.xml?sections=dmdSec,fileSec-->
+<li class="ds-artifact-item odd">
+<div class="thumbnail-wrapper hidden-xs">
+<a class="image-link" href="/xmlui/handle/1866/26252"><img alt="Thumbnail" class="img-responsive thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/26252/Pr%c3%a9sentation-Rencontres%20et%20initiatives%20autochtones-Bibliotheques-UdeM-CPI-2021-11-04.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img class="img-responsive thumbnail-papyrus thumbnail_icone" height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/xmlui/handle/1866/26252">Rencontres et initiatives autochtones : activités de sensibilisation et de réflexion aux Bibliothèques de l’Université de Montréal</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=https%3A%2F%2Fcpi.fmdoc.org%2Fsession%2Frencontres-et-initiatives-autochtones-activites-de-sensibilisation-et-de-reflexion-aux-bibliotheques-de-luniversite-de-montreal%2F&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F26252&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;"> ﻿
+                    
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Bastien, Valérie</span>; <span>Chiasson, Sophie</span>; <span>Clar, Monique</span>; <span>Durnin, Jean-François</span>; <span>Fortier, Catherine</span></small></span> <span class="publisher-date h4"><small>(<span class="date">2021-11-04</span>)</small></span>
+</div>
+<div class="artifact-abstract">Les activités Rencontres autochtones et Initiatives autochtones ont été proposées au personnel des bibliothèques de l’Université de Montréal entre 2019 et 2021. L’activité Rencontres visait à sensibiliser les employés aux réalités des personnes autochtones ...</div>
+</div>
+</li>
+<!--Mode summaryList -  External Metadata URL: cocoon://metadata/handle/1866/25869/mets.xml?sections=dmdSec,fileSec-->
+<li class="ds-artifact-item even">
+<div class="thumbnail-wrapper hidden-xs">
+<a class="image-link" href="/xmlui/handle/1866/25869"><img alt="Thumbnail" class="img-responsive thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25869/bibUdeM-2020-2021.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img class="img-responsive thumbnail-papyrus thumbnail_icone" height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/xmlui/handle/1866/25869">Rapport annuel 2020-2021</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=1705-4540&amp;rft_id=https%3A%2F%2Fwww.bib.umontreal.ca%2Fpublications%2Frapport-annuel-2020-2021%2F&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F25869&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;"> ﻿
+                    
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Université de Montréal. Direction des bibliothèques</span></small></span> <span class="publisher-date h4"><small>(<span class="publisher">Université de Montréal</span>, <span class="date">2021-12</span>)</small></span>
+</div>
+<div class="artifact-abstract">Rapport annuel des activités de la Direction des bibliothèques de l’Université de Montréal en 2020-2021.</div>
+</div>
+</li>
+<!--Mode summaryList -  External Metadata URL: cocoon://metadata/handle/1866/25076/mets.xml?sections=dmdSec,fileSec-->
+<li class="ds-artifact-item odd">
+<div class="thumbnail-wrapper hidden-xs">
+<a class="image-link" href="/xmlui/handle/1866/25076"><img alt="Thumbnail" class="img-responsive thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25076/Augmenter%20sa%20visibilite%20sur%20le%20web%20Mars%202021.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img class="img-responsive thumbnail-papyrus thumbnail_icone" height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/xmlui/handle/1866/25076">Webinaire : augmenter sa visibilité sur le web : ORCID, Dimensions...</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F25076&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;"> ﻿
+                    
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Dupont, Patrice</span></small></span> <span class="publisher-date h4"><small>(<span class="date">2021-03-25</span>)</small></span>
+</div>
+<div class="artifact-abstract">Ce webinaire vous aidera à comprendre l’utilité des profils et identifiants de chercheur.se.s pour augmenter votre visibilité sur le web. On y présente entre autres le profil et identifiant ORCID et des astuces pour y importer vos données facilement à ...</div>
+</div>
+</li>
+<!--Mode summaryList -  External Metadata URL: cocoon://metadata/handle/1866/25075/mets.xml?sections=dmdSec,fileSec-->
+<li class="ds-artifact-item even">
+<div class="thumbnail-wrapper hidden-xs">
+<a class="image-link" href="/xmlui/handle/1866/25075"><img alt="Thumbnail" class="img-responsive thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25075/Pr%c3%a9sentation%20pour%20la%20FMD3S%2020201124.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img class="img-responsive thumbnail-papyrus thumbnail_icone" height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/xmlui/handle/1866/25075">Présentation pour la FMD3S sur la gestion des données de recherche (GDR)</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=https%3A%2F%2Ffmdoc.org%2Fformation-fmd3s-24novembre2020%2F&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F25075&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;"> ﻿
+                    
+                </span>
+</h4>
+<h5 class="artifact-alt-title">Formation FMD3S : partage d’expérience sur les services en gestion des données de recherche aux bibliothèques/UdeM</h5>
+<div class="artifact-info">
+<span class="author h4"><small><span>Dupont, Patrice</span>; <span>Paquette-Bigras, Ève</span></small></span> <span class="publisher-date h4"><small>(<span class="date">2020-11-24</span>)</small></span>
+</div>
+<div class="artifact-abstract">Ève Paquette-Bigras, bibliothécaire en gestion des données de recherche, et Patrice Dupont, bibliothécaire en santé, discuteront de la mise en place de l’offre de services en gestion des données de recherche aux bibliothèques/UdeM et partageront leur ...</div>
+</div>
+</li>
+<!--Mode summaryList -  External Metadata URL: cocoon://metadata/handle/1866/25029/mets.xml?sections=dmdSec,fileSec-->
+<li class="ds-artifact-item odd">
+<div class="thumbnail-wrapper hidden-xs">
+<a class="image-link" href="/xmlui/handle/1866/25029"><img alt="Thumbnail" class="img-responsive thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25029/donjonsxlabo-pmartinolli-20210517-pdfa.pdf.jpg?sequence=5&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img class="img-responsive thumbnail-papyrus thumbnail_icone" height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/xmlui/handle/1866/25029">La feuille de personnage du jeune chercheur : une activité pédagogique ludifiée pour améliorer l’engagement</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F25029&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;"> ﻿
+                    
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Martinolli, Pascal</span></small></span> <span class="publisher-date h4"><small>(<span class="date">2021-05-18</span>)</small></span>
+</div>
+<div class="artifact-abstract">Présentation d'une « feuille de personnage du jeune chercheur » pour améliorer l'engagement des étudiants dans un séminaire de cycle supérieur. Cet élément de game design issu du jeu de rôle sur table ludique est adapté et transformé pour servir les ...</div>
+</div>
+</li>
+<!--Mode summaryList -  External Metadata URL: cocoon://metadata/handle/1866/24939/mets.xml?sections=dmdSec,fileSec-->
+<li class="ds-artifact-item even">
+<div class="thumbnail-wrapper hidden-xs">
+<a class="image-link" href="/xmlui/handle/1866/24939"><img alt="Thumbnail" class="img-responsive thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/24939/Assessment%20of%20liaison%20programs%20-%20final.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img class="img-responsive thumbnail-papyrus thumbnail_icone" height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/xmlui/handle/1866/24939">Assessment of library liaison programs</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F24939&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;"> ﻿
+                    
+                </span>
+</h4>
+<h5 class="artifact-alt-title">Seeing things differently : evolution, assessment, and future roles of liaison librarians</h5>
+<div class="artifact-info">
+<span class="author h4"><small><span>Clairoux, Natalie</span></small></span> <span class="publisher-date h4"><small>(<span class="publisher">Journal of the Medical Library Association</span>, <span class="date">2021-01</span>)</small></span>
+</div>
+<div class="artifact-abstract">Session Format: Lighting talks by three librarians interspersed with facilitated small group breakout activities and discussion.
+Objective: This session aims to further the conversation about the evolving nature of liaison roles and duties. Through ...</div>
+</div>
+</li>
+<!--Mode summaryList -  External Metadata URL: cocoon://metadata/handle/1866/24926/mets.xml?sections=dmdSec,fileSec-->
+<li class="ds-artifact-item odd">
+<div class="thumbnail-wrapper hidden-xs">
+<a class="image-link" href="/xmlui/handle/1866/24926"><img alt="Thumbnail" class="img-responsive thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/24926/wikidata-crihn-ebsi-pmartinolli-2021.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img class="img-responsive thumbnail-papyrus thumbnail_icone" height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/xmlui/handle/1866/24926">Wikidata pour la recherche</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F24926&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;"> ﻿
+                    
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Martinolli, Pascal</span></small></span> <span class="publisher-date h4"><small>(<span class="date">2021-03-17</span>)</small></span>
+</div>
+<div class="artifact-abstract">Fonctionnement de Wikidata et de sa gestion centralisée de métadonnées liées à de multiples bases de données. Exemples d'utilisation de Wikidata pour explorer et soutenir un projet de recherche, pour les identifiants pérennes de chercheur et pour la ...</div>
+</div>
+</li>
+<!--Mode summaryList -  External Metadata URL: cocoon://metadata/handle/1866/24696/mets.xml?sections=dmdSec,fileSec-->
+<li class="ds-artifact-item even">
+<div class="thumbnail-wrapper hidden-xs">
+<a class="image-link" href="/xmlui/handle/1866/24696"><img alt="Thumbnail" class="img-responsive thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/24696/Document%20%c3%89cole%20du%20CIQSS%2020210115%20EN.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img class="img-responsive thumbnail-papyrus thumbnail_icone" height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/xmlui/handle/1866/24696">Ethical and legal issues of sharing and disseminating data in the social sciences : thoughts from the 2019 QICSS Summer School (Montréal, June 10-11, 2019)</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F24696&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;"> ﻿
+                    
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Université de Montréal. Direction des bibliothèques</span></small></span> <span class="publisher-date h4"><small>(<span class="date">2020-11</span>)</small></span>
+</div>
+</div>
+</li>
+<!--Mode summaryList -  External Metadata URL: cocoon://metadata/handle/1866/24694/mets.xml?sections=dmdSec,fileSec-->
+<li class="ds-artifact-item odd">
+<div class="thumbnail-wrapper hidden-xs">
+<a class="image-link" href="/xmlui/handle/1866/24694"><img alt="Thumbnail" class="img-responsive thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/24694/Document%20%c3%89cole%20du%20CIQSS%2020210115%20FR.pdf.jpg?sequence=5&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img class="img-responsive thumbnail-papyrus thumbnail_icone" height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/xmlui/handle/1866/24694">Enjeux éthiques et juridiques du partage et de la diffusion des données en sciences sociales : réflexions issues de l’École d’été du CIQSS
+(Montréal, 10-11 juin 2019)</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F24694&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;"> ﻿
+                    
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Université de Montréal. Direction des bibliothèques</span></small></span> <span class="publisher-date h4"><small>(<span class="date">2020-11</span>)</small></span>
+</div>
+</div>
+</li>
+<!--Mode summaryList -  External Metadata URL: cocoon://metadata/handle/1866/24673/mets.xml?sections=dmdSec,fileSec-->
+<li class="ds-artifact-item even">
+<div class="thumbnail-wrapper hidden-xs">
+<a class="image-link" href="/xmlui/handle/1866/24673"><img alt="Thumbnail" class="img-responsive thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/24673/Bistros%2c%20patrouilleurs%20et%20maronniers.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img class="img-responsive thumbnail-papyrus thumbnail_icone" height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+<div class="artifact-description">
+<h4 class="artifact-title">
+<a href="/xmlui/handle/1866/24673">Wikipedia : bistros, patrouilleurs et marronniers</a><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F24673&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;"> ﻿
+                    
+                </span>
+</h4>
+<div class="artifact-info">
+<span class="author h4"><small><span>Thomas, Mathieu</span></small></span> <span class="publisher-date h4"><small>(<span class="publisher">Éditions Liber</span>, <span class="date">2021</span>)</small></span>
+</div>
+</div>
+</li>
+</ul>
+<p class="ds-paragraph recentSubmissionViewMore" id="aspect_discovery_CommunityRecentSubmissions_p_recent-submission-view-more">
+<a href="/xmlui/handle/1866/7/recent-submissions">View more</a>
+</p>
+</div>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

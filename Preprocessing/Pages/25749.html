@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Measuring substance-related disorders using Canadian administrative health databanks : interprovincial comparisons of recorded diagnostic rates, incidence proportions and mortality rate ratios</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Huỳnh, Christophe" name="DC.creator">
+<meta content="Kisely, Steve" name="DC.creator">
+<meta content="Rochette, Louis" name="DC.creator">
+<meta content="Morrison, Kenneth B." name="DC.creator">
+<meta content="Li, Shelley" name="DC.creator">
+<meta content="Hopkin, Gareth" name="DC.creator">
+<meta content="Smith, Mark" name="DC.creator"/>
+<meta content="Burchill, Charles" name="DC.creator"/>
+<meta content="Lin, Elizabeth" name="DC.creator"/>
+<meta content="Asbridge, Mark" name="DC.creator"/>
+<meta content="Jutras-Aswad, Didier" name="DC.creator"/>
+<meta content="Lesage, Alain" name="DC.creator"/>
+<meta content="2021-09-27T14:59:05Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF"/>
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr"/>
+<meta content="2021-09-27T14:59:05Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF"/>
+<meta content="2021-09-27" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/25749" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="SAGE" name="DC.publisher" xml:lang="fr"/>
+<meta content="Alcohol-related disorders" name="DC.subject" xml:lang="fr"/>
+<meta content="Substance-related disorders" name="DC.subject" xml:lang="fr"/>
+<meta content="Healthcare administrative claims" name="DC.subject" xml:lang="fr"/>
+<meta content="International classification of diseases" name="DC.subject" xml:lang="fr"/>
+<meta content="Premature mortality" name="DC.subject" xml:lang="fr"/>
+<meta content="Canada" name="DC.subject" xml:lang="fr"/>
+<meta content="Measuring substance-related disorders using Canadian administrative health databanks : interprovincial comparisons of recorded diagnostic rates, incidence proportions and mortality rate ratios" name="DC.title" xml:lang="fr"/>
+<meta content="Article" name="DC.type" xml:lang="fr"/>
+<meta content="Université de Montréal. Faculté de médecine. Département de psychiatrie et d'addictologie" name="DC.contributor" xml:lang="fr"/>
+<meta content="10.1177/07067437211043446" name="DC.identifier"/>
+<meta content="Context
+Assessing temporal changes in the recorded diagnostic rates, incidence proportions, and health outcomes of substance-related disorders (SRD) can inform public health policymakers in reducing harms associated with alcohol and other drugs.
+
+Objective
+To report the annual and cumulative recorded diagnostic rates and incidence proportions of SRD, as well as mortality rate ratios (MRRs) by cause of death among this group in Canada, according to their province of residence.
+
+Methods
+Analyses were performed on linked administrative health databases (AHD; physician claims, hospitalizations, and vital statistics) in five Canadian provinces (Alberta, Manitoba, Ontario, Québec, and Nova Scotia). Canadians 12 years and older and registered for their provincial healthcare coverage were included. The International Classification of Diseases (ICD-9 or ICD-10 codes) was used for case identification of SRD from April 2001 to March 2018.
+
+Results
+During the study period, the annual recorded SRD diagnostic rates increased in Alberta (2001–2002: 8.0‰; 2017–2018: 12.8‰), Ontario (2001–2002: 11.5‰; 2017–2018: 14.4‰), and Nova Scotia (2001–2002: 6.4‰; 2017–2018: 12.7‰), but remained stable in Manitoba (2001–2002: 5.5‰; 2017–2018: 5.4‰) and Québec (2001–2002 and 2017–2018: 7.5‰). Cumulative recorded SRD diagnostic rates increased steadily for all provinces. Recorded incidence proportions increased significantly in Alberta (2001–2002: 4.5‰; 2017–2018: 5.0‰) and Nova Scotia (2001–2002: 3.3‰; 2017–2018: 3.8‰), but significantly decreased in Ontario (2001–2002: 6.2‰; 2017–2018: 4.7‰), Québec (2001–2002: 4.1‰; 2017–2018: 3.2‰) and Manitoba (2001–2002: 2.7‰; 2017–2018: 2.0‰). For almost all causes of death, a higher MRR was found among individuals with recorded SRD than in the general population. The causes of death in 2015–2016 with the highest MRR for SRD individuals were SRD, suicide, and non-suicide trauma in Alberta, Ontario, Manitoba, and Québec.
+
+Discussion
+Linked AHD covering almost the entire population can be useful to monitor the medical service trends of SRD and, therefore, guide health services planning in Canadian provinces." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Contexte
+Évaluer les changements temporels des taux diagnostiques enregistrés, les proportions de l’incidence et les résultats de santé des troubles liés aux substances (TLS) peut informer les décideurs de la santé publique dans la réduction des méfaits associés à l’alcool et autres drogues.
+
+Objectif
+Faire rapport sur les taux diagnostiques enregistrés annuels et cumulatifs et les proportions de l’incidence des TLS, ainsi que les rapports des taux de mortalité (RTM) par cause de décès au sein de ce groupe au Canada, selon leur province de résidence.
+
+Méthodes
+Des analyses ont été exécutées sur des bases de données de santé administratives couplées (réclamations de médecins, hospitalisations, statistiques vitales) dans cinq provinces canadiennes (Alberta, Manitoba, Ontario, Québec, et Nouvelle-Écosse). Des Canadiens de 12 ans et plus inscrits à leur assurance-santé provinciale étaient inclus. La Classification internationale des maladies (CIM-9 ou −10 codes) a servi à l’identification de cas de TLS d’avril 2001 à mars 2018.
+
+Résultats
+Durant la période de l’étude, les taux diagnostiques de TLS enregistrés annuellement ont augmenté en Alberta (2001–2002 : 8,0 ‰; 2017–2018 : 12,8 ‰), en Ontario (2001–2002 : 11,5 ‰; 2017–2018 : 14,4 ‰), et en Nouvelle-Écosse (2001–2002 : 6,4 ‰; 2017–2018: 12,7 ‰), mais sont demeurés stables au Manitoba (2001–2002 : 5,5 ‰; 2017–2018 : 5,4 ‰) et au Québec (2001–2002 et 2017–2018 : 7,5 ‰). Les taux diagnostiques de TLS cumulatifs enregistrés ont augmenté régulièrement pour toutes les provinces. Les proportions de l’incidence enregistrées se sont accrues significativement en Alberta (2001–2002 : 4,5 ‰; 2017–2018 : 5,0 ‰) et en Nouvelle-Écosse (2001–2002 : 3,3 ‰; 2017–2018 : 3,8 ‰), mais ont significativement diminué en Ontario (2001–2002 : 6,2 ‰; 2017–2018 : 4,7 ‰), au Québec (2001–2002 : 4,1 ‰; 2017–2018 : 3,2 ‰) et au Manitoba (2001–2002 : 2,7 ‰; 2017–2018 : 2,0 ‰). Pour presque toutes les causes de décès, des RTM plus élevés ont été constatés chez les personnes ayant des TLS enregistrés que dans la population générale. Les causes de décès en 2015–2016 avec les RTM les plus élevés pour les personnes présentant de TLS étaient les TLS, le suicide, et les traumatismes de non-suicide en Alerta, en Ontario, au Manitoba, et au Québec.
+
+Discussion
+Les bases de données de santé administratives jumelées qui couvrent presque la population en entier peuvent être utiles pour surveiller les tendances des services médicaux de TLS et par conséquent, guider la planification des services de santé dans les provinces canadiennes." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="urn:ISSN:0706-7437" name="DCTERMS.isPartOf" xml:lang="fr"/>
+<meta content="urn:ISSN:1497-0015" name="DCTERMS.isPartOf" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Alcohol-related disorders; Substance-related disorders; Healthcare administrative claims; International classification of diseases; Premature mortality; Canada; Article" name="citation_keywords"/>
+<meta content="Measuring substance-related disorders using Canadian administrative health databanks : interprovincial comparisons of recorded diagnostic rates, incidence proportions and mortality rate ratios" name="citation_title"/>
+<meta content="SAGE" name="citation_publisher"/>
+<meta content="10.1177/07067437211043446" name="citation_doi"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Canadian journal of psychiatry = Revue canadienne de psychiatrie" name="citation_journal_title"/>
+<meta content="Huỳnh, Christophe" name="citation_author"/>
+<meta content="Kisely, Steve" name="citation_author"/>
+<meta content="Rochette, Louis" name="citation_author"/>
+<meta content="Morrison, Kenneth B." name="citation_author"/>
+<meta content="Li, Shelley" name="citation_author"/>
+<meta content="Hopkin, Gareth" name="citation_author"/>
+<meta content="Smith, Mark" name="citation_author"/>
+<meta content="Burchill, Charles" name="citation_author"/>
+<meta content="Lin, Elizabeth" name="citation_author"/>
+<meta content="Asbridge, Mark" name="citation_author"/>
+<meta content="Jutras-Aswad, Didier" name="citation_author"/>
+<meta content="Lesage, Alain" name="citation_author"/>
+<meta content="Canadian journal of psychiatry = Revue canadienne de psychiatrie" name="citation_conference"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/25749/1/PUDS_INSPQ_Prevalences_2021-07-06.trackchange.docx" name="citation_pdf_url"/>
+<meta content="2021-09-27" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/25749" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25749?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25749?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25749?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25749?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25749?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25749?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/19699" role="menuitem">Faculté de médecine – Travaux et publications</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/19699">Faculté de médecine – Travaux et publications</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/19699"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/19699/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/19699/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/19699/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/19699/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/19699/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/19699/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/19699/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/19699/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/25749/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25749">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/25749/mets.xml-->
+<h2 class="">Measuring substance-related disorders using Canadian administrative health databanks : interprovincial comparisons of recorded diagnostic rates, incidence proportions and mortality rate ratios</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Huỳnh, Christophe</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Kisely, Steve</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Rochette, Louis</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Morrison, Kenneth B.</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Li, Shelley</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Hopkin, Gareth</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Smith, Mark</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Burchill, Charles</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Lin, Elizabeth</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Asbridge, Mark</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Jutras-Aswad, Didier</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Lesage, Alain</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2021-09-27T14:59:05Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2021-09-27T14:59:05Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-09-27</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/25749</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.publisher</td><td class="word-break">SAGE</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Alcohol-related disorders</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Substance-related disorders</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Healthcare administrative claims</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">International classification of diseases</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Premature mortality</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Canada</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Measuring substance-related disorders using Canadian administrative health databanks : interprovincial comparisons of recorded diagnostic rates, incidence proportions and mortality rate ratios</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Article</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.affiliation</td><td class="word-break">Université de Montréal. Faculté de médecine. Département de psychiatrie et d'addictologie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.doi</td><td class="word-break">10.1177/07067437211043446</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Context
+Assessing temporal changes in the recorded diagnostic rates, incidence proportions, and health outcomes of substance-related disorders (SRD) can inform public health policymakers in reducing harms associated with alcohol and other drugs.
+
+Objective
+To report the annual and cumulative recorded diagnostic rates and incidence proportions of SRD, as well as mortality rate ratios (MRRs) by cause of death among this group in Canada, according to their province of residence.
+
+Methods
+Analyses were performed on linked administrative health databases (AHD; physician claims, hospitalizations, and vital statistics) in five Canadian provinces (Alberta, Manitoba, Ontario, Québec, and Nova Scotia). Canadians 12 years and older and registered for their provincial healthcare coverage were included. The International Classification of Diseases (ICD-9 or ICD-10 codes) was used for case identification of SRD from April 2001 to March 2018.
+
+Results
+During the study period, the annual recorded SRD diagnostic rates increased in Alberta (2001–2002: 8.0‰; 2017–2018: 12.8‰), Ontario (2001–2002: 11.5‰; 2017–2018: 14.4‰), and Nova Scotia (2001–2002: 6.4‰; 2017–2018: 12.7‰), but remained stable in Manitoba (2001–2002: 5.5‰; 2017–2018: 5.4‰) and Québec (2001–2002 and 2017–2018: 7.5‰). Cumulative recorded SRD diagnostic rates increased steadily for all provinces. Recorded incidence proportions increased significantly in Alberta (2001–2002: 4.5‰; 2017–2018: 5.0‰) and Nova Scotia (2001–2002: 3.3‰; 2017–2018: 3.8‰), but significantly decreased in Ontario (2001–2002: 6.2‰; 2017–2018: 4.7‰), Québec (2001–2002: 4.1‰; 2017–2018: 3.2‰) and Manitoba (2001–2002: 2.7‰; 2017–2018: 2.0‰). For almost all causes of death, a higher MRR was found among individuals with recorded SRD than in the general population. The causes of death in 2015–2016 with the highest MRR for SRD individuals were SRD, suicide, and non-suicide trauma in Alberta, Ontario, Manitoba, and Québec.
+
+Discussion
+Linked AHD covering almost the entire population can be useful to monitor the medical service trends of SRD and, therefore, guide health services planning in Canadian provinces.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Contexte
+Évaluer les changements temporels des taux diagnostiques enregistrés, les proportions de l’incidence et les résultats de santé des troubles liés aux substances (TLS) peut informer les décideurs de la santé publique dans la réduction des méfaits associés à l’alcool et autres drogues.
+
+Objectif
+Faire rapport sur les taux diagnostiques enregistrés annuels et cumulatifs et les proportions de l’incidence des TLS, ainsi que les rapports des taux de mortalité (RTM) par cause de décès au sein de ce groupe au Canada, selon leur province de résidence.
+
+Méthodes
+Des analyses ont été exécutées sur des bases de données de santé administratives couplées (réclamations de médecins, hospitalisations, statistiques vitales) dans cinq provinces canadiennes (Alberta, Manitoba, Ontario, Québec, et Nouvelle-Écosse). Des Canadiens de 12 ans et plus inscrits à leur assurance-santé provinciale étaient inclus. La Classification internationale des maladies (CIM-9 ou −10 codes) a servi à l’identification de cas de TLS d’avril 2001 à mars 2018.
+
+Résultats
+Durant la période de l’étude, les taux diagnostiques de TLS enregistrés annuellement ont augmenté en Alberta (2001–2002 : 8,0 ‰; 2017–2018 : 12,8 ‰), en Ontario (2001–2002 : 11,5 ‰; 2017–2018 : 14,4 ‰), et en Nouvelle-Écosse (2001–2002 : 6,4 ‰; 2017–2018: 12,7 ‰), mais sont demeurés stables au Manitoba (2001–2002 : 5,5 ‰; 2017–2018 : 5,4 ‰) et au Québec (2001–2002 et 2017–2018 : 7,5 ‰). Les taux diagnostiques de TLS cumulatifs enregistrés ont augmenté régulièrement pour toutes les provinces. Les proportions de l’incidence enregistrées se sont accrues significativement en Alberta (2001–2002 : 4,5 ‰; 2017–2018 : 5,0 ‰) et en Nouvelle-Écosse (2001–2002 : 3,3 ‰; 2017–2018 : 3,8 ‰), mais ont significativement diminué en Ontario (2001–2002 : 6,2 ‰; 2017–2018 : 4,7 ‰), au Québec (2001–2002 : 4,1 ‰; 2017–2018 : 3,2 ‰) et au Manitoba (2001–2002 : 2,7 ‰; 2017–2018 : 2,0 ‰). Pour presque toutes les causes de décès, des RTM plus élevés ont été constatés chez les personnes ayant des TLS enregistrés que dans la population générale. Les causes de décès en 2015–2016 avec les RTM les plus élevés pour les personnes présentant de TLS étaient les TLS, le suicide, et les traumatismes de non-suicide en Alerta, en Ontario, au Manitoba, et au Québec.
+
+Discussion
+Les bases de données de santé administratives jumelées qui couvrent presque la population en entier peuvent être utiles pour surveiller les tendances des services médicaux de TLS et par conséquent, guider la planification des services de santé dans les provinces canadiennes.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.alternative</td><td class="word-break">Mesurer les troubles liés aux substances à l’aide des banques de données de santé administratives canadiennes : comparaisons interprovinciales des taux diagnostiques enregistrés, proportions de l’incidence et rapports des taux de mortalité</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.isPartOf</td><td class="word-break">urn:ISSN:0706-7437</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.isPartOf</td><td class="word-break">urn:ISSN:1497-0015</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">UdeM.ReferenceFournieParDeposant</td><td class="word-break">https://doi.org/10.1177/07067437211043446</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">UdeM.VersionRioxx</td><td class="word-break">Version acceptée / Accepted Manuscript</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">oaire.citationTitle</td><td class="word-break">Canadian journal of psychiatry = Revue canadienne de psychiatrie</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F25749&amp;rft_id=10.1177%2F07067437211043446&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;"> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a href="/xmlui/bitstream/handle/1866/25749/PUDS_INSPQ_Prevalences_2021-07-06.trackchange.docx?sequence=1&amp;isAllowed=y"><img alt="Microsoft Word" class="thumbnail-papyrus thumbnail_icone" height="122" src="/xmlui/themes/Mirage2/images/mimes/mime_word.png" style="height: 122px;" title="Microsoft Word" width="92"/></a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="PUDS_INSPQ_Prevalences_2021-07-06.trackchange.docx">
+<a href="/xmlui/bitstream/handle/1866/25749/PUDS_INSPQ_Prevalences_2021-07-06.trackchange.docx?sequence=1&amp;isAllowed=y">PUDS_INSPQ_Prevalences_2021-07 ...</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">138.6Kb</dd>
+<dt>Format:</dt>
+<dd class="word-break">Microsoft Word</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Texte et tableaux">Texte et tableaux</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/25749/Figure1.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25749/Figure1.pdf.jpg?sequence=7&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Figure1.pdf">
+<a href="/xmlui/bitstream/handle/1866/25749/Figure1.pdf?sequence=2&amp;isAllowed=y">Figure1.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">51.62Kb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Figure 1">Figure 1</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/25749/Figure%202.pdf?sequence=3&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25749/Figure%202.pdf.jpg?sequence=9&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Figure 2.pdf">
+<a href="/xmlui/bitstream/handle/1866/25749/Figure%202.pdf?sequence=3&amp;isAllowed=y">Figure 2.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">51.54Kb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Figure 2">Figure 2</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/25749/Figure_3.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25749/Figure_3.pdf.jpg?sequence=11&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Figure_3.pdf">
+<a href="/xmlui/bitstream/handle/1866/25749/Figure_3.pdf?sequence=4&amp;isAllowed=y">Figure_3.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">43.09Kb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Figure 3">Figure 3</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/19699/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/19699">Faculté de médecine – Travaux et publications</a> [471]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25749">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

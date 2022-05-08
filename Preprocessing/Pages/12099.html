@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Modulation de la stabilité de l'ARNm alphaENaC dans les cellules épithéliales alvéolaires : détermination du rôle des séquences 3' non traduites</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Berthiaume, Yves" name="DC.contributor">
+<meta content="Dagenais, André" name="DC.contributor">
+<meta content="Migneault, Francis" name="DC.creator">
+<meta content="2015-05-28T12:46:14Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2015-05-28T12:46:14Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2015-04-30" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2014-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/12099" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="canal épithélial sodique (ENaC)" name="DC.subject" xml:lang="fr"/>
+<meta content="ARN messager" name="DC.subject" xml:lang="fr"/>
+<meta content="stabilité" name="DC.subject" xml:lang="fr"/>
+<meta content="région 3' non traduite (3'UTR)" name="DC.subject" xml:lang="fr"/>
+<meta content="demi-vie" name="DC.subject" xml:lang="fr"/>
+<meta content="cellules épithéliales alvéolaires" name="DC.subject" xml:lang="fr"/>
+<meta content="stress cellulaire" name="DC.subject" xml:lang="fr"/>
+<meta content="inflammation" name="DC.subject" xml:lang="fr"/>
+<meta content="œdème" name="DC.subject" xml:lang="fr"/>
+<meta content="SDRA" name="DC.subject" xml:lang="fr"/>
+<meta content="epithelial sodium channel (ENaC)" name="DC.subject" xml:lang="fr"/>
+<meta content="messenger RNA" name="DC.subject" xml:lang="fr"/>
+<meta content="stability" name="DC.subject" xml:lang="fr"/>
+<meta content="3' untranslated region (3'UTR)" name="DC.subject" xml:lang="fr"/>
+<meta content="half-life" name="DC.subject" xml:lang="fr"/>
+<meta content="alveolar epithelial cells" name="DC.subject" xml:lang="fr"/>
+<meta content="cellular stress" name="DC.subject" xml:lang="fr"/>
+<meta content="edema" name="DC.subject" xml:lang="fr"/>
+<meta content="ARDS" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307)" name="DC.subject" xml:lang="fr"/>
+<meta content="Modulation de la stabilité de l'ARNm alphaENaC dans les cellules épithéliales alvéolaires : détermination du rôle des séquences 3' non traduites" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Le transport actif de sodium par les cellules épithéliales alvéolaires est le principal mécanisme impliqué dans la régulation du niveau de liquide dans le poumon distal. Le canal épithélial sodique (ENaC) exprimé par les cellules épithéliales alvéolaires est essentiel à la résorption du liquide des poumons à la naissance ainsi que la résolution de l'œdème pulmonaire chez l'adulte. L'activité et l'expression du canal ENaC sont modulées par de nombreux stress pathophysiologiques. L'inflammation pulmonaire constitue un facteur important dans l'inhibition de l'expression du canal ENaC et pourrait favoriser la formation d'œdème pulmonaire. Nous avons précédemment démontré que différentes cytokines pro-inflammatoires, ainsi que les lipopolysaccharides (LPS) de Pseudomonas aeruginosa, inhibent l'expression de l'ARNm αENaC par des mécanismes de régulation transcriptionnelle et post-transcriptionnelle. Ces résultats suggèrent que les mécanismes qui modulent la stabilité des ARNm αENaC pourraient jouer un rôle important dans la régulation du niveau d’expression du transcrit en condition inflammatoire.
+	Le principal objectif de mes travaux était de caractériser les mécanismes de modulation de l’ARNm αENaC dans les cellules épithéliales alvéolaires lors de différents stress pathophysiologiques et déterminer si cette modulation pouvait s’expliquer en partie par une régulation de la stabilité du transcrit. Mes travaux montrent que les LPS et la cycloheximide inhibent l’expression de l’ARNm αENaC de façon similaire via l’activation des voies de signalisation des MAPK ERK1/2 et p38. Cependant, les mécanismes de modulation de l’expression de l'ARNm αENaC sont différents puisque les LPS répriment la transcription du gène, alors que la cycloheximide diminuerait la stabilité du transcrit via des mécanismes post-transcriptionnels impliquant la région 3' non traduite (3'UTR) de l'ARNm αENaC. Pour mieux étudier le rôle du 3'UTR dans ce processus, nous avons développé un modèle Tet-Off nous permettant de mesurer la demi-vie de l’ARNm αENaC indépendamment de l’utilisation d’un inhibiteur de la transcription comme l'actinomycine D (Act. D). Nous avons montré que la demi-vie de l’ARNm αENaC était de 100min, un temps beaucoup plus court que celui rapporté dans la littérature. Nous avons démontré que l’Act. D a un effet stabilisateur important sur l’ARNm αENaC et qu’il ne peut être utilisé pour évaluer la stabilité du transcrit. À l’aide de différents mutants de délétion, nous avons entrepris de déterminer la nature des régions du 3’UTR impliquées dans la modulation de la stabilité du transcrit. Nous avons trouvé que le 3’UTR joue un rôle à la fois de stabilisation (région 3’UTR proximale) et de déstabilisation (région 3’UTR distale) du transcrit. Notre système nous a finalement permis de confirmer que la diminution de l’ARNm αENaC observée en présence de TNF-α s’expliquait en partie par une diminution importante de la stabilité du transcrit induite par cette cytokine. Enfin, nous avons identifié la nature des protéines pouvant se lier au 3’UTR de l’ARNm αENaC et déterminé lesquelles pouvaient moduler la stabilité du transcrit. Des trois protéines candidates trouvées, nous avons confirmé que la surexpression de DHX36 et TIAL1 diminue le niveau de transcrit par un mécanisme impliquant la stabilité du messager.
+Les travaux présentés ici montrent la complexité des voies de signalisation induites par différents stress sur les cellules épithéliales alvéolaires et montrent comment la stabilité de l’ARNm αENaC et en particulier, les séquences du 3’UTR jouent un rôle important dans la modulation du niveau de transcrit. Le modèle Tet-Off que nous avons développé permet d’estimer le temps de demi-vie réel de l’ARNm αENaC et montre que le 3’UTR du messager joue un rôle complexe dans la stabilisation du messager en condition de base ainsi qu’en condition pro-inflammatoire. Enfin, nous avons identifié deux protéines liant l’ARNm qui pourraient jouer un rôle important dans la modulation de la stabilité du transcrit." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="The epithelial sodium channel (ENaC) expressed in alveolar epithelial cells plays a major role for lung liquid clearance at birth and lung edema resorption in adulthood. The expression and activity of ENaC are inhibited by many pathophysiological stress that could have an impact in the clinical outcome of acute respiratory distress syndrome (ARDS). Pulmonary inflammation is an important factor in this inhibition that may promote or sustain pulmonary edema. We have previously shown that pro-inflammatory cytokines and lipopolysaccharide (LPS) from Pseudomonas aeruginosa inhibit αENaC mRNA expression by transcriptional and post-transcriptional mechanisms, suggesting that a modulation of αENaC mRNA stability could play a role in this process.
+	The main objective of the present work was to characterize how different pathophysiological stress affect αENaC mRNA expression in alveolar epithelial cells and determine whether this modulation could be explained in part by regulating the stability of the transcript. Our study shows that LPS and cycloheximide decrease the level of αENaC mRNA with a similar time course and via the activation of the MAPK ERK1/2 and p38 signaling pathways. Despite similarities, there were important differences in the mechanisms involved in the modulation of αENaC mRNA expression. While LPS repress αENaC mRNA transcription, cycloheximide triggers post-transcriptional mechanisms involving the 3' untranslated region (3'UTR) of αENaC mRNA. To further study the role of αENaC 3'UTR in this process, we developed a Tet-Off model that allows us to measure the half-life of αENaC mRNA regardless of the use of a transcription inhibitor such as actinomycin D (Act. D). Using this system, we showed a 100 min half-life for αENaC mRNA, a much shorter time then the one reported for this mRNA using Act. D. We showed that Act. D has an important stabilizing effect on αENaC mRNA and cannot be used to assess the stability of the transcript. Using deletion mutants of the αENaC 3'UTR region, we determined how different portions of 3'UTR were important in modulating stability of the transcript. We found that the 3'UTR has dual functions, with portions important to promote stabilization (proximal 3'UTR) and others that strongly destabilize (distal 3'UTR) the transcript. Our system also allowed us to confirm that the decreased expression of αENaC mRNA induced by TNF-α results in part by a decreased stability of the mRNA. Finally, we identified several RNA-binding proteins that interact specifically with αENaC 3'UTR and determined if these proteins had an impact on transcript stability. Surexpression of two of these proteins in alveolar epithelial cells, DHX36 and TIAL1 was able to decrease the level of αENaC mRNA via a downregulation of mRNA stability.
+	The work presented here shows the complexity of the signal transduction pathways elicited by different pathological stress conditions in alveolar epithelial cells and is the first to show that αENaC mRNA stability elicited by sequences in 3’UTR plays an important role in modulating the level of the transcript. The Tet-Off model that we developed allows to accurately estimate the half-life of αENaC mRNA and shows that the 3’UTR portion of the mRNA plays a complex role in the modulation of transcript stability in basal and pro-inflammatory conditions. Finally, we identified two putative RNA-binding proteins able to specifically recognize αENaC 3’UTR and modulate the transcript stability." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="canal épithélial sodique (ENaC); ARN messager; stabilité; région 3' non traduite (3'UTR); demi-vie; cellules épithéliales alvéolaires; stress cellulaire; inflammation; œdème; SDRA; epithelial sodium channel (ENaC); messenger RNA; stability; 3' untranslated region (3'UTR); half-life; alveolar epithelial cells; cellular stress; edema; ARDS; Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307); Thèse ou mémoire / Thesis or Dissertation; Sciences biomédicales" name="citation_keywords"/>
+<meta content="Modulation de la stabilité de l'ARNm alphaENaC dans les cellules épithéliales alvéolaires : détermination du rôle des séquences 3' non traduites" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Migneault, Francis" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/12099/2/Migneault_Francis_2014_these.pdf" name="citation_pdf_url"/>
+<meta content="2015-04-30" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/12099" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12099?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12099?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12099?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12099?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12099?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/12099?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/12099/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/12099">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/12099/mets.xml-->
+<h2 class="page-header first-page-header">Modulation de la stabilité de l'ARNm alphaENaC dans les cellules épithéliales alvéolaires : détermination du rôle des séquences 3' non traduites</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Berthiaume, Yves</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Dagenais, André</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Migneault, Francis</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2015-05-28T12:46:14Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2015-05-28T12:46:14Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2015-04-30</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2014-12</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/12099</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">canal épithélial sodique (ENaC)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">ARN messager</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">stabilité</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">région 3' non traduite (3'UTR)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">demi-vie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">cellules épithéliales alvéolaires</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">stress cellulaire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">inflammation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">œdème</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">SDRA</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">epithelial sodium channel (ENaC)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">messenger RNA</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">stability</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">3' untranslated region (3'UTR)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">half-life</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">alveolar epithelial cells</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">cellular stress</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">edema</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">ARDS</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Modulation de la stabilité de l'ARNm alphaENaC dans les cellules épithéliales alvéolaires : détermination du rôle des séquences 3' non traduites</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences biomédicales</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Le transport actif de sodium par les cellules épithéliales alvéolaires est le principal mécanisme impliqué dans la régulation du niveau de liquide dans le poumon distal. Le canal épithélial sodique (ENaC) exprimé par les cellules épithéliales alvéolaires est essentiel à la résorption du liquide des poumons à la naissance ainsi que la résolution de l'œdème pulmonaire chez l'adulte. L'activité et l'expression du canal ENaC sont modulées par de nombreux stress pathophysiologiques. L'inflammation pulmonaire constitue un facteur important dans l'inhibition de l'expression du canal ENaC et pourrait favoriser la formation d'œdème pulmonaire. Nous avons précédemment démontré que différentes cytokines pro-inflammatoires, ainsi que les lipopolysaccharides (LPS) de Pseudomonas aeruginosa, inhibent l'expression de l'ARNm αENaC par des mécanismes de régulation transcriptionnelle et post-transcriptionnelle. Ces résultats suggèrent que les mécanismes qui modulent la stabilité des ARNm αENaC pourraient jouer un rôle important dans la régulation du niveau d’expression du transcrit en condition inflammatoire.
+	Le principal objectif de mes travaux était de caractériser les mécanismes de modulation de l’ARNm αENaC dans les cellules épithéliales alvéolaires lors de différents stress pathophysiologiques et déterminer si cette modulation pouvait s’expliquer en partie par une régulation de la stabilité du transcrit. Mes travaux montrent que les LPS et la cycloheximide inhibent l’expression de l’ARNm αENaC de façon similaire via l’activation des voies de signalisation des MAPK ERK1/2 et p38. Cependant, les mécanismes de modulation de l’expression de l'ARNm αENaC sont différents puisque les LPS répriment la transcription du gène, alors que la cycloheximide diminuerait la stabilité du transcrit via des mécanismes post-transcriptionnels impliquant la région 3' non traduite (3'UTR) de l'ARNm αENaC. Pour mieux étudier le rôle du 3'UTR dans ce processus, nous avons développé un modèle Tet-Off nous permettant de mesurer la demi-vie de l’ARNm αENaC indépendamment de l’utilisation d’un inhibiteur de la transcription comme l'actinomycine D (Act. D). Nous avons montré que la demi-vie de l’ARNm αENaC était de 100min, un temps beaucoup plus court que celui rapporté dans la littérature. Nous avons démontré que l’Act. D a un effet stabilisateur important sur l’ARNm αENaC et qu’il ne peut être utilisé pour évaluer la stabilité du transcrit. À l’aide de différents mutants de délétion, nous avons entrepris de déterminer la nature des régions du 3’UTR impliquées dans la modulation de la stabilité du transcrit. Nous avons trouvé que le 3’UTR joue un rôle à la fois de stabilisation (région 3’UTR proximale) et de déstabilisation (région 3’UTR distale) du transcrit. Notre système nous a finalement permis de confirmer que la diminution de l’ARNm αENaC observée en présence de TNF-α s’expliquait en partie par une diminution importante de la stabilité du transcrit induite par cette cytokine. Enfin, nous avons identifié la nature des protéines pouvant se lier au 3’UTR de l’ARNm αENaC et déterminé lesquelles pouvaient moduler la stabilité du transcrit. Des trois protéines candidates trouvées, nous avons confirmé que la surexpression de DHX36 et TIAL1 diminue le niveau de transcrit par un mécanisme impliquant la stabilité du messager.
+Les travaux présentés ici montrent la complexité des voies de signalisation induites par différents stress sur les cellules épithéliales alvéolaires et montrent comment la stabilité de l’ARNm αENaC et en particulier, les séquences du 3’UTR jouent un rôle important dans la modulation du niveau de transcrit. Le modèle Tet-Off que nous avons développé permet d’estimer le temps de demi-vie réel de l’ARNm αENaC et montre que le 3’UTR du messager joue un rôle complexe dans la stabilisation du messager en condition de base ainsi qu’en condition pro-inflammatoire. Enfin, nous avons identifié deux protéines liant l’ARNm qui pourraient jouer un rôle important dans la modulation de la stabilité du transcrit.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The epithelial sodium channel (ENaC) expressed in alveolar epithelial cells plays a major role for lung liquid clearance at birth and lung edema resorption in adulthood. The expression and activity of ENaC are inhibited by many pathophysiological stress that could have an impact in the clinical outcome of acute respiratory distress syndrome (ARDS). Pulmonary inflammation is an important factor in this inhibition that may promote or sustain pulmonary edema. We have previously shown that pro-inflammatory cytokines and lipopolysaccharide (LPS) from Pseudomonas aeruginosa inhibit αENaC mRNA expression by transcriptional and post-transcriptional mechanisms, suggesting that a modulation of αENaC mRNA stability could play a role in this process.
+	The main objective of the present work was to characterize how different pathophysiological stress affect αENaC mRNA expression in alveolar epithelial cells and determine whether this modulation could be explained in part by regulating the stability of the transcript. Our study shows that LPS and cycloheximide decrease the level of αENaC mRNA with a similar time course and via the activation of the MAPK ERK1/2 and p38 signaling pathways. Despite similarities, there were important differences in the mechanisms involved in the modulation of αENaC mRNA expression. While LPS repress αENaC mRNA transcription, cycloheximide triggers post-transcriptional mechanisms involving the 3' untranslated region (3'UTR) of αENaC mRNA. To further study the role of αENaC 3'UTR in this process, we developed a Tet-Off model that allows us to measure the half-life of αENaC mRNA regardless of the use of a transcription inhibitor such as actinomycin D (Act. D). Using this system, we showed a 100 min half-life for αENaC mRNA, a much shorter time then the one reported for this mRNA using Act. D. We showed that Act. D has an important stabilizing effect on αENaC mRNA and cannot be used to assess the stability of the transcript. Using deletion mutants of the αENaC 3'UTR region, we determined how different portions of 3'UTR were important in modulating stability of the transcript. We found that the 3'UTR has dual functions, with portions important to promote stabilization (proximal 3'UTR) and others that strongly destabilize (distal 3'UTR) the transcript. Our system also allowed us to confirm that the decreased expression of αENaC mRNA induced by TNF-α results in part by a decreased stability of the mRNA. Finally, we identified several RNA-binding proteins that interact specifically with αENaC 3'UTR and determined if these proteins had an impact on transcript stability. Surexpression of two of these proteins in alveolar epithelial cells, DHX36 and TIAL1 was able to decrease the level of αENaC mRNA via a downregulation of mRNA stability.
+	The work presented here shows the complexity of the signal transduction pathways elicited by different pathological stress conditions in alveolar epithelial cells and is the first to show that αENaC mRNA stability elicited by sequences in 3’UTR plays an important role in modulating the level of the transcript. The Tet-Off model that we developed allows to accurately estimate the half-life of αENaC mRNA and shows that the 3’UTR portion of the mRNA plays a complex role in the modulation of transcript stability in basal and pro-inflammatory conditions. Finally, we identified two putative RNA-binding proteins able to specifically recognize αENaC 3’UTR and modulate the transcript stability.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F12099&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+biom%C3%A9dicales&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/12099/Migneault_Francis_2014_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/12099/Migneault_Francis_2014_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Migneault_Francis_2014_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/12099/Migneault_Francis_2014_these.pdf?sequence=2&amp;isAllowed=y">Migneault_Francis_2014_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">6.987Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/12099">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

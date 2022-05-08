@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Quantitative proteomics methods for the analysis of histone post-translational modifications</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Thibault, Pierre" name="DC.contributor">
+<meta content="Verreault, Alain" name="DC.contributor">
+<meta content="Abshiru, Nebiyu" name="DC.creator">
+<meta content="2016-04-14T18:56:35Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2016-04-14T18:56:35Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2016-03-23" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2015-09" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/13563" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Spectrométrie de masse" name="DC.subject" xml:lang="fr"/>
+<meta content="Histones" name="DC.subject" xml:lang="fr"/>
+<meta content="Modifications post-traductionnelles" name="DC.subject" xml:lang="fr"/>
+<meta content="Peptides isomérique" name="DC.subject" xml:lang="fr"/>
+<meta content="Histones acétyltranférases" name="DC.subject" xml:lang="fr"/>
+<meta content="Histones déacétylases" name="DC.subject" xml:lang="fr"/>
+<meta content="Mass spectrometry" name="DC.subject" xml:lang="fr"/>
+<meta content="Histones" name="DC.subject" xml:lang="fr"/>
+<meta content="Post-translational modifications" name="DC.subject" xml:lang="fr"/>
+<meta content="Isomeric peptides" name="DC.subject" xml:lang="fr"/>
+<meta content="Histones acetyltransferases" name="DC.subject" xml:lang="fr"/>
+<meta content="Histone deacetylases" name="DC.subject" xml:lang="fr"/>
+<meta content="Chemistry - Analytical / Chimie analytique (UMI : 0486)" name="DC.subject" xml:lang="fr"/>
+<meta content="Quantitative proteomics methods for the analysis of histone post-translational modifications" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Les histones sont des protéines nucléaires hautement conservées chez les cellules des eucaryotes. Elles permettent d’organiser et de compacter l’ADN sous la forme de nucléosomes, ceux-ci representant les sous unités de base de la chromatine. Les histones peuvent être modifiées par de nombreuses modifications post-traductionnelles (PTMs) telles que l’acétylation, la méthylation et la phosphorylation. Ces modifications jouent un rôle essentiel dans la réplication de l’ADN, la transcription et l’assemblage de la chromatine. L’abondance de ces modifications peut varier de facon significative lors du developpement des maladies incluant plusieurs types de cancer. Par exemple, la perte totale de la triméthylation sur H4K20 ainsi que l’acétylation sur H4K16 sont des marqueurs tumoraux spécifiques a certains types de cancer chez l’humain. Par conséquent, l’étude de ces modifications et des événements determinant la dynamique des leurs changements d’abondance sont des atouts importants pour mieux comprendre les fonctions cellulaires et moléculaires lors du développement de la maladie.
+De manière générale, les modifications des histones sont étudiées par des approches biochimiques telles que les immuno-buvardage de type Western ou les méthodes d’immunoprécipitation de la chromatine (ChIP). Cependant, ces approches présentent plusieurs inconvénients telles que le manque de spécificité ou la disponibilité des anticorps, leur coût ou encore la difficulté de les produire et de les valider. Au cours des dernières décennies, la spectrométrie de masse (MS) s’est avérée être une méthode performante pour la caractérisation et la quantification des modifications d’histones. La MS offre de nombreux avantages par rapport aux techniques traditionnelles. Entre autre, elle permet d’effectuer des analyses reproductibles, spécifiques et facilite l’etude d’un large spectre de PTMs en une seule analyse. Dans cette thèse, nous présenterons le développement et l’application de nouveaux outils analytiques pour l’identification et à la quantification des PTMs modifiant les histones.
+Dans un premier temps, une méthode a été développée pour mesurer les changements d’acétylation spécifiques à certains sites des histones. Cette méthode combine l’analyse des histones intactes et les méthodes de séquençage peptidique afin de déterminer les changements d’acétylation suite à la réaction in vitro par l’histone acétyltransférase (HAT) de levure Rtt109 en présence de ses chaperonnes (Asf1 ou Vps75).
+Dans un second temps, nous avons développé une méthode d’analyse des peptides isomériques des histones. Cette méthode combine la LC-MS/MS à haute résolution et un nouvel outil informatique appelé Iso-PeptidAce qui permet de déconvoluer les spectres mixtes de peptides isomériques. Nous avons évalué Iso-PeptidAce avec un mélange de peptides synthétiques isomériques. Nous avons également validé les performances de cette approche avec des histones isolées de cellules humaines érythroleucémiques (K562) traitées avec des inhibiteurs d’histones désacétylases (HDACi) utilisés en clinique, et des histones de Saccharomyces cerevisiae liées au facteur d’assemblage de la chromatine (CAF-1) purifiées par chromatographie d’affinité. Enfin, en utilisant la méthode présentée précédemment, nous avons fait une analyse approfondie de la spécificité de plusieurs HATs et HDACs chez Schizosaccharomyces pombe. Nous avons donc déterminé les niveaux d’acétylation d’histones purifiées à partir de cellules contrôles ou de souches mutantes auxquelles il manque une HAT ou HDAC. Notre analyse nous a permis de valider plusieurs cibles connues des HATs et HDACs et d’en identifier de nouvelles. Nos données ont également permis de définir le rôle des différentes HATs et HDACs dans le maintien de l’équilibre d’acétylation des histones. Dans l’ensemble, nous anticipons que les méthodes décrites dans cette thèse permettront de résoudre certains défis rencontrés dans l’étude de la chromatine. De plus, ces données apportent de nouvelles connaissances pour l’élaboration d’études génétiques et biochimiques utilisant S. pombe." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Histones are highly conserved, basic proteins found in eukaryotic cell nuclei. They organize and package DNA strands into nucleosome core particles (NCPs), the fundamental repeating units of eukaryotic chromatin. The histones are subject to a wide variety of posttranslational modifications (PTMs) including acetylation, methylation and phosphorylation. These PTMs play an essential role in DNA-replication, transcription, and chromatin assembly. Alterations in histone PTM abundances have been implicated in several types of cancer. For example, the global loss of trimethylation at H4K20 and acetylation at H4K16 is a hallmark of human cancers. Thus, characterization of histone PTMs and their dynamics is extremely useful for elucidating normal cellular functions and molecular pathways that lead to diseases. 
+Traditionally, histone PTMs are analyzed using antibody-based approaches such as western blot and chromatin immunoprecipitation (ChIP) assays. These methods, however, suffer from several limitations including antibody cross-reactivity, epitope occlusion, and the cost and difficulty in producing and validating antibodies. Over the last decade, mass spectrometry (MS) has emerged as a powerful technique for the characterization and quantification of histone PTMs. MS offers several advantages over the traditional approaches including reproducibility, specificity, and ability to rapidly analyze numerous PTMs in a single experiment. In this thesis, the development and applications of novel analytical tools for the identification and quantification of histone PTMs are presented. 
+First, a method useful for measuring the global and site specific changes in histone acetylation is described. This method combines intact mass analysis and peptide sequencing approaches to study the global and site specific changes in histone acetylation during in vitro assays with yeast Rtt109 and its chaperone (Asf1 or Vps75).  Second, a method for analysis of isomeric histone peptides is presented. This method combines a high resolution LC-MS/MS with a novel bioinformatics tool called Iso-PeptidAce to deconvolute mixed spectra of co-eluting isomeric peptides. We benchmarked Iso-PeptidAce using mixtures of synthetic isomeric peptides. We demonstrated its capability in histones isolated from human erythroleukemic (K562) cells treated with clinically relevant histone deacetylase inhibitors (HDACi) and in affinity-purified S. cerevisiae histones bound to chromatin assembly factor-1 (CAF-1). Third, by employing the above methods, an in-depth quantitative analysis of the substrate specificities of several fission yeast HATs and HDACs was assessed. We determined the acetylation site occupancy of multiple lysines in histones isolated from a control or mutant strains lacking specific HAT or HDAC activities. Our analysis identified several known and novel HAT and HDAC target sites. Our data also defined the division of labor between the different HATs and HDACs in maintaining the steady-state level of histone acetylation. Overall, we anticipate that the methods described in this thesis will address some of the existing challenges facing the chromatin field. Moreover, the data presented will provide valuable insights for future genetic and biochemical studies involving the fission yeast." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Spectrométrie de masse; Histones; Modifications post-traductionnelles; Peptides isomérique; Histones acétyltranférases; Histones déacétylases; Mass spectrometry; Histones; Post-translational modifications; Isomeric peptides; Histones acetyltransferases; Histone deacetylases; Chemistry - Analytical / Chimie analytique (UMI : 0486); Thèse ou mémoire / Thesis or Dissertation; Chimie" name="citation_keywords"/>
+<meta content="Quantitative proteomics methods for the analysis of histone post-translational modifications" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Abshiru, Nebiyu" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/13563/2/Abshiru_Nebiyu_2015_these.pdf" name="citation_pdf_url"/>
+<meta content="2016-03-23" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/13563" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13563?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13563?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13563?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13563?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13563?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13563?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2942" role="menuitem">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2977" role="menuitem">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2942">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2977"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/13563/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/13563">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/13563/mets.xml-->
+<h2 class="page-header first-page-header">Quantitative proteomics methods for the analysis of histone post-translational modifications</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Thibault, Pierre</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Verreault, Alain</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Abshiru, Nebiyu</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2016-04-14T18:56:35Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2016-04-14T18:56:35Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2016-03-23</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2015-09</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/13563</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Spectrométrie de masse</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Histones</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Modifications post-traductionnelles</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Peptides isomérique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Histones acétyltranférases</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Histones déacétylases</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Mass spectrometry</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Histones</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Post-translational modifications</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Isomeric peptides</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Histones acetyltransferases</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Histone deacetylases</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Chemistry - Analytical / Chimie analytique (UMI : 0486)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Quantitative proteomics methods for the analysis of histone post-translational modifications</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Chimie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les histones sont des protéines nucléaires hautement conservées chez les cellules des eucaryotes. Elles permettent d’organiser et de compacter l’ADN sous la forme de nucléosomes, ceux-ci representant les sous unités de base de la chromatine. Les histones peuvent être modifiées par de nombreuses modifications post-traductionnelles (PTMs) telles que l’acétylation, la méthylation et la phosphorylation. Ces modifications jouent un rôle essentiel dans la réplication de l’ADN, la transcription et l’assemblage de la chromatine. L’abondance de ces modifications peut varier de facon significative lors du developpement des maladies incluant plusieurs types de cancer. Par exemple, la perte totale de la triméthylation sur H4K20 ainsi que l’acétylation sur H4K16 sont des marqueurs tumoraux spécifiques a certains types de cancer chez l’humain. Par conséquent, l’étude de ces modifications et des événements determinant la dynamique des leurs changements d’abondance sont des atouts importants pour mieux comprendre les fonctions cellulaires et moléculaires lors du développement de la maladie.
+De manière générale, les modifications des histones sont étudiées par des approches biochimiques telles que les immuno-buvardage de type Western ou les méthodes d’immunoprécipitation de la chromatine (ChIP). Cependant, ces approches présentent plusieurs inconvénients telles que le manque de spécificité ou la disponibilité des anticorps, leur coût ou encore la difficulté de les produire et de les valider. Au cours des dernières décennies, la spectrométrie de masse (MS) s’est avérée être une méthode performante pour la caractérisation et la quantification des modifications d’histones. La MS offre de nombreux avantages par rapport aux techniques traditionnelles. Entre autre, elle permet d’effectuer des analyses reproductibles, spécifiques et facilite l’etude d’un large spectre de PTMs en une seule analyse. Dans cette thèse, nous présenterons le développement et l’application de nouveaux outils analytiques pour l’identification et à la quantification des PTMs modifiant les histones.
+Dans un premier temps, une méthode a été développée pour mesurer les changements d’acétylation spécifiques à certains sites des histones. Cette méthode combine l’analyse des histones intactes et les méthodes de séquençage peptidique afin de déterminer les changements d’acétylation suite à la réaction in vitro par l’histone acétyltransférase (HAT) de levure Rtt109 en présence de ses chaperonnes (Asf1 ou Vps75).
+Dans un second temps, nous avons développé une méthode d’analyse des peptides isomériques des histones. Cette méthode combine la LC-MS/MS à haute résolution et un nouvel outil informatique appelé Iso-PeptidAce qui permet de déconvoluer les spectres mixtes de peptides isomériques. Nous avons évalué Iso-PeptidAce avec un mélange de peptides synthétiques isomériques. Nous avons également validé les performances de cette approche avec des histones isolées de cellules humaines érythroleucémiques (K562) traitées avec des inhibiteurs d’histones désacétylases (HDACi) utilisés en clinique, et des histones de Saccharomyces cerevisiae liées au facteur d’assemblage de la chromatine (CAF-1) purifiées par chromatographie d’affinité. Enfin, en utilisant la méthode présentée précédemment, nous avons fait une analyse approfondie de la spécificité de plusieurs HATs et HDACs chez Schizosaccharomyces pombe. Nous avons donc déterminé les niveaux d’acétylation d’histones purifiées à partir de cellules contrôles ou de souches mutantes auxquelles il manque une HAT ou HDAC. Notre analyse nous a permis de valider plusieurs cibles connues des HATs et HDACs et d’en identifier de nouvelles. Nos données ont également permis de définir le rôle des différentes HATs et HDACs dans le maintien de l’équilibre d’acétylation des histones. Dans l’ensemble, nous anticipons que les méthodes décrites dans cette thèse permettront de résoudre certains défis rencontrés dans l’étude de la chromatine. De plus, ces données apportent de nouvelles connaissances pour l’élaboration d’études génétiques et biochimiques utilisant S. pombe.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Histones are highly conserved, basic proteins found in eukaryotic cell nuclei. They organize and package DNA strands into nucleosome core particles (NCPs), the fundamental repeating units of eukaryotic chromatin. The histones are subject to a wide variety of posttranslational modifications (PTMs) including acetylation, methylation and phosphorylation. These PTMs play an essential role in DNA-replication, transcription, and chromatin assembly. Alterations in histone PTM abundances have been implicated in several types of cancer. For example, the global loss of trimethylation at H4K20 and acetylation at H4K16 is a hallmark of human cancers. Thus, characterization of histone PTMs and their dynamics is extremely useful for elucidating normal cellular functions and molecular pathways that lead to diseases. 
+Traditionally, histone PTMs are analyzed using antibody-based approaches such as western blot and chromatin immunoprecipitation (ChIP) assays. These methods, however, suffer from several limitations including antibody cross-reactivity, epitope occlusion, and the cost and difficulty in producing and validating antibodies. Over the last decade, mass spectrometry (MS) has emerged as a powerful technique for the characterization and quantification of histone PTMs. MS offers several advantages over the traditional approaches including reproducibility, specificity, and ability to rapidly analyze numerous PTMs in a single experiment. In this thesis, the development and applications of novel analytical tools for the identification and quantification of histone PTMs are presented. 
+First, a method useful for measuring the global and site specific changes in histone acetylation is described. This method combines intact mass analysis and peptide sequencing approaches to study the global and site specific changes in histone acetylation during in vitro assays with yeast Rtt109 and its chaperone (Asf1 or Vps75).  Second, a method for analysis of isomeric histone peptides is presented. This method combines a high resolution LC-MS/MS with a novel bioinformatics tool called Iso-PeptidAce to deconvolute mixed spectra of co-eluting isomeric peptides. We benchmarked Iso-PeptidAce using mixtures of synthetic isomeric peptides. We demonstrated its capability in histones isolated from human erythroleukemic (K562) cells treated with clinically relevant histone deacetylase inhibitors (HDACi) and in affinity-purified S. cerevisiae histones bound to chromatin assembly factor-1 (CAF-1). Third, by employing the above methods, an in-depth quantitative analysis of the substrate specificities of several fission yeast HATs and HDACs was assessed. We determined the acetylation site occupancy of multiple lysines in histones isolated from a control or mutant strains lacking specific HAT or HDAC activities. Our analysis identified several known and novel HAT and HDAC target sites. Our data also defined the division of labor between the different HATs and HDACs in maintaining the steady-state level of histone acetylation. Overall, we anticipate that the methods described in this thesis will address some of the existing challenges facing the chromatin field. Moreover, the data presented will provide valuable insights for future genetic and biochemical studies involving the fission yeast.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F13563&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Chimie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/13563/Abshiru_Nebiyu_2015_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/13563/Abshiru_Nebiyu_2015_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Abshiru_Nebiyu_2015_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/13563/Abshiru_Nebiyu_2015_these.pdf?sequence=2&amp;isAllowed=y">Abshiru_Nebiyu_2015_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">9.991Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2977/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a> [594]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/13563">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

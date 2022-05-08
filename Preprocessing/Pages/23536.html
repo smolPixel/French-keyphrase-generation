@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Caractérisation de vortex intraventriculaires par échographie Doppler ultrarapide</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Cloutier, Guy" name="DC.contributor">
+<meta content="Garcia, Damien" name="DC.contributor">
+<meta content="Faurie, Julia" name="DC.creator">
+<meta content="2020-06-16T18:13:19Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2020-06-16T18:13:19Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2020-03-18" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2019-07" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/23536" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Doppler" name="DC.subject" xml:lang="fr"/>
+<meta content="vortex" name="DC.subject" xml:lang="fr"/>
+<meta content="ultrasound imaging" name="DC.subject" xml:lang="fr"/>
+<meta content="ultrafast" name="DC.subject" xml:lang="fr"/>
+<meta content="filter" name="DC.subject" xml:lang="fr"/>
+<meta content="echocardiography" name="DC.subject" xml:lang="fr"/>
+<meta content="high-frame-rate" name="DC.subject" xml:lang="fr"/>
+<meta content="diverging wave" name="DC.subject" xml:lang="fr"/>
+<meta content="HOSVD" name="DC.subject" xml:lang="fr"/>
+<meta content="AIC" name="DC.subject" xml:lang="fr"/>
+<meta content="imagerie ultrasonore" name="DC.subject" xml:lang="fr"/>
+<meta content="ultrarapide" name="DC.subject" xml:lang="fr"/>
+<meta content="filtre" name="DC.subject" xml:lang="fr"/>
+<meta content="échocardiographie" name="DC.subject" xml:lang="fr"/>
+<meta content="haute cadence" name="DC.subject" xml:lang="fr"/>
+<meta content="ondes divergentes" name="DC.subject" xml:lang="fr"/>
+<meta content="Engineering - Biomedical / Ingénierie - Biomédicale (UMI : 0541)" name="DC.subject" xml:lang="fr"/>
+<meta content="Caractérisation de vortex intraventriculaires par échographie Doppler ultrarapide" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Les maladies cardiaques sont une cause majeure de mortalité dans le monde (la première
+cause en Amérique du nord [192]), et la prise en charge de ses maladies entraîne des coûts
+élevés pour la société. La prévalence de l’insuffisance cardiaque augmente fortement avec
+l’âge, et, avec une population vieillissante, elle va demeurer une préoccupation croissante dans
+le futur, non seulement pour les pays industrialisés mais aussi pour ceux en développement.
+Ainsi il est important d’avoir une bonne compréhension de son mécanisme pour obtenir
+des diagnostics précoces et un meilleur prognostic pour les patients. Parmi les différentes
+formes d’insuffisance cardiaque, on trouve la dysfonction diastolique qui se traduit par une
+déficience du remplissage du ventricule. Pour une meilleure compréhension de ce mécanisme,
+de nombreuses études se sont intéressées au mouvement du sang dans le ventricule. On sait
+notamment qu’au début de la diastole le flux entrant prend la forme d’un anneau vortical (ou
+vortex ring). La formation d’un vortex ring par le flux sanguin après le passage d’une valve a
+été décrite pour la première fois en 1513 par Léonard de Vinci (Fig. 0.1). En effet après avoir
+moulé l’aorte dans du verre et ajouter des graines pour observer le flux se déplaçant dans son
+fantôme, il a décrit l’apparition du vortex au passage de la valve aortique. Ces travaux ont pu
+être confirmés 500 ans plus tard avec l’apparition de l’IRM [66]. Dans le ventricule, le même
+phénomène se produit après la valve mitrale, c’est ce qu’on appelle le vortex diastolique. Or,
+le mouvement d’un fluide (ici le sang) est directement relié a son environnement : la forme
+du ventricule, la forme de la valve, la rigidité des parois... L’intérêt est donc grandissant
+pour étudier de manière plus approfondie ce vortex diastolique qui pourrait apporter de
+précieuses informations sur la fonction diastolique. Les modalités d’imagerie permettant de
+le visualiser sont l’IRM et l’échographie. Cette thèse présente l’ensemble des travaux effectués
+pour permettre une meilleure caractérisation du vortex diastolique dans le ventricule gauche
+par imagerie ultrasonore Doppler. Pour suivre la dynamique de ce vortex dans le temps, il
+est important d’obtenir une bonne résolution temporelle. En effet, la diastole ventriculaire
+dure en moyenne 0.5 s pour un coeur humain au repos, une cadence élevée est donc essentielle
+pour suivre les différentes étapes de la diastole. La qualité des signaux Doppler est également
+primordiale pour obtenir une bonne estimation des vitesses du flux sanguin dans le ventricule.
+Pour étudier ce vortex, nous nous sommes intéressés à la mesure de sa vorticité en son centre
+v
+et à l’évolution de cette dernière dans le temps. Le travail se divise ainsi en trois parties,
+pour chaque un article a été rédigé :
+1. Développement d’une séquence Doppler ultrarapide : La séquence se base sur l’utilisation
+d’ondes divergentes qui permettent d’atteindre une cadence d’image élevée.
+Associée à la vortographie, une méthode pour localiser le centre du vortex diastolique
+et en déduire sa vorticité, nous avons pu suivre la dynamique de la vorticité
+dans le temps. Cette séquence a permis d’établir une preuve de concept grâce à des
+acquisitions in vitro et in vivo sur des sujets humains volontaires.
+2. Développement d’une séquence triplex : En se basant sur la séquence ultrarapide Doppler,
+on cherche ici à ajouter des informations supplémentaires, notamment sur le
+mouvement des parois. La séquence triplex permet non seulement de récupérer le
+mouvement sanguin avec une haute cadence d’images mais aussi le Doppler tissulaire.
+Au final, nous avons pu déduire les Doppler couleur, tissulaire, et spectral, en plus
+d’un Bmode de qualité grâce à la compensation de mouvement. On peut alors observer
+l’interdépendance entre la dynamique du vortex et celle des parois, en récupérant
+tous les indices nécessaires sur le même cycle cardiaque avec une acquisition unique.
+3. Développement d’un filtre automatique : La quantification de la vorticité dépend
+directement des vitesses estimées par le Doppler. Or, en raison de leur faible
+amplitude, les signaux sanguins doivent être filtrés. En effet lors de l’acquisition les
+signaux sont en fait une addition des signaux sanguins et tissulaires. Le filtrage est
+une étape essentielle pour une estimation précise et non biaisée de la vitesse. La
+dernière partie de ce doctorat s’est donc concentrée sur la mise au point d’un filtre
+performant qui se base sur les dimensions spatiales et temporelles des acquisitions.
+On effectue ainsi un filtrage du tissu mais aussi du bruit. Une attention particulière
+a été portée à l’automatisation de ce filtre avec l’utilisation de critères d’information
+qui se basent sur la théorie de l’information." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Heart disease is one of the leading causes of death in the world (first cause in North America
+[192]), and causes high health care costs for society. The prevalence of heart failure increases
+dramatically with age and, due to the ageing of the population, will remain a major concern in
+the future, not only for developed countries, but also for developing countries. It is therefore
+crucial to have a good understanding of its mechanism to obtain an early diagnosis and a
+better prognosis for patients. Diastolic dysfunction is one of the variations of heart failure
+and leads to insufficient filling of the ventricle. To better understand the dysfunction, several
+studies have examined the blood motion in the ventricle. It is known that at the beginning of
+diastole, the filling flow creates a vortex pattern known as a vortex ring. This development of
+the ring by blood flow after passage through a valve was first described in 1513 by Leonardo
+Da Vinci (Fig. 0.1). After molding a glass phantom in an aorta and adding seeds to visually
+observe the flow through the phantom, he could describe the vortex ring development of
+the blood coming out of the aortic valve. His work was confirmed 500 years later with the
+emergence of MRI [66]. The same pattern can be observed in the left ventricle when the flow
+emerges from the mitral valve, referred to as the diastolic vortex. The flow motion (in our
+case the blood) is directly related to its environment : shape of the ventricle, shape of the
+valve, stiffness of the walls... There is therefore a growing interest in further studies on this
+diastolic vortex that could lead to valuable information on diastolic function. The imaging
+modalities which can be used to visualize the vortex are MRI and ultrasound. This thesis
+presents the work carried out to allow a better characterization of the diastolic vortex in the
+left ventricle by Doppler ultrasound imaging. For temporal monitoring of vortex dynamics, a
+high temporal resolution is required, since the ventricular diastole is about 0.5 s on average
+for a resting human heart. The quality of Doppler signals is also of utmost importance to
+get an accurate estimate of the blood flow velocity in the ventricle. To study this vortex, we
+focused on evaluating the core vorticity evaluation and especially on its evolution in time.
+The work is divided in three parts, and for each of them an article has been written :
+1. Ultrafast Doppler sequence : The sequence is based on diverging waves, which resulted
+in a high frame rate. In combination with vortography, a method to locate the vortex
+core and derive its vorticity, the vortex dynamics could be tracked over time. This
+ix
+sequence could establish a proof of concept based on in vitro and in vivo acquisitions
+on healthy human volunteers.
+2. Triplex sequence : Based on the ultrafast sequence, we were interested in adding information
+on the wall motion. The triplex sequence is able to recover not only the
+blood motion with a high framerate but also tissue Doppler. In the end, we could
+derive color, tissue, and spectral Doppler, along with a high quality Bmode by using
+motion compensation. The interdependence between vortex and walls dynamics could
+be highlighted by acquiring all the required parameters over a single cardiac cycle.
+3. Automatic clutter filter : Vorticity quantification depends directly on the estimation
+of Doppler velocity. However, due to their low amplitude, blood signals must be filtered.
+Indeed, acquired signals are actually an addition of tissue and blood signals.
+Filtering is a critical step for an unbiased and accurate velocity estimation. The last
+part of this doctoral thesis has focused on the design of an efficient filter that takes
+advantage of the temporal and spatial dimensions of the acquisitions. Thus the tissue
+alongside the noise is removed. Particular care was taken to automatize the filter by
+applying information criteria based on information theory." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Doppler; vortex; ultrasound imaging; ultrafast; filter; echocardiography; high-frame-rate; diverging wave; HOSVD; AIC; imagerie ultrasonore; ultrarapide; filtre; échocardiographie; haute cadence; ondes divergentes; Engineering - Biomedical / Ingénierie - Biomédicale (UMI : 0541); Thèse ou mémoire / Thesis or Dissertation; Génie biomédical" name="citation_keywords"/>
+<meta content="Caractérisation de vortex intraventriculaires par échographie Doppler ultrarapide" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Faurie, Julia" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/23536/4/Faurie_Julia_2019_these.pdf" name="citation_pdf_url"/>
+<meta content="2020-03-18" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/23536" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23536?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23536?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23536?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23536?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23536?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23536?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/23536/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/23536">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/23536/mets.xml-->
+<h2 class="page-header first-page-header">Caractérisation de vortex intraventriculaires par échographie Doppler ultrarapide</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Cloutier, Guy</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Garcia, Damien</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Faurie, Julia</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2020-06-16T18:13:19Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2020-06-16T18:13:19Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2020-03-18</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2019-07</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/23536</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Doppler</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">vortex</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">ultrasound imaging</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">ultrafast</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">filter</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">echocardiography</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">high-frame-rate</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">diverging wave</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">HOSVD</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">AIC</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">imagerie ultrasonore</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">ultrarapide</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">filtre</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">échocardiographie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">haute cadence</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">ondes divergentes</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Engineering - Biomedical / Ingénierie - Biomédicale (UMI : 0541)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Caractérisation de vortex intraventriculaires par échographie Doppler ultrarapide</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Génie biomédical</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les maladies cardiaques sont une cause majeure de mortalité dans le monde (la première
+cause en Amérique du nord [192]), et la prise en charge de ses maladies entraîne des coûts
+élevés pour la société. La prévalence de l’insuffisance cardiaque augmente fortement avec
+l’âge, et, avec une population vieillissante, elle va demeurer une préoccupation croissante dans
+le futur, non seulement pour les pays industrialisés mais aussi pour ceux en développement.
+Ainsi il est important d’avoir une bonne compréhension de son mécanisme pour obtenir
+des diagnostics précoces et un meilleur prognostic pour les patients. Parmi les différentes
+formes d’insuffisance cardiaque, on trouve la dysfonction diastolique qui se traduit par une
+déficience du remplissage du ventricule. Pour une meilleure compréhension de ce mécanisme,
+de nombreuses études se sont intéressées au mouvement du sang dans le ventricule. On sait
+notamment qu’au début de la diastole le flux entrant prend la forme d’un anneau vortical (ou
+vortex ring). La formation d’un vortex ring par le flux sanguin après le passage d’une valve a
+été décrite pour la première fois en 1513 par Léonard de Vinci (Fig. 0.1). En effet après avoir
+moulé l’aorte dans du verre et ajouter des graines pour observer le flux se déplaçant dans son
+fantôme, il a décrit l’apparition du vortex au passage de la valve aortique. Ces travaux ont pu
+être confirmés 500 ans plus tard avec l’apparition de l’IRM [66]. Dans le ventricule, le même
+phénomène se produit après la valve mitrale, c’est ce qu’on appelle le vortex diastolique. Or,
+le mouvement d’un fluide (ici le sang) est directement relié a son environnement : la forme
+du ventricule, la forme de la valve, la rigidité des parois... L’intérêt est donc grandissant
+pour étudier de manière plus approfondie ce vortex diastolique qui pourrait apporter de
+précieuses informations sur la fonction diastolique. Les modalités d’imagerie permettant de
+le visualiser sont l’IRM et l’échographie. Cette thèse présente l’ensemble des travaux effectués
+pour permettre une meilleure caractérisation du vortex diastolique dans le ventricule gauche
+par imagerie ultrasonore Doppler. Pour suivre la dynamique de ce vortex dans le temps, il
+est important d’obtenir une bonne résolution temporelle. En effet, la diastole ventriculaire
+dure en moyenne 0.5 s pour un coeur humain au repos, une cadence élevée est donc essentielle
+pour suivre les différentes étapes de la diastole. La qualité des signaux Doppler est également
+primordiale pour obtenir une bonne estimation des vitesses du flux sanguin dans le ventricule.
+Pour étudier ce vortex, nous nous sommes intéressés à la mesure de sa vorticité en son centre
+v
+et à l’évolution de cette dernière dans le temps. Le travail se divise ainsi en trois parties,
+pour chaque un article a été rédigé :
+1. Développement d’une séquence Doppler ultrarapide : La séquence se base sur l’utilisation
+d’ondes divergentes qui permettent d’atteindre une cadence d’image élevée.
+Associée à la vortographie, une méthode pour localiser le centre du vortex diastolique
+et en déduire sa vorticité, nous avons pu suivre la dynamique de la vorticité
+dans le temps. Cette séquence a permis d’établir une preuve de concept grâce à des
+acquisitions in vitro et in vivo sur des sujets humains volontaires.
+2. Développement d’une séquence triplex : En se basant sur la séquence ultrarapide Doppler,
+on cherche ici à ajouter des informations supplémentaires, notamment sur le
+mouvement des parois. La séquence triplex permet non seulement de récupérer le
+mouvement sanguin avec une haute cadence d’images mais aussi le Doppler tissulaire.
+Au final, nous avons pu déduire les Doppler couleur, tissulaire, et spectral, en plus
+d’un Bmode de qualité grâce à la compensation de mouvement. On peut alors observer
+l’interdépendance entre la dynamique du vortex et celle des parois, en récupérant
+tous les indices nécessaires sur le même cycle cardiaque avec une acquisition unique.
+3. Développement d’un filtre automatique : La quantification de la vorticité dépend
+directement des vitesses estimées par le Doppler. Or, en raison de leur faible
+amplitude, les signaux sanguins doivent être filtrés. En effet lors de l’acquisition les
+signaux sont en fait une addition des signaux sanguins et tissulaires. Le filtrage est
+une étape essentielle pour une estimation précise et non biaisée de la vitesse. La
+dernière partie de ce doctorat s’est donc concentrée sur la mise au point d’un filtre
+performant qui se base sur les dimensions spatiales et temporelles des acquisitions.
+On effectue ainsi un filtrage du tissu mais aussi du bruit. Une attention particulière
+a été portée à l’automatisation de ce filtre avec l’utilisation de critères d’information
+qui se basent sur la théorie de l’information.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Heart disease is one of the leading causes of death in the world (first cause in North America
+[192]), and causes high health care costs for society. The prevalence of heart failure increases
+dramatically with age and, due to the ageing of the population, will remain a major concern in
+the future, not only for developed countries, but also for developing countries. It is therefore
+crucial to have a good understanding of its mechanism to obtain an early diagnosis and a
+better prognosis for patients. Diastolic dysfunction is one of the variations of heart failure
+and leads to insufficient filling of the ventricle. To better understand the dysfunction, several
+studies have examined the blood motion in the ventricle. It is known that at the beginning of
+diastole, the filling flow creates a vortex pattern known as a vortex ring. This development of
+the ring by blood flow after passage through a valve was first described in 1513 by Leonardo
+Da Vinci (Fig. 0.1). After molding a glass phantom in an aorta and adding seeds to visually
+observe the flow through the phantom, he could describe the vortex ring development of
+the blood coming out of the aortic valve. His work was confirmed 500 years later with the
+emergence of MRI [66]. The same pattern can be observed in the left ventricle when the flow
+emerges from the mitral valve, referred to as the diastolic vortex. The flow motion (in our
+case the blood) is directly related to its environment : shape of the ventricle, shape of the
+valve, stiffness of the walls... There is therefore a growing interest in further studies on this
+diastolic vortex that could lead to valuable information on diastolic function. The imaging
+modalities which can be used to visualize the vortex are MRI and ultrasound. This thesis
+presents the work carried out to allow a better characterization of the diastolic vortex in the
+left ventricle by Doppler ultrasound imaging. For temporal monitoring of vortex dynamics, a
+high temporal resolution is required, since the ventricular diastole is about 0.5 s on average
+for a resting human heart. The quality of Doppler signals is also of utmost importance to
+get an accurate estimate of the blood flow velocity in the ventricle. To study this vortex, we
+focused on evaluating the core vorticity evaluation and especially on its evolution in time.
+The work is divided in three parts, and for each of them an article has been written :
+1. Ultrafast Doppler sequence : The sequence is based on diverging waves, which resulted
+in a high frame rate. In combination with vortography, a method to locate the vortex
+core and derive its vorticity, the vortex dynamics could be tracked over time. This
+ix
+sequence could establish a proof of concept based on in vitro and in vivo acquisitions
+on healthy human volunteers.
+2. Triplex sequence : Based on the ultrafast sequence, we were interested in adding information
+on the wall motion. The triplex sequence is able to recover not only the
+blood motion with a high framerate but also tissue Doppler. In the end, we could
+derive color, tissue, and spectral Doppler, along with a high quality Bmode by using
+motion compensation. The interdependence between vortex and walls dynamics could
+be highlighted by acquiring all the required parameters over a single cardiac cycle.
+3. Automatic clutter filter : Vorticity quantification depends directly on the estimation
+of Doppler velocity. However, due to their low amplitude, blood signals must be filtered.
+Indeed, acquired signals are actually an addition of tissue and blood signals.
+Filtering is a critical step for an unbiased and accurate velocity estimation. The last
+part of this doctoral thesis has focused on the design of an efficient filter that takes
+advantage of the temporal and spatial dimensions of the acquisitions. Thus the tissue
+alongside the noise is removed. Particular care was taken to automatize the filter by
+applying information criteria based on information theory.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F23536&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=G%C3%A9nie+biom%C3%A9dical&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/23536/Faurie_Julia_2019_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/23536/Faurie_Julia_2019_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Faurie_Julia_2019_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/23536/Faurie_Julia_2019_these.pdf?sequence=4&amp;isAllowed=y">Faurie_Julia_2019_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">15.47Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/23536">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Analyse par spectrométrie de masse des antibiotiques vétérinaires liés à l’élevage porcin</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Sauvé, Sébastien" name="DC.contributor">
+<meta content="Solliec, Morgan" name="DC.creator">
+<meta content="2016-04-15T16:12:59Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2016-04-15T16:12:59Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2016-03-23" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2015-08" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/13571" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Antibiotiques vétérinaires" name="DC.subject" xml:lang="fr"/>
+<meta content="Désorption thermique par diode laser" name="DC.subject" xml:lang="fr"/>
+<meta content="Chromatographie liquide" name="DC.subject" xml:lang="fr"/>
+<meta content="Spectrométrie de masse" name="DC.subject" xml:lang="fr"/>
+<meta content="Spectromètre de masse à haute résolution" name="DC.subject" xml:lang="fr"/>
+<meta content="Veterinary antibiotics" name="DC.subject" xml:lang="fr"/>
+<meta content="Laser diode thermal desorption" name="DC.subject" xml:lang="fr"/>
+<meta content="Liquid chromatography" name="DC.subject" xml:lang="fr"/>
+<meta content="Mass spectrometry" name="DC.subject" xml:lang="fr"/>
+<meta content="High-resolution mass spectrometry" name="DC.subject" xml:lang="fr"/>
+<meta content="Chemistry - Analytical / Chimie analytique (UMI : 0486)" name="DC.subject" xml:lang="fr"/>
+<meta content="Analyse par spectrométrie de masse des antibiotiques vétérinaires liés à l’élevage porcin" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="L’élevage des porcs représente une source importante de déversement d’antibiotiques dans l’environnement par l’intermédiaire de l’épandage du lisier qui contient une grande quantité de ces molécules sur les champs agricoles. Il a été prouvé que ces molécules biologiquement actives peuvent avoir un impact toxique sur l’écosystème. Par ailleurs, elles sont aussi suspectées d’engendrer des problèmes sanitaires et de contribuer à la résistance bactérienne pouvant mener à des infections difficilement traitables chez les humains. Le contrôle de ces substances dans l’environnement est donc nécessaire.
+De nombreuses méthodes analytiques sont proposées dans la littérature scientifique pour recenser ces composés dans plusieurs types de matrice. Cependant, peu de ces méthodes permettent l’analyse de ces contaminants dans des matrices issues de l’élevage agricole intensif. Par ailleurs, les méthodes analytiques disponibles sont souvent sujettes à des faux positifs compte tenu de la complexité des matrices étudiées et du matériel utilisé et ne prennent souvent pas en compte les métabolites et produits de dégradation. Enfin, les niveaux d’analyse atteints avec ces méthodes ne sont parfois plus à jour étant donné l’évolution de la chimie analytique et de la spectrométrie de masse. Dans cette optique, de nouvelles méthodes d’analyses ont été développées pour rechercher et quantifier les antibiotiques dans des matrices dérivées de l’élevage intensif des porcs en essayant de proposer des approches alternatives sensibles, sélectives et robustes pour quantifier ces molécules.
+Une première méthode d’analyse basée sur une technique d’introduction d’échantillon alternative à l’aide d’une interface fonctionnant à l’aide d’une désorption thermique par diode laser munie d’une source à ionisation à pression atmosphérique, couplée à la spectrométrie de masse en tandem a été développée. L’objectif est de proposer une analyse plus rapide tout en atteignant des niveaux de concentration adaptés à la matrice étudiée. Cette technique d’analyse couplée à un traitement d’échantillon efficace a permis l’analyse de plusieurs antibiotiques vétérinaires de différentes classes dans des échantillons de lisier avec des temps d’analyse courts. Les limites de détection atteintes sont comprises entre 2,5 et 8,3 µg kg-1 et sont comparables avec celles pouvant être obtenues avec la chromatographie liquide dans une matrice similaire.
+En vue d’analyser simultanément une série de tétracyclines, une deuxième méthode d’analyse utilisant la chromatographie liquide couplée à la spectrométrie de masse à haute résolution (HRMS) a été proposée. L’utilisation de la HRMS a été motivée par le fait que cette technique d’analyse est moins sensible aux faux positifs que le triple quadripôle traditionnel. Des limites de détection comprises entre 1,5 et 3,6 µg kg-1 ont été atteintes dans des échantillons de lisier en utilisant un mode d’analyse par fragmentation.
+L’utilisation de méthodes de quantifications ciblées est une démarche intéressante lorsque la présence de contaminants est suspectée dans un échantillon. Toutefois, les contaminants non intégrés à cette méthode d’analyse ciblée ne peuvent être détectés même à de fortes concentrations. Dans ce contexte, une méthode d’analyse non ciblée a été développée pour la recherche de pharmaceutiques vétérinaires dans des effluents agricoles en utilisant la spectrométrie de masse à haute résolution et une cartouche SPE polymérique polyvalente. Cette méthode a permis l’identification d’antibiotiques et de pharmaceutiques couramment utilisés dans l’élevage porcin.
+La plupart des méthodes d’analyse disponibles dans la littérature se concentrent sur l’analyse des composés parents, mais pas sur les sous-produits de dégradation. L’approche utilisée dans la deuxième méthode d’analyse a donc été étendue et appliquée à d’autres classes d’antibiotiques pour mesurer les concentrations de plusieurs résidus d’antibiotiques dans les sols et les eaux de drainage d’un champ agricole expérimental. Les sols du champ renfermaient un mélange d’antibiotiques ainsi que leurs produits de dégradation relatifs à des concentrations mesurées jusqu’à 1020 µg kg-1. Une partie de ces composés ont voyagé par l’intermédiaire des eaux de drainage du champ ou des concentrations pouvant atteindre 3200 ng L-1 ont pu être relevées." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Swine production is a major source of antibiotic release into the environment via manure spreading on agricultural fields. It has been shown that these biologically active compounds may have a toxic impact on ecosystems. Moreover, they are also suspected to cause health problems and contribute to bacterial resistance that could lead to difficult-to-treat infections in humans. Therefore, control of these substances in the environment is necessary.
+Several analytical methods are proposed in the scientific literature to identify these compounds in various matrices. However, few of these methods allowed the analysis of these contaminants in matrices derived from intensive livestock farming. Furthermore, the analytical methods available are often subject to false positives, given the complexity samples and the equipment used and do not take into account the metabolites and degradation products. Finally, concentration levels reached with these methods are sometimes outdated since the evolution of analytical chemistry and mass spectrometry. In this context, new analytical methods have been developed to investigate and quantify the antibiotics derived from swine husbandry to propose alternative, sensible, selective and robust approaches to quantify these molecules.
+A first analytical method has been proposed based on an alternative sample introduction technique using the laser diode thermal desorption interface with an atmospheric pressure chemical ionization source coupled to tandem mass spectrometry. The objective was to provide a simpler and faster analysis while reaching levels suitable for the studied matrix. This alternative sample introduction method coupled with an efficient sample processing allowed the analysis of several classes of veterinary antibiotics in swine manure in a short analysis time. Detection limits ranged between 2.5 and 8.3 µg kg-1 and are comparable with those obtained with liquid chromatography in a similar matrix.
+In order to simultaneously analyze a series of tetracyclines, a second analytical method using liquid chromatography coupled to high-resolution mass spectrometry (HRMS) was proposed. The use of HRMS was motivated by the fact that this mass spectrometer is less sensitive to false positive that the traditional triple quadrupole given the complexity of the studied matrix. Detection limits between 1.5 and 3.6 µg kg-1 have been achieved in swine manure using a fragmentation analysis mode to avoid false positives.
+Targeted screening methods are interesting approaches when contaminants are suspected to be present in a sample. However, a non-included contaminant in this targeted analysis method could not been detected even at a high concentration. In this context, a non-target compound screening method focused on veterinary pharmaceutical compounds in swine manure was developed using liquid chromatography coupled to high-resolution mass spectrometry. A polymeric SPE cartridge was used to collect polar compounds including pharmaceuticals prior analysis. This method allowed the identification of antibiotics and pharmaceuticals of commonly used in swine farming.
+Most of the analytical methods available in the literature focus on parent compounds, regardless degradation products. The approach used in the second method of analysis was applied and extended to other classes of antibiotics to measure concentrations of several antibiotic residues in soils and drainage waters of an experimental agricultural field. Field soil contained a mixture of antibiotics and their related degradation products with concentrations measured up to 1020 µg kg-1. Some of these compounds have migrated through the field via drainage waters wherein concentrations up to 3200 ng L-1 were observed." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Antibiotiques vétérinaires; Désorption thermique par diode laser; Chromatographie liquide; Spectrométrie de masse; Spectromètre de masse à haute résolution; Veterinary antibiotics; Laser diode thermal desorption; Liquid chromatography; Mass spectrometry; High-resolution mass spectrometry; Chemistry - Analytical / Chimie analytique (UMI : 0486); Thèse ou mémoire / Thesis or Dissertation; Chimie" name="citation_keywords"/>
+<meta content="Analyse par spectrométrie de masse des antibiotiques vétérinaires liés à l’élevage porcin" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Solliec, Morgan" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/13571/2/Solliec_Morgan_2015_these.pdf" name="citation_pdf_url"/>
+<meta content="2016-03-23" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/13571" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13571?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13571?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13571?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13571?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13571?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13571?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2942" role="menuitem">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2977" role="menuitem">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2942">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2977"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/13571/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/13571">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/13571/mets.xml-->
+<h2 class="page-header first-page-header">Analyse par spectrométrie de masse des antibiotiques vétérinaires liés à l’élevage porcin</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Sauvé, Sébastien</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Solliec, Morgan</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2016-04-15T16:12:59Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2016-04-15T16:12:59Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2016-03-23</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2015-08</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/13571</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Antibiotiques vétérinaires</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Désorption thermique par diode laser</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Chromatographie liquide</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Spectrométrie de masse</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Spectromètre de masse à haute résolution</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Veterinary antibiotics</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Laser diode thermal desorption</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Liquid chromatography</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Mass spectrometry</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">High-resolution mass spectrometry</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Chemistry - Analytical / Chimie analytique (UMI : 0486)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Analyse par spectrométrie de masse des antibiotiques vétérinaires liés à l’élevage porcin</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Chimie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">L’élevage des porcs représente une source importante de déversement d’antibiotiques dans l’environnement par l’intermédiaire de l’épandage du lisier qui contient une grande quantité de ces molécules sur les champs agricoles. Il a été prouvé que ces molécules biologiquement actives peuvent avoir un impact toxique sur l’écosystème. Par ailleurs, elles sont aussi suspectées d’engendrer des problèmes sanitaires et de contribuer à la résistance bactérienne pouvant mener à des infections difficilement traitables chez les humains. Le contrôle de ces substances dans l’environnement est donc nécessaire.
+De nombreuses méthodes analytiques sont proposées dans la littérature scientifique pour recenser ces composés dans plusieurs types de matrice. Cependant, peu de ces méthodes permettent l’analyse de ces contaminants dans des matrices issues de l’élevage agricole intensif. Par ailleurs, les méthodes analytiques disponibles sont souvent sujettes à des faux positifs compte tenu de la complexité des matrices étudiées et du matériel utilisé et ne prennent souvent pas en compte les métabolites et produits de dégradation. Enfin, les niveaux d’analyse atteints avec ces méthodes ne sont parfois plus à jour étant donné l’évolution de la chimie analytique et de la spectrométrie de masse. Dans cette optique, de nouvelles méthodes d’analyses ont été développées pour rechercher et quantifier les antibiotiques dans des matrices dérivées de l’élevage intensif des porcs en essayant de proposer des approches alternatives sensibles, sélectives et robustes pour quantifier ces molécules.
+Une première méthode d’analyse basée sur une technique d’introduction d’échantillon alternative à l’aide d’une interface fonctionnant à l’aide d’une désorption thermique par diode laser munie d’une source à ionisation à pression atmosphérique, couplée à la spectrométrie de masse en tandem a été développée. L’objectif est de proposer une analyse plus rapide tout en atteignant des niveaux de concentration adaptés à la matrice étudiée. Cette technique d’analyse couplée à un traitement d’échantillon efficace a permis l’analyse de plusieurs antibiotiques vétérinaires de différentes classes dans des échantillons de lisier avec des temps d’analyse courts. Les limites de détection atteintes sont comprises entre 2,5 et 8,3 µg kg-1 et sont comparables avec celles pouvant être obtenues avec la chromatographie liquide dans une matrice similaire.
+En vue d’analyser simultanément une série de tétracyclines, une deuxième méthode d’analyse utilisant la chromatographie liquide couplée à la spectrométrie de masse à haute résolution (HRMS) a été proposée. L’utilisation de la HRMS a été motivée par le fait que cette technique d’analyse est moins sensible aux faux positifs que le triple quadripôle traditionnel. Des limites de détection comprises entre 1,5 et 3,6 µg kg-1 ont été atteintes dans des échantillons de lisier en utilisant un mode d’analyse par fragmentation.
+L’utilisation de méthodes de quantifications ciblées est une démarche intéressante lorsque la présence de contaminants est suspectée dans un échantillon. Toutefois, les contaminants non intégrés à cette méthode d’analyse ciblée ne peuvent être détectés même à de fortes concentrations. Dans ce contexte, une méthode d’analyse non ciblée a été développée pour la recherche de pharmaceutiques vétérinaires dans des effluents agricoles en utilisant la spectrométrie de masse à haute résolution et une cartouche SPE polymérique polyvalente. Cette méthode a permis l’identification d’antibiotiques et de pharmaceutiques couramment utilisés dans l’élevage porcin.
+La plupart des méthodes d’analyse disponibles dans la littérature se concentrent sur l’analyse des composés parents, mais pas sur les sous-produits de dégradation. L’approche utilisée dans la deuxième méthode d’analyse a donc été étendue et appliquée à d’autres classes d’antibiotiques pour mesurer les concentrations de plusieurs résidus d’antibiotiques dans les sols et les eaux de drainage d’un champ agricole expérimental. Les sols du champ renfermaient un mélange d’antibiotiques ainsi que leurs produits de dégradation relatifs à des concentrations mesurées jusqu’à 1020 µg kg-1. Une partie de ces composés ont voyagé par l’intermédiaire des eaux de drainage du champ ou des concentrations pouvant atteindre 3200 ng L-1 ont pu être relevées.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Swine production is a major source of antibiotic release into the environment via manure spreading on agricultural fields. It has been shown that these biologically active compounds may have a toxic impact on ecosystems. Moreover, they are also suspected to cause health problems and contribute to bacterial resistance that could lead to difficult-to-treat infections in humans. Therefore, control of these substances in the environment is necessary.
+Several analytical methods are proposed in the scientific literature to identify these compounds in various matrices. However, few of these methods allowed the analysis of these contaminants in matrices derived from intensive livestock farming. Furthermore, the analytical methods available are often subject to false positives, given the complexity samples and the equipment used and do not take into account the metabolites and degradation products. Finally, concentration levels reached with these methods are sometimes outdated since the evolution of analytical chemistry and mass spectrometry. In this context, new analytical methods have been developed to investigate and quantify the antibiotics derived from swine husbandry to propose alternative, sensible, selective and robust approaches to quantify these molecules.
+A first analytical method has been proposed based on an alternative sample introduction technique using the laser diode thermal desorption interface with an atmospheric pressure chemical ionization source coupled to tandem mass spectrometry. The objective was to provide a simpler and faster analysis while reaching levels suitable for the studied matrix. This alternative sample introduction method coupled with an efficient sample processing allowed the analysis of several classes of veterinary antibiotics in swine manure in a short analysis time. Detection limits ranged between 2.5 and 8.3 µg kg-1 and are comparable with those obtained with liquid chromatography in a similar matrix.
+In order to simultaneously analyze a series of tetracyclines, a second analytical method using liquid chromatography coupled to high-resolution mass spectrometry (HRMS) was proposed. The use of HRMS was motivated by the fact that this mass spectrometer is less sensitive to false positive that the traditional triple quadrupole given the complexity of the studied matrix. Detection limits between 1.5 and 3.6 µg kg-1 have been achieved in swine manure using a fragmentation analysis mode to avoid false positives.
+Targeted screening methods are interesting approaches when contaminants are suspected to be present in a sample. However, a non-included contaminant in this targeted analysis method could not been detected even at a high concentration. In this context, a non-target compound screening method focused on veterinary pharmaceutical compounds in swine manure was developed using liquid chromatography coupled to high-resolution mass spectrometry. A polymeric SPE cartridge was used to collect polar compounds including pharmaceuticals prior analysis. This method allowed the identification of antibiotics and pharmaceuticals of commonly used in swine farming.
+Most of the analytical methods available in the literature focus on parent compounds, regardless degradation products. The approach used in the second method of analysis was applied and extended to other classes of antibiotics to measure concentrations of several antibiotic residues in soils and drainage waters of an experimental agricultural field. Field soil contained a mixture of antibiotics and their related degradation products with concentrations measured up to 1020 µg kg-1. Some of these compounds have migrated through the field via drainage waters wherein concentrations up to 3200 ng L-1 were observed.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F13571&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Chimie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/13571/Solliec_Morgan_2015_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/13571/Solliec_Morgan_2015_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Solliec_Morgan_2015_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/13571/Solliec_Morgan_2015_these.pdf?sequence=2&amp;isAllowed=y">Solliec_Morgan_2015_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">8.393Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2977/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a> [594]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/13571">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

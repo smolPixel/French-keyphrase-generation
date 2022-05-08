@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Age, period, and cohort effects on adult mortality due to extrinsic causes of death</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Gagnon, Alain" name="DC.contributor">
+<meta content="Ouellette, Nadine" name="DC.contributor">
+<meta content="Acosta, Enrique" name="DC.creator">
+<meta content="2020-06-08T20:25:28Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2020-06-08T20:25:28Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2020-03-25" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2019-10" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/23411" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="mortalité" name="DC.subject" xml:lang="fr"/>
+<meta content="effets d’âge-période-cohorte" name="DC.subject" xml:lang="fr"/>
+<meta content="causes extrinsèques" name="DC.subject" xml:lang="fr"/>
+<meta content="mortalité par influenza" name="DC.subject" xml:lang="fr"/>
+<meta content="baby-boomers" name="DC.subject" xml:lang="fr"/>
+<meta content="mortalité comportementale" name="DC.subject" xml:lang="fr"/>
+<meta content="surdose de drogues" name="DC.subject" xml:lang="fr"/>
+<meta content="effets de cohorte de naissance" name="DC.subject" xml:lang="fr"/>
+<meta content="identité générationnelle" name="DC.subject" xml:lang="fr"/>
+<meta content="surfaces de Lexis" name="DC.subject" xml:lang="fr"/>
+<meta content="mortality" name="DC.subject" xml:lang="fr"/>
+<meta content="age-period-cohort effects" name="DC.subject" xml:lang="fr"/>
+<meta content="extrinsic causes" name="DC.subject" xml:lang="fr"/>
+<meta content="influenza mortality" name="DC.subject" xml:lang="fr"/>
+<meta content="baby boomers" name="DC.subject" xml:lang="fr"/>
+<meta content="behavioral mortality" name="DC.subject" xml:lang="fr"/>
+<meta content="drug overdoses" name="DC.subject" xml:lang="fr"/>
+<meta content="birth cohort effects" name="DC.subject" xml:lang="fr"/>
+<meta content="generational identity" name="DC.subject" xml:lang="fr"/>
+<meta content="Lexis surfaces" name="DC.subject" xml:lang="fr"/>
+<meta content="Sociology - Demography / Sociologie - Démographie (UMI : 0938)" name="DC.subject" xml:lang="fr"/>
+<meta content="Age, period, and cohort effects on adult mortality due to extrinsic causes of death" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Après des décennies d'amélioration, l'espérance de vie a stagné dans plusieurs pays à faible mortalité ces dernières années, avec, dans certains cas, quelques reculs. L’augmentation de la mortalité due à la grippe et aux surdoses de drogue, en particulier dans la génération des baby-boomers, a été le principal responsable de cette stagnation de l’espérance de vie. Cette découverte était inattendue, car il est considéré que la mortalité extrinsèque – par opposition à la mortalité intrinsèque due à des maladies dégénératives se déclarant souvent aux grands âges – joue un rôle négligeable dans les changements actuels d'espérance de vie. Pour la même raison, les tendances temporelles de la mortalité extrinsèque n’ont guère retenu l’attention des chercheurs. Les crises périodiques dues aux épidémies de grippe et à la crise des opioïdes sont considérées comme les principaux déterminants des variations de la mortalité extrinsèque. Cependant, des preuves récentes suggèrent que les effets de cohorte jouent un rôle important dans la modulation de la mortalité extrinsèque, mais que de telles influences sont encore mal connues.
+L'objectif principal de cette thèse est d'examiner le rôle des effets de cohorte sur l’évolution de la mortalité extrinsèque dans les dernières décennies, avec un accent particulier mis sur la grippe et les causes de décès comportementales. Plus spécifiquement, elle vise à (1) déterminer les différences par cohorte de mortalité par la grippe et l’influence des expositions précoces au virus sur cette mortalité; (2) analyser le désavantage de mortalité des baby-boomers au Canada et aux États-Unis en identifiant la contribution des causes comportementales à ce désavantage; et (3) développer un outil méthodologique permettant à la fois l'analyse visuelle de la dynamique temporelle des effets non linéaires d'âge, de période et de cohorte (APC) et la comparaison entre divers phénomènes ou populations.
+Pour ces analyses, nous utilisons des micro-données de mortalité provenant de systèmes de statistiques de l’état civil au Canada et aux États-Unis. Nous utilisons également les taux de mortalité et de fécondité de divers pays pour généraliser l'analyse visuelle des effets non linéaires à d'autres phénomènes démographiques que la mortalité. Les analyses ont été réalisées en appliquant des modèles de Serfling pour l’estimation de la mortalité par grippe, des mesures démographiques permettant une décomposition par cause des variations de la mortalité, des techniques de lissage pour identifier les tendances et des approches statistiques et visuelles sur des configurations de Lexis pour l’analyse des effets APC.
+Les résultats, sous la forme de trois articles scientifiques, montrent que malgré des fluctuations marquées au cours des années calendrier (période), les cohortes de naissance ont une influence indépendante et durable sur la mortalité liée à la grippe ou due au comportement. Les principaux résultats du premier article suggèrent que deux mécanismes modulent la mortalité grippale au fil des cohortes. Pour la population jeune et adulte, les risques de mortalité par cohortes  dépendent du contraste en le premier virus auquel on est vraisemblablement exposé (le virus laissant« l’empreinte antigénique ») et le virus rencontré à l’âge adulte, au moment de l’épidémie sous observation. Des modifications significatives du risque de décès ont ainsi été observées lors d’épidémies de grippes pour les cohortes nées lors d'importants changements antigéniques (par exemple, une diminution significative du risque pour les cohortes nées entre 1957 et 1968). Pour les âges plus avancés, nous n’avons pas identifié de tels effets de cohorte « ponctuels », mais plutôt un effet de cohorte de plus longue haleine, qui aura conduit à un déclin progressif de la mortalité par grippe entre 1959 et 2016. En nous inspirant des théories dites de technophysio ou de cohort morbidity phenotype, nous attribuons ce déclin à des changements s’étant produit bien avant, c’est-à-dire à l’amélioration marqué des conditions sanitaires qui a eu lieu entre 1900 et 1930, au moment où les cohortes concernées venaient au monde et dont elles ont pu bénéficier. 
+Les travaux du deuxième article de cette thèse révèlent que la plupart des excès de mortalité chez les baby-boomers au Canada et aux États-Unis sont dus à des causes comportementales. Le désavantage des baby-boomers résulte de plusieurs effets de cohortes sur des causes comportementales différentes, et non pas d'effets de période ponctuels affectant la même cohorte aux âges différents, un mécanisme alternatif qui pourrait expliquer la «pénalité des boomers». Les baby-boomers présentaient respectivement un risque d'hépatite C et de mortalité par drogue trois fois et deux fois plus élevé que les cohortes voisines. La contribution méthodologique des graphique de courbure APC, présentée dans le troisième article, nous a permis d'analyser la dynamique des effets non linéaires au fil du temps, à travers divers phénomènes et populations. Cette technique offre une plus grande flexibilité que les modèles statistiques ou autres graphiques de Lexis.
+Les résultats présentés dans cette thèse montrent l'importance d'analyser les effets de cohortes sur la mortalité extrinsèque. Nos résultats indiquent que même en présence de perturbations de période importantes affectant la mortalité extrinsèque à la plupart des âges, les effets de cohorte se sont maintenus au fil du temps. Ces résultats suggèrent également que les politiques publiques peuvent améliorer considérablement la santé de la population en formulant des politiques qui prennent en compte la sensibilité différentielle des cohortes aux facteurs de risque et en fournissant un soutien social aux cohortes les plus vulnérables." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="After decades of improvement, life expectancy momentarily declined during 2014-15 in several high income countries, with subsequent reversals in some cases. The main sources of this stagnation have been increases in mortality from influenza and drug overdoses, mainly for the baby-boomer generation. This trend is unexpected because it has long been assumed that extrinsic mortality, which is due to causes originating outside the body – in opposition to intrinsic mortality from degenerative diseases at old ages –, plays a negligible role in life expectancy changes. For this reason, the temporal patterns of extrinsic mortality have received little attention in demographic research. Period crises such as influenza epidemics and the opioid crisis are considered the main determinants of variations of extrinsic mortality. However, despite recent evidence suggesting that cohort effects have an important role in modulating extrinsic mortality, little is known about this relationship. 
+The main objective of this dissertation is to help fill this gap by examining cohort influences on extrinsic mortality change, with a particular emphasis on influenza and behavioral causes. More specifically, we aim (1) to quantify cohort differences in mortality from influenza and the influence of early life exposures to the virus on subsequent influenza mortality; (2) to analyze the baby boomers’ disadvantage in mortality in Canada and the United States, while identifying the contributions of behavioral causes to this disadvantage; and (3) to develop a methodological tool that can be used to both conduct visual analysis of the temporal dynamics of nonlinear Age-Period-Cohort (APC) effects, and compare these dynamics across various phenomena or populations.
+To achieve these goals, we use micro-level mortality data from vital statistics in Canada and the United States. We also employ death and fertility rates from various countries to generalize the visual analysis of nonlinear effects to other demographic phenomena. The analyses were conducted by applying Serfling models for the estimation of influenza mortality, demographic measures for the decomposition of cause-specific mortality changes, smoothing techniques for the identification of trends, and statistical and visual approaches on the Lexis configuration for the analysis of APC effects. 
+The results, in the form of three scientific articles, show that despite marked fluctuations over calendar years (periods), birth cohorts have an independent and sustained influence on influenza and mortality from behavioral causes. The main results from the first paper suggest that two mechanisms modulated influenza mortality over cohorts. For the young and adult population, the mortality risks over cohorts depend of the contrast between the first virus to which individuals were exposed (the virus producing an antigenic imprinting) and the virus encountered in adulthood during the observed epidemic. For this age segment, significant changes in risk were found during influenza epidemics among cohorts born during important antigenic shifts (e.g., a decrease in risk for cohorts born between 1957 and 1968). For older ages, we did not identify such “punctual” cohort effects but rather a smooth and monotonic change in cohort effects that might have driven a progressive decline in influenza mortality between 1959 and 2016. Inspired by so-called cohort morbidity phenotype and technophysio evolution theories, we attributed this decline to changes produced earlier, i.e., to the sharp sanitary improvements occurred between 1900 and 1930, when the concerned cohorts were born and when they could have benefited.
+Findings from the second paper revealed that most of the baby boomers’ excess mortality in Canada and the United States is driven by behavioral causes of death. The “boomer disadvantage” resulted from multiple cohort effects on behavioral-related mortality, and not from punctual period effects affecting the same cohort at different ages. Among the baby boomers, the risk of dying from hepatitis C was almost three times higher, and the risk of dying from drug-related causes was almost two times higher, than among the adjacent cohorts. These results were obtained using an innovative methodology developed in the third paper, which allowed us to analyze the dynamics of nonlinear effects over time through APC curvature plots. This technique provides greater flexibility than statistical models or other Lexis plots, and it has been shown to be applicable to other demographic phenomena, such as fertility.
+The findings presented in this dissertation offer evidence of the importance of analyzing cohort effects on extrinsic mortality. Our results indicate that even in the presence of substantial period disturbances affecting extrinsic mortality at most ages, cohort effects were sustained over time. These findings also suggest that public policies can significantly improve the health of the population by formulating policies that take into account the differential sensitivity of cohorts to risk factors and by providing social support to the most vulnerable cohorts." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="mortalité; effets d’âge-période-cohorte; causes extrinsèques; mortalité par influenza; baby-boomers; mortalité comportementale; surdose de drogues; effets de cohorte de naissance; identité générationnelle; surfaces de Lexis; mortality; age-period-cohort effects; extrinsic causes; influenza mortality; baby boomers; behavioral mortality; drug overdoses; birth cohort effects; generational identity; Lexis surfaces; Sociology - Demography / Sociologie - Démographie (UMI : 0938); Thèse ou mémoire / Thesis or Dissertation; Démographie" name="citation_keywords"/>
+<meta content="Age, period, and cohort effects on adult mortality due to extrinsic causes of death" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Acosta, Enrique" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/23411/2/Acosta_Enrique_2019_these.pdf" name="citation_pdf_url"/>
+<meta content="2020-03-25" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/23411" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23411?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23411?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23411?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23411?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23411?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/23411?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2944" role="menuitem">Faculté des arts et des sciences – Département de démographie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2982" role="menuitem">Faculté des arts et des sciences – Département de démographie – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2944">Faculté des arts et des sciences – Département de démographie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2982">Faculté des arts et des sciences – Département de démographie – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2982"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2982/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/23411/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/23411">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/23411/mets.xml-->
+<h2 class="page-header first-page-header">Age, period, and cohort effects on adult mortality due to extrinsic causes of death</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Gagnon, Alain</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Ouellette, Nadine</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Acosta, Enrique</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2020-06-08T20:25:28Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2020-06-08T20:25:28Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2020-03-25</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2019-10</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/23411</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">mortalité</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">effets d’âge-période-cohorte</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">causes extrinsèques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">mortalité par influenza</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">baby-boomers</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">mortalité comportementale</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">surdose de drogues</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">effets de cohorte de naissance</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">identité générationnelle</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">surfaces de Lexis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">mortality</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">age-period-cohort effects</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">extrinsic causes</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">influenza mortality</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">baby boomers</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">behavioral mortality</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">drug overdoses</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">birth cohort effects</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">generational identity</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Lexis surfaces</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Sociology - Demography / Sociologie - Démographie (UMI : 0938)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Age, period, and cohort effects on adult mortality due to extrinsic causes of death</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Démographie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Après des décennies d'amélioration, l'espérance de vie a stagné dans plusieurs pays à faible mortalité ces dernières années, avec, dans certains cas, quelques reculs. L’augmentation de la mortalité due à la grippe et aux surdoses de drogue, en particulier dans la génération des baby-boomers, a été le principal responsable de cette stagnation de l’espérance de vie. Cette découverte était inattendue, car il est considéré que la mortalité extrinsèque – par opposition à la mortalité intrinsèque due à des maladies dégénératives se déclarant souvent aux grands âges – joue un rôle négligeable dans les changements actuels d'espérance de vie. Pour la même raison, les tendances temporelles de la mortalité extrinsèque n’ont guère retenu l’attention des chercheurs. Les crises périodiques dues aux épidémies de grippe et à la crise des opioïdes sont considérées comme les principaux déterminants des variations de la mortalité extrinsèque. Cependant, des preuves récentes suggèrent que les effets de cohorte jouent un rôle important dans la modulation de la mortalité extrinsèque, mais que de telles influences sont encore mal connues.
+L'objectif principal de cette thèse est d'examiner le rôle des effets de cohorte sur l’évolution de la mortalité extrinsèque dans les dernières décennies, avec un accent particulier mis sur la grippe et les causes de décès comportementales. Plus spécifiquement, elle vise à (1) déterminer les différences par cohorte de mortalité par la grippe et l’influence des expositions précoces au virus sur cette mortalité; (2) analyser le désavantage de mortalité des baby-boomers au Canada et aux États-Unis en identifiant la contribution des causes comportementales à ce désavantage; et (3) développer un outil méthodologique permettant à la fois l'analyse visuelle de la dynamique temporelle des effets non linéaires d'âge, de période et de cohorte (APC) et la comparaison entre divers phénomènes ou populations.
+Pour ces analyses, nous utilisons des micro-données de mortalité provenant de systèmes de statistiques de l’état civil au Canada et aux États-Unis. Nous utilisons également les taux de mortalité et de fécondité de divers pays pour généraliser l'analyse visuelle des effets non linéaires à d'autres phénomènes démographiques que la mortalité. Les analyses ont été réalisées en appliquant des modèles de Serfling pour l’estimation de la mortalité par grippe, des mesures démographiques permettant une décomposition par cause des variations de la mortalité, des techniques de lissage pour identifier les tendances et des approches statistiques et visuelles sur des configurations de Lexis pour l’analyse des effets APC.
+Les résultats, sous la forme de trois articles scientifiques, montrent que malgré des fluctuations marquées au cours des années calendrier (période), les cohortes de naissance ont une influence indépendante et durable sur la mortalité liée à la grippe ou due au comportement. Les principaux résultats du premier article suggèrent que deux mécanismes modulent la mortalité grippale au fil des cohortes. Pour la population jeune et adulte, les risques de mortalité par cohortes  dépendent du contraste en le premier virus auquel on est vraisemblablement exposé (le virus laissant« l’empreinte antigénique ») et le virus rencontré à l’âge adulte, au moment de l’épidémie sous observation. Des modifications significatives du risque de décès ont ainsi été observées lors d’épidémies de grippes pour les cohortes nées lors d'importants changements antigéniques (par exemple, une diminution significative du risque pour les cohortes nées entre 1957 et 1968). Pour les âges plus avancés, nous n’avons pas identifié de tels effets de cohorte « ponctuels », mais plutôt un effet de cohorte de plus longue haleine, qui aura conduit à un déclin progressif de la mortalité par grippe entre 1959 et 2016. En nous inspirant des théories dites de technophysio ou de cohort morbidity phenotype, nous attribuons ce déclin à des changements s’étant produit bien avant, c’est-à-dire à l’amélioration marqué des conditions sanitaires qui a eu lieu entre 1900 et 1930, au moment où les cohortes concernées venaient au monde et dont elles ont pu bénéficier. 
+Les travaux du deuxième article de cette thèse révèlent que la plupart des excès de mortalité chez les baby-boomers au Canada et aux États-Unis sont dus à des causes comportementales. Le désavantage des baby-boomers résulte de plusieurs effets de cohortes sur des causes comportementales différentes, et non pas d'effets de période ponctuels affectant la même cohorte aux âges différents, un mécanisme alternatif qui pourrait expliquer la «pénalité des boomers». Les baby-boomers présentaient respectivement un risque d'hépatite C et de mortalité par drogue trois fois et deux fois plus élevé que les cohortes voisines. La contribution méthodologique des graphique de courbure APC, présentée dans le troisième article, nous a permis d'analyser la dynamique des effets non linéaires au fil du temps, à travers divers phénomènes et populations. Cette technique offre une plus grande flexibilité que les modèles statistiques ou autres graphiques de Lexis.
+Les résultats présentés dans cette thèse montrent l'importance d'analyser les effets de cohortes sur la mortalité extrinsèque. Nos résultats indiquent que même en présence de perturbations de période importantes affectant la mortalité extrinsèque à la plupart des âges, les effets de cohorte se sont maintenus au fil du temps. Ces résultats suggèrent également que les politiques publiques peuvent améliorer considérablement la santé de la population en formulant des politiques qui prennent en compte la sensibilité différentielle des cohortes aux facteurs de risque et en fournissant un soutien social aux cohortes les plus vulnérables.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">After decades of improvement, life expectancy momentarily declined during 2014-15 in several high income countries, with subsequent reversals in some cases. The main sources of this stagnation have been increases in mortality from influenza and drug overdoses, mainly for the baby-boomer generation. This trend is unexpected because it has long been assumed that extrinsic mortality, which is due to causes originating outside the body – in opposition to intrinsic mortality from degenerative diseases at old ages –, plays a negligible role in life expectancy changes. For this reason, the temporal patterns of extrinsic mortality have received little attention in demographic research. Period crises such as influenza epidemics and the opioid crisis are considered the main determinants of variations of extrinsic mortality. However, despite recent evidence suggesting that cohort effects have an important role in modulating extrinsic mortality, little is known about this relationship. 
+The main objective of this dissertation is to help fill this gap by examining cohort influences on extrinsic mortality change, with a particular emphasis on influenza and behavioral causes. More specifically, we aim (1) to quantify cohort differences in mortality from influenza and the influence of early life exposures to the virus on subsequent influenza mortality; (2) to analyze the baby boomers’ disadvantage in mortality in Canada and the United States, while identifying the contributions of behavioral causes to this disadvantage; and (3) to develop a methodological tool that can be used to both conduct visual analysis of the temporal dynamics of nonlinear Age-Period-Cohort (APC) effects, and compare these dynamics across various phenomena or populations.
+To achieve these goals, we use micro-level mortality data from vital statistics in Canada and the United States. We also employ death and fertility rates from various countries to generalize the visual analysis of nonlinear effects to other demographic phenomena. The analyses were conducted by applying Serfling models for the estimation of influenza mortality, demographic measures for the decomposition of cause-specific mortality changes, smoothing techniques for the identification of trends, and statistical and visual approaches on the Lexis configuration for the analysis of APC effects. 
+The results, in the form of three scientific articles, show that despite marked fluctuations over calendar years (periods), birth cohorts have an independent and sustained influence on influenza and mortality from behavioral causes. The main results from the first paper suggest that two mechanisms modulated influenza mortality over cohorts. For the young and adult population, the mortality risks over cohorts depend of the contrast between the first virus to which individuals were exposed (the virus producing an antigenic imprinting) and the virus encountered in adulthood during the observed epidemic. For this age segment, significant changes in risk were found during influenza epidemics among cohorts born during important antigenic shifts (e.g., a decrease in risk for cohorts born between 1957 and 1968). For older ages, we did not identify such “punctual” cohort effects but rather a smooth and monotonic change in cohort effects that might have driven a progressive decline in influenza mortality between 1959 and 2016. Inspired by so-called cohort morbidity phenotype and technophysio evolution theories, we attributed this decline to changes produced earlier, i.e., to the sharp sanitary improvements occurred between 1900 and 1930, when the concerned cohorts were born and when they could have benefited.
+Findings from the second paper revealed that most of the baby boomers’ excess mortality in Canada and the United States is driven by behavioral causes of death. The “boomer disadvantage” resulted from multiple cohort effects on behavioral-related mortality, and not from punctual period effects affecting the same cohort at different ages. Among the baby boomers, the risk of dying from hepatitis C was almost three times higher, and the risk of dying from drug-related causes was almost two times higher, than among the adjacent cohorts. These results were obtained using an innovative methodology developed in the third paper, which allowed us to analyze the dynamics of nonlinear effects over time through APC curvature plots. This technique provides greater flexibility than statistical models or other Lexis plots, and it has been shown to be applicable to other demographic phenomena, such as fertility.
+The findings presented in this dissertation offer evidence of the importance of analyzing cohort effects on extrinsic mortality. Our results indicate that even in the presence of substantial period disturbances affecting extrinsic mortality at most ages, cohort effects were sustained over time. These findings also suggest that public policies can significantly improve the health of the population by formulating policies that take into account the differential sensitivity of cohorts to risk factors and by providing social support to the most vulnerable cohorts.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">UdeM.ORCIDAuteurThese</td><td class="word-break">0000-0001-6250-4018</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F23411&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=D%C3%A9mographie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/23411/Acosta_Enrique_2019_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/23411/Acosta_Enrique_2019_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Acosta_Enrique_2019_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/23411/Acosta_Enrique_2019_these.pdf?sequence=2&amp;isAllowed=y">Acosta_Enrique_2019_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">10.18Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2982/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2982">Faculté des arts et des sciences – Département de démographie – Thèses et mémoires</a> [145]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/23411">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

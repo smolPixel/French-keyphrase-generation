@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Study of microbial dietary supplementation and lipid dysregulation in neurodegeneration models</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Parker, Alex" name="DC.contributor">
+<meta content="Labarre, Audrey" name="DC.creator">
+<meta content="2022-02-15T19:39:22Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="MONTHS_WITHHELD:60" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2022-02-15T19:39:22Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-10-21" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2020-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/26331" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Neurodégénérescence" name="DC.subject" xml:lang="fr"/>
+<meta content="Probiotiques" name="DC.subject" xml:lang="fr"/>
+<meta content="Beta-oxydation" name="DC.subject" xml:lang="fr"/>
+<meta content="Sclérose latérale amyotrophique" name="DC.subject" xml:lang="fr"/>
+<meta content="Neurones" name="DC.subject" xml:lang="fr"/>
+<meta content="C. elegans" name="DC.subject" xml:lang="fr"/>
+<meta content="Microbiome" name="DC.subject" xml:lang="fr"/>
+<meta content="Lipides" name="DC.subject" xml:lang="fr"/>
+<meta content="Acides gras" name="DC.subject" xml:lang="fr"/>
+<meta content="Mitochondries" name="DC.subject" xml:lang="fr"/>
+<meta content="Neurodegeneration" name="DC.subject" xml:lang="fr"/>
+<meta content="Probiotics" name="DC.subject" xml:lang="fr"/>
+<meta content="Beta-oxidation" name="DC.subject" xml:lang="fr"/>
+<meta content="Amyotrophic lateral sclerosis" name="DC.subject" xml:lang="fr"/>
+<meta content="Neurons" name="DC.subject" xml:lang="fr"/>
+<meta content="Lipids" name="DC.subject" xml:lang="fr"/>
+<meta content="Fatty acids" name="DC.subject" xml:lang="fr"/>
+<meta content="Mitochondria" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Neuroscience / Biologie - Neurologie (UMI : 0317)" name="DC.subject" xml:lang="fr"/>
+<meta content="Study of microbial dietary supplementation and lipid dysregulation in neurodegeneration models" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La sclérose latérale amyotrophique (SLA) est une maladie neurodégénérative incurable partageant des mécanismes pathogéniques avec la démence frontotemporale (DFT). Elle est caractérisée par la dégénérescence sélective des neurones moteurs de la moelle épinière et du cerveau. Depuis les 25 dernières années, plus de 20 gènes ont été associés avec ces maladies, incluant FUS, C9ORF72 et TARDBP. Cependant, les liens entre la pathologie, le stade de la maladie et les mécanismes cellulaires demeurent incertains, mais semblent être multifactoriels. Bien que la SLA soit principalement considérée comme une maladie affectant le système nerveux, plusieurs d’observations suggèrent que des signaux périphériques, incluant ceux du tractus gastro-intestinal et de son microbiome, pourraient influencer la progression de la maladie. Récemment, de nouvelles études font état de perturbations du microbiome, appelé dysbiose, de la bioénergétique mitochondriale et de la composition lipidiques dans la SLA. Toutefois, il y a un manque considérable de compréhension de l’effet de ces perturbations sur la pathogenèse de la SLA. Une dysbiose a également été identifiée dans d’autres maladies neurodégénératives, telles que la maladie d’Alzheimer (MA) et la maladie d’Huntington (MH). En utilisant l’organisme modèle Caenorhabditis elegans, nous avons identifié une souche probiotique, Lacticaseibacillus rhamnosus HA-114, ayant des propriétés neuroprotectives dans différents modèles de SLA et de MH.
+
+Dans la première partie de cette thèse, nous avons démontrés que la neuroprotection conférée par L. rhamnosus HA-114 est unique par rapport aux autres souches de L. rhamnosus et réside dans son contenu en acide gras. Ces effets bénéfiques requièrent acdh-1/ACADSB, kat-1/ACAT1 and elo-6/ELOVL3/6, gènes impliqués dans le métabolisme des lipides et la β-oxydation mitochondriale. De plus, HA-114 retarde l’apparition des symptômes et réduit la neurodégénérescence chez la souris SOD1G93A. Nos résultats suggèrent que des perturbations du métabolisme des lipides contribuent à la neurodégénérescence et que HA-114 restaure l’homéostasie lipidique et énergétique via la β-oxydation mitochondriale.
+Dans la seconde partie de cette thèse, nous avons utilisé le C. elegans et avons caractérisé l’orthologue de CHCHD10, har-1, dans plusieurs essais afin d’étudier son implication dans la SLA et la DFT. CHCHD10 code pour une protéine impliquée dans la maintenance de la morphologie mitochondriale et la phosphorylation oxydative. Des mutations dans ce gène ont récemment été liées à la SLA. Nous avons caractérisé deux allèles distincts : une délétion de 260 pb (gk3124) et une mutation ponctuelle (ad2155). Les mutants har-1(gk3124) et har-1(ad2155) développent une paralysie, une dégénérescence des neurones GABAergiques et une altération de la santé mitochondriale. Le pioglitazone et le 2,4-thiazolidinedione, deux composés régulant la santé mitochondriale, restaurent plusieurs phénotypes associés à la SLA chez les mutants har-1. De plus, L. rhamnosus HA-114 a également des effets similaires sur ces souches. 
+
+Ces résultats semblent confirmer un lien entre le microbiome et la SLA et pourraient ouvrir la voie à de futures thérapies via la modulation de l’environnement intestinal. De plus, découvrir les mécanismes impliqués dans cette neuroprotection permettrait sans doute la découverte de nouveaux gènes et de biomolécules actives ayant la capacité de moduler la neurodégénérescence, ouvrant la voie à l’utilisation de nouveaux médicaments." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Amyotrophic lateral sclerosis (ALS) is an incurable neurodegenerative disease sharing pathological pathways with frontotemporal dementia (FTD). It is characterized by the selective degeneration of lower and upper motor neurons in the spinal cord and cerebral cortex. Over the last 25 years, more than 20 genes have been associated with these diseases, including FUS, C9ORF72 and TARDBP. Despite over a century of medical investigation, the links between pathology, disease stage and cellular mechanisms are still unclear, but may be multifactorial involving unresolved gene-environment interactions. While ALS is primarily considered a central nervous system disease, emerging evidence suggests that peripheral signals, including those from the gastrointestinal tract and gut microbiota, may be involved in ALS progression. Over the last year, new evidence showed perturbations in microbiota (called dysbiosis), mitochondrial bioenergetics, and in lipid composition in ALS. However, there is a considerable lack of understanding of the effect of these perturbations in ALS pathogenesis. Interestingly, dysbiosis has also been linked to other neurological conditions like Alzheimer’s disease (AD) and Huntington’s disease (HD). Using the model organism Caenorhabditis elegans, we discovered a probiotic bacterial strain, Lacticaseibacillus rhamnosus HA-114, with neuroprotective properties in models of ALS and HD. 
+In the first part of this thesis, we demonstrated that neuroprotection from L. rhamnosus HA-114 is unique from other L. rhamnosus strains, and resides in its fatty acid content. Neuroprotection by L. rhamnosus HA-114 requires acdh-1/ACADSB, kat-1/ACAT1 and elo-6/ELOVL3/6, which are key fatty acid metabolism and mitochondrial β-oxidation genes. Moreover, L. rhamnosus HA-114 delayed disease onset and suppressed motor neuron degeneration in an aggressive mouse model of ALS. Our data suggest that disrupted lipid metabolism contributes to neurodegeneration and that dietary intervention with L. rhamnosus HA-114 restores lipid homeostasis and energy balance through mitochondrial β-oxidation. 
+In the second part of this thesis, we used C. elegans and characterized the CHCHD10 orthologue har-1, in a number of behavioral assays, to learn more about the biological role of this gene and its implication in ALS-FTD pathogenesis. CHCHD10 is a widely expressed gene coding for a mitochondrial protein with a potential role in cristae morphology maintenance and/or oxidative phosphorylation with mutations recently associated with ALS. We characterized two distinct alleles: a deletion of 260 bp (gk3124) and a point mutation (ad2155). Both har-1 (gk3124) and har-1 (ad2155) worms display age-dependent motility defects leading to paralysis, degeneration of GABAergic neurons and altered mitochondrial health. The small molecules, pioglitazone and 2,4-thiazolidinedione, with known neuroprotective activity, and also shown to regulate mitochondrial health, suppressed several har-1 phenotypes. Moreover, dietary supplementation of L. rhamnosus HA-114 improved several ALS-related phenotypes in these har-1 mutants. 
+These findings may confirm a link between microbiota and ALS and can lead to future therapies, through the modulation of the intestinal environment. L. rhamnosus HA-114 is suitable for human consumption opening the possibility of modifying disease progression by dietary intervention. Furthermore, uncovering the complete neuroprotection pathway may give us insights into new genes and bioactive molecules able to modulate neurodegeneration, thus opening the door to new therapeutic approaches." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Neurodégénérescence; Probiotiques; Beta-oxydation; Sclérose latérale amyotrophique; Neurones; C. elegans; Microbiome; Lipides; Acides gras; Mitochondries; Neurodegeneration; Probiotics; Beta-oxidation; Amyotrophic lateral sclerosis; Neurons; Lipids; Fatty acids; Mitochondria; Biology - Neuroscience / Biologie - Neurologie (UMI : 0317); Thèse ou mémoire / Thesis or Dissertation; Sciences neurologiques" name="citation_keywords"/>
+<meta content="Study of microbial dietary supplementation and lipid dysregulation in neurodegeneration models" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Labarre, Audrey" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/26331/2/Labarre_Audrey_2021_these.pdf" name="citation_pdf_url"/>
+<meta content="2021-10-21" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/26331" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26331?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26331?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26331?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26331?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26331?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26331?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/26331/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26331">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/26331/mets.xml-->
+<h2 class="page-header first-page-header">Study of microbial dietary supplementation and lipid dysregulation in neurodegeneration models</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Parker, Alex</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Labarre, Audrey</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2022-02-15T19:39:22Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">MONTHS_WITHHELD:60</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2022-02-15T19:39:22Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-10-21</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2020-12</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/26331</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Neurodégénérescence</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Probiotiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Beta-oxydation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Sclérose latérale amyotrophique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Neurones</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">C. elegans</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Microbiome</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Lipides</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Acides gras</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Mitochondries</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Neurodegeneration</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Probiotics</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Beta-oxidation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Amyotrophic lateral sclerosis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Neurons</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Lipids</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Fatty acids</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Mitochondria</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Neuroscience / Biologie - Neurologie (UMI : 0317)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Study of microbial dietary supplementation and lipid dysregulation in neurodegeneration models</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences neurologiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La sclérose latérale amyotrophique (SLA) est une maladie neurodégénérative incurable partageant des mécanismes pathogéniques avec la démence frontotemporale (DFT). Elle est caractérisée par la dégénérescence sélective des neurones moteurs de la moelle épinière et du cerveau. Depuis les 25 dernières années, plus de 20 gènes ont été associés avec ces maladies, incluant FUS, C9ORF72 et TARDBP. Cependant, les liens entre la pathologie, le stade de la maladie et les mécanismes cellulaires demeurent incertains, mais semblent être multifactoriels. Bien que la SLA soit principalement considérée comme une maladie affectant le système nerveux, plusieurs d’observations suggèrent que des signaux périphériques, incluant ceux du tractus gastro-intestinal et de son microbiome, pourraient influencer la progression de la maladie. Récemment, de nouvelles études font état de perturbations du microbiome, appelé dysbiose, de la bioénergétique mitochondriale et de la composition lipidiques dans la SLA. Toutefois, il y a un manque considérable de compréhension de l’effet de ces perturbations sur la pathogenèse de la SLA. Une dysbiose a également été identifiée dans d’autres maladies neurodégénératives, telles que la maladie d’Alzheimer (MA) et la maladie d’Huntington (MH). En utilisant l’organisme modèle Caenorhabditis elegans, nous avons identifié une souche probiotique, Lacticaseibacillus rhamnosus HA-114, ayant des propriétés neuroprotectives dans différents modèles de SLA et de MH.
+
+Dans la première partie de cette thèse, nous avons démontrés que la neuroprotection conférée par L. rhamnosus HA-114 est unique par rapport aux autres souches de L. rhamnosus et réside dans son contenu en acide gras. Ces effets bénéfiques requièrent acdh-1/ACADSB, kat-1/ACAT1 and elo-6/ELOVL3/6, gènes impliqués dans le métabolisme des lipides et la β-oxydation mitochondriale. De plus, HA-114 retarde l’apparition des symptômes et réduit la neurodégénérescence chez la souris SOD1G93A. Nos résultats suggèrent que des perturbations du métabolisme des lipides contribuent à la neurodégénérescence et que HA-114 restaure l’homéostasie lipidique et énergétique via la β-oxydation mitochondriale.
+Dans la seconde partie de cette thèse, nous avons utilisé le C. elegans et avons caractérisé l’orthologue de CHCHD10, har-1, dans plusieurs essais afin d’étudier son implication dans la SLA et la DFT. CHCHD10 code pour une protéine impliquée dans la maintenance de la morphologie mitochondriale et la phosphorylation oxydative. Des mutations dans ce gène ont récemment été liées à la SLA. Nous avons caractérisé deux allèles distincts : une délétion de 260 pb (gk3124) et une mutation ponctuelle (ad2155). Les mutants har-1(gk3124) et har-1(ad2155) développent une paralysie, une dégénérescence des neurones GABAergiques et une altération de la santé mitochondriale. Le pioglitazone et le 2,4-thiazolidinedione, deux composés régulant la santé mitochondriale, restaurent plusieurs phénotypes associés à la SLA chez les mutants har-1. De plus, L. rhamnosus HA-114 a également des effets similaires sur ces souches. 
+
+Ces résultats semblent confirmer un lien entre le microbiome et la SLA et pourraient ouvrir la voie à de futures thérapies via la modulation de l’environnement intestinal. De plus, découvrir les mécanismes impliqués dans cette neuroprotection permettrait sans doute la découverte de nouveaux gènes et de biomolécules actives ayant la capacité de moduler la neurodégénérescence, ouvrant la voie à l’utilisation de nouveaux médicaments.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Amyotrophic lateral sclerosis (ALS) is an incurable neurodegenerative disease sharing pathological pathways with frontotemporal dementia (FTD). It is characterized by the selective degeneration of lower and upper motor neurons in the spinal cord and cerebral cortex. Over the last 25 years, more than 20 genes have been associated with these diseases, including FUS, C9ORF72 and TARDBP. Despite over a century of medical investigation, the links between pathology, disease stage and cellular mechanisms are still unclear, but may be multifactorial involving unresolved gene-environment interactions. While ALS is primarily considered a central nervous system disease, emerging evidence suggests that peripheral signals, including those from the gastrointestinal tract and gut microbiota, may be involved in ALS progression. Over the last year, new evidence showed perturbations in microbiota (called dysbiosis), mitochondrial bioenergetics, and in lipid composition in ALS. However, there is a considerable lack of understanding of the effect of these perturbations in ALS pathogenesis. Interestingly, dysbiosis has also been linked to other neurological conditions like Alzheimer’s disease (AD) and Huntington’s disease (HD). Using the model organism Caenorhabditis elegans, we discovered a probiotic bacterial strain, Lacticaseibacillus rhamnosus HA-114, with neuroprotective properties in models of ALS and HD. 
+In the first part of this thesis, we demonstrated that neuroprotection from L. rhamnosus HA-114 is unique from other L. rhamnosus strains, and resides in its fatty acid content. Neuroprotection by L. rhamnosus HA-114 requires acdh-1/ACADSB, kat-1/ACAT1 and elo-6/ELOVL3/6, which are key fatty acid metabolism and mitochondrial β-oxidation genes. Moreover, L. rhamnosus HA-114 delayed disease onset and suppressed motor neuron degeneration in an aggressive mouse model of ALS. Our data suggest that disrupted lipid metabolism contributes to neurodegeneration and that dietary intervention with L. rhamnosus HA-114 restores lipid homeostasis and energy balance through mitochondrial β-oxidation. 
+In the second part of this thesis, we used C. elegans and characterized the CHCHD10 orthologue har-1, in a number of behavioral assays, to learn more about the biological role of this gene and its implication in ALS-FTD pathogenesis. CHCHD10 is a widely expressed gene coding for a mitochondrial protein with a potential role in cristae morphology maintenance and/or oxidative phosphorylation with mutations recently associated with ALS. We characterized two distinct alleles: a deletion of 260 bp (gk3124) and a point mutation (ad2155). Both har-1 (gk3124) and har-1 (ad2155) worms display age-dependent motility defects leading to paralysis, degeneration of GABAergic neurons and altered mitochondrial health. The small molecules, pioglitazone and 2,4-thiazolidinedione, with known neuroprotective activity, and also shown to regulate mitochondrial health, suppressed several har-1 phenotypes. Moreover, dietary supplementation of L. rhamnosus HA-114 improved several ALS-related phenotypes in these har-1 mutants. 
+These findings may confirm a link between microbiota and ALS and can lead to future therapies, through the modulation of the intestinal environment. L. rhamnosus HA-114 is suitable for human consumption opening the possibility of modifying disease progression by dietary intervention. Furthermore, uncovering the complete neuroprotection pathway may give us insights into new genes and bioactive molecules able to modulate neurodegeneration, thus opening the door to new therapeutic approaches.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">UdeM.ORCIDAuteurThese</td><td class="word-break">0000-0002-2167-2290</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F26331&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+neurologiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a href="/xmlui/bitstream/handle/1866/26331/Labarre_Audrey_2021_these.pdf?sequence=2&amp;isAllowed=y"><img alt="PDF" class="thumbnail-papyrus thumbnail_icone" height="122" src="/xmlui/themes/Mirage2/images/mimes/mime_pdf.png" style="height: 122px;" title="PDF" width="92"/></a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Labarre_Audrey_2021_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/26331/Labarre_Audrey_2021_these.pdf?sequence=2&amp;isAllowed=y">Labarre_Audrey_2021_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">19.64Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+<div>
+<span class="bold embargo"><span class="dateembargo">Under embargo</span> until: </span> <span class="embargo dateembargo">2026-10-21</span>
+<div class="btn_request_a_copy">
+<a class="btn_request_a_copy" href="/xmlui/bitstream/handle/1866/26331/Labarre_Audrey_2021_these.pdf?sequence=2&amp;isAllowed=y">🔓 Request copy</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26331">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

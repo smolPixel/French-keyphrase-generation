@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import time
 
-Max_index = 25000
+Max_index = 26508
 
 def main():
 	index=Max_index
@@ -19,8 +19,7 @@ def main():
 			file.write(str(soup))
 		time.sleep(0.5)
 		index=index-1
-		if index==24900:
-			break
+
 
 if __name__=='__main__':
 	main()

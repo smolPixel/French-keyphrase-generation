@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Bases moléculaires et cellulaires d’un trouble neurodéveloppemental causé par l’haploinsuffisance de SYNGAP1</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Di Cristo, Graziella" name="DC.contributor">
+<meta content="Michaud, Jacques" name="DC.contributor">
+<meta content="Berryer, Martin, H" name="DC.creator">
+<meta content="2016-05-26T16:08:29Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2016-05-26T16:08:29Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2016-04-21" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2015-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/13907" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Déficience intellectuelle non syndromique" name="DC.subject" xml:lang="fr"/>
+<meta content="SYNGAP1" name="DC.subject" xml:lang="fr"/>
+<meta content="mutations de novo tronquantes et faux sens" name="DC.subject" xml:lang="fr"/>
+<meta content="interneurones GABAergiques" name="DC.subject" xml:lang="fr"/>
+<meta content="innervation périsomatique inhibitrice" name="DC.subject" xml:lang="fr"/>
+<meta content="souris Tg(Nkx2.1-Cre);Syngap1flox/+" name="DC.subject" xml:lang="fr"/>
+<meta content="neurotransmission GABAergique" name="DC.subject" xml:lang="fr"/>
+<meta content="comportement et cognition" name="DC.subject" xml:lang="fr"/>
+<meta content="Non-syndromic intellectual deficiency" name="DC.subject" xml:lang="fr"/>
+<meta content="SYNGAP1" name="DC.subject" xml:lang="fr"/>
+<meta content="de novo truncating and missense mutations" name="DC.subject" xml:lang="fr"/>
+<meta content="inhibitory perisomatic innervation" name="DC.subject" xml:lang="fr"/>
+<meta content="Tg(Nkx2.1-Cre);Syngap1flox/+ mouse" name="DC.subject" xml:lang="fr"/>
+<meta content="GABAergic neurotransmission" name="DC.subject" xml:lang="fr"/>
+<meta content="behavior and cognition" name="DC.subject" xml:lang="fr"/>
+<meta content="parvalbumin" name="DC.subject" xml:lang="fr"/>
+<meta content="medial ganglionic eminence derived GABAergic interneuron" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Neuroscience / Biologie - Neurologie (UMI : 0317)" name="DC.subject" xml:lang="fr"/>
+<meta content="Bases moléculaires et cellulaires d’un trouble neurodéveloppemental causé par l’haploinsuffisance de SYNGAP1" name="DC.title"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La déficience intellectuelle est la cause d’handicap la plus fréquente chez l’enfant. De nombreuses évidences convergent vers l’idée selon laquelle des altérations dans les gènes synaptiques puissent expliquer une fraction significative des affections neurodéveloppementales telles que la déficience intellectuelle ou encore l’autisme. Jusqu’à récemment, la majorité des mutations associées à la déficience intellectuelle a été liée au chromosome X ou à la transmission autosomique récessive. D’un autre côté, plusieurs études récentes suggèrent que des mutations de novo dans des gènes à transmission autosomique dominante, requis dans les processus de la plasticité synaptique peuvent être à la source d’une importante fraction des cas de déficience intellectuelle non syndromique. Par des techniques permettant la capture de l’exome et le séquençage de l’ADN génomique, notre laboratoire a précédemment reporté les premières mutations pathogéniques dans le gène à transmission autosomique dominante SYNGAP1. Ces dernières ont été associées à des troubles comportementaux tels que la déficience intellectuelle, l’inattention, des problèmes d’humeur, d’impulsivité et d’agressions physiques. D’autres patients sont diagnostiqués avec des troubles autistiques et/ou des formes particulières d’épilepsie généralisée.
+Chez la souris, le knock-out constitutif de Syngap1 (souris Syngap1+/-) résulte en des déficits comme l’hyperactivité locomotrice, une réduction du comportement associée à l’anxiété, une augmentation du réflexe de sursaut, une propension à l’isolation, des problèmes dans le conditionnement à la peur, des troubles dans les mémoires de travail, de référence et social. Ainsi, la souris Syngap1+/- représente un modèle approprié pour l’étude des effets délétères causés par l’haploinsuffisance de SYNGAP1 sur le développement de circuits neuronaux. D’autre part, il est de première importance de statuer si les mutations humaines aboutissent à l’haploinsuffisance de la protéine.
+SYNGAP1 encode pour une protéine à activité GTPase pour Ras. Son haploinsuffisance entraîne l’augmentation des niveaux d’activité de Ras, de phosphorylation de ERK, cause une morphogenèse anormale des épines dendritiques et un excès dans la concentration des récepteurs AMPA à la membrane postsynaptique des neurones excitateurs. Plusieurs études suggèrent que l’augmentation précoce de l’insertion des récepteurs AMPA au sein des synapses glutamatergiques contribue à certains phénotypes observés chez la souris Syngap1+/-. En revanche, les conséquences de l’haploinsuffisance de SYNGAP1 sur les circuits neuronaux GABAergiques restent inconnues.
+Les enjeux de mon projet de PhD sont: 1) d’identifier l’impact de mutations humaines dans la fonction de SYNGAP1; 2) de déterminer si SYNGAP1 contribue au développement et à la fonction des circuits GABAergiques; 3) de révéler comment l’haploinsuffisance de Syngap1 restreinte aux circuits GABAergiques affecte le comportement et la cognition.
+Nous avons publié les premières mutations humaines de type faux-sens dans le gène SYNGAP1 (c.1084T&gt;C [p.W362R]; c.1685C&gt;T [p.P562L]) ainsi que deux nouvelles mutations tronquantes (c.2212_2213del [p.S738X]; c.283dupC [p.H95PfsX5]). Ces dernières sont toutes de novo à l’exception de c.283dupC, héritée d’un père mosaïque pour la même mutation. Dans cette étude, nous avons confirmé que les patients pourvus de mutations dans SYNGAP1 présentent, entre autre, des phénotypes associés à des troubles comportementaux relatifs à la déficience intellectuelle. En culture organotypique, la transfection biolistique de l’ADNc de Syngap1 wild-type dans des cellules pyramidales corticales réduit significativement les niveaux de pERK, en fonction de l’activité neuronale. Au contraire les constructions plasmidiques exprimant les mutations W362R, P562L, ou celle précédemment répertoriée R579X, n’engendre aucun effet significatif sur les niveaux de pERK. Ces résultats suggèrent que ces mutations faux-sens et tronquante résultent en la perte de la fonction de SYNGAP1 ayant fort probablement pour conséquences d’affecter la régulation du développement cérébral. 
+	Plusieurs études publiées suggèrent que les déficits cognitifs associés à l’haploinsuffisance de SYNGAP1 peuvent émerger d’altérations dans le développement des neurones excitateurs glutamatergiques. Toutefois, si, et auquel cas, de quelle manière ces mutations affectent le développement des interneurones GABAergiques résultant en un déséquilibre entre l’excitation et l’inhibition et aux déficits cognitifs restent sujet de controverses. Par conséquent, nous avons examiné la contribution de Syngap1 dans le développement des circuits GABAergiques. A cette fin, nous avons généré une souris mutante knockout conditionnelle dans laquelle un allèle de Syngap1 est spécifiquement excisé dans les interneurones GABAergiques issus de l’éminence ganglionnaire médiale (souris Tg(Nkx2.1-Cre);Syngap1flox/+). En culture organotypique, nous avons démontré que la réduction de Syngap1 restreinte aux interneurones inhibiteurs résulte en des altérations au niveau de leur arborisation axonale et dans leur densité synaptique. De plus, réalisés sur des coupes de cerveau de souris Tg(Nkx2.1-Cre);Syngap1flox/+, les enregistrements des courants inhibiteurs postsynaptiques miniatures (mIPSC) ou encore de ceux évoqués au moyen de l’optogénétique (oIPSC) dévoilent une réduction significative de la neurotransmission inhibitrice corticale. Enfin, nous avons comparé les performances de souris jeunes adultes Syngap1+/-, Tg(Nkx2.1-Cre);Syngap1flox/+ à celles de leurs congénères contrôles dans une batterie de tests comportementaux. À l’inverse des souris Syngap1+/-, les souris Tg(Nkx2.1-Cre);Syngap1flox/+ ne présentent pas d’hyperactivité locomotrice, ni de comportement associé à l’anxiété. Cependant, elles démontrent des déficits similaires dans la mémoire de travail et de reconnaissance sociale, suggérant que l’haploinsuffisance de Syngap1 restreinte aux interneurones GABAergiques dérivés de l’éminence ganglionnaire médiale récapitule en partie certains des phénotypes cognitifs observés chez la souris Syngap1+/-. 
+Mes travaux de PhD établissent pour la première fois que les mutations humaines dans le gène SYNGAP1 associés à la déficience intellectuelle causent la perte de fonction de la protéine. Mes études dévoilent, également pour la première fois, l’influence significative de ce gène dans la régulation du développement et de la fonction des interneurones. D’admettre l’atteinte des cellules GABAergiques illustre plus réalistement la complexité de la déficience intellectuelle non syndromique causée par l’haploinsuffisance de SYNGAP1. Ainsi, seule une compréhension raffinée de cette condition neurodéveloppementale pourra mener à une approche thérapeutique adéquate." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Intellectual deficiency is the most frequent cause of severe handicap in children. A growing body of work indicates that disruption of synaptic genes explains a significant fraction of neurodevelopmental disorders, such as intellectual deficiency and autism. Until recently, the majority of known mutations associated with non-syndromic intellectual deficiency were either X-linked or autosomal recessive. On the other hand, more recent studies suggest that de novo mutations in autosomal genes required for synaptic plasticity may explain an important fraction of cases of non-syndromic intellectual deficiency. Using exome capture and genomic DNA sequencing technics, our laboratory reported for the first time pathogenic mutations in the autosomal dominant gene of SYNGAP1. Pathogenic mutations in SYNGAP1 have been associated with behavioral abnormalities such as intellectual deficiency, inattention, mood problem, impulsivity, and physical aggression. In addition, a subset of these patients show acquired microcephaly, autism and/or specific forms of generalized epilepsy.
+Syngap1 germline knockout (Syngap1+/-) mice show several behavioral abnormalities, such as locomotor hyperactivity, decreased anxiety-like behavior, enhanced startle reactivity, lack of social memory, a propensity toward isolation, deficits in cued fear conditioning, and impaired reference and working memories. Thus, Syngap1+/- mice might represent a reliable experimental model to study the pathological effects of Syngap1 haploinsufficiency on neuronal circuit development. On the other hand, it is important to first establish whether mutations in Syngap1 found in human lead in fact to protein haploinsufficiency.  
+SYNGAP1 codes for a Ras GTPase-activating protein. Its haploinsufficiency results in an increased level of Ras activity and ERK phosphorylation, abnormal dendritic spine morphogenesis, and an excess of postsynaptic AMPA receptors in excitatory neurons. Specifically, it has been suggested that prematurely increased insertion of AMPA receptors into excitatory synapses could explain some of the phenotypes observed in Syngap1+/- mice. Conversely, the role of Syngap1 haploinsufficiency in GABAergic circuits is unknown.
+The aims of my thesis project are: 1), to identify the impact of human mutations on SYNGAP1 function; 2) to determine whether SYNGAP1 plays a role in GABAergic circuit development and function, and 3) to reveal how Syngap1 haploinsufficiency specifically in GABAergic circuits affects cognitive behavior.
+We reported the first missense mutations (c.1084T&gt;C [p.W362R]; c.1685C&gt;T [p.P562L]), as well as two novel truncating mutations (c.2212_2213del [p.S738X]; c.283dupC [p.H95PfsX5]) in SYNGAP1 in humans. These mutations are de novo, except c.283dupC, which was inherited from a mosaic parent. In this study, we confirmed that patients with these mutations in SYNGAP1 showed, among other phenotypes, behavioral disorders associated with intellectual deficiency. Biolistic transfection of wild-type Syngap1 cDNA in pyramidal cells from cortical organotypic cultures significantly reduced neural activity-dependent pERK levels. In contrast, plasmid constructs expressing W362R, P562L or the previously described R579X mutations had no significant effect on pERK levels. These experiments suggest that these mutations in SYNGAP1 result in a loss of function, most probably disrupting brain development via a mechanism of haploinsufficiency. 
+Several studies suggest that the cognitive deficits associated with Syngap1 haploinsufficiency may arise from alterations in the developmental trajectory of glutamatergic excitatory neurons. Whether and to what extent Syngap1 haploinsufficiency affects the synaptic network development of GABAergic cells, thus contributing to excitation/inhibition imbalance and cognitive abnormalities, remains elusive. Therefore, we examined the involvement of Syngap1 in the development of GABAergic circuits. To this goal, we generated conditional knockout mice where one Syngap1 allele was removed specifically in GABAergic interneurons derived from the medial ganglionic eminence (MGE)  (Tg(Nkx2.1-Cre);Syngap1flox/+ mice). In organotypic cultures, we found that reduction of Syngap1 specifically in GABAergic interneurons resulted in alterations of their axonal arborisation and synapse density. Moreover, miniature inhibitory postsynaptic currents (mIPSC) and optogenetically-evoked IPSC (oIPSC) recordings in acute brain slices showed a significant reduction in cortical inhibitory neurotransmission in Tg(Nkx2.1-Cre);Syngap1flox/+ mice. Furthermore, we compared the performance of young adult Syngap1+/-, Tg(Nkx2.1-Cre);Syngap1flox/+ mice and their respective control littermates in several behavioral tests. Contrary to Syngap1+/- mice, Tg(Nkx2.1-Cre);Syngapflox/+ mice were not  hyperactive, and did not demonstrate any anxiety-like behavior. They, however, showed the same impairment in working and social recognition memory, indicating that Syngap1 disruption in MGE-derived GABAergic neurons recapitulate at least some of the cognitive deficits observed in Syngap1+/- mice. 
+All together, my PhD work first, demonstrated that human mutations in the SYNGAP1 gene associated with intellectual deficiency likely cause Syngap1 haploinsufficiency, and second, revealed for the first time a significant role of SYNGAP1 in the regulation of the development and function of GABAergic interneurons." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Déficience intellectuelle non syndromique; SYNGAP1; mutations de novo tronquantes et faux sens; interneurones GABAergiques; innervation périsomatique inhibitrice; souris Tg(Nkx2.1-Cre);Syngap1flox/+; neurotransmission GABAergique; comportement et cognition; Non-syndromic intellectual deficiency; SYNGAP1; de novo truncating and missense mutations; inhibitory perisomatic innervation; Tg(Nkx2.1-Cre);Syngap1flox/+ mouse; GABAergic neurotransmission; behavior and cognition; parvalbumin; medial ganglionic eminence derived GABAergic interneuron; Biology - Neuroscience / Biologie - Neurologie (UMI : 0317); Thèse ou mémoire / Thesis or Dissertation; Sciences biomédicales" name="citation_keywords"/>
+<meta content="Bases moléculaires et cellulaires d’un trouble neurodéveloppemental causé par l’haploinsuffisance de SYNGAP1" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Berryer, Martin, H" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/13907/4/Berryer_Martin_2015_these.pdf" name="citation_pdf_url"/>
+<meta content="2016-04-21" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/13907" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13907?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13907?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13907?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13907?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13907?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/13907?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/13907/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/13907">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/13907/mets.xml-->
+<h2 class="page-header first-page-header">Bases moléculaires et cellulaires d’un trouble neurodéveloppemental causé par l’haploinsuffisance de SYNGAP1</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Di Cristo, Graziella</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Michaud, Jacques</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Berryer, Martin, H</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2016-05-26T16:08:29Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2016-05-26T16:08:29Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2016-04-21</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2015-12</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/13907</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Déficience intellectuelle non syndromique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">SYNGAP1</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">mutations de novo tronquantes et faux sens</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">interneurones GABAergiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">innervation périsomatique inhibitrice</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">souris Tg(Nkx2.1-Cre);Syngap1flox/+</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">neurotransmission GABAergique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">comportement et cognition</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Non-syndromic intellectual deficiency</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">SYNGAP1</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">de novo truncating and missense mutations</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">inhibitory perisomatic innervation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Tg(Nkx2.1-Cre);Syngap1flox/+ mouse</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">GABAergic neurotransmission</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">behavior and cognition</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">parvalbumin</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">medial ganglionic eminence derived GABAergic interneuron</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Neuroscience / Biologie - Neurologie (UMI : 0317)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Bases moléculaires et cellulaires d’un trouble neurodéveloppemental causé par l’haploinsuffisance de SYNGAP1</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences biomédicales</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La déficience intellectuelle est la cause d’handicap la plus fréquente chez l’enfant. De nombreuses évidences convergent vers l’idée selon laquelle des altérations dans les gènes synaptiques puissent expliquer une fraction significative des affections neurodéveloppementales telles que la déficience intellectuelle ou encore l’autisme. Jusqu’à récemment, la majorité des mutations associées à la déficience intellectuelle a été liée au chromosome X ou à la transmission autosomique récessive. D’un autre côté, plusieurs études récentes suggèrent que des mutations de novo dans des gènes à transmission autosomique dominante, requis dans les processus de la plasticité synaptique peuvent être à la source d’une importante fraction des cas de déficience intellectuelle non syndromique. Par des techniques permettant la capture de l’exome et le séquençage de l’ADN génomique, notre laboratoire a précédemment reporté les premières mutations pathogéniques dans le gène à transmission autosomique dominante SYNGAP1. Ces dernières ont été associées à des troubles comportementaux tels que la déficience intellectuelle, l’inattention, des problèmes d’humeur, d’impulsivité et d’agressions physiques. D’autres patients sont diagnostiqués avec des troubles autistiques et/ou des formes particulières d’épilepsie généralisée.
+Chez la souris, le knock-out constitutif de Syngap1 (souris Syngap1+/-) résulte en des déficits comme l’hyperactivité locomotrice, une réduction du comportement associée à l’anxiété, une augmentation du réflexe de sursaut, une propension à l’isolation, des problèmes dans le conditionnement à la peur, des troubles dans les mémoires de travail, de référence et social. Ainsi, la souris Syngap1+/- représente un modèle approprié pour l’étude des effets délétères causés par l’haploinsuffisance de SYNGAP1 sur le développement de circuits neuronaux. D’autre part, il est de première importance de statuer si les mutations humaines aboutissent à l’haploinsuffisance de la protéine.
+SYNGAP1 encode pour une protéine à activité GTPase pour Ras. Son haploinsuffisance entraîne l’augmentation des niveaux d’activité de Ras, de phosphorylation de ERK, cause une morphogenèse anormale des épines dendritiques et un excès dans la concentration des récepteurs AMPA à la membrane postsynaptique des neurones excitateurs. Plusieurs études suggèrent que l’augmentation précoce de l’insertion des récepteurs AMPA au sein des synapses glutamatergiques contribue à certains phénotypes observés chez la souris Syngap1+/-. En revanche, les conséquences de l’haploinsuffisance de SYNGAP1 sur les circuits neuronaux GABAergiques restent inconnues.
+Les enjeux de mon projet de PhD sont: 1) d’identifier l’impact de mutations humaines dans la fonction de SYNGAP1; 2) de déterminer si SYNGAP1 contribue au développement et à la fonction des circuits GABAergiques; 3) de révéler comment l’haploinsuffisance de Syngap1 restreinte aux circuits GABAergiques affecte le comportement et la cognition.
+Nous avons publié les premières mutations humaines de type faux-sens dans le gène SYNGAP1 (c.1084T&gt;C [p.W362R]; c.1685C&gt;T [p.P562L]) ainsi que deux nouvelles mutations tronquantes (c.2212_2213del [p.S738X]; c.283dupC [p.H95PfsX5]). Ces dernières sont toutes de novo à l’exception de c.283dupC, héritée d’un père mosaïque pour la même mutation. Dans cette étude, nous avons confirmé que les patients pourvus de mutations dans SYNGAP1 présentent, entre autre, des phénotypes associés à des troubles comportementaux relatifs à la déficience intellectuelle. En culture organotypique, la transfection biolistique de l’ADNc de Syngap1 wild-type dans des cellules pyramidales corticales réduit significativement les niveaux de pERK, en fonction de l’activité neuronale. Au contraire les constructions plasmidiques exprimant les mutations W362R, P562L, ou celle précédemment répertoriée R579X, n’engendre aucun effet significatif sur les niveaux de pERK. Ces résultats suggèrent que ces mutations faux-sens et tronquante résultent en la perte de la fonction de SYNGAP1 ayant fort probablement pour conséquences d’affecter la régulation du développement cérébral. 
+	Plusieurs études publiées suggèrent que les déficits cognitifs associés à l’haploinsuffisance de SYNGAP1 peuvent émerger d’altérations dans le développement des neurones excitateurs glutamatergiques. Toutefois, si, et auquel cas, de quelle manière ces mutations affectent le développement des interneurones GABAergiques résultant en un déséquilibre entre l’excitation et l’inhibition et aux déficits cognitifs restent sujet de controverses. Par conséquent, nous avons examiné la contribution de Syngap1 dans le développement des circuits GABAergiques. A cette fin, nous avons généré une souris mutante knockout conditionnelle dans laquelle un allèle de Syngap1 est spécifiquement excisé dans les interneurones GABAergiques issus de l’éminence ganglionnaire médiale (souris Tg(Nkx2.1-Cre);Syngap1flox/+). En culture organotypique, nous avons démontré que la réduction de Syngap1 restreinte aux interneurones inhibiteurs résulte en des altérations au niveau de leur arborisation axonale et dans leur densité synaptique. De plus, réalisés sur des coupes de cerveau de souris Tg(Nkx2.1-Cre);Syngap1flox/+, les enregistrements des courants inhibiteurs postsynaptiques miniatures (mIPSC) ou encore de ceux évoqués au moyen de l’optogénétique (oIPSC) dévoilent une réduction significative de la neurotransmission inhibitrice corticale. Enfin, nous avons comparé les performances de souris jeunes adultes Syngap1+/-, Tg(Nkx2.1-Cre);Syngap1flox/+ à celles de leurs congénères contrôles dans une batterie de tests comportementaux. À l’inverse des souris Syngap1+/-, les souris Tg(Nkx2.1-Cre);Syngap1flox/+ ne présentent pas d’hyperactivité locomotrice, ni de comportement associé à l’anxiété. Cependant, elles démontrent des déficits similaires dans la mémoire de travail et de reconnaissance sociale, suggérant que l’haploinsuffisance de Syngap1 restreinte aux interneurones GABAergiques dérivés de l’éminence ganglionnaire médiale récapitule en partie certains des phénotypes cognitifs observés chez la souris Syngap1+/-. 
+Mes travaux de PhD établissent pour la première fois que les mutations humaines dans le gène SYNGAP1 associés à la déficience intellectuelle causent la perte de fonction de la protéine. Mes études dévoilent, également pour la première fois, l’influence significative de ce gène dans la régulation du développement et de la fonction des interneurones. D’admettre l’atteinte des cellules GABAergiques illustre plus réalistement la complexité de la déficience intellectuelle non syndromique causée par l’haploinsuffisance de SYNGAP1. Ainsi, seule une compréhension raffinée de cette condition neurodéveloppementale pourra mener à une approche thérapeutique adéquate.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Intellectual deficiency is the most frequent cause of severe handicap in children. A growing body of work indicates that disruption of synaptic genes explains a significant fraction of neurodevelopmental disorders, such as intellectual deficiency and autism. Until recently, the majority of known mutations associated with non-syndromic intellectual deficiency were either X-linked or autosomal recessive. On the other hand, more recent studies suggest that de novo mutations in autosomal genes required for synaptic plasticity may explain an important fraction of cases of non-syndromic intellectual deficiency. Using exome capture and genomic DNA sequencing technics, our laboratory reported for the first time pathogenic mutations in the autosomal dominant gene of SYNGAP1. Pathogenic mutations in SYNGAP1 have been associated with behavioral abnormalities such as intellectual deficiency, inattention, mood problem, impulsivity, and physical aggression. In addition, a subset of these patients show acquired microcephaly, autism and/or specific forms of generalized epilepsy.
+Syngap1 germline knockout (Syngap1+/-) mice show several behavioral abnormalities, such as locomotor hyperactivity, decreased anxiety-like behavior, enhanced startle reactivity, lack of social memory, a propensity toward isolation, deficits in cued fear conditioning, and impaired reference and working memories. Thus, Syngap1+/- mice might represent a reliable experimental model to study the pathological effects of Syngap1 haploinsufficiency on neuronal circuit development. On the other hand, it is important to first establish whether mutations in Syngap1 found in human lead in fact to protein haploinsufficiency.  
+SYNGAP1 codes for a Ras GTPase-activating protein. Its haploinsufficiency results in an increased level of Ras activity and ERK phosphorylation, abnormal dendritic spine morphogenesis, and an excess of postsynaptic AMPA receptors in excitatory neurons. Specifically, it has been suggested that prematurely increased insertion of AMPA receptors into excitatory synapses could explain some of the phenotypes observed in Syngap1+/- mice. Conversely, the role of Syngap1 haploinsufficiency in GABAergic circuits is unknown.
+The aims of my thesis project are: 1), to identify the impact of human mutations on SYNGAP1 function; 2) to determine whether SYNGAP1 plays a role in GABAergic circuit development and function, and 3) to reveal how Syngap1 haploinsufficiency specifically in GABAergic circuits affects cognitive behavior.
+We reported the first missense mutations (c.1084T&gt;C [p.W362R]; c.1685C&gt;T [p.P562L]), as well as two novel truncating mutations (c.2212_2213del [p.S738X]; c.283dupC [p.H95PfsX5]) in SYNGAP1 in humans. These mutations are de novo, except c.283dupC, which was inherited from a mosaic parent. In this study, we confirmed that patients with these mutations in SYNGAP1 showed, among other phenotypes, behavioral disorders associated with intellectual deficiency. Biolistic transfection of wild-type Syngap1 cDNA in pyramidal cells from cortical organotypic cultures significantly reduced neural activity-dependent pERK levels. In contrast, plasmid constructs expressing W362R, P562L or the previously described R579X mutations had no significant effect on pERK levels. These experiments suggest that these mutations in SYNGAP1 result in a loss of function, most probably disrupting brain development via a mechanism of haploinsufficiency. 
+Several studies suggest that the cognitive deficits associated with Syngap1 haploinsufficiency may arise from alterations in the developmental trajectory of glutamatergic excitatory neurons. Whether and to what extent Syngap1 haploinsufficiency affects the synaptic network development of GABAergic cells, thus contributing to excitation/inhibition imbalance and cognitive abnormalities, remains elusive. Therefore, we examined the involvement of Syngap1 in the development of GABAergic circuits. To this goal, we generated conditional knockout mice where one Syngap1 allele was removed specifically in GABAergic interneurons derived from the medial ganglionic eminence (MGE)  (Tg(Nkx2.1-Cre);Syngap1flox/+ mice). In organotypic cultures, we found that reduction of Syngap1 specifically in GABAergic interneurons resulted in alterations of their axonal arborisation and synapse density. Moreover, miniature inhibitory postsynaptic currents (mIPSC) and optogenetically-evoked IPSC (oIPSC) recordings in acute brain slices showed a significant reduction in cortical inhibitory neurotransmission in Tg(Nkx2.1-Cre);Syngap1flox/+ mice. Furthermore, we compared the performance of young adult Syngap1+/-, Tg(Nkx2.1-Cre);Syngap1flox/+ mice and their respective control littermates in several behavioral tests. Contrary to Syngap1+/- mice, Tg(Nkx2.1-Cre);Syngapflox/+ mice were not  hyperactive, and did not demonstrate any anxiety-like behavior. They, however, showed the same impairment in working and social recognition memory, indicating that Syngap1 disruption in MGE-derived GABAergic neurons recapitulate at least some of the cognitive deficits observed in Syngap1+/- mice. 
+All together, my PhD work first, demonstrated that human mutations in the SYNGAP1 gene associated with intellectual deficiency likely cause Syngap1 haploinsufficiency, and second, revealed for the first time a significant role of SYNGAP1 in the regulation of the development and function of GABAergic interneurons.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F13907&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+biom%C3%A9dicales&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/13907/Berryer_Martin_2015_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/13907/Berryer_Martin_2015_these.pdf.jpg?sequence=9&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Berryer_Martin_2015_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/13907/Berryer_Martin_2015_these.pdf?sequence=4&amp;isAllowed=y">Berryer_Martin_2015_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">24.02Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/13907">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

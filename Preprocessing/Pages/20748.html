@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Mécanismes impliqués dans la modulation de la néovascularisation post-ischémique : rôle de la rénine et des microARNs</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Rivard, Alain" name="DC.contributor">
+<meta content="Desjarlais, Michel" name="DC.creator">
+<meta content="2018-07-23T18:00:56Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2018-07-23T18:00:56Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2018-06-27" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2017-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/20748" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Néovascularisation" name="DC.subject" xml:lang="fr"/>
+<meta content="Angiogenèse" name="DC.subject" xml:lang="fr"/>
+<meta content="Cellule endothéliale (EC)" name="DC.subject" xml:lang="fr"/>
+<meta content="Cellule pro-Angiogénique (PAC)" name="DC.subject" xml:lang="fr"/>
+<meta content="Athérosclérose" name="DC.subject" xml:lang="fr"/>
+<meta content="Hypercholestérolémie" name="DC.subject" xml:lang="fr"/>
+<meta content="micro-ARN (miR)" name="DC.subject" xml:lang="fr"/>
+<meta content="Rénine" name="DC.subject" xml:lang="fr"/>
+<meta content="Inflammation" name="DC.subject" xml:lang="fr"/>
+<meta content="Stress oxydant" name="DC.subject" xml:lang="fr"/>
+<meta content="Ischémie" name="DC.subject" xml:lang="fr"/>
+<meta content="Neovascularization" name="DC.subject" xml:lang="fr"/>
+<meta content="Angiogenesis" name="DC.subject" xml:lang="fr"/>
+<meta content="Endothelial cell (EC)" name="DC.subject" xml:lang="fr"/>
+<meta content="Proangiogenic cell (PAC)" name="DC.subject" xml:lang="fr"/>
+<meta content="Atherosclerosis" name="DC.subject" xml:lang="fr"/>
+<meta content="Hypercholesterolemia" name="DC.subject" xml:lang="fr"/>
+<meta content="micro-RNA (miR)" name="DC.subject" xml:lang="fr"/>
+<meta content="Renin" name="DC.subject" xml:lang="fr"/>
+<meta content="Inflammation" name="DC.subject" xml:lang="fr"/>
+<meta content="Oxydative stress" name="DC.subject" xml:lang="fr"/>
+<meta content="Ischemia" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307)" name="DC.subject" xml:lang="fr"/>
+<meta content="Mécanismes impliqués dans la modulation de la néovascularisation post-ischémique : rôle de la rénine et des microARNs" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Les maladies cardiovasculaires ischémiques demeurent à ce jour la principale cause de morbidité et mortalité dans les pays industrialisés. La sévérité des dommages ischémiques est grandement influencée par la capacité adaptative de l’organisme à former de nouveaux vaisseaux sanguins (néovascularisation). Notre laboratoire a démontré au cours des dernières années que plusieurs facteurs de risques et phénotypes cliniques associés au développement de l’athérosclérose diminuent également la capacité de néovascularisation post-ischémique. Mes travaux de recherche visaient à mieux comprendre les mécanismes impliqués dans la modulation de la néovascularisation post-ischémique en condition pathologique. Nous avons dans un premier temps étudié le rôle spécifique de la rénine, une composante du système rénineangiotensine (RAS) dont la stimulation chronique est impliquée à la fois dans la l’athérosclérose, la dysfonction des cellules endothéliales (ECs) et l’inhibition de la néovascularisation. Par la suite, nous avons investigué le rôle potentiel des micro-ARNs (miRs) lors de la modulation de la néovascularisation post-ischémique en condition athérosclérotique. Les miRs sont des petits ARNs non codants qui régulent négativement l’expression de plus de 60% des gènes. Ils sont de plus en plus reconnus comme ayant un rôle essentiel lors des processus biologiques physiologiques et pathologiques. Dans cette thèse, nous avons utilisé un modèle murin d’ischémie de la patte pour tester l’hypothèse que la rénine et les miRs sont impliqués dans de la modulation de la néovascularisation post-ischémique lors de conditions pathologiques. Les résultats de mon premier article ont permis de démontrer pour la première fois qu’une thérapie avec l’aliskiren, le seul inhibiteur direct de la rénine utilisé cliniquement, permet d’améliorer significativement la néovascularisation post-ischémique in vivo. En effet nous avons observé une amélioration de la récupération de la perfusion tissulaire, de la densité capillaire et artériolaire, et de l’expression de facteurs angiogéniques clés (VEGF, NO) dans les muscles ischémiques de souris traitées à l’aliskiren. En bref, nos résultats suggèrent que l’effet bénéfique de l’aliskiren sur la néovascularisation est au moins en partie causé par une action antioxydante qui améliore l’activité fonctionnelle des ECs et des cellules angiogéniques circulantes (PACs). Mon deuxième projet visait à identifier et caractériser le rôle de différents miRs potentiellement impliqués dans la défaillance de néovascularisation post-ischémique associée aux conditions athérosclérotiques. En utilisant la technologie de séquençage de deuxième génération et le qRT-PCR, nous avons identifié 2 miRs qui sont fortement diminués en condition hypercholestérolémique : le miR-150 (un miR pro-angiogénique) et le miR-146b (un miR anti-inflammatoire). Nous avons démontré que ces 2 miRs sont diminués in vivo dans le muscle ischémique des souris hypercholestérolémiques (HC), et également in vitro dans des ECs humaines exposé aux oxLDL. La diminution de l’expression du miR-150 et du miR-146b par l’hypercholestérolémie et les oxLDL semble inhiber la néovascularisation post-ischémique par deux mécanismes distincts (article 2 et 3). D’une part, la diminution du miR-150 cause une défaillance des fonctions angiogéniques des ECs et des PACs en stimulant l’expression de SRCIN1, un important inhibiteur endogène de la voie pro-angiogénique Src/Akt/eNOS (article 2). D’autre part et de façon similaire aux oxLDL, l’inhibition du miR146b cause une dysfonction endothéliale en augmentant les niveaux de stress oxydant et d’inflammation, un mécanisme qui implique l’induction du gène pro-inflammatoire TRAF6 (article 3). De façon importante, nos résultats démontrent pour la première fois qu’une injection intramusculaire locale de miR-150 ou de miR-146b permet de récupérer la néovascularisation post-ischémique en condition d’hypercholestérolémie. Nous avons aussi démontré que l’expression forcée du miR-150 ou du miR-146b améliore la fonction angiogénique des ECs humaines exposées aux oxLDL. Finalement, le nombre et l’activité fonctionnelle des PACs isolées de la moelle osseuse des souris HC peuvent aussi être restaurés par miR-150 et miR-146b. En conclusion, nos travaux ont permis d’identifier et de caractériser le rôle de miR-150 et de miR-146b dans la défaillance angiogénique lors de conditions athérosclérotiques. Cette thèse démontre aussi pour la première fois que des thérapies basées sur l’inhibition de la rénine ou la modulation de miRs spécifiques permettent d’améliorer la néovascularisation post-ischémique lors de situations pathologiques. Nos résultats pourraient donc aider au développement de nouvelles stratégies thérapeutiques pour le traitement des maladies cardiovasculaires ischémiques sévères." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Ischemic cardiovascular diseases remain the leading cause of morbidity and mortality in industrialized countries. The severity of ischemic damages is greatly influenced by the ability of the organism to form new blood vessels (neovascularization). Our laboratory has demonstrated in recent years that several risk factors and clinical phenotypes associated with the development of atherosclerosis can also impair post-ischemic neovascularization. The purpose of my research was to better understand the mechanisms that are involved in the modulation of post-ischemic neovascularization in pathological conditions. We first investigated the specific role of renin, a key component of the renin-angiotensin system (RAS) whose chronic stimulation is involved in atherosclerosis, endothelial cell (EC) dysfunction and the inhibition of neovascularization. Subsequently, we investigated the potential role of microRNAs (miRs) in the modulation of post-ischemic neovascularization under atherosclerotic conditions. miRs are small non-coding RNAs that negatively regulate the expression of more than 60% of genes. They are increasingly recognized as having a vital role in physiological and pathological biological processes. In this thesis, we used a mouse model of hindlimb ischemia to test the hypothesis that renin and miRs are involved in the modulation post-ischemic neovascularization during pathological conditions. 
+ 
+ The results of my first article demonstrate for the first time that treatment with aliskiren, the only direct renin inhibitor used clinically, significantly improves post-ischemic neovascularization in vivo. Indeed, we observed an improvement of tissue perfusion recovery, capillary and arteriolar densities, and higherexpression of key angiogenic factors (VEGF, NO) in ischemic muscles of mice treated with aliskiren. In summary, our results suggest that the beneficial effect of aliskiren on neovascularization is at least in part due to an antioxidant action that enhances the functional activity of ECs and circulating angiogenic cells (PACs). My second project aimed at identifying and characterizing the role of different miRs which could be involved in post-ischemic neovascularization failure associated with atherosclerotic conditions. Using next-generation sequencing technology and qRT-PCR, we identified 2 miRs that are significantly decreased in hypercholesterolemic conditions: miR-150 (a pro-angiogenic miR) and miR-146b (an anti-inflammatory miR). We have shown that these 2 miRs are decreased in vivo in the ischemic muscles of hypercholesterolemic (HC) mice, and also in vitro in human ECs exposed to oxLDL. Decreased expression of miR-150 and miR-146b by hypercholesterolemia and oxLDL appears to inhibit post-ischemic neovascularization by two distinct mechanisms (Article 2 and 3). On one hand, decreased expression of miR-150 impairs the angiogenic functions of ECs and PACs by stimulating the expression of SRCIN1, an important endogenous inhibitor of the pro-angiogenic Src / Akt / eNOS pathway (article 2). On the other hand, decreased expression of miR146b causes endothelial dysfunction by increasing oxidative stress and inflammation, a mechanism that involves the induction of the proinflammatory TRAF6 gene (Article 3). Importantly, our results demonstrate for the first time that a local intramuscular injection of miR-150 or miR-146b can recover post-ischemic neovascularization in hypercholesterolemic conditions. We also show that forced expression of miR-150 or miR-146b can enhance the angiogenic functions of human ECs exposed to oxLDL. Finally, the number and functional activity of bone marrow PACs isolated from HC mice can also be restored by miR-150 and miR-146b. In conclusion, our work has characterized the role of miR-150 and miR-146b for the angiogenic failure associated with atherosclerotic conditions. This thesis also demonstrates for the first time that therapies based on the inhibition of renin or the modulation of specific miRs can improve post-ischemic neovascularization in pathological situations. Our results could help developing new strategies for the treatment of severe ischemic cardiovascular diseases." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Néovascularisation; Angiogenèse; Cellule endothéliale (EC); Cellule pro-Angiogénique (PAC); Athérosclérose; Hypercholestérolémie; micro-ARN (miR); Rénine; Inflammation; Stress oxydant; Ischémie; Neovascularization; Angiogenesis; Endothelial cell (EC); Proangiogenic cell (PAC); Atherosclerosis; Hypercholesterolemia; micro-RNA (miR); Renin; Inflammation; Oxydative stress; Ischemia; Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307); Thèse ou mémoire / Thesis or Dissertation; Sciences biomédicales" name="citation_keywords"/>
+<meta content="Mécanismes impliqués dans la modulation de la néovascularisation post-ischémique : rôle de la rénine et des microARNs" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Desjarlais, Michel" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/20748/4/Desjarlais_Michel_2018_these.pdf" name="citation_pdf_url"/>
+<meta content="2018-06-27" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/20748" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20748?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20748?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20748?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20748?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20748?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/20748?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/20748/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/20748">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/20748/mets.xml-->
+<h2 class="page-header first-page-header">Mécanismes impliqués dans la modulation de la néovascularisation post-ischémique : rôle de la rénine et des microARNs</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Rivard, Alain</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Desjarlais, Michel</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2018-07-23T18:00:56Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2018-07-23T18:00:56Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2018-06-27</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2017-12</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/20748</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Néovascularisation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Angiogenèse</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Cellule endothéliale (EC)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Cellule pro-Angiogénique (PAC)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Athérosclérose</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Hypercholestérolémie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">micro-ARN (miR)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Rénine</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Inflammation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Stress oxydant</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Ischémie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Neovascularization</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Angiogenesis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Endothelial cell (EC)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Proangiogenic cell (PAC)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Atherosclerosis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Hypercholesterolemia</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">micro-RNA (miR)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Renin</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Inflammation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Oxydative stress</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Ischemia</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Mécanismes impliqués dans la modulation de la néovascularisation post-ischémique : rôle de la rénine et des microARNs</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences biomédicales</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les maladies cardiovasculaires ischémiques demeurent à ce jour la principale cause de morbidité et mortalité dans les pays industrialisés. La sévérité des dommages ischémiques est grandement influencée par la capacité adaptative de l’organisme à former de nouveaux vaisseaux sanguins (néovascularisation). Notre laboratoire a démontré au cours des dernières années que plusieurs facteurs de risques et phénotypes cliniques associés au développement de l’athérosclérose diminuent également la capacité de néovascularisation post-ischémique. Mes travaux de recherche visaient à mieux comprendre les mécanismes impliqués dans la modulation de la néovascularisation post-ischémique en condition pathologique. Nous avons dans un premier temps étudié le rôle spécifique de la rénine, une composante du système rénineangiotensine (RAS) dont la stimulation chronique est impliquée à la fois dans la l’athérosclérose, la dysfonction des cellules endothéliales (ECs) et l’inhibition de la néovascularisation. Par la suite, nous avons investigué le rôle potentiel des micro-ARNs (miRs) lors de la modulation de la néovascularisation post-ischémique en condition athérosclérotique. Les miRs sont des petits ARNs non codants qui régulent négativement l’expression de plus de 60% des gènes. Ils sont de plus en plus reconnus comme ayant un rôle essentiel lors des processus biologiques physiologiques et pathologiques. Dans cette thèse, nous avons utilisé un modèle murin d’ischémie de la patte pour tester l’hypothèse que la rénine et les miRs sont impliqués dans de la modulation de la néovascularisation post-ischémique lors de conditions pathologiques. Les résultats de mon premier article ont permis de démontrer pour la première fois qu’une thérapie avec l’aliskiren, le seul inhibiteur direct de la rénine utilisé cliniquement, permet d’améliorer significativement la néovascularisation post-ischémique in vivo. En effet nous avons observé une amélioration de la récupération de la perfusion tissulaire, de la densité capillaire et artériolaire, et de l’expression de facteurs angiogéniques clés (VEGF, NO) dans les muscles ischémiques de souris traitées à l’aliskiren. En bref, nos résultats suggèrent que l’effet bénéfique de l’aliskiren sur la néovascularisation est au moins en partie causé par une action antioxydante qui améliore l’activité fonctionnelle des ECs et des cellules angiogéniques circulantes (PACs). Mon deuxième projet visait à identifier et caractériser le rôle de différents miRs potentiellement impliqués dans la défaillance de néovascularisation post-ischémique associée aux conditions athérosclérotiques. En utilisant la technologie de séquençage de deuxième génération et le qRT-PCR, nous avons identifié 2 miRs qui sont fortement diminués en condition hypercholestérolémique : le miR-150 (un miR pro-angiogénique) et le miR-146b (un miR anti-inflammatoire). Nous avons démontré que ces 2 miRs sont diminués in vivo dans le muscle ischémique des souris hypercholestérolémiques (HC), et également in vitro dans des ECs humaines exposé aux oxLDL. La diminution de l’expression du miR-150 et du miR-146b par l’hypercholestérolémie et les oxLDL semble inhiber la néovascularisation post-ischémique par deux mécanismes distincts (article 2 et 3). D’une part, la diminution du miR-150 cause une défaillance des fonctions angiogéniques des ECs et des PACs en stimulant l’expression de SRCIN1, un important inhibiteur endogène de la voie pro-angiogénique Src/Akt/eNOS (article 2). D’autre part et de façon similaire aux oxLDL, l’inhibition du miR146b cause une dysfonction endothéliale en augmentant les niveaux de stress oxydant et d’inflammation, un mécanisme qui implique l’induction du gène pro-inflammatoire TRAF6 (article 3). De façon importante, nos résultats démontrent pour la première fois qu’une injection intramusculaire locale de miR-150 ou de miR-146b permet de récupérer la néovascularisation post-ischémique en condition d’hypercholestérolémie. Nous avons aussi démontré que l’expression forcée du miR-150 ou du miR-146b améliore la fonction angiogénique des ECs humaines exposées aux oxLDL. Finalement, le nombre et l’activité fonctionnelle des PACs isolées de la moelle osseuse des souris HC peuvent aussi être restaurés par miR-150 et miR-146b. En conclusion, nos travaux ont permis d’identifier et de caractériser le rôle de miR-150 et de miR-146b dans la défaillance angiogénique lors de conditions athérosclérotiques. Cette thèse démontre aussi pour la première fois que des thérapies basées sur l’inhibition de la rénine ou la modulation de miRs spécifiques permettent d’améliorer la néovascularisation post-ischémique lors de situations pathologiques. Nos résultats pourraient donc aider au développement de nouvelles stratégies thérapeutiques pour le traitement des maladies cardiovasculaires ischémiques sévères.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Ischemic cardiovascular diseases remain the leading cause of morbidity and mortality in industrialized countries. The severity of ischemic damages is greatly influenced by the ability of the organism to form new blood vessels (neovascularization). Our laboratory has demonstrated in recent years that several risk factors and clinical phenotypes associated with the development of atherosclerosis can also impair post-ischemic neovascularization. The purpose of my research was to better understand the mechanisms that are involved in the modulation of post-ischemic neovascularization in pathological conditions. We first investigated the specific role of renin, a key component of the renin-angiotensin system (RAS) whose chronic stimulation is involved in atherosclerosis, endothelial cell (EC) dysfunction and the inhibition of neovascularization. Subsequently, we investigated the potential role of microRNAs (miRs) in the modulation of post-ischemic neovascularization under atherosclerotic conditions. miRs are small non-coding RNAs that negatively regulate the expression of more than 60% of genes. They are increasingly recognized as having a vital role in physiological and pathological biological processes. In this thesis, we used a mouse model of hindlimb ischemia to test the hypothesis that renin and miRs are involved in the modulation post-ischemic neovascularization during pathological conditions. 
+ 
+ The results of my first article demonstrate for the first time that treatment with aliskiren, the only direct renin inhibitor used clinically, significantly improves post-ischemic neovascularization in vivo. Indeed, we observed an improvement of tissue perfusion recovery, capillary and arteriolar densities, and higherexpression of key angiogenic factors (VEGF, NO) in ischemic muscles of mice treated with aliskiren. In summary, our results suggest that the beneficial effect of aliskiren on neovascularization is at least in part due to an antioxidant action that enhances the functional activity of ECs and circulating angiogenic cells (PACs). My second project aimed at identifying and characterizing the role of different miRs which could be involved in post-ischemic neovascularization failure associated with atherosclerotic conditions. Using next-generation sequencing technology and qRT-PCR, we identified 2 miRs that are significantly decreased in hypercholesterolemic conditions: miR-150 (a pro-angiogenic miR) and miR-146b (an anti-inflammatory miR). We have shown that these 2 miRs are decreased in vivo in the ischemic muscles of hypercholesterolemic (HC) mice, and also in vitro in human ECs exposed to oxLDL. Decreased expression of miR-150 and miR-146b by hypercholesterolemia and oxLDL appears to inhibit post-ischemic neovascularization by two distinct mechanisms (Article 2 and 3). On one hand, decreased expression of miR-150 impairs the angiogenic functions of ECs and PACs by stimulating the expression of SRCIN1, an important endogenous inhibitor of the pro-angiogenic Src / Akt / eNOS pathway (article 2). On the other hand, decreased expression of miR146b causes endothelial dysfunction by increasing oxidative stress and inflammation, a mechanism that involves the induction of the proinflammatory TRAF6 gene (Article 3). Importantly, our results demonstrate for the first time that a local intramuscular injection of miR-150 or miR-146b can recover post-ischemic neovascularization in hypercholesterolemic conditions. We also show that forced expression of miR-150 or miR-146b can enhance the angiogenic functions of human ECs exposed to oxLDL. Finally, the number and functional activity of bone marrow PACs isolated from HC mice can also be restored by miR-150 and miR-146b. In conclusion, our work has characterized the role of miR-150 and miR-146b for the angiogenic failure associated with atherosclerotic conditions. This thesis also demonstrates for the first time that therapies based on the inhibition of renin or the modulation of specific miRs can improve post-ischemic neovascularization in pathological situations. Our results could help developing new strategies for the treatment of severe ischemic cardiovascular diseases.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F20748&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+biom%C3%A9dicales&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/20748/Desjarlais_Michel_2018_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/20748/Desjarlais_Michel_2018_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Desjarlais_Michel_2018_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/20748/Desjarlais_Michel_2018_these.pdf?sequence=4&amp;isAllowed=y">Desjarlais_Michel_2018_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">9.571Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/20748">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

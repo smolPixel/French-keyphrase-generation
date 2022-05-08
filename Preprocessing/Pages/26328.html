@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Automated radiosynthesis and evaluation of 18F-fluoropyridinated analogs of losartan and candesartan for imaging the angiotensin II Type 1 receptors by positron emission tomography</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="DaSilva, Jean" name="DC.contributor">
+<meta content="Abreu Diaz, Aida Mary" name="DC.creator">
+<meta content="2022-02-15T16:40:22Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="MONTHS_WITHHELD:12" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2022-02-15T16:40:22Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-10-21" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2021-04" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/26328" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="AT1R" name="DC.subject" xml:lang="fr"/>
+<meta content="Activité molaire" name="DC.subject" xml:lang="fr"/>
+<meta content="Affinité de liaison" name="DC.subject" xml:lang="fr"/>
+<meta content="Chimie click CuAAC" name="DC.subject" xml:lang="fr"/>
+<meta content="[18F]FPyKYNE" name="DC.subject" xml:lang="fr"/>
+<meta content="IC50" name="DC.subject" xml:lang="fr"/>
+<meta content="Métabolites radiomarqués" name="DC.subject" xml:lang="fr"/>
+<meta content="Radiosynthèse automatisée" name="DC.subject" xml:lang="fr"/>
+<meta content="TEP" name="DC.subject" xml:lang="fr"/>
+<meta content="THPTA" name="DC.subject" xml:lang="fr"/>
+<meta content="Automated radiosynthesis" name="DC.subject" xml:lang="fr"/>
+<meta content="Binding affinity" name="DC.subject" xml:lang="fr"/>
+<meta content="CuAAC click chemistry" name="DC.subject" xml:lang="fr"/>
+<meta content="Molar activity" name="DC.subject" xml:lang="fr"/>
+<meta content="PET" name="DC.subject" xml:lang="fr"/>
+<meta content="Radiolabeled metabolites" name="DC.subject" xml:lang="fr"/>
+<meta content="Chemistry - Nuclear / Chimie nucléaire (UMI : 0738)" name="DC.subject" xml:lang="fr"/>
+<meta content="Automated radiosynthesis and evaluation of 18F-fluoropyridinated analogs of losartan and candesartan for imaging the angiotensin II Type 1 receptors by positron emission tomography" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Plusieurs maladies rénales et cardiovasculaires présentent une altération de l’expression des récepteurs de type 1 de l'angiotensine (AT1R) et sont traitées par le candésartan ou le losartan. Le radiomarquage de cette famille de molécules développé au sein de notre laboratoire a démontré une liaison spécifique pour les AT1R rénaux chez les rats et les cochons. Le [11C]méthyl-candésartan présente une cinétique supérieure à celle du [11C]méthyl-losartan. Néanmoins, la présence d’un radiométabolite hydrophobe, interférant avec le signal TEP du traceur d’origine, rend la quantification des AT1R complexe. Le [18F]fluoropyridine-losartan est un antagoniste qui possède une affinité de liaison élevée ainsi que peu de métabolites radiomarqués dans les reins de rats. Cependant, sa faible activité molaire ne permet pas de visualiser les niveaux d’AT1R myocardiques présents en faible densité. Le but de cette recherche est de développer les radiosynthèses automatisées d'analogues 18F-fluoropyridinés du candésartan et du losartan en très hautes puretés et activités molaires et d'évaluer l'efficacité du [18F]fluoropyridine-candésartan comme traceur TEP sélectif aux AT1R.
+Le [18F]fluoropyridine-candésartan et le [18F]fluoropyridine-losartan ont été synthétisés via la cycloaddition de Huisgen catalysée au cuivre(I) entre le 2-[18F]fluoro-3-(pent-4-yn-1-yloxy)pyridine ([18F]FPyKYNE) et un dérivé azidé du candésartan ou du losartan. Le [18F]FPyKYNE est préalablement obtenu par radiofluoration de NO2PyKYNE puis purifié par HPLC, empêchant ainsi la formation de sous-produits nitropyridinés. Après optimisation, les traceurs sont obtenus avec un rendement radiochimique de 11% et des activités molaires (&gt;380 GBq/μmol), des puretés chimiques et radiochimiques (&gt;97%) très élevées. Les tests de contrôle de qualité complet du [18F]fluoropyridine-losartan permettant son utilisation dans des études cliniques futures ont aussi été développés.
+Le fluoropyridine-candésartan a révélé une affinité élevée (Ki=5,9 nM) dans des membranes exprimant les AT1R, comparable au fluoropyridine-losartan (Ki=5,6 nM) mais inférieure à celle du candésartan (Ki=0,4 nM). Des études d’ultrafiltration ont démontré que le [18F]fluoropyridine-candésartan se lie fortement aux protéines plasmatiques (99,3%). La liaison spécifique aux AT1Rs a été confirmée ex vivo par biodistribution. Une réduction significative (-86%) de la captation dans le cortex rénal de rats prétraités (candésartan ou losartan) est constatée. Des résultats similaires sont obtenus in vitro par autoradiographie avec co-incubation en présence de losartan. La présence de métabolites radiomarqués a été évaluée ex vivo dans du plasma et dans les reins d’animaux témoins ou prétraités (candésartan ou losartan) par HPLC. Le [18F]fluoropyridine-candésartan a été métabolisé en composés radiomarqués hydrophiles, affichant une interférence minimale sur la liaison rénale aux AT1R avec 82% de traceur inchangé dans les reins 20 min après injection. Les images TEP/TC dynamiques du [18F]fluoropyridine-candésartan, acquises pendant 60 min, ont révélé des accumulations élevées et éliminations lentes dans le cortex rénal et le foie avec des rapports tissu-sang élevés. La spécificité de liaison aux AT1R a été démontrée par le blocage des sites de liaison avec du losartan 20 min après l'injection (réductions des rapports tissu-sang dans le cortex rénal (-84%) et dans le foie (-93%)). Aucun changement n'a été observé dans les reins de rats prétraités avec l'antagoniste des AT2R PD123,319, confirmant la sélectivité de liaison pour les AT1R. 
+Les radiosynthèses reproductibles automatisées, les propriétés de liaison ainsi que la stabilité in vivo font du [18F]fluoropyridine-candésartan et du [18F]fluoropyridine-losartan des radiotraceurs potentiels permettant l’imagerie TEP des AT1R dans plusieurs maladies cardiovasculaires ou rénales, offrant ainsi la possibilité de suivre la progression de ces maladies dans des études longitudinales mais aussi de mieux guider la thérapie." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Numerous renal and cardiovascular diseases exhibit alterations in the Angiotensin type 1 receptor (AT1R) levels that are treated with candesartan or losartan. Our previous radiolabeled derivatives of these drugs displayed specific binding for renal AT1R in rats and pigs. [11C]Methyl-candesartan exhibited superior kinetics than [11C]methyl-losartan, but a hydrophobic radiometabolite interfered with the PET signal and AT1R quantification. High binding affinity, full antagonistic efficacy and minimal interference of labeled metabolites in rat kidneys were observed with [18F]fluoropyridine-losartan. However, the tracer’s low molar activity prevented visualization of low-density myocardial AT1R. The aim of this research was to develop automated radiosyntheses of 18F-fluoropyridinated analogs of candesartan and losartan in very high purities and molar activities and to evaluate [18F]fluoropyridine-candesartan efficacy as a selective AT1R PET tracer.
+[18F]Fluoropyridine-candesartan and [18F]fluoropyridine-losartan were synthesized via the copper(I)-catalyzed Huisgen cycloaddition between 2-[18F]fluoro-3-(pent-4-yn-1-yloxy)pyridine ([18F]FPyKYNE) and an azido-derivative of candesartan or losartan, respectively, followed by acid deprotection and C18-HPLC purification. [18F]FPyKYNE was obtained by radiofluorination of NO2PyKYNE and purified by silica-gel HPLC, preventing the formation of nitropyridinated by-products in the second step. The reaction parameters and purifications were optimized to provide tracers in 11% radiochemical yield with very high molar activities (&gt;380 GBq/μmol), chemical and radiochemical purities (&gt;97%). Full quality control testing of [18F]fluoropyridine-losartan was performed to validate its safe use in future clinical studies.
+The binding and pharmacokinetic properties of the novel [18F]fluoropyridine-candesartan were evaluated in vitro and ex/in vivo in male Sprague-Dawley rats. Competition binding assays in AT1R-expressing membranes revealed a high affinity of fluoropyridine-candesartan (Ki=5.9 nM), which is similar to fluoropyridine-losartan (Ki=5.6 nM) but lower than candesartan (Ki=0.4 nM). [18F]Fluoropyridine-candesartan bound strongly to plasma proteins (99.3%) as assessed by ultrafiltration. Specific binding was confirmed by ex vivo biodistribution 20 min after tracer injection, with a significant uptake reduction (-86%) in the AT1R-rich kidney cortex of pretreated (candesartan or losartan) rats and by in vitro autoradiography with losartan co-incubation. Radiolabeled metabolites in plasma and kidneys of control and pretreated (candesartan or losartan) animals were analyzed by column-switch HPLC. [18F]Fluoropyridine-candesartan was mainly metabolized to radiolabeled hydrophilic compounds, displaying minimal interference on renal AT1R binding with 82% of unchanged tracer in the kidneys at 20 min post-injection. Dynamic PET/CT images of [18F]fluoropyridine-candesartan, acquired for 60 min at baseline, revealed high accumulation and slow clearance from the kidney cortex and liver with high tissue-to-blood ratios. Binding specificity for AT1R was demonstrated with marked reductions in kidney-cortex (-84%) and liver (-93%) tissue-to-blood ratios at 20 min post-injection, when blocking with losartan. No change was observed in kidneys of rats pre-treated with the AT2R antagonist PD123,319, confirming binding selectivity for AT1 over AT2 receptors. The favorable binding properties and in vivo stability of [18F]fluoropyridine-candesartan support further studies to validate its potential as AT1R PET radioligand.
+The reproducible automated radiosyntheses developed in my research will allow innovative in-vivo PET imaging of AT1R-expression in several diseases, offering the possibility to follow disease progression in longitudinal studies and guide therapy." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="AT1R; Activité molaire; Affinité de liaison; Chimie click CuAAC; [18F]FPyKYNE; IC50; Métabolites radiomarqués; Radiosynthèse automatisée; TEP; THPTA; Automated radiosynthesis; Binding affinity; CuAAC click chemistry; Molar activity; PET; Radiolabeled metabolites; Chemistry - Nuclear / Chimie nucléaire (UMI : 0738); Thèse ou mémoire / Thesis or Dissertation; Génie biomédical" name="citation_keywords"/>
+<meta content="Automated radiosynthesis and evaluation of 18F-fluoropyridinated analogs of losartan and candesartan for imaging the angiotensin II Type 1 receptors by positron emission tomography" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Abreu Diaz, Aida Mary" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/26328/4/Abreu_Diaz_Aida_Mary_2021_These.pdf" name="citation_pdf_url"/>
+<meta content="2021-10-21" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/26328" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26328?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26328?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26328?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26328?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26328?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26328?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/1349" role="menuitem">Faculté de médecine</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2591" role="menuitem">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/1349">Faculté de médecine</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2591"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2591/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/26328/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26328">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/26328/mets.xml-->
+<h2 class="page-header first-page-header">Automated radiosynthesis and evaluation of 18F-fluoropyridinated analogs of losartan and candesartan for imaging the angiotensin II Type 1 receptors by positron emission tomography</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">DaSilva, Jean</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Abreu Diaz, Aida Mary</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2022-02-15T16:40:22Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">MONTHS_WITHHELD:12</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2022-02-15T16:40:22Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-10-21</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2021-04</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/26328</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">AT1R</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Activité molaire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Affinité de liaison</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Chimie click CuAAC</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">[18F]FPyKYNE</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">IC50</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Métabolites radiomarqués</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Radiosynthèse automatisée</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">TEP</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">THPTA</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Automated radiosynthesis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Binding affinity</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">CuAAC click chemistry</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Molar activity</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">PET</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Radiolabeled metabolites</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Chemistry - Nuclear / Chimie nucléaire (UMI : 0738)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Automated radiosynthesis and evaluation of 18F-fluoropyridinated analogs of losartan and candesartan for imaging the angiotensin II Type 1 receptors by positron emission tomography</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Génie biomédical</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Plusieurs maladies rénales et cardiovasculaires présentent une altération de l’expression des récepteurs de type 1 de l'angiotensine (AT1R) et sont traitées par le candésartan ou le losartan. Le radiomarquage de cette famille de molécules développé au sein de notre laboratoire a démontré une liaison spécifique pour les AT1R rénaux chez les rats et les cochons. Le [11C]méthyl-candésartan présente une cinétique supérieure à celle du [11C]méthyl-losartan. Néanmoins, la présence d’un radiométabolite hydrophobe, interférant avec le signal TEP du traceur d’origine, rend la quantification des AT1R complexe. Le [18F]fluoropyridine-losartan est un antagoniste qui possède une affinité de liaison élevée ainsi que peu de métabolites radiomarqués dans les reins de rats. Cependant, sa faible activité molaire ne permet pas de visualiser les niveaux d’AT1R myocardiques présents en faible densité. Le but de cette recherche est de développer les radiosynthèses automatisées d'analogues 18F-fluoropyridinés du candésartan et du losartan en très hautes puretés et activités molaires et d'évaluer l'efficacité du [18F]fluoropyridine-candésartan comme traceur TEP sélectif aux AT1R.
+Le [18F]fluoropyridine-candésartan et le [18F]fluoropyridine-losartan ont été synthétisés via la cycloaddition de Huisgen catalysée au cuivre(I) entre le 2-[18F]fluoro-3-(pent-4-yn-1-yloxy)pyridine ([18F]FPyKYNE) et un dérivé azidé du candésartan ou du losartan. Le [18F]FPyKYNE est préalablement obtenu par radiofluoration de NO2PyKYNE puis purifié par HPLC, empêchant ainsi la formation de sous-produits nitropyridinés. Après optimisation, les traceurs sont obtenus avec un rendement radiochimique de 11% et des activités molaires (&gt;380 GBq/μmol), des puretés chimiques et radiochimiques (&gt;97%) très élevées. Les tests de contrôle de qualité complet du [18F]fluoropyridine-losartan permettant son utilisation dans des études cliniques futures ont aussi été développés.
+Le fluoropyridine-candésartan a révélé une affinité élevée (Ki=5,9 nM) dans des membranes exprimant les AT1R, comparable au fluoropyridine-losartan (Ki=5,6 nM) mais inférieure à celle du candésartan (Ki=0,4 nM). Des études d’ultrafiltration ont démontré que le [18F]fluoropyridine-candésartan se lie fortement aux protéines plasmatiques (99,3%). La liaison spécifique aux AT1Rs a été confirmée ex vivo par biodistribution. Une réduction significative (-86%) de la captation dans le cortex rénal de rats prétraités (candésartan ou losartan) est constatée. Des résultats similaires sont obtenus in vitro par autoradiographie avec co-incubation en présence de losartan. La présence de métabolites radiomarqués a été évaluée ex vivo dans du plasma et dans les reins d’animaux témoins ou prétraités (candésartan ou losartan) par HPLC. Le [18F]fluoropyridine-candésartan a été métabolisé en composés radiomarqués hydrophiles, affichant une interférence minimale sur la liaison rénale aux AT1R avec 82% de traceur inchangé dans les reins 20 min après injection. Les images TEP/TC dynamiques du [18F]fluoropyridine-candésartan, acquises pendant 60 min, ont révélé des accumulations élevées et éliminations lentes dans le cortex rénal et le foie avec des rapports tissu-sang élevés. La spécificité de liaison aux AT1R a été démontrée par le blocage des sites de liaison avec du losartan 20 min après l'injection (réductions des rapports tissu-sang dans le cortex rénal (-84%) et dans le foie (-93%)). Aucun changement n'a été observé dans les reins de rats prétraités avec l'antagoniste des AT2R PD123,319, confirmant la sélectivité de liaison pour les AT1R. 
+Les radiosynthèses reproductibles automatisées, les propriétés de liaison ainsi que la stabilité in vivo font du [18F]fluoropyridine-candésartan et du [18F]fluoropyridine-losartan des radiotraceurs potentiels permettant l’imagerie TEP des AT1R dans plusieurs maladies cardiovasculaires ou rénales, offrant ainsi la possibilité de suivre la progression de ces maladies dans des études longitudinales mais aussi de mieux guider la thérapie.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Numerous renal and cardiovascular diseases exhibit alterations in the Angiotensin type 1 receptor (AT1R) levels that are treated with candesartan or losartan. Our previous radiolabeled derivatives of these drugs displayed specific binding for renal AT1R in rats and pigs. [11C]Methyl-candesartan exhibited superior kinetics than [11C]methyl-losartan, but a hydrophobic radiometabolite interfered with the PET signal and AT1R quantification. High binding affinity, full antagonistic efficacy and minimal interference of labeled metabolites in rat kidneys were observed with [18F]fluoropyridine-losartan. However, the tracer’s low molar activity prevented visualization of low-density myocardial AT1R. The aim of this research was to develop automated radiosyntheses of 18F-fluoropyridinated analogs of candesartan and losartan in very high purities and molar activities and to evaluate [18F]fluoropyridine-candesartan efficacy as a selective AT1R PET tracer.
+[18F]Fluoropyridine-candesartan and [18F]fluoropyridine-losartan were synthesized via the copper(I)-catalyzed Huisgen cycloaddition between 2-[18F]fluoro-3-(pent-4-yn-1-yloxy)pyridine ([18F]FPyKYNE) and an azido-derivative of candesartan or losartan, respectively, followed by acid deprotection and C18-HPLC purification. [18F]FPyKYNE was obtained by radiofluorination of NO2PyKYNE and purified by silica-gel HPLC, preventing the formation of nitropyridinated by-products in the second step. The reaction parameters and purifications were optimized to provide tracers in 11% radiochemical yield with very high molar activities (&gt;380 GBq/μmol), chemical and radiochemical purities (&gt;97%). Full quality control testing of [18F]fluoropyridine-losartan was performed to validate its safe use in future clinical studies.
+The binding and pharmacokinetic properties of the novel [18F]fluoropyridine-candesartan were evaluated in vitro and ex/in vivo in male Sprague-Dawley rats. Competition binding assays in AT1R-expressing membranes revealed a high affinity of fluoropyridine-candesartan (Ki=5.9 nM), which is similar to fluoropyridine-losartan (Ki=5.6 nM) but lower than candesartan (Ki=0.4 nM). [18F]Fluoropyridine-candesartan bound strongly to plasma proteins (99.3%) as assessed by ultrafiltration. Specific binding was confirmed by ex vivo biodistribution 20 min after tracer injection, with a significant uptake reduction (-86%) in the AT1R-rich kidney cortex of pretreated (candesartan or losartan) rats and by in vitro autoradiography with losartan co-incubation. Radiolabeled metabolites in plasma and kidneys of control and pretreated (candesartan or losartan) animals were analyzed by column-switch HPLC. [18F]Fluoropyridine-candesartan was mainly metabolized to radiolabeled hydrophilic compounds, displaying minimal interference on renal AT1R binding with 82% of unchanged tracer in the kidneys at 20 min post-injection. Dynamic PET/CT images of [18F]fluoropyridine-candesartan, acquired for 60 min at baseline, revealed high accumulation and slow clearance from the kidney cortex and liver with high tissue-to-blood ratios. Binding specificity for AT1R was demonstrated with marked reductions in kidney-cortex (-84%) and liver (-93%) tissue-to-blood ratios at 20 min post-injection, when blocking with losartan. No change was observed in kidneys of rats pre-treated with the AT2R antagonist PD123,319, confirming binding selectivity for AT1 over AT2 receptors. The favorable binding properties and in vivo stability of [18F]fluoropyridine-candesartan support further studies to validate its potential as AT1R PET radioligand.
+The reproducible automated radiosyntheses developed in my research will allow innovative in-vivo PET imaging of AT1R-expression in several diseases, offering the possibility to follow disease progression in longitudinal studies and guide therapy.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">UdeM.ORCIDAuteurThese</td><td class="word-break">0000-0002-6301-3496</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F26328&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=G%C3%A9nie+biom%C3%A9dical&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a href="/xmlui/bitstream/handle/1866/26328/Abreu_Diaz_Aida_Mary_2021_These.pdf?sequence=4&amp;isAllowed=y"><img alt="PDF" class="thumbnail-papyrus thumbnail_icone" height="122" src="/xmlui/themes/Mirage2/images/mimes/mime_pdf.png" style="height: 122px;" title="PDF" width="92"/></a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Abreu_Diaz_Aida_Mary_2021_These.pdf">
+<a href="/xmlui/bitstream/handle/1866/26328/Abreu_Diaz_Aida_Mary_2021_These.pdf?sequence=4&amp;isAllowed=y">Abreu_Diaz_Aida_Mary_2021_These.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">6.108Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+<div>
+<span class="bold embargo"><span class="dateembargo">Under embargo</span> until: </span> <span class="embargo dateembargo">2022-10-21</span>
+<div class="btn_request_a_copy">
+<a class="btn_request_a_copy" href="/xmlui/bitstream/handle/1866/26328/Abreu_Diaz_Aida_Mary_2021_These.pdf?sequence=4&amp;isAllowed=y">🔓 Request copy</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2591/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2591">Faculté de médecine – Thèses et mémoires</a> [4267]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26328">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

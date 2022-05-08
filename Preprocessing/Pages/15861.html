@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Cogestion des ressources naturelles : une approche structurale pour quantifier la contribution des réseaux d'acteurs à la résilience des systèmes socio-écologiques</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Parrott, Lael" name="DC.contributor">
+<meta content="Meyer, Wayne" name="DC.contributor">
+<meta content="Gonzalès, Rodolphe" name="DC.creator">
+<meta content="2016-10-12T14:10:25Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2016-10-12T14:10:25Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2016-04-20" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2016-03" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/15861" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Systèmes socio-écologiques" name="DC.subject" xml:lang="fr"/>
+<meta content="Capacité de liaisons entre groups d’acteurs" name="DC.subject" xml:lang="fr"/>
+<meta content="Cogestion de ressources naturelles" name="DC.subject" xml:lang="fr"/>
+<meta content="Eyre Peninsula" name="DC.subject" xml:lang="fr"/>
+<meta content="Réseaux sociaux" name="DC.subject" xml:lang="fr"/>
+<meta content="Réseaux d’acteurs" name="DC.subject" xml:lang="fr"/>
+<meta content="Résilience" name="DC.subject" xml:lang="fr"/>
+<meta content="Optimisation" name="DC.subject" xml:lang="fr"/>
+<meta content="Recuit simulé multiobjectifs" name="DC.subject" xml:lang="fr"/>
+<meta content="Marginalisation de groupes d’acteurs" name="DC.subject" xml:lang="fr"/>
+<meta content="Social-ecological systems" name="DC.subject" xml:lang="fr"/>
+<meta content="Stakeholder group marginalization" name="DC.subject" xml:lang="fr"/>
+<meta content="Bridging capacity" name="DC.subject" xml:lang="fr"/>
+<meta content="Natural resources co-management" name="DC.subject" xml:lang="fr"/>
+<meta content="Eyre Peninsula" name="DC.subject" xml:lang="fr"/>
+<meta content="Stakeholder network" name="DC.subject" xml:lang="fr"/>
+<meta content="Social networks" name="DC.subject" xml:lang="fr"/>
+<meta content="Resilience" name="DC.subject" xml:lang="fr"/>
+<meta content="Optimization" name="DC.subject" xml:lang="fr"/>
+<meta content="Multi-objective simulated annealing" name="DC.subject" xml:lang="fr"/>
+<meta content="Social Sciences - Geography / Sciences sociales - Géographie (UMI : 0366)" name="DC.subject" xml:lang="fr"/>
+<meta content="Cogestion des ressources naturelles : une approche structurale pour quantifier la contribution des réseaux d'acteurs à la résilience des systèmes socio-écologiques" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Alors que les activités anthropiques font basculer de nombreux écosystèmes vers des régimes fonctionnels différents, la résilience des systèmes socio-écologiques devient un problème pressant. Des acteurs locaux, impliqués dans une grande diversité de groupes — allant d’initiatives locales et indépendantes à de grandes institutions formelles — peuvent agir sur ces questions en collaborant au développement, à la promotion ou à l’implantation de pratiques plus en accord avec ce que l’environnement peut fournir. De ces collaborations répétées émergent des réseaux complexes, et il a été montré que la topologie de ces réseaux peut améliorer la résilience des systèmes socio-écologiques (SSÉ) auxquels ils participent.
+La topologie des réseaux d’acteurs favorisant la résilience de leur SSÉ est caractérisée par une combinaison de plusieurs facteurs : la structure doit être modulaire afin d’aider les différents groupes à développer et proposer des solutions à la fois plus innovantes (en réduisant l’homogénéisation du réseau), et plus proches de leurs intérêts propres ; elle doit être bien connectée et facilement synchronisable afin de faciliter les consensus, d’augmenter le capital social, ainsi que la capacité d’apprentissage ; enfin, elle doit être robuste, afin d’éviter que les deux premières caractéristiques ne souffrent du retrait volontaire ou de la mise à l’écart de certains acteurs.
+Ces caractéristiques, qui sont relativement intuitives à la fois conceptuellement et dans leur application mathématique, sont souvent employées séparément pour analyser les qualités structurales de réseaux d’acteurs empiriques. Cependant, certaines sont, par nature, incompatibles entre elles. Par exemple, le degré de modularité d’un réseau ne peut pas augmenter au même rythme que sa connectivité, et cette dernière ne peut pas être améliorée tout en améliorant sa robustesse. Cet obstacle rend difficile la création d’une mesure globale, car le niveau auquel le réseau des acteurs contribue à améliorer la résilience du SSÉ ne peut pas être la simple addition des caractéristiques citées, mais plutôt le résultat d’un compromis subtil entre celles-ci. Le travail présenté ici a pour objectifs (1), d’explorer les compromis entre ces caractéristiques ; (2) de proposer une mesure du degré auquel un réseau empirique d’acteurs contribue à la résilience de son SSÉ ; et (3) d’analyser un réseau empirique à la lumière, entre autres, de ces qualités structurales.
+Cette thèse s’articule autour d’une introduction et de quatre chapitres numérotés de 2 à 5. Le chapitre 2 est une revue de la littérature sur la résilience des SSÉ. Il identifie une série de caractéristiques structurales (ainsi que les mesures de réseaux qui leur correspondent) liées à l’amélioration de la résilience dans les SSÉ. Le chapitre 3 est une étude de cas sur la péninsule d’Eyre, une région rurale d’Australie-Méridionale où l’occupation du sol, ainsi que les changements climatiques, contribuent à l’érosion de la biodiversité. Pour cette étude de cas, des travaux de terrain ont été effectués en 2010 et 2011 durant lesquels une série d’entrevues a permis de créer une liste des acteurs de la cogestion de la biodiversité sur la péninsule. Les données collectées ont été utilisées pour le développement d’un questionnaire en ligne permettant de documenter les interactions entre ces acteurs. Ces deux étapes ont permis la reconstitution d’un réseau pondéré et dirigé de 129 acteurs individuels et 1180 relations. Le chapitre 4 décrit une méthodologie pour mesurer le degré auquel un réseau d’acteurs participe à la résilience du SSÉ dans lequel il est inclus. La méthode s’articule en deux étapes : premièrement, un algorithme d’optimisation (recuit simulé) est utilisé pour fabriquer un archétype semi-aléatoire correspondant à un compromis entre des niveaux élevés de modularité, de connectivité et de robustesse. Deuxièmement, un réseau empirique (comme celui de la péninsule d’Eyre) est comparé au réseau archétypique par le biais d’une mesure de distance structurelle. Plus la distance est courte, et plus le réseau empirique est proche de sa configuration optimale. La cinquième et dernier chapitre est une amélioration de l’algorithme de recuit simulé utilisé dans le chapitre 4. Comme il est d’usage pour ce genre d’algorithmes, le recuit simulé utilisé projetait les dimensions du problème multiobjectif dans une seule dimension (sous la forme d’une moyenne pondérée). Si cette technique donne de très bons résultats ponctuellement, elle n’autorise la production que d’une seule solution parmi la multitude de compromis possibles entre les différents objectifs. Afin de mieux explorer ces compromis, nous proposons un algorithme de recuit simulé multiobjectifs qui, plutôt que d’optimiser une seule solution, optimise une surface multidimensionnelle de solutions. 
+Cette étude, qui se concentre sur la partie sociale des systèmes socio-écologiques, améliore notre compréhension des structures actorielles qui contribuent à la résilience des SSÉ. Elle montre que si certaines caractéristiques profitables à la résilience sont incompatibles (modularité et connectivité, ou — dans une moindre mesure — connectivité et robustesse), d’autres sont plus facilement conciliables (connectivité et synchronisabilité, ou — dans une moindre mesure — modularité et robustesse). Elle fournit également une méthode intuitive pour mesurer quantitativement des réseaux d’acteurs empiriques, et ouvre ainsi la voie vers, par exemple, des comparaisons d’études de cas, ou des suivis — dans le temps — de réseaux d’acteurs. De plus, cette thèse inclut une étude de cas qui fait la lumière sur l’importance de certains groupes institutionnels pour la coordination des collaborations et des échanges de connaissances entre des acteurs aux intérêts potentiellement divergents." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="As anthropic activities are slowly pushing many ecosystems towards their functional tipping points, social-ecological resilience has become a pressing concern. Local stakeholders, acting within a diversity of groups — from grassroots organizations to higher-scale institutional structures — may act on these issues and collaborate to develop, promote, and implement more sustainable practices. From these repeated collaborations emerge complex networks, the topologies of which have been shown to either enhance or hinder social-ecological systems’ (SES) resilience.
+The main topological characteristics of a stakeholder network enhancing SES’s resilience include a combination of: a highly modular community structure, which helps groups of stakeholders develop and propose solutions both more innovative (by reducing knowledge homogeneity in the network), and close to their interest and values; high connectivity and synchronizability, in order to improve consensus building, social capital and learning capacity; and high robustness so as to prevent the first two characteristics from sharply decreasing if some stakeholders were to leave the network.
+These characteristics are straight-forward both in concept and in their mathematical implementation, and have often been used separately to discuss the structural qualities of stakeholder networks in case studies. However, some of these topological features inherently contradict each other. For example, modularity is in direct conflict with connectivity, which is in conflict with a network’s robustness. This issue makes the creation of a more global measure difficult, as the level to which stakeholders contribute to enhancing SES’s resilience cannot simply be a summation of these features, but instead needs to be the outcome of a delicate trade-off between them. The present study aims to: (1) explore the trade-offs at work between these structural features; (2) produce a measure of how well-suited empirical stakeholder networks are to enhancing the resilience of their SES; and (3) thoroughly analyze an empirical stakeholder network in the context, among other things, of its resilience-enhancing qualities.
+This dissertation is organized in four parts. The first part (Chapter 2) is a review of the literature on SES resilience. It identifies a series of structural features (as well as their corresponding network metrics) associated with resilience-enhancement in SES. The second part (Chapter 3) is a case study on the Eyre Peninsula (EP), a rural region of South Australia where land-use, as well as climate change, contribute to biodiversity erosion. For this case study, field work was conducted in 2010 and 2011, during which time a series of face-to-face interviews was conducted to populate a list of individuals — and groups of individuals — holding a stake in biodiversity conservation on the EP. The data was thereafter used to develop an online questionnaire documenting interactions between these stakeholders. The two steps led to produce a weighted, directed network of 129 stakeholders interacting through 1180 collaboration links. The third part (Chapter 4) describes a methodology to measure the level to which stakeholder networks contribute to resilience-building in SES. The method is articulated in two steps: (i) an optimization algorithm (simulated annealing — SA —) is used to craft a semi-random archetypal network which scores high in one compromise of modularity, connectivity, synchronizability, and robustness, and (ii) an empirical stakeholder networks (such as our EP network) is compared to the archetypal network through a measure of structural distance. The shorter the distance, the closer the empirical network is to its ideal configuration. The fourth and last part of the dissertation research (Chapter 5) is an improvement on the simulated annealing used in Chapter 4. As is frequently done for this kind of optimization technique, the SA used in Chapter 4 projected the four dimensions of the multi-objective problem into one (as a weighted average). While performing well, this only resolves one of the possible trade-offs between the objectives. To better explore the trade-offs at work in this optimization problem, a true multi-objective simulated annealing (MOSA) is proposed where, instead of optimizing one solution, the algorithm optimizes a multidimensional surface of solutions scoring better than the others in a least one of the objectives.
+This study, which focuses on the social part of SESs, improves our understanding of the stakeholder collaboration structures which, theoretically, best contribute to resilient SESs. It shows that while some resilience-enhancing topological characteristics are in conflict (modularity vs. connectivity, and connectivity vs. robustness to a lesser extent) others can be easily reconciled (connectivity vs. synchronizability, and, less-so, modularity vs. robustness). It also provides an intuitive method to quantitatively assess empirical stakeholder networks, which opens the way to comparisons between case studies, or monitoring of stakeholder network evolution through time. Additionally, this thesis provides a case study which highlights the importance of a key institutional group in coordinating collaborations and information exchanges among other stakeholders of potentially diverging interests and values." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Systèmes socio-écologiques; Capacité de liaisons entre groups d’acteurs; Cogestion de ressources naturelles; Eyre Peninsula; Réseaux sociaux; Réseaux d’acteurs; Résilience; Optimisation; Recuit simulé multiobjectifs; Marginalisation de groupes d’acteurs; Social-ecological systems; Stakeholder group marginalization; Bridging capacity; Natural resources co-management; Eyre Peninsula; Stakeholder network; Social networks; Resilience; Optimization; Multi-objective simulated annealing; Social Sciences - Geography / Sciences sociales - Géographie (UMI : 0366); Thèse ou mémoire / Thesis or Dissertation; Géographie" name="citation_keywords"/>
+<meta content="Cogestion des ressources naturelles : une approche structurale pour quantifier la contribution des réseaux d'acteurs à la résilience des systèmes socio-écologiques" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Gonzalès, Rodolphe" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/15861/2/Rodolphe_Gonzales_2016_these.pdf" name="citation_pdf_url"/>
+<meta content="2016-04-20" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/15861" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/15861?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/15861?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/15861?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/15861?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/15861?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/15861?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2945" role="menuitem">Faculté des arts et des sciences – Département de géographie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2984" role="menuitem">Faculté des arts et des sciences – Département de géographie - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2945">Faculté des arts et des sciences – Département de géographie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2984">Faculté des arts et des sciences – Département de géographie - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2984"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/15861/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/15861">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/15861/mets.xml-->
+<h2 class="page-header first-page-header">Cogestion des ressources naturelles : une approche structurale pour quantifier la contribution des réseaux d'acteurs à la résilience des systèmes socio-écologiques</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Parrott, Lael</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Meyer, Wayne</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Gonzalès, Rodolphe</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2016-10-12T14:10:25Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2016-10-12T14:10:25Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2016-04-20</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2016-03</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/15861</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Systèmes socio-écologiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Capacité de liaisons entre groups d’acteurs</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Cogestion de ressources naturelles</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Eyre Peninsula</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Réseaux sociaux</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Réseaux d’acteurs</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Résilience</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Optimisation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Recuit simulé multiobjectifs</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Marginalisation de groupes d’acteurs</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Social-ecological systems</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Stakeholder group marginalization</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Bridging capacity</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Natural resources co-management</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Eyre Peninsula</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Stakeholder network</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Social networks</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Resilience</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Optimization</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Multi-objective simulated annealing</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Social Sciences - Geography / Sciences sociales - Géographie (UMI : 0366)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Cogestion des ressources naturelles : une approche structurale pour quantifier la contribution des réseaux d'acteurs à la résilience des systèmes socio-écologiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Géographie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Alors que les activités anthropiques font basculer de nombreux écosystèmes vers des régimes fonctionnels différents, la résilience des systèmes socio-écologiques devient un problème pressant. Des acteurs locaux, impliqués dans une grande diversité de groupes — allant d’initiatives locales et indépendantes à de grandes institutions formelles — peuvent agir sur ces questions en collaborant au développement, à la promotion ou à l’implantation de pratiques plus en accord avec ce que l’environnement peut fournir. De ces collaborations répétées émergent des réseaux complexes, et il a été montré que la topologie de ces réseaux peut améliorer la résilience des systèmes socio-écologiques (SSÉ) auxquels ils participent.
+La topologie des réseaux d’acteurs favorisant la résilience de leur SSÉ est caractérisée par une combinaison de plusieurs facteurs : la structure doit être modulaire afin d’aider les différents groupes à développer et proposer des solutions à la fois plus innovantes (en réduisant l’homogénéisation du réseau), et plus proches de leurs intérêts propres ; elle doit être bien connectée et facilement synchronisable afin de faciliter les consensus, d’augmenter le capital social, ainsi que la capacité d’apprentissage ; enfin, elle doit être robuste, afin d’éviter que les deux premières caractéristiques ne souffrent du retrait volontaire ou de la mise à l’écart de certains acteurs.
+Ces caractéristiques, qui sont relativement intuitives à la fois conceptuellement et dans leur application mathématique, sont souvent employées séparément pour analyser les qualités structurales de réseaux d’acteurs empiriques. Cependant, certaines sont, par nature, incompatibles entre elles. Par exemple, le degré de modularité d’un réseau ne peut pas augmenter au même rythme que sa connectivité, et cette dernière ne peut pas être améliorée tout en améliorant sa robustesse. Cet obstacle rend difficile la création d’une mesure globale, car le niveau auquel le réseau des acteurs contribue à améliorer la résilience du SSÉ ne peut pas être la simple addition des caractéristiques citées, mais plutôt le résultat d’un compromis subtil entre celles-ci. Le travail présenté ici a pour objectifs (1), d’explorer les compromis entre ces caractéristiques ; (2) de proposer une mesure du degré auquel un réseau empirique d’acteurs contribue à la résilience de son SSÉ ; et (3) d’analyser un réseau empirique à la lumière, entre autres, de ces qualités structurales.
+Cette thèse s’articule autour d’une introduction et de quatre chapitres numérotés de 2 à 5. Le chapitre 2 est une revue de la littérature sur la résilience des SSÉ. Il identifie une série de caractéristiques structurales (ainsi que les mesures de réseaux qui leur correspondent) liées à l’amélioration de la résilience dans les SSÉ. Le chapitre 3 est une étude de cas sur la péninsule d’Eyre, une région rurale d’Australie-Méridionale où l’occupation du sol, ainsi que les changements climatiques, contribuent à l’érosion de la biodiversité. Pour cette étude de cas, des travaux de terrain ont été effectués en 2010 et 2011 durant lesquels une série d’entrevues a permis de créer une liste des acteurs de la cogestion de la biodiversité sur la péninsule. Les données collectées ont été utilisées pour le développement d’un questionnaire en ligne permettant de documenter les interactions entre ces acteurs. Ces deux étapes ont permis la reconstitution d’un réseau pondéré et dirigé de 129 acteurs individuels et 1180 relations. Le chapitre 4 décrit une méthodologie pour mesurer le degré auquel un réseau d’acteurs participe à la résilience du SSÉ dans lequel il est inclus. La méthode s’articule en deux étapes : premièrement, un algorithme d’optimisation (recuit simulé) est utilisé pour fabriquer un archétype semi-aléatoire correspondant à un compromis entre des niveaux élevés de modularité, de connectivité et de robustesse. Deuxièmement, un réseau empirique (comme celui de la péninsule d’Eyre) est comparé au réseau archétypique par le biais d’une mesure de distance structurelle. Plus la distance est courte, et plus le réseau empirique est proche de sa configuration optimale. La cinquième et dernier chapitre est une amélioration de l’algorithme de recuit simulé utilisé dans le chapitre 4. Comme il est d’usage pour ce genre d’algorithmes, le recuit simulé utilisé projetait les dimensions du problème multiobjectif dans une seule dimension (sous la forme d’une moyenne pondérée). Si cette technique donne de très bons résultats ponctuellement, elle n’autorise la production que d’une seule solution parmi la multitude de compromis possibles entre les différents objectifs. Afin de mieux explorer ces compromis, nous proposons un algorithme de recuit simulé multiobjectifs qui, plutôt que d’optimiser une seule solution, optimise une surface multidimensionnelle de solutions. 
+Cette étude, qui se concentre sur la partie sociale des systèmes socio-écologiques, améliore notre compréhension des structures actorielles qui contribuent à la résilience des SSÉ. Elle montre que si certaines caractéristiques profitables à la résilience sont incompatibles (modularité et connectivité, ou — dans une moindre mesure — connectivité et robustesse), d’autres sont plus facilement conciliables (connectivité et synchronisabilité, ou — dans une moindre mesure — modularité et robustesse). Elle fournit également une méthode intuitive pour mesurer quantitativement des réseaux d’acteurs empiriques, et ouvre ainsi la voie vers, par exemple, des comparaisons d’études de cas, ou des suivis — dans le temps — de réseaux d’acteurs. De plus, cette thèse inclut une étude de cas qui fait la lumière sur l’importance de certains groupes institutionnels pour la coordination des collaborations et des échanges de connaissances entre des acteurs aux intérêts potentiellement divergents.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">As anthropic activities are slowly pushing many ecosystems towards their functional tipping points, social-ecological resilience has become a pressing concern. Local stakeholders, acting within a diversity of groups — from grassroots organizations to higher-scale institutional structures — may act on these issues and collaborate to develop, promote, and implement more sustainable practices. From these repeated collaborations emerge complex networks, the topologies of which have been shown to either enhance or hinder social-ecological systems’ (SES) resilience.
+The main topological characteristics of a stakeholder network enhancing SES’s resilience include a combination of: a highly modular community structure, which helps groups of stakeholders develop and propose solutions both more innovative (by reducing knowledge homogeneity in the network), and close to their interest and values; high connectivity and synchronizability, in order to improve consensus building, social capital and learning capacity; and high robustness so as to prevent the first two characteristics from sharply decreasing if some stakeholders were to leave the network.
+These characteristics are straight-forward both in concept and in their mathematical implementation, and have often been used separately to discuss the structural qualities of stakeholder networks in case studies. However, some of these topological features inherently contradict each other. For example, modularity is in direct conflict with connectivity, which is in conflict with a network’s robustness. This issue makes the creation of a more global measure difficult, as the level to which stakeholders contribute to enhancing SES’s resilience cannot simply be a summation of these features, but instead needs to be the outcome of a delicate trade-off between them. The present study aims to: (1) explore the trade-offs at work between these structural features; (2) produce a measure of how well-suited empirical stakeholder networks are to enhancing the resilience of their SES; and (3) thoroughly analyze an empirical stakeholder network in the context, among other things, of its resilience-enhancing qualities.
+This dissertation is organized in four parts. The first part (Chapter 2) is a review of the literature on SES resilience. It identifies a series of structural features (as well as their corresponding network metrics) associated with resilience-enhancement in SES. The second part (Chapter 3) is a case study on the Eyre Peninsula (EP), a rural region of South Australia where land-use, as well as climate change, contribute to biodiversity erosion. For this case study, field work was conducted in 2010 and 2011, during which time a series of face-to-face interviews was conducted to populate a list of individuals — and groups of individuals — holding a stake in biodiversity conservation on the EP. The data was thereafter used to develop an online questionnaire documenting interactions between these stakeholders. The two steps led to produce a weighted, directed network of 129 stakeholders interacting through 1180 collaboration links. The third part (Chapter 4) describes a methodology to measure the level to which stakeholder networks contribute to resilience-building in SES. The method is articulated in two steps: (i) an optimization algorithm (simulated annealing — SA —) is used to craft a semi-random archetypal network which scores high in one compromise of modularity, connectivity, synchronizability, and robustness, and (ii) an empirical stakeholder networks (such as our EP network) is compared to the archetypal network through a measure of structural distance. The shorter the distance, the closer the empirical network is to its ideal configuration. The fourth and last part of the dissertation research (Chapter 5) is an improvement on the simulated annealing used in Chapter 4. As is frequently done for this kind of optimization technique, the SA used in Chapter 4 projected the four dimensions of the multi-objective problem into one (as a weighted average). While performing well, this only resolves one of the possible trade-offs between the objectives. To better explore the trade-offs at work in this optimization problem, a true multi-objective simulated annealing (MOSA) is proposed where, instead of optimizing one solution, the algorithm optimizes a multidimensional surface of solutions scoring better than the others in a least one of the objectives.
+This study, which focuses on the social part of SESs, improves our understanding of the stakeholder collaboration structures which, theoretically, best contribute to resilient SESs. It shows that while some resilience-enhancing topological characteristics are in conflict (modularity vs. connectivity, and connectivity vs. robustness to a lesser extent) others can be easily reconciled (connectivity vs. synchronizability, and, less-so, modularity vs. robustness). It also provides an intuitive method to quantitatively assess empirical stakeholder networks, which opens the way to comparisons between case studies, or monitoring of stakeholder network evolution through time. Additionally, this thesis provides a case study which highlights the importance of a key institutional group in coordinating collaborations and information exchanges among other stakeholders of potentially diverging interests and values.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F15861&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=G%C3%A9ographie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/15861/Rodolphe_Gonzales_2016_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/15861/Rodolphe_Gonzales_2016_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Rodolphe_Gonzales_2016_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/15861/Rodolphe_Gonzales_2016_these.pdf?sequence=2&amp;isAllowed=y">Rodolphe_Gonzales_2016_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">51.77Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2984/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2984">Faculté des arts et des sciences – Département de géographie - Thèses et mémoires</a> [241]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/15861">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

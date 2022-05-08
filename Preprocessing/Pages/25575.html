@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Exploration du rôle de signalisation des Mitogen-Activated Protein Kinases lors de la fécondation chez les plantes</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Matton, Daniel Philippe" name="DC.contributor">
+<meta content="Mazin, Benjamin Damien" name="DC.creator">
+<meta content="2021-08-31T18:50:46Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2021-08-31T18:50:46Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-07-14" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2020-10" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/25575" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Cascade de signalisation" name="DC.subject" xml:lang="fr"/>
+<meta content="Mitogen-Activated Protein Kinases" name="DC.subject" xml:lang="fr"/>
+<meta content="Fertilization- Related Kinase (FRK)" name="DC.subject" xml:lang="fr"/>
+<meta content="Développement" name="DC.subject" xml:lang="fr"/>
+<meta content="Pollen" name="DC.subject" xml:lang="fr"/>
+<meta content="Sac embryonnaire" name="DC.subject" xml:lang="fr"/>
+<meta content="Tube pollinique" name="DC.subject" xml:lang="fr"/>
+<meta content="Solanum chacoense" name="DC.subject" xml:lang="fr"/>
+<meta content="Arabidopsis thaliana" name="DC.subject" xml:lang="fr"/>
+<meta content="Signaling cascade" name="DC.subject" xml:lang="fr"/>
+<meta content="Reproduction" name="DC.subject" xml:lang="fr"/>
+<meta content="Development" name="DC.subject" xml:lang="fr"/>
+<meta content="Embryo Sac" name="DC.subject" xml:lang="fr"/>
+<meta content="Pollen tube" name="DC.subject" xml:lang="fr"/>
+<meta content="Solanum chacoense" name="DC.subject" xml:lang="fr"/>
+<meta content="Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307)" name="DC.subject" xml:lang="fr"/>
+<meta content="Exploration du rôle de signalisation des Mitogen-Activated Protein Kinases lors de la fécondation chez les plantes" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="La reproduction est un événement crucial pour la vie des plantes. Ce processus nécessite la formation du pollen et des ovules. Les cellules germinales vont subir la méiose puis une succession de mitoses, deux pour le pollen et trois pour l’ovule, ce qui va leur permettre d’acquérir leurs structures finales. Une fois formés, ces deux gamètes doivent se rencontrer.
+Pour cela, le grain de pollen va germer sur le stigmate puis former le tube pollinique. Le tube pollinique en croissance va traverser les différents tissus femelles et ainsi tracter les deux
+cellules spermatiques jusqu’à l’ovule, permettant la reproduction.
+Un important réseau de signalisation cellulaire est nécessaire pour permettre ces
+événements. Les cascades des Mitogen-Activated Protein Kinases (MAPKs) sont l’un des réseaux de signalisation les plus étudiés chez les plantes. Ces kinases sont impliquées dans de très nombreux processus développementaux tels que la formation de l’embryon ou des
+stomates. Pour autant, leurs rôles restent encore peu caractérisés pendant de la fécondation. Ce projet a pour objectif de mieux comprendre le rôle que jouent les MAPK lors de la formation
+des gamètes mâles et femelles ainsi que lors de la croissance des tubes polliniques. Plusieurs membres de la superfamille des MAPKs ont été caractérisés pour leurs rôles dans la reproduction sexuée des végétaux. De précédents travaux dans le laboratoire de Daniel P.
+Matton, ont démontré l’implication de deux MAPK Kinases Kinases (MAP3K), la Solanum chacoense Fertilization-Related Kinase 1 (ScFRK1) et ScFRK2. Ces deux kinases sont nécessaires pour le développement de l’ovule et du pollen chez S. chacoense, une espèce de pomme de terre sauvage diploïde.
+Dans un premier temps, nous avons étudié la fonction d’une nouvelle ScFRK, la ScFRK3. Ce troisième membre de la classe des FRKs chez S. chacoense, est, elle aussi,
+impliquée dans le développement des gamétophytes mâles et femelles. Du patron d’expression
+jusqu’à l’établissement d’une voie de signalisation potentielle, en passant par la caractérisation
+phénotypique des mutants, plusieurs expériences ont été réalisées dans le but de comprendre le rôle de ScFRK3 lors de la formation des gamètes chez Solanum chacoense. Nous montrons que la ScFRK3 est impliquée dans la formation du pollen ainsi que celui des ovules.
+Nous avons ensuite poursuivi nos recherches en affinant le phénotypage du mutant de surexpression ScFRK2. En effet, les précédentes études ont permis de montré que la
+surexpression de ScFRK2 conduit le primordium ovulaire à la formation de structures
+carpéloïdes. Pour autant, les ensembles des primordius ovulaires ne sont pas devenu des strutures capéloïde. Nous montrons ici que seulement 10 % des ovules dans l'ovaire sont devenu
+4
+des carpéloïde. Notre étude montre qu’en plus des structures carpéloïdes, un grand nombre d'ovule n'ont pas de sac embryonnaire à l'anthèse ce qui explique le faible nombre de graines
+par fruit. L’analyse du développement des sacs embryonnaires monte que la surexpression de ScFRK2 entraine l’arrêt au stade mégaspore fonctionnelle. Ce phénotype est similaire à ce qui a pu être observé dans les lignées ARN interférant pour la ScFRK1 et la ScFRK3.
+De précédentes études faites chez Arabidopsis thaliana semblent montrer que les
+membres de la superfamille des MAPK ne sont pas essentiels pour la croissance du tube pollinique. Pour comprendre le rôle que jouent les MAPK dans l’élongation du tube pollinique,
+nous avons utilisé un inhibiteur des MAP Kinase Kinase (MKK), appelé U0126. La présence de cette drogue dans le milieu de croissance des grains de pollen provoque une diminution de la germination et de l’élongation du tube pollinique. L’utilisation de la méthode semi-in vivo
+montre une perte de la polarisation de la croissance des tubes polliniques causée par l’inhibition
+des MKK. La présence de l’inhibiteur conduit à la diminution de la quantité de filaments
+d’actine ainsi qu’à leur désorganisation à l’apex du tube. L’exocytose est aussi affectée par
+l’inhibition des MKK. Les cascades MAPK sont nécessaires à la croissance polarisée du tube pollinique chez Arabidopsis thaliana.
+Pour finir, nous avons voulu identifier certains membres de la superfamille des MAPK impliqués dans la croissance du tube pollinique. Nous nous sommes intéressés en premier lieu
+aux orthologues de la famille ScFRK chez Arabidopsis thaliana. Les AtMAP3K19-20-21 sont les orthologues les plus proches de ScFRK3. Ces AtMAP3K sont exprimées lors du
+développement des grains de pollen et lors de l’élongation de tube pollinique. L’analyse du
+pollen des différentes lignées mutantes montre qu’en leur absence, le pollen ne présente aucun
+problème de développement contrairement à ScFRK3. Par contre, les doubles mutants et le triple mutant pour les AtMAP3K19-20-21 montrent une diminution de la capacité de germination. L’élongation du tube pollinique est affectée lors de la mutation d’au moins une
+des AtMAP3K. Ces deux études démontrent que les MAPK sont essentielles dans la formation
+et l’élongation du tube pollinique." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Reproduction is a crucial event for plant life. This process requires the formation of
+pollen and ovules. The germ cells will undergo meiosis and then a succession of mitosis, two
+for the pollen and three for the ovule, which will allow them to acquire their final structures.
+Once formed, these two gametes must meet each other. For this, the pollen grain will germinate on the stigmas to form the pollen tube. The growth of the pollen tube will pass through the different female tissues and thus pull the two sperm cells to the ovum for reproduction.
+An important cellular signaling network is necessary to allow these events to occur. The Mitogen-Activated Protein Kinase (MAPKs) cascades are one of the most studied signaling
+networks in plants. These kinases are involved in a wide range of developmental processes such
+as embryo formation and stomata. However, their roles remain poorly characterized during
+fertilization. The aim of this project is to better understand the role played by MAPKs during
+the formation of male and female gametes as well as during the growth of pollen tubes. Several members of the MAPK superfamily have been characterized for their role in the sexual reproduction of plants. Previous work in Daniel P. Matton's laboratory has demonstrated the involvement of two MAPK Kinases (MAP3K), Solanum chacoense Fertilization-Related
+Kinase 1 (ScFRK1) and ScFRK2. These two kinases are necessary for egg and pollen
+development in S. chacoense, a diploid wild potato species.
+In a first step, we studied the functionality of a new ScFRK, ScFRK3. This third member
+of the class of FRKs in S. chacoense, is also involved in the development of male and female gametophytes. From the expression pattern to the establishment of a potential signaling
+pathway, through the phenotypic characterization of mutants, several experiments have been
+performed in order to understand the role of ScFRK3 in the formation of gametes in S.
+chacoense. We show that ScFRK3 is involved in the formation of pollen as well as that of the embryonic sac.
+We then continued our research by refining the phenotyping of the overexpression
+mutant ScFRK2. Indeed, previous studies have shown that ScFRK2 overexpression leads the ovular primordium to the formation of carpeloid structures. However, the sets of ovular
+primordia have not become capeloid structures. We show here that only 10% of the eggs in the ovary have become carpeloid. Our study shows that in addition to the carpeloid structures, a large number of ova do not have an embryonic sac in the anthesis, which explains the low number of seeds per fruit. The analysis of the development of the embryonic sacs shows that
+7
+overexpression of ScFRK2 leads to the cessation of the functional megaspore stage. This phenotype is similar to what has been observed in interfering RNA lines reducing expression
+of ScFRK1 and ScFRK3.
+Previous studies in Arabidopsis thaliana suggest that members of the MAPK superfamily are not essential for pollen tube growth. To understand the role that MAPKs play
+in pollen tube elongation, we used a MAP Kinase Kinase (MKK) inhibitor called U0126. The presence of this drug in the growth medium of pollen grains causes a decrease in germination
+and elongation of the pollen tube. The use of the semi in vivo method shows a loss of
+polarization of the pollen tube growth caused by the inhibition of MKK. The presence of the inhibitor leads to a decrease in the number of actin filaments and their disorganization at the apex of the tube. Exocytosis is also affected by MKK inhibition. We show in this chapter that MAPK cascades are necessary for polarized pollen tube growth in Arabidopsis thaliana.
+Finally, we wanted to identify some members of the MAPK superfamily involved in
+pollen tube growth. We were first interested in the ScFRK family orthologs in Arabidopsis thaliana. AtMAP3K19-20-21 are the closest orthologs to ScFRK3. These AtMAP3K are expressed during the development of pollen grains and during the elongation of the pollen tube.
+Pollen analysis of the different mutant lines shows that in their absence the pollen does not present any development problems unlike ScFRK3. On the other hand, double mutants and
+triple mutant for AtMAP3K19-20-21 show a decrease in germination capacity. Pollen tube elongation is affected when at least one of the AtMAP3Ks is mutated. These two studies demonstrate that MAPKs are essential for the formation and elongation of the pollen tube and
+that AtMAP3K19-20-21 participate in these biological processes." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Cascade de signalisation; Mitogen-Activated Protein Kinases; Fertilization- Related Kinase (FRK); Développement; Pollen; Sac embryonnaire; Tube pollinique; Solanum chacoense; Arabidopsis thaliana; Signaling cascade; Reproduction; Development; Embryo Sac; Pollen tube; Solanum chacoense; Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307); Thèse ou mémoire / Thesis or Dissertation; Sciences biologiques" name="citation_keywords"/>
+<meta content="Exploration du rôle de signalisation des Mitogen-Activated Protein Kinases lors de la fécondation chez les plantes" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Mazin, Benjamin Damien" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/25575/3/Mazin_Benjamin_2021_these.pdf" name="citation_pdf_url"/>
+<meta content="2021-07-14" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/25575" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25575?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25575?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25575?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25575?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25575?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/25575?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2953" role="menuitem">Faculté des arts et des sciences – Département de sciences biologiques</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2994" role="menuitem">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2953">Faculté des arts et des sciences – Département de sciences biologiques</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2994">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2994"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2994/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/25575/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25575">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/25575/mets.xml-->
+<h2 class="page-header first-page-header">Exploration du rôle de signalisation des Mitogen-Activated Protein Kinases lors de la fécondation chez les plantes</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Matton, Daniel Philippe</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Mazin, Benjamin Damien</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2021-08-31T18:50:46Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2021-08-31T18:50:46Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-07-14</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2020-10</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/25575</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Cascade de signalisation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Mitogen-Activated Protein Kinases</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Fertilization- Related Kinase (FRK)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Développement</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Pollen</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Sac embryonnaire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Tube pollinique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Solanum chacoense</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Arabidopsis thaliana</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Signaling cascade</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Reproduction</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Development</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Embryo Sac</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Pollen tube</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Solanum chacoense</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Biology - Molecular / Biologie - Biologie moléculaire (UMI : 0307)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Exploration du rôle de signalisation des Mitogen-Activated Protein Kinases lors de la fécondation chez les plantes</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Sciences biologiques</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">La reproduction est un événement crucial pour la vie des plantes. Ce processus nécessite la formation du pollen et des ovules. Les cellules germinales vont subir la méiose puis une succession de mitoses, deux pour le pollen et trois pour l’ovule, ce qui va leur permettre d’acquérir leurs structures finales. Une fois formés, ces deux gamètes doivent se rencontrer.
+Pour cela, le grain de pollen va germer sur le stigmate puis former le tube pollinique. Le tube pollinique en croissance va traverser les différents tissus femelles et ainsi tracter les deux
+cellules spermatiques jusqu’à l’ovule, permettant la reproduction.
+Un important réseau de signalisation cellulaire est nécessaire pour permettre ces
+événements. Les cascades des Mitogen-Activated Protein Kinases (MAPKs) sont l’un des réseaux de signalisation les plus étudiés chez les plantes. Ces kinases sont impliquées dans de très nombreux processus développementaux tels que la formation de l’embryon ou des
+stomates. Pour autant, leurs rôles restent encore peu caractérisés pendant de la fécondation. Ce projet a pour objectif de mieux comprendre le rôle que jouent les MAPK lors de la formation
+des gamètes mâles et femelles ainsi que lors de la croissance des tubes polliniques. Plusieurs membres de la superfamille des MAPKs ont été caractérisés pour leurs rôles dans la reproduction sexuée des végétaux. De précédents travaux dans le laboratoire de Daniel P.
+Matton, ont démontré l’implication de deux MAPK Kinases Kinases (MAP3K), la Solanum chacoense Fertilization-Related Kinase 1 (ScFRK1) et ScFRK2. Ces deux kinases sont nécessaires pour le développement de l’ovule et du pollen chez S. chacoense, une espèce de pomme de terre sauvage diploïde.
+Dans un premier temps, nous avons étudié la fonction d’une nouvelle ScFRK, la ScFRK3. Ce troisième membre de la classe des FRKs chez S. chacoense, est, elle aussi,
+impliquée dans le développement des gamétophytes mâles et femelles. Du patron d’expression
+jusqu’à l’établissement d’une voie de signalisation potentielle, en passant par la caractérisation
+phénotypique des mutants, plusieurs expériences ont été réalisées dans le but de comprendre le rôle de ScFRK3 lors de la formation des gamètes chez Solanum chacoense. Nous montrons que la ScFRK3 est impliquée dans la formation du pollen ainsi que celui des ovules.
+Nous avons ensuite poursuivi nos recherches en affinant le phénotypage du mutant de surexpression ScFRK2. En effet, les précédentes études ont permis de montré que la
+surexpression de ScFRK2 conduit le primordium ovulaire à la formation de structures
+carpéloïdes. Pour autant, les ensembles des primordius ovulaires ne sont pas devenu des strutures capéloïde. Nous montrons ici que seulement 10 % des ovules dans l'ovaire sont devenu
+4
+des carpéloïde. Notre étude montre qu’en plus des structures carpéloïdes, un grand nombre d'ovule n'ont pas de sac embryonnaire à l'anthèse ce qui explique le faible nombre de graines
+par fruit. L’analyse du développement des sacs embryonnaires monte que la surexpression de ScFRK2 entraine l’arrêt au stade mégaspore fonctionnelle. Ce phénotype est similaire à ce qui a pu être observé dans les lignées ARN interférant pour la ScFRK1 et la ScFRK3.
+De précédentes études faites chez Arabidopsis thaliana semblent montrer que les
+membres de la superfamille des MAPK ne sont pas essentiels pour la croissance du tube pollinique. Pour comprendre le rôle que jouent les MAPK dans l’élongation du tube pollinique,
+nous avons utilisé un inhibiteur des MAP Kinase Kinase (MKK), appelé U0126. La présence de cette drogue dans le milieu de croissance des grains de pollen provoque une diminution de la germination et de l’élongation du tube pollinique. L’utilisation de la méthode semi-in vivo
+montre une perte de la polarisation de la croissance des tubes polliniques causée par l’inhibition
+des MKK. La présence de l’inhibiteur conduit à la diminution de la quantité de filaments
+d’actine ainsi qu’à leur désorganisation à l’apex du tube. L’exocytose est aussi affectée par
+l’inhibition des MKK. Les cascades MAPK sont nécessaires à la croissance polarisée du tube pollinique chez Arabidopsis thaliana.
+Pour finir, nous avons voulu identifier certains membres de la superfamille des MAPK impliqués dans la croissance du tube pollinique. Nous nous sommes intéressés en premier lieu
+aux orthologues de la famille ScFRK chez Arabidopsis thaliana. Les AtMAP3K19-20-21 sont les orthologues les plus proches de ScFRK3. Ces AtMAP3K sont exprimées lors du
+développement des grains de pollen et lors de l’élongation de tube pollinique. L’analyse du
+pollen des différentes lignées mutantes montre qu’en leur absence, le pollen ne présente aucun
+problème de développement contrairement à ScFRK3. Par contre, les doubles mutants et le triple mutant pour les AtMAP3K19-20-21 montrent une diminution de la capacité de germination. L’élongation du tube pollinique est affectée lors de la mutation d’au moins une
+des AtMAP3K. Ces deux études démontrent que les MAPK sont essentielles dans la formation
+et l’élongation du tube pollinique.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Reproduction is a crucial event for plant life. This process requires the formation of
+pollen and ovules. The germ cells will undergo meiosis and then a succession of mitosis, two
+for the pollen and three for the ovule, which will allow them to acquire their final structures.
+Once formed, these two gametes must meet each other. For this, the pollen grain will germinate on the stigmas to form the pollen tube. The growth of the pollen tube will pass through the different female tissues and thus pull the two sperm cells to the ovum for reproduction.
+An important cellular signaling network is necessary to allow these events to occur. The Mitogen-Activated Protein Kinase (MAPKs) cascades are one of the most studied signaling
+networks in plants. These kinases are involved in a wide range of developmental processes such
+as embryo formation and stomata. However, their roles remain poorly characterized during
+fertilization. The aim of this project is to better understand the role played by MAPKs during
+the formation of male and female gametes as well as during the growth of pollen tubes. Several members of the MAPK superfamily have been characterized for their role in the sexual reproduction of plants. Previous work in Daniel P. Matton's laboratory has demonstrated the involvement of two MAPK Kinases (MAP3K), Solanum chacoense Fertilization-Related
+Kinase 1 (ScFRK1) and ScFRK2. These two kinases are necessary for egg and pollen
+development in S. chacoense, a diploid wild potato species.
+In a first step, we studied the functionality of a new ScFRK, ScFRK3. This third member
+of the class of FRKs in S. chacoense, is also involved in the development of male and female gametophytes. From the expression pattern to the establishment of a potential signaling
+pathway, through the phenotypic characterization of mutants, several experiments have been
+performed in order to understand the role of ScFRK3 in the formation of gametes in S.
+chacoense. We show that ScFRK3 is involved in the formation of pollen as well as that of the embryonic sac.
+We then continued our research by refining the phenotyping of the overexpression
+mutant ScFRK2. Indeed, previous studies have shown that ScFRK2 overexpression leads the ovular primordium to the formation of carpeloid structures. However, the sets of ovular
+primordia have not become capeloid structures. We show here that only 10% of the eggs in the ovary have become carpeloid. Our study shows that in addition to the carpeloid structures, a large number of ova do not have an embryonic sac in the anthesis, which explains the low number of seeds per fruit. The analysis of the development of the embryonic sacs shows that
+7
+overexpression of ScFRK2 leads to the cessation of the functional megaspore stage. This phenotype is similar to what has been observed in interfering RNA lines reducing expression
+of ScFRK1 and ScFRK3.
+Previous studies in Arabidopsis thaliana suggest that members of the MAPK superfamily are not essential for pollen tube growth. To understand the role that MAPKs play
+in pollen tube elongation, we used a MAP Kinase Kinase (MKK) inhibitor called U0126. The presence of this drug in the growth medium of pollen grains causes a decrease in germination
+and elongation of the pollen tube. The use of the semi in vivo method shows a loss of
+polarization of the pollen tube growth caused by the inhibition of MKK. The presence of the inhibitor leads to a decrease in the number of actin filaments and their disorganization at the apex of the tube. Exocytosis is also affected by MKK inhibition. We show in this chapter that MAPK cascades are necessary for polarized pollen tube growth in Arabidopsis thaliana.
+Finally, we wanted to identify some members of the MAPK superfamily involved in
+pollen tube growth. We were first interested in the ScFRK family orthologs in Arabidopsis thaliana. AtMAP3K19-20-21 are the closest orthologs to ScFRK3. These AtMAP3K are expressed during the development of pollen grains and during the elongation of the pollen tube.
+Pollen analysis of the different mutant lines shows that in their absence the pollen does not present any development problems unlike ScFRK3. On the other hand, double mutants and
+triple mutant for AtMAP3K19-20-21 show a decrease in germination capacity. Pollen tube elongation is affected when at least one of the AtMAP3Ks is mutated. These two studies demonstrate that MAPKs are essential for the formation and elongation of the pollen tube and
+that AtMAP3K19-20-21 participate in these biological processes.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F25575&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Sciences+biologiques&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/25575/Mazin_Benjamin_2021_these.pdf?sequence=3&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/25575/Mazin_Benjamin_2021_these.pdf.jpg?sequence=5&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Mazin_Benjamin_2021_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/25575/Mazin_Benjamin_2021_these.pdf?sequence=3&amp;isAllowed=y">Mazin_Benjamin_2021_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">62.78Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2994/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2994">Faculté des arts et des sciences – Département de sciences biologiques - Thèses et mémoires</a> [388]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/25575">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

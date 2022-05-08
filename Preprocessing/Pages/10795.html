@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>L’explication de la délinquance prolifique : l’importance de l’interaction entre le risque individuel et le risque contextuel</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Guay, Jean-Pierre" name="DC.contributor">
+<meta content="Parent, Geneviève" name="DC.creator">
+<meta content="2014-06-06T15:28:31Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2014-06-06T15:28:31Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2014-03-03" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2013-05" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/10795" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="risque individuel" name="DC.subject" xml:lang="fr"/>
+<meta content="risque contextuel" name="DC.subject" xml:lang="fr"/>
+<meta content="style de vie" name="DC.subject" xml:lang="fr"/>
+<meta content="effet d’interaction" name="DC.subject" xml:lang="fr"/>
+<meta content="arbre de classification et de régression" name="DC.subject" xml:lang="fr"/>
+<meta content="individual risk" name="DC.subject" xml:lang="fr"/>
+<meta content="contextual risk" name="DC.subject" xml:lang="fr"/>
+<meta content="lifestyle" name="DC.subject" xml:lang="fr"/>
+<meta content="interaction effect" name="DC.subject" xml:lang="fr"/>
+<meta content="classification and regression trees" name="DC.subject" xml:lang="fr"/>
+<meta content="Sociology - Criminology and Penology / Sociologie - Criminologie et établissements pénitentiaires (UMI : 0627)" name="DC.subject" xml:lang="fr"/>
+<meta content="L’explication de la délinquance prolifique : l’importance de l’interaction entre le risque individuel et le risque contextuel" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Le but de cette thèse est d’expliquer la délinquance prolifique de certains délinquants. Nous avançons la thèse que la délinquance prolifique s’explique par la formation plus fréquente de situations criminogènes. Ces situations réfèrent au moment où un délinquant entre en interaction avec une opportunité criminelle dans un contexte favorable au crime. Plus exactement, il s’agit du moment où le délinquant fait face à cette opportunité, mais où le crime n’a pas encore été commis. La formation de situations criminogènes est facilitée par l’interaction et l’interdépendance de trois éléments : la propension à la délinquance de la personne, son entourage criminalisé et son style de vie. Ainsi, la délinquance prolifique ne pourrait être expliquée adéquatement sans tenir compte de l’interaction entre le risque individuel et le risque contextuel.
+L’objectif général de la présente thèse est de faire la démonstration de l’importance d’une modélisation interactionnelle entre le risque individuel et le risque contextuel afin d’expliquer la délinquance plus prolifique de certains contrevenants. Pour ce faire, 155 contrevenants placés sous la responsabilité de deux établissements des Services correctionnels du Québec et de quatre centres jeunesse du Québec ont complété un protocole d’évaluation par questionnaires auto-administrés.
+Dans un premier temps (chapitre trois), nous avons décrit et comparé la nature de la délinquance autorévélée des contrevenants de notre échantillon. Ce premier chapitre de résultats a permis de mettre en valeur le fait que ce bassin de contrevenants est similaire à d’autres échantillons de délinquants en ce qui a trait à la nature de leur délinquance, plus particulièrement, au volume, à la variété et à la gravité de leurs crimes. En effet, la majorité des participants rapportent un volume faible de crimes contre la personne et contre les biens alors qu’un petit groupe se démarque par un lambda très élevé (13,1 % des délinquants de l’échantillon sont responsables de 60,3% de tous les crimes rapportés). Environ quatre délinquants sur cinq rapportent avoir commis au moins un crime contre la personne et un crime contre les biens. De plus, plus de 50% de ces derniers rapportent dans au moins quatre sous-catégories. Finalement, bien que les délinquants de notre échantillon aient un IGC (indice de gravité de la criminalité) moyen relativement faible (médiane = 77), près de 40% des contrevenants rapportent avoir commis au moins un des deux crimes les plus graves recensés dans cette étude (décharger une arme et vol qualifié).
+Le second objectif spécifique était d’explorer, au chapitre quatre, l’interaction entre les caractéristiques personnelles, l’entourage et le style de vie des délinquants dans la formation de situations criminogènes. Les personnes ayant une propension à la délinquance plus élevée semblent avoir tendance à être davantage entourées de personnes criminalisées et à avoir un style de vie plus oisif. L’entourage criminalisé semble également influencer le style de vie de ces délinquants. Ainsi, l’interdépendance entre ces trois éléments facilite la formation plus fréquente de situations criminogènes et crée une conjoncture propice à l’émergence de la délinquance prolifique. 
+Le dernier objectif spécifique de la thèse, qui a été couvert dans le chapitre cinq, était d’analyser l’impact de la formation de situations criminogènes sur la nature de la délinquance. Les analyses de régression linéaires multiples et les arbres de régression ont permis de souligner la contribution des caractéristiques personnelles, de l’entourage et du style de vie dans l’explication de la nature de la délinquance. D’un côté, les analyses de régression (modèles additifs) suggèrent que l’ensemble des éléments favorisant la formation de situations criminogènes apporte une contribution unique à l’explication de la délinquance. D’un autre côté, les arbres de régression nous ont permis de mieux comprendre l’interaction entre les éléments dans l’explication de la délinquance prolifique. En effet, un positionnement plus faible sur certains éléments peut être compensé par un positionnement plus élevé sur d’autres. De plus, l’accumulation d’éléments favorisant la formation de situations criminogènes ne se fait pas de façon linéaire. Ces conclusions sont appuyées sur des proportions de variance expliquée plus élevées que celles des régressions linéaires multiples.
+En conclusion, mettre l’accent que sur un seul élément (la personne et sa propension à la délinquance ou le contexte et ses opportunités) ou leur combinaison de façon simplement additive ne permet pas de rendre justice à la complexité de l’émergence de la délinquance prolifique. En mettant à l’épreuve empiriquement cette idée généralement admise, cette thèse permet donc de souligner l’importance de considérer l’interaction entre le risque individuel et le risque contextuel dans l’explication de la délinquance prolifique." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="The purpose of this dissertation is to explain the prolific delinquency of certain offenders. We suggest that prolific delinquency is explained by the formation of a greater number of criminogenic situations. A criminogenic situation makes reference to situations wherein an offender may interact with a criminal opportunity in an environment which is conducive to crime. More precisely, a criminogenic situation is the moment when an offender faces this opportunity, but the crime has not yet been committed. The formation of criminogenic situations  facilitated by the interaction and interdependence of three elements: criminal propensity, criminal social environment and deviant lifestyle. Thus, prolific delinquency cannot be adequately explained without accounting for the interaction between individual and contextual risk.
+The overall objective of this dissertation is to demonstrate the importance of a model based on the interaction between individual and contextual risk to explain the prolific delinquency of some offenders. To accomplish this objective, one hundred and fifty-five offenders, under the responsibility of Services Correctionels du Québec and four Centres Jeunesse, completed an evaluation through self-administered questionnaires.
+The first objective of this study was to describe and compare, in Chapter Three, the delinquent nature of the offenders in our sample. Our results revealed that our sample of offenders is similar to that of other samples of delinquents; we found this with respect to the nature of their delinquency, and in particular, the volume, diversity and severity of their crimes. Indeed, the majority of the participants reported a small volume of crimes against a person and property. A small group distinguished themselves with a very high lambda (13.1% of offenders in the sample are responsible for 60.3 % of all crimes reported). Additionally, more than four out of five offenders reported having committed at least one crime against a person and one crime against property. Moreover, 50 % reported having committed crimes in at least four subcategories. Finally, although the offenders in our sample have a relatively low IGC (gravity scale) mean (median = 77), nearly 40 % of the offenders reported having committed at least one of the two most serious crimes identified in this study (discharging firearm and robbery).
+The second specific objective was to explore, in Chapter four, the interaction between personal characteristics, social environment and the lifestyle of offenders which may lead to criminogenic situation. People with a higher propensity to crime tend to be surrounded by other criminalized people and have a more idle lifestyle. The criminalized social environment tends to also influence the lifestyle of these offenders. Thus, the interdependence between these three elements can lead to criminogenic situations and can create a climate conducive to the emergence of prolific delinquency.  
+The last specific objective of this dissertation, covered in Chapter Five, is to analyze the impact of factors leading to situational crime on the nature of the delinquency. Analyses of multiple linear regression and regression trees highlighted the contribution of personal characteristics, social environment and lifestyle in explaining the nature of the crime. On the one hand, regression analyses (additive models) suggest that all the elements leading to situational crime make a unique contribution to the explanation of delinquency. However, on the other hand, regression trees allowed us to better understand the interaction between the elements which underlie prolific delinquency. For example, a lower position on certain items may be offset by a higher position on others. Moreover, the accumulation of risk factors which lead to situational crime does not happen in a linear fashion. These conclusions are supported by the proportions of explained variance which were higher for the regression trees than for the multiple linear regressions.
+In conclusion, focusing simply on one element (the person and their criminal propensity or the context and its opportunities) or on their combination in a simply additive manner does not represent the reality of criminal phenomenon. This dissertation therefore serves to highlight the importance of considering the interaction between the individual risk and the contextual risk in explaining prolific delinquency." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="risque individuel; risque contextuel; style de vie; effet d’interaction; arbre de classification et de régression; individual risk; contextual risk; lifestyle; interaction effect; classification and regression trees; Sociology - Criminology and Penology / Sociologie - Criminologie et établissements pénitentiaires (UMI : 0627); Thèse ou mémoire / Thesis or Dissertation; Criminologie" name="citation_keywords"/>
+<meta content="L’explication de la délinquance prolifique : l’importance de l’interaction entre le risque individuel et le risque contextuel" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Parent, Geneviève" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/10795/2/Parent_Genevieve_2013_these.pdf" name="citation_pdf_url"/>
+<meta content="2014-03-03" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/10795" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10795?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10795?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10795?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10795?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10795?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/10795?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2959" role="menuitem">Faculté des arts et des sciences – École de criminologie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3002" role="menuitem">Faculté des arts et des sciences – École de criminologie - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2959">Faculté des arts et des sciences – École de criminologie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3002">Faculté des arts et des sciences – École de criminologie - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/3002"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3002/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3002/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3002/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3002/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3002/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3002/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3002/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/3002/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/10795/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/10795">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/10795/mets.xml-->
+<h2 class="page-header first-page-header">L’explication de la délinquance prolifique : l’importance de l’interaction entre le risque individuel et le risque contextuel</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Guay, Jean-Pierre</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Parent, Geneviève</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2014-06-06T15:28:31Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2014-06-06T15:28:31Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2014-03-03</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2013-05</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/10795</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">risque individuel</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">risque contextuel</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">style de vie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">effet d’interaction</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">arbre de classification et de régression</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">individual risk</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">contextual risk</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">lifestyle</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">interaction effect</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">classification and regression trees</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Sociology - Criminology and Penology / Sociologie - Criminologie et établissements pénitentiaires (UMI : 0627)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">L’explication de la délinquance prolifique : l’importance de l’interaction entre le risque individuel et le risque contextuel</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Criminologie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Le but de cette thèse est d’expliquer la délinquance prolifique de certains délinquants. Nous avançons la thèse que la délinquance prolifique s’explique par la formation plus fréquente de situations criminogènes. Ces situations réfèrent au moment où un délinquant entre en interaction avec une opportunité criminelle dans un contexte favorable au crime. Plus exactement, il s’agit du moment où le délinquant fait face à cette opportunité, mais où le crime n’a pas encore été commis. La formation de situations criminogènes est facilitée par l’interaction et l’interdépendance de trois éléments : la propension à la délinquance de la personne, son entourage criminalisé et son style de vie. Ainsi, la délinquance prolifique ne pourrait être expliquée adéquatement sans tenir compte de l’interaction entre le risque individuel et le risque contextuel.
+L’objectif général de la présente thèse est de faire la démonstration de l’importance d’une modélisation interactionnelle entre le risque individuel et le risque contextuel afin d’expliquer la délinquance plus prolifique de certains contrevenants. Pour ce faire, 155 contrevenants placés sous la responsabilité de deux établissements des Services correctionnels du Québec et de quatre centres jeunesse du Québec ont complété un protocole d’évaluation par questionnaires auto-administrés.
+Dans un premier temps (chapitre trois), nous avons décrit et comparé la nature de la délinquance autorévélée des contrevenants de notre échantillon. Ce premier chapitre de résultats a permis de mettre en valeur le fait que ce bassin de contrevenants est similaire à d’autres échantillons de délinquants en ce qui a trait à la nature de leur délinquance, plus particulièrement, au volume, à la variété et à la gravité de leurs crimes. En effet, la majorité des participants rapportent un volume faible de crimes contre la personne et contre les biens alors qu’un petit groupe se démarque par un lambda très élevé (13,1 % des délinquants de l’échantillon sont responsables de 60,3% de tous les crimes rapportés). Environ quatre délinquants sur cinq rapportent avoir commis au moins un crime contre la personne et un crime contre les biens. De plus, plus de 50% de ces derniers rapportent dans au moins quatre sous-catégories. Finalement, bien que les délinquants de notre échantillon aient un IGC (indice de gravité de la criminalité) moyen relativement faible (médiane = 77), près de 40% des contrevenants rapportent avoir commis au moins un des deux crimes les plus graves recensés dans cette étude (décharger une arme et vol qualifié).
+Le second objectif spécifique était d’explorer, au chapitre quatre, l’interaction entre les caractéristiques personnelles, l’entourage et le style de vie des délinquants dans la formation de situations criminogènes. Les personnes ayant une propension à la délinquance plus élevée semblent avoir tendance à être davantage entourées de personnes criminalisées et à avoir un style de vie plus oisif. L’entourage criminalisé semble également influencer le style de vie de ces délinquants. Ainsi, l’interdépendance entre ces trois éléments facilite la formation plus fréquente de situations criminogènes et crée une conjoncture propice à l’émergence de la délinquance prolifique. 
+Le dernier objectif spécifique de la thèse, qui a été couvert dans le chapitre cinq, était d’analyser l’impact de la formation de situations criminogènes sur la nature de la délinquance. Les analyses de régression linéaires multiples et les arbres de régression ont permis de souligner la contribution des caractéristiques personnelles, de l’entourage et du style de vie dans l’explication de la nature de la délinquance. D’un côté, les analyses de régression (modèles additifs) suggèrent que l’ensemble des éléments favorisant la formation de situations criminogènes apporte une contribution unique à l’explication de la délinquance. D’un autre côté, les arbres de régression nous ont permis de mieux comprendre l’interaction entre les éléments dans l’explication de la délinquance prolifique. En effet, un positionnement plus faible sur certains éléments peut être compensé par un positionnement plus élevé sur d’autres. De plus, l’accumulation d’éléments favorisant la formation de situations criminogènes ne se fait pas de façon linéaire. Ces conclusions sont appuyées sur des proportions de variance expliquée plus élevées que celles des régressions linéaires multiples.
+En conclusion, mettre l’accent que sur un seul élément (la personne et sa propension à la délinquance ou le contexte et ses opportunités) ou leur combinaison de façon simplement additive ne permet pas de rendre justice à la complexité de l’émergence de la délinquance prolifique. En mettant à l’épreuve empiriquement cette idée généralement admise, cette thèse permet donc de souligner l’importance de considérer l’interaction entre le risque individuel et le risque contextuel dans l’explication de la délinquance prolifique.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The purpose of this dissertation is to explain the prolific delinquency of certain offenders. We suggest that prolific delinquency is explained by the formation of a greater number of criminogenic situations. A criminogenic situation makes reference to situations wherein an offender may interact with a criminal opportunity in an environment which is conducive to crime. More precisely, a criminogenic situation is the moment when an offender faces this opportunity, but the crime has not yet been committed. The formation of criminogenic situations  facilitated by the interaction and interdependence of three elements: criminal propensity, criminal social environment and deviant lifestyle. Thus, prolific delinquency cannot be adequately explained without accounting for the interaction between individual and contextual risk.
+The overall objective of this dissertation is to demonstrate the importance of a model based on the interaction between individual and contextual risk to explain the prolific delinquency of some offenders. To accomplish this objective, one hundred and fifty-five offenders, under the responsibility of Services Correctionels du Québec and four Centres Jeunesse, completed an evaluation through self-administered questionnaires.
+The first objective of this study was to describe and compare, in Chapter Three, the delinquent nature of the offenders in our sample. Our results revealed that our sample of offenders is similar to that of other samples of delinquents; we found this with respect to the nature of their delinquency, and in particular, the volume, diversity and severity of their crimes. Indeed, the majority of the participants reported a small volume of crimes against a person and property. A small group distinguished themselves with a very high lambda (13.1% of offenders in the sample are responsible for 60.3 % of all crimes reported). Additionally, more than four out of five offenders reported having committed at least one crime against a person and one crime against property. Moreover, 50 % reported having committed crimes in at least four subcategories. Finally, although the offenders in our sample have a relatively low IGC (gravity scale) mean (median = 77), nearly 40 % of the offenders reported having committed at least one of the two most serious crimes identified in this study (discharging firearm and robbery).
+The second specific objective was to explore, in Chapter four, the interaction between personal characteristics, social environment and the lifestyle of offenders which may lead to criminogenic situation. People with a higher propensity to crime tend to be surrounded by other criminalized people and have a more idle lifestyle. The criminalized social environment tends to also influence the lifestyle of these offenders. Thus, the interdependence between these three elements can lead to criminogenic situations and can create a climate conducive to the emergence of prolific delinquency.  
+The last specific objective of this dissertation, covered in Chapter Five, is to analyze the impact of factors leading to situational crime on the nature of the delinquency. Analyses of multiple linear regression and regression trees highlighted the contribution of personal characteristics, social environment and lifestyle in explaining the nature of the crime. On the one hand, regression analyses (additive models) suggest that all the elements leading to situational crime make a unique contribution to the explanation of delinquency. However, on the other hand, regression trees allowed us to better understand the interaction between the elements which underlie prolific delinquency. For example, a lower position on certain items may be offset by a higher position on others. Moreover, the accumulation of risk factors which lead to situational crime does not happen in a linear fashion. These conclusions are supported by the proportions of explained variance which were higher for the regression trees than for the multiple linear regressions.
+In conclusion, focusing simply on one element (the person and their criminal propensity or the context and its opportunities) or on their combination in a simply additive manner does not represent the reality of criminal phenomenon. This dissertation therefore serves to highlight the importance of considering the interaction between the individual risk and the contextual risk in explaining prolific delinquency.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F10795&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Criminologie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/10795/Parent_Genevieve_2013_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/10795/Parent_Genevieve_2013_these.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Parent_Genevieve_2013_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/10795/Parent_Genevieve_2013_these.pdf?sequence=2&amp;isAllowed=y">Parent_Genevieve_2013_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">2.882Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/3002/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/3002">Faculté des arts et des sciences – École de criminologie - Thèses et mémoires</a> [454]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/10795">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

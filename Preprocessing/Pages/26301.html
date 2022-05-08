@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>What voters want : identifying voter preferences for candidates</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Blais, André" name="DC.contributor">
+<meta content="Dassonneville, Ruth" name="DC.contributor">
+<meta content="Sevi, Semra" name="DC.creator">
+<meta content="2022-02-15T15:03:18Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2022-02-15T15:03:18Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-10-21" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2021-06" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/26301" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Candidates" name="DC.subject" xml:lang="fr"/>
+<meta content="Incumbency" name="DC.subject" xml:lang="fr"/>
+<meta content="Political behaviour" name="DC.subject" xml:lang="fr"/>
+<meta content="Voting" name="DC.subject" xml:lang="fr"/>
+<meta content="Gender" name="DC.subject" xml:lang="fr"/>
+<meta content="Youth" name="DC.subject" xml:lang="fr"/>
+<meta content="Candidat(e)s" name="DC.subject" xml:lang="fr"/>
+<meta content="Candidat(e)s sortant(e)s" name="DC.subject" xml:lang="fr"/>
+<meta content="Comportement politique" name="DC.subject" xml:lang="fr"/>
+<meta content="Vote" name="DC.subject" xml:lang="fr"/>
+<meta content="Genre" name="DC.subject" xml:lang="fr"/>
+<meta content="Jeunes" name="DC.subject" xml:lang="fr"/>
+<meta content="Political Science - General / Science politique - Généralités (UMI : 0615)" name="DC.subject" xml:lang="fr"/>
+<meta content="What voters want : identifying voter preferences for candidates" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="This dissertation is comprised of six standalone articles that provide insights on what type of candidate voters prefer with a particular focus on gender, age affinity, occupation, and political experience (i.e., incumbency). The question of who is elected is one of the most fundamental questions in political science as it pertains to the issue of descriptive representation. The first article presents two novel datasets that I collected. These datasets include information on all candidates in Canadian federal and Ontario provincial elections from 1867 to 2019, and they are the basis for four of the remaining articles in this dissertation.
+
+The second article examines whether women get fewer votes in Canadian federal elections. Using the novel data I collected, with over 21,000 unique candidates since 1921 (when the first women were allowed to run for seats in Parliament), we are able to compute precise estimates of the difference in the electoral fortunes of men and women candidates. We demonstrate that while there was a gender gap in the past, the difference between male and female candidates’ vote shares is now statistically indistinguishable from zero.
+
+The third article investigates whether women get fewer votes in the Ontario provincial elections. We again estimate the effects longitudinally, using the novel data I collected, from 1902 onwards. The results are very similar to those found for Canadian federal elections. This is important because it shows that our estimates are robust: regardless of the level of government, female candidates are not being discriminated against by voters. While these results might rely on Canadian data, finding similar results at different levels of government enhances the generalizability of my conclusions.
+
+The fourth article uses cross-national data from the Comparative Study of Electoral Systems project, covering 853,414 individual voters, 51 countries, 126 elections, and 639 unique leaders. Using this dataset, I test the hypotheses that a leader is more popular among voters closer to them in age and that such voters are more likely to vote for them. I find some support for both hypotheses though the effects are substantively very small.
+
+The fifth article asks if candidates who are lawyers get more votes compared to non-lawyers. This paper also leverages the novel data that I collected at the federal level, which includes the occupation and electoral performance of every candidate who ran for office between 1921 and 2015. Our analysis shows that lawyers get more votes than non-lawyers, but that their electoral advantage is very small.
+
+The sixth article asks whether incumbents have an electoral advantage and if such an advantage differs across gender. This paper once again uses the novel data that I collected to estimate the electoral advantage enjoyed by incumbents during 9 Canadian federal elections, in 2,739 ridings, from 1990 to 2019. Using a regression discontinuity (RD) design, I compare men and women who have very narrowly won or lost elections on their probability of running again, vote share and probability of winning in the next election. I find that there is an electoral advantage of being an incumbent but that the differences across gender are, with the exception of vote share, not significant. Incumbents are more likely to run again in the next election than their non-incumbent counterparts. Furthermore, women do not suffer an electoral penalty across the three different outcome variables, suggesting that voters are not discriminating against women once they run for office." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Cette thèse est constituée de six articles qui apportent un éclairage nouveau sur les préférences des électeurs à l’égard des candidats et de leurs profils sociodémographiques, avec une attention particulière portée au genre, à l’affinité d’âge, à l’occupation professionnelle et à l’expérience politique. La question cherchant à savoir qui se fait élire est l’une des plus fondamentales en science politique, car elle se rapporte à l’enjeu de la représentation descriptive. Le premier article présente deux bases de données originales que j’ai moi-même assemblées. Ces bases de données comportent de l’information sur l’ensemble des candidats aux élections fédérales canadiennes ainsi qu’aux élections provinciales ontariennes entre 1867 et 2019; elles posent les bases pour les autres articles de cette thèse.  
+Le deuxième article examine si les femmes obtiennent moins de votes aux élections fédérales cana-diennes. En utilisant ma base de données inédite, comprenant plus de 21 000 candidat(e)s uniques depuis l’élection de 1921 (la première au cours de laquelle les femmes ont pu se porter candidates pour des sièges au Parlement), nous sommes en mesure d’estimer avec précision les différences qui existent dans la performance électorale des hommes et des femmes. Je démontre que, bien qu’il y ait eu un fossé entre les hommes les femmes qui ont cherché à se faire élire dans le passé, il ne semble pas y avoir aujourd’hui de réelle différence dans le pourcentage des voix récoltées par les candidats en fonction de leur sexe.  
+Le troisième article se demande si les femmes obtiennent moins de votes dans les élections provin-ciales ontariennes. Les effets sont à nouveau estimés de manière longitudinale, en utilisant les don-nées qui ont été récoltées pour tous les candidats et toutes les candidates depuis 1902. Les résultats sont très similaires à ceux trouvés pour les élections fédérales canadiennes, ce qui démontre la ro-bustesse de mes conclusions. Peu importe le palier de gouvernement, il semble que l’électorat ne fasse pas de discrimination en fonction du sexe des candidats. Bien que ces résultats puissent être spécifiques au Canada, le fait que les résultats soient similaires aux niveaux fédéral et provincial accroît le caractère généralisable de mes conclusions. Le quatrième article utilise des données transnationales du projet Comparative Study of Electoral Sys-tems, couvrant plus de 850 000 individus et 639 leaders politiques dans 51 pays et 126 élections. Je teste les hypothèses voulant que les leaders soient plus populaires auprès d’électeurs du même groupe d’âge, et que ces derniers aient une plus forte propension à voter pour de tels leaders. J’obtiens des résultats qui semblent appuyer ces hypothèses, mais les effets associés à l’âge sont sub-stantivement très petits. 
+Le cinquième article tâche de déterminer si les candidats qui pratiquent le métier d’avocats obtiennent plus de votes que les autres. Les analyses dans cette étude tirent parti de ma base de don-nées inédite sur les candidats lors des élections fédérales canadiennes, laquelle inclut l’occupation et la performance électorale de chaque candidat ayant brigué un siège au Parlement entre 1921 et 2015. Nos résultats démontrent que les avocats obtiennent plus de votes que les non-avocats, mais que leur avantage électoral est très limité.  
+Le sixième article se demande si les candidats sortants bénéficient d’un avantage électoral et si cet avantage varie en fonction du genre. Cette étude tire parti de ma base de données originale pour estimer l’avantage électoral des candidats sortants lors de 9 élections fédérales canadiennes, dans 2 739 circonscriptions, entre 1990 et 2019. En déployant une analyse de discontinuité, je compare les hommes et les femmes qui ont de justesse gagné ou perdu des élections en fonction de trois critères : la probabilité de se porter candidat à nouveau, la part du vote obtenue et la probabilité de remporter la prochaine élection. Je trouve que le statut de sortant offre un avantage électoral, mais que les différences entre les hommes et les femmes sont, sauf pour ce qui est de la part du vote, non significatives. Les candidats sortants ont une plus grande probabilité de se représenter à la prochaine élection que les candidats non sortants. Qui plus est, les femmes ne souffrent de pénalité électorale pour aucune des trois variables dépendantes, ce qui suggère que les électeurs ne discriminent pas les candidats en fonction du genre." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Candidates; Incumbency; Political behaviour; Voting; Gender; Youth; Candidat(e)s; Candidat(e)s sortant(e)s; Comportement politique; Vote; Genre; Jeunes; Political Science - General / Science politique - Généralités (UMI : 0615); Thèse ou mémoire / Thesis or Dissertation; Science politique" name="citation_keywords"/>
+<meta content="What voters want : identifying voter preferences for candidates" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Sevi, Semra" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/26301/2/Sevi_Semra_2021_These.pdf" name="citation_pdf_url"/>
+<meta content="2021-10-21" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/26301" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26301?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26301?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26301?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26301?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26301?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26301?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2952" role="menuitem">Faculté des arts et des sciences – Département de science politique</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2993" role="menuitem">Faculté des arts et des sciences – Département de science politique - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2952">Faculté des arts et des sciences – Département de science politique</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2993">Faculté des arts et des sciences – Département de science politique - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2993"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2993/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2993/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2993/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2993/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2993/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2993/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2993/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2993/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/26301/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26301">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/26301/mets.xml-->
+<h2 class="page-header first-page-header">What voters want : identifying voter preferences for candidates</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Blais, André</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Dassonneville, Ruth</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Sevi, Semra</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2022-02-15T15:03:18Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2022-02-15T15:03:18Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-10-21</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2021-06</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/26301</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Candidates</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Incumbency</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Political behaviour</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Voting</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Gender</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Youth</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Candidat(e)s</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Candidat(e)s sortant(e)s</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Comportement politique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Vote</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Genre</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Jeunes</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Political Science - General / Science politique - Généralités (UMI : 0615)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">What voters want : identifying voter preferences for candidates</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Science politique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">This dissertation is comprised of six standalone articles that provide insights on what type of candidate voters prefer with a particular focus on gender, age affinity, occupation, and political experience (i.e., incumbency). The question of who is elected is one of the most fundamental questions in political science as it pertains to the issue of descriptive representation. The first article presents two novel datasets that I collected. These datasets include information on all candidates in Canadian federal and Ontario provincial elections from 1867 to 2019, and they are the basis for four of the remaining articles in this dissertation.
+
+The second article examines whether women get fewer votes in Canadian federal elections. Using the novel data I collected, with over 21,000 unique candidates since 1921 (when the first women were allowed to run for seats in Parliament), we are able to compute precise estimates of the difference in the electoral fortunes of men and women candidates. We demonstrate that while there was a gender gap in the past, the difference between male and female candidates’ vote shares is now statistically indistinguishable from zero.
+
+The third article investigates whether women get fewer votes in the Ontario provincial elections. We again estimate the effects longitudinally, using the novel data I collected, from 1902 onwards. The results are very similar to those found for Canadian federal elections. This is important because it shows that our estimates are robust: regardless of the level of government, female candidates are not being discriminated against by voters. While these results might rely on Canadian data, finding similar results at different levels of government enhances the generalizability of my conclusions.
+
+The fourth article uses cross-national data from the Comparative Study of Electoral Systems project, covering 853,414 individual voters, 51 countries, 126 elections, and 639 unique leaders. Using this dataset, I test the hypotheses that a leader is more popular among voters closer to them in age and that such voters are more likely to vote for them. I find some support for both hypotheses though the effects are substantively very small.
+
+The fifth article asks if candidates who are lawyers get more votes compared to non-lawyers. This paper also leverages the novel data that I collected at the federal level, which includes the occupation and electoral performance of every candidate who ran for office between 1921 and 2015. Our analysis shows that lawyers get more votes than non-lawyers, but that their electoral advantage is very small.
+
+The sixth article asks whether incumbents have an electoral advantage and if such an advantage differs across gender. This paper once again uses the novel data that I collected to estimate the electoral advantage enjoyed by incumbents during 9 Canadian federal elections, in 2,739 ridings, from 1990 to 2019. Using a regression discontinuity (RD) design, I compare men and women who have very narrowly won or lost elections on their probability of running again, vote share and probability of winning in the next election. I find that there is an electoral advantage of being an incumbent but that the differences across gender are, with the exception of vote share, not significant. Incumbents are more likely to run again in the next election than their non-incumbent counterparts. Furthermore, women do not suffer an electoral penalty across the three different outcome variables, suggesting that voters are not discriminating against women once they run for office.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Cette thèse est constituée de six articles qui apportent un éclairage nouveau sur les préférences des électeurs à l’égard des candidats et de leurs profils sociodémographiques, avec une attention particulière portée au genre, à l’affinité d’âge, à l’occupation professionnelle et à l’expérience politique. La question cherchant à savoir qui se fait élire est l’une des plus fondamentales en science politique, car elle se rapporte à l’enjeu de la représentation descriptive. Le premier article présente deux bases de données originales que j’ai moi-même assemblées. Ces bases de données comportent de l’information sur l’ensemble des candidats aux élections fédérales canadiennes ainsi qu’aux élections provinciales ontariennes entre 1867 et 2019; elles posent les bases pour les autres articles de cette thèse.  
+Le deuxième article examine si les femmes obtiennent moins de votes aux élections fédérales cana-diennes. En utilisant ma base de données inédite, comprenant plus de 21 000 candidat(e)s uniques depuis l’élection de 1921 (la première au cours de laquelle les femmes ont pu se porter candidates pour des sièges au Parlement), nous sommes en mesure d’estimer avec précision les différences qui existent dans la performance électorale des hommes et des femmes. Je démontre que, bien qu’il y ait eu un fossé entre les hommes les femmes qui ont cherché à se faire élire dans le passé, il ne semble pas y avoir aujourd’hui de réelle différence dans le pourcentage des voix récoltées par les candidats en fonction de leur sexe.  
+Le troisième article se demande si les femmes obtiennent moins de votes dans les élections provin-ciales ontariennes. Les effets sont à nouveau estimés de manière longitudinale, en utilisant les don-nées qui ont été récoltées pour tous les candidats et toutes les candidates depuis 1902. Les résultats sont très similaires à ceux trouvés pour les élections fédérales canadiennes, ce qui démontre la ro-bustesse de mes conclusions. Peu importe le palier de gouvernement, il semble que l’électorat ne fasse pas de discrimination en fonction du sexe des candidats. Bien que ces résultats puissent être spécifiques au Canada, le fait que les résultats soient similaires aux niveaux fédéral et provincial accroît le caractère généralisable de mes conclusions. Le quatrième article utilise des données transnationales du projet Comparative Study of Electoral Sys-tems, couvrant plus de 850 000 individus et 639 leaders politiques dans 51 pays et 126 élections. Je teste les hypothèses voulant que les leaders soient plus populaires auprès d’électeurs du même groupe d’âge, et que ces derniers aient une plus forte propension à voter pour de tels leaders. J’obtiens des résultats qui semblent appuyer ces hypothèses, mais les effets associés à l’âge sont sub-stantivement très petits. 
+Le cinquième article tâche de déterminer si les candidats qui pratiquent le métier d’avocats obtiennent plus de votes que les autres. Les analyses dans cette étude tirent parti de ma base de don-nées inédite sur les candidats lors des élections fédérales canadiennes, laquelle inclut l’occupation et la performance électorale de chaque candidat ayant brigué un siège au Parlement entre 1921 et 2015. Nos résultats démontrent que les avocats obtiennent plus de votes que les non-avocats, mais que leur avantage électoral est très limité.  
+Le sixième article se demande si les candidats sortants bénéficient d’un avantage électoral et si cet avantage varie en fonction du genre. Cette étude tire parti de ma base de données originale pour estimer l’avantage électoral des candidats sortants lors de 9 élections fédérales canadiennes, dans 2 739 circonscriptions, entre 1990 et 2019. En déployant une analyse de discontinuité, je compare les hommes et les femmes qui ont de justesse gagné ou perdu des élections en fonction de trois critères : la probabilité de se porter candidat à nouveau, la part du vote obtenue et la probabilité de remporter la prochaine élection. Je trouve que le statut de sortant offre un avantage électoral, mais que les différences entre les hommes et les femmes sont, sauf pour ce qui est de la part du vote, non significatives. Les candidats sortants ont une plus grande probabilité de se représenter à la prochaine élection que les candidats non sortants. Qui plus est, les femmes ne souffrent de pénalité électorale pour aucune des trois variables dépendantes, ce qui suggère que les électeurs ne discriminent pas les candidats en fonction du genre.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F26301&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Science+politique&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/26301/Sevi_Semra_2021_These.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/26301/Sevi_Semra_2021_These.pdf.jpg?sequence=4&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Sevi_Semra_2021_These.pdf">
+<a href="/xmlui/bitstream/handle/1866/26301/Sevi_Semra_2021_These.pdf?sequence=2&amp;isAllowed=y">Sevi_Semra_2021_These.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">3.381Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2993/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2993">Faculté des arts et des sciences – Département de science politique - Thèses et mémoires</a> [357]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26301">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

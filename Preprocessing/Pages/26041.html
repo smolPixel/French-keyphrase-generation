@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Quantification du mouvement vertical de la croûte terrestre et de sa contribution au changement du niveau de la mer : le cas de la Côte Est du Canada, golfe du Saint-Laurent</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Cavayas, François" name="DC.contributor">
+<meta content="Feizabadi, Mohsen" name="DC.creator">
+<meta content="2022-01-21T16:55:35Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="NO_RESTRICTION" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2022-01-21T16:55:35Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2021-10-21" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2020-12" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/26041" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Niveau de la mer" name="DC.subject" xml:lang="fr"/>
+<meta content="Golfe du Saint-Laurent" name="DC.subject" xml:lang="fr"/>
+<meta content="Marégraphe" name="DC.subject" xml:lang="fr"/>
+<meta content="Altimétrie satellitaire" name="DC.subject" xml:lang="fr"/>
+<meta content="Mouvement de terrain vertical" name="DC.subject" xml:lang="fr"/>
+<meta content="GPS" name="DC.subject" xml:lang="fr"/>
+<meta content="DPInRSO" name="DC.subject" xml:lang="fr"/>
+<meta content="Analyse de séries temporelles" name="DC.subject" xml:lang="fr"/>
+<meta content="Sea level" name="DC.subject" xml:lang="fr"/>
+<meta content="Gulf of St-Lawrence" name="DC.subject" xml:lang="fr"/>
+<meta content="Tide-gauge" name="DC.subject" xml:lang="fr"/>
+<meta content="Satellite altimetry" name="DC.subject" xml:lang="fr"/>
+<meta content="Vertical land motion" name="DC.subject" xml:lang="fr"/>
+<meta content="GNSS" name="DC.subject" xml:lang="fr"/>
+<meta content="PSInSAR" name="DC.subject" xml:lang="fr"/>
+<meta content="Time series analysis" name="DC.subject" xml:lang="fr"/>
+<meta content="Earth Sciences - Physical Geography / Sciences de la Terre - Géographie physique (UMI : 0368)" name="DC.subject" xml:lang="fr"/>
+<meta content="Quantification du mouvement vertical de la croûte terrestre et de sa contribution au changement du niveau de la mer : le cas de la Côte Est du Canada, golfe du Saint-Laurent" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Les changements du niveau de la mer sont un des indicateurs des changements climatiques qui affectent le monde depuis les dernière décennies. Dans les zones côtières, ce phénomène est à l'origine de l'érosion côtière, l'intrusion d'eau salée dans la nappe phréatique et les inondations. Les côtes du Canada ne sont pas épargnées. En effet, le niveau de la mer dans ces régions augmente actuellement et suit les tendances mondiales. Parmi ces zones côtières, celles du golfe du Saint-Laurent nous ont intéressées. Elles sont caractérisées par des propriétés physiques spécifiques comme l'isolement relatif par rapport l'océan Atlantique, la couverture de glace en hiver et la coulée de l'eau douce au printemps qui leurs confèrent un comportement particulier en termes de changements du niveau de la mer. Les changements du niveau de la mer peuvent être déterminés en intégrant les données des marégraphes et de l'altimétrie satellitaire que le résultat de cette procédure conduit à une détermination relative du niveau moyen de la mer. Cependant, parce que la structure de mesure de ces données est différente, certaines corrections doivent être appliquées. L'une des corrections parmi les plus essentielles est la longueur du Mouvement de Terrain Vertical (MTV) qui doit être prise en compte dans les données des marégraphes, car ces derniers sont connectés directement à la croûte terrestre. Différents phénomènes peuvent causer le MTV. À une échelle locale, la tectonique, l'affaissement et la sédimentation sont les facteurs qui créent le mouvement vertical et à une méso ou macro-échelle, la fonte des inlandsis qui entraîne une modification de la charge de masse de la surface de la terre, provoquent le mouvement des terres. Il existe divers modèles et méthodes de correction du MTV globaux et locaux, tels que l'Ajustement Isostatique Glaciaire (AIG), le Système Mondial de Navigation par Satellite (SMNS), l'Interférométrie par Radar Synthèse d'Ouverture (InRSO), Gravity Recovery and Climate Experiment (GRACE) et le calcul de la différence entre données marégraphiques et altimétriques par satellite. Parmi ces méthodes, l'utilisation de la vitesse verticale des données GPS est la plus précise. Cependant, en raison du faible nombre de stations GPS dans ou proximité des stations marégraphiques, l'utilisation d'une approche plus globale est inévitable. En utilisant cette correction, le niveau moyen absolu de la mer sera obtenu. Dans cette étude, l'évaluation du MTV se fait par un algorithme d'InRSO, appelé Diffuseurs Persistants InRSO (DPInRSO en anglais PSInSAR). Les images du RSO du satellite Sentinel-1 sont soumises à l'analyse DPInRSO. Afin d'évaluer la précision de cette approche, les résultats de DPInRSO (obtenus du logiciel Stanford Method for Persistent Scatterers (StaMPS)) pour deux régions de l'est du Canada (Halifax et St. John's) sont comparés à la GPS vitesse verticale en analysant les séries temporelles de données. Également, en utilisant la même méthode, le mouvement vertical des terres dans 24 stations marégraphiques du golfe du Saint-Laurent sera corrigé. L'étude du niveau moyen de la mer est mise en oeuvre en utilisant l'analyse spectrale (analyse harmonique et analyse spectrale des moindres carrés (ASMC)) afin de supprimer les effets à long terme des constituants de la marée (constituants annuels et semi-annuels). Aussi, pour évaluer le niveau moyen absolu de la mer (NMAM) dans la région considérée, le niveau moyen de la mer calculé est corrigé sur la base des résultats du MTV. En conclusion, la comparaison des résultats de la technique DPInRSO avec les données GPS indique le comportement similaire des tendances au cours de la période d'étude. En d'autres termes, la méthode DPInRSO mesure le mouvement vertical des terres en précision millimétrique dans la région d'étude (à l'exception d'une station) et elle peut être appliquée pour les régions qu'elles ne se connectent pas sur le positionnement GPS continu des marégraphes. Dans le cas d'un changement du niveau de la mer, l'incompatibilité entre les données marégraphiques et altimétriques en termes de temps rend la conclusion plus diffcile. Cependant, sur la base d'observations continues dans des séries temporelles de données altimétriques, nous avons obtenu une tendance plus homogène du niveau de la mer (niveau moyen de la mer) dans toutes les stations, mais pour évaluer le changement à long terme du niveau de la mer et en raison de l'emplacement exact de la station marégraphique, ces dernières données doivent être prises en compte (à la fois dans le calcul du niveau moyen de la mer et des constituants de la marée). Enfin, en raison du faible changement de MTV, les valeurs moyennes absolues du niveau de la mer sont très proches de celles relatives, ce qui indique que nous pouvons évaluer les changements du niveau de la mer dans le golfe du Saint-Laurent, en utilisant uniquement les données marégraphiques et altimétriques. En plus de faire des corrections, des cartes de la tendance du niveau de la mer et des différences de phase entre les stations marégraphiques seront représentées. La qualité des données des marégraphes et de l'altimétrie satellitaire sera discutée et rapportée sur les résultats tirés de l'étude." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Sea level changes are one of the indicators of climate change that has affected the world in recent decades. In coastal areas, this phenomenon has caused coastal erosion, saltwater intrusion into the groundwater and floods. These environmental changes can also be seen in Canada's coasts. Indeed, the sea level in these regions is currently increasing and follows the global trends. Among these coastal areas, those of the Gulf of St. Lawrence interested us. This area is characterized by specific physical properties such as relative isolation from the Atlantic Ocean, winter ice cover and spring freshwater flow that confer particular behavior in terms of sea level changes. Sea level changes can be determined by integrating the tide gauge and satellite altimetry data that the result of this procedure leads to a relative determination of mean sea level. However, because the measurement structures of these data are different, some corrections should be applied. One of the most essential corrections is the length of the Vertical Land Motion (VLM) which must be taken into account in tide gauge data, as these are connected directly to the Earth crust. Different phenomena can cause VLM. In the local scale, tectonics, subsidence and sedimentation are the factors that create vertical movement and in global scale, melting of ice sheets, which leads to change the mass loading of the earth's surface, cause the land motion. There are various global and local VLM correction models and methods such as, Glacial Isostatic Adjustment (GIA), Global Navigation Satellite Systems (GNSS), Interferometry Synthetic Aperture Radar (InSAR), Gravity Recovery and Climate Experiment (GRACE) and calculation of difference between satellite altimetry and tide gauge data. Between these methods, using the vertical velocity of GPS data is the most accurate one. However, due to the low number of GPS stations in or near the tide gauge stations, using a more comprehensive approach is inevitable. By applying this correction, the absolute mean sea level will be obtained. In this study, VLM is examined by one algorithm of InSAR which is called Persistent Scatterer InSAR (PSInSAR). The Sentinel-1 single-look SAR images are used for PSInSAR analysis. In order to accuracy assessment of this approach, the results of PSInSAR (obtained from Stanford Method for Persistent Scatterers software (StaMPS)) for two regions in east of Canada (Halifax and St. John's) are compared with GPS vertical velocity by analyzing their time series data. Equally, by using the same method, vertical land movement in 24 tide gauge station in Gulf of St. Lawrence will be corrected. Investigation of mean sea level is implemented by using the spectral analysis (Harmonic analysis and Least Square Spectral Analysis) in order to remove the long-term effects of tidal constituent (annual and semiannual constituents). Also, to assess the Absolute Mean Sea Level (AMSL) in considered region, calculated mean sea level is corrected based on the results of VLM. In conclusion, comparing of the results of PSInSAR technique with GPS data indicate the similar behavior of trends during the period of study. In other words, PSInSAR method measures vertical land motion in millimeter precision in study region (except of one station) and it can be applied for regions that they do not connect on continuous GPS positioning of tide gauges. In the case of sea level change, incompatibility between tide gauge and altimetry data in terms of time makes the conclusion harder. However, based on continues observations in time series of altimetry data, we obtained more homogeneous sea level trend (mean sea level) in all stations, but to evaluate the long-term sea level change and because of exact location of tide gauge station, this latter data must be considered (both in calculation of mean sea level and tidal constituents). Finally, because of small values of VLM, absolute mean sea level values are very close to relative one which indicate that, we can evaluate the sea level changes in Gulf of Saint Lawrence by using only the tide gauge and altimetry data. In addition to making corrections, the maps of sea level trend and phase differences between tide gauge stations will be represented. The quality of the tide gauge and satellite altimetry records will be discussed and reported over the drawn results of the study." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Niveau de la mer; Golfe du Saint-Laurent; Marégraphe; Altimétrie satellitaire; Mouvement de terrain vertical; GPS; DPInRSO; Analyse de séries temporelles; Sea level; Gulf of St-Lawrence; Tide-gauge; Satellite altimetry; Vertical land motion; GNSS; PSInSAR; Time series analysis; Earth Sciences - Physical Geography / Sciences de la Terre - Géographie physique (UMI : 0368); Thèse ou mémoire / Thesis or Dissertation; Géographie" name="citation_keywords"/>
+<meta content="Quantification du mouvement vertical de la croûte terrestre et de sa contribution au changement du niveau de la mer : le cas de la Côte Est du Canada, golfe du Saint-Laurent" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Feizabadi, Mohsen" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/26041/6/Feizabadi_Mohsen_2020_memoire.pdf" name="citation_pdf_url"/>
+<meta content="2021-10-21" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/26041" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26041?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26041?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26041?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26041?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26041?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/26041?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2945" role="menuitem">Faculté des arts et des sciences – Département de géographie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2984" role="menuitem">Faculté des arts et des sciences – Département de géographie - Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2945">Faculté des arts et des sciences – Département de géographie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2984">Faculté des arts et des sciences – Département de géographie - Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2984"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2984/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/26041/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26041">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/26041/mets.xml-->
+<h2 class="page-header first-page-header">Quantification du mouvement vertical de la croûte terrestre et de sa contribution au changement du niveau de la mer : le cas de la Côte Est du Canada, golfe du Saint-Laurent</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Cavayas, François</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Feizabadi, Mohsen</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2022-01-21T16:55:35Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">NO_RESTRICTION</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2022-01-21T16:55:35Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2021-10-21</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2020-12</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/26041</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Niveau de la mer</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Golfe du Saint-Laurent</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Marégraphe</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Altimétrie satellitaire</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Mouvement de terrain vertical</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">GPS</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">DPInRSO</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Analyse de séries temporelles</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Sea level</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Gulf of St-Lawrence</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Tide-gauge</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Satellite altimetry</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Vertical land motion</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">GNSS</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">PSInSAR</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Time series analysis</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Earth Sciences - Physical Geography / Sciences de la Terre - Géographie physique (UMI : 0368)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Quantification du mouvement vertical de la croûte terrestre et de sa contribution au changement du niveau de la mer : le cas de la Côte Est du Canada, golfe du Saint-Laurent</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Géographie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Maîtrise / Master's</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">M. Sc.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Les changements du niveau de la mer sont un des indicateurs des changements climatiques qui affectent le monde depuis les dernière décennies. Dans les zones côtières, ce phénomène est à l'origine de l'érosion côtière, l'intrusion d'eau salée dans la nappe phréatique et les inondations. Les côtes du Canada ne sont pas épargnées. En effet, le niveau de la mer dans ces régions augmente actuellement et suit les tendances mondiales. Parmi ces zones côtières, celles du golfe du Saint-Laurent nous ont intéressées. Elles sont caractérisées par des propriétés physiques spécifiques comme l'isolement relatif par rapport l'océan Atlantique, la couverture de glace en hiver et la coulée de l'eau douce au printemps qui leurs confèrent un comportement particulier en termes de changements du niveau de la mer. Les changements du niveau de la mer peuvent être déterminés en intégrant les données des marégraphes et de l'altimétrie satellitaire que le résultat de cette procédure conduit à une détermination relative du niveau moyen de la mer. Cependant, parce que la structure de mesure de ces données est différente, certaines corrections doivent être appliquées. L'une des corrections parmi les plus essentielles est la longueur du Mouvement de Terrain Vertical (MTV) qui doit être prise en compte dans les données des marégraphes, car ces derniers sont connectés directement à la croûte terrestre. Différents phénomènes peuvent causer le MTV. À une échelle locale, la tectonique, l'affaissement et la sédimentation sont les facteurs qui créent le mouvement vertical et à une méso ou macro-échelle, la fonte des inlandsis qui entraîne une modification de la charge de masse de la surface de la terre, provoquent le mouvement des terres. Il existe divers modèles et méthodes de correction du MTV globaux et locaux, tels que l'Ajustement Isostatique Glaciaire (AIG), le Système Mondial de Navigation par Satellite (SMNS), l'Interférométrie par Radar Synthèse d'Ouverture (InRSO), Gravity Recovery and Climate Experiment (GRACE) et le calcul de la différence entre données marégraphiques et altimétriques par satellite. Parmi ces méthodes, l'utilisation de la vitesse verticale des données GPS est la plus précise. Cependant, en raison du faible nombre de stations GPS dans ou proximité des stations marégraphiques, l'utilisation d'une approche plus globale est inévitable. En utilisant cette correction, le niveau moyen absolu de la mer sera obtenu. Dans cette étude, l'évaluation du MTV se fait par un algorithme d'InRSO, appelé Diffuseurs Persistants InRSO (DPInRSO en anglais PSInSAR). Les images du RSO du satellite Sentinel-1 sont soumises à l'analyse DPInRSO. Afin d'évaluer la précision de cette approche, les résultats de DPInRSO (obtenus du logiciel Stanford Method for Persistent Scatterers (StaMPS)) pour deux régions de l'est du Canada (Halifax et St. John's) sont comparés à la GPS vitesse verticale en analysant les séries temporelles de données. Également, en utilisant la même méthode, le mouvement vertical des terres dans 24 stations marégraphiques du golfe du Saint-Laurent sera corrigé. L'étude du niveau moyen de la mer est mise en oeuvre en utilisant l'analyse spectrale (analyse harmonique et analyse spectrale des moindres carrés (ASMC)) afin de supprimer les effets à long terme des constituants de la marée (constituants annuels et semi-annuels). Aussi, pour évaluer le niveau moyen absolu de la mer (NMAM) dans la région considérée, le niveau moyen de la mer calculé est corrigé sur la base des résultats du MTV. En conclusion, la comparaison des résultats de la technique DPInRSO avec les données GPS indique le comportement similaire des tendances au cours de la période d'étude. En d'autres termes, la méthode DPInRSO mesure le mouvement vertical des terres en précision millimétrique dans la région d'étude (à l'exception d'une station) et elle peut être appliquée pour les régions qu'elles ne se connectent pas sur le positionnement GPS continu des marégraphes. Dans le cas d'un changement du niveau de la mer, l'incompatibilité entre les données marégraphiques et altimétriques en termes de temps rend la conclusion plus diffcile. Cependant, sur la base d'observations continues dans des séries temporelles de données altimétriques, nous avons obtenu une tendance plus homogène du niveau de la mer (niveau moyen de la mer) dans toutes les stations, mais pour évaluer le changement à long terme du niveau de la mer et en raison de l'emplacement exact de la station marégraphique, ces dernières données doivent être prises en compte (à la fois dans le calcul du niveau moyen de la mer et des constituants de la marée). Enfin, en raison du faible changement de MTV, les valeurs moyennes absolues du niveau de la mer sont très proches de celles relatives, ce qui indique que nous pouvons évaluer les changements du niveau de la mer dans le golfe du Saint-Laurent, en utilisant uniquement les données marégraphiques et altimétriques. En plus de faire des corrections, des cartes de la tendance du niveau de la mer et des différences de phase entre les stations marégraphiques seront représentées. La qualité des données des marégraphes et de l'altimétrie satellitaire sera discutée et rapportée sur les résultats tirés de l'étude.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Sea level changes are one of the indicators of climate change that has affected the world in recent decades. In coastal areas, this phenomenon has caused coastal erosion, saltwater intrusion into the groundwater and floods. These environmental changes can also be seen in Canada's coasts. Indeed, the sea level in these regions is currently increasing and follows the global trends. Among these coastal areas, those of the Gulf of St. Lawrence interested us. This area is characterized by specific physical properties such as relative isolation from the Atlantic Ocean, winter ice cover and spring freshwater flow that confer particular behavior in terms of sea level changes. Sea level changes can be determined by integrating the tide gauge and satellite altimetry data that the result of this procedure leads to a relative determination of mean sea level. However, because the measurement structures of these data are different, some corrections should be applied. One of the most essential corrections is the length of the Vertical Land Motion (VLM) which must be taken into account in tide gauge data, as these are connected directly to the Earth crust. Different phenomena can cause VLM. In the local scale, tectonics, subsidence and sedimentation are the factors that create vertical movement and in global scale, melting of ice sheets, which leads to change the mass loading of the earth's surface, cause the land motion. There are various global and local VLM correction models and methods such as, Glacial Isostatic Adjustment (GIA), Global Navigation Satellite Systems (GNSS), Interferometry Synthetic Aperture Radar (InSAR), Gravity Recovery and Climate Experiment (GRACE) and calculation of difference between satellite altimetry and tide gauge data. Between these methods, using the vertical velocity of GPS data is the most accurate one. However, due to the low number of GPS stations in or near the tide gauge stations, using a more comprehensive approach is inevitable. By applying this correction, the absolute mean sea level will be obtained. In this study, VLM is examined by one algorithm of InSAR which is called Persistent Scatterer InSAR (PSInSAR). The Sentinel-1 single-look SAR images are used for PSInSAR analysis. In order to accuracy assessment of this approach, the results of PSInSAR (obtained from Stanford Method for Persistent Scatterers software (StaMPS)) for two regions in east of Canada (Halifax and St. John's) are compared with GPS vertical velocity by analyzing their time series data. Equally, by using the same method, vertical land movement in 24 tide gauge station in Gulf of St. Lawrence will be corrected. Investigation of mean sea level is implemented by using the spectral analysis (Harmonic analysis and Least Square Spectral Analysis) in order to remove the long-term effects of tidal constituent (annual and semiannual constituents). Also, to assess the Absolute Mean Sea Level (AMSL) in considered region, calculated mean sea level is corrected based on the results of VLM. In conclusion, comparing of the results of PSInSAR technique with GPS data indicate the similar behavior of trends during the period of study. In other words, PSInSAR method measures vertical land motion in millimeter precision in study region (except of one station) and it can be applied for regions that they do not connect on continuous GPS positioning of tide gauges. In the case of sea level change, incompatibility between tide gauge and altimetry data in terms of time makes the conclusion harder. However, based on continues observations in time series of altimetry data, we obtained more homogeneous sea level trend (mean sea level) in all stations, but to evaluate the long-term sea level change and because of exact location of tide gauge station, this latter data must be considered (both in calculation of mean sea level and tidal constituents). Finally, because of small values of VLM, absolute mean sea level values are very close to relative one which indicate that, we can evaluate the sea level changes in Gulf of Saint Lawrence by using only the tide gauge and altimetry data. In addition to making corrections, the maps of sea level trend and phase differences between tide gauge stations will be represented. The quality of the tide gauge and satellite altimetry records will be discussed and reported over the drawn results of the study.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F26041&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=G%C3%A9ographie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Ma%C3%AEtrise+%2F+Master%27s&amp;rft.degree=M.+Sc."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/26041/Feizabadi_Mohsen_2020_memoire.pdf?sequence=6&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/26041/Feizabadi_Mohsen_2020_memoire.pdf.jpg?sequence=8&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Feizabadi_Mohsen_2020_memoire.pdf">
+<a href="/xmlui/bitstream/handle/1866/26041/Feizabadi_Mohsen_2020_memoire.pdf?sequence=6&amp;isAllowed=y">Feizabadi_Mohsen_2020_memoire.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">136.4Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Mémoire">Mémoire</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2984/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2984">Faculté des arts et des sciences – Département de géographie - Thèses et mémoires</a> [241]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/26041">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

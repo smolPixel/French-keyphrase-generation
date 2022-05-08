@@ -4,7 +4,7 @@ mkdir data/papyrus_m
 mkdir data/papyrus_f
 mkdir data/papyrus_e
 mkdir data/papyrus
-#python3 Scrape_Documents.py
-#python3 Parse_All.py
+python3 Scrape_Documents.py
+python3 Parse_All.py
 python3 Process.py
 python3 Create_Papyrusfmn.py

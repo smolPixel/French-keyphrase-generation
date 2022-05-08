@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Molecular characterization of the contribution of autophagy to antigen presentation using quantitative proteomics</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Thibault, Pierre" name="DC.contributor">
+<meta content="Desjardins, Michel" name="DC.contributor">
+<meta content="Bell, Christina" name="DC.creator">
+<meta content="2015-03-13T14:13:38Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="MONTHS_WITHHELD:12" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="fr">
+<meta content="2015-03-13T14:13:38Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2015-02-18" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF"/>
+<meta content="2014-07" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/11406" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Autophagie" name="DC.subject" xml:lang="fr"/>
+<meta content="Présentation antigénique" name="DC.subject" xml:lang="fr"/>
+<meta content="Protéomique quantitative" name="DC.subject" xml:lang="fr"/>
+<meta content="Spectrométrie de masse" name="DC.subject" xml:lang="fr"/>
+<meta content="TNF-alpha" name="DC.subject" xml:lang="fr"/>
+<meta content="Macrophages" name="DC.subject" xml:lang="fr"/>
+<meta content="Herpès Simplex Virus" name="DC.subject" xml:lang="fr"/>
+<meta content="Autophagy" name="DC.subject" xml:lang="fr"/>
+<meta content="Antigen presentation" name="DC.subject" xml:lang="fr"/>
+<meta content="Quantitative proteomics" name="DC.subject" xml:lang="fr"/>
+<meta content="Mass spectrometry" name="DC.subject" xml:lang="fr"/>
+<meta content="TNF-alpha" name="DC.subject" xml:lang="fr"/>
+<meta content="Macrophages" name="DC.subject" xml:lang="fr"/>
+<meta content="Herpes Simplex Virus" name="DC.subject" xml:lang="fr"/>
+<meta content="Chemistry - Analytical / Chimie analytique (UMI : 0486)" name="DC.subject" xml:lang="fr"/>
+<meta content="Molecular characterization of the contribution of autophagy to antigen presentation using quantitative proteomics" name="DC.title" xml:lang="fr"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="L’autophagie est une voie hautement conservée de dégradation lysosomale des constituants cellulaires qui est essentiel à l’homéostasie cellulaire et contribue à l’apprêtement et à la présentation des antigènes. Les rôles relativement récents de l'autophagie dans l'immunité innée et acquise sous-tendent de nouveaux paradigmes immunologiques pouvant faciliter le développement de nouvelles thérapies où la dérégulation de l’autophagie est associée à des maladies auto-immunes. Cependant, l'étude in vivo de la réponse autophagique est difficile en raison du nombre limité de méthodes d'analyse pouvant fournir une définition dynamique des protéines clés impliquées dans cette voie. En conséquence, nous avons développé un programme de recherche en protéomique intégrée afin d’identifier et de quantifier les proteines associées à l'autophagie et de déterminer les mécanismes moléculaires régissant les fonctions de l’autophagosome dans la présentation antigénique en utilisant une approche de biologie des systèmes. Pour étudier comment l'autophagie et la présentation antigénique sont activement régulés dans les macrophages, nous avons d'abord procédé à une étude protéomique à grande échelle sous différentes conditions connues pour stimuler l'autophagie, tels l’activation par les cytokines et l’infection virale. 
+La cytokine tumor necrosis factor-alpha (TNF-alpha) est l'une des principales cytokines pro-inflammatoires qui intervient dans les réactions locales et systémiques afin de développer une réponse immune adaptative. La protéomique quantitative d'extraits membranaires de macrophages contrôles et stimulés avec le TNF-alpha a révélé que l'activation des macrophages a entrainé la dégradation de protéines mitochondriales et des changements d’abondance de plusieurs protéines impliquées dans le trafic vésiculaire et la réponse immunitaire. Nous avons constaté que la dégradation des protéines mitochondriales était sous le contrôle de la voie ATG5, et était spécifique au TNF-alpha. En outre, l’utilisation d’un nouveau système de présentation antigènique, nous a permi de constater que l'induction de la mitophagie par le TNF-alpha a entrainée l’apprêtement et la présentation d’antigènes mitochondriaux par des molécules du CMH de classe I, contribuant ainsi la variation du répertoire immunopeptidomique à la surface cellulaire. Ces résultats mettent en évidence un rôle insoupçonné du TNF-alpha dans la mitophagie et permet une meilleure compréhension des mécanismes responsables de la présentation d’auto-antigènes par les molécules du CMH de classe I. 
+Une interaction complexe existe également entre infection virale et l'autophagie. Récemment, notre laboratoire a fourni une première preuve suggérant que la macroautophagie peut contribuer à la présentation de protéines virales par les molécules du CMH de classe I lors de l’infection virale par l'herpès simplex virus de type 1 (HSV-1). Le virus HSV1 fait parti des virus humains les plus complexes et les plus répandues. Bien que la composition des particules virales a été étudiée précédemment, on connaît moins bien l'expression de l'ensemble du protéome viral lors de l’infection des cellules hôtes. Afin de caractériser les changements dynamiques de l’expression des protéines virales lors de l’infection, nous avons analysé par LC-MS/MS le protéome du HSV1 dans les macrophages infectés. Ces analyses nous ont permis d’identifier un total de 67 protéines virales structurales et non structurales (82% du protéome HSV1) en utilisant le spectromètre de masse LTQ-Orbitrap. Nous avons également identifié 90 nouveaux sites de phosphorylation et de dix nouveaux sites d’ubiquitylation sur différentes protéines virales. Suite à l’ubiquitylation, les protéines virales peuvent se localiser au noyau ou participer à des événements de fusion avec la membrane nucléaire, suggérant ainsi que cette modification pourrait influer le trafic vésiculaire des protéines virales. Le traitement avec des inhibiteurs de la réplication de l'ADN induit des changements sur l'abondance et la modification des protéines virales, mettant en évidence l'interdépendance des protéines virales au cours du cycle de vie du virus. Compte tenu de l'importance de la dynamique d'expression, de l’ubiquitylation et la phosphorylation sur la fonction des proteines virales, ces résultats ouvriront la voie vers de nouvelles études sur la biologie des virus de l'herpès. 
+Fait intéressant, l'infection HSV1 dans les macrophages déclenche une nouvelle forme d'autophagie qui diffère remarquablement de la macroautophagie. Ce processus, appelé autophagie associée à l’enveloppe nucléaire (nuclear envelope derived autophagy, NEDA), conduit à la formation de vésicules membranaires contenant 4 couches lipidiques provenant de l'enveloppe nucléaire où on retrouve une grande proportion de certaines protéines virales, telle la glycoprotéine B. Les mécanismes régissant NEDA et leur importance lors de l’infection virale sont encore méconnus. En utilisant un essai de présentation antigénique, nous avons pu montrer que la voie NEDA est indépendante d’ATG5 et participe à l’apprêtement et la présentation d’antigènes viraux par le CMH de classe I. Pour comprendre l'implication de NEDA dans la présentation des antigènes, il est essentiel de caractériser le protéome des autophagosomes isolés à partir de macrophages infectés par HSV1. Aussi, nous avons développé une nouvelle approche de fractionnement basé sur l’isolation de lysosomes chargés de billes de latex, nous permettant ainsi d’obtenir des extraits cellulaires enrichis en autophagosomes. Le transfert des antigènes HSV1 dans les autophagosomes a été determine par protéomique quantitative. Les protéines provenant de l’enveloppe nucléaire ont été préférentiellement transférées dans les autophagosome lors de l'infection des macrophages par le HSV1. Les analyses protéomiques d’autophagosomes impliquant NEDA ou la macroautophagie ont permis de decouvrir des mécanismes jouant un rôle clé dans l’immunodominance de la glycoprotéine B lors de l'infection HSV1. Ces analyses ont également révélées que diverses voies autophagiques peuvent être induites pour favoriser la capture sélective de protéines virales, façonnant de façon dynamique la nature de la réponse immunitaire lors d'une infection. 
+En conclusion, l'application des méthodes de protéomique quantitative a joué un rôle clé dans l'identification et la quantification des protéines ayant des rôles importants dans la régulation de l'autophagie chez les macrophages, et nous a permis d'identifier les changements qui se produisent lors de la formation des autophagosomes lors de maladies inflammatoires ou d’infection virale. En outre, notre approche de biologie des systèmes, qui combine la protéomique quantitative basée sur la spectrométrie de masse avec des essais fonctionnels tels la présentation antigénique, nous a permis d’acquérir de nouvelles connaissances sur les mécanismes moléculaires régissant les fonctions de l'autophagie lors de la présentation antigénique. Une meilleure compréhension de ces mécanismes permettra de réduire les effets nuisibles de l'immunodominance suite à l'infection virale ou lors du développement du cancer en mettant en place une réponse immunitaire appropriée." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="Autophagy is a highly conserved lysosomal-mediated protein degradation pathway that plays a crucial role in maintaining cellular homeostasis and contributes to antigen processing and presentation. The emerging roles of autophagy in both innate and adaptive immunity underpin novel immunological paradigms that may provide opportunities for the development of new therapies where impaired autophagy is associated with autoimmune diseases. However, the in vivo study of autophagic response is challenging in view of the limited number of analytical approaches that can provide a dynamic definition of the key proteins involved in this pathway. Accordingly, we developed an integrated proteomics research program to unravel the molecular machines associated with autophagy and to decipher the fine details of the molecular mechanisms governing the functions of the autophagosome in antigen presentation using a systems biology approach. To study how autophagy and antigen presentation are actively modulated in macrophages, we first conducted comprehensive, global proteomics studies under different conditions known to stimulate autophagy. Autophagy is modulated by cytokines as well as by viral infection in various ways.
+TNF-alpha is one of the major proinflammatory cytokines that mediate local and systemic responses and direct the development of adaptive immunity. Label-free quantitative proteomics analysis of membrane extracts from TNF-alpha activated and resting macrophages revealed that TNF-alpha activation led to the downregulation of mitochondrial proteins and the differential regulation of several proteins involved in vesicle trafficking and immune response. Importantly, we found that the downregulation of mitochondria proteins occurred through Atg5-dependent mitophagy, and was specific to TNF-alpha. Furthermore, using a novel antigen presentation system, we observed that the induction of mitophagy by TNF-alpha enabled the processing and presentation of mitochondrial antigens at the cell surface by MHC class I molecules, suggesting that TNF-alpha induced mitophagy contributes to the modification of the MHC class I peptide repertoire. These findings highlight an unsuspected role of TNF-alpha in mitophagy and expanded our understanding of the mechanisms responsible for MHC class I presentation of self-antigens. 
+A complex interplay also exists between viral infection and autophagy. Recently, our lab provided the first evidence that macroautophagy can contribute to the presentation of viral proteins on MHC class I molecules during Herpes Simplex Virus type 1 (HSV1) infection. HSV1 are among the most complex and widespread human viruses. While the composition of viral particles has been studied, less is known about the expression of the whole viral proteome in infected cells. To comprehensively characterize the system, we analyzed the proteome of the prototypical HSV1 in infected macrophages by LC-MS/MS. We achieved a very high level of protein coverage and identified a total of 67 structural and non-structural viral proteins (82% of the HSV1 proteome) using LC-MS/MS on a LTQ-Orbitrap instrument. We also obtained a comprehensive map of 90 novel phosphorylation sites and ten novel ubiquitylation sites on different viral proteins. Interestingly all ubiquitylated proteins could either localize to the nucleus or participate in membrane fusion events, suggesting that ubiquitylation of viral proteins might affect their trafficking. Treatment with inhibitors of DNA replication induced changes of both viral protein abundance and modifications, highlighting the interdependence of viral proteins during the life cycle of the virus. Given the importance of expression dynamics, ubiquitylation and phosphorylation for protein function, these findings will serve as important tools for future studies on herpes virus biology.
+Interestingly, HSV1 infection in macrophages triggers a novel form of autophagy which remarkably differs in many ways from macroautophagy. This process, referred to as nuclear envelope-derived autophagy (NEDA), leads to the formation of 4-membrane layered vesicles originating from the nuclear envelope where some viral protein such as glycoprotein B are highly enriched. To which extent this process differs from macroautophagy and participates in the pathogenesis of HSV infection is still largely unknown. Using a novel antigen presentation assay we could show that NEDA is an Atg5-independent pathway that participates in the capture of viral proteins, and their processing and presentation on MHC class I molecules. To understand the involvement of NEDA in antigen presentation it is crucial to characterize the autophagosomal proteome in HSV1 infected macrophages. We developed a novel isolation method based on the loading of the lysosomal compartment with latex beads, a unique tool to obtain very pure cell extracts, upon autophagy induction. The transfer of HSV1 antigens into autophagosomes was monitored using quantitative proteomics. Nuclear enveloped-derived proteins were preferentially transferred to the autophagosome during HSV1 infection. Detailed proteomics characterization of autophagosomes formed during NEDA and macroautophagy led to the discovery of mechanisms that play a key role in glycoprotein B immunodominance during HSV1 infection. These analyses also revealed that various autophagic pathways can be induced to promote the capture of selective sets of viral proteins, thus actively shaping the nature of the immune response during infection.   
+In conclusion, the application of quantitative proteomics methods played a key role in identifying and quantifying important regulators of autophagy in macrophages and allowed us to identify changes occurring during the remodeling of autophagosomes in response to disease and inflammatory conditions such as viral infections. Furthermore, our systems biology approach that combined mass spectrometry-based quantitative proteomics with functional screens such as antigen presentation assays revealed novel biological insights on the molecular mechanisms governing the functions of autophagy in antigen presentation. Harnessing the contribution of autophagy in antigen presentation has the potential to minimize the deleterious effects of immunodominance in viral infection and cancer by shaping an appropriate immune response." name="DCTERMS.abstract" xml:lang="fr"/>
+<meta content="eng" name="DCTERMS.language" xml:lang="fr"/>
+<meta content="Autophagie; Présentation antigénique; Protéomique quantitative; Spectrométrie de masse; TNF-alpha; Macrophages; Herpès Simplex Virus; Autophagy; Antigen presentation; Quantitative proteomics; Mass spectrometry; TNF-alpha; Macrophages; Herpes Simplex Virus; Chemistry - Analytical / Chimie analytique (UMI : 0486); Thèse ou mémoire / Thesis or Dissertation; Chimie" name="citation_keywords"/>
+<meta content="Molecular characterization of the contribution of autophagy to antigen presentation using quantitative proteomics" name="citation_title"/>
+<meta content="eng" name="citation_language"/>
+<meta content="Bell, Christina" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/11406/2/Bell_Christina_2014_these.pdf" name="citation_pdf_url"/>
+<meta content="2015-02-18" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/11406" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11406?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11406?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11406?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11406?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11406?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/11406?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2942" role="menuitem">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2977" role="menuitem">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2942">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2977"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/11406/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/11406">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/11406/mets.xml-->
+<h2 class="page-header first-page-header">Molecular characterization of the contribution of autophagy to antigen presentation using quantitative proteomics</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Thibault, Pierre</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Desjardins, Michel</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Bell, Christina</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2015-03-13T14:13:38Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">MONTHS_WITHHELD:12</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">2015-03-13T14:13:38Z</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2015-02-18</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2014-07</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/11406</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Autophagie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Présentation antigénique</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Protéomique quantitative</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Spectrométrie de masse</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">TNF-alpha</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Macrophages</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Herpès Simplex Virus</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Autophagy</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Antigen presentation</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Quantitative proteomics</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Mass spectrometry</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">TNF-alpha</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Macrophages</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Herpes Simplex Virus</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Chemistry - Analytical / Chimie analytique (UMI : 0486)</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.title</td><td class="word-break">Molecular characterization of the contribution of autophagy to antigen presentation using quantitative proteomics</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Chimie</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">L’autophagie est une voie hautement conservée de dégradation lysosomale des constituants cellulaires qui est essentiel à l’homéostasie cellulaire et contribue à l’apprêtement et à la présentation des antigènes. Les rôles relativement récents de l'autophagie dans l'immunité innée et acquise sous-tendent de nouveaux paradigmes immunologiques pouvant faciliter le développement de nouvelles thérapies où la dérégulation de l’autophagie est associée à des maladies auto-immunes. Cependant, l'étude in vivo de la réponse autophagique est difficile en raison du nombre limité de méthodes d'analyse pouvant fournir une définition dynamique des protéines clés impliquées dans cette voie. En conséquence, nous avons développé un programme de recherche en protéomique intégrée afin d’identifier et de quantifier les proteines associées à l'autophagie et de déterminer les mécanismes moléculaires régissant les fonctions de l’autophagosome dans la présentation antigénique en utilisant une approche de biologie des systèmes. Pour étudier comment l'autophagie et la présentation antigénique sont activement régulés dans les macrophages, nous avons d'abord procédé à une étude protéomique à grande échelle sous différentes conditions connues pour stimuler l'autophagie, tels l’activation par les cytokines et l’infection virale. 
+La cytokine tumor necrosis factor-alpha (TNF-alpha) est l'une des principales cytokines pro-inflammatoires qui intervient dans les réactions locales et systémiques afin de développer une réponse immune adaptative. La protéomique quantitative d'extraits membranaires de macrophages contrôles et stimulés avec le TNF-alpha a révélé que l'activation des macrophages a entrainé la dégradation de protéines mitochondriales et des changements d’abondance de plusieurs protéines impliquées dans le trafic vésiculaire et la réponse immunitaire. Nous avons constaté que la dégradation des protéines mitochondriales était sous le contrôle de la voie ATG5, et était spécifique au TNF-alpha. En outre, l’utilisation d’un nouveau système de présentation antigènique, nous a permi de constater que l'induction de la mitophagie par le TNF-alpha a entrainée l’apprêtement et la présentation d’antigènes mitochondriaux par des molécules du CMH de classe I, contribuant ainsi la variation du répertoire immunopeptidomique à la surface cellulaire. Ces résultats mettent en évidence un rôle insoupçonné du TNF-alpha dans la mitophagie et permet une meilleure compréhension des mécanismes responsables de la présentation d’auto-antigènes par les molécules du CMH de classe I. 
+Une interaction complexe existe également entre infection virale et l'autophagie. Récemment, notre laboratoire a fourni une première preuve suggérant que la macroautophagie peut contribuer à la présentation de protéines virales par les molécules du CMH de classe I lors de l’infection virale par l'herpès simplex virus de type 1 (HSV-1). Le virus HSV1 fait parti des virus humains les plus complexes et les plus répandues. Bien que la composition des particules virales a été étudiée précédemment, on connaît moins bien l'expression de l'ensemble du protéome viral lors de l’infection des cellules hôtes. Afin de caractériser les changements dynamiques de l’expression des protéines virales lors de l’infection, nous avons analysé par LC-MS/MS le protéome du HSV1 dans les macrophages infectés. Ces analyses nous ont permis d’identifier un total de 67 protéines virales structurales et non structurales (82% du protéome HSV1) en utilisant le spectromètre de masse LTQ-Orbitrap. Nous avons également identifié 90 nouveaux sites de phosphorylation et de dix nouveaux sites d’ubiquitylation sur différentes protéines virales. Suite à l’ubiquitylation, les protéines virales peuvent se localiser au noyau ou participer à des événements de fusion avec la membrane nucléaire, suggérant ainsi que cette modification pourrait influer le trafic vésiculaire des protéines virales. Le traitement avec des inhibiteurs de la réplication de l'ADN induit des changements sur l'abondance et la modification des protéines virales, mettant en évidence l'interdépendance des protéines virales au cours du cycle de vie du virus. Compte tenu de l'importance de la dynamique d'expression, de l’ubiquitylation et la phosphorylation sur la fonction des proteines virales, ces résultats ouvriront la voie vers de nouvelles études sur la biologie des virus de l'herpès. 
+Fait intéressant, l'infection HSV1 dans les macrophages déclenche une nouvelle forme d'autophagie qui diffère remarquablement de la macroautophagie. Ce processus, appelé autophagie associée à l’enveloppe nucléaire (nuclear envelope derived autophagy, NEDA), conduit à la formation de vésicules membranaires contenant 4 couches lipidiques provenant de l'enveloppe nucléaire où on retrouve une grande proportion de certaines protéines virales, telle la glycoprotéine B. Les mécanismes régissant NEDA et leur importance lors de l’infection virale sont encore méconnus. En utilisant un essai de présentation antigénique, nous avons pu montrer que la voie NEDA est indépendante d’ATG5 et participe à l’apprêtement et la présentation d’antigènes viraux par le CMH de classe I. Pour comprendre l'implication de NEDA dans la présentation des antigènes, il est essentiel de caractériser le protéome des autophagosomes isolés à partir de macrophages infectés par HSV1. Aussi, nous avons développé une nouvelle approche de fractionnement basé sur l’isolation de lysosomes chargés de billes de latex, nous permettant ainsi d’obtenir des extraits cellulaires enrichis en autophagosomes. Le transfert des antigènes HSV1 dans les autophagosomes a été determine par protéomique quantitative. Les protéines provenant de l’enveloppe nucléaire ont été préférentiellement transférées dans les autophagosome lors de l'infection des macrophages par le HSV1. Les analyses protéomiques d’autophagosomes impliquant NEDA ou la macroautophagie ont permis de decouvrir des mécanismes jouant un rôle clé dans l’immunodominance de la glycoprotéine B lors de l'infection HSV1. Ces analyses ont également révélées que diverses voies autophagiques peuvent être induites pour favoriser la capture sélective de protéines virales, façonnant de façon dynamique la nature de la réponse immunitaire lors d'une infection. 
+En conclusion, l'application des méthodes de protéomique quantitative a joué un rôle clé dans l'identification et la quantification des protéines ayant des rôles importants dans la régulation de l'autophagie chez les macrophages, et nous a permis d'identifier les changements qui se produisent lors de la formation des autophagosomes lors de maladies inflammatoires ou d’infection virale. En outre, notre approche de biologie des systèmes, qui combine la protéomique quantitative basée sur la spectrométrie de masse avec des essais fonctionnels tels la présentation antigénique, nous a permis d’acquérir de nouvelles connaissances sur les mécanismes moléculaires régissant les fonctions de l'autophagie lors de la présentation antigénique. Une meilleure compréhension de ces mécanismes permettra de réduire les effets nuisibles de l'immunodominance suite à l'infection virale ou lors du développement du cancer en mettant en place une réponse immunitaire appropriée.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Autophagy is a highly conserved lysosomal-mediated protein degradation pathway that plays a crucial role in maintaining cellular homeostasis and contributes to antigen processing and presentation. The emerging roles of autophagy in both innate and adaptive immunity underpin novel immunological paradigms that may provide opportunities for the development of new therapies where impaired autophagy is associated with autoimmune diseases. However, the in vivo study of autophagic response is challenging in view of the limited number of analytical approaches that can provide a dynamic definition of the key proteins involved in this pathway. Accordingly, we developed an integrated proteomics research program to unravel the molecular machines associated with autophagy and to decipher the fine details of the molecular mechanisms governing the functions of the autophagosome in antigen presentation using a systems biology approach. To study how autophagy and antigen presentation are actively modulated in macrophages, we first conducted comprehensive, global proteomics studies under different conditions known to stimulate autophagy. Autophagy is modulated by cytokines as well as by viral infection in various ways.
+TNF-alpha is one of the major proinflammatory cytokines that mediate local and systemic responses and direct the development of adaptive immunity. Label-free quantitative proteomics analysis of membrane extracts from TNF-alpha activated and resting macrophages revealed that TNF-alpha activation led to the downregulation of mitochondrial proteins and the differential regulation of several proteins involved in vesicle trafficking and immune response. Importantly, we found that the downregulation of mitochondria proteins occurred through Atg5-dependent mitophagy, and was specific to TNF-alpha. Furthermore, using a novel antigen presentation system, we observed that the induction of mitophagy by TNF-alpha enabled the processing and presentation of mitochondrial antigens at the cell surface by MHC class I molecules, suggesting that TNF-alpha induced mitophagy contributes to the modification of the MHC class I peptide repertoire. These findings highlight an unsuspected role of TNF-alpha in mitophagy and expanded our understanding of the mechanisms responsible for MHC class I presentation of self-antigens. 
+A complex interplay also exists between viral infection and autophagy. Recently, our lab provided the first evidence that macroautophagy can contribute to the presentation of viral proteins on MHC class I molecules during Herpes Simplex Virus type 1 (HSV1) infection. HSV1 are among the most complex and widespread human viruses. While the composition of viral particles has been studied, less is known about the expression of the whole viral proteome in infected cells. To comprehensively characterize the system, we analyzed the proteome of the prototypical HSV1 in infected macrophages by LC-MS/MS. We achieved a very high level of protein coverage and identified a total of 67 structural and non-structural viral proteins (82% of the HSV1 proteome) using LC-MS/MS on a LTQ-Orbitrap instrument. We also obtained a comprehensive map of 90 novel phosphorylation sites and ten novel ubiquitylation sites on different viral proteins. Interestingly all ubiquitylated proteins could either localize to the nucleus or participate in membrane fusion events, suggesting that ubiquitylation of viral proteins might affect their trafficking. Treatment with inhibitors of DNA replication induced changes of both viral protein abundance and modifications, highlighting the interdependence of viral proteins during the life cycle of the virus. Given the importance of expression dynamics, ubiquitylation and phosphorylation for protein function, these findings will serve as important tools for future studies on herpes virus biology.
+Interestingly, HSV1 infection in macrophages triggers a novel form of autophagy which remarkably differs in many ways from macroautophagy. This process, referred to as nuclear envelope-derived autophagy (NEDA), leads to the formation of 4-membrane layered vesicles originating from the nuclear envelope where some viral protein such as glycoprotein B are highly enriched. To which extent this process differs from macroautophagy and participates in the pathogenesis of HSV infection is still largely unknown. Using a novel antigen presentation assay we could show that NEDA is an Atg5-independent pathway that participates in the capture of viral proteins, and their processing and presentation on MHC class I molecules. To understand the involvement of NEDA in antigen presentation it is crucial to characterize the autophagosomal proteome in HSV1 infected macrophages. We developed a novel isolation method based on the loading of the lysosomal compartment with latex beads, a unique tool to obtain very pure cell extracts, upon autophagy induction. The transfer of HSV1 antigens into autophagosomes was monitored using quantitative proteomics. Nuclear enveloped-derived proteins were preferentially transferred to the autophagosome during HSV1 infection. Detailed proteomics characterization of autophagosomes formed during NEDA and macroautophagy led to the discovery of mechanisms that play a key role in glycoprotein B immunodominance during HSV1 infection. These analyses also revealed that various autophagic pathways can be induced to promote the capture of selective sets of viral proteins, thus actively shaping the nature of the immune response during infection.   
+In conclusion, the application of quantitative proteomics methods played a key role in identifying and quantifying important regulators of autophagy in macrophages and allowed us to identify changes occurring during the remodeling of autophagosomes in response to disease and inflammatory conditions such as viral infections. Furthermore, our systems biology approach that combined mass spectrometry-based quantitative proteomics with functional screens such as antigen presentation assays revealed novel biological insights on the molecular mechanisms governing the functions of autophagy in antigen presentation. Harnessing the contribution of autophagy in antigen presentation has the potential to minimize the deleterious effects of immunodominance in viral infection and cancer by shaping an appropriate immune response.</td><td>fr</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.language</td><td class="word-break">eng</td><td>fr</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F11406&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Chimie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/11406/Bell_Christina_2014_these.pdf?sequence=2&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/11406/Bell_Christina_2014_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Bell_Christina_2014_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/11406/Bell_Christina_2014_these.pdf?sequence=2&amp;isAllowed=y">Bell_Christina_2014_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">14.12Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a href="/xmlui/bitstream/handle/1866/11406/Bell_Christina_2014_supplemental.zip?sequence=3&amp;isAllowed=y"><img alt="File" class="thumbnail-papyrus thumbnail_icone" height="122" src="/xmlui/themes/Mirage2/images/mimes/mime.png" style="height: 122px;" width="92"/></a>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Bell_Christina_2014_supplemental.zip">
+<a href="/xmlui/bitstream/handle/1866/11406/Bell_Christina_2014_supplemental.zip?sequence=3&amp;isAllowed=y">Bell_Christina_2014_supplement ...</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">7.473Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">Unknown</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Supplemental data">Supplemental data</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2977/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a> [594]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/11406">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

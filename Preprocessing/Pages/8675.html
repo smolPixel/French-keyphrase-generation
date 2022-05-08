@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="/xmlui/themes/Mirage2/images/favicon.ico" rel="shortcut icon"/>
+<link href="/xmlui/themes/Mirage2/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="DSpace 5.8" name="Generator"/>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Ubuntu:400,500,700italic|Droid+Sans:400,700" rel="stylesheet" type="text/css"/>
+<link href="/xmlui/themes/Mirage2/styles/main.css" rel="stylesheet"/>
+<link href="https://papyrus.bib.umontreal.ca:443/xmlui/description.xml" rel="search" title="DSpace" type="application/opensearchdescription+xml"/>
+<script>
+                //Clear default text of emty text areas on focus
+                function tFocus(element)
+                {
+                if (element.value == ''){element.value='';}
+                }
+                //Clear default text of emty text areas on submit
+                function tSubmit(form)
+                {
+                var defaultedElements = document.getElementsByTagName("textarea");
+                for (var i=0; i != defaultedElements.length; i++){
+                if (defaultedElements[i].value == ''){
+                defaultedElements[i].value='';}}
+                }
+                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                function disableEnterKey(e)
+                {
+                var key;
+
+                if(window.event)
+                key = window.event.keyCode;     //Internet Explorer
+                else
+                key = e.which;     //Firefox and Netscape
+
+                if(key == 13)  //if "Enter" pressed, then disable!
+                return false;
+                else
+                return true;
+                }
+            </script><!--[if lt IE 9]>
+                <script src="/xmlui/themes/Mirage2/vendor/html5shiv/dist/html5shiv.js"> </script>
+                <script src="/xmlui/themes/Mirage2/vendor/respond/respond.min.js"> </script>
+                <![endif]--><script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script><script src="https://www.bib.umontreal.ca/modele/urgence-udem/1.0.0/urgence-udem.js"></script>
+<title>Formation et propriétés des cristaux colloïdaux issus de l’auto-assemblage de microsphères de polymère</title>
+<meta content="Dr8axyf94eWBJ8HQjNW4eKxTumAAPsNbvRwpJYMbgGs" name="google-site-verification"/>
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS">
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+<meta content="Zhu, Xiaoxia" name="DC.contributor">
+<meta content="Bazin, Gwénaëlle" name="DC.creator">
+<meta content="2012-10-31T14:03:18Z" name="DCTERMS.dateAccepted" scheme="DCTERMS.W3CDTF">
+<meta content="MONTHS_WITHHELD:12" name="DCTERMS.available" scheme="DCTERMS.W3CDTF" xml:lang="en">
+<meta content="2012-10-31T14:03:18Z" name="DCTERMS.available" scheme="DCTERMS.W3CDTF">
+<meta content="2012-10-11" name="DCTERMS.issued" scheme="DCTERMS.W3CDTF">
+<meta content="2012-04" name="DC.date" scheme="DCTERMS.W3CDTF"/>
+<meta content="http://hdl.handle.net/1866/8675" name="DC.identifier" scheme="DCTERMS.URI"/>
+<meta content="Polymérisation en émulsion sans tensioactif" name="DC.subject" xml:lang="en"/>
+<meta content="Surfactant-free emulsion polymerization" name="DC.subject" xml:lang="en"/>
+<meta content="Microsphères de polymère" name="DC.subject" xml:lang="en"/>
+<meta content="Polymer microspheres" name="DC.subject" xml:lang="en"/>
+<meta content="Particules coeur-écorce" name="DC.subject" xml:lang="en"/>
+<meta content="Core-shell particles" name="DC.subject" xml:lang="en"/>
+<meta content="Thermosensibilité" name="DC.subject" xml:lang="en"/>
+<meta content="Thermosensitivity" name="DC.subject" xml:lang="en"/>
+<meta content="Sensibilité au pH" name="DC.subject" xml:lang="en"/>
+<meta content="pH-sensitivity" name="DC.subject" xml:lang="en"/>
+<meta content="Cristaux colloïdaux" name="DC.subject" xml:lang="en"/>
+<meta content="Crystalline colloidal arrays" name="DC.subject" xml:lang="en"/>
+<meta content="Biocapteurs de glucose" name="DC.subject" xml:lang="en"/>
+<meta content="Glucose biosensors" name="DC.subject" xml:lang="en"/>
+<meta content="Chemistry - Polymer / Chimie - Polymères (UMI : 0495)" name="DC.subject" xml:lang="en"/>
+<meta content="Formation et propriétés des cristaux colloïdaux issus de l’auto-assemblage de microsphères de polymère" name="DC.title" xml:lang="en"/>
+<meta content="Thèse ou mémoire / Thesis or Dissertation" name="DC.type"/>
+<meta content="Le besoin pour des biocapteurs à haute sensibilité mais simples à préparer et à utiliser est en constante augmentation, notamment dans le domaine biomédical. Les cristaux colloïdaux formés par des microsphères de polymère ont déjà prouvé leur fort potentiel en tant que biocapteurs grâce à l’association des propriétés des polymères et à la diffraction de la lumière visible de la structure périodique. Toutefois, une meilleure compréhension du comportement de ces structures est primordiale avant de pouvoir développer des capteurs efficaces et polyvalents. Ce travail propose d’étudier la formation et les propriétés des cristaux colloïdaux résultant de l’auto-assemblage de microsphères de polymère en milieu aqueux. Dans ce but, des particules avec différentes caractéristiques ont été synthétisées et caractérisées afin de corréler les propriétés des particules et le comportement de la structure cristalline.
+Dans un premier temps, des microsphères réticulées de polystyrène anioniques et cationiques ont été préparées par polymérisation en émulsion sans tensioactif. En variant la quantité de comonomère chargé, le chlorure de vinylbenzyltriméthylammonium ou le sulfonate styrène de sodium, des particules de différentes tailles, formes, polydispersités et charges surfaciques ont été obtenues. En effet, une augmentation de la quantité du comonomère ionique permet de stabiliser de façon électrostatique une plus grande surface et de diminuer ainsi la taille des particules. Cependant, au-dessus d’une certaine concentration, la polymérisation du comonomère en solution devient non négligeable, provoquant un élargissement de la distribution de taille. Quand la polydispersité est faible, ces microsphères chargées, même celles non parfaitement sphériques, peuvent s’auto-assembler et former des cristaux colloïdaux diffractant la lumière visible. Il semble que les répulsions électrostatiques créées par les charges surfaciques favorisent la formation de la structure périodique sur un grand domaine de concentrations et améliorent leur stabilité en présence de sel.
+Dans un deuxième temps, le besoin d’un constituant stimulable nous a orientés vers les structures cœur-écorce. Ces microsphères, synthétisées en deux étapes par polymérisation en émulsion sans tensioactif, sont formées d’un cœur de polystyrène et d’une écorce d’hydrogel. Différents hydrogels ont été utilisés afin d’obtenir des propriétés différentes : le poly(acide acrylique) pour sa sensibilité au pH, le poly(N-isopropylacrylamide) pour sa thermosensibilité, et, enfin, le copolymère poly(N-isopropylacrylamide-co-acide acrylique) donnant une double sensibilité. Ces microsphères forment des cristaux colloïdaux diffractant la lumière visible à partir d’une certaine concentration critique et pour un large domaine de concentrations. D’après les changements observés dans les spectres de diffraction, les stimuli ont un impact sur la structure cristalline mais l’amplitude de cet effet varie avec la concentration. Ce comportement semble être le résultat des changements induits par la transition de phase volumique sur les interactions entre particules plutôt qu’une conséquence du changement de taille. Les interactions attractives de van der Waals et les répulsions stériques sont clairement affectées par la transition de phase volumique de l’écorce de poly(N-isopropylacrylamide). Dans le cas des microsphères sensibles au pH, les interactions électrostatiques sont aussi à considérer. L’effet de la concentration peut alors être mis en relation avec la portée de ces interactions.
+Finalement, dans l’objectif futur de développer des biocapteurs de glucose, les microsphères cœur-écorce ont été fonctionnalisées avec l’acide 3-aminophénylboronique afin de les rendre sensibles au glucose. Les effets de la fonctionnalisation et de la complexation avec le glucose sur les particules et leur empilement périodique ont été examinés. La structure cristalline est visiblement affectée par la présence de glucose, même si le mécanisme impliqué reste à élucider." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="The need for biosensors with high sensibility but simple preparation and use has been increasing, especially in the biomedical field. Crystalline colloidal arrays (CCAs) formed by polymer microspheres have already demonstrated great potential for biosensing applications, combining the polymer properties to the visible light diffraction caused by their periodic structure. However, a better understanding of the behavior of such structures is essential in the objective to develop efficient and versatile biosensors. This work proposes to investigate the formation and properties of CCAs created by the self-assembly of polymer microspheres in aqueous medium. For that purpose, particles with different features have been synthesized and studied to highlight the correlation between the properties of the particles and the behavior of the CCAs.
+First, anionic and cationic cross-linked polystyrene microspheres have been prepared by surfactant-free emulsion polymerization. Different sizes, shapes, polydispersities and surface charge densities have been obtained by the use of various amounts of charged comonomers, either vinylbenzyltrimethylammonium chloride or sodium styrenesulfonate. Indeed, an increasing amount of the ionic comonomer leads to a decreasing particle size because of the ability to electrostatically stabilize more surfaces. However, above a certain concentration, the polymerization of the comonomer in solution increases the polydispersity of the particle size. When allowed by a low polydispersity, the charged microspheres can self-assemble into CCAs with intense visible light diffraction, even for particles not quite spherical. It appears that the electrostatic repulsions created by the charges help in the formation of the periodic structure over a wide range of particle concentrations and improve their stability towards ionic strength.
+Secondly, the need for a sensitive component brought us to investigate core-shell structures. These microspheres, synthesized by a two-step surfactant-free emulsion polymerization, are made of a polystyrene core and a hydrogel shell. Different hydrogels have been used to achieve different properties: poly(acrylic acid) for pH-sensitivity, poly(N-isopropylacrylamide) for thermosensitivity and poly(N-isopropylacrylamide-co-acrylic acid) for double sensitivity to both stimuli. Above a certain critical concentration, and over a wide range of concentrations, these microspheres also form CCAs with visible light diffraction. The resulting crystalline structures also display a response to the stimuli, visible through changes in the diffraction spectra, but the response appears to be dependent on the microsphere concentration. This behavior seems to be the result of a change in the interactions between particles rather than the outcome of the volume change of the particles. Attractive van der Waals and repulsive steric interactions are clearly affected by the temperature-induced volume phase transition of poly(N-isopropylacrylamide) microspheres. In the case of pH-sensitive, electrostatic interactions are also to be considered. The effect of concentration can then related to the range of the interactions.
+Finally, in the objective to develop glucose sensors, the previous microspheres have been functionalized with 3-aminophenylboronic acid to make them responsive to glucose. The effects of the functionalization and complexation with glucose on the particles and their CCAs have been investigated. The crystalline structure is clearly affected by the presence of glucose, even though the mechanism involved remains to be clarified." name="DCTERMS.abstract" xml:lang="en"/>
+<meta content="fra" name="DCTERMS.language" xml:lang="en"/>
+<meta content="Polymérisation en émulsion sans tensioactif; Surfactant-free emulsion polymerization; Microsphères de polymère; Polymer microspheres; Particules coeur-écorce; Core-shell particles; Thermosensibilité; Thermosensitivity; Sensibilité au pH; pH-sensitivity; Cristaux colloïdaux; Crystalline colloidal arrays; Biocapteurs de glucose; Glucose biosensors; Chemistry - Polymer / Chimie - Polymères (UMI : 0495); Thèse ou mémoire / Thesis or Dissertation; Chimie" name="citation_keywords"/>
+<meta content="Formation et propriétés des cristaux colloïdaux issus de l’auto-assemblage de microsphères de polymère" name="citation_title"/>
+<meta content="fra" name="citation_language"/>
+<meta content="Bazin, Gwénaëlle" name="citation_author"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/bitstream/1866/8675/4/Bazin_Gwenaelle_2012_these.pdf" name="citation_pdf_url"/>
+<meta content="2012-10-11" name="citation_date"/>
+<meta content="https://papyrus.bib.umontreal.ca/xmlui/handle/1866/8675" name="citation_abstract_html_url"/>
+<script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({
+                      tex2jax: {
+                        inlineMath: [['\\(','\\)']],
+                        ignoreClass: "detail-field-data|detailtable|exception"
+                      },
+                      TeX: {
+                        Macros: {
+                          AA: '{\\mathring A}'
+                        }
+                      }
+                    });
+                </script><script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"> </script>
+</meta></meta></meta></meta></meta></meta></link></link></head><body>
+<header>
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+<div class="container">
+<div class="hidden-xs hidden-sm hidden-md" id="um-bandeau" role="banner">
+<nav class="um-nav um-nav-hidden" role="navigation">
+<span class="hidden">Liens externes</span>
+<ul>
+<li>
+<a href="https://www.umontreal.ca/#udemwww-search-personne">Directories</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/repertoires/facultes.html">Faculties</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/">Libraries</a>
+</li>
+<li>
+<a href="http://plancampus.umontreal.ca/">Campus maps</a>
+</li>
+<li>
+<a href="http://www.umontreal.ca/index/az.html">Sites A to Z</a>
+</li>
+<li>
+<a>My UdeM</a>
+<ul>
+<li>
+<a href="https://monudem.umontreal.ca/">My UdeM Portal</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<form action="https://google.com/cse" class="um-recherche" id="um-recherche" role="search">
+<input name="cx" type="hidden" value="011926736769028447783:qlpu3so2kqq"/><input name="ie" type="hidden" value="ISO-8859-1"/><label class="hidden" for="um-boite-recherche">Search in : </label><span class="um-boite-bouton"><input class="um-boite" id="um-boite-recherche" maxlength="255" name="q" placeholder="UdeM" title="Type your search text" type="text" value=""/><input alt="Search in : " class="um-bouton" src="/xmlui/themes/Mirage2/images/bib-umontreal/loupe.gif" type="image"/></span>
+</form>
+</div>
+<div class="hidden-xs hidden-sm visible-md visible-lg" id="papyrus-deco">
+<img alt="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" border="0" height="89px" src="/xmlui/themes/Mirage2/images/UdeM.gif" title="Dessin du pavillon Roger Gaudry/Sketch of Roger Gaudry Building" width="193px"/></div>
+<div class="navbar-header">
+<button class="navbar-toggle" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand hidden-xs hidden-sm visible-md visible-lg um-logo-md-lg" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-logo-sm" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a><a class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-logo-xs" href="http://www.umontreal.ca/english/index.html"><img alt="University Home page" src="/xmlui/themes/Mirage2/images/logo-UdeM.svg" title="Back to University Home page"/></a>
+<div class="navbar-brand separateur visible-xs hidden-sm hidden-md hidden-lg um-sep-site-xs"></div>
+<div class="navbar-brand separateur hidden-xs visible-sm hidden-md hidden-lg um-sep-site-sm"></div>
+<div class="navbar-brand separateur visible-md visible-lg hidden-xs hidden-sm um-sep-site-md-lg"></div>
+<div class="navbar-brand visible-md visible-lg hidden-xs hidden-sm um-titre-site-md-lg">
+<span class="papyrus-signature">Papyrus</span> :
+                                Institutional Repository</div>
+<div class="navbar-brand hidden-xs visible-sm hidden-md hidden-lg um-titre-site-sm">
+<span class="papyrus-signature">Papyrus</span>
+<br/>Institutional Repository</div>
+<div class="navbar-brand visible-xs hidden-sm hidden-md hidden-lg um-titre-site-xs">
+<span class="papyrus-signature">Papyrus</span>
+</div>
+<div class="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
+<ul class="nav nav-pills pull-left">
+<li class="dropdown" id="ds-language-selection-xs">
+<button class="dropdown-toggle navbar-toggle navbar-link" data-toggle="dropdown" href="#" id="language-dropdown-toggle-xs" role="button"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-globe"></b></button>
+<ul aria-labelledby="language-dropdown-toggle-xs" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8675?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8675?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+<li>
+<form action="/xmlui/login" method="get" style="display: inline">
+<button class="navbar-toggle navbar-link"><b aria-hidden="true" class="visible-xs glyphicon glyphicon-user"></b></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+<div class="navbar-header pull-right hidden-xs">
+<div class="nav-language-and-login-lg hidden-xs hidden-sm hidden-md">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8675?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8675?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<div class="hidden-lg">
+<ul class="nav navbar-nav pull-right">
+<li class="dropdown" id="ds-language-selection">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="language-dropdown-toggle" role="button"><span class="hidden-xs">English <b class="caret"></b></span></a>
+<ul aria-labelledby="language-dropdown-toggle" class="dropdown-menu pull-right" data-no-collapse="true" role="menu">
+<li role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8675?locale-attribute=fr&amp;show=full">français</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="https://papyrus.bib.umontreal.ca:443/xmlui/handle/1866/8675?locale-attribute=en&amp;show=full">English</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul class="nav navbar-nav pull-right">
+<li>
+<a href="/xmlui/login"><span class="hidden-xs">Login</span></a>
+</li>
+</ul>
+</div>
+<button class="navbar-toggle visible-sm" data-toggle="offcanvas" type="button"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+</div>
+</div>
+</div>
+</header>
+<div class="trail-wrapper hidden-print">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="breadcrumb dropdown visible-xs">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="trail-dropdown-toggle" role="button">View Item <b class="caret"></b></a>
+<ul aria-labelledby="trail-dropdown-toggle" class="dropdown-menu" role="menu">
+<li role="presentation">
+<a href="/xmlui/" role="menuitem"><i aria-hidden="true" class="glyphicon glyphicon-home"></i>  Home</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/3010" role="menuitem">Faculté des arts et des sciences</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2942" role="menuitem">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li role="presentation">
+<a href="/xmlui/handle/1866/2977" role="menuitem">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="disabled" role="presentation">
+<a href="#" role="menuitem">View Item</a>
+</li>
+</ul>
+</div>
+<ul class="breadcrumb hidden-xs">
+<li>
+<i aria-hidden="true" class="glyphicon glyphicon-home"></i>  <a href="/xmlui/">Home</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/3010">Faculté des arts et des sciences</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2942">Faculté des arts et des sciences – Département de chimie</a>
+</li>
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a>
+</li>
+<li class="active">View Item</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div class="container" id="main-container">
+<div class="row row-offcanvas row-offcanvas-left">
+<div class="horizontal-slider clearfix">
+<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="word-break hidden-print" id="ds-options">
+<div class="ds-option-set" id="ds-search-option">
+<form action="/xmlui/discover" class="" id="ds-search-form" method="post">
+<fieldset>
+<div class="input-group">
+<input class="ds-text-field form-control" name="query" placeholder="Search" type="text"/><span class="input-group-btn"><button class="ds-button-field btn" title="Go"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button></span>
+</div>
+<div class="radio">
+<label><input checked="" id="ds-search-form-scope-all" name="scope" type="radio" value=""/>Search Papyrus</label>
+</div>
+<div class="radio">
+<label><input id="ds-search-form-scope-container" name="scope" type="radio" value="1866/2977"/>Search this Collection</label>
+</div>
+</fieldset>
+</form>
+</div>
+<h2 class="ds-option-set-head h6">My Account</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_account">
+<div class="list-group-item ds-option details_Papyrus" id="aspect_eperson_Navigation_item_details_Papyrus">To submit an item or subscribe to email alerts.</div>
+<div class="list-group-item ds-option">
+<span class="bold"><a href="/xmlui/login">Login</a></span>
+</div>
+<a class="list-group-item ds-option" href="/xmlui/register">New user?</a>
+</div>
+<h2 class="ds-option-set-head h6">Browse</h2>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_browse">
+<a class="list-group-item active"><span class="h5 list-group-item-heading h5">All of Papyrus</span></a><a class="list-group-item ds-option" href="/xmlui/community-list">Communities and Collections</a><a class="list-group-item ds-option" href="/xmlui/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/browse?type=titleindex">Titles index</a><a class="list-group-item active"><span class="h5 list-group-item-heading h5">This Collection</span></a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=title">Titles</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=dateissued">Issue Dates</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=author">Authors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=advisor">Advisors</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=subject">Subjects</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=discipline">Disciplines</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=affiliation">Affiliation</a><a class="list-group-item ds-option" href="/xmlui/handle/1866/2977/browse?type=titleindex">Titles index</a>
+</div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_context"></div>
+<div class="list-group" id="aspect_viewArtifacts_Navigation_list_administrative"></div>
+<div class="list-group" id="aspect_discovery_Navigation_list_discovery"></div>
+<h2 class="ds-option-set-head h6">Statistics</h2>
+<div class="list-group" id="aspect_statistics_Navigation_list_statistics">
+<a class="list-group-item ds-option" href="/xmlui/handle/1866/8675/statistics">View Usage Statistics</a>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-9 main-content">
+<div>
+<div class="ds-static-div primary" id="aspect_artifactbrowser_ItemViewer_div_item-view">
+<p class="ds-paragraph item-view-toggle item-view-toggle-top">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/8675">Show item record</a></span>
+</p>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/8675/mets.xml-->
+<h2 class="page-header first-page-header">Formation et propriétés des cristaux colloïdaux issus de l’auto-assemblage de microsphères de polymère</h2>
+<div class="ds-table-responsive">
+<table class="ds-includeSet-table detailtable table table-striped table-hover">
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.contributor.advisor</td><td class="word-break">Zhu, Xiaoxia</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.contributor.author</td><td class="word-break">Bazin, Gwénaëlle</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.accessioned</td><td class="word-break">2012-10-31T14:03:18Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.available</td><td class="word-break">MONTHS_WITHHELD:12</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.available</td><td class="word-break">2012-10-31T14:03:18Z</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.date.issued</td><td class="word-break">2012-10-11</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.date.submitted</td><td class="word-break">2012-04</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.identifier.uri</td><td class="word-break">http://hdl.handle.net/1866/8675</td><td></td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Polymérisation en émulsion sans tensioactif</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Surfactant-free emulsion polymerization</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Microsphères de polymère</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Polymer microspheres</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Particules coeur-écorce</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Core-shell particles</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Thermosensibilité</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Thermosensitivity</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Sensibilité au pH</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">pH-sensitivity</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Cristaux colloïdaux</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Crystalline colloidal arrays</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject</td><td class="word-break">Biocapteurs de glucose</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.subject</td><td class="word-break">Glucose biosensors</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.subject.other</td><td class="word-break">Chemistry - Polymer / Chimie - Polymères (UMI : 0495)</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dc.title</td><td class="word-break">Formation et propriétés des cristaux colloïdaux issus de l’auto-assemblage de microsphères de polymère</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dc.type</td><td class="word-break">Thèse ou mémoire / Thesis or Dissertation</td><td></td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.discipline</td><td class="word-break">Chimie</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.grantor</td><td class="word-break">Université de Montréal</td><td>fr</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">etd.degree.level</td><td class="word-break">Doctorat / Doctoral</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">etd.degree.name</td><td class="word-break">Ph. D.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">Le besoin pour des biocapteurs à haute sensibilité mais simples à préparer et à utiliser est en constante augmentation, notamment dans le domaine biomédical. Les cristaux colloïdaux formés par des microsphères de polymère ont déjà prouvé leur fort potentiel en tant que biocapteurs grâce à l’association des propriétés des polymères et à la diffraction de la lumière visible de la structure périodique. Toutefois, une meilleure compréhension du comportement de ces structures est primordiale avant de pouvoir développer des capteurs efficaces et polyvalents. Ce travail propose d’étudier la formation et les propriétés des cristaux colloïdaux résultant de l’auto-assemblage de microsphères de polymère en milieu aqueux. Dans ce but, des particules avec différentes caractéristiques ont été synthétisées et caractérisées afin de corréler les propriétés des particules et le comportement de la structure cristalline.
+Dans un premier temps, des microsphères réticulées de polystyrène anioniques et cationiques ont été préparées par polymérisation en émulsion sans tensioactif. En variant la quantité de comonomère chargé, le chlorure de vinylbenzyltriméthylammonium ou le sulfonate styrène de sodium, des particules de différentes tailles, formes, polydispersités et charges surfaciques ont été obtenues. En effet, une augmentation de la quantité du comonomère ionique permet de stabiliser de façon électrostatique une plus grande surface et de diminuer ainsi la taille des particules. Cependant, au-dessus d’une certaine concentration, la polymérisation du comonomère en solution devient non négligeable, provoquant un élargissement de la distribution de taille. Quand la polydispersité est faible, ces microsphères chargées, même celles non parfaitement sphériques, peuvent s’auto-assembler et former des cristaux colloïdaux diffractant la lumière visible. Il semble que les répulsions électrostatiques créées par les charges surfaciques favorisent la formation de la structure périodique sur un grand domaine de concentrations et améliorent leur stabilité en présence de sel.
+Dans un deuxième temps, le besoin d’un constituant stimulable nous a orientés vers les structures cœur-écorce. Ces microsphères, synthétisées en deux étapes par polymérisation en émulsion sans tensioactif, sont formées d’un cœur de polystyrène et d’une écorce d’hydrogel. Différents hydrogels ont été utilisés afin d’obtenir des propriétés différentes : le poly(acide acrylique) pour sa sensibilité au pH, le poly(N-isopropylacrylamide) pour sa thermosensibilité, et, enfin, le copolymère poly(N-isopropylacrylamide-co-acide acrylique) donnant une double sensibilité. Ces microsphères forment des cristaux colloïdaux diffractant la lumière visible à partir d’une certaine concentration critique et pour un large domaine de concentrations. D’après les changements observés dans les spectres de diffraction, les stimuli ont un impact sur la structure cristalline mais l’amplitude de cet effet varie avec la concentration. Ce comportement semble être le résultat des changements induits par la transition de phase volumique sur les interactions entre particules plutôt qu’une conséquence du changement de taille. Les interactions attractives de van der Waals et les répulsions stériques sont clairement affectées par la transition de phase volumique de l’écorce de poly(N-isopropylacrylamide). Dans le cas des microsphères sensibles au pH, les interactions électrostatiques sont aussi à considérer. L’effet de la concentration peut alors être mis en relation avec la portée de ces interactions.
+Finalement, dans l’objectif futur de développer des biocapteurs de glucose, les microsphères cœur-écorce ont été fonctionnalisées avec l’acide 3-aminophénylboronique afin de les rendre sensibles au glucose. Les effets de la fonctionnalisation et de la complexation avec le glucose sur les particules et leur empilement périodique ont été examinés. La structure cristalline est visiblement affectée par la présence de glucose, même si le mécanisme impliqué reste à élucider.</td><td>en</td>
+</tr>
+<tr class="ds-table-row odd">
+<td class="label-cell">dcterms.abstract</td><td class="word-break">The need for biosensors with high sensibility but simple preparation and use has been increasing, especially in the biomedical field. Crystalline colloidal arrays (CCAs) formed by polymer microspheres have already demonstrated great potential for biosensing applications, combining the polymer properties to the visible light diffraction caused by their periodic structure. However, a better understanding of the behavior of such structures is essential in the objective to develop efficient and versatile biosensors. This work proposes to investigate the formation and properties of CCAs created by the self-assembly of polymer microspheres in aqueous medium. For that purpose, particles with different features have been synthesized and studied to highlight the correlation between the properties of the particles and the behavior of the CCAs.
+First, anionic and cationic cross-linked polystyrene microspheres have been prepared by surfactant-free emulsion polymerization. Different sizes, shapes, polydispersities and surface charge densities have been obtained by the use of various amounts of charged comonomers, either vinylbenzyltrimethylammonium chloride or sodium styrenesulfonate. Indeed, an increasing amount of the ionic comonomer leads to a decreasing particle size because of the ability to electrostatically stabilize more surfaces. However, above a certain concentration, the polymerization of the comonomer in solution increases the polydispersity of the particle size. When allowed by a low polydispersity, the charged microspheres can self-assemble into CCAs with intense visible light diffraction, even for particles not quite spherical. It appears that the electrostatic repulsions created by the charges help in the formation of the periodic structure over a wide range of particle concentrations and improve their stability towards ionic strength.
+Secondly, the need for a sensitive component brought us to investigate core-shell structures. These microspheres, synthesized by a two-step surfactant-free emulsion polymerization, are made of a polystyrene core and a hydrogel shell. Different hydrogels have been used to achieve different properties: poly(acrylic acid) for pH-sensitivity, poly(N-isopropylacrylamide) for thermosensitivity and poly(N-isopropylacrylamide-co-acrylic acid) for double sensitivity to both stimuli. Above a certain critical concentration, and over a wide range of concentrations, these microspheres also form CCAs with visible light diffraction. The resulting crystalline structures also display a response to the stimuli, visible through changes in the diffraction spectra, but the response appears to be dependent on the microsphere concentration. This behavior seems to be the result of a change in the interactions between particles rather than the outcome of the volume change of the particles. Attractive van der Waals and repulsive steric interactions are clearly affected by the temperature-induced volume phase transition of poly(N-isopropylacrylamide) microspheres. In the case of pH-sensitive, electrostatic interactions are also to be considered. The effect of concentration can then related to the range of the interactions.
+Finally, in the objective to develop glucose sensors, the previous microspheres have been functionalized with 3-aminophenylboronic acid to make them responsive to glucose. The effects of the functionalization and complexation with glucose on the particles and their CCAs have been investigated. The crystalline structure is clearly affected by the presence of glucose, even though the mechanism involved remains to be clarified.</td><td>en</td>
+</tr>
+<tr class="ds-table-row even">
+<td class="label-cell">dcterms.language</td><td class="word-break">fra</td><td>en</td>
+</tr>
+</table>
+</div>
+<span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Fhdl.handle.net%2F1866%2F8675&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;rft.degree=Chimie&amp;rft.degree=Universit%C3%A9+de+Montr%C3%A9al&amp;rft.degree=Doctorat+%2F+Doctoral&amp;rft.degree=Ph.+D."> ﻿ 
+        </span>
+<h3>Files in this item</h3>
+<div class="file-list">
+<div class="file-wrapper row">
+<div class="col-xs-6 col-sm-3">
+<div class="thumbnail-wrapper">
+<a class="image-link" href="/xmlui/bitstream/handle/1866/8675/Bazin_Gwenaelle_2012_these.pdf?sequence=4&amp;isAllowed=y"><img alt="Thumbnail" class="thumbnail-papyrus" src="/xmlui/bitstream/handle/1866/8675/Bazin_Gwenaelle_2012_these.pdf.jpg?sequence=6&amp;isAllowed=y"/></a>
+<div class="imageoverlay">
+<img height="49" src="/xmlui/themes/Mirage2/images/mimes/mime_icone_pdf.png" style="height: 49px;" width="44"/></div>
+</div>
+</div>
+<div class="col-xs-6 col-sm-7">
+<dl class="file-metadata dl-horizontal">
+<dt>Name:</dt>
+<dd class="word-break" title="Bazin_Gwenaelle_2012_these.pdf">
+<a href="/xmlui/bitstream/handle/1866/8675/Bazin_Gwenaelle_2012_these.pdf?sequence=4&amp;isAllowed=y">Bazin_Gwenaelle_2012_these.pdf</a>
+</dd>
+<dt>Size:</dt>
+<dd class="word-break">3.897Mb</dd>
+<dt>Format:</dt>
+<dd class="word-break">PDF</dd>
+<dt>Description:</dt>
+<dd class="word-break" title="Thèse">Thèse</dd>
+</dl>
+</div>
+</div>
+</div>
+<h3 class="ds-list-head">This item appears in the following Collection(s)</h3>
+<ul class="ds-referenceSet-list">
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2621/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2621">Thèses et mémoires électroniques de l’Université de Montréal</a> [18270]<br/>
+</li>
+<!-- External Metadata URL: cocoon://metadata/handle/1866/2977/mets.xml-->
+<li>
+<a href="/xmlui/handle/1866/2977">Faculté des arts et des sciences – Département de chimie – Thèses et mémoires</a> [594]<br/>
+</li>
+</ul>
+<p class="ds-paragraph item-view-toggle item-view-toggle-bottom">
+<span class="item-view-toggle"><a href="/xmlui/handle/1866/8675">Show item record</a></span>
+</p>
+</div>
+</div>
+<div class="visible-xs visible-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-xs hidden-sm">
+<footer>
+<div class="row">
+<hr/>
+<div class="col-xs-7 col-sm-8">
+<div>
+<a href="http://www.dspace.org/" target="_blank">DSpace software</a>
+                        [version 5.8 XMLUI],
+                        copyright © 2002-2015  <a href="http://www.duraspace.org/" target="_blank">DuraSpace</a>
+</div>
+<div class="hidden-print">
+<a href="/xmlui/contact">Contact Us</a> | <a href="/xmlui/feedback">Send Feedback</a>
+</div>
+</div>
+<div class="col-xs-5 col-sm-4 hidden-print">
+<div class="pull-right">
+<script type="text/javascript"> 
+										      (function(d, t) { 
+										        var s = d.createElement(t), options = {'domain':'papyrus.bib.umontreal.ca','style': '16','container':'entrust-net-seal'}; 
+										        s.src = 'https://seal.entrust.net/sealv2.js'; 
+										        s.async = true; 
+										        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); 
+										        s.onload = s.onreadystatechange = function() { 
+										        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; 
+										        try{goEntrust(options)} catch (e) {} }; 
+										        })(document, 'script'); 
+										</script>
+<div id="entrust-net-seal">
+<a href="https://www.entrust.com/ssl-certificates/">Certificat SSL / SSL Certificate</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row bib-footer hidden-print">
+<div class="col-xs-12 col-sm-12 col-md-4">
+<a class="footerEXLlink" href="http://www.bib.umontreal.ca"><img alt="les bibliothèques/UdeM" src="/xmlui/themes/Mirage2/images/propulse-par.png"/></a>
+</div>
+<div class="hidden-xs col-sm-12 col-md-8">
+<nav>
+<ul>
+<li>
+<a href="https://www.urgence.umontreal.ca/">Emergency</a>
+</li>
+<li>
+<a href="http://www.carrieres.umontreal.ca/">Careers</a>
+</li>
+<li>
+<a href="https://outlook.umontreal.ca/">My email</a>
+</li>
+<li>
+<a href="https://studium.umontreal.ca/">StudiUM</a>
+</li>
+<li>
+<a href="http://itunesu.umontreal.ca/">iTunes U</a>
+</li>
+<li>
+<a href="http://www.bib.umontreal.ca/a-propos/nous-ecrire.htm">Contact us</a>
+</li>
+<li>
+<a href="https://www.facebook.com/bibUdeM"><img alt="Facebook" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Facebook.png"/></a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/BibliothequesUdeM"><img alt="YouTube" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-YouTube.png"/></a>
+</li>
+<li>
+<a href="https://twitter.com/bibUdeM"><img alt="Twitter" src="/xmlui/themes/Mirage2/images/bib-umontreal/logo-Twitter.png"/></a>
+</li>
+<li>
+<a href="https://www.nouvelles.umontreal.ca/frontpage/rss.html"><img alt="University RSS" src="/xmlui/themes/Mirage2/images/bib-umontreal/icone-syndication-14x14.png"/></a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<a class="hidden" href="/xmlui/htmlmap"> </a>
+<p> </p>
+</footer>
+</div>
+</div>
+<script src="https://www.google.com/jsapi"> </script><script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage2/';</script><script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script><script>
+                  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+                  ga('create', 'UA-305727-1', 'papyrus.bib.umontreal.ca');
+                  ga('send', 'pageview');
+           </script><script>         
+             var details_Papyrus =  $("#aspect_viewArtifacts_Navigation_list_account .details_Papyrus").text();
+             $("#aspect_viewArtifacts_Navigation_list_account a[href='/xmlui/login']").attr("title",details_Papyrus);
+        </script>
+</body></html>

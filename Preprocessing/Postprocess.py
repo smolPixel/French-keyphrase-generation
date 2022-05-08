@@ -4,10 +4,14 @@ datasets=['papyrus_f', 'papyrus_m', 'papyrus_e', 'papyrus']
 
 
 for dataset in datasets:
-	dfTrain=pd.read_csv(f'../data/{dataset}/train.tsv', sep='\t', index_col=0)
-	dfDev=pd.read_csv(f'../data/{dataset}/dev.tsv', sep='\t', index_col=0)
-	dfTest=pd.read_csv(f'../data/{dataset}/test.tsv', sep='\t', index_col=0)
+	dfTrain=pd.read_csv(f'../data/{dataset}/train.tsv', sep='\t', index_col=0).dropna()
+	dfDev=pd.read_csv(f'../data/{dataset}/dev.tsv', sep='\t', index_col=0).dropna()
+	dfTest=pd.read_csv(f'../data/{dataset}/test.tsv', sep='\t', index_col=0).dropna()
 
-	print(len(dfTrain))
 	dfTrain=dfTrain[~dfTrain['sentences'].isin(dfTest['sentences'])]
-	print(len(dfTrain))
+	dfTrain=dfTrain[~dfTrain['sentences'].isin(dfDev['sentences'])]
+	dfDev=dfTrain[~dfTrain['sentences'].isin(dfTest['sentences'])]
+
+	dfTrain.to_csv(f'../data/{dataset}/train.tsv', sep='\t')
+	dfDev.to_csv(f'../data/{dataset}/dev.tsv', sep='\t')
+	dfTest.to_csv(f'../data/{dataset}/test.tsv', sep='\t')

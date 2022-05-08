@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 import fasttext
 from langdetect import detect, detect_langs
 
-nb_ex=16250
+nb_ex=26508
 random.seed(47)
 np.random.seed(47)
 indexes=np.arange(nb_ex)

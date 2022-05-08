@@ -8,3 +8,4 @@ python3 Scrape_Documents.py
 python3 Parse_All.py
 python3 Process.py
 python3 Create_Papyrusfmn.py
+python3 Postprocess.py

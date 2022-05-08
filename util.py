@@ -80,15 +80,15 @@ def initialize_datasets(argdict):
 	test_pak2018=NoteMarg(test_pak2018, argdict, dev=True, no_index=True)
 	test_wicc78=NoteMarg(test_wicc78, argdict, dev=True, no_index=True)
 	return train, dev, {
-						"test_wicc78":test_wicc78,
-						"test_110ptbnkp":test_110ptbnkp,
+						# "test_wicc78":test_wicc78,
+						# "test_110ptbnkp":test_110ptbnkp,
 						# "test_wikinews":test_wikinews,
-						"test_cacic57":test_cacic57,
-						"test_pak2018":test_pak2018,
+						# "test_cacic57":test_cacic57,
+						# "test_pak2018":test_pak2018,
 						"test_papyruse":test_papyruse,
-						"test_papyrusf":test_papyrusf,
-						"test_papyrusm":test_papyrusm,
-						"test_papyrus":test_papyrus,
+						# "test_papyrusf":test_papyrusf,
+						# "test_papyrusm":test_papyrusm,
+						# "test_papyrus":test_papyrus,
 						#"test_kp20k": test_kp20k,
 						#"test_semeval":test_semeval,
 						#"test_krapivin":test_krapivin,
@@ -122,6 +122,14 @@ class NoteMarg(Dataset):
 
 		self.abstract_for_ex=[]
 		self.label_for_ex=[]
+
+		if not dev:
+			special_ex_df=pd.read_csv(f"data/papyrus_m/dev.tsv", sep='\t', index_col=0)
+			for i, row in data.iterrows():
+				# print(row)
+				if row['index'] == 24192:
+					self.abstract_for_ex.append(row['sentences'])
+					self.label_for_ex.append(row['label'])
 		for i, row in data.iterrows():
 			# Special example 26534
 			if argdict['dataset'] not in ['kp20k'] and not dev and row['index'] == 25397:

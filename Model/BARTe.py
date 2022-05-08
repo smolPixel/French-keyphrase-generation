@@ -288,6 +288,7 @@ class BARTeModel(pl.LightningModule):
 			self.trainer.fit(self, train_loader, dev_loader)
 			print("saving model")
 			torch.save(self.model.state_dict(), path_save)
+		self.generate_special_ex()
 		# for name, tt in self.test_set.items():
 		# 	if name in ['test_semeval', 'test_inspec', 'test_nus', 'test_kp20k', 'test_papyruse', 'test_krapivin',
 		# 				'test_wikinews']:
@@ -303,6 +304,7 @@ class BARTeModel(pl.LightningModule):
 		# 	)
 		# 	print(f"Running test for {name}")
 		# 	final=self.trainer.test(self, test_loader)
+
 			# self.generate_ex_from_given_dataset(test_loader)
 			# print(self.loggerg)
 			# print(final)

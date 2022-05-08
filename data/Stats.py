@@ -6,6 +6,18 @@ datasets=['papyrus_f', 'papyrus_e', 'papyrus_m', 'papyrus', 'WikiNews',
 		  'cacic57', 'wicc78', '110ptbnkp', 'pak2018', 'kp20k', 'Inspec',
 		  'NUS', 'SemEval', 'krapivin']
 
+
+for dataset in datasets:
+	train=pd.read_csv(f"{dataset}/train.tsv", sep='\t', index_col=0).dropna()
+	dev=pd.read_csv(f"{dataset}/dev.tsv", sep='\t', index_col=0).dropna()
+	test=pd.read_csv(f"{dataset}/test.tsv", sep='\t', index_col=0).dropna()
+
+	for df in train, dev, test:
+		for i, row in df.iterrows():
+			if row['index']==12533:
+				print(row)
+
+fds
 for dataset in datasets:
 	df=pd.read_csv(f"{dataset}/test.tsv", sep='\t', index_col=0).dropna()
 	try:

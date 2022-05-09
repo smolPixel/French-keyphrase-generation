@@ -285,9 +285,14 @@ class BARTeModel(pl.LightningModule):
 			self.model.load_state_dict(torch.load(path_save))
 			print("loaded model")
 		except:
+			tic = timeit.default_timer()
 			self.trainer.fit(self, train_loader, dev_loader)
 			print("saving model")
 			torch.save(self.model.state_dict(), path_save)
+			print(self.loggerg)
+			toc = timeit.default_timer()
+			print(f"Training processed took {toc-tic} seconds")
+			return 0
 		self.generate_special_ex()
 		# for name, tt in self.test_set.items():
 		# 	if name in ['test_semeval', 'test_inspec', 'test_nus', 'test_kp20k', 'test_papyruse', 'test_krapivin',

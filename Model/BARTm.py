@@ -341,7 +341,7 @@ class BARTMModel(pl.LightningModule):
 			print(self.loggerg)
 			toc = timeit.default_timer()
 			print(f"Training processed took {toc-tic} seconds")
-			fds
+			return 0
 		for name, tt in self.test_set.items():
 			if name not in 'test':
 				self.testing_standard_dataset=True

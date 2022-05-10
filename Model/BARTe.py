@@ -293,22 +293,22 @@ class BARTeModel(pl.LightningModule):
 			toc = timeit.default_timer()
 			print(f"Training processed took {toc-tic} seconds")
 			return 0
-		self.generate_special_ex()
-		# for name, tt in self.test_set.items():
-		# 	if name in ['test_semeval', 'test_inspec', 'test_nus', 'test_kp20k', 'test_papyruse', 'test_krapivin',
-		# 				'test_wikinews']:
-		# 		self.testing_standard_dataset=True
-		# 	else:
-		# 		self.testing_standard_dataset=False
-		# 	test_loader = DataLoader(
-		# 		dataset=tt,
-		# 		batch_size=self.argdict['batch_size'],
-		# 		shuffle=False,
-		# 		# num_workers=cpu_count(),
-		# 		pin_memory=torch.cuda.is_available()
-		# 	)
-		# 	print(f"Running test for {name}")
-		# 	final=self.trainer.test(self, test_loader)
+		# self.generate_special_ex()
+		for name, tt in self.test_set.items():
+			if name in ['test_semeval', 'test_inspec', 'test_nus', 'test_kp20k', 'test_papyruse', 'test_krapivin',
+						'test_wikinews']:
+				self.testing_standard_dataset=True
+			else:
+				self.testing_standard_dataset=False
+			test_loader = DataLoader(
+				dataset=tt,
+				batch_size=self.argdict['batch_size'],
+				shuffle=False,
+				# num_workers=cpu_count(),
+				pin_memory=torch.cuda.is_available()
+			)
+			print(f"Running test for {name}")
+			final=self.trainer.test(self, test_loader)
 
 			# self.generate_ex_from_given_dataset(test_loader)
 			# print(self.loggerg)

@@ -14,14 +14,14 @@ import math
 # from Model.OpenNMTkpgrelease.onmt.keyphrase.eval import compute_match_scores, run_classic_metrics, run_advanced_metrics
 # from Model.OpenNMTkpgrelease.onmt.keyphrase.utils import if_present_duplicate_phrases, validate_phrases, print_predeval_result, gather_scores
 # from Model.OpenNMTkpgrelease.onmt.utils.logging import init_logger
-# from nltk.stem.porter import *
-# stemmer = PorterStemmer()
+from nltk.stem.porter import *
+stemmer = PorterStemmer()
 
 # matplotlib.use('agg')
 # import matplotlib.pyplot as plt
 
-# def stem_word_list(word_list):
-#     return [stemmer.stem(w.strip()) for w in word_list]
+def stem_word_list(word_list):
+    return [stemmer.stem(w.strip()) for w in word_list]
 import spacy
 # spacy_nlp = spacy.load('en_core_web_sm')
 
@@ -74,20 +74,20 @@ def evaluate(src_list, tgt_list, pred_list,
 		# 1st filtering, ignore phrases having <unk> and puncs
 		valid_pred_flags = validate_phrases(pred_seqs, unk_token)
 		# 2nd filtering: filter out phrases that don't appear in text, and keep unique ones after stemming
-		present_pred_flags, _, duplicate_flags = if_present_duplicate_phrases(src_seq, pred_seqs, stemming=False, lowercase=True)
+		present_pred_flags, _, duplicate_flags = if_present_duplicate_phrases(src_seq, pred_seqs, stemming=True, lowercase=True)
 		# treat duplicates as invalid
 		valid_pred_flags = valid_pred_flags * ~duplicate_flags if len(valid_pred_flags) > 0 else []
 		valid_and_present_flags = valid_pred_flags * present_pred_flags if len(valid_pred_flags) > 0 else []
 		valid_and_absent_flags = valid_pred_flags * ~present_pred_flags if len(valid_pred_flags) > 0 else []
 
 		# compute match scores (exact, partial and mixed), for exact it's a list otherwise matrix
-		match_scores_exact = compute_match_scores(tgt_seqs=tgt_seqs, pred_seqs=pred_seqs, do_lower=True, do_stem=False, type='exact')
+		match_scores_exact = compute_match_scores(tgt_seqs=tgt_seqs, pred_seqs=pred_seqs, do_lower=True, do_stem=True, type='exact')
 		# match_scores_partial = compute_match_scores(tgt_seqs=tgt_seqs, pred_seqs=pred_seqs, do_lower=True, do_stem=False, type='ngram')
 		# simply add full-text to n-grams might not be good as its contribution is not clear
 		# match_scores_mixed = compute_match_scores(tgt_seqs=tgt_seqs, pred_seqs=pred_seqs, type='mixed')
 
 		# split tgts by present/absent
-		present_tgt_flags, _, _ = if_present_duplicate_phrases(src_seq, tgt_seqs, stemming=False, lowercase=True)
+		present_tgt_flags, _, _ = if_present_duplicate_phrases(src_seq, tgt_seqs, stemming=True, lowercase=True)
 		present_tgts = [tgt for tgt, present in zip(tgt_seqs, present_tgt_flags) if present]
 		absent_tgts = [tgt for tgt, present in zip(tgt_seqs, present_tgt_flags) if ~present]
 

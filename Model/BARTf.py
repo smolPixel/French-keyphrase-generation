@@ -328,6 +328,7 @@ class BARTfModel(pl.LightningModule):
 			# print(self.loggerg)
 			# print(final)
 			# fds
+		self.generate_special_ex()
 		# self.model.save_pretrained('Models/pretrained_bart')
 		# for ep in range(self.argdict['num_epochs']):
 		# 	loss, met10 = self.run_epoch('train')

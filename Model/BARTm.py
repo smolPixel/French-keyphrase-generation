@@ -425,6 +425,13 @@ class BARTMModel(pl.LightningModule):
 			for abstract in inputs:
 			# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
+				if len(batch['language'][0].split(',')) > 1:
+					# We are in the papyrus task
+					ll = 'en'
+				else:
+					ll = batch['language'][0]
+
+				tokenizer = self.tokenizers[ll]
 				input_ids = tokenizer.encode(abstract, return_tensors='pt', truncation=True,
 												  max_length=self.argdict['max_seq_length']).to(self.device)
 				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1)

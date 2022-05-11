@@ -94,7 +94,7 @@ def initialize_datasets(argdict):
 						# "test_krapivin":test_krapivin,
 						# "test_nus":test_nus,
 						# "test_inspec":test_inspec,
-						"test":test
+						# "test":test
 						}
 
 

@@ -129,6 +129,8 @@ class NoteMarg(Dataset):
 			for i, row in special_ex_df.iterrows():
 				# print(row)
 				if row['index'] == 24284:
+					print(row)
+					fds
 					self.abstract_for_ex.append(row['sentences'])
 					self.label_for_ex.append(row['label'])
 		for i, row in data.iterrows():

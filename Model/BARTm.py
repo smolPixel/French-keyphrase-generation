@@ -419,17 +419,18 @@ class BARTMModel(pl.LightningModule):
 			dataset = self.training_set
 			inputs = dataset.abstract_for_ex
 			refs = dataset.label_for_ex
+			languages=dataset.language_for_ex
 			print(refs)
 			hypos = []
 
-			for abstract in inputs:
+			for abstract, ll in zip(inputs, languages):
 			# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
-				if len(batch['language'][0].split(',')) > 1:
+				if len(ll.split(',')) > 1:
 					# We are in the papyrus task
 					ll = 'en'
 				else:
-					ll = batch['language'][0]
+					pass
 
 				tokenizer = self.tokenizers[ll]
 				input_ids = tokenizer.encode(abstract, return_tensors='pt', truncation=True,

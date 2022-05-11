@@ -122,6 +122,7 @@ class NoteMarg(Dataset):
 
 		self.abstract_for_ex=[]
 		self.label_for_ex=[]
+		self.language_for_ex=[]
 
 		if not dev:
 			special_ex_df=pd.read_csv(f"data/papyrus_m/dev.tsv", sep='\t', index_col=0)
@@ -139,6 +140,7 @@ class NoteMarg(Dataset):
 			if argdict['dataset'] not in ['kp20k'] and dev and not no_index and row['index'] == 24284:
 				self.abstract_for_ex.append(row['sentences'])
 				self.label_for_ex.append(row['label'])
+				self.language_for_ex.append(row['language'])
 			if dev and argdict['short_eval'] and index>10:
 				break
 			if row['sentences'] in ['.', '', ' '] or row['label'] in ['.', '', ' ']:

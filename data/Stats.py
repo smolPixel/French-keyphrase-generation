@@ -7,6 +7,11 @@ datasets=['papyrus_f', 'papyrus_e', 'papyrus_m', 'papyrus', 'WikiNews',
 		  'NUS', 'SemEval', 'krapivin']
 
 
+df=pd.read_csv(f"papyrus_f/train.tsv", sep='\t', index_col=0).dropna()
+for i, row in df.iterrows():
+	if row['index'] == 24192:
+		print(row)
+fds
 for dataset in datasets:
 	train=pd.read_csv(f"{dataset}/train.tsv", sep='\t', index_col=0).dropna()
 	dev=pd.read_csv(f"{dataset}/dev.tsv", sep='\t', index_col=0).dropna()

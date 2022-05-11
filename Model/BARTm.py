@@ -433,6 +433,7 @@ class BARTMModel(pl.LightningModule):
 					pass
 
 				tokenizer = self.tokenizers[ll]
+				print(tokenizer)
 				input_ids = tokenizer.encode(abstract, return_tensors='pt', truncation=True,
 												  max_length=self.argdict['max_seq_length']).to(self.device)
 				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1)

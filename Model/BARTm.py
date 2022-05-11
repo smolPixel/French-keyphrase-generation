@@ -459,7 +459,7 @@ class BARTMModel(pl.LightningModule):
 			languages = dataset.language_for_ex
 			hypos = []
 
-			for abstract in inputs:
+			for abstract, ll in zip(inputs, languages):
 				# src_text = src_text
 				if len(ll.split(',')) > 1:
 					# We are in the papyrus task

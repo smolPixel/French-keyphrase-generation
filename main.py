@@ -46,7 +46,6 @@ if __name__ == '__main__':
 	#General arguments on training
 	parser.add_argument('--dataset', type=str, default='Papyrus_f', help="dataset you want to run the process on. Includes Papyrus_f")
 	parser.add_argument('--algo', type=str, default='bart', help='which algo do you want to run')
-	parser.add_argument('--random_seed', type=int, default=7, help='Random seed ')
 	parser.add_argument('--num_epochs', type=int, default=3, help='Number of epochs')
 	parser.add_argument('--batch_size', type=int, default=2, help='Batch Size')
 	parser.add_argument('--accum_batch_size', type=int, default=64, help='Batch Size Accumulation')

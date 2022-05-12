@@ -309,7 +309,7 @@ class BARTeModel(pl.LightningModule):
 			)
 			print(f"Running test for {name}")
 			final=self.trainer.test(self, test_loader)
-			self.generate_special_ex()
+		self.generate_special_ex()
 			# self.generate_ex_from_given_dataset(test_loader)
 			# print(self.loggerg)
 			# print(final)

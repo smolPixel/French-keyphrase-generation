@@ -29,7 +29,7 @@ dicoAlgo= {'singlerank':SingleRankModel,
 		  'keybert':KeyBertModel}
 
 def run(argdict):
-	set_seed()
+	set_seed(argdict['random_seed'])
 	datasets = initialize_datasets(argdict)
 	model=dicoAlgo[argdict['algo']](argdict, datasets)
 	model.train_model()
@@ -51,7 +51,7 @@ if __name__ == '__main__':
 	parser.add_argument('--batch_size', type=int, default=2, help='Batch Size')
 	parser.add_argument('--accum_batch_size', type=int, default=64, help='Batch Size Accumulation')
 	parser.add_argument('--max_seq_length', type=int, default=1024, help='max length, 0 if no max length')
-
+	parser.add_argument('--random_seed', type=int, default=42)
 
 	parser.add_argument('--short_eval', action='store_true', help='Cut evaluation time for debugging purposes')
 

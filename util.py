@@ -144,8 +144,6 @@ class NoteMarg(Dataset):
 				self.abstract_for_ex.append(row['sentences'])
 				self.label_for_ex.append(row['label'])
 				self.language_for_ex.append(row['language'])
-			print(self.abstract_for_ex)
-			fds
 			if dev and argdict['short_eval'] and index>10:
 				break
 			if row['sentences'] in ['.', '', ' '] or row['label'] in ['.', '', ' ']:

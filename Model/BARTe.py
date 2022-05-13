@@ -149,11 +149,7 @@ class BARTeModel(pl.LightningModule):
 					else:
 						self.dico_perfo_per_language[lang].append(0)
 		# print("BIHTIOASJ")
-		print("bitch")
-		print(inputs)
-		print(hypos)
-		print(score)
-		fds
+
 		prec5_present = np.average(score['present_exact_precision@5'])
 		rec5_present = np.average(score['present_exact_recall@5'])
 		f15_present = np.average(score['present_exact_f_score@5'])
@@ -164,25 +160,32 @@ class BARTeModel(pl.LightningModule):
 		prec10_absent = np.average(score['absent_exact_precision@10'])
 		rec10_absent = np.average(score['absent_exact_recall@10'])
 		f110_absent = np.average(score['absent_exact_f_score@10'])
+		num_present= np.average(score['present_pred_num'])
+		num_absent= np.average(score['abset_pred_num'])
+		num_total=num_present+num_absent
 
 		self.log("Loss_val", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		self.log("F1_val_10", f110_present, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		self.log("F1_val_5", f15_present, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		self.log("r_val_10", rec10_absent, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
-		return loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent
+		return loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent, num_absent, num_total
 
 	def test_epoch_end(self, output_results):
 		# print(len(output_results))
 		print(output_results[0])
-		print(f"prec@5 present Test : {np.mean([prec5_present for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
-		print(f"rec@5 present Test : {np.mean([rec5_present for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
-		print(f"f1@5 present Test : {np.mean([f15_present for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
-		print(f"prec@10 present Test : {np.mean([prec10_present for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
-		print(f"rec@10 present Test : {np.mean([rec10_present for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
-		print(f"f1@10 present Test : {np.mean([f110_present for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
-		print(f"prec@10 absent Test : {np.mean([prec10_absent for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
-		print(f"rec@10 absent Test : {np.mean([rec10_absent for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
-		print(f"f1@10 absent Test : {np.mean([f110_absent for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent in output_results])}")
+		print(f"prec@5 present Test : {np.mean([prec5_present for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent, num_absent, num_total in output_results])}")
+		print(f"rec@5 present Test : {np.mean([rec5_present for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent, num_absent, num_total in output_results])}")
+		print(f"f1@5 present Test : {np.mean([f15_present for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent, num_absent, num_total in output_results])}")
+		print(f"prec@10 present Test : {np.mean([prec10_present for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent, num_absent, num_total in output_results])}")
+		print(f"rec@10 present Test : {np.mean([rec10_present for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent, num_absent, num_total in output_results])}")
+		print(f"f1@10 present Test : {np.mean([f110_present for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent, num_absent, num_total in output_results])}")
+		print(f"prec@10 absent Test : {np.mean([prec10_absent for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent, num_absent, num_total in output_results])}")
+		print(f"rec@10 absent Test : {np.mean([rec10_absent for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent, num_absent, num_total in output_results])}")
+		print(f"f1@10 absent Test : {np.mean([f110_absent for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent, num_absent, num_total in output_results])}")
+		tot_absent=np.sum([num_absent for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent, num_absent, num_total in output_results])
+		tot_gend=np.sum([num_total for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent, num_absent, num_total in output_results])
+		print(f"Percent of absent generated keyphrases : {float(tot_absent)*100/tot_gend}")
+
 
 		if self.argdict['dataset'].lower() in ['papyrus', 'papyrus_m'] and not self.testing_standard_dataset:
 			print("----Recal per language----")

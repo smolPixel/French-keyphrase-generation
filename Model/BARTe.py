@@ -150,6 +150,7 @@ class BARTeModel(pl.LightningModule):
 						self.dico_perfo_per_language[lang].append(0)
 		# print("BIHTIOASJ")
 		print("bitch")
+		print(refs)
 		print(hypos)
 		print(score)
 		fds

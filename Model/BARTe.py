@@ -161,7 +161,7 @@ class BARTeModel(pl.LightningModule):
 		rec10_absent = np.average(score['absent_exact_recall@10'])
 		f110_absent = np.average(score['absent_exact_f_score@10'])
 		num_present= np.average(score['present_pred_num'])
-		num_absent= np.average(score['abset_pred_num'])
+		num_absent= np.average(score['absent_pred_num'])
 		num_total=num_present+num_absent
 
 		self.log("Loss_val", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])

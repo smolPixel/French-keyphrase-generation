@@ -149,6 +149,7 @@ class BARTeModel(pl.LightningModule):
 					else:
 						self.dico_perfo_per_language[lang].append(0)
 		# print("BIHTIOASJ")
+		print(hypos)
 		print(score)
 		fds
 		prec5_present = np.average(score['present_exact_precision@5'])

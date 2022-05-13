@@ -291,7 +291,7 @@ class BARTfModel(pl.LightningModule):
 		# 	pin_memory=torch.cuda.is_available()
 		# )
 
-		path_save=f'/data/rali6/Tmp/piedboef/Models/FKPG/{self.argdict["dataset"]}_{self.argdict["num_epochs"]}Epochs.pt'
+		path_save=f'/data/rali6/Tmp/piedboef/Models/FKPG/{self.argdict["dataset"]}_bartf_{self.argdict["num_epochs"]}Epochs_random_seed_{self.argdict["random_seed"]}.pt'
 		# tic=timeit.default_timer()
 		# self.trainer.fit(self, train_loader, dev_loader)
 		# toc=timeit.default_timer()

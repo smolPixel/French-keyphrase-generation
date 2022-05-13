@@ -275,7 +275,8 @@ class BARTeModel(pl.LightningModule):
 		# 	pin_memory=torch.cuda.is_available()
 		# )
 
-		path_save=f'/data/rali6/Tmp/piedboef/Models/FKPG/{self.argdict["dataset"]}_BARTe_{self.argdict["num_epochs"]}Epochs_random_seed_{self.argdict["random_seed"]}.pt'
+		# path_save=f'/data/rali6/Tmp/piedboef/Models/FKPG/{self.argdict["dataset"]}_BARTe_{self.argdict["num_epochs"]}Epochs_random_seed_{self.argdict["random_seed"]}.pt'
+		path_save=f'/data/rali6/Tmp/piedboef/Models/FKPG/{self.argdict["dataset"]}_BARTe_{self.argdict["num_epochs"]}Epochs.pt'
 		# tic=timeit.default_timer()
 		# self.trainer.fit(self, train_loader, dev_loader)
 		# toc=timeit.default_timer()

@@ -110,10 +110,10 @@ class BARTeModel(pl.LightningModule):
 		# f15 = np.average(score5['present_exact_f_score@5'])
 
 		self.logger_per_batch.append((f15, f110, r10))
-		self.log("Loss_val", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
-		self.log("F1_val_10", f110, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
-		self.log("F1_val_5", f15, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
-		self.log("r_val_5", f15, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("Loss_val", loss, on_epoch=True, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("F1_val_10", f110, on_epoch=True, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("F1_val_5", f15, on_epoch=True, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("r_val_5", f15, on_epoch=True, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		return loss
 
 	def test_step(self, batch, batch_idx):
@@ -149,7 +149,8 @@ class BARTeModel(pl.LightningModule):
 					else:
 						self.dico_perfo_per_language[lang].append(0)
 		# print("BIHTIOASJ")
-		# print(score)
+		print(score)
+		fds
 		prec5_present = np.average(score['present_exact_precision@5'])
 		rec5_present = np.average(score['present_exact_recall@5'])
 		f15_present = np.average(score['present_exact_f_score@5'])

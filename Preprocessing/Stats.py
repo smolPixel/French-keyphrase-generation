@@ -16,6 +16,13 @@ for group in df_og.groupby(['index']):
 
 c=Counter(lengths)
 print(c)
+
+list_languages=list(df_og['language'])
+c=Counter(list_languages)
+print(c)
+
+
+
 for dataset in datasets:
 	for split in splits:
 		df=pd.read_csv(f"data/{dataset}/{split}.tsv", index_col=0, sep='\t')

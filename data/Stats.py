@@ -24,7 +24,7 @@ for dataset in datasets:
 	num_tot = 0
 	num_present = 0
 	num_absent = 0
-	num_absent_broken=0
+	num_present_broken=0
 	for i, row in df.iterrows():
 		abstract = row['sentences'].lower()
 		keyphrases = row['label'].split(' , ')
@@ -38,9 +38,13 @@ for dataset in datasets:
 		#Absent broken
 		for kp in keyphrases:
 			words_individual=kp.split(" ")
-			print(words_individual)
-			fds
+			split_found=True
+			for word in words_individual:
+				if word.lower().strip() not in abstract:
+					split_found=False
+			if split_found:
+				num_present_broken+=1
 	# print(
 	# 	f"Average length of sentence  for {dataset}: {np.mean(sents)}\n\t number of keyphrases {np.mean([len(kk) for kk in labels_split_by_keyphrase])} \n\t len of keyphrases {np.mean(labels_split_by_keyphrase_by_space)}")
 	print(f"Dataset {dataset}. Language {ll} Number of test exos: {len(df)} of average length {np.mean(sents)}\n\t"
-		  f"Number of keyphrases {np.mean([len(kk) for kk in labels_split_by_keyphrase])} len of keyphrases {np.mean(labels_split_by_keyphrase_by_space)} and {num_present / num_tot}% of present keyphrases")
+		  f"Number of keyphrases {np.mean([len(kk) for kk in labels_split_by_keyphrase])} len of keyphrases {np.mean(labels_split_by_keyphrase_by_space)} and {num_present / num_tot}% of present keyphrases, {num_present_broken/num_tot} present broken")

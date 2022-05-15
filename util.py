@@ -80,20 +80,20 @@ def initialize_datasets(argdict):
 	test_pak2018=NoteMarg(test_pak2018, argdict, dev=True, no_index=True)
 	test_wicc78=NoteMarg(test_wicc78, argdict, dev=True, no_index=True)
 	return train, dev, {
-						# "test_wicc78":test_wicc78,
-						# "test_110ptbnkp":test_110ptbnkp,
-						# "test_wikinews":test_wikinews,
-						# "test_cacic57":test_cacic57,
-						# "test_pak2018":test_pak2018,
-						# "test_papyruse":test_papyruse,
-						# "test_papyrusf":test_papyrusf,
-						# "test_papyrusm":test_papyrusm,
-						# "test_papyrus":test_papyrus,
-						# "test_kp20k": test_kp20k,
-						# "test_semeval":test_semeval,
-						# "test_krapivin":test_krapivin,
-						# "test_nus":test_nus,
-						# "test_inspec":test_inspec,
+						"test_wicc78":test_wicc78,
+						"test_110ptbnkp":test_110ptbnkp,
+						"test_wikinews":test_wikinews,
+						"test_cacic57":test_cacic57,
+						"test_pak2018":test_pak2018,
+						"test_papyruse":test_papyruse,
+						"test_papyrusf":test_papyrusf,
+						"test_papyrusm":test_papyrusm,
+						"test_papyrus":test_papyrus,
+						"test_kp20k": test_kp20k,
+						"test_semeval":test_semeval,
+						"test_krapivin":test_krapivin,
+						"test_nus":test_nus,
+						"test_inspec":test_inspec,
 						# "test":test
 						}
 

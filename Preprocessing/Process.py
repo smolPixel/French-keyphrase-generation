@@ -11,7 +11,6 @@ random.seed(47)
 np.random.seed(47)
 indexes=np.arange(nb_ex)
 np.random.shuffle(indexes)
-print(indexes[:5])
 train_indexes=indexes[:int(0.7*nb_ex)]
 dev_indexes=indexes[int(0.7*nb_ex):int(0.8*nb_ex)]
 test_indexes=indexes[int(0.8*nb_ex):]
@@ -134,21 +133,9 @@ while True:
 	elif new_index in test_indexes:
 		add_to_df(dfTest, dicoTemp, line)
 	new_index+=1
-	# print(dfTrain)
-	# print(list(dfTrain['label']))
-	# fds
 
-# print(dfTrain)
-#
-# print(total_not_found)
-# print(total_keyphrases)
-# print(prop_weirdos)
-#
-# for i, serie in dfTrain[dfTrain['index']==22634].iterrows():
-# 	print(serie['sentences'])
-# 	print(serie['label'])
-#
-#
+
+
 dfTrain.to_csv('data/papyrus_m/train.tsv', sep='\t')
 dfDev.to_csv('data/papyrus_m/dev.tsv', sep='\t')
 dfTest.to_csv('data/papyrus_m/test.tsv', sep='\t')

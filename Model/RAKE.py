@@ -22,15 +22,15 @@ class RakeModel():
 		print(f"Training with {len(self.training_set)} exemples, and {len(self.training_set.index_unique_examples)} unique examples")
 		print(f"Testing with {len(self.dev_set)} examples, and {len(self.dev_set.index_unique_examples)} unique examples")
 
-		if argdict['language']=='en':
-			self.kw_extractor = yake.KeywordExtractor()
-		elif argdict['language']=='fr':
-			self.kw_extractor = yake.KeywordExtractor(lan="fr")
-		elif argdict['language']=='mu':
-			#will be defined later
-			self.kw_extractor=None
-		else:
-			raise ValueError("Unrecognized language")
+		# if argdict['language']=='en':
+		# 	self.kw_extractor = yake.KeywordExtractor()
+		# elif argdict['language']=='fr':
+		# 	self.kw_extractor = yake.KeywordExtractor(lan="fr")
+		# elif argdict['language']=='mu':
+		# 	#will be defined later
+		# 	self.kw_extractor=None
+		# else:
+		# 	raise ValueError("Unrecognized language")
 
 
 	def train_model(self):

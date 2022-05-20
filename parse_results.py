@@ -25,7 +25,7 @@ seeds=[42,43,44]
 datasets=['wicc78', '110ptbnkp', 'wikinews', 'cacic57', 'pak2018', 'papyruse', 'papyrusf', 'papyrusm', 'papyrus', 'kp20k', 'semeval', 'krapivin', 'nus', 'inspec']
 
 for seed in seeds:
-	file=open(f"barte_Kp20KPapyruse_seed_{seed}.txt").read()
+	file=open(f"bartm_papyrus_f_seed_{seed}.txt").read()
 	# file=open(f"seed{seed}.txt").read()
 	file=file.split('Percent of absent generated keyphrases')[:-1]
 	# file=file.split('Running test for')[1:]

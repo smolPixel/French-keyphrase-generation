@@ -6,6 +6,7 @@ from Model.YAKE import YakeModel
 from Model.BARTe import BARTeModel
 from Model.BARTf import BARTfModel
 from Model.BARTm import BARTMModel
+from Model.mBARTez import mBARTfModel
 from Model.Keybert import KeyBertModel
 from Model.SingleRank import SingleRankModel
 
@@ -26,6 +27,7 @@ dicoAlgo= {'singlerank':SingleRankModel,
 		  'barte':BARTeModel,
 		  'bartm':BARTMModel,
 		  'bartf':BARTfModel,
+		  'mbartf'mBARTfModel,
 		  'keybert':KeyBertModel}
 
 def run(argdict):

@@ -27,7 +27,7 @@ dicoAlgo= {'singlerank':SingleRankModel,
 		  'barte':BARTeModel,
 		  'bartm':BARTMModel,
 		  'bartf':BARTfModel,
-		  'mbartf'mBARTfModel,
+		  'mbartf':mBARTfModel,
 		  'keybert':KeyBertModel}
 
 def run(argdict):

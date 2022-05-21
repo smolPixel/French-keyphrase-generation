@@ -1,0 +1,24 @@
+Dropped 0 entries from train
+Dropped 0 entries from dev
+Dropped 0 entries from test
+Training with 20963 exemples, and 20963 unique examples
+Testing with 3040 examples, and 3040 unique examples
+running for test_wicc78 dataset
+f1@10 present and r@10 absent for test: 0.02698284621361544, 0.0
+running for test_110ptbnkp dataset
+f1@10 present and r@10 absent for test: 0.05189996179610629, 0.0
+running for test_wikinews dataset
+f1@10 present and r@10 absent for test: 0.061638061771962696, 0.0
+running for test_cacic57 dataset
+f1@10 present and r@10 absent for test: 0.005172413793103448, 0.0
+running for test_pak2018 dataset
+f1@10 present and r@10 absent for test: 0.0076363636363636364, 0.0
+running for test_papyruse dataset
+f1@10 present and r@10 absent for test: 0.02370747311899897, 0.0004924491135915955
+running for test_papyrusf dataset
+f1@10 present and r@10 absent for test: 0.028559736563844917, 0.0
+running for test_papyrusm dataset
+f1@10 present and r@10 absent for test: 0.026009939137765364, 0.0002474839135456195
+running for test_papyrus dataset
+f1@10 present and r@10 absent for test: 0.019071595552917934, 0.00012047137162132562
+Generation for example 26XXX

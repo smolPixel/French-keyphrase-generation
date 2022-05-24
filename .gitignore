@@ -2,5 +2,7 @@ venv
 data/kp20k
 data/Kp20KPapyruse/train.tsv
 data/kp20kpapyrusm/train.tsv
+data/NotesMargFr
+data/NotesMargEn
 Preprocessing/Models
 lightning_logs

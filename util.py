@@ -136,11 +136,11 @@ class NoteMarg(Dataset):
 
 		for i, row in data.iterrows():
 			# Special example 26534
-			if argdict['dataset'] not in ['kp20k'] and not dev and row['index'] == 25397:
+			if argdict['dataset'] not in ['kp20k', '10602kp20k'] and not dev and row['index'] == 25397:
 				self.abstract_for_ex.append(row['sentences'])
 				self.label_for_ex.append(row['label'])
 			# print(row)
-			if argdict['dataset'] not in ['kp20k'] and dev and not no_index and row['index'] == 24284:
+			if argdict['dataset'] not in ['kp20k', '10602kp20k'] and dev and not no_index and row['index'] == 24284:
 				self.abstract_for_ex.append(row['sentences'])
 				self.label_for_ex.append(row['label'])
 				self.language_for_ex.append(row['language'])

@@ -64,7 +64,7 @@ if __name__ == '__main__':
 
 	if argsdict['dataset'].lower()=='papyrus_f':
 		argsdict['language']='fr'
-	elif argsdict['dataset'].lower() in ['kp20k', 'papyrus_e', 'kp20kpapyruse']:
+	elif argsdict['dataset'].lower() in ['kp20k', 'papyrus_e', 'kp20kpapyruse', '10602kp20k']:
 		argsdict['language']='en'
 	elif argsdict['dataset'].lower() in ['papyrus_m', 'papyrus', 'kp20kpapyrusm']:
 		argsdict['language']='mu'

@@ -315,7 +315,8 @@ class BARTeModel(pl.LightningModule):
 				pin_memory=torch.cuda.is_available()
 			)
 			print(f"Running test for {name}")
-			final=self.trainer.test(self, test_loader)
+			# final=self.trainer.test(self, test_loader)
+			self.compare_correct_kp()
 		# self.generate_special_ex()
 			# self.generate_ex_from_given_dataset(test_loader)
 			# print(self.loggerg)
@@ -457,6 +458,52 @@ class BARTeModel(pl.LightningModule):
 									  max_length=50)
 				# print(tokenizer.batch_decode(gend))
 				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+				hypos.append(gend)
+				if j==n:
+					break
+
+			# print(inputs, hypos, refs)
+
+			for ii, hh, rr in zip(inputs, hypos, refs):
+				print(f"Input : {ii} \n "
+					  f"Note Marginale: {rr} \n"
+					  f"Note Générée: {hh}")
+				print("------------------")
+		self.model.train()
+
+	def compare_correct_kp(self, n=2, split='dev'):
+		"""Try to generate from the dev set"""
+		self.model.eval()
+		# self.model#.to('cuda')
+		with torch.no_grad():
+			print(f"Generation de {n} Notes Marginales from the {split} set")
+			dataset=self.training_set if split=="train" else self.dev_set
+			num_ex = len(dataset.index_unique_examples)
+			prec_tot = 0
+			rec_tot = 0
+			f1_tot = 0
+			inputs=[]
+			refs=[]
+			hypos=[]
+			ll = self.argdict['max_seq_length']
+			for j in range(num_ex):
+				index = dataset.index_unique_examples[j]
+				dat = dataset.data[index]
+				refs.append(dat['full_labels'])
+				inputs.append(dat[self.field_input])
+				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
+				# src_text = src_text
+				input_ids = self.tokenizer.encode(dat[self.field_input], return_tensors='pt', truncation=True, max_length=self.argdict['max_seq_length']).to(self.device)
+				# print(input_ids)
+				# print(self.tokenizer.batch_decode((input_ids)))
+				# fds
+				# input_ids = torch.Tensor(src['input_ids']).long().to('cuda').unsqueeze(0)
+				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1,
+									  max_length=50)
+				# print(tokenizer.batch_decode(gend))
+				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+				print(gend)
+				fds
 				hypos.append(gend)
 				if j==n:
 					break

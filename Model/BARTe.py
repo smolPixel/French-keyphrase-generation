@@ -458,8 +458,6 @@ class BARTeModel(pl.LightningModule):
 									  max_length=50)
 				# print(tokenizer.batch_decode(gend))
 				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
-				print(input)
-				print(dat['full_labels'])
 				hypos.append(gend)
 				if j==n:
 					break
@@ -504,6 +502,8 @@ class BARTeModel(pl.LightningModule):
 									  max_length=50)
 				# print(tokenizer.batch_decode(gend))
 				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+				print(input)
+				print(dat['full_labels'])
 				print(gend)
 				fds
 				hypos.append(gend)

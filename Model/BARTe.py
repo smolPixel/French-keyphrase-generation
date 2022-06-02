@@ -316,7 +316,7 @@ class BARTeModel(pl.LightningModule):
 			)
 			print(f"Running test for {name}")
 			# final=self.trainer.test(self, test_loader)
-			self.compare_correct_kp()
+			self.compare_correct_kp(test_loader)
 		# self.generate_special_ex()
 			# self.generate_ex_from_given_dataset(test_loader)
 			# print(self.loggerg)
@@ -471,13 +471,13 @@ class BARTeModel(pl.LightningModule):
 				print("------------------")
 		self.model.train()
 
-	def compare_correct_kp(self, n=2, split='dev'):
+	def compare_correct_kp(self, dataset):
 		"""Try to generate from the dev set"""
 		self.model.eval()
 		# self.model#.to('cuda')
 		with torch.no_grad():
 			print(f"Generation de {n} Notes Marginales from the {split} set")
-			dataset=self.training_set if split=="train" else self.dev_set
+			# dataset=self.training_set if split=="train" else self.dev_set
 			num_ex = len(dataset.index_unique_examples)
 			prec_tot = 0
 			rec_tot = 0
@@ -486,9 +486,9 @@ class BARTeModel(pl.LightningModule):
 			refs=[]
 			hypos=[]
 			ll = self.argdict['max_seq_length']
-			for j in range(num_ex):
+			for dat in dataset:
 				index = dataset.index_unique_examples[j]
-				dat = dataset.data[index]
+				# dat = dataset.data[index]
 				refs.append(dat['full_labels'])
 				inputs.append(dat[self.field_input])
 				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])

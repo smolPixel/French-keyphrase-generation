@@ -476,16 +476,6 @@ class BARTeModel(pl.LightningModule):
 		self.model.eval()
 		# self.model#.to('cuda')
 		with torch.no_grad():
-			print(f"Generation de {n} Notes Marginales from the {split} set")
-			# dataset=self.training_set if split=="train" else self.dev_set
-			num_ex = len(dataset.index_unique_examples)
-			prec_tot = 0
-			rec_tot = 0
-			f1_tot = 0
-			inputs=[]
-			refs=[]
-			hypos=[]
-			ll = self.argdict['max_seq_length']
 			for dat in dataset:
 				index = dataset.index_unique_examples[j]
 				# dat = dataset.data[index]

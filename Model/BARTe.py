@@ -479,7 +479,6 @@ class BARTeModel(pl.LightningModule):
 			good=[]
 			for dat in dataset:
 				print(dat)
-				fds
 				# dat = dataset.data[index]
 				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
@@ -493,19 +492,17 @@ class BARTeModel(pl.LightningModule):
 				# fds
 				# input_ids = torch.Tensor(src['input_ids']).long().to('cuda').unsqueeze(0)
 				gend = self.model.generate(**input_ids, num_beams=10, num_return_sequences=1)
-				print(gend)
-				print(gend.shape)
 				# print(tokenizer.batch_decode(gend))
 				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
-				print(gend)
-				true_labs=[ll.lower().strip() for ll in dat['full_labels'][0].split(' , ')]
-				gend_labs=[gg.lower().strip() for gg in gend[0].split(',')]
-				print(true_labs)
-				print(gend_labs)
-				print('------')
-				for gg in gend_labs:
-					if gg in true_labs:
-						good.append(gg)
+				for i, gendSeq in enumerate(gend):
+					true_labs=[ll.lower().strip() for ll in dat['full_labels'][i].split(' , ')]
+					gend_labs=[gg.lower().strip() for gg in gend[i].split(',')]
+					print(true_labs)
+					print(gend_labs)
+					print('------')
+					for gg in gend_labs:
+						if gg in true_labs:
+							good.append(gg)
 				if len(good)>100:
 					print(good)
 					fds

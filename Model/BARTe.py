@@ -478,7 +478,7 @@ class BARTeModel(pl.LightningModule):
 		with torch.no_grad():
 			good=[]
 			for dat in dataset:
-				print(dat)
+				# print(dat)
 				# dat = dataset.data[index]
 				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
@@ -497,9 +497,9 @@ class BARTeModel(pl.LightningModule):
 				for i, gendSeq in enumerate(gend):
 					true_labs=[ll.lower().strip() for ll in dat['full_labels'][i].split(' , ')]
 					gend_labs=[gg.lower().strip() for gg in gend[i].split(',')]
-					print(true_labs)
-					print(gend_labs)
-					print('------')
+					# print(true_labs)
+					# print(gend_labs)
+					# print('------')
 					for gg in gend_labs:
 						if gg in true_labs:
 							good.append(gg)

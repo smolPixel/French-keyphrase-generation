@@ -495,8 +495,6 @@ class BARTeModel(pl.LightningModule):
 				for gg in gend_labs:
 					if gg in true_labs:
 						good.append(gg)
-				if j==n:
-					break
 				if len(good)>100:
 					print(good)
 					fds

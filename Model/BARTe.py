@@ -477,6 +477,8 @@ class BARTeModel(pl.LightningModule):
 		# self.model#.to('cuda')
 		with torch.no_grad():
 			for dat in dataset:
+				print(dat)
+				fds
 				# dat = dataset.data[index]
 				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text

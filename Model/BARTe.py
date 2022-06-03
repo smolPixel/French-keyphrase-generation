@@ -127,6 +127,7 @@ class BARTeModel(pl.LightningModule):
 		gend = self.model.generate(**input_ids, num_beams=10, num_return_sequences=1)#, max_length=50)
 		gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
 		hypos=[self.score(sent) for sent in gend]
+		print(hypos)
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(', ')] for fullLabels in batch['full_labels']]
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')

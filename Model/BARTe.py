@@ -127,7 +127,6 @@ class BARTeModel(pl.LightningModule):
 		gend = self.model.generate(**input_ids, num_beams=10, num_return_sequences=1)#, max_length=50)
 		gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
 		hypos=[self.score(sent) for sent in gend]
-		print(hypos)
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(', ')] for fullLabels in batch['full_labels']]
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
@@ -316,7 +315,7 @@ class BARTeModel(pl.LightningModule):
 				pin_memory=torch.cuda.is_available()
 			)
 			print(f"Running test for {name}")
-			final=self.trainer.test(self, test_loader)
+			# final=self.trainer.test(self, test_loader)
 			self.compare_correct_kp(test_loader)
 		# self.generate_special_ex()
 			# self.generate_ex_from_given_dataset(test_loader)
@@ -490,8 +489,8 @@ class BARTeModel(pl.LightningModule):
 				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1,
 									  max_length=50)
 				# print(tokenizer.batch_decode(gend))
-				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
-				true_labs=[ll.lower().strip() for ll in dat['full_labels'][0].split(' , ')]
+				gend = self.tokenizer.decode(gend, skip_special_tokens=True)
+				true_labs=[ll.lower().strip() for ll in dat['full_labels'].split(' , ')]
 				gend_labs=[gg.lower().strip() for gg in gend[0].split(',')]
 				print(true_labs)
 				print(gend_labs)

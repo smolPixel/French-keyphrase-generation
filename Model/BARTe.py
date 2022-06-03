@@ -493,7 +493,7 @@ class BARTeModel(pl.LightningModule):
 				# print(tokenizer.batch_decode(gend))
 				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
 				print(gend)
-				true_labs=[ll.lower().strip() for ll in dat['full_labels'].split(' , ')]
+				true_labs=[ll.lower().strip() for ll in dat['full_labels'][0].split(' , ')]
 				gend_labs=[gg.lower().strip() for gg in gend[0].split(',')]
 				print(true_labs)
 				print(gend_labs)

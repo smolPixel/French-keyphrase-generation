@@ -481,7 +481,11 @@ class BARTeModel(pl.LightningModule):
 				# dat = dataset.data[index]
 				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
-				input_ids = self.tokenizer.encode(dat[self.field_input], return_tensors='pt', truncation=True, max_length=self.argdict['max_seq_length']).to(self.device)
+				src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
+				target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
+				input_ids = self.tokenizer(batch[self.field_input], padding=True, truncation=True, return_tensors='pt',
+										   max_length=self.argdict['max_seq_length']).to(self.device)
+				# input_ids = self.tokenizer.encode(dat[self.field_input], return_tensors='pt', truncation=True, max_length=self.argdict['max_seq_length']).to(self.device)
 				# print(input_ids)
 				# print(self.tokenizer.batch_decode((input_ids)))
 				# fds

@@ -488,8 +488,9 @@ class BARTeModel(pl.LightningModule):
 				# input_ids = torch.Tensor(src['input_ids']).long().to('cuda').unsqueeze(0)
 				gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1,
 									  max_length=50)
+				print(gend.shape)
 				# print(tokenizer.batch_decode(gend))
-				gend = self.tokenizer.batch_decode([gend], skip_special_tokens=True)
+				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
 				true_labs=[ll.lower().strip() for ll in dat['full_labels'].split(' , ')]
 				gend_labs=[gg.lower().strip() for gg in gend[0].split(',')]
 				print(true_labs)

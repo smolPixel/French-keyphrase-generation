@@ -477,10 +477,7 @@ class BARTeModel(pl.LightningModule):
 		# self.model#.to('cuda')
 		with torch.no_grad():
 			for dat in dataset:
-				index = dataset.index_unique_examples[j]
 				# dat = dataset.data[index]
-				refs.append(dat['full_labels'])
-				inputs.append(dat[self.field_input])
 				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
 				input_ids = self.tokenizer.encode(dat[self.field_input], return_tensors='pt', truncation=True, max_length=self.argdict['max_seq_length']).to(self.device)

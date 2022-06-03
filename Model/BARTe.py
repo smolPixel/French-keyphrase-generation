@@ -476,8 +476,8 @@ class BARTeModel(pl.LightningModule):
 		self.model.eval()
 		# self.model#.to('cuda')
 		with torch.no_grad():
+			good=[]
 			for dat in dataset:
-				print(dat)
 				# dat = dataset.data[index]
 				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
@@ -490,16 +490,16 @@ class BARTeModel(pl.LightningModule):
 									  max_length=50)
 				# print(tokenizer.batch_decode(gend))
 				gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
-				print(dat['full_labels'])
-				print(gend)
 				true_labs=[ll.lower().strip() for ll in dat['full_labels'][0].split(' , ')]
 				gend_labs=[gg.lower().strip() for gg in gend[0].split(',')]
-				print(true_labs)
-				print(gend_labs)
-				fds
-				hypos.append(gend)
+				for gg in gend_labs:
+					if gg in true_labs:
+						good.append(gg)
 				if j==n:
 					break
+				if len(good)>100:
+					print(good)
+					fds
 
 			# print(inputs, hypos, refs)
 

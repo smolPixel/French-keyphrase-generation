@@ -1,10 +1,9 @@
 # French-keyphrase-generation
 
-This repository includes the code for preprocessing and reproducing results associated with the submission to Neurips 2022 X (not submitted yet).
+This repository includes the code for preprocessing and reproducing results associated with the submission to Neurips 2022 X.
 
 ## Data
-Data is available on X, and you can obtain the Kp20K data from Y. All data should be placed in the data folder. 
-
+Data is available in the data folder, under the names Papyrus (corresponding to Papyrus-a), Papyrus-f, Papyrus-e, and Papyrus-m.
 ## Preprocessing.
 Although not necessary for the papyrus, papyrus-f, papyrus-e, and papyrus-m tasks, 
 all preprocessing scrips (scrapping, filtering, assigning languages to keyphrases, a
@@ -15,6 +14,7 @@ nd other) are available in the preprocessing folder. For the Kp20K, simply run t
  1. Go to Papyrus (https://papyrus.bib.umontreal.ca) and figure out what's the latest document
  updated and it's index. Pages are of the format https://papyrus.bib.umontreal.ca/xmlui/handle/1866/INDEX.
  2. In the Preprocessing/Scrape_Documents.py, change the Max_index variable with this index.
+ 3. Run get_dataset.sh
 
 NOTE: The process of fasttext uses lid.176.bin, which you can download from https://fasttext.cc/docs/en/language-identification.html
 and place in a folder called Models inside the Preprocessing folder (or wherever you want and change the path in

@@ -336,6 +336,7 @@ class BARTMModel(pl.LightningModule):
 		# print(f"Training processed took {toc-tic} seconds")
 		# fds
 		try:
+			print("loading model")
 			self.model.load_state_dict(torch.load(path_save))
 			print("loaded model")
 		except:

@@ -361,6 +361,7 @@ class BARTMModel(pl.LightningModule):
 				# num_workers=cpu_count(),
 				pin_memory=torch.cuda.is_available()
 			)
+			#Necessary due to a bug with torch lightning where it destroys the reference
 			self.trainer = pl.Trainer(gpus=1, max_epochs=self.argdict['num_epochs'], precision=16,
 									  accumulate_grad_batches=self.argdict['accum_batch_size'],
 									  enable_checkpointing=False)
@@ -371,13 +372,6 @@ class BARTMModel(pl.LightningModule):
 			# print(final)
 			# fds
 		# self.model.save_pretrained('Models/pretrained_bart')
-		# for ep in range(self.argdict['num_epochs']):
-		# 	loss, met10 = self.run_epoch('train')
-		# 	loss_val,met10_val = self.run_epoch('dev')
-		#
-		# 	print(f'Epoch: {ep + 1:02}')
-		# 	print(f'\tTrain Loss: {loss:.3f} | Metric @ 10 (p/r/f): {met10}')
-		# 	print(f'\t Val. Loss: {loss_val:.3f} |  Metric @ 10 (p/r/f): {met10_val} ')
 		# 	self.generate_from_dataset(split='train')
 		# 	self.generate_from_dataset()
 	def generate_ex_from_given_dataset(self, dataset):

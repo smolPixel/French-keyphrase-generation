@@ -336,10 +336,11 @@ class BARTMModel(pl.LightningModule):
 		# print(f"Training processed took {toc-tic} seconds")
 		# fds
 		try:
-			print("loading model")
+			print("Attempting to load model")
 			self.model.load_state_dict(torch.load(path_save))
 			print("loaded model")
 		except:
+			print("Model loading failed, fine-tuning model")
 			tic = timeit.default_timer()
 			self.trainer.fit(self, train_loader, dev_loader)
 			print("saving model")
@@ -360,6 +361,7 @@ class BARTMModel(pl.LightningModule):
 				# num_workers=cpu_count(),
 				pin_memory=torch.cuda.is_available()
 			)
+			print(test_loader)
 			print(f"Running test for {name}")
 			final=self.trainer.test(self, test_loader)
 			# self.generate_ex_from_given_dataset(test_loader)

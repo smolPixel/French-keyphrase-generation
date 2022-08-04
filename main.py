@@ -66,7 +66,7 @@ if __name__ == '__main__':
 		argsdict['language']='fr'
 	elif argsdict['dataset'].lower() in ['kp20k', 'papyrus_e', 'kp20kpapyruse', '10602kp20k']:
 		argsdict['language']='en'
-	elif argsdict['dataset'].lower() in ['papyrus_m', 'papyrus', 'kp20kpapyrusm']:
+	elif argsdict['dataset'].lower() in ['papyrus_m', 'papyrus', 'kp20kpapyrusm', 'papyrusepapyrusf']:
 		argsdict['language']='mu'
 	else:
 		raise ValueError("Unrecognized dataset")

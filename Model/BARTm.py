@@ -361,7 +361,9 @@ class BARTMModel(pl.LightningModule):
 				# num_workers=cpu_count(),
 				pin_memory=torch.cuda.is_available()
 			)
-			print(test_loader)
+			self.trainer = pl.Trainer(gpus=1, max_epochs=self.argdict['num_epochs'], precision=16,
+									  accumulate_grad_batches=self.argdict['accum_batch_size'],
+									  enable_checkpointing=False)
 			print(f"Running test for {name}")
 			final=self.trainer.test(self, test_loader)
 			# self.generate_ex_from_given_dataset(test_loader)

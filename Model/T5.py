@@ -66,7 +66,7 @@ class T5Model(pl.LightningModule):
 		# 				 'el': AutoTokenizer.from_pretrained(self.bartPath, src_lang='en_XX', tgt_lang='en_XX'),
 		# 				 'tr': AutoTokenizer.from_pretrained(self.bartPath, src_lang='en_XX', tgt_lang='en_XX'),
 		# 				 						 }
-		self.tokenizer=T5Tokenizer(self.bartPath)
+		self.tokenizer=T5Tokenizer.from_pretrained(self.bartPath)
 		if argdict['dataset'].lower() in ["papyrus", "papyrus_m", "papyrusepapyrusf"]:
 			self.dico_perfo_per_language={}
 			self.dico_keyphrase_language={}

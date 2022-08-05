@@ -27,12 +27,13 @@ while True:
 		print(i)
 	with open(f"Pages/{index_start}.html", encoding='utf-8') as fp:
 		soup = BeautifulSoup(fp, 'html.parser')
-		# for tag in soup.find_all("meta"):
-		# 	print(tag)
-			# if tag.get("name", None) == "DCTERMS.abstract":
-			# 	abstracts.append(tag.get("content", None))
-		if i==3913:
-			print(soup)
+		for tag in soup.find_all("meta"):
+			if tag.get("name", None) == "etd.degree.discipline":
+				print(tag.get("content", None))
+				abstracts.append(tag.get("content", None))
+		if index_start==3913:
+			for tag in soup.find_all("meta"):
+				print(tag)
 		index_start-=1
 
 

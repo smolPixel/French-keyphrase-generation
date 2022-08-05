@@ -12,7 +12,7 @@ import math
 import nltk
 import nltk.translate.bleu_score as bleu
 # Importing the T5 modules from huggingface/transformers
-from transformers import T5Tokenizer, T5ForConditionalGeneration
+from transformers import T5Tokenizer, T5ForConditionalGeneration, AdamW
 import numpy as np
 from datasets import load_metric
 from eval import *

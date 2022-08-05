@@ -181,7 +181,7 @@ class BARTMModel(pl.LightningModule):
 		refs=[[rr.strip() for rr in fullLabels.split(', ')] for fullLabels in batch['full_labels']]
 		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
 		#Calculating recall by language
-		if self.argdict['dataset'].lower() in ['papyrus_m', 'papyrus'] and not self.testing_standard_dataset:
+		if self.argdict['dataset'].lower() in ['papyrus_m', 'papyrus', 'papyrusepapyrusf'] and not self.testing_standard_dataset:
 			for i, (full_references, full_hypothesis) in enumerate(zip(refs, hypos)):
 				for individual_refs in full_references:
 					try:

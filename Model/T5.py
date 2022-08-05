@@ -51,6 +51,7 @@ class T5Model(pl.LightningModule):
 		# self.tokenizers={'fr':AutoTokenizer.from_pretrained(self.bartPath, src_lang='fr_XX', tgt_lang='fr_XX'),
 		# 				 'en':AutoTokenizer.from_pretrained(self.bartPath, src_lang='en_XX', tgt_lang='en_XX'),
 		# 				 'es': AutoTokenizer.from_pretrained(self.bartPath, src_lang='es_XX', tgt_lang='es_XX'),
+		# 				 'es': AutoTokenizer.from_pretrained(self.bartPath, src_lang='es_XX', tgt_lang='es_XX'),
 		# 				 'it': AutoTokenizer.from_pretrained(self.bartPath, src_lang='it_IT', tgt_lang='it_IT'),
 		# 				 'ko': AutoTokenizer.from_pretrained(self.bartPath, src_lang='ko_KR', tgt_lang='ko_KR'),
 		# 				 'ru': AutoTokenizer.from_pretrained(self.bartPath, src_lang='ru_RU', tgt_lang='ru_RU'),
@@ -120,7 +121,8 @@ class T5Model(pl.LightningModule):
 		else:
 			ll = batch['language'][0]
 
-		tokenizer = self.tokenizers[ll]
+		# tokenizer = self.tokenizers[ll]
+		tokenizer=self.tokenizer
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
 		with tokenizer.as_target_tokenizer():
 			target = tokenizer(batch['full_labels'], padding=True, truncation=True)
@@ -157,7 +159,8 @@ class T5Model(pl.LightningModule):
 		else:
 			ll = batch['language'][0]
 
-		tokenizer = self.tokenizers[ll]
+		# tokenizer = self.tokenizers[ll]
+		tokenizer=self.tokenizer
 		src = tokenizer(batch[self.field_input], padding=True, truncation=True)
 		target = tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
@@ -426,7 +429,8 @@ class T5Model(pl.LightningModule):
 				else:
 					pass
 
-				tokenizer = self.tokenizers[ll]
+				# tokenizer = self.tokenizers[ll]
+				tokenizer=self.tokenizer
 				print(tokenizer)
 				input_ids = tokenizer.encode(abstract, return_tensors='pt', truncation=True,
 												  max_length=self.argdict['max_seq_length']).to(self.device)
@@ -461,7 +465,8 @@ class T5Model(pl.LightningModule):
 				else:
 					pass
 
-				tokenizer = self.tokenizers[ll]
+				# tokenizer = self.tokenizers[ll]
+				tokenizer=self.tokenizer
 				# src_text = " ".join(dat[self.field_input].split(' ')[:ll])
 				# src_text = src_text
 				input_ids = tokenizer.encode(abstract, return_tensors='pt', truncation=True,

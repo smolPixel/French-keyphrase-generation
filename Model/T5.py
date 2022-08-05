@@ -33,13 +33,7 @@ class T5Model(pl.LightningModule):
 		print(f"Training with {len(self.training_set)} exemples, and {len(self.training_set.index_unique_examples)} unique examples")
 		print(f"Testing with {len(self.dev_set)} examples, and {len(self.dev_set.index_unique_examples)} unique examples")
 
-		# self.device = torch.device(argdict['device'])
-		if argdict['batch_size']!=1:
-			raise ValueError("Batch size has to be one for bartm")
-
-		# pretrained=['gpt', 'antoiloui/belgpt2']
 		self.bartPath = 't5-base'
-		# tokenizer = AutoTokenizer.from_pretrained(gptPath)
 		model = T5ForConditionalGeneration.from_pretrained(self.bartPath, cache_dir='/Tmp')
 
 		self.field_input='input_sentence'

@@ -71,7 +71,7 @@ class BARTMModel(pl.LightningModule):
 						 'el': AutoTokenizer.from_pretrained(self.bartPath, src_lang='en_XX', tgt_lang='en_XX'),
 						 'tr': AutoTokenizer.from_pretrained(self.bartPath, src_lang='en_XX', tgt_lang='en_XX'),
 						 						 }
-		if argdict['dataset'].lower() in ["papyrus", "papyrus_m"]:
+		if argdict['dataset'].lower() in ["papyrus", "papyrus_m", "papyrusepapyrusf"]:
 			self.dico_perfo_per_language={}
 			self.dico_keyphrase_language={}
 			#We want to create a ref that associate each keyphrase for each example with a language, based on papyrus-m

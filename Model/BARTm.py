@@ -233,7 +233,7 @@ class BARTMModel(pl.LightningModule):
 		tot_gend=np.sum([num_total for loss, prec5_present, rec5_present, f15_present, prec10_present, rec10_present, f110_present, prec10_absent, rec10_absent, f110_absent, num_absent, num_total in output_results])
 		print(f"Percent of absent generated keyphrases : {float(tot_absent)*100/tot_gend}")
 
-		if self.argdict['dataset'].lower() in ['papyrus', 'papyrus_m'] and not self.testing_standard_dataset:
+		if self.argdict['dataset'].lower() in ['papyrus', 'papyrus_m', 'papyrusepapyrusf'] and not self.testing_standard_dataset:
 			print("----Recal per language----")
 			for key, item in self.dico_perfo_per_language.items():
 				print(f"{key} : {np.mean(item)}")

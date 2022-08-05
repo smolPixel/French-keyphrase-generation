@@ -7,6 +7,7 @@ from Model.BARTe import BARTeModel
 from Model.BARTf import BARTfModel
 from Model.BARTm import BARTMModel
 from Model.mBARTez import mBARTfModel
+from Model.T5 import T5Model
 from Model.Keybert import KeyBertModel
 from Model.SingleRank import SingleRankModel
 
@@ -28,7 +29,8 @@ dicoAlgo= {'singlerank':SingleRankModel,
 		  'bartm':BARTMModel,
 		  'bartf':BARTfModel,
 		  'mbartf':mBARTfModel,
-		  'keybert':KeyBertModel}
+		  'keybert':KeyBertModel,
+		  't5':T5Model}
 
 def run(argdict):
 	set_seed(argdict['random_seed'])

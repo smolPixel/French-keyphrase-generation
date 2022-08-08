@@ -84,16 +84,14 @@ class BARTMModel(pl.LightningModule):
 					self.dico_perfo_per_language[language]={'present':[], 'absent':[]}
 				index=line['index']
 				if index not in self.dico_keyphrase_language:
-					self.dico_keyphrase_language[index] = {}
+					self.dico_keyphrase_language[index] = {'present':[], 'absent':[]}
 				sent=line['sentences'].lower()
 				for lab in line['label'].split(', '):
-					lab=lab.strip()
-					print(lab)
-					print(sent)
-					print(lab.lower() in sent)
-
-					self.dico_keyphrase_language[index][lab]=language
-				fds
+					lab=lab.strip().lower()
+					if lab in sent:
+						self.dico_keyphrase_language[index]['present'][lab]=language
+					else:
+						self.dico_keyphrase_language[index]['absent'][lab] = language
 
 			# 	if index==329:
 			# 		print(line['label'])

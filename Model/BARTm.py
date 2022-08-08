@@ -90,10 +90,10 @@ class BARTMModel(pl.LightningModule):
 					lab=lab.strip()
 					print(lab)
 					print(sent)
-					print(lab in sent)
-					fds
+					print(lab.lower() in sent)
+
 					self.dico_keyphrase_language[index][lab]=language
-			fds
+				fds
 
 			# 	if index==329:
 			# 		print(line['label'])

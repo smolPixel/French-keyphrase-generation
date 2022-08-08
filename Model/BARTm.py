@@ -85,11 +85,12 @@ class BARTMModel(pl.LightningModule):
 				index=line['index']
 				if index not in self.dico_keyphrase_language:
 					self.dico_keyphrase_language[index] = {}
-				sent=line[self.field_input]
-				print(sent)
-				fds
+				sent=line['sentences'].lower()
 				for lab in line['label'].split(', '):
 					lab=lab.strip()
+					print(lab)
+					print(sent)
+					print(lab in sent)
 					self.dico_keyphrase_language[index][lab]=language
 			# 	if index==329:
 			# 		print(line['label'])

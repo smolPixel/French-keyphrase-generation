@@ -80,10 +80,14 @@ class BARTMModel(pl.LightningModule):
 			for i, line in df_ref.iterrows():
 				language=line['language']
 				if language not in self.dico_perfo_per_language.keys():
-					self.dico_perfo_per_language[language]=[]
+					#If language has not been seen yet
+					self.dico_perfo_per_language[language]={'present':[], 'absent':[]}
 				index=line['index']
 				if index not in self.dico_keyphrase_language:
 					self.dico_keyphrase_language[index] = {}
+				sent=line[self.field_input]
+				print(sent)
+				fds
 				for lab in line['label'].split(', '):
 					lab=lab.strip()
 					self.dico_keyphrase_language[index][lab]=language

@@ -21,9 +21,9 @@ class SeqToSeqModel(pl.LightningModule):
 		print(f"Testing with {len(self.dev_set)} examples, and {len(self.dev_set.index_unique_examples)} unique examples")
 
 		#Tokenizer
-		tokenizer = TweetTokenizer()
+		self.tokenizer = TweetTokenizer()
 		allsentences=list(self.training_set.df['sentences'])
-		allsentences = [tokenizer.tokenize(sentence) for sentence in allsentences if sentence == sentence]
+		allsentences = [self.tokenizer.tokenize(sentence) for sentence in allsentences if sentence == sentence]
 		specials = ["<unk>", "<pad>", "<bos>", "<eos>"]
 		vocab = build_vocab_from_iterator(allsentences, specials=specials)
 

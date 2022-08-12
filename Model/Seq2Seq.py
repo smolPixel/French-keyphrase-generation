@@ -36,7 +36,11 @@ class SeqToSeqModel(pl.LightningModule):
 		self.rnn_decoder=torch.nn.GRU(self.argdict['embed_size'], self.argdict['hidden_size'], 1, batch_first=True, bidirectional=False)
 		"""Attention"""
 		# self.attn=nn.Linear(self.argdict['hidden_size'])
-	
+
+	def configure_optimizers(self):
+		optimizer = AdamW(self.model.parameters(), lr=5e-5)
+		return optimizer
+
 	def training_step(self, batch, batch_idx):
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True, max_length=self.argdict['max_seq_length'])
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)

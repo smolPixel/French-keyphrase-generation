@@ -27,7 +27,7 @@ class SeqToSeqModel(pl.LightningModule):
 		specials = ["<unk>", "<pad>", "<bos>", "<eos>"]
 		vocab = build_vocab_from_iterator(allsentences, specials=specials)
 
-		input_dim=
+		input_dim=None
 		output_dim=self.argdict['embed_size']
 		"""Encoder"""
 		self.embeddings=torch.nn.Embedding(input_dim, output_dim)

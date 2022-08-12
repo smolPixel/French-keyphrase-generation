@@ -3,6 +3,7 @@ from typing import Tuple
 
 import torch
 import pytorch_lightning as pl
+from torch.utils.data import DataLoader
 from pytorch_lightning.callbacks import Callback
 from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 import timeit

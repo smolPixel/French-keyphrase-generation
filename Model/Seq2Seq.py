@@ -9,6 +9,7 @@ from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 import timeit
 from nltk.tokenize import TweetTokenizer, sent_tokenize
 from torchtext.vocab import build_vocab_from_iterator
+from transformers import BartTokenizer, BartForConditionalGeneration, AdamW, WarmUp, BartConfig, AutoTokenizer, AutoModelForSeq2SeqLM
 
 class SeqToSeqModel(pl.LightningModule):
 	def __init__(self, argdict, datasets):

@@ -20,7 +20,7 @@ class SeqToSeqModel(pl.LightningModule):
 
 		#Tokenizer
 		tokenizer = TweetTokenizer()
-		allsentences=self.training_set['sentence']
+		allsentences=self.training_set.df['sentence']
 		print(allsentences)
 		fds
 		allsentences = [tokenizer.tokenize(sentence) for sentence in allsentences if sentence == sentence]

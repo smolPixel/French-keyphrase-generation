@@ -106,6 +106,7 @@ class NoteMarg(Dataset):
 		   tokenizer: tokenizer trained
 		   vocabInput+Output: vocab trained on train"""
 		self.data = {}
+		self.df=data
 		self.max_len = argdict['max_seq_length']
 		# self.vocab = vocab
 		# self.tokenizer=tokenizer
@@ -218,6 +219,7 @@ class NoteMarg(Dataset):
 			'index':self.data[item]['index'],
 			'language':self.data[item]['language']
 		}
+
 
 
 	def iterexamples(self):

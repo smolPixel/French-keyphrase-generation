@@ -10,6 +10,7 @@ from Model.mBARTez import mBARTfModel
 from Model.T5 import T5Model
 from Model.Keybert import KeyBertModel
 from Model.SingleRank import SingleRankModel
+from Model.Seq2Seq import SeqToSeqModel
 
 def run_external_process(process):
 	output, error = process.communicate()
@@ -30,7 +31,8 @@ dicoAlgo= {'singlerank':SingleRankModel,
 		  'bartf':BARTfModel,
 		  'mbartf':mBARTfModel,
 		  'keybert':KeyBertModel,
-		  't5':T5Model}
+		  't5':T5Model,
+		  'seqtoseq': SeqToSeqModel}
 
 def run(argdict):
 	set_seed(argdict['random_seed'])

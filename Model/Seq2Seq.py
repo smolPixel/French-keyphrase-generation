@@ -45,3 +45,56 @@ class SeqToSeqModel(pl.LightningModule):
 		#TODO ATTENTION MASK
 		outputs=self.model(input_ids, decoder_attention_mask=decoder_attention_mask, labels=decoder_input_ids, attention_mask=attention_mask)
 		return outputs
+
+	def train_model(self):
+		# cb=MetricTracker()
+		early_stopping_callback = EarlyStopping(monitor='F1_val_10', patience=1, mode='max')
+		self.trainer = pl.Trainer(gpus=1, max_epochs=self.argdict['num_epochs'], precision=16,
+								  accumulate_grad_batches=self.argdict['accum_batch_size'], enable_checkpointing=False)
+		train_loader = DataLoader(
+			dataset=self.training_set,
+			batch_size=self.argdict['batch_size'],
+			shuffle=True,
+			# num_workers=cpu_count(),
+			pin_memory=torch.cuda.is_available()
+		)
+		dev_loader = DataLoader(
+			dataset=self.dev_set,
+			batch_size=self.argdict['batch_size'],
+			shuffle=False,
+			# num_workers=cpu_count(),
+			pin_memory=torch.cuda.is_available()
+		)
+
+
+		path_save = f'/data/rali6/Tmp/piedboef/Models/FKPG/{self.argdict["dataset"]}_SeqToSeq_{self.argdict["num_epochs"]}Epochs_random_seed_{self.argdict["random_seed"]}.pt'
+
+		try:
+			self.model.load_state_dict(torch.load(path_save))
+			print("loaded model")
+		except:
+			tic = timeit.default_timer()
+			self.trainer.fit(self, train_loader, dev_loader)
+			print("saving model")
+			# torch.save(self.model.state_dict(), path_save)
+			print(self.loggerg)
+			toc = timeit.default_timer()
+			print(f"Training processed took {toc - tic} seconds")
+			return 0
+		# self.generate_special_ex()
+		for name, tt in self.test_set.items():
+			if name in ['test_semeval', 'test_inspec', 'test_nus', 'test_kp20k', 'test_papyruse', 'test_krapivin',
+						'test_wikinews']:
+				self.testing_standard_dataset = True
+			else:
+				self.testing_standard_dataset = False
+			test_loader = DataLoader(
+				dataset=tt,
+				batch_size=self.argdict['batch_size'],
+				shuffle=False,
+				# num_workers=cpu_count(),
+				pin_memory=torch.cuda.is_available()
+			)
+			print(f"Running test for {name}")
+			# final=self.trainer.test(self, test_loader)
+			self.compare_correct_kp(test_loader)

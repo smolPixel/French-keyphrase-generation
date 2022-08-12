@@ -26,6 +26,7 @@ class SeqToSeqModel(pl.LightningModule):
 		vocab = build_vocab_from_iterator(allsentences, specials=specials)
 		
 		print(len(vocab))
+		print(len(vocab.get_itos()))
 		
 		input_dim=None
 		output_dim=self.argdict['embed_size']

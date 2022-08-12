@@ -39,7 +39,7 @@ class SeqToSeqModel(pl.LightningModule):
 		# self.attn=nn.Linear(self.argdict['hidden_size'])
 
 	def configure_optimizers(self):
-		optimizer = AdamW(self.model.parameters(), lr=5e-5)
+		optimizer = AdamW(self.parameters(), lr=5e-5)
 		return optimizer
 
 	def training_step(self, batch, batch_idx):

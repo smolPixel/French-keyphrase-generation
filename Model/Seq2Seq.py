@@ -36,7 +36,43 @@ class SeqToSeqModel(pl.LightningModule):
 		self.rnn_decoder=torch.nn.GRU(self.argdict['embed_size'], self.argdict['hidden_size'], 1, batch_first=True, bidirectional=False)
 		"""Attention"""
 		# self.attn=nn.Linear(self.argdict['hidden_size'])
+	
+	def training_step(self, batch, batch_idx):
+		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True, max_length=self.argdict['max_seq_length'])
+		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
+		output = self.forward(src, target)
+		loss = output['loss']
+		self.log("Loss", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		return loss
 
+	def validation_step(self, batch, batch_idx):
+		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
+		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
+		output = self.forward(src, target)
+		loss = output['loss']
+
+		input_ids = self.tokenizer(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
+		gend = self.model.generate(**input_ids, num_beams=10, num_return_sequences=1, max_length=50)
+		gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+		hypos=[self.score(sent) for sent in gend]
+		inputs=batch[self.field_input]
+		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]
+		score = evaluate(inputs, refs, hypos, '<unk>', tokenizer='split_nopunc')
+		# print(score)
+		f110 = np.average(score['present_exact_f_score@10'])
+		f15 = np.average(score['present_exact_f_score@5'])
+		r10 = np.average(score['absent_exact_recall@10'])
+		# prec = np.average(score['all_exact_precision@10'])
+		# rec = np.average(score['all_exact_recall@10'])
+		# score5=evaluate(inputs, refs, [sents[:5] for sents in hypos], '<unk>', tokenizer='split_nopunc')
+		# f15 = np.average(score5['present_exact_f_score@5'])
+
+		self.logger_per_batch.append((f15, f110, r10))
+		self.log("Loss_val", loss, on_epoch=True, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("F1_val_10", f110, on_epoch=True, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("F1_val_5", f15, on_epoch=True, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		self.log("r_val_5", f15, on_epoch=True, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
+		return loss
 	def forward(self, tokenized_sentences, tokenized_decoder_sentences):
 
 		input_ids=torch.Tensor(tokenized_sentences['input_ids']).long().to(self.device)

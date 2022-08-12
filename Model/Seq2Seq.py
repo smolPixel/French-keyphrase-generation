@@ -26,7 +26,7 @@ import timeit
 class SeqToSeqModel(pl.LightningModule):
 	def __init__(self, argdict, datasets):
 		super().__init__()
-
+		print("WARNING IMPLEMENT ATTENTION")
 		self.argdict=argdict
 		self.training_set, self.dev_set, self.test_set=datasets
 		print(f"Training with {len(self.training_set)} exemples, and {len(self.training_set.index_unique_examples)} unique examples")

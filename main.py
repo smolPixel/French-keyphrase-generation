@@ -58,6 +58,9 @@ if __name__ == '__main__':
 	parser.add_argument('--max_seq_length', type=int, default=1024, help='max length, 0 if no max length')
 	parser.add_argument('--random_seed', type=int, default=42)
 
+	parser.add_argument('--embed_size', type=int, default=300)
+	parser.add_argument('--hidden_size', type=int, default=1024)
+
 	parser.add_argument('--short_eval', action='store_true', help='Cut evaluation time for debugging purposes')
 
 

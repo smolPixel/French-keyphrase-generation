@@ -21,12 +21,12 @@ class SeqToSeqModel(pl.LightningModule):
 		#Tokenizer
 		tokenizer = TweetTokenizer()
 		allsentences=list(self.training_set.df['sentences'])
-		print(allsentences)
-		fds
 		allsentences = [tokenizer.tokenize(sentence) for sentence in allsentences if sentence == sentence]
 		specials = ["<unk>", "<pad>", "<bos>", "<eos>"]
 		vocab = build_vocab_from_iterator(allsentences, specials=specials)
-
+		
+		print(len(vocab))
+		
 		input_dim=None
 		output_dim=self.argdict['embed_size']
 		"""Encoder"""

@@ -29,10 +29,10 @@ class SeqToSeqModel(pl.LightningModule):
 		output_dim=self.argdict['embed_size']
 		"""Encoder"""
 		self.embeddings=torch.nn.Embedding(input_dim, output_dim)
-		self.rnn_encoder=torch.nn.GRU(self.argdict['embed_size'], self.argdict['hidden_size'], self.argdict['num_layers'], batch_first=True, bidirectional=self.argdict['bidir_encoder'])
+		self.rnn_encoder=torch.nn.GRU(self.argdict['embed_size'], self.argdict['hidden_size'], 2, batch_first=True, bidirectional=False)
 		"""Decoder"""
 		self.embeddings=torch.nn.Embedding(input_dim, output_dim)
-		self.rnn_decoder=torch.nn.GRU(self.argdict['embed_size'], self.argdict['hidden_size'], self.argdict['num_layers'], batch_first=True, bidirectional=False)
+		self.rnn_decoder=torch.nn.GRU(self.argdict['embed_size'], self.argdict['hidden_size'], 1, batch_first=True, bidirectional=False)
 		"""Attention"""
 		# self.attn=nn.Linear(self.argdict['hidden_size'])
 

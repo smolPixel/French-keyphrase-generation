@@ -51,13 +51,23 @@ class SeqToSeqModel(pl.LightningModule):
 		self.log("Loss", loss, on_epoch=True, on_step=True, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		return loss
 
+	def on_validation_batch_start(self, batch, batch_idx, dataloader_idx):
+		text_batch = batch[self.field_input]
+		print(text_batch)
+		fds
+		encoding = self.tokenizer(text_batch, return_tensors='pt', padding=True, truncation=True)
+		input_ids = encoding['input_ids'].to(self.device)
+		attention_mask = encoding['attention_mask'].to(self.device)  #
+		batch['input_ids'] = input_ids
+		batch['attention_mask'] = attention_mask
+
 	def validation_step(self, batch, batch_idx):
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
 		output = self.forward(src, target)
 		loss = output['loss']
 
-		input_ids = self.tokenizer(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
+		input_ids = self.tokenizer.tokenize(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
 		gend = self.model.generate(**input_ids, num_beams=10, num_return_sequences=1, max_length=50)
 		gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
 		hypos=[self.score(sent) for sent in gend]

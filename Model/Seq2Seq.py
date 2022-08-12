@@ -20,6 +20,7 @@ class SeqToSeqModel(pl.LightningModule):
 		print(f"Training with {len(self.training_set)} exemples, and {len(self.training_set.index_unique_examples)} unique examples")
 		print(f"Testing with {len(self.dev_set)} examples, and {len(self.dev_set.index_unique_examples)} unique examples")
 
+		self.field_input = 'input_sentence'
 		#Tokenizer
 		self.tokenizer = TweetTokenizer()
 		allsentences=list(self.training_set.df['sentences'])

@@ -2,26 +2,12 @@ import random
 from typing import Tuple
 
 import torch
-import torch.nn as nn
-import torch.optim as optim
-import torch.nn.functional as F
-from torch import Tensor
-from torch.utils.data import DataLoader
-from multiprocessing import cpu_count
-import math
-import nltk
-import nltk.translate.bleu_score as bleu
-from transformers import BartTokenizer, BartForConditionalGeneration, AdamW, WarmUp, BartConfig, AutoTokenizer, AutoModelForSeq2SeqLM
-import numpy as np
-from datasets import load_metric
-from eval import *
-from tqdm import tqdm
-# from transformers.modeling_bart import shift_tokens_right
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks import Callback
 from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 import timeit
-
+from nltk.tokenize import TweetTokenizer, sent_tokenize
+from torchtext.vocab import build_vocab_from_iterator
 
 class SeqToSeqModel(pl.LightningModule):
 	def __init__(self, argdict, datasets):
@@ -32,8 +18,16 @@ class SeqToSeqModel(pl.LightningModule):
 		print(f"Training with {len(self.training_set)} exemples, and {len(self.training_set.index_unique_examples)} unique examples")
 		print(f"Testing with {len(self.dev_set)} examples, and {len(self.dev_set.index_unique_examples)} unique examples")
 
+		#Tokenizer
+		tokenizer = TweetTokenizer()
+		allsentences=self.training_set['sentence']
+		print(allsentences)
+		fds
+		allsentences = [tokenizer.tokenize(sentence) for sentence in allsentences if sentence == sentence]
+		specials = ["<unk>", "<pad>", "<bos>", "<eos>"]
+		vocab = build_vocab_from_iterator(allsentences, specials=specials)
 
-		input_dim=None
+		input_dim=
 		output_dim=self.argdict['embed_size']
 		"""Encoder"""
 		self.embeddings=torch.nn.Embedding(input_dim, output_dim)

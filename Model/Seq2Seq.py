@@ -15,7 +15,6 @@ from Model.Models import SeqToSeq
 class SeqToSeqModel(pl.LightningModule):
 	def __init__(self, argdict, datasets):
 		super().__init__()
-		print("WARNING IMPLEMENT ATTENTION")
 		self.argdict=argdict
 		self.training_set, self.dev_set, self.test_set=datasets
 		print(f"Training with {len(self.training_set)} exemples, and {len(self.training_set.index_unique_examples)} unique examples")
@@ -49,7 +48,7 @@ class SeqToSeqModel(pl.LightningModule):
 	def on_validation_batch_start(self, batch, batch_idx, dataloader_idx):
 		text_batch = batch[self.field_input]
 		print(text_batch)
-		print(self.tokenizer.tokenize(text_batch))
+		print([self.tokenizer.tokenize(sent) for sent in text_batch)
 		fds
 		encoding = self.tokenizer(text_batch, return_tensors='pt', padding=True, truncation=True)
 		input_ids = encoding['input_ids'].to(self.device)

@@ -48,7 +48,7 @@ class SeqToSeqModel(pl.LightningModule):
 	def on_validation_batch_start(self, batch, batch_idx, dataloader_idx):
 		text_batch = batch[self.field_input]
 		print(text_batch)
-		print([self.tokenizer.tokenize(sent) for sent in text_batch])
+		print([[3 for token in self.tokenizer.tokenize(sent)] for sent in text_batch])
 		fds
 		encoding = self.tokenizer(text_batch, return_tensors='pt', padding=True, truncation=True)
 		input_ids = encoding['input_ids'].to(self.device)

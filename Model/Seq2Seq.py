@@ -27,6 +27,9 @@ class SeqToSeqModel(pl.LightningModule):
 		allsentences = [self.tokenizer.tokenize(sentence) for sentence in allsentences if sentence == sentence]
 		specials = ["<unk>", "<pad>", "<bos>", "<eos>"]
 		self.vocab = build_vocab_from_iterator(allsentences, specials=specials)
+		self.stoi=self.vocab.get_stoi()
+		print(self.stoi)
+		fds
 
 		input_dim=len(self.vocab)
 		self.argdict['input_size']=input_dim
@@ -48,7 +51,7 @@ class SeqToSeqModel(pl.LightningModule):
 	def on_validation_batch_start(self, batch, batch_idx, dataloader_idx):
 		text_batch = batch[self.field_input]
 		print(text_batch)
-		print([[self.vocab.get_stoi[token] for token in self.tokenizer.tokenize(sent)] for sent in text_batch])
+		print([[self.vocab.get_stoi()[token] for token in self.tokenizer.tokenize(sent)] for sent in text_batch])
 		fds
 		encoding = self.tokenizer(text_batch, return_tensors='pt', padding=True, truncation=True)
 		input_ids = encoding['input_ids'].to(self.device)

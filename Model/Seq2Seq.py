@@ -10,6 +10,7 @@ import timeit
 from nltk.tokenize import TweetTokenizer, sent_tokenize
 from torchtext.vocab import build_vocab_from_iterator
 from transformers import BartTokenizer, BartForConditionalGeneration, AdamW, WarmUp, BartConfig, AutoTokenizer, AutoModelForSeq2SeqLM
+from Model.Models import SeqToSeq
 
 class SeqToSeqModel(pl.LightningModule):
 	def __init__(self, argdict, datasets):
@@ -29,15 +30,9 @@ class SeqToSeqModel(pl.LightningModule):
 		vocab = build_vocab_from_iterator(allsentences, specials=specials)
 
 		input_dim=len(vocab)
+		self.argdict['input_size']=input_dim
 		output_dim=self.argdict['embed_size']
-		"""Encoder"""
-		self.embeddings=torch.nn.Embedding(input_dim, output_dim)
-		self.rnn_encoder=torch.nn.GRU(self.argdict['embed_size'], self.argdict['hidden_size'], 2, batch_first=True, bidirectional=False)
-		"""Decoder"""
-		self.embeddings=torch.nn.Embedding(input_dim, output_dim)
-		self.rnn_decoder=torch.nn.GRU(self.argdict['embed_size'], self.argdict['hidden_size'], 1, batch_first=True, bidirectional=False)
-		"""Attention"""
-		# self.attn=nn.Linear(self.argdict['hidden_size'])
+		self.model=SeqToSeq(argdict)
 
 	def configure_optimizers(self):
 		optimizer = AdamW(self.parameters(), lr=5e-5)

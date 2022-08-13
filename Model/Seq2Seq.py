@@ -27,7 +27,7 @@ class SeqToSeqModel(pl.LightningModule):
 		allsentences = [self.tokenizer.tokenize(sentence) for sentence in allsentences if sentence == sentence]
 		specials = ["<unk>", "<pad>", "<bos>", "<eos>"]
 		self.vocab = build_vocab_from_iterator(allsentences, specials=specials)
-		self.vocab.set_default_index(vocab["<unk>"])
+		self.vocab.set_default_index(self.vocab["<unk>"])
 		self.stoi=self.vocab.get_stoi()
 		input_dim=len(self.vocab)
 		self.argdict['input_size']=input_dim

@@ -55,7 +55,7 @@ class SeqToSeqModel(pl.LightningModule):
 		text_batch = batch[self.field_input]
 		tokenized=[torch.Tensor([int(self.vocab[token]) for token in self.tokenizer.tokenize(sent)]) for sent in text_batch]
 		input_ids=pad_sequence(tokenized, batch_first=True, padding_value=self.vocab.get_default_index())
-		batch['input_ids'] = input_ids
+		batch['input_ids'] = input_ids.long()
 
 		target=batch['full_labels']
 		tokenized = [torch.Tensor([int(self.vocab[token]) for token in self.tokenizer.tokenize(sent)]) for sent in target]

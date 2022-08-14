@@ -54,14 +54,15 @@ class SeqToSeqModel(pl.LightningModule):
 		batch['input_ids'] = input_ids
 
 	def validation_step(self, batch, batch_idx):
-		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
-		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
+		# src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
+		# target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
+		print(batch)
 		output = self.forward(src, target)
 		loss = output['loss']
 
-		input_ids = self.tokenizer.tokenize(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
+		# input_ids = self.tokenizer.tokenize(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
 		gend = self.model.generate(**input_ids, num_beams=10, num_return_sequences=1, max_length=50)
-		gend = self.tokenizer.batch_decode(gend, skip_special_tokens=True)
+		# gend = self.tokenize(gend, skip_special_tokens=True)
 		hypos=[self.score(sent) for sent in gend]
 		inputs=batch[self.field_input]
 		refs=[[rr.strip() for rr in fullLabels.split(',')] for fullLabels in batch['full_labels']]

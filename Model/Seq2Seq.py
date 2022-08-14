@@ -40,7 +40,7 @@ class SeqToSeqModel(pl.LightningModule):
 		return optimizer
 
 	def forward(self, tokenized_sentences, tokenized_decoder_sentences):
-		outputs=self.model(input_ids, target=target)
+		outputs=self.model(tokenized_sentences, tokenized_decoder_sentences)
 		return outputs
 
 	def training_step(self, batch, batch_idx):

@@ -14,6 +14,6 @@ class SeqToSeq(torch.nn.Module):
 	def forward(self, input_seq, output_seq):
 		embed_in=self.embeddings(input_seq)
 		_, hidden=self.rnn_encoder(embed_in)
-		embed_out=self.embeddings(output_seqt)
+		embed_out=self.embeddings(output_seq[:-1])
 		outputs=self.rnn_decoder(embed_out)
 		fds

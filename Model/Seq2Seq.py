@@ -54,9 +54,8 @@ class SeqToSeqModel(pl.LightningModule):
 		batch['input_ids'] = input_ids
 
 	def validation_step(self, batch, batch_idx):
-		# src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)
-		# target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
 		print(batch)
+		fds
 		output = self.forward(src, target)
 		loss = output['loss']
 

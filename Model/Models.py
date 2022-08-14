@@ -11,6 +11,8 @@ class SeqToSeq(torch.nn.Module):
 		self.embeddings=torch.nn.Embedding(self.argdict['input_size'], self.argdict['embed_size'])
 		self.rnn_decoder=torch.nn.GRU(self.argdict['embed_size'], self.argdict['hidden_size'], 1, batch_first=True, bidirectional=False)
 
+		self.loss=
+
 	def forward(self, input_seq, output_seq):
 		embed_in=self.embeddings(input_seq)
 		_, hidden=self.rnn_encoder(embed_in)

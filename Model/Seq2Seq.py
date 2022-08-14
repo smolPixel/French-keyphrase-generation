@@ -53,7 +53,7 @@ class SeqToSeqModel(pl.LightningModule):
 		print(tokenized)
 		max_seq_length=max([len(ss) for ss in tokenized])
 		# print([torch(torch.Tensor(x)) for x in tokenized])
-		print(pad_sequence(tokenized).shape)
+		print(pad_sequence(tokenized, batch_first=True).shape)
 		fds
 		encoding = self.tokenizer(text_batch, return_tensors='pt', padding=True, truncation=True)
 		input_ids = encoding['input_ids'].to(self.device)

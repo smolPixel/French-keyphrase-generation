@@ -51,6 +51,7 @@ class SeqToSeqModel(pl.LightningModule):
 		text_batch = batch[self.field_input]
 		tokenized=[[self.vocab[token] for token in self.tokenizer.tokenize(sent)] for sent in text_batch]
 		max_seq_length=max([len(ss) for ss in tokenized])
+		print([torch.shape(torch.Tensor(x)) for x in tokenized])
 		print(pad_sequence(**torch.Tensor(tokenized)).shape)
 		fds
 		encoding = self.tokenizer(text_batch, return_tensors='pt', padding=True, truncation=True)

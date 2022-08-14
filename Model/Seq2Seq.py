@@ -50,17 +50,8 @@ class SeqToSeqModel(pl.LightningModule):
 	def on_validation_batch_start(self, batch, batch_idx, dataloader_idx):
 		text_batch = batch[self.field_input]
 		tokenized=[torch.Tensor([int(self.vocab[token]) for token in self.tokenizer.tokenize(sent)]) for sent in text_batch]
-		print(tokenized)
-		max_seq_length=max([len(ss) for ss in tokenized])
-		# print([torch(torch.Tensor(x)) for x in tokenized])
-		print([ss.shape for ss in tokenized])
-		print(pad_sequence(tokenized, batch_first=True, padding_value=self.vocab.get_default_index()))
-		fds
-		encoding = self.tokenizer(text_batch, return_tensors='pt', padding=True, truncation=True)
-		input_ids = encoding['input_ids'].to(self.device)
-		attention_mask = encoding['attention_mask'].to(self.device)  #
+		input_ids=pad_sequence(tokenized, batch_first=True, padding_value=self.vocab.get_default_index())
 		batch['input_ids'] = input_ids
-		batch['attention_mask'] = attention_mask
 
 	def validation_step(self, batch, batch_idx):
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True)

@@ -39,6 +39,10 @@ class SeqToSeqModel(pl.LightningModule):
 		optimizer = AdamW(self.model.parameters(), lr=5e-5)
 		return optimizer
 
+	def forward(self, tokenized_sentences, tokenized_decoder_sentences):
+		outputs=self.model(input_ids, target=target)
+		return outputs
+
 	def training_step(self, batch, batch_idx):
 		src = self.tokenizer(batch[self.field_input], padding=True, truncation=True, max_length=self.argdict['max_seq_length'])
 		target = self.tokenizer(batch['full_labels'], padding=True, truncation=True)
@@ -86,15 +90,6 @@ class SeqToSeqModel(pl.LightningModule):
 		self.log("F1_val_5", f15, on_epoch=True, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		self.log("r_val_5", f15, on_epoch=True, on_step=False, prog_bar=True, logger=False, batch_size=self.argdict['batch_size'])
 		return loss
-	def forward(self, tokenized_sentences, tokenized_decoder_sentences):
-
-		input_ids=torch.Tensor(tokenized_sentences['input_ids']).long().to(self.device)
-		attention_mask=torch.Tensor(tokenized_sentences['attention_mask']).to(self.device)
-		decoder_input_ids=torch.Tensor(tokenized_decoder_sentences['input_ids']).long().to(self.device)
-		decoder_attention_mask = torch.Tensor(tokenized_decoder_sentences['attention_mask']).to(self.device)
-		#TODO ATTENTION MASK
-		outputs=self.model(input_ids, decoder_attention_mask=decoder_attention_mask, labels=decoder_input_ids, attention_mask=attention_mask)
-		return outputs
 
 	def train_model(self):
 		# cb=MetricTracker()

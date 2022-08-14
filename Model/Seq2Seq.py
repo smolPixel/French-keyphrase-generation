@@ -11,6 +11,7 @@ from nltk.tokenize import TweetTokenizer, sent_tokenize
 from torchtext.vocab import build_vocab_from_iterator
 from transformers import BartTokenizer, BartForConditionalGeneration, AdamW, WarmUp, BartConfig, AutoTokenizer, AutoModelForSeq2SeqLM
 from Model.Models import SeqToSeq
+from torch.nn.utils.rnn import pad_sequence
 
 class SeqToSeqModel(pl.LightningModule):
 	def __init__(self, argdict, datasets):
@@ -50,7 +51,7 @@ class SeqToSeqModel(pl.LightningModule):
 		text_batch = batch[self.field_input]
 		tokenized=[[self.vocab[token] for token in self.tokenizer.tokenize(sent)] for sent in text_batch]
 		max_seq_length=max([len(ss) for ss in tokenized])
-		print(max_seq_length)
+		print(pad_sequence(tokenized).shape)
 		fds
 		encoding = self.tokenizer(text_batch, return_tensors='pt', padding=True, truncation=True)
 		input_ids = encoding['input_ids'].to(self.device)

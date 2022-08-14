@@ -13,6 +13,7 @@ class SeqToSeq(torch.nn.Module):
 
 	def forward(self, input_seq, output_seq):
 		embed_in=self.embeddings(input_seq)
-		output, hidden=self.rnn_encoder(embed_in)
-		print(hidden.shape)
+		_, hidden=self.rnn_encoder(embed_in)
+		embed_out=self.embeddings(output_seqt)
+		outputs=self.rnn_decoder(embed_out)
 		fds

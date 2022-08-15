@@ -1,6 +1,7 @@
 import torch
 
 class SeqToSeq(torch.nn.Module):
+	"""Simple seq to seq model"""
 
 	def __init__(self, argdict):
 		super().__init__()
@@ -26,6 +27,12 @@ class SeqToSeq(torch.nn.Module):
 			print(outputs.shape)
 			print(target.shape)
 			loss=self.loss(outputs.view(-1, outputs.shape[-1]), target.view(-1))
+			return {'logits':outputs, 'loss':loss}
+		else:
+			return {'logits':outputs}
 
-		return {'logits':outputs, 'loss':loss}
+	def generate(self, num_beams=10, num_return_sequence=1, max_length=50):
+		curr=torch.zeros((1, 1))+self.argdict['bos_idx']
+		print(curr)
 
+		pass

@@ -24,8 +24,6 @@ class SeqToSeq(torch.nn.Module):
 
 		target=output_seq[1:]
 		if output_seq is not None:
-			print(outputs.shape)
-			print(target.shape)
 			loss=self.loss(outputs.view(-1, outputs.shape[-1]), target.view(-1))
 			return {'logits':outputs, 'loss':loss}
 		else:
@@ -34,5 +32,5 @@ class SeqToSeq(torch.nn.Module):
 	def generate(self, num_beams=10, num_return_sequence=1, max_length=50):
 		curr=torch.zeros((1, 1))+self.argdict['bos_idx']
 		print(curr)
-
+		output=self.forward(curr, None)
 		pass

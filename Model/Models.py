@@ -17,5 +17,11 @@ class SeqToSeq(torch.nn.Module):
 		embed_in=self.embeddings(input_seq)
 		_, hidden=self.rnn_encoder(embed_in)
 		embed_out=self.embeddings(output_seq[:-1])
-		outputs=self.rnn_decoder(embed_out)
+		outputs, _=self.rnn_decoder(embed_out)
+
+		target=output_seq[1:]
+		if output_seq is not None:
+			loss=self.loss(outputs, target)
+
+		return {'logits':outputs, 'loss':loss}
 

@@ -31,8 +31,7 @@ class SeqToSeqModel(pl.LightningModule):
 		self.vocab.set_default_index(self.vocab["<unk>"])
 		self.stoi=self.vocab.get_stoi()
 		pad_idx=self.vocab['<pad>']
-		print(pad_idx)
-		fds
+		self.argdict['pad_idx']=pad_idx
 		input_dim=len(self.vocab)
 		self.argdict['input_size']=input_dim
 		output_dim=self.argdict['embed_size']

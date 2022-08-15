@@ -31,7 +31,9 @@ class SeqToSeqModel(pl.LightningModule):
 		self.vocab.set_default_index(self.vocab["<unk>"])
 		self.stoi=self.vocab.get_stoi()
 		pad_idx=self.vocab['<pad>']
+		bos_idx=self.vocab['<bos>']
 		self.argdict['pad_idx']=pad_idx
+		self.argdict['bos_idx']=bos_idx
 		input_dim=len(self.vocab)
 		self.argdict['input_size']=input_dim
 		output_dim=self.argdict['embed_size']
@@ -56,6 +58,8 @@ class SeqToSeqModel(pl.LightningModule):
 	def on_validation_batch_start(self, batch, batch_idx, dataloader_idx):
 		text_batch = batch[self.field_input]
 		tokenized=[torch.Tensor([int(self.vocab[token]) for token in self.tokenizer.tokenize(sent)]) for sent in text_batch]
+		print(tokenized)
+		fds
 		input_ids=pad_sequence(tokenized, batch_first=True, padding_value=self.vocab.get_default_index())
 		batch['input_ids'] = input_ids.long().to(self.device)
 

@@ -53,7 +53,7 @@ class SeqToSeq(torch.nn.Module):
 			#Update the curr index
 			#First we need to find for each topk from which branch it came
 			print(top)
-			print(top.values)
+			print(top.values.shape)
 			for value, index in zip(top.values, top.indices):
 				print(value)
 				print(value, index)

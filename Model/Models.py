@@ -33,6 +33,7 @@ class SeqToSeq(torch.nn.Module):
 		curr=torch.zeros((10, 1))+self.argdict['bos_idx']
 		# curr_log_prob=torch.zeros((10, 1))
 		curr_log_prob=torch.Tensor([0,1,2,3,4,5,6,7,8,9])
+		curr_log_prob.unsqueeze(1)
 		curr=curr.int().to(device)
 		embed_in=self.embeddings(input_seq)
 		_, hidden=self.rnn_encoder(embed_in)

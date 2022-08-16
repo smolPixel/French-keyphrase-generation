@@ -31,7 +31,7 @@ class SeqToSeq(torch.nn.Module):
 
 	def generate(self, input_seq, num_beams=10, num_return_sequences=1, max_length=50):
 		curr=torch.zeros((1, 1))+self.argdict['bos_idx']
-		curr=curr.int()
+		curr=curr.int().to(self.model)
 		embed_in=self.embeddings(input_seq)
 		_, hidden=self.rnn_encoder(embed_in)
 		for i in range(max_length):

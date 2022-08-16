@@ -31,7 +31,7 @@ class SeqToSeq(torch.nn.Module):
 
 	def generate(self, input_seq, num_beams=10, num_return_sequences=1, max_length=50, device='cpu'):
 		curr=torch.zeros((10, 1))+self.argdict['bos_idx']
-		curr_prob=torch.zeros((10, 1))+1
+		curr_log_prob=torch.zeros((10, 1))
 		curr=curr.int().to(device)
 		embed_in=self.embeddings(input_seq)
 		_, hidden=self.rnn_encoder(embed_in)
@@ -39,7 +39,8 @@ class SeqToSeq(torch.nn.Module):
 			embed_out=self.embeddings(curr)
 			outputs, _ = self.rnn_decoder(embed_out)
 			outputs = self.output_to_vocab(outputs).squeeze(1)
-			print(outputs.shape)
+			outputs=torch.nn.functional.log_softmax(outputs, dim=-1)
+			print(outputs)
 			top=torch.topk(outputs, k=num_beams, dim=-1)
 			print(top)
 			fds

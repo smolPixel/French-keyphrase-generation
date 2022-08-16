@@ -39,7 +39,7 @@ class SeqToSeq(torch.nn.Module):
 			outputs, _ = self.rnn_decoder(embed_out)
 			outputs = self.output_to_vocab(outputs)
 			print(outputs.shape)
-			top=torch.argmax(outputs, dim=-1)
+			top=torch.topk(outputs, k=num_beams, dim=-1)
 			print(top)
 			fds
 		print(curr)

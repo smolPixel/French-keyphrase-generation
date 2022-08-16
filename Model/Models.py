@@ -36,7 +36,10 @@ class SeqToSeq(torch.nn.Module):
 		_, hidden=self.rnn_encoder(embed_in)
 		for i in range(max_length):
 			embed_out=self.embeddings(curr)
-			print(embed_out)
+			outputs, _ = self.rnn_decoder(embed_out)
+			outputs = self.output_to_vocab(outputs)
+			print(outputs.shape)
+			fds
 		print(curr)
 		output=self.forward(curr, None)
 		pass

@@ -30,10 +30,11 @@ class SeqToSeqModel(pl.LightningModule):
 		self.vocab = build_vocab_from_iterator(allsentences, specials=specials)
 		self.vocab.set_default_index(self.vocab["<unk>"])
 		self.stoi=self.vocab.get_stoi()
-		pad_idx=self.vocab['<pad>']
-		bos_idx=self.vocab['<bos>']
-		self.argdict['pad_idx']=pad_idx
-		self.argdict['bos_idx']=bos_idx
+		self.pad_idx=self.vocab['<pad>']
+		self.bos_idx=self.vocab['<bos>']
+		self.eos_idx=self.vocab['<eos>']
+		self.argdict['pad_idx']=self.pad_idx
+		self.argdict['bos_idx']=self.bos_idx
 		input_dim=len(self.vocab)
 		self.argdict['input_size']=input_dim
 		output_dim=self.argdict['embed_size']
@@ -57,7 +58,7 @@ class SeqToSeqModel(pl.LightningModule):
 
 	def on_validation_batch_start(self, batch, batch_idx, dataloader_idx):
 		text_batch = batch[self.field_input]
-		tokenized=[torch.Tensor([int(self.vocab[token]) for token in self.tokenizer.tokenize("<bos> "+sent+" <eos>")]).int() for sent in text_batch]
+		tokenized=[torch.Tensor([self.bos_idx]+[int(self.vocab[token]+[self.eos_idx]) for token in self.tokenizer.tokenize(sent)]).int() for sent in text_batch]
 		print(tokenized)
 		fds
 		input_ids=pad_sequence(tokenized, batch_first=True, padding_value=self.vocab.get_default_index())

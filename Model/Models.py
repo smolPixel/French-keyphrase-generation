@@ -30,7 +30,7 @@ class SeqToSeq(torch.nn.Module):
 			return {'logits':outputs}
 
 	def generate(self, start_seq, input_seq, num_beams=10, num_return_sequences=1, max_length=50):
-		curr=curr.int().to(self.model)
+		curr=curr.int().to(self.device)
 		embed_in=self.embeddings(input_seq)
 		_, hidden=self.rnn_encoder(embed_in)
 		for i in range(max_length):

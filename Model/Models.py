@@ -33,7 +33,7 @@ class SeqToSeq(torch.nn.Module):
 		curr=torch.zeros((10, 1))+self.argdict['bos_idx']
 		# curr_log_prob=torch.zeros((10, 1))
 		curr_log_prob=torch.Tensor([0,1,2,3,4,5,6,7,8,9])
-		curr_log_prob=curr_log_prob.unsqueeze(1)
+		curr_log_prob=curr_log_prob.unsqueeze(1).to(device)
 		curr=curr.int().to(device)
 		embed_in=self.embeddings(input_seq)
 		_, hidden=self.rnn_encoder(embed_in)
@@ -43,10 +43,7 @@ class SeqToSeq(torch.nn.Module):
 			outputs = self.output_to_vocab(outputs).squeeze(1)
 			outputs=torch.nn.functional.log_softmax(outputs, dim=-1)
 			vocab_output=outputs.shape[-1]
-			print(curr_log_prob.shape)
 			curr_log_prob=curr_log_prob.repeat(1, vocab_output)
-			print(curr_log_prob.shape)
-			print(outputs.shape)
 			#This denotes the probability for the last token. Add this probability to the log probability of the preceding sentence
 			phrase_log_prob=curr_log_prob+outputs
 			print(outputs)

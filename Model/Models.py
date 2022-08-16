@@ -48,6 +48,13 @@ class SeqToSeq(torch.nn.Module):
 			phrase_log_prob=curr_log_prob+outputs
 			phrase_log_prob=phrase_log_prob.view(1, -1)
 			top=torch.topk(phrase_log_prob, k=num_beams, dim=-1)
+			#Update the curr log prob
+
+			#Update the curr index
+			#First we need to find for each topk from which branch it came
+			for value, index in top:
+				print(value, index)
+
 			print(top)
 			fds
 		print(curr)

@@ -52,7 +52,8 @@ class SeqToSeq(torch.nn.Module):
 
 			#Update the curr index
 			#First we need to find for each topk from which branch it came
-			for value in top:
+			print(top)
+			for value, index in top:
 				print(value)
 				print(value, index)
 

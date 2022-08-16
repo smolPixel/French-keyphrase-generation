@@ -38,7 +38,7 @@ class SeqToSeq(torch.nn.Module):
 		for i in range(max_length):
 			embed_out=self.embeddings(curr)
 			outputs, _ = self.rnn_decoder(embed_out)
-			outputs = self.output_to_vocab(outputs)
+			outputs = self.output_to_vocab(outputs).squeeze(1)
 			print(outputs.shape)
 			top=torch.topk(outputs, k=num_beams, dim=-1)
 			print(top)

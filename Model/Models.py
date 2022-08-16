@@ -54,7 +54,7 @@ class SeqToSeq(torch.nn.Module):
 			#First we need to find for each topk from which branch it came
 			print(top)
 			print(top.values)
-			for value, index in top:
+			for value, index in zip(top.values, top.indices):
 				print(value)
 				print(value, index)
 

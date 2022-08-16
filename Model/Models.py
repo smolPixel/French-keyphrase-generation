@@ -29,9 +29,9 @@ class SeqToSeq(torch.nn.Module):
 		else:
 			return {'logits':outputs}
 
-	def generate(self, input_seq, num_beams=10, num_return_sequences=1, max_length=50):
+	def generate(self, input_seq, num_beams=10, num_return_sequences=1, max_length=50, device='cpu'):
 		curr=torch.zeros((1, 1))+self.argdict['bos_idx']
-		curr=curr.int().to(self.device)
+		curr=curr.int().to(device)
 		embed_in=self.embeddings(input_seq)
 		_, hidden=self.rnn_encoder(embed_in)
 		for i in range(max_length):

@@ -49,12 +49,12 @@ class SeqToSeq(torch.nn.Module):
 			phrase_log_prob=phrase_log_prob.view(1, -1)
 			top=torch.topk(phrase_log_prob, k=num_beams, dim=-1)
 			#Update the curr log prob
+			#next curr is going to be shaped
 
-			#Update the curr index
 			#First we need to find for each topk from which branch it came
 			for value, index in zip(top.values.squeeze(0), top.indices.squeeze(0)):
 				#We need to find from which branch it comes
-				x=value.value()
+				x=value.item()
 				print(x)
 
 			print(top)

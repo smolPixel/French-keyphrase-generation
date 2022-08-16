@@ -41,6 +41,7 @@ class SeqToSeq(torch.nn.Module):
 			outputs, _ = self.rnn_decoder(embed_out)
 			outputs = self.output_to_vocab(outputs).squeeze(1)
 			outputs=torch.nn.functional.log_softmax(outputs, dim=-1)
+			print(outputs.shape)
 			#This denotes the probability for the last token. Add this probability to the log probability of the preceding sentence
 			phrase_log_prob=curr_log_prob+outputs
 			print(outputs)

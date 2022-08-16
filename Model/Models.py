@@ -46,8 +46,9 @@ class SeqToSeq(torch.nn.Module):
 			curr_log_prob=curr_log_prob.repeat(1, vocab_output)
 			#This denotes the probability for the last token. Add this probability to the log probability of the preceding sentence
 			phrase_log_prob=curr_log_prob+outputs
-			print(outputs)
-			print(phrase_log_prob)
+			print(phrase_log_prob.shape)
+			phrase_log_prob=phrase_log_prob.view(num_beams, -1)
+			print(phrase_log_prob.shape)
 			fds
 			top=torch.topk(outputs, k=num_beams, dim=-1)
 			print(top)

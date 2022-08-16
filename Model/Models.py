@@ -54,7 +54,7 @@ class SeqToSeq(torch.nn.Module):
 			#First we need to find for each topk from which branch it came
 			for value, index in zip(top.values.squeeze(0), top.indices.squeeze(0)):
 				#We need to find from which branch it comes
-				x=index.item()//num_beams
+				x=index.item()//vocab_output
 				y=index.item()%vocab_output
 				print(index.item())
 				print(x, y)

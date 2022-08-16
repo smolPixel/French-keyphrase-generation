@@ -31,7 +31,8 @@ class SeqToSeq(torch.nn.Module):
 
 	def generate(self, input_seq, num_beams=10, num_return_sequences=1, max_length=50, device='cpu'):
 		curr=torch.zeros((10, 1))+self.argdict['bos_idx']
-		curr_log_prob=torch.zeros((10, 1))
+		# curr_log_prob=torch.zeros((10, 1))
+		curr_log_prob=torch.Tensor([0,1,2,3,4,5,6,7,8,9])
 		curr=curr.int().to(device)
 		embed_in=self.embeddings(input_seq)
 		_, hidden=self.rnn_encoder(embed_in)
@@ -40,7 +41,11 @@ class SeqToSeq(torch.nn.Module):
 			outputs, _ = self.rnn_decoder(embed_out)
 			outputs = self.output_to_vocab(outputs).squeeze(1)
 			outputs=torch.nn.functional.log_softmax(outputs, dim=-1)
+			#This denotes the probability for the last token. Add this probability to the log probability of the preceding sentence
+			phrase_log_prob=curr_log_prob+outputs
 			print(outputs)
+			print(phrase_log_prob)
+			fds
 			top=torch.topk(outputs, k=num_beams, dim=-1)
 			print(top)
 			fds

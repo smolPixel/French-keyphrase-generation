@@ -43,6 +43,7 @@ class SeqToSeq(torch.nn.Module):
 			outputs = self.output_to_vocab(outputs).squeeze(1)
 			outputs=torch.nn.functional.log_softmax(outputs, dim=-1)
 			vocab_output=outputs.shape[-1]
+			print(curr_log_prob.shape)
 			curr_log_prob=curr_log_prob.repeat(1, vocab_output)
 			print(curr_log_prob.shape)
 			print(outputs.shape)

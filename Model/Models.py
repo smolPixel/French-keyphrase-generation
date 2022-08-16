@@ -30,7 +30,8 @@ class SeqToSeq(torch.nn.Module):
 			return {'logits':outputs}
 
 	def generate(self, input_seq, num_beams=10, num_return_sequences=1, max_length=50, device='cpu'):
-		curr=torch.zeros((1, 1))+self.argdict['bos_idx']
+		curr=torch.zeros((10, 1))+self.argdict['bos_idx']
+		curr_prob=torch.zeros((10, 1))+1
 		curr=curr.int().to(device)
 		embed_in=self.embeddings(input_seq)
 		_, hidden=self.rnn_encoder(embed_in)

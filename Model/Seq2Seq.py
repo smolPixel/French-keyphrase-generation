@@ -58,7 +58,7 @@ class SeqToSeqModel(pl.LightningModule):
 
 	def on_validation_batch_start(self, batch, batch_idx, dataloader_idx):
 		text_batch = batch[self.field_input]
-		tokenized=[torch.Tensor([[self.bos_idx]+[self.vocab[token]]+[self.eos_idx] for token in self.tokenizer.tokenize(sent)]).int() for sent in text_batch]
+		tokenized=[torch.Tensor([self.bos_idx]+[self.vocab[token] for token in self.tokenizer.tokenize(sent)]+[self.eos_idx]).int() for sent in text_batch]
 		print(tokenized)
 		fds
 		input_ids=pad_sequence(tokenized, batch_first=True, padding_value=self.vocab.get_default_index())

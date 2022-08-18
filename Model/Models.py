@@ -24,10 +24,6 @@ class SeqToSeq(torch.nn.Module):
 		outputs=self.output_to_vocab(outputs)
 
 		target=output_seq[:, 1:]
-		print(outputs.shape)
-		print(outputs.view(-1, outputs.shape[-1]).shape)
-		print(target.shape)
-		print(target.contiguous().view(-1).shape)
 		if output_seq is not None:
 			loss=self.loss(outputs.view(-1, outputs.shape[-1]), target.contiguous().view(-1))
 			return {'logits':outputs, 'loss':loss}
@@ -40,6 +36,7 @@ class SeqToSeq(torch.nn.Module):
 		curr_log_prob=torch.Tensor([0,1,2,3,4,5,6,7,8,9])
 		curr_log_prob=curr_log_prob.unsqueeze(1).to(device)
 		curr=curr.int().to(device)
+		print(input_seq.shape)
 		embed_in=self.embeddings(input_seq)
 		_, hidden=self.rnn_encoder(embed_in)
 		for i in range(max_length):

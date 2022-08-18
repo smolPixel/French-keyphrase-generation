@@ -29,7 +29,7 @@ class SeqToSeq(torch.nn.Module):
 		print(target.shape)
 		print(target.contiguous().view(-1).shape)
 		if output_seq is not None:
-			loss=self.loss(outputs.view(-1, outputs.shape[-1]), target.view(-1))
+			loss=self.loss(outputs.view(-1, outputs.shape[-1]), target.contiguous().view(-1))
 			return {'logits':outputs, 'loss':loss}
 		else:
 			return {'logits':outputs}

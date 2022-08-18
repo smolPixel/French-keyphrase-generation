@@ -20,6 +20,7 @@ class SeqToSeq(torch.nn.Module):
 		_, hidden=self.rnn_encoder(embed_in)
 		#Take the last hidden step as input for the decoder
 		hidden=hidden[:, -1]
+		print(hidden.shape)
 		embed_out=self.embeddings(output_seq[:-1])
 		outputs, _=self.rnn_decoder(embed_out, hidden)
 		outputs=self.output_to_vocab(outputs)

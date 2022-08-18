@@ -23,7 +23,7 @@ class SeqToSeq(torch.nn.Module):
 		outputs, _=self.rnn_decoder(embed_out, hidden)
 		outputs=self.output_to_vocab(outputs)
 
-		target=output_seq[1:]
+		target=output_seq[:, 1:]
 		if output_seq is not None:
 			loss=self.loss(outputs.view(-1, outputs.shape[-1]), target.view(-1))
 			return {'logits':outputs, 'loss':loss}

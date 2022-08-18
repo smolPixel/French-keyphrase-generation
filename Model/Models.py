@@ -31,7 +31,7 @@ class SeqToSeq(torch.nn.Module):
 			return {'logits':outputs}
 
 	def generate(self, input_seq, num_beams=10, num_return_sequences=1, max_length=50, device='cpu'):
-		curr=torch.zeros((input_seq[0].shape, num_beams, 1))+self.argdict['bos_idx']
+		curr=torch.zeros((input_seq.shape[0], num_beams, 1))+self.argdict['bos_idx']
 		# curr_log_prob=torch.zeros((10, 1))
 		curr_log_prob=torch.Tensor([0,1,2,3,4,5,6,7,8,9])
 		curr_log_prob=curr_log_prob.unsqueeze(1).to(device)

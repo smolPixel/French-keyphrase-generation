@@ -27,7 +27,7 @@ class SeqToSeq(torch.nn.Module):
 		print(outputs.shape)
 		print(outputs.view(-1, outputs.shape[-1]).shape)
 		print(target.shape)
-		print(target.view(-1).shape)
+		print(target.view(target.shape[0]*target.shape[1]).shape)
 		if output_seq is not None:
 			loss=self.loss(outputs.view(-1, outputs.shape[-1]), target.view(-1))
 			return {'logits':outputs, 'loss':loss}

@@ -35,7 +35,7 @@ class SeqToSeq(torch.nn.Module):
 		curr=torch.zeros((input_seq.shape[0], num_beams, 1))+self.argdict['bos_idx']
 		# curr_log_prob=torch.zeros((10, 1))
 		curr_log_prob=torch.zeros(bs, num_beams)
-		curr_log_prob=curr_log_prob.unsqueeze(1).to(device)
+		curr_log_prob=curr_log_prob.to(device)
 		curr=curr.int().to(device)
 		print(input_seq.shape)
 		embed_in=self.embeddings(input_seq)

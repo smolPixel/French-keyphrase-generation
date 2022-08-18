@@ -38,6 +38,9 @@ class SeqToSeq(torch.nn.Module):
 		curr_log_prob=curr_log_prob.to(device)
 		curr=curr.int().to(device)
 		print(input_seq.shape)
+		input_seq=input_seq.unsqueeze(1).repeat(1, num_beams, 1)
+		print(input_seq)
+		fds
 		embed_in=self.embeddings(input_seq)
 		_, hidden=self.rnn_encoder(embed_in)
 		for i in range(max_length):

@@ -19,7 +19,6 @@ class SeqToSeq(torch.nn.Module):
 		embed_in=self.embeddings(input_seq)
 		_, hidden=self.rnn_encoder(embed_in)
 		print(hidden.shape)
-		fds
 		embed_out=self.embeddings(output_seq[:-1])
 		outputs, _=self.rnn_decoder(embed_out, hidden)
 		outputs=self.output_to_vocab(outputs)

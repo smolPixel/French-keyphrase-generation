@@ -38,8 +38,8 @@ class SeqToSeq(torch.nn.Module):
 		curr_log_prob=curr_log_prob.to(device)
 		curr=curr.int().to(device)
 		print(input_seq.shape)
-		print(input_seq.unsqueeze(1).expand(-1, 10, 1))#.view(input_seq.shape[0]*input_seq.shape[1], -1))
-		input_seq=input_seq.unsqueeze(1).repeat(1, num_beams, 1).view(input_seq.shape[0]*input_seq.shape[1], -1)
+		# print(input_seq.unsqueeze(1).expand(-1, 10, 1))#.view(input_seq.shape[0]*input_seq.shape[1], -1))
+		input_seq=input_seq.unsqueeze(1).repeat(1, num_beams, 1).view(input_seq.shape[0]*num_beams, -1)
 		print(input_seq)
 		fds
 		embed_in=self.embeddings(input_seq)

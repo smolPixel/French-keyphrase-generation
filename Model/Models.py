@@ -31,15 +31,12 @@ class SeqToSeq(torch.nn.Module):
 			return {'logits':outputs}
 
 	def generate(self, input_seq, num_beams=10, num_return_sequences=1, max_length=50, device='cpu'):
-		print(input_seq)
-		print(input_seq.shape)
 		bs=input_seq.shape[0]
 		curr=torch.zeros((input_seq.shape[0], num_beams, 1))+self.argdict['bos_idx']
 		# curr_log_prob=torch.zeros((10, 1))
 		curr_log_prob=torch.zeros(bs, num_beams)
 		curr_log_prob=curr_log_prob.to(device)
 		curr=curr.int().to(device)
-		print(input_seq.shape)
 		# print(input_seq.unsqueeze(1).expand(-1, 10, 1))#.view(input_seq.shape[0]*input_seq.shape[1], -1))
 		input_seq=input_seq.unsqueeze(1).repeat(1, num_beams, 1).view(input_seq.shape[0]*num_beams, -1)
 		embed_in=self.embeddings(input_seq)
@@ -51,8 +48,9 @@ class SeqToSeq(torch.nn.Module):
 			outputs = self.output_to_vocab(outputs).squeeze(1)
 			outputs=torch.nn.functional.log_softmax(outputs, dim=-1)
 			vocab_output=outputs.shape[-1]
-			curr_log_prob=curr_log_prob.repeat(1, vocab_output)
+			curr_log_prob=curr_log_prob.repeat(1, 1, vocab_output)
 			#This denotes the probability for the last token. Add this probability to the log probability of the preceding sentence
+			outputs=outputs.view(bs, num_beams, vocab_output)
 			print(curr_log_prob.shape)
 			print(outputs.shape)
 			phrase_log_prob=curr_log_prob+outputs

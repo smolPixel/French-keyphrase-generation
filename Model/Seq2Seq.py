@@ -74,8 +74,7 @@ class SeqToSeqModel(pl.LightningModule):
 		loss = output['loss']
 
 		# input_ids = self.tokenizer.tokenize(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
-		print(input_ids.shape)
-		fds
+
 		gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1, max_length=50, device=self.device)
 		# gend = self.tokenize(gend, skip_special_tokens=True)
 		hypos=[self.score(sent) for sent in gend]

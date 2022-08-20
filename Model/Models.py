@@ -32,6 +32,7 @@ class SeqToSeq(torch.nn.Module):
 
 	def generate(self, input_seq, num_beams=10, num_return_sequences=1, max_length=50, device='cpu'):
 		print(input_seq)
+		print(input_seq.shape)
 		bs=input_seq.shape[0]
 		curr=torch.zeros((input_seq.shape[0], num_beams, 1))+self.argdict['bos_idx']
 		# curr_log_prob=torch.zeros((10, 1))

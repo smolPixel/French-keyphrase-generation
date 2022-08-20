@@ -48,6 +48,7 @@ class SeqToSeq(torch.nn.Module):
 			outputs = self.output_to_vocab(outputs).squeeze(1)
 			outputs=torch.nn.functional.log_softmax(outputs, dim=-1)
 			vocab_output=outputs.shape[-1]
+			print(curr_log_prob.shape)
 			curr_log_prob=curr_log_prob.repeat(1, 1, vocab_output)
 			#This denotes the probability for the last token. Add this probability to the log probability of the preceding sentence
 			outputs=outputs.view(bs, num_beams, vocab_output)

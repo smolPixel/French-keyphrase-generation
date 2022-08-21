@@ -48,21 +48,20 @@ class SeqToSeq(torch.nn.Module):
 			outputs = self.output_to_vocab(outputs).squeeze(1)
 			outputs=torch.nn.functional.log_softmax(outputs, dim=-1)
 			vocab_output=outputs.shape[-1]
-			print(curr_log_prob.shape)
 			curr_log_prob=curr_log_prob.repeat(1, 1, vocab_output)
 			#This denotes the probability for the last token. Add this probability to the log probability of the preceding sentence
 			outputs=outputs.view(bs, num_beams, vocab_output)
-			print(curr_log_prob.shape)
-			print(outputs.shape)
 			phrase_log_prob=curr_log_prob+outputs
 			phrase_log_prob=phrase_log_prob.view(bs, -1)
 			top=torch.topk(phrase_log_prob, k=num_beams, dim=-1)
-			print(top.indices.shape)
-			fds
 			#Update the curr log prob
 			#next curr is going to be shaped
 
 			#First we need to find for each topk from which branch it came
+			#The branch they come from in index//vocab_output, the vocab number will be index%vocab_output
+			x=top.indices//vocab_output
+			print(x)
+			fds
 			for value, index in zip(top.values.squeeze(0), top.indices.squeeze(0)):
 				#We need to find from which branch it comes
 				x=index.item()//vocab_output

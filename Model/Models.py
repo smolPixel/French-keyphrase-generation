@@ -60,6 +60,7 @@ class SeqToSeq(torch.nn.Module):
 			#First we need to find for each topk from which branch it came
 			#The branch they come from in index//vocab_output, the vocab number will be index%vocab_output
 			x=top.indices//vocab_output
+			print(top.indices/vocab_output)
 			print(x)
 			fds
 			for value, index in zip(top.values.squeeze(0), top.indices.squeeze(0)):

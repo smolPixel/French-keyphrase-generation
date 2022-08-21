@@ -57,7 +57,7 @@ class SeqToSeq(torch.nn.Module):
 			phrase_log_prob=curr_log_prob+outputs
 			phrase_log_prob=phrase_log_prob.view(bs*num_beams, -1)
 			top=torch.topk(phrase_log_prob, k=num_beams, dim=-1)
-			print(top)
+			print(top.indices.shape)
 			fds
 			#Update the curr log prob
 			#next curr is going to be shaped

@@ -81,7 +81,13 @@ class SeqToSeq(torch.nn.Module):
 		curr_log_prob=curr_log_prob.squeeze(-1)
 		best=torch.argmax(curr_log_prob, dim=-1)
 
-		for beam, bb in zip(curr, best):
-			print(beam, bb)
+		final=torch.zeros((curr.shape[0], curr.shape[-1]))
+
+		for i, (beam, bb) in enumerate(zip(curr, best)):
+			best_beam=beam[bb]
+			final[i]=best_beam
+
+		print(final)
+		print(final.shape)
 
 		fds

@@ -61,16 +61,19 @@ class SeqToSeq(torch.nn.Module):
 			#The branch they come from in index//vocab_output, the vocab number will be index%vocab_output
 			x=top.indices//vocab_output
 			y=top.indices%vocab_output
-			print(y)
+			#We now need to combine both
+			x=x.view(-1)
+			print(x)
 			fds
-			for value, index in zip(top.values.squeeze(0), top.indices.squeeze(0)):
-				#We need to find from which branch it comes
-				x=index.item()//vocab_output
-				y=index.item()%vocab_output
-				print(index.item())
-				print(x, y)
-
-			print(top)
+			#
+			# for value, index in zip(top.values.squeeze(0), top.indices.squeeze(0)):
+			# 	#We need to find from which branch it comes
+			# 	x=index.item()//vocab_output
+			# 	y=index.item()%vocab_output
+			# 	print(index.item())
+			# 	print(x, y)
+			#
+			# print(top)
 			fds
 		print(curr)
 		output=self.forward(curr, None)

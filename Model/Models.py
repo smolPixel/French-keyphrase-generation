@@ -69,6 +69,7 @@ class SeqToSeq(torch.nn.Module):
 			for i, (og_branch, new_ind, log_prob_new) in enumerate(zip(x, y, values)):
 				new_log_prob=curr_log_prob[i]+log_prob_new
 				print(og_branch)
+				print(curr[og_branch])
 				print(curr[i])
 				print(new_ind)
 				print('---')

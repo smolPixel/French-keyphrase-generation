@@ -71,7 +71,7 @@ class SeqToSeq(torch.nn.Module):
 				new_index[i, :, :-1]=curr[i][og_branch]
 				new_index[i, :, -1]=new_ind
 			# print(new_log_prob)
-			curr=new_index.int()
+			curr=new_index.int().to(device)
 			curr_log_prob=new_log_prob
 			# fds
 			#
@@ -85,5 +85,5 @@ class SeqToSeq(torch.nn.Module):
 			# print(top)
 			# fds
 		print(curr)
-		output=self.forward(curr, None)
-		pass
+		print(curr.shape)
+		fds

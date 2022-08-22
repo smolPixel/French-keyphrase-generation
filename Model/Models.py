@@ -80,6 +80,8 @@ class SeqToSeq(torch.nn.Module):
 		#Return best seq (TODO RETURN TOP N SEQ)
 		curr_log_prob=curr_log_prob.squeeze(-1)
 		best=torch.argmax(curr_log_prob, dim=-1)
-		print(best)
+
+		for beam, bb in zip(curr, best):
+			print(beam, bb)
 
 		fds

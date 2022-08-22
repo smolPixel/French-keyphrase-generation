@@ -78,8 +78,8 @@ class SeqToSeq(torch.nn.Module):
 
 
 		#Return best seq (TODO RETURN TOP N SEQ)
-		print(curr.shape)
-		print(curr_log_prob)
-		print(curr_log_prob.shape)
-		
+		curr_log_prob=curr_log_prob.squeeze(-1)
+		best=torch.argmax(curr_log_prob, dim=-1)
+		print(best)
+
 		fds

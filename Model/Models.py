@@ -68,6 +68,7 @@ class SeqToSeq(torch.nn.Module):
 			new_index=torch.zeros((curr.shape[0], curr.shape[1], curr.shape[2]+1))
 			for og_branch, new_ind, log_prob_new in zip(x, y, values):
 				print(og_branch, new_ind, log_prob_new)
+				print('---')
 			#
 			# for value, index in zip(top.values.squeeze(0), top.indices.squeeze(0)):
 			# 	#We need to find from which branch it comes

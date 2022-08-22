@@ -84,7 +84,7 @@ class SeqToSeq(torch.nn.Module):
 				new_index[i, :, -1]=new_ind
 			# print(new_log_prob)
 			curr=new_index.int().to(device)
-			curr_log_prob=new_log_prob
+			curr_log_prob=new_log_prob.unsqueeze(-1)
 			# fds
 			#
 			# for value, index in zip(top.values.squeeze(0), top.indices.squeeze(0)):

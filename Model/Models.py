@@ -46,6 +46,7 @@ class SeqToSeq(torch.nn.Module):
 			embed_out=self.embeddings(curr_reshaped)
 			outputs, _ = self.rnn_decoder(embed_out, hidden)
 			outputs = self.output_to_vocab(outputs).squeeze(1)
+			print(outputs.shape)
 			outputs=torch.nn.functional.log_softmax(outputs, dim=-1)
 			vocab_output=outputs.shape[-1]
 			curr_log_prob_reshaped=curr_log_prob.repeat(1, 1, vocab_output)

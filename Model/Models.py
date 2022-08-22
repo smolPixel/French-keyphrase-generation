@@ -54,6 +54,8 @@ class SeqToSeq(torch.nn.Module):
 			phrase_log_prob=curr_log_prob+outputs
 			phrase_log_prob=phrase_log_prob.view(bs, -1)
 			top=torch.topk(phrase_log_prob, k=num_beams, dim=-1)
+			print(top)
+			fds
 			#Update the curr log prob
 			#next curr is going to be shaped
 
@@ -65,8 +67,7 @@ class SeqToSeq(torch.nn.Module):
 			#
 			new_log_prob=torch.zeros_like(curr_log_prob)
 			new_index=torch.zeros((curr.shape[0], curr.shape[1], curr.shape[2]+1))
-			print(new_index.shape)
-			fds
+			for og_branch, new_ind,
 			#
 			# for value, index in zip(top.values.squeeze(0), top.indices.squeeze(0)):
 			# 	#We need to find from which branch it comes

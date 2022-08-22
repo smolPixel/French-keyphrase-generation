@@ -62,8 +62,10 @@ class SeqToSeq(torch.nn.Module):
 			x=top.indices//vocab_output
 			y=top.indices%vocab_output
 			#We now need to combine both
-			x=x.view(-1)
-			print(x)
+			#
+			new_log_prob=torch.zeros_like(curr_log_prob)
+			new_index=torch.zeros_like(curr)
+			print(new_index.shape)
 			fds
 			#
 			# for value, index in zip(top.values.squeeze(0), top.indices.squeeze(0)):

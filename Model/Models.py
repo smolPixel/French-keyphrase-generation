@@ -69,7 +69,8 @@ class SeqToSeq(torch.nn.Module):
 			y=top.indices%vocab_output
 			#We now need to combine both
 			#
-			new_log_prob=torch.zeros_like(curr_log_prob)
+			new_log_prob=torch.zeros_like(curr_log_prob).squeeze(-1)
+			curr_log_prob=curr_log_prob.squeeze(-1)
 			new_index=torch.zeros((curr.shape[0], curr.shape[1], curr.shape[2]+1))
 			print('----')
 			for i, (og_branch, new_ind, log_prob_new) in enumerate(zip(x, y, values)):

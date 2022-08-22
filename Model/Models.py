@@ -71,8 +71,9 @@ class SeqToSeq(torch.nn.Module):
 				new_index[i, :, :-1]=curr[i][og_branch]
 				new_index[i, :, -1]=new_ind
 			# print(new_log_prob)
-			print(new_index)
-			fds
+			curr=new_index.int()
+			curr_log_prob=new_log_prob
+			# fds
 			#
 			# for value, index in zip(top.values.squeeze(0), top.indices.squeeze(0)):
 			# 	#We need to find from which branch it comes
@@ -82,7 +83,7 @@ class SeqToSeq(torch.nn.Module):
 			# 	print(x, y)
 			#
 			# print(top)
-			fds
+			# fds
 		print(curr)
 		output=self.forward(curr, None)
 		pass

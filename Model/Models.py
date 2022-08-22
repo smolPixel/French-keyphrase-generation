@@ -76,6 +76,10 @@ class SeqToSeq(torch.nn.Module):
 			curr=new_index.int().to(device)
 			curr_log_prob=new_log_prob.unsqueeze(-1)
 
+
+		#Return best seq (TODO RETURN TOP N SEQ)
 		print(curr.shape)
 		print(curr_log_prob)
+		print(curr_log_prob.shape)
+		
 		fds

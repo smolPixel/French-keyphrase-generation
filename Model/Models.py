@@ -47,15 +47,11 @@ class SeqToSeq(torch.nn.Module):
 			embed_out=self.embeddings(curr_reshaped)
 			outputs, _ = self.rnn_decoder(embed_out, hidden)
 			outputs = self.output_to_vocab(outputs).squeeze(1)
-			print(outputs.shape)
 			outputs=torch.nn.functional.log_softmax(outputs, dim=-1)
 			vocab_output=outputs.shape[-1]
 			curr_log_prob_reshaped=curr_log_prob.repeat(1, 1, vocab_output)
 			#This denotes the probability for the last token. Add this probability to the log probability of the preceding sentence
 			outputs=outputs.view(bs, num_beams, vocab_output)
-			print(outputs.shape)
-			print(curr_log_prob_reshaped.shape)
-			print(curr_log_prob.shape)
 			phrase_log_prob=curr_log_prob_reshaped+outputs
 			phrase_log_prob=phrase_log_prob.view(bs, -1)
 			top=torch.topk(phrase_log_prob, k=num_beams, dim=-1)
@@ -72,30 +68,10 @@ class SeqToSeq(torch.nn.Module):
 			new_log_prob=torch.zeros_like(curr_log_prob).squeeze(-1)
 			curr_log_prob=curr_log_prob.squeeze(-1)
 			new_index=torch.zeros((curr.shape[0], curr.shape[1], curr.shape[2]+1))
-			print('----')
 			for i, (og_branch, new_ind, log_prob_new) in enumerate(zip(x, y, values)):
-				print(curr_log_prob.shape)
-				print(new_log_prob.shape)
-				print(log_prob_new.shape)
 				new_log_prob[i]=curr_log_prob[i]+log_prob_new
-				print(new_log_prob.shape)
-				print('swag')
 				new_index[i, :, :-1]=curr[i][og_branch]
 				new_index[i, :, -1]=new_ind
 			# print(new_log_prob)
 			curr=new_index.int().to(device)
 			curr_log_prob=new_log_prob.unsqueeze(-1)
-			# fds
-			#
-			# for value, index in zip(top.values.squeeze(0), top.indices.squeeze(0)):
-			# 	#We need to find from which branch it comes
-			# 	x=index.item()//vocab_output
-			# 	y=index.item()%vocab_output
-			# 	print(index.item())
-			# 	print(x, y)
-			#
-			# print(top)
-			# fds
-		print(curr)
-		print(curr.shape)
-		fds

@@ -64,7 +64,7 @@ class SeqToSeq(torch.nn.Module):
 			#We now need to combine both
 			#
 			new_log_prob=torch.zeros_like(curr_log_prob)
-			new_index=torch.zeros_like(curr)
+			new_index=torch.zeros((curr.shape[0], curr.shape[1], curr.shape[2]+1))
 			print(new_index.shape)
 			fds
 			#

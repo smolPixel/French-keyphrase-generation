@@ -42,8 +42,8 @@ class SeqToSeq(torch.nn.Module):
 		embed_in=self.embeddings(input_seq)
 		_, hidden=self.rnn_encoder(embed_in)
 		for i in range(max_length):
-			print(curr.shape)
-			curr_reshaped=curr.view(curr.shape[0]*curr.shape[1], -1)
+			curr_reshaped=curr[:, :, -1]
+			curr_reshaped=curr_reshaped.view(curr_reshaped.shape[0]*curr_reshaped.shape[1], -1)
 			embed_out=self.embeddings(curr_reshaped)
 			outputs, _ = self.rnn_decoder(embed_out, hidden)
 			outputs = self.output_to_vocab(outputs).squeeze(1)

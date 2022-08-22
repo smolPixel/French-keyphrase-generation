@@ -66,7 +66,7 @@ class SeqToSeq(torch.nn.Module):
 			#
 			new_log_prob=torch.zeros_like(curr_log_prob)
 			new_index=torch.zeros((curr.shape[0], curr.shape[1], curr.shape[2]+1))
-			for i, og_branch, new_ind, log_prob_new in enumerate(zip(x, y, values)):
+			for i, (og_branch, new_ind, log_prob_new) in enumerate(zip(x, y, values)):
 				new_log_prob=curr_log_prob[i]+log_prob_new
 			print(new_log_prob)
 			fds

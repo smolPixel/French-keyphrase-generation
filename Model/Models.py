@@ -77,4 +77,5 @@ class SeqToSeq(torch.nn.Module):
 			curr_log_prob=new_log_prob.unsqueeze(-1)
 
 		print(curr.shape)
+		print(curr_log_prob)
 		fds

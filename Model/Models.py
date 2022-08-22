@@ -77,6 +77,7 @@ class SeqToSeq(torch.nn.Module):
 				print(new_log_prob.shape)
 				new_log_prob=curr_log_prob[i]+log_prob_new
 				print(new_log_prob.shape)
+				print('swag')
 				new_index[i, :, :-1]=curr[i][og_branch]
 				new_index[i, :, -1]=new_ind
 			# print(new_log_prob)

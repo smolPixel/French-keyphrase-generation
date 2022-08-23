@@ -30,6 +30,7 @@ class SeqToSeqModel(pl.LightningModule):
 		self.vocab = build_vocab_from_iterator(allsentences, specials=specials)
 		self.vocab.set_default_index(self.vocab["<unk>"])
 		self.stoi=self.vocab.get_stoi()
+		self.itos=self.vocab.get_itos()
 		self.pad_idx=self.vocab['<pad>']
 		self.bos_idx=self.vocab['<bos>']
 		self.eos_idx=self.vocab['<eos>']
@@ -43,7 +44,9 @@ class SeqToSeqModel(pl.LightningModule):
 
 	def decode(self, input_sent):
 		sentences=[]
-		print(self.vocab.get_itos())
+		for ss in input_sent:
+			for tok in ss:
+				print(tok)
 		fds
 
 	def configure_optimizers(self):

@@ -48,8 +48,12 @@ class SeqToSeqModel(pl.LightningModule):
 			ss_gen=[]
 			for tok in ss:
 				tok=int(tok.item())
-				print(tok)
-		fds
+				if tok in [self.pad_idx, self.eos_idx]:
+					break
+				else:
+					ss_gen.append(self.itos[tok])
+			sentences.append(" ".join(ss_gen))
+		return sentences
 
 	def configure_optimizers(self):
 		optimizer = AdamW(self.model.parameters(), lr=5e-5)

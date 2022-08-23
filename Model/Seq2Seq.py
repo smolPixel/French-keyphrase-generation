@@ -42,7 +42,8 @@ class SeqToSeqModel(pl.LightningModule):
 
 
 	def decode(self, input_sent):
-		print(input_sent)
+		sentences=[]
+		print(self.vocab.get_itos())
 		fds
 
 	def configure_optimizers(self):

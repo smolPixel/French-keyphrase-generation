@@ -45,7 +45,9 @@ class SeqToSeqModel(pl.LightningModule):
 	def decode(self, input_sent):
 		sentences=[]
 		for ss in input_sent:
+			ss_gen=[]
 			for tok in ss:
+				tok=tok.item()
 				print(tok)
 		fds
 

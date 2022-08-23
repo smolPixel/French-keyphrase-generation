@@ -40,6 +40,11 @@ class SeqToSeqModel(pl.LightningModule):
 		output_dim=self.argdict['embed_size']
 		self.model=SeqToSeq(argdict)
 
+
+	def decode(self, input_sent):
+		print(input_sent)
+		fds
+
 	def configure_optimizers(self):
 		optimizer = AdamW(self.model.parameters(), lr=5e-5)
 		return optimizer
@@ -76,7 +81,7 @@ class SeqToSeqModel(pl.LightningModule):
 		# input_ids = self.tokenizer.tokenize(batch[self.field_input], padding=True, truncation=True, return_tensors='pt', max_length=self.argdict['max_seq_length']).to(self.device)
 
 		gend = self.model.generate(input_ids, num_beams=10, num_return_sequences=1, max_length=50, device=self.device)
-		print(gend)
+		gend= self.decode(gend)
 		# gend = self.tokenize(gend, skip_special_tokens=True)
 		hypos=[self.score(sent) for sent in gend]
 		inputs=batch[self.field_input]

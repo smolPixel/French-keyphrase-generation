@@ -47,7 +47,7 @@ class SeqToSeqModel(pl.LightningModule):
 		for ss in input_sent:
 			ss_gen=[]
 			for tok in ss:
-				tok=tok.item()
+				tok=int(tok.item())
 				print(tok)
 		fds
 

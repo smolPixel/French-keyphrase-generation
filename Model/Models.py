@@ -87,7 +87,4 @@ class SeqToSeq(torch.nn.Module):
 			best_beam=beam[bb]
 			final[i]=best_beam
 
-		print(final)
-		print(final.shape)
-
-		fds
+		return final
